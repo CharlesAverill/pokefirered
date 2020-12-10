@@ -51,3 +51,27 @@ EventScript_PalletTown_PlayersHouse_2F_ShutDownPC:: @ 8168D17
 	special SetHelpContextForMap
 	releaseall
 	end
+
+PalletTown_PlayersHouse_2F_CharlesMewBattle::
+	lock
+	faceplayer
+	getpartysize
+	compare VAR_RESULT, 1
+	goto_if_lt PalletTown_PlayersHouse_2F_CharlesMewBattle_2
+	setwildbattle SPECIES_MEW, 5, ITEM_NONE
+	msgbox PalletTown_PlayersHouse_2F_CharlesMewBattle_Text_1
+	dowildbattle
+PalletTown_PlayersHouse_2F_CharlesMewBattle_1:
+	release
+	end
+
+PalletTown_PlayersHouse_2F_CharlesMewBattle_2:
+	msgbox PalletTown_PlayersHouse_2F_CharlesMewBattle_Text_0
+	goto PalletTown_PlayersHouse_2F_CharlesMewBattle_1
+
+
+PalletTown_PlayersHouse_2F_CharlesMewBattle_Text_0:
+	.string "You don't have any Pokemon!$"
+
+PalletTown_PlayersHouse_2F_CharlesMewBattle_Text_1:
+	.string "Get ready to fight my Mew!$"
