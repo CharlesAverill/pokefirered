@@ -37,6 +37,13 @@
       "elevation": 3,
       "dest_map": "MAP_PALLET_TOWN_PLAYERS_HOUSE_1F",
       "dest_warp_id": 2
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SSANNE_EXTERIOR",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

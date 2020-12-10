@@ -55,12 +55,26 @@ EventScript_PalletTown_PlayersHouse_2F_ShutDownPC:: @ 8168D17
 PalletTown_PlayersHouse_2F_CharlesMewBattle::
 	lock
 	faceplayer
+	waitse
 	getpartysize
 	compare VAR_RESULT, 1
 	goto_if_lt PalletTown_PlayersHouse_2F_CharlesMewBattle_2
-	setwildbattle SPECIES_MEW, 5, ITEM_NONE
+	playmoncry SPECIES_MEW, 2
 	msgbox PalletTown_PlayersHouse_2F_CharlesMewBattle_Text_1
+	waitmessage
+    waitmoncry
+    delay 20
+    playbgm MUS_ENCOUNTER_GYM_LEADER, 0
+    waitbuttonpress
+	setwildbattle SPECIES_MEW, 5, ITEM_NONE
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
 	dowildbattle
+	release
+	end
+
 PalletTown_PlayersHouse_2F_CharlesMewBattle_1:
 	release
 	end
