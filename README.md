@@ -1,6 +1,23 @@
 # Charles' FireRed
 Just playing around with this FR/LG decomp. Adding in some pokemon, practicing ASM and C. Lots of fun stuff. Building the ROM is really complicated and I don't want to get DMCA'd so you'll have to take my word for it.
 
+## Added Features
+- Evolution Changes:
+  - Kadabra @ l37
+  - Machamp @ l37
+  - Golem @ l37
+  - Gengar @ l37
+  - Poliwhirl @ l37 for Politoed, Water Stone for Poliwrath
+  - Slowpoke @ l37 for Slowbro, Water Stone for Slowking
+  - Onix @ l30
+  - Seadra @ l40
+  - Scyther @ l30
+  - Porygon @ l30
+  - Clamperl @ l30 for Huntail, Water Stone for Gorebyss
+  - Eevee w/ Sun Stone for Espeon, Moon Stone for Umbreon
+- Currently adding LG Exclusives
+- Mew Truck event https://www.youtube.com/watch?v=p67inIXW0-4&feature=youtu.be
+
 # Pokémon FireRed and LeafGreen
 
 [![Build Status][travis-badge]][travis]
