@@ -16,7 +16,7 @@ Just playing around with this FR/LG decomp. Adding in some pokemon, practicing A
   - Clamperl @ l30 for Huntail, Water Stone for Gorebyss
   - Eevee w/ Sun Stone for Espeon, Moon Stone for Umbreon
 - Currently adding LG Exclusives
-- Mew Truck event https://www.youtube.com/watch?v=p67inIXW0-4&feature=youtu.be
+- Mew Truck event https://youtu.be/p67inIXW0-4
 
 # Pokémon FireRed and LeafGreen
 
