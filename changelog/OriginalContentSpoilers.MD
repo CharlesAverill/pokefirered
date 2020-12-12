@@ -37,3 +37,4 @@
 - 
 - Mew Truck event: walk into the SSAnne dock from the leftmost tiles
 - MysticTicket is available in-game: speak to Captain Solomon on Five Island
+- AuroraTicket is available in-game: after completing Captain Solomon's quest, talk to Prof. Charles in Saffron City

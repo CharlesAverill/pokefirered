@@ -229,6 +229,10 @@ struct BaseStats
             u8 noFlip : 1;
 };
 
+#define CATEGORY_PHYSICAL	0
+#define CATEGORY_SPECIAL	1
+#define CATEGORY_STATUS		2
+
 struct BattleMove
 {
     u8 effect;
@@ -240,6 +244,7 @@ struct BattleMove
     u8 target;
     s8 priority;
     u8 flags;
+    u8 category;
 };
 
 extern const struct BattleMove gBattleMoves[];
