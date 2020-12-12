@@ -107,6 +107,10 @@ SaffronCity_EventScript_TrainerTips2:: @ 8167456
 	msgbox SaffronCity_Text_GreatBallImprovedCatchRate, MSGBOX_SIGN
 	end
 
+SaffronCity_EventScript_CharlesLaboratory::
+    msgbox SaffronCity_EventScript_CharlesLaboratory_Text, MSGBOX_SIGN
+    end
+
 SaffronCity_EventScript_SilphCoSign:: @ 816745F
 	msgbox SaffronCity_Text_SilphCoSign, MSGBOX_SIGN
 	end

@@ -89,6 +89,9 @@ SaffronCity_Text_GreatBallImprovedCatchRate:: @ 8181452
     .string "Try it on those hard-to-catch\n"
     .string "POKéMON.$"
 
+SaffronCity_EventScript_CharlesLaboratory_Text::
+    .string "Charles's Laboratory$"
+
 SaffronCity_Text_SilphCoSign:: @ 81814B9
     .string "SILPH CO. OFFICE BUILDING$"
 

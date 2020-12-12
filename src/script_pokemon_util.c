@@ -73,6 +73,59 @@ u8 ScriptGiveMon(u16 species, u8 level, u16 item, u32 unused1, u32 unused2, u8 u
     return sentToPc;
 }
 
+u8 ScriptGiveMonWithStats(u16 species, u8 level, u16 item, bool8 isShiny, bool8 isEgg, u8 *stats, u8 *EVs, u8 *IVs)
+{
+    u16 nationalDexNum;
+    int sentToPc;
+    u8 heldItem[2];
+    s32 j;
+    struct Pokemon *mon = AllocZeroed(sizeof(struct Pokemon));
+
+    if(isShiny){
+        CreateShinyMon(mon, species, level);
+    }
+    else{
+        CreateMon(mon, species, level, 32, 0, 0, OT_ID_PLAYER_ID, 0);
+    }
+
+    SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+    if(isEgg){
+        SetMonData(mon, MON_DATA_FRIENDSHIP, &gBaseStats[species].eggCycles);
+    }
+
+    // Set IVs, EVs, and stats
+    SetMonData(mon, MON_DATA_HP, &stats[0]);
+    for (j = 0; j < 6; j++) {
+        if (IVs[j] > 0) {
+            SetMonData(mon, MON_DATA_HP_IV + j, &IVs[j]);
+        }
+        if (IVs[j] > 0) {
+            SetMonData(mon, MON_DATA_HP_EV + j, &EVs[j]);
+        }
+        if (IVs[j] > 0) {
+            SetMonData(mon, MON_DATA_MAX_HP + j, &stats[j]);
+        }
+    }
+
+    heldItem[0] = item;
+    heldItem[1] = item >> 8;
+    SetMonData(mon, MON_DATA_HELD_ITEM, heldItem);
+    sentToPc = GiveMonToPlayer(mon);
+    nationalDexNum = SpeciesToNationalPokedexNum(species);
+
+    switch(sentToPc)
+    {
+        case MON_GIVEN_TO_PARTY:
+        case MON_GIVEN_TO_PC:
+            GetSetPokedexFlag(nationalDexNum, FLAG_SET_SEEN);
+            GetSetPokedexFlag(nationalDexNum, FLAG_SET_CAUGHT);
+            break;
+    }
+
+    Free(mon);
+    return sentToPc;
+}
+
 u8 ScriptGiveEgg(u16 species)
 {
     struct Pokemon *mon = AllocZeroed(sizeof(struct Pokemon));

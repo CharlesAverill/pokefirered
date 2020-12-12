@@ -1752,6 +1752,34 @@ bool8 ScrCmd_givemon(struct ScriptContext * ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_givemonwithstats(struct ScriptContext * ctx)
+{
+    u16 species = VarGet(ScriptReadHalfword(ctx));
+    u8 level = ScriptReadByte(ctx);
+    u16 item = VarGet(ScriptReadHalfword(ctx));
+    bool8 isShiny = ScriptReadByte(ctx);
+    bool8 isEgg = ScriptReadByte(ctx);
+
+    u8 stats[6];
+    u8 EVs[6];
+    u8 IVs[6];
+
+    s32 i;
+
+    for(i = 0; i < 6; i++){
+        stats[i] = ScriptReadByte(ctx);
+    }
+    for(i = 0; i < 6; i++){
+        EVs[i] = ScriptReadByte(ctx);
+    }
+    for(i = 0; i < 6; i++){
+        IVs[i] = ScriptReadByte(ctx);
+    }
+
+    gSpecialVar_Result = ScriptGiveMonWithStats(species, level, item, isShiny, isEgg, stats, EVs, IVs);
+    return FALSE;
+}
+
 bool8 ScrCmd_giveegg(struct ScriptContext * ctx)
 {
     u16 species = VarGet(ScriptReadHalfword(ctx));

@@ -1445,6 +1445,34 @@
 	.2byte \quantity
 	.endm
 
+	@ Gives the player a pokemon with the desired stats
+	.macro givemonwithstats species:req, level:req, item:req, isShiny:req, isEgg:req, stats0:req, stats1:req, stats2:req, stats3:req, stats4:req, stats5:req, EVs0:req, EVs1:req, EVs2:req, EVs3:req, EVs4:req, EVs5:req, IVs0:req, IVs1:req, IVs2:req, IVs3:req, IVs4:req, IVs5:req
+    .byte 0xD5
+    .2byte \species
+    .byte \level
+    .2byte \item
+    .byte \isShiny
+    .byte \isEgg
+    .byte \ stats0
+    .byte \ stats1
+    .byte \ stats2
+    .byte \ stats3
+    .byte \ stats4
+    .byte \ stats5
+    .byte \ EVs0
+    .byte \ EVs1
+    .byte \ EVs2
+    .byte \ EVs3
+    .byte \ EVs4
+    .byte \ EVs5
+    .byte \ IVs0
+    .byte \ IVs1
+    .byte \ IVs2
+    .byte \ IVs3
+    .byte \ IVs4
+    .byte \ IVs5
+    .endm
+
 
 @ Supplementary
 

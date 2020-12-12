@@ -112,3 +112,12 @@ FiveIsland_Meadow_SailorSolomon_Text_3:
 FiveIsland_Meadow_SailorSolomon_Text_4:
 	.string "{PLAYER}! Weigh anchor and travel\n"
 	.string "to the Legendary Pokemon!$"
+
+FiveIsland_TalkToCharles_Text:
+    .string "Long ago I parted ways with a man\n"
+    .string "named Charles. We were good\l"
+    .string "friends. If I had to guess, he's\l"
+    .string "workin' on somethin' mighty\l"
+    .string "interestin'. Should ye visit him\l"
+    .string "in the City o' Saffron, ye might\l"
+    .string "hear somethin' worthwhile.$"

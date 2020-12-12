@@ -52,6 +52,7 @@ FiveIsland_Meadow_EventScript_Rocket3:: @ 81689BB
 
 FiveIsland_Meadow_EventScript_SailorSolomon::
 	lock
+	goto_if_set FLAG_SOLOMON_DONE, FiveIsland_TalkToCharles
 	goto_if_set FLAG_FOUGHT_LUGIA, FiveIsland_Lugia_Fought
 	goto_if_set FLAG_FOUGHT_HO_OH, FiveIsland_HoOh_Fought
 	goto_if_set FLAG_LUGIA_FLEW_AWAY, FiveIsland_Lugia_Fought
@@ -62,18 +63,10 @@ FiveIsland_Meadow_EventScript_SailorSolomon::
 	goto_if_set FLAG_GOT_MYSTIC_TICKET, FiveIsland_Neither_Fought
 	msgbox FiveIsland_Meadow_SailorSolomon_Text_0, MSGBOX_YESNO
     msgbox FiveIsland_Meadow_SailorSolomon_Text_1
-	waitmessage
-	waitbuttonpress
     faceplayer
     msgbox FiveIsland_Meadow_SailorSolomon_Text_2
-	waitmessage
-	waitbuttonpress
     msgbox FiveIsland_Meadow_SailorSolomon_Text_3
-	waitmessage
-	waitbuttonpress
     msgbox FiveIsland_Meadow_SailorSolomon_Text_4
-	waitmessage
-	waitbuttonpress
 	checkitemspace ITEM_MYSTIC_TICKET, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq MysticTicket_NoBagSpace
@@ -83,17 +76,18 @@ FiveIsland_Meadow_EventScript_SailorSolomon::
 	release
 	end
 
+FiveIsland_TalkToCharles:
+    msgbox FiveIsland_TalkToCharles_Text
+    release
+    end
+
 MysticTicket_NoBagSpace: @ 84896ED
 	message sText_MysticTicketNoPlace
-	waitmessage
-	waitbuttonpress
 	release
 	end
 
 FiveIsland_Neither_Fought:
 	msgbox FiveIsland_Neither_Fought_Text
-	waitmessage
-	waitbuttonpress
 	release
 	end
 
@@ -101,8 +95,6 @@ FiveIsland_Lugia_Fought:
 	goto_if_set FLAG_FOUGHT_HO_OH, FiveIsland_BothLegendaryBirds_Fought
     goto_if_set FLAG_HO_OH_FLEW_AWAY, FiveIsland_BothLegendaryBirds_Fought
 	msgbox FiveIsland_Lugia_Fought_Text
-	waitmessage
-	waitbuttonpress
 	release
 	end
 
@@ -110,14 +102,12 @@ FiveIsland_HoOh_Fought:
     goto_if_set FLAG_FOUGHT_LUGIA, FiveIsland_BothLegendaryBirds_Fought
     goto_if_set FLAG_LUGIA_FLEW_AWAY, FiveIsland_BothLegendaryBirds_Fought
     msgbox FiveIsland_HoOh_Fought_Text
-	waitmessage
-	waitbuttonpress
     release
     end
 
 FiveIsland_BothLegendaryBirds_Fought:
 	msgbox FiveIsland_BothLegendaryBirds_Fought_Text
-	waitmessage
-	waitbuttonpress
+	msgbox FiveIsland_TalkToCharles_Text
+    setflag FLAG_SOLOMON_DONE
 	release
 	end
