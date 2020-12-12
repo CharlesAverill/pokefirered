@@ -1,0 +1,39 @@
+# Spoilers for new content
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+- 
+- Mew Truck event: walk into the SSAnne dock from the leftmost tiles
+- MysticTicket is available in-game: speak to Captain Solomon on Five Island

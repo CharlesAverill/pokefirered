@@ -57,3 +57,58 @@ FiveIsland_Meadow_Text_Rocket3PostBattle:: @ 818AE16
     .string "You won't be able to get in without\n"
     .string "the passwords anyway.$"
 
+FiveIsland_BothLegendaryBirds_Fought_Text:
+    .string "Seems I was right about ye, {PLAYER}.$"
+
+FiveIsland_HoOh_Fought_Text:
+	.string "Hm. The wind seems to beckon at ye.\n"
+	.string "Find the Legendary Diving Pokemon.$"
+
+FiveIsland_Lugia_Fought_Text:
+	.string "Hm. The sun seems to beckon at ye.\n"
+	.string "Find the Legendary Rainbow Pokemon.$"
+
+FiveIsland_Neither_Fought_Text:
+    .string "Hm. Come back triumphant.$"
+
+sText_MysticTicketNoPlace: @ 84897EE
+	.string "Come back when you have space for it.$"
+
+FiveIsland_Meadow_SailorSolomon_Text_0:
+	.string "Ahoy, {PLAYER}. I've heard quite a\n"
+	.string "bit about ye, though it seems ye\l"
+	.string "know very little about me.\l"
+	.string "The wind has whispered the\l"
+	.string "name of a young person who has\l"
+	.string "grown to be quite the\l"
+	.string "powerful trainer. Is this you?$"
+
+FiveIsland_Meadow_SailorSolomon_Text_1:
+	.string "Amusin'. I knew ye were the one\n"
+	.string "when I heard yer footsteps\l"
+	.string "approaching this grassy knoll.\l"
+	.string "I am called Captain Solomon\l"
+	.string "and I am the holder of a\l"
+	.string "great secret. I've been waiting\l"
+	.string "to find someone strong enough to\l"
+	.string "pass the secret to.$"
+
+FiveIsland_Meadow_SailorSolomon_Text_2:
+	.string "On my travels I have discovered\n"
+	.string "the locations of the ephemeral\l"
+	.string "Rainbow and Diving Pokemon. I\l"
+	.string "believe they lie in wait of a\l"
+	.string "powerful trainer to ally with.\l"
+	.string "And I believe that to be ye.$"
+
+FiveIsland_Meadow_SailorSolomon_Text_3:
+	.string "Take this MysticTicket. I've listed\n"
+	.string "the coordinates of the island where\l"
+	.string "the Legendary Pokemon await you.\l"
+	.string "Show it to the sailor in the port\l"
+	.string "city of Vermilion, and he will take\l"
+	.string "you to the island.$"
+
+FiveIsland_Meadow_SailorSolomon_Text_4:
+	.string "{PLAYER}! Weigh anchor and travel\n"
+	.string "to the Legendary Pokemon!$"
