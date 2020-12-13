@@ -9,6 +9,12 @@ struct TrainerMoney
     u8 value;
 };
 
+struct TrainerBall
+{
+    u8 classId;
+    u16 Ball; // make this a u16 if needed
+};
+
 struct UnknownPokemonStruct4
 {
     /*0x00*/ u16 species;
