@@ -971,6 +971,7 @@ const u8 gUnknown_841B698[] = _("KANTO");
 const u8 gUnknown_841B69E[] = _("Clear all save data areas?");
 const u8 gUnknown_841B6B9[] = _("Clearing data‥\nPlease wait.");
 const u8 gText_Player[] = _("PLAYER");
+const u8 gText_PlayerUsedVar2[] = _("{PLAYER} used {STR_VAR_2}.");
 const u8 gText_Time[] = _("TIME");
 const u8 gText_Colon[] = _(":");
 const u8 gText_Pokedex[] = _("POKéDEX");

@@ -513,6 +513,7 @@ extern const u8 gText_MysteryGift[];
 extern const u8 gText_WirelessAdapterIsNotConnected[];
 extern const u8 gText_MysteryGiftCantBeUsedWhileWirelessAdapterIsAttached[];
 extern const u8 gText_Player[];
+extern const u8 gText_PlayerUsedVar2[];
 extern const u8 gText_Time[];
 extern const u8 gText_Colon[];
 extern const u8 gText_Pokedex[];

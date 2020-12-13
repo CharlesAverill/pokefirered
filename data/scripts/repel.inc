@@ -8,7 +8,7 @@ EventScript_RepelWoreOff:: @ 82A4B2A
 	copyvar VAR_0x8004, VAR_REPEL_LAST_USED
 	callnative ItemId_GetHoldEffectParam_Script
 	copyvar VAR_REPEL_STEP_COUNT, VAR_RESULT
-	bufferitemname 1, VAR_REPEL_LAST_USED
+	bufferitemnameplural 1, VAR_REPEL_LAST_USED 1
 	removeitem VAR_REPEL_LAST_USED, 1
 	playse SE_REPEL
 	msgbox gText_PlayerUsedVar2, MSGBOX_SIGN
