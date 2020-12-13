@@ -134,9 +134,12 @@ static void BuyMenuCollectObjectEventData(void);
 static void BuyMenuDrawObjectEvents(void);
 static void BuyMenuCopyTilemapData(void);
 static void BuyMenuPrintItemQuantityAndPrice(u8 taskId);
+static void BuyMenuPrintItemPrice(u8 taskId);
 static void Task_BuyMenu(u8 taskId);
 static void Task_BuyHowManyDialogueInit(u8 taskId);
 static void Task_BuyHowManyDialogueHandleInput(u8 taskId);
+static void Task_BuyOneDialogueInit(u8 taskId);
+static void Task_BuyOneDialogueHandleInput(u8 taskId);
 static void CreateBuyMenuConfirmPurchaseWindow(u8 taskId);
 static void BuyMenuTryMakePurchase(u8 taskId);
 static void BuyMenuSubtractMoney(u8 taskId);
@@ -911,6 +914,15 @@ static void Task_BuyMenu(u8 taskId)
             {
                 BuyMenuDisplayMessage(taskId, gText_YouDontHaveMoney, BuyMenuReturnToItemList);
             }
+            else if (ItemId_GetPocket(itemId) == POCKET_TM_CASE && CheckBagHasItem(itemId, 1))
+            {
+                BuyMenuDisplayMessage(taskId, gText_YouAlreadyHaveThis, BuyMenuReturnToItemList);
+            }
+            else if (ItemId_GetPocket(itemId) == POCKET_TM_CASE)
+            {
+                CopyItemName(itemId, gStringVar1);
+                Task_BuyOneDialogueInit(taskId);
+            }
             else
             {
                 CopyItemName(itemId, gStringVar1);
@@ -945,6 +957,30 @@ static void Task_BuyHowManyDialogueInit(u8 taskId)
         BuyQuantityAddScrollIndicatorArrows();
     
     gTasks[taskId].func = Task_BuyHowManyDialogueHandleInput;    
+}
+
+static void Task_BuyOneDialogueInit(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    u16 quantityInBag = BagGetQuantityByItemId(tItemId);
+    u16 maxQuantity;
+
+    tItemCount = 1;
+    maxQuantity = GetMoney(&gSaveBlock1Ptr->money) > itemid_get_market_price(tItemId)? 1 : 0;
+    gShopData.maxQuantity = (u8)maxQuantity;
+
+    gTasks[taskId].func = Task_BuyOneDialogueHandleInput;
+}
+
+static void Task_BuyOneDialogueHandleInput(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    PlaySE(SE_SELECT);
+    PutWindowTilemap(4);
+    CopyItemName(tItemId, gStringVar1);
+    ConvertIntToDecimalStringN(gStringVar2, tItemCount, STR_CONV_MODE_LEFT_ALIGN, 2);
+    ConvertIntToDecimalStringN(gStringVar3, gShopData.itemPrice, STR_CONV_MODE_LEFT_ALIGN, 8);
+    BuyMenuDisplayMessage(taskId, gText_Var1AndYouWantedVar2, CreateBuyMenuConfirmPurchaseWindow);
 }
 
 static void Task_BuyHowManyDialogueHandleInput(u8 taskId)

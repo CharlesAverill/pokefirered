@@ -648,6 +648,10 @@ const u8 * ItemId_GetDescription(u16 itemId)
 
 bool8 itemid_is_unique(u16 itemId)
 {
+    return gItems[SanitizeItemId(itemId)].importance >= 1;
+}
+
+u8 itemid_get_importance(u16 itemId){
     return gItems[SanitizeItemId(itemId)].importance;
 }
 

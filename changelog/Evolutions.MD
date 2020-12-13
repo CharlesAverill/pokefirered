@@ -1,4 +1,5 @@
 # Evolution Changes
+All evolution stones are available for purchase in the Celadon Department Store
 - Kadabra @ l37
 - Machamp @ l37
 - Golem @ l37

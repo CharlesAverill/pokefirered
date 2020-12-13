@@ -23,6 +23,8 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 
+#include <string.h>
+
 #define TM_CASE_TM_TAG 400
 
 struct UnkStruct_203B10C
@@ -554,15 +556,47 @@ static void TMCase_MoveCursorFunc(s32 itemIndex, bool8 onInit, struct ListMenu *
     TMCase_MoveCursor_UpdatePrintedTMInfo(itemId);
 }
 
+// Had to add these two functions because strstr wasn't working
+static int string_len(char * string){
+    int len = 0;
+    while(*string!='\0'){
+        len++;
+        string++;
+    }
+    return len;
+}
+
+static int string_contains(char *string, char *substring){
+    int start_index = 0;
+    int string_index=0, substring_index=0;
+    int substring_len =string_len(substring);
+    int s_len = string_len(string);
+    while(substring_index<substring_len && string_index<s_len){
+        if(*(string+string_index)==*(substring+substring_index)){
+            substring_index++;
+        }
+        string_index++;
+        if(substring_index==substring_len){
+            return string_index-substring_len+1;
+        }
+    }
+
+    return 0;
+
+}
+
 static void TMCase_ItemPrintFunc(u8 windowId, s32 itemId, u8 y)
 {
     if (itemId != -2)
     {
-        if (!itemid_is_unique(BagGetItemIdByPocketPosition(POCKET_TM_CASE, itemId)))
+        u8 *TM = "TM";
+        //if (!itemid_is_unique(BagGetItemIdByPocketPosition(POCKET_TM_CASE, itemId)))
+        u16 bagItemId = BagGetItemIdByPocketPosition(POCKET_TM_CASE, itemId);
+        if(bagItemId >= ITEM_TM01 && bagItemId <= ITEM_TM50)
         {
             ConvertIntToDecimalStringN(gStringVar1, BagGetQuantityByPocketPosition(POCKET_TM_CASE, itemId), STR_CONV_MODE_RIGHT_ALIGN, 3);
             StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
-            AddTextPrinterParameterized_ColorByIndex(windowId, 0, gStringVar4, 0x7E, y, 0, 0, 0xFF, 1);
+            // AddTextPrinterParameterized_ColorByIndex(windowId, 0, gStringVar4, 0x7E, y, 0, 0, 0xFF, 1);
         }
         else
         {

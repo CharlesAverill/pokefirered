@@ -269,7 +269,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM:: @ 816CF09
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_YouWantTM, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrize
+	goto CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrizeTM
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem:: @ 816CF22
@@ -294,9 +294,30 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrize:: @ 816CF3F
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
 	end
 
+CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrizeTM::
+	getitemname 0, VAR_TEMP_1
+	checkcoins VAR_RESULT
+	compare VAR_RESULT, VAR_TEMP_2
+	goto_if_lt CeladonCity_GameCorner_PrizeRoom_EventScript_NotEnoughCoins
+	checkitem VAR_TEMP_1, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq CeladonCity_GameCorner_PrizeRoom_EventScript_TMAlreadyOwned
+	removecoins VAR_TEMP_2
+	updatecoinsbox 0, 5
+	giveitem VAR_TEMP_1
+	goto CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
+	end
+
 CeladonCity_GameCorner_PrizeRoom_EventScript_BagFull:: @ 816CF79
 	textcolor 3
 	msgbox Text_TooBadBagFull
+	hidecoinsbox 0, 0
+	release
+	end
+
+CeladonCity_GameCorner_PrizeRoom_EventScript_TMAlreadyOwned:: @ 816CF79
+	textcolor 3
+	msgbox CeladonCity_GameCorner_PrizeRoom_Text_AlreadyHaveTM
 	hidecoinsbox 0, 0
 	release
 	end
