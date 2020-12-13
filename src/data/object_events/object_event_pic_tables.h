@@ -1752,3 +1752,36 @@ const struct SpriteFrameImage gObjectEventPicTable_Mom[] = {
     overworld_frame(gObjectEventPic_Mom, 2, 4, 2),
     overworld_frame(gObjectEventPic_Mom, 2, 4, 2),
 };
+
+const struct SpriteFrameImage gObjectEventPicTable_Latios[] = {
+        overworld_frame(gObjectEventPic_Latios, 4, 4, 0),
+};
+const struct SpriteFrameImage gObjectEventPicTable_Latias[] = {
+        overworld_frame(gObjectEventPic_Latias, 4, 4, 0),
+};
+const struct SpriteFrameImage gObjectEventPicTable_Kyogre[] = {
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 0),
+};
+const struct SpriteFrameImage gObjectEventPicTable_Groudon[] = {
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
+};
+const struct SpriteFrameImage gObjectEventPicTable_Rayquaza[] = {
+        overworld_frame(gObjectEventPic_Rayquaza, 8, 8, 0),
+};
+const struct SpriteFrameImage gObjectEventPicTable_Regirock[] = {
+        overworld_frame(gObjectEventPic_Regirock, 4, 4, 0),
+};
+const struct SpriteFrameImage gObjectEventPicTable_Regice[] = {
+        overworld_frame(gObjectEventPic_Regice, 4, 4, 0),
+};
+const struct SpriteFrameImage gObjectEventPicTable_Registeel[] = {
+        overworld_frame(gObjectEventPic_Registeel, 4, 4, 0),
+};

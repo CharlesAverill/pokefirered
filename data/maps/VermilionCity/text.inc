@@ -90,16 +90,16 @@ VermilionCity_Text_BoardSeagallopRainbowPass:: @ 817FBB8
     .string "a SEAGALLOP ferry?$"
 
 VermilionCity_Text_OhMysticTicketTakeYouToNavelRock:: @ 817FC00
-    .string "Oh! That's a MYSTICTICKET!\n"
-    .string "Now that is rare.\p"
-    .string "We'll be happy to take you to\n"
-    .string "NAVEL ROCK anytime.$"
+    .string "Coordinates from Solomon,\n"
+    .string "eh? Now that is rare.\p"
+    .string "I can take you there\n"
+    .string "anytime.$"
 
 VermilionCity_Text_OhAuroraTicketTakeYouToBirthIsland:: @ 817FC5F
-    .string "Oh! That's an AURORATICKET!\n"
-    .string "Now that is rare.\p"
-    .string "We'll be happy to take you to\n"
-    .string "BIRTH ISLAND anytime.$"
+    .string "Coordinates from Charles,\n"
+    .string "eh? Now that is rare.\p"
+    .string "I can take you there\n"
+    .string "anytime.$"
 
 VermilionCity_Text_BoardSeagallopFerry:: @ 817FCC1
     .string "Would you like to board\n"

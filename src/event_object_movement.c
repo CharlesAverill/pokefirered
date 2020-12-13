@@ -485,6 +485,14 @@ const u8 gInitialMovementTypeFacingDirections[NUM_FIELD_MAP_OBJECT_TEMPLATES] = 
 #define OBJ_EVENT_PAL_TAG_33 0x1122
 #define OBJ_EVENT_PAL_TAG_34 0x1123
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
+#define OBJ_EVENT_PAL_TAG_LATIOS 0x1200
+#define OBJ_EVENT_PAL_TAG_LATIAS 0x1201
+#define OBJ_EVENT_PAL_TAG_GROUDON 0x1202
+#define OBJ_EVENT_PAL_TAG_KYOGRE 0x1203
+#define OBJ_EVENT_PAL_TAG_RAYQUAZA 0x1204
+#define OBJ_EVENT_PAL_TAG_REGIROCK 0x1205
+#define OBJ_EVENT_PAL_TAG_REGICE 0x1206
+#define OBJ_EVENT_PAL_TAG_REGISTEEL 0x1207
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
 #include "data/field_effects/field_effect_object_template_pointers.h"
@@ -513,6 +521,14 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gUnknown_8394EA8, OBJ_EVENT_PAL_TAG_20},
     {gUnknown_8395AE8, OBJ_EVENT_PAL_TAG_11},
     {gUnknown_83952C8, OBJ_EVENT_PAL_TAG_21},
+    {gObjectEventPalette_Latios, OBJ_EVENT_PAL_TAG_LATIOS},
+    {gObjectEventPalette_Latias, OBJ_EVENT_PAL_TAG_LATIAS},
+    {gObjectEventPalette_Groudon, OBJ_EVENT_PAL_TAG_GROUDON},
+    {gObjectEventPalette_Kyogre, OBJ_EVENT_PAL_TAG_KYOGRE},
+    {gObjectEventPalette_Rayquaza, OBJ_EVENT_PAL_TAG_RAYQUAZA},
+    {gObjectEventPalette_Regirock, OBJ_EVENT_PAL_TAG_REGIROCK},
+    {gObjectEventPalette_Regice, OBJ_EVENT_PAL_TAG_REGICE},
+    {gObjectEventPalette_Registeel, OBJ_EVENT_PAL_TAG_REGISTEEL},
     {},
 };
 
