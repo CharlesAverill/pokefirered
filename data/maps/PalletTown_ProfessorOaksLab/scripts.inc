@@ -1019,6 +1019,8 @@ PalletTown_ProfessorOaksLab_EventScript_GivePlayerMoreBalls:: @ 8169A45
 	msgbox PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex
 	giveitem_msg PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls, ITEM_POKE_BALL, 5
 	setflag FLAG_GOT_POKEBALLS_FROM_OAK_AFTER_22_RIVAL
+	special 0x16F
+	setflag FLAG_SYS_NATIONAL_DEX
 	release
 	end
 
