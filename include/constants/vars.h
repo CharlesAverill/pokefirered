@@ -331,7 +331,7 @@
 #define VAR_MON_BOX_POS            0x8011
 #define VAR_TEXT_COLOR             0x8012
 #define VAR_PREV_TEXT_COLOR        0x8013
-#define VAR_0x8014                 0x8014 // Unknown/unused
+#define VAR_REPEL_LAST_USED                 0x8014 // Unknown/unused
 
 #define SPECIAL_VARS_END           0x8014
 
