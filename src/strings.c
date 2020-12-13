@@ -986,6 +986,8 @@ const u8 gString_QuitPlaying[] = _("Quit playing?");
 const u8 gString_SlotMachineControls[] = _("{DPAD_LEFTRIGHT}COMBOS {DPAD_DOWN}WAGER {A_BUTTON}STOP {B_BUTTON}EXIT");
 const u8 gUnknown_841B798[] = _("おしえテレビ");
 const u8 gUnknown_841B79F[] = _("おしまい");
+const u8 gText_ThrowInPremierBalls[] = _("I'll throw in some Premier Balls, too.{PAUSE_UNTIL_PRESS}");
+const u8 gText_ThrowInPremierBall[] = _("I'll throw in a Premier Ball, too.{PAUSE_UNTIL_PRESS}");
 
 #include "data/text/teachy_tv.h"
 

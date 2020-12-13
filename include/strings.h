@@ -160,6 +160,9 @@ extern const u8 gString_Someone[];
 extern const u8 gString_Help[];
 extern const u8 gString_HelpSystem_ClearTo8[];
 
+extern const u8 gText_ThrowInPremierBalls[];
+extern const u8 gText_ThrowInPremierBall[];
+
 extern const u8 gText_Var1IsSelected[];
 extern const u8 gOtherText_WhereShouldTheStrVar1BePlaced[];
 extern const u8 gOtherText_Powder[];
