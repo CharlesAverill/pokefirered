@@ -17,8 +17,13 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Root @ Victory Road 3F
 - Remaining Helix/Dome @ Seafoam Islands
 ## Miscellaneous
-- Route 2: Ledyba
+- Route 2: Ledyba, Wurmple
 - Route 3: Togepi
+- Route 4: Poochyena, Taillow
+- Route 5: Poochyena, Taillow
+- Route 6: Seedot, Taillow
+- Route 7: Ralts, Kirlia
+- Route 7: Ralts, Kirlia, Muk
 - Route 9: Zigzagoon, Sentret, Phanpy, Marill, Hoothoot, Tyrogue
 - Route 10: Hoppip, Paras
 - Route 11: Ditto, Yanma, Sunkern, Wobuffet
@@ -27,12 +32,15 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Route 16: Skarmory, Swablu, Murkrow
 - Route 17: Skarmory, Swablu, Phanpy
 - Route 18: Skarmory, Swablu
+- Route 19: Wingull, Pelipper (Surfing)
 - Route 20: Qwilfish, Krabby, Corsola, Remoraid (Surfing), Octillery (Super Rod)
 - Route 21 (S): Chinchou (Surfing)
 - Route 21 (N): Lickitung, Eevee
 - Route 22: Whismur
 - Route 24: Shroomish
 - Route 25: Feebas (fishing), Shroomish
+- Viridian City: Lotad (fishing/surfing)
+- Fuchsia City: Wingull
 - Viridian Forest: Pineco, Butterfree, Beedrill, Oddish, Spinarak
 - Mt. Moon: Dunsparce (1F), Baltoy, Trapinch, Larvitar (B2F)
 - Safari Zone: Heracross (E), Mareep (W), Girafarig (N), Miltank (W), Smeargle (E), Farfetch'd (E)
@@ -44,6 +52,7 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Diglett's Cave: Aron
 - Cinnabar Island: Marill (surfing), Clamperl (fishing)
 - Pokemon Tower: Misdreavus (7F), Shuppet (5F-7F), Duskull (3F-4F), Unown
+- Altering Cave: All unused Altering Cave event pokemon
 ## New Locations
 - Cinnabar Volcano
     - Numel, Houndour, Camerupt, Golem, Torkoal, Nidoking, Steelix, Houndoom, Sudowoodo, Shuckle, Salamence, Metagross (Walking)
