@@ -359,3 +359,16 @@ CinnabarIsland_EventScript_GymSign:: @ 8167223
 	msgbox CinnabarIsland_Text_GymSign
 	releaseall
 	end
+
+CinnabarIsland_EventScript_Informative_Man::
+    lock
+    faceplayer
+    msgbox CinnabarIsland_EventScript_Informative_Text
+    release
+    end
+
+CinnabarIsland_EventScript_Informative_Text:
+    .string "You know, the Gym here is built on\n"
+    .string "a dormant volcano! Some say it's\l"
+    .string "dangerous to live this close, but\l"
+    .string "I couldn't be more at peace.$"

@@ -15,21 +15,22 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_CINNABAR_ISLAND",
+      "direction": "left",
       "offset": 0,
-      "direction": "left"
+      "map": "MAP_CINNABAR_ISLAND"
     },
     {
-      "map": "MAP_ROUTE19",
+      "direction": "right",
       "offset": -40,
-      "direction": "right"
+      "map": "MAP_ROUTE19"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+      "in_connection": false,
       "x": 8,
-      "y": 11,
+      "y": 17,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 1,
@@ -41,8 +42,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "in_connection": false,
       "x": 16,
-      "y": 14,
+      "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -54,8 +56,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+      "in_connection": false,
       "x": 34,
-      "y": 7,
+      "y": 13,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -67,8 +70,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKER",
+      "in_connection": false,
       "x": 43,
-      "y": 9,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -80,8 +84,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+      "in_connection": false,
       "x": 23,
-      "y": 10,
+      "y": 16,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
       "movement_range_x": 5,
@@ -93,8 +98,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "in_connection": false,
       "x": 73,
-      "y": 16,
+      "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -106,6 +112,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+      "in_connection": false,
       "x": 111,
       "y": 9,
       "elevation": 1,
@@ -119,6 +126,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
+      "in_connection": false,
       "x": 106,
       "y": 11,
       "elevation": 1,
@@ -132,6 +140,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+      "in_connection": false,
       "x": 93,
       "y": 10,
       "elevation": 1,
@@ -145,8 +154,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
+      "in_connection": false,
       "x": 54,
-      "y": 11,
+      "y": 17,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -158,8 +168,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "in_connection": false,
       "x": 69,
-      "y": 3,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 2,
@@ -173,25 +184,27 @@
   "warp_events": [
     {
       "x": 60,
-      "y": 8,
+      "y": 14,
       "elevation": 3,
       "dest_map": "MAP_SEAFOAM_ISLANDS_1F",
       "dest_warp_id": 3
     },
     {
       "x": 72,
-      "y": 14,
+      "y": 20,
       "elevation": 3,
       "dest_map": "MAP_SEAFOAM_ISLANDS_1F",
       "dest_warp_id": 4
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
       "x": 68,
-      "y": 14,
+      "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route20_EventScript_SeafoamIslandsSign"
@@ -199,7 +212,7 @@
     {
       "type": "sign",
       "x": 64,
-      "y": 8,
+      "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route20_EventScript_SeafoamIslandsSign"
@@ -207,7 +220,7 @@
     {
       "type": "hidden_item",
       "x": 23,
-      "y": 6,
+      "y": 12,
       "elevation": 3,
       "item": "ITEM_STARDUST",
       "flag": "HIDDEN_ITEM_ROUTE20_STARDUST",

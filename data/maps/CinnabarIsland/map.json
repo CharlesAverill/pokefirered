@@ -29,8 +29,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "in_connection": false,
-      "x": 14,
-      "y": 6,
+      "x": 11,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -43,8 +43,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "in_connection": false,
-      "x": 11,
-      "y": 11,
+      "x": 13,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -58,7 +58,7 @@
       "graphics_id": "OBJ_EVENT_GFX_BILL",
       "in_connection": false,
       "x": 20,
-      "y": 7,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -72,7 +72,7 @@
       "graphics_id": "OBJ_EVENT_GFX_SEAGALLOP",
       "in_connection": false,
       "x": 23,
-      "y": 7,
+      "y": 16,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -81,40 +81,54 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_CINNABAR_SEAGALLOP"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "in_connection": false,
+      "x": 8,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CinnabarIsland_EventScript_Informative_Man",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 8,
-      "y": 3,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_MANSION_1F",
       "dest_warp_id": 1
     },
     {
-      "x": 20,
-      "y": 4,
+      "x": 18,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_CINNABAR_ISLAND_GYM",
       "dest_warp_id": 1
     },
     {
       "x": 8,
-      "y": 9,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE",
       "dest_warp_id": 1
     },
     {
       "x": 14,
-      "y": 11,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_CINNABAR_ISLAND_POKEMON_CENTER_1F",
       "dest_warp_id": 0
     },
     {
       "x": 19,
-      "y": 11,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_CINNABAR_ISLAND_MART",
       "dest_warp_id": 1
@@ -123,8 +137,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 20,
-      "y": 5,
+      "x": 18,
+      "y": 9,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -135,7 +149,7 @@
     {
       "type": "sign",
       "x": 12,
-      "y": 3,
+      "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "CinnabarIsland_EventScript_IslandSign"
@@ -143,15 +157,15 @@
     {
       "type": "sign",
       "x": 9,
-      "y": 9,
+      "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "CinnabarIsland_EventScript_PokemonLabSign"
     },
     {
       "type": "sign",
-      "x": 22,
-      "y": 5,
+      "x": 16,
+      "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "CinnabarIsland_EventScript_GymSign"
@@ -159,7 +173,7 @@
     {
       "type": "sign",
       "x": 10,
-      "y": 9,
+      "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "CinnabarIsland_EventScript_PokemonLabSign"
