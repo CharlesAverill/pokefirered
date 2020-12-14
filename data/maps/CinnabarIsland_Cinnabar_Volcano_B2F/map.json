@@ -1,0 +1,56 @@
+{
+  "id": "MAP_CINNABAR_ISLAND_CINNABAR_VOLCANO_B2F",
+  "name": "CinnabarIsland_Cinnabar_Volcano_B2F",
+  "layout": "LAYOUT_CINNABAR_ISLAND_CINNABAR_VOLCANO_B2F",
+  "music": "MUS_ENCOUNTER_DEOXYS",
+  "region_map_section": "MAPSEC_CINNABAR_VOLCANO",
+  "requires_flash": true,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "floor_number": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GROUDON",
+      "in_connection": false,
+      "x": 17,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CinnabarIsland_Cinnabar_Volcano_B2F_Initiate_Groudon_Battle",
+      "flag": "FLAG_FOUGHT_GROUDON"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_CINNABAR_ISLAND_CINNABAR_VOLCANO_B1F",
+      "dest_warp_id": 1
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "CinnabarIsland_Cinnabar_Volcano_B2F_Approach_Groudon"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

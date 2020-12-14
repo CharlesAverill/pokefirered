@@ -1076,6 +1076,7 @@ extern const u8 gText_RegionMap_AreaDesc_TanobyRuins[];
 extern const u8 gText_RegionMap_AreaDesc_AlteringCave[];
 extern const u8 gText_RegionMap_AreaDesc_PatternBush[];
 extern const u8 gText_RegionMap_AreaDesc_DottedHole[];
+extern const u8 gText_RegionMap_AreaDesc_CinnabarVolcano[];
 
 // field_screen_effect
 extern const u8 gText_PlayerScurriedToCenter[];

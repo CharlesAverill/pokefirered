@@ -1366,3 +1366,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/CharlesLaboratory/scripts.inc"
 	.include "data/maps/CharlesLaboratory/text.inc"
+
+	.include "data/maps/CinnabarIsland_Cinnabar_Volcano_B1F/scripts.inc"
+	.include "data/maps/CinnabarIsland_Cinnabar_Volcano_B1F/text.inc"
+
+	.include "data/maps/CinnabarIsland_Cinnabar_Volcano_B2F/scripts.inc"
+	.include "data/maps/CinnabarIsland_Cinnabar_Volcano_B2F/text.inc"

@@ -360,6 +360,8 @@
 #define MAP_CINNABAR_ISLAND_POKEMON_CENTER_1F           (5 | (12 << 8))
 #define MAP_CINNABAR_ISLAND_POKEMON_CENTER_2F           (6 | (12 << 8))
 #define MAP_CINNABAR_ISLAND_MART                        (7 | (12 << 8))
+#define MAP_CINNABAR_ISLAND_CINNABAR_VOLCANO_B1F        (8 | (12 << 8))
+#define MAP_CINNABAR_ISLAND_CINNABAR_VOLCANO_B2F        (9 | (12 << 8))
 
 // Map Group 13
 #define MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F (0 | (13 << 8))

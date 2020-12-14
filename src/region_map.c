@@ -711,7 +711,7 @@ static const struct DungeonMapInfo sDungeonInfo[] = {
         .id = MAPSEC_DOTTED_HOLE,
         .name = gMapSecName_DottedHole,
         .desc = gText_RegionMap_AreaDesc_DottedHole
-    }
+    },
 };
 
 static const struct OamData sOamData_MapEdge = {
@@ -825,6 +825,7 @@ static const u8 *const sMapNames[] = {
     [MAPSEC_CELADON_CITY        - MAPSECS_KANTO] = gMapSecName_CeladonCity,
     [MAPSEC_FUCHSIA_CITY        - MAPSECS_KANTO] = gMapSecName_FuchsiaCity,
     [MAPSEC_CINNABAR_ISLAND     - MAPSECS_KANTO] = gMapSecName_CinnabarIsland,
+    [MAPSEC_CINNABAR_VOLCANO    - MAPSECS_KANTO] = gMapSecName_CinnabarVolcano,
     [MAPSEC_INDIGO_PLATEAU      - MAPSECS_KANTO] = gMapSecName_IndigoPlateau,
     [MAPSEC_SAFFRON_CITY        - MAPSECS_KANTO] = gMapSecName_SaffronCity,
     [MAPSEC_ROUTE_4_POKECENTER  - MAPSECS_KANTO] = gMapSecName_Route4,

@@ -191,10 +191,10 @@
 #define FLAG_REVIVED_CLAW               0x0B5
 #define FLAG_REVIVED_ROOT               0x0B6
 #define FLAG_HIDE_DOUBLE_FOSSIL               0x0B7
-#define FLAG_0x0B8               0x0B8
-#define FLAG_0x0B9               0x0B9
-#define FLAG_0x0BA               0x0BA
-#define FLAG_0x0BB               0x0BB
+#define FLAG_FOUGHT_GROUDON               0x0B8
+#define FLAG_FOUGHT_KYOGRE               0x0B9
+#define FLAG_FOUGHT_RAYQUAZA               0x0BA
+#define FLAG_IS_CHAMPION               0x0BB
 #define FLAG_0x0BC               0x0BC
 #define FLAG_0x0BD               0x0BD
 #define FLAG_0x0BE               0x0BE

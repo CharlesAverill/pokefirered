@@ -203,7 +203,7 @@ static const u8 sItemEffect_Calcium[10] = {
 };
 
 static const u8 sItemEffect_PomegBerry[10] = {
-    [5] = ITEM5_EV_HP | ITEM5_FRIENDSHIP_ALL,
+    [5] = ITEM4_EV_HP | ITEM5_FRIENDSHIP_ALL,
     [6] = -10,
     [7] = 5,
     [8] = 3,
@@ -211,7 +211,7 @@ static const u8 sItemEffect_PomegBerry[10] = {
 };
 
 static const u8 sItemEffect_KelpsyBerry[10] = {
-    [5] = ITEM5_EV_ATK | ITEM5_FRIENDSHIP_ALL,
+    [5] = ITEM4_EV_HP | ITEM5_FRIENDSHIP_ALL,
     [6] = -10,
     [7] = 5,
     [8] = 3,

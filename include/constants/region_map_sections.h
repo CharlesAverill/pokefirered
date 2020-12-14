@@ -204,8 +204,9 @@
 #define MAPSEC_VIAPOIS_CHAMBER              0xC2
 #define MAPSEC_EMBER_SPA                    0xC3
 #define MAPSEC_SPECIAL_AREA                 0xC4
-#define MAPSEC_NONE                         0xC5
-#define MAPSEC_COUNT                        0xC6
+#define MAPSEC_CINNABAR_VOLCANO             0xC5
+#define MAPSEC_NONE                         0xC6
+#define MAPSEC_COUNT                        0xC7
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

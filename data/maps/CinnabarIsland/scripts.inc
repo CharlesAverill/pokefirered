@@ -372,3 +372,17 @@ CinnabarIsland_EventScript_Informative_Text:
     .string "a dormant volcano! Some say it's\l"
     .string "dangerous to live this close, but\l"
     .string "I couldn't be more at peace.$"
+
+CinnabarIsland_EventScript_Volcano_Blocker::
+    lock
+    faceplayer
+    msgbox SorryCantLetYouPass
+    release
+    end
+
+SorryCantLetYouPass:
+    .string "I apologize, but nobody is\n"
+    .string "allowed in CINNABAR VOLCANO right\l"
+    .string "now. Silph Co. is investigating\l"
+    .string "the volcano's core, hoping to\l"
+    .string "prevent any coming catastrophes.$"

@@ -403,7 +403,9 @@
     "CinnabarIsland_PokemonLab_ExperimentRoom",
     "CinnabarIsland_PokemonCenter_1F",
     "CinnabarIsland_PokemonCenter_2F",
-    "CinnabarIsland_Mart"
+    "CinnabarIsland_Mart",
+    "CinnabarIsland_Cinnabar_Volcano_B1F",
+    "CinnabarIsland_Cinnabar_Volcano_B2F"
   ],
   "gMapGroup13": [
     "IndigoPlateau_PokemonCenter_1F",

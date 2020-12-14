@@ -1469,3 +1469,26 @@ gTilesetPalettes_HallOfFame:: @ 829F4C8
 	.incbin "data/tilesets/secondary/hall_of_fame/palettes/13.gbapal"
 	.incbin "data/tilesets/secondary/hall_of_fame/palettes/14.gbapal"
 	.incbin "data/tilesets/secondary/hall_of_fame/palettes/15.gbapal"
+
+	.align 2
+gTilesetTiles_CaveEmerald::
+	.incbin "data/tilesets/secondary/cave_emerald/tiles.4bpp.lz"
+
+    .align 2
+gTilesetPalettes_CaveEmerald::
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/12.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/13.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/14.gbapal"
+	.incbin "data/tilesets/secondary/cave_emerald/palettes/15.gbapal"

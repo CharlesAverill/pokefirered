@@ -4392,6 +4392,30 @@
       "secondary_tileset": "gTileset_CableClub",
       "border_filepath": "data/layouts/CharlesLaboratory/border.bin",
       "blockdata_filepath": "data/layouts/CharlesLaboratory/map.bin"
+    },
+    {
+      "id": "LAYOUT_CINNABAR_ISLAND_CINNABAR_VOLCANO_B1F",
+      "name": "CinnabarIsland_Cinnabar_Volcano_B1F_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CinnabarIsland_Cinnabar_Volcano_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarIsland_Cinnabar_Volcano_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CINNABAR_ISLAND_CINNABAR_VOLCANO_B2F",
+      "name": "CinnabarIsland_Cinnabar_Volcano_B2F_Layout",
+      "width": 27,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/CinnabarIsland_Cinnabar_Volcano_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarIsland_Cinnabar_Volcano_B2F/map.bin"
     }
   ]
 }

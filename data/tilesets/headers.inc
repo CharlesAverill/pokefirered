@@ -746,4 +746,12 @@ gTileset_HallOfFame::
 	.4byte gMetatiles_HallOfFame
 	.4byte 0x0
 	.4byte gMetatileAttributes_HallOfFame
-
+gTileset_CaveEmerald::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_CaveEmerald
+	.4byte gTilesetPalettes_CaveEmerald
+	.4byte gMetatiles_CaveEmerald
+	.4byte 0x0
+	.4byte gMetatileAttributes_CaveEmerald

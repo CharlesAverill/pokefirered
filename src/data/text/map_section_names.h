@@ -7,6 +7,7 @@ const u8 gMapSecName_VermilionCity[] = _("VERMILION CITY");
 const u8 gMapSecName_CeladonCity[] = _("CELADON CITY");
 const u8 gMapSecName_FuchsiaCity[] = _("FUCHSIA CITY");
 const u8 gMapSecName_CinnabarIsland[] = _("CINNABAR ISLAND");
+const u8 gMapSecName_CinnabarVolcano[] = _("CINNABAR 2SLAND");
 const u8 gMapSecName_IndigoPlateau[] = _("INDIGO PLATEAU");
 const u8 gMapSecName_SaffronCity[] = _("SAFFRON CITY");
 const u8 gMapSecName_Route4[] = _("ROUTE 4");
