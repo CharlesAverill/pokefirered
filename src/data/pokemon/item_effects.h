@@ -202,6 +202,54 @@ static const u8 sItemEffect_Calcium[10] = {
     [9] = 2,
 };
 
+static const u8 sItemEffect_PomegBerry[10] = {
+    [5] = ITEM5_EV_HP | ITEM5_FRIENDSHIP_ALL,
+    [6] = -10,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+
+static const u8 sItemEffect_KelpsyBerry[10] = {
+    [5] = ITEM5_EV_ATK | ITEM5_FRIENDSHIP_ALL,
+    [6] = -10,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+
+static const u8 sItemEffect_QualotBerry[10] = {
+        [5] = ITEM5_EV_DEF | ITEM5_FRIENDSHIP_ALL,
+        [6] = -10,
+        [7] = 5,
+        [8] = 3,
+        [9] = 2,
+};
+
+static const u8 sItemEffect_TamatoBerry[10] = {
+        [5] = ITEM5_EV_SPEED | ITEM5_FRIENDSHIP_ALL,
+        [6] = -10,
+        [7] = 5,
+        [8] = 3,
+        [9] = 2,
+};
+
+static const u8 sItemEffect_HondewBerry[10] = {
+        [5] = ITEM5_EV_SPATK | ITEM5_FRIENDSHIP_ALL,
+        [6] = -10,
+        [7] = 5,
+        [8] = 3,
+        [9] = 2,
+};
+
+static const u8 sItemEffect_GrepaBerry[10] = {
+        [5] = ITEM5_EV_SPDEF | ITEM5_FRIENDSHIP_ALL,
+        [6] = -10,
+        [7] = 5,
+        [8] = 3,
+        [9] = 2,
+};
+
 static const u8 sItemEffect_RareCandy[10] = {
     [3] = ITEM3_LEVEL_UP,
     [4] = ITEM4_REVIVE | ITEM4_HEAL_HP,
@@ -389,6 +437,12 @@ const u8 *const gItemEffectTable[] =
     [ITEM_IRON - ITEM_POTION] = sItemEffect_Iron,
     [ITEM_CARBOS - ITEM_POTION] = sItemEffect_Carbos,
     [ITEM_CALCIUM - ITEM_POTION] = sItemEffect_Calcium,
+    [ITEM_POMEG_BERRY - ITEM_POTION] = sItemEffect_PomegBerry,
+    [ITEM_KELPSY_BERRY - ITEM_POTION] = sItemEffect_KelpsyBerry,
+    [ITEM_QUALOT_BERRY - ITEM_POTION] = sItemEffect_QualotBerry,
+    [ITEM_TAMATO_BERRY - ITEM_POTION] = sItemEffect_TamatoBerry,
+    [ITEM_HONDEW_BERRY - ITEM_POTION] = sItemEffect_HondewBerry,
+    [ITEM_GREPA_BERRY - ITEM_POTION] = sItemEffect_GrepaBerry,
     [ITEM_RARE_CANDY - ITEM_POTION] = sItemEffect_RareCandy,
     [ITEM_PP_UP - ITEM_POTION] = sItemEffect_PPUp,
     [ITEM_ZINC - ITEM_POTION] = sItemEffect_Zinc,
