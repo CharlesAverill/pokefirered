@@ -1372,3 +1372,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/CinnabarIsland_Cinnabar_Volcano_B2F/scripts.inc"
 	.include "data/maps/CinnabarIsland_Cinnabar_Volcano_B2F/text.inc"
+
+	.include "data/maps/DiglettsCave_RockPeakChamber/scripts.inc"
+	.include "data/maps/DiglettsCave_RockPeakChamber/text.inc"

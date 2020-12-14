@@ -1,0 +1,35 @@
+{
+  "id": "MAP_DIGLETTS_CAVE_ROCK_PEAK_CHAMBER",
+  "name": "DiglettsCave_RockPeakChamber",
+  "layout": "LAYOUT_DIGLETTS_CAVE_ROCK_PEAK_CHAMBER",
+  "music": "MUS_MT_MOON",
+  "region_map_section": "MAPSEC_DESERT_RUINS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 52,
+      "elevation": 0,
+      "dest_map": "MAP_DIGLETTS_CAVE_ROCK_PEAK_CHAMBER",
+      "dest_warp_id": 2
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

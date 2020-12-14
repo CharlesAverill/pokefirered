@@ -4416,6 +4416,18 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/CinnabarIsland_Cinnabar_Volcano_B2F/border.bin",
       "blockdata_filepath": "data/layouts/CinnabarIsland_Cinnabar_Volcano_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGLETTS_CAVE_ROCK_PEAK_CHAMBER",
+      "name": "DiglettsCave_RockPeakChamber_Layout",
+      "width": 31,
+      "height": 56,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DiglettsCave",
+      "border_filepath": "data/layouts/DiglettsCave_RockPeakChamber/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCave_RockPeakChamber/map.bin"
     }
   ]
 }
