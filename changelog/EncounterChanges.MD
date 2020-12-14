@@ -34,3 +34,7 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Diglett's Cave: Aron
 - Cinnabar Island: Marill (surfing), Clamperl (fishing)
 - Pokemon Tower: Misdreavus (7F), Shuppet (5F-7F), Duskull (3F-4F)
+## New Locations
+- Cinnabar Volcano
+    - Numel, Houndour, Camerupt, Golem, Torkoal, Nidoking, Steelix, Houndoom, Sudowoodo, Shuckle, Salamence, Metagross, Tyranitar, Dragonite (Walking)
+    - Feebas, Magikarp, Kingler, Kingdra, Lanturn, Relicanth, Quagsire, Gyarados, Crawdaunt, Slowking (Fishing)
