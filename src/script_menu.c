@@ -139,6 +139,16 @@ static const struct MenuAction sScriptMultiChoiceMenu_Dome[] = {
     { gOtherText_Exit }
 };
 
+static const struct MenuAction sScriptMultiChoiceMenu_Claw[] = {
+        { gText_ClawFossil },
+        { gOtherText_Exit }
+};
+
+static const struct MenuAction sScriptMultiChoiceMenu_Root[] = {
+        { gText_RootFossil },
+        { gOtherText_Exit }
+};
+
 static const struct MenuAction sScriptMultiChoiceMenu_Amber[] = {
     { gText_OldAmber },
     { gOtherText_Exit }
@@ -154,6 +164,12 @@ static const struct MenuAction sScriptMultiChoiceMenu_DomeAmber[] = {
     { gText_DomeFossil },
     { gText_OldAmber },
     { gOtherText_Exit }
+};
+
+static const struct MenuAction sScriptMultiChoiceMenu_ClawRoot[] = {
+        { gText_ClawFossil },
+        { gText_RootFossil },
+        { gOtherText_Exit }
 };
 
 static const struct MenuAction sScriptMultiChoiceMenu_CeladonVendingMachine[] = {
@@ -511,8 +527,11 @@ const struct MultichoiceListStruct gScriptMultiChoiceMenus[] = {
     { sScriptMultiChoiceMenu_Helix, NELEMS(sScriptMultiChoiceMenu_Helix) },
     { sScriptMultiChoiceMenu_Dome, NELEMS(sScriptMultiChoiceMenu_Dome) },
     { sScriptMultiChoiceMenu_Amber, NELEMS(sScriptMultiChoiceMenu_Amber) },
+    { sScriptMultiChoiceMenu_Claw, NELEMS(sScriptMultiChoiceMenu_Claw) },
+    { sScriptMultiChoiceMenu_Root, NELEMS(sScriptMultiChoiceMenu_Root) },
     { sScriptMultiChoiceMenu_HelixAmber, NELEMS(sScriptMultiChoiceMenu_HelixAmber) },
     { sScriptMultiChoiceMenu_DomeAmber, NELEMS(sScriptMultiChoiceMenu_DomeAmber) },
+    { sScriptMultiChoiceMenu_ClawRoot, NELEMS(sScriptMultiChoiceMenu_ClawRoot) },
     { sScriptMultiChoiceMenu_CeladonVendingMachine, NELEMS(sScriptMultiChoiceMenu_CeladonVendingMachine) },
     { sScriptMultiChoiceMenu_GameCornerCoinPurchaseCounter, NELEMS(sScriptMultiChoiceMenu_GameCornerCoinPurchaseCounter) },
     { sScriptMultiChoiceMenu_Excellent_NotSoBad, NELEMS(sScriptMultiChoiceMenu_Excellent_NotSoBad) },

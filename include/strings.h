@@ -784,6 +784,8 @@ extern const u8 gText_NoThanks_2[];
 extern const u8 gText_HelixFossil[];
 extern const u8 gText_DomeFossil[];
 extern const u8 gText_OldAmber[];
+extern const u8 gText_ClawFossil[];
+extern const u8 gText_RootFossil[];
 extern const u8 gText_TradeCenter[];
 extern const u8 gText_Colosseum[];
 extern const u8 gText_GameLinkCable[];

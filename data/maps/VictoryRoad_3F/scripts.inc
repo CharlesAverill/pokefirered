@@ -60,3 +60,13 @@ VictoryRoad_3F_EventScript_Tyra:: @ 816117A
 	trainerbattle_double TRAINER_COOL_COUPLE_RAY_TYRA, VictoryRoad_3F_Text_TyraIntro, VictoryRoad_3F_Text_TyraDefeat, VictoryRoad_3F_Text_TyraNotEnoughMons
 	msgbox VictoryRoad_3F_Text_TyraPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+VictoryRoad_3F_EventScript_RootFossil::
+    removeobject 13
+    giveitem_msg VictoryRoad_3F_EventScript_RootFossil_Text, ITEM_ROOT_FOSSIL, 1, MUS_OBTAIN_KEY_ITEM
+    closemessage
+    setflag FLAG_HIDE_ROOT_FOSSIL
+    end
+
+VictoryRoad_3F_EventScript_RootFossil_Text:
+    .string "Obtained the ROOT FOSSIL!$"

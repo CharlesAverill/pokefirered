@@ -152,6 +152,7 @@ PewterCity_Museum_1F_EventScript_OldMan:: @ 816A4A5
 PewterCity_Museum_1F_EventScript_OldAmberScientist:: @ 816A4AE
 	lock
 	faceplayer
+	goto_if_set FLAG_REVIVED_AMBER, PewterCity_Museum_1F_EventScript_FossilMart
 	goto_if_set FLAG_GOT_OLD_AMBER, PewterCity_Museum_1F_EventScript_AlreadyGotOldAmber
 	msgbox PewterCity_Museum_1F_Text_WantYouToGetAmberExamined
 	checkitemspace ITEM_OLD_AMBER, 1
@@ -160,6 +161,28 @@ PewterCity_Museum_1F_EventScript_OldAmberScientist:: @ 816A4AE
 	setflag FLAG_GOT_OLD_AMBER
 	removeobject 4
 	giveitem_msg PewterCity_Museum_1F_Text_ReceivedOldAmberFromMan, ITEM_OLD_AMBER, 1, MUS_OBTAIN_KEY_ITEM
+	release
+	end
+
+PewterCity_Museum_1F_EventScript_FossilMart::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	message Text_FossilIntro
+	waitmessage
+	pokemart PewterCity_Museum_1F_EventScript_FossilMart_Items
+	msgbox Text_FossilComeAgain
+	release
+	end
+
+	.align 2
+PewterCity_Museum_1F_EventScript_FossilMart_Items:
+	.2byte ITEM_HELIX_FOSSIL
+	.2byte ITEM_DOME_FOSSIL
+	.2byte ITEM_OLD_AMBER
+	.2byte ITEM_CLAW_FOSSIL
+	.2byte ITEM_ROOT_FOSSIL
+	.2byte ITEM_NONE
 	release
 	end
 

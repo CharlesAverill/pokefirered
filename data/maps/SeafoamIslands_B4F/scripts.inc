@@ -203,3 +203,21 @@ SeafoamIslands_B4F_EventScript_BoulderHintSign:: @ 8163223
 SeafoamIslands_B4F_EventScript_FastCurrentSign:: @ 816322C
 	msgbox SeafoamIslands_B4F_Text_DangerFastCurrent, MSGBOX_SIGN
 	end
+
+SeafoamIslands_B4F_EventScript_HelixDomeFossil::
+    removeobject 5
+    goto_if_set FLAG_GOT_HELIX_FOSSIL, SeafoamIslands_B4F_Give_Dome_Fossil
+    goto_if_set FLAG_GOT_DOME_FOSSIL, SeafoamIslands_B4F_Give_Helix_Fossil
+    end
+
+SeafoamIslands_B4F_Give_Helix_Fossil:
+    giveitem_msg MtMoon_B2F_Text_ObtainedHelixFossil, ITEM_HELIX_FOSSIL, 1, MUS_OBTAIN_KEY_ITEM
+    closemessage
+    setflag FLAG_HIDE_DOUBLE_FOSSIL
+    end
+
+SeafoamIslands_B4F_Give_Dome_Fossil:
+    giveitem_msg MtMoon_B2F_Text_ObtainedDomeFossil, ITEM_DOME_FOSSIL, 1, MUS_OBTAIN_KEY_ITEM
+    closemessage
+    setflag FLAG_HIDE_DOUBLE_FOSSIL
+    end

@@ -186,11 +186,11 @@
 #define FLAG_FOUGHT_MEW               0x0B0
 #define FLAG_SOLOMON_DONE               0x0B1
 #define FLAG_CHARLES_DONE               0x0B2
-#define FLAG_0x0B3               0x0B3
-#define FLAG_0x0B4               0x0B4
-#define FLAG_0x0B5               0x0B5
-#define FLAG_0x0B6               0x0B6
-#define FLAG_0x0B7               0x0B7
+#define FLAG_HIDE_CLAW_FOSSIL               0x0B3
+#define FLAG_HIDE_ROOT_FOSSIL               0x0B4
+#define FLAG_REVIVED_CLAW               0x0B5
+#define FLAG_REVIVED_ROOT               0x0B6
+#define FLAG_HIDE_DOUBLE_FOSSIL               0x0B7
 #define FLAG_0x0B8               0x0B8
 #define FLAG_0x0B9               0x0B9
 #define FLAG_0x0BA               0x0BA

@@ -28,6 +28,9 @@
 #define MULTICHOICE_HELIX                                      21
 #define MULTICHOICE_DOME                                       22
 #define MULTICHOICE_AMBER                                      23
+#define MULTICHOICE_CLAW                                       100
+#define MULTICHOICE_ROOT                                       101
+#define MULTICHOICE_CLAW_ROOT                                  102
 #define MULTICHOICE_HELIX_AMBER                                24
 #define MULTICHOICE_DOME_AMBER                                 25
 #define MULTICHOICE_CELADON_VENDING_MACHINE                    26

@@ -834,6 +834,10 @@ Text_WelcomeTimeCapsule:: @ 81A5160
 Text_PleaseComeAgain:: @ 81A5190
 	.string "Please come again!$"
 
+Text_FossilComeAgain:
+    .string "We have a huge backlog of FOSSILS.\n"
+    .string "Come back any time!$"
+
 @ Unused
 Text_HavingDiscountSaleToday:: @ 81A51A3
 	.string "Welcome!\p"

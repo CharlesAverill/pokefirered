@@ -2,6 +2,11 @@ Text_MayIHelpYou:: @ 81A6211
 	.string "Hi, there!\n"
 	.string "May I help you?$"
 
+Text_FossilIntro:
+	.string "Hi, there! We have lots of\n"
+	.string "fossils available for\l"
+	.string "purchase. How may I help you?$"
+
 Text_FillOutQuestionnaire:: @ 81A622C
 	.string "There is a questionnaire.\n"
 	.string "Would you like to fill it out?$"
