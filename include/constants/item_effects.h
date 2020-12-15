@@ -50,8 +50,6 @@
 #define ITEM5_FRIENDSHIP_ALL    (ITEM5_FRIENDSHIP_LOW | ITEM5_FRIENDSHIP_MID | ITEM5_FRIENDSHIP_HIGH)
 
 // fields 6 and onwards are item-specific arguments
-#define ITEM6_HEAL_QUARTER ((u8) -3)
-#define ITEM6_HEAL_LVL_UP  ((u8) -4)
 
 // Used for GetItemEffectType.
 #define ITEM_EFFECT_X_ITEM 0

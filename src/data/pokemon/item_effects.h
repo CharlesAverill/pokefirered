@@ -396,7 +396,7 @@ static const u8 sItemEffect_LumBerry[6] = {
 
 static const u8 sItemEffect_SitrusBerry[7] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = ITEM6_HEAL_QUARTER,
+    [6] = 30,
 };
 
 const u8 *const gItemEffectTable[] =
