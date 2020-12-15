@@ -198,7 +198,7 @@
 #define FLAG_FOUGHT_REGIROCK               0x0BC
 #define FLAG_FOUGHT_REGICE               0x0BD
 #define FLAG_FOUGHT_REGISTEEL               0x0BE
-#define FLAG_0x0BF               0x0BF
+#define FLAG_DONT_LEAVE_LEGEND_YET               0x0BF
 #define FLAG_0x0C0               0x0C0
 #define FLAG_0x0C1               0x0C1
 #define FLAG_0x0C2               0x0C2

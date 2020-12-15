@@ -38,4 +38,5 @@
 - Mew Truck event: walk into the SSAnne dock from the leftmost tiles
 - MysticTicket is available in-game: speak to Captain Solomon on Five Island
 - AuroraTicket is available in-game: after completing Captain Solomon's quest, talk to Prof. Charles in Saffron City
-- Groudon is available in-game: After becoming the Champion, the guard in front of Cinnabar Volcano will leave, opening the path to Groudon
+- Groudon is available in-game: After becoming the Champion, the guard on Cinnabar Island will leave, opening the path to Cinnabar Volcano
+- Regirock is available in-game: After becoming the Champion, the boulder in Diglett's Cave will disappear, opening the path to Rock Peak Chamber

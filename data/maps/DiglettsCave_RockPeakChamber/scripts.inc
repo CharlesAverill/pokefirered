@@ -1,5 +1,17 @@
 DiglettsCave_RockPeakChamber_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, DiglettsCave_RockPeakChamber_OnResume
 	.byte 0
+
+DiglettsCave_RockPeakChamber_OnResume:
+	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, DiglettsCave_RockPeakChamber_TryRemoveRegirock
+	end
+
+DiglettsCave_RockPeakChamber_TryRemoveRegirock:
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_ne EventScript_Return
+	removeobject VAR_LAST_TALKED
+	return
 
 DiglettsCave_RockPeakChamber_Initiate_Regirock_Battle::
     goto_if_questlog EventScript_ReleaseEnd
@@ -7,6 +19,10 @@ DiglettsCave_RockPeakChamber_Initiate_Regirock_Battle::
     lock
     faceplayer
     waitse
+    message DiglettsCave_RockPeak_Chamber_Statue_Text
+    waitmessage
+    delay 20
+    waitbuttonpress
     playmoncry SPECIES_REGIROCK, 2
     message DiglettsCave_RockPeakChamber_Text_Regirock
     waitmessage
@@ -41,4 +57,9 @@ DiglettsCave_RockPeakChamber_RanFromRegirock:
 	end
 
 DiglettsCave_RockPeakChamber_Text_Regirock:
-    .string "Grrgggrrrrah!$"
+    .string "Zaza zari za...$"
+
+DiglettsCave_RockPeak_Chamber_Statue_Text:
+    .string "The Pokemon statue that\n"
+    .string "exudes the power of rock\l"
+    .string "started moving!$"
