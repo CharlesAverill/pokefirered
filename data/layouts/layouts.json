@@ -4428,6 +4428,18 @@
       "secondary_tileset": "gTileset_DiglettsCave",
       "border_filepath": "data/layouts/DiglettsCave_RockPeakChamber/border.bin",
       "blockdata_filepath": "data/layouts/DiglettsCave_RockPeakChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE49",
+      "name": "Route49_Layout",
+      "width": 60,
+      "height": 24,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_FuchsiaCity",
+      "border_filepath": "data/layouts/Route49/border.bin",
+      "blockdata_filepath": "data/layouts/Route49/map.bin"
     }
   ]
 }

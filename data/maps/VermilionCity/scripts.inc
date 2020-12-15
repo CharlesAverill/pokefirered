@@ -141,7 +141,7 @@ VermilionCity_EventScript_HasMysticAndAuroraTickets:: @ 8166AB1
 	call_if_unset FLAG_SHOWN_AURORA_TICKET, VermilionCity_EventScript_ShowAuroraTicket
 	message VermilionCity_Text_BoardSeagallopFerry
 	waitmessage
-	multichoice 13, 5, MULTICHOICE_SEVII_NAVEL_BIRTH, FALSE
+	multichoice 13, 5, MULTICHOICE_MUSHROOMS, FALSE
 	switch VAR_RESULT
 	case 0, EventScript_SeviiDestinationsPage1
 	case 1, EventScript_SailToNavelRock

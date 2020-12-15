@@ -1378,3 +1378,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/DiglettsCave_RockPeakChamber/scripts.inc"
 	.include "data/maps/DiglettsCave_RockPeakChamber/text.inc"
+
+	.include "data/maps/Route49/scripts.inc"
+	.include "data/maps/Route49/text.inc"

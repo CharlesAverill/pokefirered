@@ -160,26 +160,6 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ChooseFossilAmber:: @ 816E5
 	case 127, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
 	end
 
-CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ChooseFossilClaw:
-	message CinnabarIsland_PokemonLab_ExperimentRoom_Text_HaveYouAFossilForMe
-	waitmessage
-	multichoice 0, 0, MULTICHOICE_CLAW, FALSE
-	switch VAR_RESULT
-	case 0, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowClawFossil
-	case 1, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
-	case 127, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
-	end
-
-CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ChooseFossilRoot:
-	message CinnabarIsland_PokemonLab_ExperimentRoom_Text_HaveYouAFossilForMe
-	waitmessage
-	multichoice 0, 0, MULTICHOICE_ROOT, FALSE
-	switch VAR_RESULT
-	case 0, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowRootFossil
-	case 1, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
-	case 127, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
-	end
-
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ChooseFossilHelixAmber:: @ 816E5FA
 	multichoice 0, 0, MULTICHOICE_HELIX_AMBER, FALSE
 	switch VAR_RESULT
@@ -194,15 +174,6 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ChooseFossilDomeAmber:: @ 8
 	switch VAR_RESULT
 	case 0, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowDomeFossil
 	case 1, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowOldAmber
-	case 2, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
-	case 127, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
-	end
-
-CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ChooseFossilClawRoot:
-	multichoice 0, 0, MULTICHOICE_CLAW_ROOT, FALSE
-	switch VAR_RESULT
-	case 0, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowClawFossil
-	case 1, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowRootFossil
 	case 2, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
 	case 127, CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil
 	end
