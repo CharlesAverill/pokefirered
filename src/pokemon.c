@@ -4227,6 +4227,11 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                             if (data == 0)
                                 data = 1;
                             break;
+                        case ITEM6_HEAL_QUARTER:
+                            dataUnsigned = GetMonData(mon, MON_DATA_MAX_HP, NULL) / 4;
+                            if (dataUnsigned == 0)
+                                dataUnsigned = 1;
+                            break;
                         case 0xFD:
                             data = gBattleScripting.field_23;
                             break;
