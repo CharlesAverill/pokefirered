@@ -195,9 +195,9 @@
 #define FLAG_FOUGHT_KYOGRE               0x0B9
 #define FLAG_FOUGHT_RAYQUAZA               0x0BA
 #define FLAG_IS_CHAMPION               0x0BB
-#define FLAG_0x0BC               0x0BC
-#define FLAG_0x0BD               0x0BD
-#define FLAG_0x0BE               0x0BE
+#define FLAG_FOUGHT_REGIROCK               0x0BC
+#define FLAG_FOUGHT_REGICE               0x0BD
+#define FLAG_FOUGHT_REGISTEEL               0x0BE
 #define FLAG_0x0BF               0x0BF
 #define FLAG_0x0C0               0x0C0
 #define FLAG_0x0C1               0x0C1

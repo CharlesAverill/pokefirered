@@ -14,6 +14,15 @@ EventScript_MonFlewAway:: @ 81A9236
     release
     end
 
+EventScript_MonDisappeared::
+    fadescreen FADE_TO_BLACK
+    removeobject VAR_LAST_TALKED
+    fadescreen FADE_FROM_BLACK
+    getspeciesname 0, VAR_0x8004
+    msgbox Text_MonDisappeared
+    release
+    end
+
 EventScript_AwakenSnorlax:: @ 81A924B
     message Text_PlayedPokeFlute
     waitmessage

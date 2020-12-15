@@ -10,19 +10,32 @@
   "allow_cycling": false,
   "allow_escaping": true,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "floor_number": 1,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_REGIROCK",
+      "in_connection": false,
+      "x": 15,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DiglettsCave_RockPeakChamber_Initiate_Regirock_Battle",
+      "flag": "FLAG_FOUGHT_REGIROCK"
+    }
   ],
   "warp_events": [
     {
       "x": 15,
       "y": 52,
       "elevation": 0,
-      "dest_map": "MAP_DIGLETTS_CAVE_ROCK_PEAK_CHAMBER",
+      "dest_map": "MAP_DIGLETTS_CAVE_B1F",
       "dest_warp_id": 2
     }
   ],

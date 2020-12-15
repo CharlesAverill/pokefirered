@@ -45,13 +45,13 @@ CinnabarIsland_Cinnabar_Volcano_B2F_Initiate_Groudon_Battle::
     end
 
 CinnabarIsland_Cinnabar_Volcano_B2F_DefeatedGroudon:: @ 8162558
-	setflag FLAG_FOUGHT_MEWTWO
+	setflag FLAG_FOUGHT_GROUDON
 	goto EventScript_RemoveStaticMon
 	end
 
 CinnabarIsland_Cinnabar_Volcano_B2F_RanFromGroudon:: @ 8162561
-	setvar VAR_0x8004, SPECIES_MEWTWO
-	goto EventScript_MonFlewAway
+	setvar VAR_0x8004, SPECIES_GROUDON
+	goto EventScript_MonDisappeared
 	end
 
 CinnabarIsland_Cinnabar_Volcano_B2F_Text_Groudon:

@@ -994,6 +994,9 @@ Text_TheDoorIsOpen:: @ 81A5CDF
 Text_MonFlewAway:: @ 81A63C4
 	.string "The {STR_VAR_1} flew away!$"
 
+Text_MonDisappeared::
+    .string "The {STR_VAR_1} disappeared!$"
+
 Text_TheresBedLetsRest:: @ 81A63D6
 	.string "ベッドが　ある‥‥\n"
 	.string "やすんでいこう$"
