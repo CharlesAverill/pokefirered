@@ -3,6 +3,7 @@ Route49_MapScripts::
 
 Route49_DeepWaterCave_Sign::
     msgbox Route49_DeepWaterCave_Sign_Text, MSGBOX_SIGN
+    end
 
 Route49_DeepWaterCave_Sign_Text:
     .string "Deepwater Cave$"
