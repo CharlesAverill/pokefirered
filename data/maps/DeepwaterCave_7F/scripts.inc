@@ -34,11 +34,13 @@ DeepwaterCave_7F_Button2::
 DeepwaterCave_7F_Button3::
     lockall
     goto_if_unset FLAG_TEMP_5, DeepwaterCave_7F_ClearFlags
+    setflag FLAG_TEMP_3
     playse SE_THUNDER
     waitse
     playse SE_THUNDER2
     waitse
-    hideobject 1, 0
+    applymovement 1, DeepwaterCave_7F_BoulderMove
+    removeobject 1
     releaseall
     end
 
@@ -69,13 +71,6 @@ DeepwaterCave_7F_Button6::
     releaseall
     end
 
-DeepwaterCave_7F_SetFlag::
-    playse SE_CLICK
-    waitse
-    setflag VAR_0x8004
-    releaseall
-    end
-
 DeepwaterCave_7F_ClearFlags::
     playse SE_FAILURE
     waitse
@@ -87,3 +82,7 @@ DeepwaterCave_7F_ClearFlags::
     clearflag FLAG_TEMP_6
     releaseall
     end
+
+DeepwaterCave_7F_BoulderMove::
+    walk_right
+    step_end
