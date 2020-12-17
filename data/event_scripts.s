@@ -1381,3 +1381,24 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/Route49/scripts.inc"
 	.include "data/maps/Route49/text.inc"
+
+	.include "data/maps/DeepwaterCave_1F/scripts.inc"
+	.include "data/maps/DeepwaterCave_1F/text.inc"
+
+	.include "data/maps/DeepwaterCave_2F/scripts.inc"
+	.include "data/maps/DeepwaterCave_2F/text.inc"
+
+	.include "data/maps/DeepwaterCave_3F/scripts.inc"
+	.include "data/maps/DeepwaterCave_3F/text.inc"
+
+	.include "data/maps/DeepwaterCave_4F/scripts.inc"
+	.include "data/maps/DeepwaterCave_4F/text.inc"
+
+	.include "data/maps/DeepwaterCave_5F/scripts.inc"
+	.include "data/maps/DeepwaterCave_5F/text.inc"
+
+	.include "data/maps/DeepwaterCave_6F/scripts.inc"
+	.include "data/maps/DeepwaterCave_6F/text.inc"
+
+	.include "data/maps/DeepwaterCave_7F/scripts.inc"
+	.include "data/maps/DeepwaterCave_7F/text.inc"
