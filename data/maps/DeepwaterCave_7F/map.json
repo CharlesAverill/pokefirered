@@ -45,7 +45,7 @@
       "x": 24,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_0x3F20",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "DeepwaterCave_7F_Button6"
     },
@@ -54,7 +54,7 @@
       "x": 20,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_0x3F20",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "DeepwaterCave_7F_Button5"
     },
@@ -63,7 +63,7 @@
       "x": 16,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_0x3F20",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "DeepwaterCave_7F_Button4"
     },
@@ -72,7 +72,7 @@
       "x": 12,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_0x3F20",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "DeepwaterCave_7F_Button3"
     },
@@ -81,7 +81,7 @@
       "x": 8,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_0x3F20",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "DeepwaterCave_7F_Button2"
     },
@@ -90,7 +90,7 @@
       "x": 4,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_0x3F20",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "DeepwaterCave_7F_Button1"
     }
