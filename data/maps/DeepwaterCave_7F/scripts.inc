@@ -7,7 +7,6 @@ Button order is 1, 4, 6, 2, 5, 3
 
 DeepwaterCave_7F_Button1::
     lockall
-    call DeepwaterCave_7F_ClearFlags
     setvar VAR_0x8004, FLAG_DWC_SWITCH_1
     goto DeepwaterCave_7F_SetFlag
 
