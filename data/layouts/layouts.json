@@ -4432,14 +4432,98 @@
     {
       "id": "LAYOUT_ROUTE49",
       "name": "Route49_Layout",
-      "width": 60,
-      "height": 24,
+      "width": 80,
+      "height": 30,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_FuchsiaCity",
       "border_filepath": "data/layouts/Route49/border.bin",
       "blockdata_filepath": "data/layouts/Route49/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWATER_CAVE_1F",
+      "name": "DeepwaterCave_1F_Layout",
+      "width": 15,
+      "height": 15,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/DeepwaterCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/DeepwaterCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWATER_CAVE_2F",
+      "name": "DeepwaterCave_2F_Layout",
+      "width": 15,
+      "height": 15,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/DeepwaterCave_2F/border.bin",
+      "blockdata_filepath": "data/layouts/DeepwaterCave_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWATER_CAVE_3F",
+      "name": "DeepwaterCave_3F_Layout",
+      "width": 15,
+      "height": 15,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/DeepwaterCave_3F/border.bin",
+      "blockdata_filepath": "data/layouts/DeepwaterCave_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWATER_CAVE_4F",
+      "name": "DeepwaterCave_4F_Layout",
+      "width": 15,
+      "height": 15,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/DeepwaterCave_4F/border.bin",
+      "blockdata_filepath": "data/layouts/DeepwaterCave_4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWATER_CAVE_5F",
+      "name": "DeepwaterCave_5F_Layout",
+      "width": 15,
+      "height": 15,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/DeepwaterCave_5F/border.bin",
+      "blockdata_filepath": "data/layouts/DeepwaterCave_5F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWATER_CAVE_6F",
+      "name": "DeepwaterCave_6F_Layout",
+      "width": 15,
+      "height": 15,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/DeepwaterCave_6F/border.bin",
+      "blockdata_filepath": "data/layouts/DeepwaterCave_6F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWATER_CAVE_7F",
+      "name": "DeepwaterCave_7F_Layout",
+      "width": 29,
+      "height": 15,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/DeepwaterCave_7F/border.bin",
+      "blockdata_filepath": "data/layouts/DeepwaterCave_7F/map.bin"
     }
   ]
 }

@@ -1,7 +1,7 @@
 # Charles' FireRed
 Just playing around with this FR/LG decomp. Adding in some pokemon, practicing ASM and C. Lots of fun stuff. Building the ROM is really complicated and I don't want to get DMCA'd so you'll have to take my word for it.
 
-## [Changelog](https://github.com/CharlesAverill/pokefirered/tree/master/changelog)
+## [Changelog](https://github.com/CharlesAverill/pokefirered/tree/main/changelog)
 
 # Pokémon FireRed and LeafGreen
 

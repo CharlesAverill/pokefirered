@@ -517,6 +517,15 @@
 // Map Group 42
 #define MAP_SEVEN_ISLAND_SEVAULT_CANYON_HOUSE (0 | (42 << 8))
 
-#define MAP_GROUPS_COUNT 43
+// Map Group 43
+#define MAP_DEEPWATER_CAVE_1F (0 | (43 << 8))
+#define MAP_DEEPWATER_CAVE_2F (1 | (43 << 8))
+#define MAP_DEEPWATER_CAVE_3F (2 | (43 << 8))
+#define MAP_DEEPWATER_CAVE_4F (3 | (43 << 8))
+#define MAP_DEEPWATER_CAVE_5F (4 | (43 << 8))
+#define MAP_DEEPWATER_CAVE_6F (5 | (43 << 8))
+#define MAP_DEEPWATER_CAVE_7F (6 | (43 << 8))
+
+#define MAP_GROUPS_COUNT 44
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
