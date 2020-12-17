@@ -855,7 +855,6 @@ static const u8 *const sMapNames[] = {
     [MAPSEC_ROUTE_23            - MAPSECS_KANTO] = gMapSecName_Route23,
     [MAPSEC_ROUTE_24            - MAPSECS_KANTO] = gMapSecName_Route24,
     [MAPSEC_ROUTE_25            - MAPSECS_KANTO] = gMapSecName_Route25,
-    [MAPSEC_ROUTE_49            - MAPSECS_KANTO] = gMapSecName_Route49,
     [MAPSEC_VIRIDIAN_FOREST     - MAPSECS_KANTO] = gMapSecName_ViridianForest,
     [MAPSEC_MT_MOON             - MAPSECS_KANTO] = gMapSecName_MtMoon,
     [MAPSEC_S_S_ANNE            - MAPSECS_KANTO] = gMapSecName_SSAnne,
@@ -926,7 +925,10 @@ static const u8 *const sMapNames[] = {
     [MAPSEC_RIXY_CHAMBER        - MAPSECS_KANTO] = gMapSecName_RixyChamber,
     [MAPSEC_VIAPOIS_CHAMBER     - MAPSECS_KANTO] = gMapSecName_ViapoisChamber,
     [MAPSEC_EMBER_SPA           - MAPSECS_KANTO] = gMapSecName_EmberSpa,
-    [MAPSEC_SPECIAL_AREA        - MAPSECS_KANTO] = gMapSecName_CeladonDept
+    [MAPSEC_SPECIAL_AREA        - MAPSECS_KANTO] = gMapSecName_CeladonDept,
+    [MAPSEC_DEEPWATER_CAVE      - MAPSECS_KANTO] = gMapSecName_DeepwaterCave,
+    [MAPSEC_DEEPWATER_CISTERN   - MAPSECS_KANTO] = gMapSecName_DeepwaterCistern,
+    [MAPSEC_ROUTE_49            - MAPSECS_KANTO] = gMapSecName_Route49,
 };
 
 static const u16 sMapSectionTopLeftCorners[MAPSEC_COUNT][2] = {
@@ -4248,7 +4250,7 @@ u8 *GetMapName(u8 *dst0, u16 mapsec, u16 fill)
     u8 *dst;
     u16 i;
     u16 idx;;
-    if ((idx = mapsec - MAPSECS_KANTO) <= MAPSEC_SPECIAL_AREA - MAPSECS_KANTO)
+    if ((idx = mapsec - MAPSECS_KANTO) <= MAPSEC_NONE - MAPSECS_KANTO)
     {
         if (IsCeladonDeptStoreMapsec(mapsec) == TRUE)
             dst = StringCopy(dst0, gMapSecName_CeladonDept);

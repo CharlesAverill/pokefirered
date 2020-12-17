@@ -2,8 +2,8 @@
   "id": "MAP_DEEPWATER_CAVE_CISTERN",
   "name": "DeepwaterCave_Cistern",
   "layout": "LAYOUT_DEEPWATER_CAVE_CISTERN",
-  "music": "MUS_BERRY_PICK",
-  "region_map_section": "MAPSEC_NONE",
+  "music": "MUS_SEVII_CAVE",
+  "region_map_section": "MAPSEC_DEEPWATER_CISTERN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -11,7 +11,7 @@
   "allow_escaping": true,
   "allow_running": true,
   "show_map_name": true,
-  "floor_number": 6,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
@@ -26,8 +26,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "DeepwaterCave_Cistern_Initiate_Kyogre_Battle",
+      "flag": "FLAG_FOUGHT_KYOGRE"
     }
   ],
   "warp_events": [
@@ -40,7 +40,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "DeepwaterCave_Cistern_Approach_Kyogre"
+    }
   ],
   "bg_events": [
 

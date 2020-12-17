@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE49",
   "name": "Route49",
   "layout": "LAYOUT_ROUTE49",
-  "music": "MUS_SEVII_CAVE",
+  "music": "MUS_ROUTE3",
   "region_map_section": "MAPSEC_ROUTE_49",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

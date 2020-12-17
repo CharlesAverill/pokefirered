@@ -199,7 +199,7 @@
 #define FLAG_FOUGHT_REGICE               0x0BD
 #define FLAG_FOUGHT_REGISTEEL               0x0BE
 #define FLAG_DONT_LEAVE_LEGEND_YET               0x0BF
-#define FLAG_0x0C0               0x0C0
+#define FLAG_DWC_ROCK               0x0C0
 #define FLAG_0x0C1               0x0C1
 #define FLAG_0x0C2               0x0C2
 #define FLAG_0x0C3               0x0C3
