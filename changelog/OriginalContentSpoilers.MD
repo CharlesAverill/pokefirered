@@ -39,4 +39,5 @@
 - MysticTicket is available in-game: speak to Captain Solomon on Five Island
 - AuroraTicket is available in-game: after completing Captain Solomon's quest, talk to Prof. Charles in Saffron City
 - Groudon is available in-game: After becoming the Champion, the guard on Cinnabar Island will leave, opening the path to Cinnabar Volcano
+- Kyogre is available in-game: After becoming the Champion, the Seels in front of Route 49 will disappear. Kyogre is on the lowest floor of Deepwater Cave. The rocks on each floor are part of a puzzle to unlock Deepwater Cistern
 - Regirock is available in-game: After becoming the Champion, the boulder in Diglett's Cave will disappear, opening the path to Rock Peak Chamber
