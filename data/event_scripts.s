@@ -1402,3 +1402,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/DeepwaterCave_7F/scripts.inc"
 	.include "data/maps/DeepwaterCave_7F/text.inc"
+
+	.include "data/maps/DeepwaterCave_Cistern/scripts.inc"
+	.include "data/maps/DeepwaterCave_Cistern/text.inc"

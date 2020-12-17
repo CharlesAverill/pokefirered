@@ -4524,6 +4524,18 @@
       "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/DeepwaterCave_7F/border.bin",
       "blockdata_filepath": "data/layouts/DeepwaterCave_7F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWATER_CAVE_CISTERN",
+      "name": "DeepwaterCave_Cistern_Layout",
+      "width": 21,
+      "height": 23,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/DeepwaterCave_Cistern/border.bin",
+      "blockdata_filepath": "data/layouts/DeepwaterCave_Cistern/map.bin"
     }
   ]
 }
