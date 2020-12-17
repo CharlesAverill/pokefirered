@@ -37,6 +37,7 @@ const u8 gMapSecName_Route22[] = _("ROUTE 22");
 const u8 gMapSecName_Route23[] = _("ROUTE 23");
 const u8 gMapSecName_Route24[] = _("ROUTE 24");
 const u8 gMapSecName_Route25[] = _("ROUTE 25");
+const u8 gMapSecName_Route49[] = _("ROUTE 49");
 const u8 gMapSecName_ViridianForest[] = _("VIRIDIAN FOREST");
 const u8 gMapSecName_MtMoon[] = _("MT. MOON");
 const u8 gMapSecName_SSAnne[] = _("S.S. ANNE");

@@ -130,6 +130,7 @@
 #define MAPSEC_ROUTE_23                     0x7B
 #define MAPSEC_ROUTE_24                     0x7C
 #define MAPSEC_ROUTE_25                     0x7D
+#define MAPSEC_ROUTE_49                     0xC6
 #define MAPSEC_VIRIDIAN_FOREST              0x7E
 #define MAPSEC_MT_MOON                      0x7F
 #define MAPSEC_S_S_ANNE                     0x80
@@ -205,8 +206,8 @@
 #define MAPSEC_EMBER_SPA                    0xC3
 #define MAPSEC_SPECIAL_AREA                 0xC4
 #define MAPSEC_CINNABAR_VOLCANO             0xC5
-#define MAPSEC_NONE                         0xC6
-#define MAPSEC_COUNT                        0xC7
+#define MAPSEC_NONE                         0xC7
+#define MAPSEC_COUNT                        0xC8
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
