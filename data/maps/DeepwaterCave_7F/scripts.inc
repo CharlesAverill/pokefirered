@@ -48,7 +48,7 @@ DeepwaterCave_7F_SetFlag:
     playse SE_CLICK
     setflag VAR_0x8004
 
-DeepwaterCave_7F_ClearFlags:
+DeepwaterCave_7F_ClearFlags::
     clearflag FLAG_DWC_SWITCH_1
     clearflag FLAG_DWC_SWITCH_2
     clearflag FLAG_DWC_SWITCH_3
