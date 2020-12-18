@@ -1405,3 +1405,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/DeepwaterCave_Cistern/scripts.inc"
 	.include "data/maps/DeepwaterCave_Cistern/text.inc"
+
+	.include "data/maps/FourIsland_IcefallCave_IcebergChamber/scripts.inc"
+	.include "data/maps/FourIsland_IcefallCave_IcebergChamber/text.inc"

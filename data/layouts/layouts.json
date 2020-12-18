@@ -3329,7 +3329,7 @@
       "id": "LAYOUT_FOUR_ISLAND_ICEFALL_CAVE_BACK",
       "name": "FourIsland_IcefallCave_Back_Layout",
       "width": 25,
-      "height": 26,
+      "height": 36,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -4536,6 +4536,18 @@
       "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/DeepwaterCave_Cistern/border.bin",
       "blockdata_filepath": "data/layouts/DeepwaterCave_Cistern/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_ICEFALL_CAVE_ICEBERG_CHAMBER",
+      "name": "FourIsland_IcefallCave_IcebergChamber_Layout",
+      "width": 31,
+      "height": 55,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeafoamIslands",
+      "border_filepath": "data/layouts/FourIsland_IcefallCave_IcebergChamber/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_IcefallCave_IcebergChamber/map.bin"
     }
   ]
 }

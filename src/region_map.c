@@ -929,6 +929,9 @@ static const u8 *const sMapNames[] = {
     [MAPSEC_DEEPWATER_CAVE      - MAPSECS_KANTO] = gMapSecName_DeepwaterCave,
     [MAPSEC_DEEPWATER_CISTERN   - MAPSECS_KANTO] = gMapSecName_DeepwaterCistern,
     [MAPSEC_ROUTE_49            - MAPSECS_KANTO] = gMapSecName_Route49,
+    [MAPSEC_ROCKPEAK_CHAMBER      - MAPSECS_KANTO] = gMapSecName_RockPeakChamber,
+    [MAPSEC_ICEBERG_CHAMBER   - MAPSECS_KANTO] = gMapSecName_IcebergChamber,
+    [MAPSEC_IRON_CHAMBER            - MAPSECS_KANTO] = gMapSecName_IronChamber,
 };
 
 static const u16 sMapSectionTopLeftCorners[MAPSEC_COUNT][2] = {
