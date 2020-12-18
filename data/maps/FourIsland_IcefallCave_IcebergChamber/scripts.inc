@@ -1,7 +1,4 @@
 FourIsland_IcefallCave_IcebergChamber_MapScripts::
-	.byte 0
-
-FourIsland_IcefallCave_IcebergChamber_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, FourIsland_IcefallCave_IcebergChamber_OnResume
 	.byte 0
 
@@ -22,7 +19,7 @@ FourIsland_IcefallCave_IcebergChamber_Initiate_Regice_Battle::
     lock
     faceplayer
     waitse
-    message DiglettsCave_RockPeak_Chamber_Statue_Text
+    message FourIsland_IcefallCave_IcebergChamber_Statue_Text
     waitmessage
     delay 20
     waitbuttonpress
@@ -62,7 +59,7 @@ FourIsland_IcefallCave_IcebergChamber_RanFromRegice:
 FourIsland_IcefallCave_IcebergChamber_Text_Regice:
     .string "Jakiih!$"
 
-DiglettsCave_RockPeak_Chamber_Statue_Text:
+FourIsland_IcefallCave_IcebergChamber_Statue_Text:
     .string "The Pokemon statue that\n"
     .string "exudes the power of ice\l"
     .string "started moving!$"
