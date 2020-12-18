@@ -204,19 +204,19 @@
 #define MAPSEC_VIAPOIS_CHAMBER              0xC2
 #define MAPSEC_EMBER_SPA                    0xC3
 #define MAPSEC_SPECIAL_AREA                 0xC4
-#define MAPSEC_CINNABAR_VOLCANO             0xC5
 
-#define MAPSECS_CUSTOM_MAPS                  0xC6
+#define MAPSECS_CUSTOM_MAPS                 0xC5
 
-#define MAPSEC_ROUTE_49                     0xC6
-#define MAPSEC_DEEPWATER_CAVE               0xC7
-#define MAPSEC_DEEPWATER_CISTERN            0xC8
-#define MAPSEC_ROCKPEAK_CHAMBER             0xC9
-#define MAPSEC_ICEBERG_CHAMBER              0xCA
-#define MAPSEC_IRON_CHAMBER                 0xCB
+#define MAPSEC_CINNABAR_VOLCANO             0xC6
+#define MAPSEC_ROUTE_49                     0xC7
+#define MAPSEC_DEEPWATER_CAVE               0xC8
+#define MAPSEC_DEEPWATER_CISTERN            0xC9
+#define MAPSEC_ROCKPEAK_CHAMBER             0xCA
+#define MAPSEC_ICEBERG_CHAMBER              0xCB
+#define MAPSEC_IRON_CHAMBER                 0xCC
 
-#define MAPSEC_NONE                         0xCC
-#define MAPSEC_COUNT                        0xCD
+#define MAPSEC_NONE                         0xCD
+#define MAPSEC_COUNT                        0xCE
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

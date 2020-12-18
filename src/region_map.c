@@ -1480,7 +1480,10 @@ static void InitRegionMapType(void)
         sRegionMap->permissions[MAPPERM_HAS_SWITCH_BUTTON] = FALSE;
     region = REGIONMAP_KANTO;
     j = REGIONMAP_KANTO;
-    if (gMapHeader.regionMapSectionId >= MAPSECS_SEVII_123)
+    if(gMapHeader.regionMapSectionId >= MAPSECS_CUSTOM_MAPS && gMapHeader.regionMapSectionId < MAPSEC_NONE){
+        region = REGIONMA_KANTO; // TODO: Going to need to add new maps later
+    }
+    else if (gMapHeader.regionMapSectionId >= MAPSECS_SEVII_123)
     {
         // Mapsec is in Sevii Islands, determine which map to use
         while (region == REGIONMAP_KANTO)
