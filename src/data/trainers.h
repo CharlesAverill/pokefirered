@@ -12,7 +12,7 @@ const struct Trainer gTrainers[] = {
         .party = NULL
     },
     [TRAINER_HIKER_MAX] = {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = CLASS_HIKER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
         .trainerPic = TRAINER_PIC_HIKER,
@@ -24,7 +24,7 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemCustomMoves = sTrainerMons_HikerMax}
     },
     [TRAINER_GENTLEMAN_AVERY] = {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = CLASS_GENTLEMAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
         .trainerPic = TRAINER_PIC_GENTLEMAN,
