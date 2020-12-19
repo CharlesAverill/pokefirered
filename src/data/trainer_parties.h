@@ -1,4 +1,4 @@
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_HikerMax[] = {
+static const struct TrainerMonItemCustomMoves sTrainerMons_HikerMax[] = {
     {
             .iv = 250,
             .lvl = 85,
@@ -43,7 +43,7 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_HikerMax[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_GentlemanAvery[] = {
+static const struct TrainerMonItemCustomMoves sTrainerMons_GentlemanAvery[] = {
     {
             .iv = 250,
             .lvl = 85,
