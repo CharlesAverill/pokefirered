@@ -20,7 +20,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_HEAL},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = 6,
+        .partySize = NELEMS(sTrainerMons_HikerMax),
         .party = {.ItemCustomMoves = sTrainerMons_HikerMax}
     },
     [TRAINER_GENTLEMAN_AVERY] = {
@@ -32,7 +32,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_HEAL},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = 6,
+        .partySize = NELEMS(sTrainerMons_GentlemanAvery),
         .party = {.ItemCustomMoves = sTrainerMons_GentlemanAvery}
     },
     [TRAINER_TEAM_AQUA_2] = {

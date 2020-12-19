@@ -34,6 +34,7 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_HikerMax[] = {
             .heldItem = ITEM_LEFTOVERS,
             .moves = {MOVE_SURF, MOVE_SUBSTITUTE, MOVE_PROTECT, MOVE_TOXIC},
     },
+    /*
     {
             .iv = 250,
             .lvl = 85,
@@ -41,6 +42,7 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_HikerMax[] = {
             .heldItem = ITEM_SITRUS_BERRY,
             .moves = {MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_DESTINY_BOND},
     },
+    */
 };
 
 static const struct TrainerMonItemCustomMoves sTrainerMons_GentlemanAvery[] = {
