@@ -35,17 +35,17 @@ const struct Trainer gTrainers[] = {
         .partySize = NELEMS(sTrainerMons_GentlemanAvery),
         .party = {.ItemCustomMoves = sTrainerMons_GentlemanAvery}
     },
-    [TRAINER_TEAM_AQUA_2] = {
-        .partyFlags = 0,
-        .trainerClass = CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .trainerName = _(""),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = NELEMS(sTrainerMons_TeamAqua2),
-        .party = {.NoItemDefaultMoves = sTrainerMons_TeamAqua2}
+    [TRAINER_SUPER_NERD_MATTHEW] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_SUPER_NERD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = TRAINER_PIC_SUPER_NERD,
+        .trainerName = _("MATTHEW"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_HEAL},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_SuperNerdMatthew),
+        .party = {.ItemCustomMoves = sTrainerMons_SuperNerdMatthew}
     },
     [TRAINER_AROMA_LADY_1] = {
         .partyFlags = 0,

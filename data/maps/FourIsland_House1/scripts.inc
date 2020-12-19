@@ -14,3 +14,10 @@ FourIsland_House1_Avery::
 	trainerbattle_single TRAINER_GENTLEMAN_AVERY, FourIsland_House1_AveryIntro, FourIsland_House1_AveryDefeat
 	msgbox FourIsland_House1_AveryPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+FourIsland_House1_Matthew::
+    lock
+    faceplayer
+	trainerbattle_single TRAINER_SUPER_NERD_MATTHEW, FourIsland_House1_MatthewIntro, FourIsland_House1_MatthewDefeat
+	msgbox FourIsland_House1_MatthewPostBattle, MSGBOX_AUTOCLOSE
+	end

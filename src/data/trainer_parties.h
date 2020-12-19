@@ -88,11 +88,48 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_GentlemanAvery[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamAqua2[] = {
+static const struct TrainerMonNoItemDefaultMoves sTrainerMons_SuperNerdMatthew[] = {
     {
-        .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_EKANS,
+            .iv = 250,
+            .lvl = 100,
+            .species = SPECIES_BLASTOISE,
+            .heldItem = ITEM_LUM_BERRY,
+            .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_SLEEP_TALK, MOVE_REST},
+    },
+    {
+            .iv = 250,
+            .lvl = 100,
+            .species = SPECIES_NIDOKING,
+            .heldItem = ITEM_SITRUS_BERRY,
+            .moves = {MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_SLUDGE_BOMB, MOVE_ICE_BEAM},
+    },
+    {
+            .iv = 250,
+            .lvl = 100,
+            .species = SPECIES_ALAKAZAM,
+            .heldItem = ITEM_TWISTEDSPOON,
+            .moves = {MOVE_CALM_MIND, MOVE_FIRE_PUNCH, MOVE_PSYCHIC, MOVE_THUNDER_PUNCH},
+    },
+    {
+            .iv = 250,
+            .lvl = 100,
+            .species = SPECIES_WOBBUFFET,
+            .heldItem = ITEM_LEFTOVERS,
+            .moves = {MOVE_ENCORE, MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_SAFEGUARD},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_TYRANITAR,
+            .heldItem = ITEM_KINGS_ROCK,
+            .moves = {MOVE_DRAGON_DANCE, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_TAUNT},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_METAGROSS,
+            .heldItem = ITEM_CHOICE_BAND,
+            .moves = {MOVE_AGILITY, MOVE_METEOR_MASH, MOVE_EARTHQUAKE, MOVE_EXPLOSION},
     },
 };
 
