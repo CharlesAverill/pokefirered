@@ -10,7 +10,7 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_HikerMax[] = {
             .iv = 250,
             .lvl = 85,
             .species = SPECIES_GENGAR,
-            .heldItem = ITEM_CHOICE_SPECS,
+            .heldItem = ITEM_GANLON_BERRY,
             .moves = {MOVE_ICE_PUNCH, MOVE_THUNDERBOLT, MOVE_WILL_O_WISP, MOVE_EXPLOSION},
     },
     {
@@ -83,7 +83,7 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_GentlemanAvery[] = {
             .iv = 250,
             .lvl = 85,
             .species = SPECIES_MUK,
-            .heldItem = ITEM_HEAL_BELL,
+            .heldItem = ITEM_PETAYA_BERRY,
             .moves = {MOVE_SLUDGE_BOMB, MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH, MOVE_ICE_PUNCH},
     },
 };
