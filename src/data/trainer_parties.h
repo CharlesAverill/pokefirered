@@ -3,7 +3,7 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_HikerMax[] = {
             .iv = 250,
             .lvl = 85,
             .species = SPECIES_SNORLAX,
-            .heldItem = ITEM_HEAL_BELL,
+            .heldItem = ITEM_HEAL_POWDER,
             .moves = {MOVE_CURSE, MOVE_REST, MOVE_EARTHQUAKE, MOVE_BODY_SLAM},
     },
     {
