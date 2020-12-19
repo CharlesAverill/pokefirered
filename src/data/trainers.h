@@ -11,29 +11,29 @@ const struct Trainer gTrainers[] = {
         .partySize = 0,
         .party = NULL
     },
-    [TRAINER_AQUA_LEADER_1] = {
+    [TRAINER_HIKER_MAX] = {
         .partyFlags = 0,
-        .trainerClass = CLASS_AQUA_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
-        .trainerName = _(""),
-        .items = {},
+        .trainerClass = CLASS_HIKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("MAX"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_HEAL},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = NELEMS(sTrainerMons_AquaLeader1),
-        .party = {.NoItemDefaultMoves = sTrainerMons_AquaLeader1}
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_HikerMax),
+        .party = {.ItemCustomMoves = sTrainerMons_HikerMax}
     },
-    [TRAINER_TEAM_AQUA_1] = {
+    [TRAINER_GENTLEMAN_AVERY] = {
         .partyFlags = 0,
-        .trainerClass = CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _(""),
-        .items = {},
+        .trainerClass = CLASS_GENTLEMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerName = _("AVERY"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_HEAL},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = NELEMS(sTrainerMons_TeamAqua1),
-        .party = {.NoItemDefaultMoves = sTrainerMons_TeamAqua1}
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_GentlemanAvery),
+        .party = {.ItemCustomMoves = sTrainerMons_GentlemanAvery}
     },
     [TRAINER_TEAM_AQUA_2] = {
         .partyFlags = 0,

@@ -171,8 +171,8 @@
 #define F_TRAINER_FEMALE (1 << 7)
 
 #define TRAINER_NONE                               0
-#define TRAINER_AQUA_LEADER_1                      1
-#define TRAINER_TEAM_AQUA_1                        2
+#define TRAINER_HIKER_MAX                      1
+#define TRAINER_GENTLEMAN_AVERY                        2
 #define TRAINER_TEAM_AQUA_2                        3
 #define TRAINER_AROMA_LADY_1                       4
 #define TRAINER_RUIN_MANIAC_1                      5

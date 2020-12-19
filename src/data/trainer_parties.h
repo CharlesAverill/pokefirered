@@ -1,16 +1,90 @@
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_AquaLeader1[] = {
+static const struct TrainerMonNoItemDefaultMoves sTrainerMons_HikerMax[] = {
     {
-        .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_EKANS,
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_SNORLAX,
+            .heldItem = ITEM_HEAL_BELL,
+            .moves = {MOVE_CURSE, MOVE_REST, MOVE_EARTHQUAKE, MOVE_BODY_SLAM},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_GENGAR,
+            .heldItem = ITEM_CHOICE_SPECS,
+            .moves = {MOVE_ICE_PUNCH, MOVE_THUNDERBOLT, MOVE_WILL_O_WISP, MOVE_EXPLOSION},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_FLYGON,
+            .heldItem = ITEM_CHOICE_BAND,
+            .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_TOXIC, MOVE_FIRE_BLAST},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_SCIZOR,
+            .heldItem = ITEM_LIECHI_BERRY,
+            .moves = {MOVE_SWORDS_DANCE, MOVE_SILVER_WIND, MOVE_AGILITY, MOVE_STEEL_WING},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_VAPOREON,
+            .heldItem = ITEM_LEFTOVERS,
+            .moves = {MOVE_SURF, MOVE_SUBSTITUTE, MOVE_PROTECT, MOVE_TOXIC},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_GARDEVOIR,
+            .heldItem = ITEM_SITRUS_BERRY,
+            .moves = {MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_DESTINY_BOND},
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamAqua1[] = {
+static const struct TrainerMonNoItemDefaultMoves sTrainerMons_GentlemanAvery[] = {
     {
-        .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_EKANS,
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_ARMALDO,
+            .heldItem = ITEM_CHOICE_BAND,
+            .moves = {MOVE_ROCK_BLAST, MOVE_HIDDEN_POWER, MOVE_EARTHQUAKE, MOVE_WATERFALL},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_BLISSEY,
+            .heldItem = ITEM_LEFTOVERS,
+            .moves = {MOVE_CALM_MIND, MOVE_SOFT_BOILED, MOVE_FLAMETHROWER, MOVE_ICE_BEAM},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_XATU,
+            .heldItem = ITEM_LUM_BERRY,
+            .moves = {MOVE_CALM_MIND, MOVE_THIEF, MOVE_PSYCHIC, MOVE_WISH},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_QUAGSIRE,
+            .heldItem = ITEM_CHESTO_BERRY,
+            .moves = {MOVE_CURSE, MOVE_EARTHQUAKE, MOVE_SURF, MOVE_REST},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_ARBOK,
+            .heldItem = ITEM_SITRUS_BERRY,
+            .moves = {MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_DOUBLE_EDGE},
+    },
+    {
+            .iv = 250,
+            .lvl = 85,
+            .species = SPECIES_MUK,
+            .heldItem = ITEM_HEAL_BELL,
+            .moves = {MOVE_SLUDGE_BOMB, MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH, MOVE_ICE_PUNCH},
     },
 };
 
