@@ -88,7 +88,7 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_GentlemanAvery[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_SuperNerdMatthew[] = {
+static const struct TrainerMonItemCustomMoves sTrainerMons_SuperNerdMatthew[] = {
     {
             .iv = 250,
             .lvl = 100,
@@ -107,7 +107,7 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_SuperNerdMatthew[]
             .iv = 250,
             .lvl = 100,
             .species = SPECIES_ALAKAZAM,
-            .heldItem = ITEM_TWISTEDSPOON,
+            .heldItem = ITEM_TWISTED_SPOON,
             .moves = {MOVE_CALM_MIND, MOVE_FIRE_PUNCH, MOVE_PSYCHIC, MOVE_THUNDER_PUNCH},
     },
     {
@@ -119,14 +119,14 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_SuperNerdMatthew[]
     },
     {
             .iv = 250,
-            .lvl = 85,
+            .lvl = 100,
             .species = SPECIES_TYRANITAR,
             .heldItem = ITEM_KINGS_ROCK,
             .moves = {MOVE_DRAGON_DANCE, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_TAUNT},
     },
     {
             .iv = 250,
-            .lvl = 85,
+            .lvl = 100,
             .species = SPECIES_METAGROSS,
             .heldItem = ITEM_CHOICE_BAND,
             .moves = {MOVE_AGILITY, MOVE_METEOR_MASH, MOVE_EARTHQUAKE, MOVE_EXPLOSION},
