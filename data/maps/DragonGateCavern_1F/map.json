@@ -24,12 +24,48 @@
       "elevation": 0,
       "dest_map": "MAP_DRAGON_GATE",
       "dest_warp_id": 0
+    },
+    {
+      "x": 23,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_DRAGON_GATE_CAVERN_2F",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 23,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_MOON_STONE",
+      "flag": "FLAG_TEMP_1",
+      "quantity": 1,
+      "underfoot": false
+    },
+    {
+      "type": "hidden_item",
+      "x": 3,
+      "y": 19,
+      "elevation": 3,
+      "item": "ITEM_WATER_STONE",
+      "flag": "FLAG_TEMP_1",
+      "quantity": 1,
+      "underfoot": false
+    },
+    {
+      "type": "hidden_item",
+      "x": 14,
+      "y": 26,
+      "elevation": 3,
+      "item": "ITEM_FIRE_STONE",
+      "flag": "FLAG_TEMP_1",
+      "quantity": 1,
+      "underfoot": false
+    }
   ]
 }

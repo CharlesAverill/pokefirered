@@ -4569,9 +4569,33 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/DragonGateCavern_1F/border.bin",
       "blockdata_filepath": "data/layouts/DragonGateCavern_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAGON_GATE_CAVERN_2F",
+      "name": "DragonGateCavern_2F_Layout",
+      "width": 30,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/DragonGateCavern_2F/border.bin",
+      "blockdata_filepath": "data/layouts/DragonGateCavern_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAGON_GATE_CAVERN_IRON_CHAMBER",
+      "name": "DragonGateCavern_IronChamber_Layout",
+      "width": 31,
+      "height": 56,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/DragonGateCavern_IronChamber/border.bin",
+      "blockdata_filepath": "data/layouts/DragonGateCavern_IronChamber/map.bin"
     }
   ]
 }

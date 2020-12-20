@@ -1414,3 +1414,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/DragonGateCavern_1F/scripts.inc"
 	.include "data/maps/DragonGateCavern_1F/text.inc"
+
+	.include "data/maps/DragonGateCavern_2F/scripts.inc"
+	.include "data/maps/DragonGateCavern_2F/text.inc"
+
+	.include "data/maps/DragonGateCavern_IronChamber/scripts.inc"
+	.include "data/maps/DragonGateCavern_IronChamber/text.inc"

@@ -1,0 +1,58 @@
+{
+  "id": "MAP_DRAGON_GATE_CAVERN_2F",
+  "name": "DragonGateCavern_2F",
+  "layout": "LAYOUT_DRAGON_GATE_CAVERN_2F",
+  "music": "MUS_BERRY_PICK",
+  "region_map_section": "MAPSEC_DRAGON_GATE_CAVERN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_DRAGON_GATE_CAVERN_1F",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 15,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_DRAGON_GATE",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_DRAGON_GATE_CAVERN_IRON_CHAMBER",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 20,
+      "y": 13,
+      "elevation": 3,
+      "item": "ITEM_KINGS_ROCK",
+      "flag": "FLAG_TEMP_1",
+      "quantity": 1,
+      "underfoot": false
+    }
+  ]
+}

@@ -530,7 +530,9 @@
 #define MAP_DEEPWATER_CAVE_CISTERN (7 | (43 << 8))
 
 // Map Group 44
-#define MAP_DRAGON_GATE_CAVERN_1F (0 | (44 << 8))
+#define MAP_DRAGON_GATE_CAVERN_1F           (0 | (44 << 8))
+#define MAP_DRAGON_GATE_CAVERN_2F           (1 | (44 << 8))
+#define MAP_DRAGON_GATE_CAVERN_IRON_CHAMBER (2 | (44 << 8))
 
 #define MAP_GROUPS_COUNT 45
 

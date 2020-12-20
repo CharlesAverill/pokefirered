@@ -50,6 +50,13 @@
       "elevation": 0,
       "dest_map": "MAP_DRAGON_GATE_CAVERN_1F",
       "dest_warp_id": 0
+    },
+    {
+      "x": 18,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_DRAGON_GATE_CAVERN_2F",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

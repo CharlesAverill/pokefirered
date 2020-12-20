@@ -576,6 +576,8 @@
     "DeepwaterCave_Cistern"
   ],
   "gMapGroup44": [
-    "DragonGateCavern_1F"
+    "DragonGateCavern_1F",
+    "DragonGateCavern_2F",
+    "DragonGateCavern_IronChamber"
   ]
 }

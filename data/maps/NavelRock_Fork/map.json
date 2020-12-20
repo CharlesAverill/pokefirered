@@ -44,6 +44,25 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 3,
+      "y": 11,
+      "elevation": 3,
+      "item": "ITEM_TM11_SUNNY_DAY",
+      "flag": "FLAG_TEMP_1",
+      "quantity": 1,
+      "underfoot": false
+    },
+    {
+      "type": "hidden_item",
+      "x": 25,
+      "y": 11,
+      "elevation": 3,
+      "item": "ITEM_TM18_RAIN_DANCE",
+      "flag": "FLAG_TEMP_1",
+      "quantity": 1,
+      "underfoot": false
+    }
   ]
 }
