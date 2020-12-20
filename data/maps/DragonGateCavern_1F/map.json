@@ -3,7 +3,7 @@
   "name": "DragonGateCavern_1F",
   "layout": "LAYOUT_DRAGON_GATE_CAVERN_1F",
   "music": "MUS_SEVII_CAVE",
-  "region_map_section": "MAPSEC_DRAGON_GATE_CAVERNs",
+  "region_map_section": "MAPSEC_DRAGON_GATE_CAVERN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

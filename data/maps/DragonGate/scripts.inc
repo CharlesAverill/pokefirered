@@ -1,2 +1,2 @@
-Route50_MapScripts::
+DragonGate_MapScripts::
 	.byte 0

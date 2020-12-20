@@ -218,7 +218,7 @@
 #define MAPSEC_DRAGON_GATE_CAVERN           0xCE
 
 #define MAPSEC_NONE                         0xCF
-#define MAPSEC_COUNT                        0xCG
+#define MAPSEC_COUNT                        0xD0
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

@@ -19,7 +19,7 @@ DragonGateCavern_IronChamber_Initiate_Registeel_Battle::
     lock
     faceplayer
     waitse
-    message DiglettsCave_RockPeak_Chamber_Statue_Text
+    message DragonGateCavern_IronChamber_Statue_Text
     waitmessage
     delay 20
     waitbuttonpress
@@ -59,7 +59,7 @@ DragonGateCavern_IronChamber_RanFromRegisteel:
 DragonGateCavern_IronChamber_Text_Registeel:
     .string "Ji-ji-ze-ji-zoh...$"
 
-DiglettsCave_RockPeak_Chamber_Statue_Text:
+DragonGateCavern_IronChamber_Statue_Text:
     .string "The Pokemon statue that\n"
     .string "exudes the power of steel\l"
     .string "started moving!$"
