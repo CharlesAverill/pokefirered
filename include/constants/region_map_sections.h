@@ -214,10 +214,11 @@
 #define MAPSEC_ROCKPEAK_CHAMBER             0xCA
 #define MAPSEC_ICEBERG_CHAMBER              0xCB
 #define MAPSEC_IRON_CHAMBER                 0xCC
-#define MAPSEC_ROUTE_50                     0xCD
+#define MAPSEC_DRAGON_GATE                  0xCD
+#define MAPSEC_DRAGON_GATE_CAVERN           0xCE
 
-#define MAPSEC_NONE                         0xCE
-#define MAPSEC_COUNT                        0xCF
+#define MAPSEC_NONE                         0xCF
+#define MAPSEC_COUNT                        0xCG
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

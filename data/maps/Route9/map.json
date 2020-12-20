@@ -27,7 +27,7 @@
     {
       "direction": "up",
       "offset": 66,
-      "map": "MAP_ROUTE50"
+      "map": "MAP_DRAGON_GATE"
     }
   ],
   "object_events": [

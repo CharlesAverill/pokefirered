@@ -1,0 +1,35 @@
+{
+  "id": "MAP_DRAGON_GATE_CAVERN_1F",
+  "name": "DragonGateCavern_1F",
+  "layout": "LAYOUT_DRAGON_GATE_CAVERN_1F",
+  "music": "MUS_SEVII_CAVE",
+  "region_map_section": "MAPSEC_DRAGON_GATE_CAVERNs",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_DRAGON_GATE",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

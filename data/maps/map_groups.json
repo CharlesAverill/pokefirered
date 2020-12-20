@@ -44,7 +44,8 @@
     "gMapGroup40",
     "gMapGroup41",
     "gMapGroup42",
-    "gMapGroup43"
+    "gMapGroup43",
+    "gMapGroup44"
   ],
   "gMapGroup0": [
     "BattleColosseum_2P",
@@ -310,7 +311,7 @@
     "SevenIsland_SevaultCanyon",
     "SevenIsland_TanobyRuins",
     "Route49",
-    "Route50"
+    "DragonGate"
   ],
   "gMapGroup4": [
     "PalletTown_PlayersHouse_1F",
@@ -573,5 +574,8 @@
     "DeepwaterCave_6F",
     "DeepwaterCave_7F",
     "DeepwaterCave_Cistern"
+  ],
+  "gMapGroup44": [
+    "DragonGateCavern_1F"
   ]
 }

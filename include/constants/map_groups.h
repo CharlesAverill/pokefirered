@@ -265,7 +265,7 @@
 #define MAP_SEVEN_ISLAND_SEVAULT_CANYON          (64 | (3 << 8))
 #define MAP_SEVEN_ISLAND_TANOBY_RUINS            (65 | (3 << 8))
 #define MAP_ROUTE49                              (66 | (3 << 8))
-#define MAP_ROUTE50                              (67 | (3 << 8))
+#define MAP_DRAGON_GATE                          (67 | (3 << 8))
 
 // Map Group 4
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_1F   (0 | (4 << 8))
@@ -529,6 +529,9 @@
 #define MAP_DEEPWATER_CAVE_7F      (6 | (43 << 8))
 #define MAP_DEEPWATER_CAVE_CISTERN (7 | (43 << 8))
 
-#define MAP_GROUPS_COUNT 44
+// Map Group 44
+#define MAP_DRAGON_GATE_CAVERN_1F (0 | (44 << 8))
+
+#define MAP_GROUPS_COUNT 45
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

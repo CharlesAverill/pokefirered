@@ -4560,6 +4560,18 @@
       "secondary_tileset": "gTileset_CeruleanCity",
       "border_filepath": "data/layouts/Route50/border.bin",
       "blockdata_filepath": "data/layouts/Route50/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAGON_GATE_CAVERN_1F",
+      "name": "DragonGateCavern_1F_Layout",
+      "width": 30,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DragonGateCavern_1F/border.bin",
+      "blockdata_filepath": "data/layouts/DragonGateCavern_1F/map.bin"
     }
   ]
 }

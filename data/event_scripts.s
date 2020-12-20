@@ -1409,5 +1409,8 @@ Text_TestMsg:: @ 81ACD45
 	.include "data/maps/FourIsland_IcefallCave_IcebergChamber/scripts.inc"
 	.include "data/maps/FourIsland_IcefallCave_IcebergChamber/text.inc"
 
-	.include "data/maps/Route50/scripts.inc"
-	.include "data/maps/Route50/text.inc"
+	.include "data/maps/DragonGate/scripts.inc"
+	.include "data/maps/DragonGate/text.inc"
+
+	.include "data/maps/DragonGateCavern_1F/scripts.inc"
+	.include "data/maps/DragonGateCavern_1F/text.inc"
