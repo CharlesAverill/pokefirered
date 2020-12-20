@@ -53,8 +53,8 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Cinnabar Island: Marill (surfing), Clamperl (fishing)
 - Pokemon Tower: Misdreavus (7F), Shuppet (5F-7F), Duskull (3F-4F), Unown
 - Altering Cave: All unused Altering Cave event pokemon
-- Dragon Gate: Hoothoot, Trapinch, Makuhita, Electrike, Spoink, Mawile, Vibrava, Castform, Plusle, Minun, Swablu, Wynaut (Grass), Gyarados (Surfing), Magikarp, Feebas (Fishing)
-- Dragon Gate Cavern: Golbat, Spinda, Nincada, Poochyena, Tyrogue, Smeargle, Nosepass, Magby, Chimecho, Miltank, Bagon, Beldum
+- Dragon Gate: Hoothoot, Trapinch, Makuhita, Electrike, Spoink, Mawile, Vibrava, Castform, Plusle, Minun, Swablu, Wynaut (Grass), Gyarados, Dragonair (Surfing), Magikarp, Feebas (Fishing)
+- Dragon Gate Cavern: Golbat, Spinda, Nincada, Poochyena, Tyrogue, Smeargle, Nosepass, Magby, Chimecho, Miltank, Bagon, Beldum (1F), Zubat, Geodude, Golbat, Graveler, Whismur, Loudred, Onix, Bagon, Hariyama, Medicham, Shelgon, Lairon (2F)
 ## New Locations
 - Cinnabar Volcano
     - Numel, Houndour, Camerupt, Golem, Torkoal, Nidoking, Steelix, Houndoom, Sudowoodo, Shuckle, Salamence, Metagross (Walking)
