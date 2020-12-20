@@ -4548,6 +4548,18 @@
       "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/FourIsland_IcefallCave_IcebergChamber/border.bin",
       "blockdata_filepath": "data/layouts/FourIsland_IcefallCave_IcebergChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE50",
+      "name": "Route50_Layout",
+      "width": 26,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_CeruleanCity",
+      "border_filepath": "data/layouts/Route50/border.bin",
+      "blockdata_filepath": "data/layouts/Route50/map.bin"
     }
   ]
 }
