@@ -6,6 +6,13 @@ CeladonCity_OnTransition:: @ 8166C95
 	setworldmapflag FLAG_WORLD_MAP_CELADON_CITY
 	end
 
+CeladonCity_EventScript_ForestSign::
+    msgbox CeladonCity_ForestSign_Text, MSGBOX_SIGN
+    end
+
+CeladonCity_ForestSign_Text::
+    .string "Celadon Forest$"
+
 CeladonCity_EventScript_LittleGirl:: @ 8166C99
 	msgbox CeladonCity_Text_GotMyKoffingInCinnabar, MSGBOX_NPC
 	end

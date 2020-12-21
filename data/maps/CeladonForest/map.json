@@ -5,7 +5,7 @@
   "music": "MUS_VIRIDIAN_FOREST",
   "region_map_section": "MAPSEC_CELADON_FOREST",
   "requires_flash": false,
-  "weather": "WEATHER_SHADE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": true,
@@ -22,21 +22,21 @@
       "x": 20,
       "y": 37,
       "elevation": 0,
-      "dest_map": "MAP_CELADON_CITY",
+      "dest_map": "MAP_CELADON_FOREST_ENTRANCE",
       "dest_warp_id": 0
     },
     {
       "x": 19,
       "y": 37,
       "elevation": 0,
-      "dest_map": "MAP_CELADON_CITY",
+      "dest_map": "MAP_CELADON_FOREST_ENTRANCE",
       "dest_warp_id": 0
     },
     {
       "x": 21,
       "y": 37,
       "elevation": 0,
-      "dest_map": "MAP_CELADON_CITY",
+      "dest_map": "MAP_CELADON_FOREST_ENTRANCE",
       "dest_warp_id": 0
     }
   ],
