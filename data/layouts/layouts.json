@@ -893,7 +893,7 @@
       "id": "LAYOUT_ROUTE4",
       "name": "Route4_Layout",
       "width": 108,
-      "height": 20,
+      "height": 22,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",

@@ -25901,7 +25901,7 @@
           "map": "MAP_MT_MOON_SUMMIT",
           "base_label": "gMtMoon_Summit_FR",
           "fishing_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 7,
             "mons": [
               {
                 "min_level": 5,
@@ -25956,7 +25956,7 @@
             ]
           },
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 7,
             "mons": [
               {
                 "min_level": 5,
