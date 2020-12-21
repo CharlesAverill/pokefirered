@@ -15,3 +15,11 @@ Route4_EventScript_MtMoonSign:: @ 8167F95
 Route4_EventScript_RouteSign:: @ 8167F9E
 	msgbox Route4_Text_RouteSign, MSGBOX_SIGN
 	end
+
+Route4_Summit_Sign::
+    msgbox Route4_Summit_Sign_Text, MSGBOX_SIGN
+    end
+
+Route4_Summit_Sign_Text::
+    .string "MT. MOON\n"
+    .string "SUMMIT ENTRANCE$"

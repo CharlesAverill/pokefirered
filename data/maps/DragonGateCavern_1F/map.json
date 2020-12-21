@@ -42,8 +42,8 @@
       "x": 23,
       "y": 9,
       "elevation": 3,
-      "item": "ITEM_MOON_STONE",
-      "flag": "FLAG_TEMP_1",
+      "item": "ITEM_THUNDER_STONE",
+      "flag": "FLAG_ITEM_DRAGONGATECAVERN_THUNDERSTONE",
       "quantity": 1,
       "underfoot": false
     },
@@ -53,7 +53,7 @@
       "y": 19,
       "elevation": 3,
       "item": "ITEM_WATER_STONE",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_ITEM_DRAGONGATECAVERN_WATERSTONE",
       "quantity": 1,
       "underfoot": false
     },
@@ -63,7 +63,7 @@
       "y": 26,
       "elevation": 3,
       "item": "ITEM_FIRE_STONE",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_ITEM_DRAGONGATECAVERN_FIRESTONE",
       "quantity": 1,
       "underfoot": false
     }

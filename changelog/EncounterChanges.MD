@@ -42,7 +42,7 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Viridian City: Lotad (fishing/surfing)
 - Fuchsia City: Wingull
 - Viridian Forest: Pineco, Butterfree, Beedrill, Oddish, Spinarak
-- Mt. Moon: Dunsparce (1F), Baltoy, Trapinch, Larvitar (B2F)
+- Mt. Moon: Dunsparce (1F), Baltoy, Trapinch (B2F), Gligar (1F-B2F)
 - Safari Zone: Heracross (E), Mareep (W), Girafarig (N), Miltank (W), Smeargle (E), Farfetch'd (E)
 - Seafoam Islands: Delibird, Smoochum, Swinub (1F-B2F), Sneasel, Piloswine (B3F-B4F), Lapras (B4F), Snorunt, Spheal (1F-B4F)
 - Power Plant: Beldum, Metang
@@ -53,7 +53,6 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Cinnabar Island: Marill (surfing), Clamperl (fishing)
 - Pokemon Tower: Misdreavus (7F), Shuppet (5F-7F), Duskull (3F-4F), Unown
 - Altering Cave: All unused Altering Cave event pokemon
-- Dragon Gate Cavern: Golbat, Spinda, Nincada, Poochyena, Tyrogue, Smeargle, Nosepass, Magby, Chimecho, Miltank, Bagon, Beldum (1F), Zubat, Geodude, Golbat, Graveler, Whismur, Loudred, Onix, Bagon, Hariyama, Medicham, Shelgon, Lairon (2F)
 ## New Locations
 - Cinnabar Volcano
     - Numel, Houndour, Camerupt, Golem, Torkoal, Nidoking, Steelix, Houndoom, Sudowoodo, Shuckle, Salamence, Metagross (Walking)
@@ -67,3 +66,6 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Dragon Gate Cavern
   - Golbat, Spinda, Nincada, Poochyena, Tyrogue, Smeargle, Nosepass, Magby, Chimecho, Miltank, Bagon, Beldum (1F)
   - Zubat, Geodude, Lunatone, Solrock, Whismur, Loudred, Onix, Bagon, Hariyama, Medicham, Shelgon, Lairon (2F)
+- Mt. Moon Summit
+  - Cleffa, Clefairy, Clefable (Grass)
+  - Magikarp, Feebas, Barboach (Fishing)

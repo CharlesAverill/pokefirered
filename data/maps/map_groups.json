@@ -185,7 +185,9 @@
     "SixIsland_PatternBush",
     "SixIsland_AlteringCave",
     "DiglettsCave_RockPeakChamber",
-    "FourIsland_IcefallCave_IcebergChamber"
+    "FourIsland_IcefallCave_IcebergChamber",
+    "MtMoonSummit_Entrance",
+    "MtMoon_Summit"
   ],
   "gMapGroup2": [
     "NavelRock_Exterior",

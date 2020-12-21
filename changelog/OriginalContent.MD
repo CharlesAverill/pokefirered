@@ -13,6 +13,7 @@
 - Route 49: below Route 19
 - Deepwater Cave: Route 49
 - Celadon Forest: above Celadon CIty
+- Mt. Moon Summit: Next  to Mt. Moon exit on Route 4
 ## Events
 - Mew Truck glitch from RBY is now a built-in event
 - MysticTicket

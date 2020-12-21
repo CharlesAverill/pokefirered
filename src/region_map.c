@@ -934,6 +934,8 @@ static const u8 *const sMapNames[] = {
     [MAPSEC_ROCKPEAK_CHAMBER      - MAPSECS_KANTO] = gMapSecName_RockPeakChamber,
     [MAPSEC_ICEBERG_CHAMBER   - MAPSECS_KANTO] = gMapSecName_IcebergChamber,
     [MAPSEC_IRON_CHAMBER            - MAPSECS_KANTO] = gMapSecName_IronChamber,
+    [MAPSEC_CELADON_FOREST            - MAPSECS_KANTO] = gMapSecName_CeladonForest,
+    [MAPSEC_MT_MOON_SUMMIT            - MAPSECS_KANTO] = gMapSecName_MtMoonSummit,
 };
 
 static const u16 sMapSectionTopLeftCorners[MAPSEC_COUNT][2] = {

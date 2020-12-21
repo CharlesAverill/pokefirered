@@ -69,7 +69,7 @@
       "y": 26,
       "elevation": 3,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_ITEM_DRAGONGATE_ULTRABALL",
       "quantity": 1,
       "underfoot": false
     },
@@ -79,7 +79,7 @@
       "y": 19,
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_ITEM_DRAGONGATE_RARECANDY",
       "quantity": 1,
       "underfoot": false
     }

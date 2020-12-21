@@ -1426,3 +1426,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/CeladonForestEntrance/scripts.inc"
 	.include "data/maps/CeladonForestEntrance/text.inc"
+
+	.include "data/maps/MtMoonSummit_Entrance/scripts.inc"
+	.include "data/maps/MtMoonSummit_Entrance/text.inc"
+
+	.include "data/maps/MtMoon_Summit/scripts.inc"
+	.include "data/maps/MtMoon_Summit/text.inc"
