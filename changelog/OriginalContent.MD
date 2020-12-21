@@ -1,7 +1,20 @@
-# Original Content/Features
+# Original Content & Features
+## Features
+- Physical/Special split
+- Infinite TM Use
+- Inside Running
+- Trainer Class-based PokeBalls
+- "Use another repel" prompt
+- Don't show eggs during PokeCenter heal
+- Extra premier balls if you buy more than 10 Balls at a time
+## Locations
+- Dragon Gate: in between Routes 10 and 25
+- Cinnabar Volcano: beneath Cinnabar Gym
+- Route 49: below Route 19
+- Deepwater Cave: Route 49
+## Events
 - Mew Truck glitch from RBY is now a built-in event
-- MysticTicket is available in-game
-- AuroraTicket is available in-game
-- Groudon is available in-game
-- Kyogre is available in-game
-- Regirock is available in-game
+- MysticTicket
+- AuroraTicket
+- Weather Trio (Rayquaza in development)
+- Legendary Titans

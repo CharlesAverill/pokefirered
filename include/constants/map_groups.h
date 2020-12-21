@@ -534,6 +534,20 @@
 #define MAP_DRAGON_GATE_CAVERN_2F           (1 | (44 << 8))
 #define MAP_DRAGON_GATE_CAVERN_IRON_CHAMBER (2 | (44 << 8))
 
-#define MAP_GROUPS_COUNT 45
+// Map Group 45
+#define MAP_CELADON_FOREST          (0 | (45 << 8))
+#define MAP_CELADON_FOREST_ENTRANCE (1 | (45 << 8))
+
+// Map Group 46
+
+// Map Group 47
+
+// Map Group 48
+
+// Map Group 49
+
+// Map Group 50
+
+#define MAP_GROUPS_COUNT 51
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -216,9 +216,10 @@
 #define MAPSEC_IRON_CHAMBER                 0xCC
 #define MAPSEC_DRAGON_GATE                  0xCD
 #define MAPSEC_DRAGON_GATE_CAVERN           0xCE
+#define MAPSEC_CELADON_FOREST               0xCF
 
-#define MAPSEC_NONE                         0xCF
-#define MAPSEC_COUNT                        0xD0
+#define MAPSEC_NONE                         0xD0
+#define MAPSEC_COUNT                        0xD1
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

@@ -1,0 +1,49 @@
+{
+  "id": "MAP_CELADON_FOREST",
+  "name": "CeladonForest",
+  "layout": "LAYOUT_CELADON_FOREST",
+  "music": "MUS_VIRIDIAN_FOREST",
+  "region_map_section": "MAPSEC_CELADON_FOREST",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 20,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_CELADON_CITY",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 19,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_CELADON_CITY",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 21,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_CELADON_CITY",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

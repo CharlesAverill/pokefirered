@@ -25416,7 +25416,7 @@
               {
                 "min_level": 60,
                 "max_level": 75,
-                "species": "SPECIES_NIDOKING"
+                "species": "SPECIES_NIDORINO"
               },
               {
                 "min_level": 60,
@@ -25441,12 +25441,12 @@
               {
                 "min_level": 60,
                 "max_level": 75,
-                "species": "SPECIES_SALAMENCE"
+                "species": "SPECIES_HOUNDOOM"
               },
               {
                 "min_level": 60,
                 "max_level": 75,
-                "species": "SPECIES_METAGROSS"
+                "species": "SPECIES_NIDOKING"
               }
             ]
           }

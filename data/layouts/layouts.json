@@ -797,7 +797,7 @@
       "id": "LAYOUT_CELADON_CITY",
       "name": "CeladonCity_Layout",
       "width": 60,
-      "height": 40,
+      "height": 50,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -4596,6 +4596,30 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/DragonGateCavern_IronChamber/border.bin",
       "blockdata_filepath": "data/layouts/DragonGateCavern_IronChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_FOREST",
+      "name": "CeladonForest_Layout",
+      "width": 44,
+      "height": 44,
+      "border_width": 3,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ViridianForest",
+      "border_filepath": "data/layouts/CeladonForest/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_FOREST_ENTRANCE",
+      "name": "CeladonForestEntrance_Layout",
+      "width": 15,
+      "height": 12,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding2",
+      "border_filepath": "data/layouts/CeladonForestEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonForestEntrance/map.bin"
     }
   ]
 }

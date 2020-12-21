@@ -1420,3 +1420,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/DragonGateCavern_IronChamber/scripts.inc"
 	.include "data/maps/DragonGateCavern_IronChamber/text.inc"
+
+	.include "data/maps/CeladonForest/scripts.inc"
+	.include "data/maps/CeladonForest/text.inc"
+
+	.include "data/maps/CeladonForestEntrance/scripts.inc"
+	.include "data/maps/CeladonForestEntrance/text.inc"
