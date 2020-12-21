@@ -26,7 +26,7 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Route 7: Ralts, Kirlia, Muk
 - Route 9: Zigzagoon, Sentret, Phanpy, Marill, Hoothoot, Tyrogue
 - Route 10: Hoppip, Paras
-- Route 11: Ditto, Yanma, Sunkern, Wobuffet
+- Route 11: Ditto, Yanma, Sunkern, Wobuffet, Porygon
 - Route 14: Loudred
 - Route 15: Absol
 - Route 16: Skarmory, Swablu, Murkrow
@@ -67,5 +67,5 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
   - Golbat, Spinda, Nincada, Poochyena, Tyrogue, Smeargle, Nosepass, Magby, Chimecho, Miltank, Bagon, Beldum (1F)
   - Zubat, Geodude, Lunatone, Solrock, Whismur, Loudred, Onix, Bagon, Hariyama, Medicham, Shelgon, Lairon (2F)
 - Mt. Moon Summit
-  - Cleffa, Clefairy, Clefable (Grass)
+  - Cleffa, Clefairy, Clefable, Mr. Mime (Grass)
   - Magikarp, Feebas, Barboach (Fishing)
