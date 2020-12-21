@@ -2,7 +2,7 @@
   "id": "MAP_MT_MOON_SUMMIT",
   "name": "MtMoon_Summit",
   "layout": "LAYOUT_MT_MOON_SUMMIT",
-  "music": "MUS_BERRY_PICK",
+  "music": "MUS_ROUTE3",
   "region_map_section": "MAPSEC_MT_MOON_SUMMIT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
