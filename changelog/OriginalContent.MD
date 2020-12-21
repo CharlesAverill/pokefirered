@@ -12,6 +12,7 @@
 - Cinnabar Volcano: beneath Cinnabar Gym
 - Route 49: below Route 19
 - Deepwater Cave: Route 49
+- Celadon Forest: above Celadon CIty
 ## Events
 - Mew Truck glitch from RBY is now a built-in event
 - MysticTicket

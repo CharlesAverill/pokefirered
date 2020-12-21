@@ -32,8 +32,8 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Route 16: Skarmory, Swablu, Murkrow
 - Route 17: Skarmory, Swablu, Phanpy
 - Route 18: Skarmory, Swablu
-- Route 19: Wingull, Pelipper (Surfing)
-- Route 20: Qwilfish, Krabby, Corsola, Remoraid (Surfing), Octillery (Super Rod)
+- Route 19: Wingull, Pelipper, Carvanha, Corphish (Surfing)
+- Route 20: Qwilfish, Krabby, Corsola, Remoraid, Wailmer (Surfing), Octillery (Super Rod)
 - Route 21 (S): Chinchou (Surfing)
 - Route 21 (N): Lickitung, Eevee
 - Route 22: Whismur
@@ -44,16 +44,15 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Viridian Forest: Pineco, Butterfree, Beedrill, Oddish, Spinarak
 - Mt. Moon: Dunsparce (1F), Baltoy, Trapinch, Larvitar (B2F)
 - Safari Zone: Heracross (E), Mareep (W), Girafarig (N), Miltank (W), Smeargle (E), Farfetch'd (E)
-- Seafoam Islands: Delibird, Smoochum, Swinub (1F-B2F), Sneasel, Piloswine (B3F-B4F), Lapras (B4F)
+- Seafoam Islands: Delibird, Smoochum, Swinub (1F-B2F), Sneasel, Piloswine (B3F-B4F), Lapras (B4F), Snorunt, Spheal (1F-B4F)
 - Power Plant: Beldum, Metang
 - Pokemon Mansion: Bagon (B1F), Snubull (1F), Ralts (2F-3F)
 - Rock Tunnel: Dunsparce, Shuckle (1F)
-- Victory Road: Steelix (1F), Shelgon (2F), Hitmonlee (2F), Hariyama(1F-2F), Hitmontop (3F)
+- Victory Road: Steelix (1F), Shelgon (2F), Hitmonlee (2F), Hariyama(1F-2F), Hitmontop (3F), Sableye, Meditite (1F-3F)
 - Diglett's Cave: Aron
 - Cinnabar Island: Marill (surfing), Clamperl (fishing)
 - Pokemon Tower: Misdreavus (7F), Shuppet (5F-7F), Duskull (3F-4F), Unown
 - Altering Cave: All unused Altering Cave event pokemon
-- Dragon Gate: Hoothoot, Trapinch, Makuhita, Electrike, Spoink, Mawile, Vibrava, Castform, Plusle, Minun, Swablu, Wynaut (Grass), Gyarados, Dragonair (Surfing), Magikarp, Feebas (Fishing)
 - Dragon Gate Cavern: Golbat, Spinda, Nincada, Poochyena, Tyrogue, Smeargle, Nosepass, Magby, Chimecho, Miltank, Bagon, Beldum (1F), Zubat, Geodude, Golbat, Graveler, Whismur, Loudred, Onix, Bagon, Hariyama, Medicham, Shelgon, Lairon (2F)
 ## New Locations
 - Cinnabar Volcano
@@ -61,3 +60,10 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
     - Feebas, Magikarp (Old Rod)
     - Kingler, Kingdra, Lanturn (Good Rod)
     - Relicanth, Quagsire, Gyarados, Crawdaunt, Slowking (Super Rod)
+- Dragon Gate
+  - Hoothoot, Trapinch, Makuhita, Electrike, Spoink, Mawile, Vibrava, Castform, Plusle, Minun, Swablu, Wynaut (Grass)
+  - Gyarados, Dragonair (Surfing)
+  - Magikarp, Feebas (Fishing)
+- Dragon Gate Cavern
+  - Golbat, Spinda, Nincada, Poochyena, Tyrogue, Smeargle, Nosepass, Magby, Chimecho, Miltank, Bagon, Beldum (1F)
+  - Zubat, Geodude, Lunatone, Solrock, Whismur, Loudred, Onix, Bagon, Hariyama, Medicham, Shelgon, Lairon (2F)
