@@ -291,8 +291,8 @@ VermilionCity_LeadToBrendanMayHouseBoy::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_PlayerWalkRight
 	waitmovement 0
-	applymovement 9, VermilionCity_GuideToHouse
-	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_GuideToHouse
+	applymovement 9, VermilionCity_GuideUp
+	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_PlayerUp
 	waitmovement 0
 	release
 	end
@@ -309,6 +309,18 @@ VermilionCity_GuideWalkUp::
 VermilionCity_PlayerWalkRight::
     walk_right
     face_up
+    step_end
+
+VermilionCity_PlayerUp::
+    walk_up
+    walk_up
+    walk_up
+    step_end
+
+VermilionCity_GuideUp::
+    walk_up
+    walk_up
+    walk_right
     step_end
 
 VermilionCity_GuideToHouse::
