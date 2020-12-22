@@ -210,7 +210,7 @@
 #define FLAG_MET_BRENDAN               0x0C8
 #define FLAG_MET_MAY               0x0C9
 #define FLAG_RECEIVED_RAYQUAZA               0x0CA
-#define FLAG_0x0CB               0x0CB
+#define FLAG_HIDE_BRENDAN_GUIDE               0x0CB
 #define FLAG_0x0CC               0x0CC
 #define FLAG_0x0CD               0x0CD
 #define FLAG_0x0CE               0x0CE

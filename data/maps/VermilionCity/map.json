@@ -114,7 +114,7 @@
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
       "in_connection": false,
       "x": 19,
-      "y": 24,
+      "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -137,6 +137,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_EventScript_OaksAide",
       "flag": "FLAG_HIDE_VERMILION_CITY_OAKS_AIDE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY",
+      "in_connection": false,
+      "x": 19,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VermilionCity_LeadToBrendanMayHouseBoy",
+      "flag": "FLAG_HIDE_BRENDAN_GUIDE"
     }
   ],
   "warp_events": [

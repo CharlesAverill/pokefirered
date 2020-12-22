@@ -278,3 +278,61 @@ VermilionCity_EventScript_GymSign:: @ 8166C6E
 VermilionCity_EventScript_HarborSign:: @ 8166C86
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
 	end
+
+VermilionCity_LeadToBrendanMayHouseBoy::
+    lock
+    faceplayer
+    msgbox VermilionCity_Text_BrendanMayGuide
+    closemessage
+	playbgm MUS_FOLLOW_ME, 0
+	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_PlayerWalkLeft
+	waitmovement 0
+	applymovement 9, VermilionCity_GuideWalkUp
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_PlayerWalkRight
+	waitmovement 0
+	applymovement 9, VermilionCity_GuideToHouse
+	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_GuideToHouse
+	waitmovement 0
+	release
+	end
+
+VermilionCity_PlayerWalkLeft::
+    walk_left
+    step_end
+
+VermilionCity_GuideWalkUp::
+    walk_up
+    walk_up
+    step_end
+
+VermilionCity_PlayerWalkRight::
+    walk_left
+    face_up
+    step_end
+
+VermilionCity_GuideToHouse::
+    walk_up
+    walk_up
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    face_left
+    step_end

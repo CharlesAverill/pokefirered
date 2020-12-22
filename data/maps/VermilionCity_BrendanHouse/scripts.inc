@@ -4,8 +4,6 @@ VermilionCity_BrendanHouse_MapScripts::
 VermilionCity_BrendanHouse_Brendan::
     lock
     faceplayer
-    goto VermilionCity_BrendanHouse_GiveRayquaza
-    /*
     goto_if_unset FLAG_MET_BRENDAN, VermilionCity_BrendanHouse_HaventMetBrendan
     goto_if_unset FLAG_IS_CHAMPION, VermilionCity_BrendanHouse_HaveMetBrendanNotChampion
     goto_if_set FLAG_RECEIVED_RAYQUAZA, VermilionCity_BrendanHouse_BrendanPostBattle
@@ -13,7 +11,6 @@ VermilionCity_BrendanHouse_Brendan::
     // Brendan battle
     goto_if_unset FLAG_RECEIVED_RAYQUAZA, VermilionCity_BrendanHouse_GiveRayquaza
     msgbox VermilionCity_Text_Brendan_PostBattle
-    */
     release
     end
 

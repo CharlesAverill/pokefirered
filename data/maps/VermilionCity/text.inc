@@ -128,3 +128,8 @@ VermilionCity_Text_Route2AideHasPackageForYou:: @ 817FDD2
     .string "ROUTE 2, {PLAYER}.\p"
     .string "If you're in the ROUTE 2 area,\n"
     .string "please look for him.$"
+
+VermilionCity_Text_BrendanMayGuide::
+    .string "Are you challenging the Gym?\n"
+    .string "I think I know someone you\l"
+    .string "might want to meet!$"
