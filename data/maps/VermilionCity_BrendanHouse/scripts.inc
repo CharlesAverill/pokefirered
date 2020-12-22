@@ -29,7 +29,7 @@ VermilionCity_BrendanHouse_GiveRayquaza::
     compare VAR_RESULT, 0
     goto_if_eq VermilionCity_BrendanHouse_ReceiveRayquazaParty
     compare VAR_RESULT, 1
-    goto_if_eq SilphCo_7F_EventScript_ReceiveLaprasPC
+    goto_if_eq VermilionCity_BrendanHouse_ReceiveRayquazaPC
     compare VAR_RESULT, 2
     goto_if_eq EventScript_NoMoreRoomForPokemon
     release
@@ -56,7 +56,7 @@ VermilionCity_BrendanHouse_ReceiveRayquazaPC::
 	message VermilionCity_Text_ReceivedRayquaza
 	waitmessage
 	waitfanfare
-	getspeciesname 0, SPECIES_LAPRAS
+	getspeciesname 0, SPECIES_RAYQUAZA
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq VermilionCity_BrendanHouse_RayquazaTransferredToPC
