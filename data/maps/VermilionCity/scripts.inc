@@ -307,7 +307,7 @@ VermilionCity_GuideWalkUp::
     step_end
 
 VermilionCity_PlayerWalkRight::
-    walk_left
+    walk_right
     face_up
     step_end
 
