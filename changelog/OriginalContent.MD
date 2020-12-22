@@ -18,5 +18,5 @@
 - Mew Truck glitch from RBY is now a built-in event
 - MysticTicket
 - AuroraTicket
-- Weather Trio (Rayquaza in development)
+- Weather Trio
 - Legendary Titans

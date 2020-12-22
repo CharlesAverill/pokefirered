@@ -322,6 +322,7 @@
 #define MAP_VERMILION_CITY_MART              (5 | (9 << 8))
 #define MAP_VERMILION_CITY_GYM               (6 | (9 << 8))
 #define MAP_VERMILION_CITY_HOUSE3            (7 | (9 << 8))
+#define MAP_VERMILION_CITY_BRENDAN_HOUSE     (8 | (9 << 8))
 
 // Map Group 10
 #define MAP_CELADON_CITY_DEPARTMENT_STORE_1F       (0 | (10 << 8))

@@ -13,10 +13,10 @@ VermilionCity_Text_SSAnneHasDepartedForYear:: @ 817F7A6
     .string "this time next year.$"
 
 VermilionCity_Text_BuildingOnThisLand:: @ 817F7FD
-    .string "I'm putting up a building on this\n"
-    .string "plot of land. I own it all.\p"
-    .string "My POKéMON is tamping the land\n"
-    .string "to lay the foundation.$"
+    .string "My Machop and I built that house\n"
+    .string "to the East. It was so rewarding,\l"
+    .string "a CHAMPION from a faraway land\l"
+    .string "bought it!$"
 
 VermilionCity_Text_Machop:: @ 817F871
     .string "MACHOP: Guoh! Gogogoh!$"
@@ -128,4 +128,3 @@ VermilionCity_Text_Route2AideHasPackageForYou:: @ 817FDD2
     .string "ROUTE 2, {PLAYER}.\p"
     .string "If you're in the ROUTE 2 area,\n"
     .string "please look for him.$"
-

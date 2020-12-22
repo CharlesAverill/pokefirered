@@ -1432,3 +1432,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/MtMoon_Summit/scripts.inc"
 	.include "data/maps/MtMoon_Summit/text.inc"
+
+	.include "data/maps/VermilionCity_BrendanHouse/scripts.inc"
+	.include "data/maps/VermilionCity_BrendanHouse/text.inc"

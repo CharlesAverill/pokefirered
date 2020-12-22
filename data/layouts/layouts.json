@@ -4644,6 +4644,18 @@
       "secondary_tileset": "gTileset_CeruleanCity",
       "border_filepath": "data/layouts/MtMoon_Summit/border.bin",
       "blockdata_filepath": "data/layouts/MtMoon_Summit/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERMILION_CITY_BRENDAN_HOUSE",
+      "name": "VermilionCity_BrendanHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding1",
+      "border_filepath": "data/layouts/VermilionCity_BrendanHouse/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionCity_BrendanHouse/map.bin"
     }
   ]
 }
