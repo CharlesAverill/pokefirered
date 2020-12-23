@@ -294,6 +294,14 @@ VermilionCity_LeadToBrendanMayHouseBoy::
 	applymovement 9, VermilionCity_GuideToHouse
 	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_PlayerToHouse
 	waitmovement 0
+	msgbox VermilionCity_Text_TalkToBrendanMay
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, VermilionCity_PlayerWalkDown
+	applymovement 9, VermilionCity_GuideWalkAway
+	waitmovement 0
+	fadedefaultbgm
+	removeobject 9
+	setflag FLAG_HIDE_BRENDAN_GUIDE
 	release
 	end
 
@@ -360,4 +368,20 @@ VermilionCity_GuideToHouse::
     walk_right
     walk_right
     face_left
+    step_end
+
+VermilionCity_GuideWalkAway::
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+VermilionCity_PlayerWalkDown::
+    walk_down
+    face_up
     step_end

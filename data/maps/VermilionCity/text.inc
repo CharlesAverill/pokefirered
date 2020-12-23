@@ -133,3 +133,8 @@ VermilionCity_Text_BrendanMayGuide::
     .string "Are you challenging the Gym?\n"
     .string "I think I know someone you\l"
     .string "might want to meet!$"
+
+VermilionCity_Text_TalkToBrendanMay::
+    .string "This is the house of the\n"
+    .string "legendary Brendan and May from\l"
+    .string "Hoenn! You should meet them!$"
