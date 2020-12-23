@@ -3972,7 +3972,7 @@ static void ReturnFromBattleToOverworld(void)
         gMain.callback1 = gPreBattleCallback1;
         if (gBattleTypeFlags & BATTLE_TYPE_ROAMER)
         {
-            UpdateRoamerHPStatus(&gEnemyParty[0]);
+            UpdateFoughtRoamerHPStatus(&gEnemyParty[0]);
 #ifdef BUGFIX
             if ((gBattleOutcome == B_OUTCOME_WON) || gBattleOutcome == B_OUTCOME_CAUGHT)
 #else

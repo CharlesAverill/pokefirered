@@ -345,8 +345,8 @@ static void Overworld_ResetStateOnContinue(void)
     FlagClear(FLAG_SYS_SAFARI_MODE);
     VarSet(VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 0);
     ChooseAmbientCrySpecies();
-    UpdateLocationHistoryForRoamer();
-    RoamerMoveToOtherLocationSet();
+    UpdateLocationHistoryForRoamers();
+    RoamersMoveToOtherLocationSet();
 }
 
 // Routines related to game stats
@@ -773,8 +773,8 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     for (paletteIndex = 7; paletteIndex < 13; paletteIndex++)
         ApplyWeatherGammaShiftToPal(paletteIndex);
     InitSecondaryTilesetAnimation();
-    UpdateLocationHistoryForRoamer();
-    RoamerMove();
+    UpdateLocationHistoryForRoamers();
+    RoamersMove();
     sub_8110920();
     DoCurrentWeather();
     ResetFieldTasksArgs();
@@ -804,8 +804,8 @@ static void mli0_load_map(bool32 a1)
     Overworld_ClearSavedMusic();
     RunOnTransitionMapScript();
     TryRegenerateRenewableHiddenItems();
-    UpdateLocationHistoryForRoamer();
-    RoamerMoveToOtherLocationSet();
+    UpdateLocationHistoryForRoamers();
+    RoamersMoveToOtherLocationSet();
     sub_8110920();
     InitMap();
 }
