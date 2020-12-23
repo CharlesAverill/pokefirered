@@ -381,7 +381,7 @@ bool8 StandardWildEncounter(u32 currMetatileBehavior, u16 previousMetatileBehavi
 
             else if (TryStartRoamerEncounter() == TRUE)
             {
-                roamer = &gSaveBlock1Ptr->roamer;
+                roamer = &gRoamers[gLastSelectedRoamer];
                 if (!IsWildLevelAllowedByRepel(roamer->level))
                 {
                     return FALSE;
@@ -420,7 +420,7 @@ bool8 StandardWildEncounter(u32 currMetatileBehavior, u16 previousMetatileBehavi
 
             if (TryStartRoamerEncounter() == TRUE)
             {
-                roamer = &gSaveBlock1Ptr->roamer;
+                roamer = &gRoamers[gLastSelectedRoamer];
                 if (!IsWildLevelAllowedByRepel(roamer->level))
                 {
                     return FALSE;

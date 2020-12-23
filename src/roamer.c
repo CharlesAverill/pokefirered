@@ -6,6 +6,7 @@
 #include "constants/maps.h"
 #include "constants/region_map_sections.h"
 #include "../include/roamer.h"
+#include "../include/pokemon_icon.h"
 
 EWRAM_DATA u8 sLocationHistory[3][2] = {};
 EWRAM_DATA u8 sRoamerLocation[2] = {};
@@ -141,7 +142,7 @@ static void CreateInitialRoamerMon(u16 species, u8 level, bool8 allowedOnLand, b
     roamer.level = level;
     roamer.status = 0;
     roamer.ivs = GetMonData(&gEnemyParty[0], MON_DATA_IVS, NULL);
-    roamer.personality = gEnemyParty[0].personality;
+    roamer.personality = GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY);
     roamer.species = species;
     roamer.hp = gEnemyParty[0].hp;
     roamer.canAppearOnLand = allowedOnLand;
@@ -268,17 +269,18 @@ static void CreateRoamerMonInstance(u8 id)
 
     ZeroEnemyPartyMons();
     CreateMonWithIVsPersonality(mon, roamer->species, roamer->level, roamer->ivs, roamer->personality);
-    mon->condition = roamer->status;
+    SetMonData(mon, MON_DATA_STATUS, &roamer->status);
     mon->hp = roamer->hp;
 }
 
-bool8 TryStartRoamerEncounter(u8 environment)
+bool8 TryStartRoamerEncounter()
 {
     u8 i;
     for (i = 0; i < MAX_NUM_ROAMERS; ++i)
     {
         if (IsRoamerAt(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, i) && (Random() % 4) == 0)
         {
+            /*
             switch (environment) {
                 case ENCOUNTER_TYPE_LAND:
                     if (!gRoamers[i].canAppearOnLand)
@@ -289,6 +291,7 @@ bool8 TryStartRoamerEncounter(u8 environment)
                         continue;
                     break;
             }
+             */
 
             CreateRoamerMonInstance(i);
             gLastSelectedRoamer = i;
@@ -301,8 +304,8 @@ bool8 TryStartRoamerEncounter(u8 environment)
 
 void UpdateFoughtRoamerHPStatus(struct Pokemon* mon)
 {
-    gRoamers[gLastSelectedRoamer].hp = mon->hp;
-    gRoamers[gLastSelectedRoamer].status = mon->condition;
+    gRoamers[gLastSelectedRoamer].hp = GetMonData(&mon, MON_DATA_HP, NULL);
+    gRoamers[gLastSelectedRoamer].status = GetMonData(&mon, MON_DATA_STATUS, NULL);;
 
     RoamersMoveToOtherLocationSet();
 }
@@ -344,6 +347,7 @@ void GetMapGroupAndMapNumOfRoamer(u16 species, u8* mapGroup, u8* mapNum)
     }
 }
 
+/*
 void BattleSetup_StartRoamerBattle(void)
 {
     ScriptContext2_Enable();
@@ -355,6 +359,7 @@ void BattleSetup_StartRoamerBattle(void)
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
 }
+ */
 
 
 /*static const union AffineAnimCmd sSpriteAffineAnim_RegionMapRoamer[] =
@@ -371,6 +376,7 @@ extern const u16 sMapSectionTopLeftCorners[][2];
 extern const u16 sMapSectionDimensions[][2];
 void CreateTownMapRoamerSprites(void)
 {
+    /*
     if (GetSelectedRegionMap() != 0)
         return; //Roaming only tracked on the main map
 
@@ -401,19 +407,20 @@ void CreateTownMapRoamerSprites(void)
 
                 sprite->oam.priority = 2;
                 sprite->invisible = TRUE;
-                /*sprite->oam.affineMode = ST_OAM_AFFINE_NORMAL;
+                sprite->oam.affineMode = ST_OAM_AFFINE_NORMAL;
                 sprite->affineAnims = sSpriteAffineAnimTable_RegionMapRoamer;
                 CalcCenterToCornerVec(sprite, sprite->oam.shape, sprite->oam.size, sprite->oam.affineMode);
-                InitSpriteAffineAnim(sprite);*/
+                InitSpriteAffineAnim(sprite);
             }
         }
     }
+    */
 }
 
 void DestroyTownMapRoamerSprites(void)
 {
     u32 i, j;
-
+    /*
     for (i = 0; i < MAX_SPRITES; ++i)
     {
         for (j = 0; j < MAX_NUM_ROAMERS; ++j)
@@ -426,6 +433,7 @@ void DestroyTownMapRoamerSprites(void)
             }
         }
     }
+     */
 }
 
 void HideOrShowTownMapRoamerSprites(bool8 invisible)

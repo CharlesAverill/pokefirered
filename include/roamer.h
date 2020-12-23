@@ -28,7 +28,7 @@ void sp129_InitRoamer(void);
 void UpdateLocationHistoryForRoamer(void);
 void RoamersMoveToOtherLocationSet(void);
 void RoamersMove(void);
-bool8 TryStartRoamerEncounter(u8 environment);
+bool8 TryStartRoamerEncounter();
 void UpdateFoughtRoamerHPStatus(struct Pokemon *mon);
 void SetFoughtRoamerInactive(void);
 void GetRoamerLocation(u8* mapGroup, u8* mapNum, u8 id);
