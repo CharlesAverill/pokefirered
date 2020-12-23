@@ -133,7 +133,7 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_SuperNerdMatthew[] = 
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_May[] = {
+static const struct TrainerMonItemCustomMoves sTrainerMons_May[] = {
     {
         .iv = 125,
         .lvl = 80,
@@ -160,7 +160,7 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_May[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Brendan[] = {
+static const struct TrainerMonItemCustomMoves sTrainerMons_Brendan[] = {
     {
         .iv = 125,
         .lvl = 80,
@@ -183,7 +183,7 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Brendan[] = {
         .iv = 125,
         .lvl = 80,
         .species = SPECIES_RHYDON,
-        .moves = {MOVE_MEGA_HORN, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH},
+        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH},
     }
 };
 
