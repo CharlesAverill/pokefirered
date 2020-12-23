@@ -32,8 +32,7 @@ VermilionCity_Text_ExplainRayquaza::
     .string "Rayquaza is a Legendary\n"
     .string "Weather Trio Pokemon. It\l"
     .string "helped May and I save Hoenn!\l"
-    .string "I'm sure it will help you\l"
-    .string "too.$"
+    .string "I'm sure it will help you too.\l"
 
 VermilionCity_Text_Brendan_PostBattle::
     .string "How's Rayquaza doing? I'm\n"
