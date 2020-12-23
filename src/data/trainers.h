@@ -69,7 +69,7 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = NELEMS(sTrainerMons_May),
-        .party = {.NoItemDefaultMoves = sTrainerMons_May}
+        .party = {.ItemCustomMoves = sTrainerMons_May}
     },
     [TRAINER_INTERVIEWER_1] = {
         .partyFlags = 0,

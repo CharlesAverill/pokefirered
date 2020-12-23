@@ -174,8 +174,8 @@
 #define TRAINER_HIKER_MAX                      1
 #define TRAINER_GENTLEMAN_AVERY                        2
 #define TRAINER_SUPER_NERD_MATTHEW                        3
-#define TRAINER_TRAINER_BRENDAN                       4
-#define TRAINER_TRAINER_MAY                      5
+#define TRAINER_BRENDAN                       4
+#define TRAINER_MAY                      5
 #define TRAINER_INTERVIEWER_1                      6
 #define TRAINER_TUBER_1                            7
 #define TRAINER_TUBER_2                            8

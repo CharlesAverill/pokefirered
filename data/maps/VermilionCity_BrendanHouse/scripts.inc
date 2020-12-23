@@ -73,6 +73,7 @@ VermilionCity_BrendanHouse_EndReceiveRayquaza::
 	end
 
 
-VermilionCity_BrendanHouse_End::
+VermilionCity_BrendanHouse_BrendanPostBattle::
+    msgbox VermilionCity_Text_Brendan_PostBattle
     releaseall
     end
