@@ -5,7 +5,7 @@ VermilionCity_BrendanHouse_Brendan::
     lock
     faceplayer
     goto_if_unset FLAG_MET_BRENDAN, VermilionCity_BrendanHouse_HaventMetBrendan
-    goto_if_unset FLAG_IS_CHAMPION, VermilionCity_BrendanHouse_HaveMetBrendanNotChampion
+    /*goto_if_unset FLAG_IS_CHAMPION, VermilionCity_BrendanHouse_HaveMetBrendanNotChampion*/
     goto_if_set FLAG_RECEIVED_RAYQUAZA, VermilionCity_BrendanHouse_BrendanPostBattle
     msgbox VermilionCity_Text_Brendan_PostChampionMet
     // Brendan battle

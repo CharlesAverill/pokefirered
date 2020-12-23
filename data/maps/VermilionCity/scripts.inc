@@ -334,7 +334,6 @@ VermilionCity_PlayerToHouse::
     walk_right
     walk_right
     walk_right
-    walk_right
     step_end
 
 VermilionCity_GuideToHouse::
