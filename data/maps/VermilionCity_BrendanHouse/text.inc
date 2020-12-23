@@ -4,19 +4,13 @@ VermilionCity_Text_Brendan_PreChampion::
     .string "come talk to us when you do\l"
     .string "something big!$"
 
-VermilionCity_Text_Brendan_PostChampionNeverMet::
-    .string "Woah, you seem to have some Main\n"
-    .string "Character energy. Can I see your\l"
-    .string "trainer card?\l"
+VermilionCity_Text_Brendan_PostChampion::
+    .string "Hey, it's {PLAYER}! Can I see your\n"
+    .string "Trainer Card?\l"
     .string "...\l"
-    .string "The Champion??? No wonder I got\l"
-    .string "those vibes from you!\l"
-    .string "I have to battle you, get ready!$"
-
-VermilionCity_Text_Brendan_PostChampionMet::
-    .string "Hey, it's {PLAYER}! You ready\n"
-    .string "for that battle? It's gonna be\l"
-    .string "a tough one!$"
+    .string "Woah, the Kanto Champion??\l"
+    .string "What an opportunity, I have to\l"
+    .string "battle you!$"
 
 VermilionCity_Text_Brendan_Defeat::
     .string "Wow... you're the strongest\n"
@@ -52,14 +46,9 @@ VermilionCity_Text_May_PreChampion::
     .string "much. That's okay, Brendan and I\l"
     .string "can talk enough for the 3 of us!$"
 
-VermilionCity_Text_May_PostChampionNeverMet::
+VermilionCity_Text_May_PostChampion::
     .string "Hey there, my name's May!\n"
-    .string "I get the feeling you don't talk\l"
-    .string "much. That's okay, you don't\l"
-    .string "need to talk to battle!"
-
-VermilionCity_Text_May_PostChampionMet::
-    .string "You seem... different from\n"
+    .string "You seem... different from\l"
     .string "the other trainers I've met\l"
     .string "in Kanto. More silent. I think\l"
     .string "this battle will be very\l"

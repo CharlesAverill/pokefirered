@@ -47,29 +47,29 @@ const struct Trainer gTrainers[] = {
         .partySize = NELEMS(sTrainerMons_SuperNerdMatthew),
         .party = {.ItemCustomMoves = sTrainerMons_SuperNerdMatthew}
     },
-    [TRAINER_AROMA_LADY_1] = {
-        .partyFlags = 0,
-        .trainerClass = CLASS_AROMA_LADY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_RS_AROMA_LADY,
-        .trainerName = _(""),
-        .items = {},
+    [TRAINER_BRENDAN] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_RS_BRENDAN_1,
+        .trainerName = _("BRENDAN"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_HEAL},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = NELEMS(sTrainerMons_AromaLady1),
-        .party = {.NoItemDefaultMoves = sTrainerMons_AromaLady1}
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_Brendan),
+        .party = {.ItemCustomMoves = sTrainerMons_Brendan}
     },
-    [TRAINER_RUIN_MANIAC_1] = {
-        .partyFlags = 0,
-        .trainerClass = CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RS_RUIN_MANIAC,
-        .trainerName = _(""),
-        .items = {},
+    [TRAINER_MAY] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_RS_MAY_1,
+        .trainerName = _("MAY"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_HEAL},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = NELEMS(sTrainerMons_RuinManiac1),
-        .party = {.NoItemDefaultMoves = sTrainerMons_RuinManiac1}
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_May),
+        .party = {.NoItemDefaultMoves = sTrainerMons_May}
     },
     [TRAINER_INTERVIEWER_1] = {
         .partyFlags = 0,

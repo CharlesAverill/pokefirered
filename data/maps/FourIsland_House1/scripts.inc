@@ -6,6 +6,7 @@ FourIsland_House1_Max::
     faceplayer
 	trainerbattle_single TRAINER_HIKER_MAX, FourIsland_House1_MaxIntro, FourIsland_House1_MaxDefeat
 	msgbox FourIsland_House1_MaxPostBattle, MSGBOX_AUTOCLOSE
+	release
 	end
 
 FourIsland_House1_Avery::
@@ -13,6 +14,7 @@ FourIsland_House1_Avery::
     faceplayer
 	trainerbattle_single TRAINER_GENTLEMAN_AVERY, FourIsland_House1_AveryIntro, FourIsland_House1_AveryDefeat
 	msgbox FourIsland_House1_AveryPostBattle, MSGBOX_AUTOCLOSE
+	release
 	end
 
 FourIsland_House1_Matthew::
@@ -20,4 +22,5 @@ FourIsland_House1_Matthew::
     faceplayer
 	trainerbattle_single TRAINER_SUPER_NERD_MATTHEW, FourIsland_House1_MatthewIntro, FourIsland_House1_MatthewDefeat
 	msgbox FourIsland_House1_MatthewPostBattle, MSGBOX_AUTOCLOSE
+	release
 	end

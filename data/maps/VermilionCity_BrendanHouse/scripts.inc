@@ -2,20 +2,19 @@ VermilionCity_BrendanHouse_MapScripts::
 	.byte 0
 
 VermilionCity_BrendanHouse_Brendan::
+    textcolor 0
     lock
     faceplayer
-    goto_if_unset FLAG_MET_BRENDAN, VermilionCity_BrendanHouse_HaventMetBrendan
-    /*goto_if_unset FLAG_IS_CHAMPION, VermilionCity_BrendanHouse_HaveMetBrendanNotChampion*/
     goto_if_set FLAG_RECEIVED_RAYQUAZA, VermilionCity_BrendanHouse_BrendanPostBattle
-    msgbox VermilionCity_Text_Brendan_PostChampionMet
-    // Brendan battle
-    goto_if_unset FLAG_RECEIVED_RAYQUAZA, VermilionCity_BrendanHouse_GiveRayquaza
-    msgbox VermilionCity_Text_Brendan_PostBattle
+    goto_if_set FLAG_IS_CHAMPION, VermilionCity_BrendanHouse_FightBrendan
+    msgbox VermilionCity_Text_Brendan_PreChampion
     release
     end
 
-VermilionCity_BrendanHouse_BrendanPostBattle::
-    msgbox VermilionCity_Text_Brendan_PostBattle
+VermilionCity_BrendanHouse_FightBrendan::
+    trainerbattle_single TRAINER_BRENDAN, VermilionCity_Text_Brendan_PostChampion, VermilionCity_Text_Brendan_Defeat
+    goto_if_unset FLAG_RECEIVED_RAYQUAZA, VermilionCity_BrendanHouse_GiveRayquaza
+    msgbox VermilionCity_Text_Brendan_PostBattle, MSGBOX_AUTOCLOSE
     release
     end
 
@@ -72,8 +71,6 @@ VermilionCity_BrendanHouse_EndReceiveRayquaza::
     setflag FLAG_RECEIVED_RAYQUAZA
 	release
 	end
-
-VermilionCity_BrendanHouse_HaventMetBrendan::
 
 
 VermilionCity_BrendanHouse_End::

@@ -133,20 +133,58 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_SuperNerdMatthew[] = 
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_AromaLady1[] = {
+static const struct TrainerMonNoItemDefaultMoves sTrainerMons_May[] = {
     {
-        .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_EKANS,
+        .iv = 125,
+        .lvl = 80,
+        .species = SPECIES_BLAZIKEN,
+        .moves = {MOVE_SWORDS_DANCE, MOVE_SKY_UPPERCUT, MOVE_ROCK_SLIDE, MOVE_FIRE_BLAST},
     },
+    {
+        .iv = 125,
+        .lvl = 80,
+        .species = SPECIES_BEAUTIFLY,
+        .moves = {MOVE_STUN_SPORE, MOVE_SUBSTITUTE, MOVE_MORNING_SUN, MOVE_PSYCHIC  },
+    },
+    {
+        .iv = 125,
+        .lvl = 80,
+        .species = SPECIES_DELCATTY,
+        .moves = {MOVE_CALM_MIND, MOVE_BATON_PASS, MOVE_SUBSTITUTE, MOVE_WISH},
+    },
+    {
+        .iv = 125,
+        .lvl = 80,
+        .species = SPECIES_VENUSAUR,
+        .moves = {MOVE_SLUDGE_BOMB, MOVE_SLEEP_POWDER, MOVE_SYNTHESIS, MOVE_LEECH_SEED},
+    }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RuinManiac1[] = {
+static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Brendan[] = {
     {
-        .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_EKANS,
+        .iv = 125,
+        .lvl = 80,
+        .species = SPECIES_AGGRON,
+        .moves = {MOVE_ROCK_SLIDE, MOVE_ICE_BEAM, MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH},
     },
+    {
+        .iv = 125,
+        .lvl = 80,
+        .species = SPECIES_SWAMPERT,
+        .moves = {MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_PROTECT, MOVE_HYDRO_PUMP},
+    },
+    {
+        .iv = 125,
+        .lvl = 80,
+        .species = SPECIES_SHIFTRY,
+        .moves = {MOVE_SHADOW_BALL, MOVE_BRICK_BREAK, MOVE_EXPLOSION, MOVE_SOLAR_BEAM},
+    },
+    {
+        .iv = 125,
+        .lvl = 80,
+        .species = SPECIES_RHYDON,
+        .moves = {MOVE_MEGA_HORN, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH},
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Interviewer1[] = {
