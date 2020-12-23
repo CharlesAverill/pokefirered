@@ -81,6 +81,7 @@ static void CreateInitialRoamerMon(u16 species, u8 level, bool8 allowedOnLand, b
     int i;
     struct Roamer roamer;
 
+    /*
     if (species == 0xFFFF) //FRLGSytle
     {
         switch(GetStarterChoice()) { //0x80CBDB0
@@ -94,6 +95,7 @@ static void CreateInitialRoamerMon(u16 species, u8 level, bool8 allowedOnLand, b
                 species = SPECIES_RAIKOU;
         }
     }
+    */
 
     if (IsSpeciesRoaming(species)) //Only one of each species may roam at a time.
     {
