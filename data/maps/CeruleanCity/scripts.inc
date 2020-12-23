@@ -379,3 +379,10 @@ CeruleanCity_EventScript_GymSign:: @ 8166853
 	msgbox CeruleanCity_Text_GymSign
 	releaseall
 	end
+
+RoamerTest::
+    lock
+    faceplayer
+    special InitRoamer
+    release
+    end

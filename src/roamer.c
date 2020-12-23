@@ -79,23 +79,29 @@ void ClearRoamerData(void)
 void CreateInitialRoamerMon(void)
 {
     struct Pokemon * tmpMon = &gEnemyParty[0];
+    int j;
     u16 roamerMon;
+    u16 roamerMons[] = {SPECIES_ENTEI, SPECIES_RAIKOU, SPECIES_SUICUNE, SPECIES_LATIOS, SPECIES_LATIAS};
 
-    CreateMon(tmpMon, (roamerMon = GetRoamerSpecies()), 50, 0x20, 0, 0, 0, 0);
-    saveRoamer.species = roamerMon;
-    saveRoamer.level = 50;
-    saveRoamer.status = 0;
-    saveRoamer.active = TRUE;
-    saveRoamer.ivs = GetMonData(tmpMon, MON_DATA_IVS);
-    saveRoamer.personality = GetMonData(tmpMon, MON_DATA_PERSONALITY);
-    saveRoamer.hp = GetMonData(tmpMon, MON_DATA_MAX_HP);
-    saveRoamer.cool = GetMonData(tmpMon, MON_DATA_COOL);
-    saveRoamer.beauty = GetMonData(tmpMon, MON_DATA_BEAUTY);
-    saveRoamer.cute = GetMonData(tmpMon, MON_DATA_CUTE);
-    saveRoamer.smart = GetMonData(tmpMon, MON_DATA_SMART);
-    saveRoamer.tough = GetMonData(tmpMon, MON_DATA_TOUGH);
-    sRoamerLocation[MAP_GRP] = 3;
-    sRoamerLocation[MAP_NUM] = sRoamerLocations[Random() % (ARRAY_COUNT(sRoamerLocations) - 1)][0];
+    for(j = 0; j < 5; j++){
+        roamerMon = roamerMons[j];
+
+        CreateMon(tmpMon, (roamerMon = GetRoamerSpecies()), 50, 0x20, 0, 0, 0, 0);
+        saveRoamer.species = roamerMon;
+        saveRoamer.level = 50;
+        saveRoamer.status = 0;
+        saveRoamer.active = TRUE;
+        saveRoamer.ivs = GetMonData(tmpMon, MON_DATA_IVS);
+        saveRoamer.personality = GetMonData(tmpMon, MON_DATA_PERSONALITY);
+        saveRoamer.hp = GetMonData(tmpMon, MON_DATA_MAX_HP);
+        saveRoamer.cool = GetMonData(tmpMon, MON_DATA_COOL);
+        saveRoamer.beauty = GetMonData(tmpMon, MON_DATA_BEAUTY);
+        saveRoamer.cute = GetMonData(tmpMon, MON_DATA_CUTE);
+        saveRoamer.smart = GetMonData(tmpMon, MON_DATA_SMART);
+        saveRoamer.tough = GetMonData(tmpMon, MON_DATA_TOUGH);
+        sRoamerLocation[MAP_GRP] = 3;
+        sRoamerLocation[MAP_NUM] = sRoamerLocations[Random() % (ARRAY_COUNT(sRoamerLocations) - 1)][0];
+    }
 }
 
 void InitRoamer(void)
