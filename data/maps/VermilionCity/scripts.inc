@@ -252,7 +252,6 @@ VermilionCity_EventScript_Machop:: @ 8166C38
 	playmoncry SPECIES_MACHOP, 0
 	msgbox VermilionCity_Text_Machop
 	waitmoncry
-	msgbox VermilionCity_Text_MachopStompingLandFlat
 	release
 	end
 
@@ -371,6 +370,7 @@ VermilionCity_GuideToHouse::
     step_end
 
 VermilionCity_GuideWalkAway::
+    walk_left
     walk_left
     walk_left
     walk_left
