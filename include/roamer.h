@@ -9,17 +9,16 @@
 #define gLastSelectedRoamer (*((u8*) 0x203F3AE))
 
 void ClearRoamerData(void);
-void ClearRoamerLocationData(void);
-void InitRoamer(void);
-void UpdateLocationHistoryForRoamers(void);
+void sp129_InitRoamer(void);
+void UpdateLocationHistoryForRoamer(void);
 void RoamersMoveToOtherLocationSet(void);
 void RoamersMove(void);
-bool8 IsRoamerAt(u8 mapGroup, u8 mapNum);
-void CreateRoamerMonInstance(void);
-u8 TryStartRoamerEncounter(void);
+bool8 TryStartRoamerEncounter(u8 environment);
 void UpdateFoughtRoamerHPStatus(struct Pokemon *mon);
-void SetRoamerInactive(void);
-void GetRoamerLocation(u8 *mapGroup, u8 *mapNum);
-u16 GetRoamerLocationMapSectionId(void);
+void SetFoughtRoamerInactive(void);
+void GetRoamerLocation(u8* mapGroup, u8* mapNum, u8 id);
+bool8 IsSpeciesRoaming(u16 species);
+void GetMapGroupAndMapNumOfRoamer(u16 species, u8* mapGroup, u8* mapNum);
+void BattleSetup_StartRoamerBattle(void);
 
 #endif // GUARD_ROAMER_H
