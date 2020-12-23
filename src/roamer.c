@@ -5,6 +5,7 @@
 #include "constants/species.h"
 #include "constants/maps.h"
 #include "constants/region_map_sections.h"
+#include "../include/roamer.h"
 
 EWRAM_DATA u8 sLocationHistory[3][2] = {};
 EWRAM_DATA u8 sRoamerLocation[2] = {};
