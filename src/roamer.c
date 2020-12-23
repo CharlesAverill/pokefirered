@@ -15,10 +15,11 @@ EWRAM_DATA u8 sRoamerLocation[2] = {};
 #define ROAMING_MAP_BANK 3
 #define NUM_MAPS_IN_SET 7
 
+/*
 static void CreateInitialRoamerMon(u16 species, u8 level, bool8 allowedOnLand, bool8 allowedOnWater);
 static bool8 IsRoamerAt(u8 mapGroup, u8 mapNum, u8 id);
 static void CreateRoamerMonInstance(u8 id);
-
+*/
 enum
 {
     MAP_GRP = 0, // map group
@@ -78,7 +79,7 @@ void ClearRoamerData(void)
 
 static void CreateInitialRoamerMon(u16 species, u8 level, bool8 allowedOnLand, bool8 allowedOnWater)
 {
-    int i;
+    u8 i;
     struct Roamer roamer;
 
     /*
@@ -99,7 +100,6 @@ static void CreateInitialRoamerMon(u16 species, u8 level, bool8 allowedOnLand, b
 
     if (IsSpeciesRoaming(species)) //Only one of each species may roam at a time.
     {
-        gSpecialVar_LastResult = 0;
         return;
     }
 
@@ -112,7 +112,8 @@ static void CreateInitialRoamerMon(u16 species, u8 level, bool8 allowedOnLand, b
 		bool8 perfectStats[NUM_STATS] = {0};
 
 		//Count pre-existing perfect stats
-		for (int i = 0; i < NUM_STATS; ++i)
+		u8 i;
+		for (i = 0; i < NUM_STATS; ++i)
 		{
 			if (GetMonData(&gEnemyParty[0], MON_DATA_HP_IV + i, NULL) >= 31)
 			{
@@ -156,11 +157,6 @@ static void CreateInitialRoamerMon(u16 species, u8 level, bool8 allowedOnLand, b
             break;
         }
     }
-
-    if (i == MAX_NUM_ROAMERS)
-        gSpecialVar_LastResult = 0; //Too many roamers
-    else
-        gSpecialVar_LastResult = 1; //Success
 }
 
 void InitRoamer(void)
@@ -175,7 +171,8 @@ void InitRoamer(void)
 
 void UpdateLocationHistoryForRoamer(void)
 {
-    for (int i = 0; i < MAX_NUM_ROAMERS; ++i)
+    u8 i;
+    for (i = 0; i < MAX_NUM_ROAMERS; ++i)
     {
         struct Roamer* roamer = &gRoamers[i];
 
@@ -187,8 +184,8 @@ void UpdateLocationHistoryForRoamer(void)
             roamer->locationHistory[1][MAP_GRP] = roamer->locationHistory[0][MAP_GRP];
             roamer->locationHistory[1][MAP_NUM] = roamer->locationHistory[0][MAP_NUM];
 
-            roamer->locationHistory[0][MAP_GRP] = gSaveBlock1->location.mapGroup;
-            roamer->locationHistory[0][MAP_NUM] = gSaveBlock1->location.mapNum;
+            roamer->locationHistory[0][MAP_GRP] = gSaveBlock1Ptr->location.mapGroup;
+            roamer->locationHistory[0][MAP_NUM] = gSaveBlock1Ptr->location.mapNum;
         }
     }
 }
@@ -196,8 +193,9 @@ void UpdateLocationHistoryForRoamer(void)
 void RoamersMoveToOtherLocationSet(void)
 {
     u8 mapNum = 0;
+    u8 i;
 
-    for (int i = 0; i < MAX_NUM_ROAMERS; ++i)
+    for (i = 0; i < MAX_NUM_ROAMERS; ++i)
     {
         struct Roamer* roamer = &gRoamers[i];
 
@@ -228,7 +226,8 @@ void RoamersMove(void)
     }
     else
     {
-        for (int i = 0; i < MAX_NUM_ROAMERS; ++i)
+        u8 i;
+        for (i = 0; i < MAX_NUM_ROAMERS; ++i)
         {
             struct Roamer* roamer = &gRoamers[i];
 
@@ -275,9 +274,10 @@ static void CreateRoamerMonInstance(u8 id)
 
 bool8 TryStartRoamerEncounter(u8 environment)
 {
-    for (int i = 0; i < MAX_NUM_ROAMERS; ++i)
+    u8 i;
+    for (i = 0; i < MAX_NUM_ROAMERS; ++i)
     {
-        if (IsRoamerAt(gSaveBlock1->location.mapGroup, gSaveBlock1->location.mapNum, i) && (Random() % 4) == 0)
+        if (IsRoamerAt(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, i) && (Random() % 4) == 0)
         {
             switch (environment) {
                 case ENCOUNTER_TYPE_LAND:
@@ -321,7 +321,8 @@ void GetRoamerLocation(u8* mapGroup, u8* mapNum, u8 id)
 
 bool8 IsSpeciesRoaming(u16 species)
 {
-    for (int i = 0; i < MAX_NUM_ROAMERS; ++i)
+    u8 i;
+    for (i = 0; i < MAX_NUM_ROAMERS; ++i)
     {
         if (gRoamers[i].species == species)
             return TRUE;
@@ -332,7 +333,8 @@ bool8 IsSpeciesRoaming(u16 species)
 
 void GetMapGroupAndMapNumOfRoamer(u16 species, u8* mapGroup, u8* mapNum)
 {
-    for (int i = 0; i < MAX_NUM_ROAMERS; ++i)
+    u8 i;
+    for (i = 0; i < MAX_NUM_ROAMERS; ++i)
     {
         if (gRoamers[i].species == species)
         {
@@ -372,7 +374,8 @@ void CreateTownMapRoamerSprites(void)
     if (GetSelectedRegionMap() != 0)
         return; //Roaming only tracked on the main map
 
-    for (int i = 0; i < MAX_NUM_ROAMERS; ++i)
+    u8 i;
+    for (i = 0; i < MAX_NUM_ROAMERS; ++i)
     {
         //FlagSet(FLAG_SYS_SEVII_MAP_123); //For debugging
         if (gRoamers[i].species != SPECIES_NONE)

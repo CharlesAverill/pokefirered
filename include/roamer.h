@@ -8,6 +8,21 @@
 
 #define gLastSelectedRoamer (*((u8*) 0x203F3AE))
 
+struct Roamer
+{
+    /*0x00*/ u32 ivs;
+    /*0x04*/ u32 personality;
+    /*0x08*/ u16 species;
+    /*0x0A*/ u16 hp;
+    /*0x0C*/ u8 level;
+    /*0x0D*/ u8 status;
+    /*0x0E*/ u8 canAppearOnLand;
+    /*0x0F*/ u8 canAppearOnWater;
+    /*0x10*/ u8 locationHistory[3][2];
+    /*0x16*/ u8 location[2];
+    /*SIZE = 0x18*/
+};
+
 void ClearRoamerData(void);
 void sp129_InitRoamer(void);
 void UpdateLocationHistoryForRoamer(void);

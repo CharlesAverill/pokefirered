@@ -344,7 +344,7 @@ struct Pokeblock
     u8 feel;
 };
 
-struct Roamer
+struct RoamerOld
 {
     /*0x00*/ u32 ivs;
     /*0x04*/ u32 personality;
@@ -758,7 +758,7 @@ struct SaveBlock1
     /*0x2F54*/ struct EasyChatPair easyChatPairs[5]; // unused
     /*0x2F80*/ struct DayCare daycare;
     /*0x309C*/ u8 giftRibbons[52];
-    /*0x30D0*/ struct Roamer roamer;
+    /*0x30D0*/ struct RoamerOld roamer;
     /*0x30EC*/ struct EnigmaBerry enigmaBerry;
     /*0x3120*/ struct MEventBuffers mysteryEventBuffers;
     /*0x348C*/ u8 filler_348C[400];
