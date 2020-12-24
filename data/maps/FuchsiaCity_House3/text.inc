@@ -43,18 +43,18 @@ FuchsiaCity_House3_Eunice_Text_Busy::
 FuchsiaCity_House3_Eunice_Introduction::
     .string "My name is Eunice. For my entire\n"
     .string "life, I've been tracking some\l"
-    .string "roaming Legendary Pokemon.\l"
+    .string "roaming Legendary Pokémon.\l"
     .string "And you are?\l"
     .string "{PLAYER}? Glad to meet you. I heard\l"
-    .string "rumors that some roaming Pokemon\l"
+    .string "rumors that some roaming Pokémon\l"
     .string "were spotted around Kanto. I'm\l"
     .string "much too old to go adventuring like\l"
     .string "I used to with my husband all those\l"
     .string "years ago... Could you take my place\l"
-    .string "and search for the roaming Pokemon?$"
+    .string "and search for the roaming Pokémon?$"
 
 FuchsiaCity_House3_Entei_Intro::
-    .string "I'm hearing rumors of a Pokemon\n"
+    .string "I'm hearing rumors of a Pokémon\n"
     .string "named ENTEI being seen around\l"
     .string "Kanto right now.$"
 
@@ -63,7 +63,7 @@ FuchsiaCity_House3_WoahThatsEntei::
     .string "for showing me!$"
 
 FuchsiaCity_House3_Raikou_Intro::
-    .string "I'm hearing rumors of a Pokemon\n"
+    .string "I'm hearing rumors of a Pokémon\n"
     .string "named RAIKOU being seen around\l"
     .string "Kanto right now.$"
 
@@ -72,7 +72,7 @@ FuchsiaCity_House3_WoahThatsRaikou::
     .string "for showing me!$"
 
 FuchsiaCity_House3_Suicune_Intro::
-    .string "I'm hearing rumors of a Pokemon\n"
+    .string "I'm hearing rumors of a Pokémon\n"
     .string "named SUICUNE being seen around\l"
     .string "Kanto right now.$"
 
@@ -81,7 +81,7 @@ FuchsiaCity_House3_WoahThatsSuicune::
     .string "for showing me!$"
 
 FuchsiaCity_House3_Latios_Intro::
-    .string "I'm hearing rumors of a Pokemon\n"
+    .string "I'm hearing rumors of a Pokémon\n"
     .string "named LATIOS being seen around\l"
     .string "Kanto right now.$"
 
@@ -90,7 +90,7 @@ FuchsiaCity_House3_WoahThatsLatios::
     .string "for showing me!$"
 
 FuchsiaCity_House3_Latias_Intro::
-    .string "I'm hearing rumors of a Pokemon\n"
+    .string "I'm hearing rumors of a Pokémon\n"
     .string "named LATIAS being seen around\l"
     .string "Kanto right now.$"
 
@@ -100,7 +100,7 @@ FuchsiaCity_House3_WoahThatsLatias::
 
 FuchsiaCity_House3_AllDone::
     .string "I think that's all the roaming\n"
-    .string "Pokemon! Thank you for helping me!$"
+    .string "Pokémon! Thank you for helping me!$"
 
 FuchsiaCity_House3_GiveBallText::
     .string "I think this might be of help.$"
@@ -111,5 +111,5 @@ FuchsiaCity_House3_CanYouShowItToMe::
 FuchisaCity_House3_Eusine_Text::
     .string "Yo! My name's Eusine, I\n"
     .string "wanna help my grandma find\l"
-    .string "her Legendary Pokemon, my\l"
+    .string "her Legendary Pokémon, my\l"
     .string "favorite is Suicune!$"

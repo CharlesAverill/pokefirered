@@ -19,7 +19,7 @@ VermilionCity_Text_Brendan_Defeat::
 VermilionCity_Text_Brendan_GiveRayquaza::
     .string "Hey {PLAYER}, I have\n"
     .string "something to give you. This\l"
-    .string "Pokemon joined me because\l"
+    .string "Pokémon joined me because\l"
     .string "it respected my strength and\l"
     .string "passion. I think it needs to\l"
     .string "travel with you now.$"
@@ -29,8 +29,8 @@ VermilionCity_Text_ReceivedRayquaza::
     .string "from Brendan!$"
 
 VermilionCity_Text_ExplainRayquaza::
-    .string "Rayquaza is a Legendary\n"
-    .string "Weather Trio Pokemon. It\l"
+    .string "Rayquaza is one of the Legendary\n"
+    .string "Weather Trio Pokémon. It\l"
     .string "helped May and I save Hoenn!\l"
     .string "I'm sure it will help you too.$"
 

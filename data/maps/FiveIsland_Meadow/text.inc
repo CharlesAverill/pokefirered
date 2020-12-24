@@ -62,11 +62,11 @@ FiveIsland_BothLegendaryBirds_Fought_Text:
 
 FiveIsland_HoOh_Fought_Text:
 	.string "Hm. The wind seems to beckon at ye.\n"
-	.string "Find the Legendary Diving Pokemon.$"
+	.string "Find the Legendary Diving Pokémon.$"
 
 FiveIsland_Lugia_Fought_Text:
 	.string "Hm. The sun seems to beckon at ye.\n"
-	.string "Find the Legendary Rainbow Pokemon.$"
+	.string "Find the Legendary Rainbow Pokémon.$"
 
 FiveIsland_Neither_Fought_Text:
     .string "Hm. Come back triumphant.$"
@@ -96,7 +96,7 @@ FiveIsland_Meadow_SailorSolomon_Text_1:
 FiveIsland_Meadow_SailorSolomon_Text_2:
 	.string "On my travels I have discovered\n"
 	.string "the locations of the ephemeral\l"
-	.string "Rainbow and Diving Pokemon. I\l"
+	.string "Rainbow and Diving Pokémon. I\l"
 	.string "believe they lie in wait of a\l"
 	.string "powerful trainer to ally with.\l"
 	.string "And I believe that to be ye.$"
@@ -104,14 +104,14 @@ FiveIsland_Meadow_SailorSolomon_Text_2:
 FiveIsland_Meadow_SailorSolomon_Text_3:
 	.string "Take this MysticTicket. I've listed\n"
 	.string "the coordinates of the island where\l"
-	.string "the Legendary Pokemon await you.\l"
+	.string "the Legendary Pokémon await you.\l"
 	.string "Show it to the sailor in the port\l"
 	.string "city of Vermilion, and he will take\l"
 	.string "you to the island.$"
 
 FiveIsland_Meadow_SailorSolomon_Text_4:
 	.string "{PLAYER}! Weigh anchor and travel\n"
-	.string "to the Legendary Pokemon!$"
+	.string "to the Legendary Pokémon!$"
 
 FiveIsland_TalkToCharles_Text:
     .string "Long ago I parted ways with a man\n"

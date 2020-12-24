@@ -4,6 +4,7 @@ LavenderTown_VolunteerPokemonHouse_MapScripts:: @ 816B149
 LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji:: @ 816B14A
 	lock
 	faceplayer
+    goto_if_set FLAG_IS_CHAMPION, LavenderTown_VolunteerPokemonHouse_MentionJirachi
 	goto_if_set FLAG_GOT_POKE_FLUTE, LavenderTown_VolunteerPokemonHouse_EventScript_AlreadyHavePokeFlute
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis
 	checkitemspace ITEM_POKE_FLUTE, 1
@@ -14,6 +15,24 @@ LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji:: @ 816B14A
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute
 	release
 	end
+
+LavenderTown_VolunteerPokemonHouse_MentionJirachi::
+    goto_if_set FLAG_TALKED_ABOUT_JIRACHI, LavenderTown_VolunteerPokemonHouse_AlreadyTalkedAboutJirachi
+    msgbox LavenderTown_VolunteerPokemonHouse_Text_MentionJirachi
+    setflag FLAG_TALKED_ABOUT_JIRACHI
+    release
+    end
+
+LavenderTown_VolunteerPokemonHouse_AlreadyTalkedAboutJirachi::
+    goto_if_set FLAG_CAUGHT_JIRACHI, LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi
+    msgbox LavenderTown_VolunteerPokemonHouse_Text_HaveYouVisitedTowerYet
+    release
+    end
+
+LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi::
+    msgbox LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi
+    release
+    end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_AlreadyHavePokeFlute:: @ 816B196
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou

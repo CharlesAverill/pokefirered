@@ -1771,8 +1771,19 @@ const struct SpriteFrameImage gObjectEventPicTable_Latios[] = {
 const struct SpriteFrameImage gObjectEventPicTable_Latias[] = {
         overworld_frame(gObjectEventPic_Latias, 4, 4, 0),
 };
+const struct SpriteFrameImage gObjectEventPicTable_Jirachi[] = {
+        overworld_frame(gObjectEventPic_Jirachi, 4, 4, 0),
+};
 const struct SpriteFrameImage gObjectEventPicTable_Kyogre[] = {
         overworld_frame(gObjectEventPic_Kyogre, 4, 4, 0),
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 0),
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 0),
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
+        overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
 };
 const struct SpriteFrameImage gObjectEventPicTable_Groudon[] = {
         overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),

@@ -1,5 +1,35 @@
-PokemonTower_7F_MapScripts:: @ 8163559
+PokemonTower_7F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PokemonTower_7F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, PokemonTower_7F_OnResume
 	.byte 0
+
+PokemonTower_7F_OnTransition::
+	call_if_set FLAG_FOUGHT_JIRACHI, PokemonTower_7F_HideJirachi
+	call_if_unset FLAG_FOUGHT_JIRACHI, PokemonTower_7F_TryShowJirachi
+	end
+
+PokemonTower_7F_HideJirachi::
+	setvar VAR_TEMP_1, 1
+	setflag FLAG_HIDE_JIRACHI
+	return
+
+PokemonTower_7F_TryShowJirachi::
+	setvar VAR_TEMP_1, 1
+	goto_if_set FLAG_JIRACHI_FLEW_AWAY, EventScript_Return
+	setvar VAR_TEMP_1, 0
+	clearflag FLAG_HIDE_JIRACHI
+	return
+
+PokemonTower_7F_OnResume::
+	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, PokemonTower_7F_EventScript_TryRemoveJirachi
+	end
+
+PokemonTower_7F_EventScript_TryRemoveJirachi::
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_ne EventScript_Return
+	removeobject 1
+	return
 
 PokemonTower_7F_EventScript_MrFuji:: @ 816355A
 	lock

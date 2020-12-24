@@ -65,3 +65,27 @@ LavenderTown_VolunteerPokemonHouse_Text_PokemonMagazinesLineShelf:: @ 819392B
     .string "POKéMON INSIDER…\p"
     .string "POKéMON FAN…$"
 
+LavenderTown_VolunteerPokemonHouse_Text_MentionJirachi::
+    .string "MR. FUJI: {PLAYER}! It's been too\n"
+    .string "long! Say, I've been meaning to\l"
+    .string "talk to you about something.\l"
+    .string "The last few times I visited\l"
+    .string "Pokémon Tower, I noticed a strange\l"
+    .string "presence on the top floor. I'm not\l"
+    .string "sure what it could be, but it\l"
+    .string "felt most benevolent. Your love\l"
+    .string "for Pokémon has taken you this\l"
+    .string "far in your journey. Perhaps you\l"
+    .string "could visit the Tower and discover\l"
+    .string "the source?$"
+
+LavenderTown_VolunteerPokemonHouse_Text_HaveYouVisitedTowerYet::
+    .string "Have you been to the Pokémon Tower\n"
+    .string "to check out the benevolvent\l"
+    .string "presence yet?$"
+
+LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi
+    .string "Ah, so it was the Wish Pokémon! It\n"
+    .string "is known to only show itself to the\l"
+    .string "purest of humans. It must have great\l"
+    .string "trust in you to reveal itself."
