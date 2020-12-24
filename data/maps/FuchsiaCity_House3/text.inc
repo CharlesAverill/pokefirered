@@ -41,13 +41,17 @@ FuchsiaCity_House3_Eusine_Text_Busy::
     .string "He seems to be lost in thought...$"
 
 FuchsiaCity_House3_Eusine_Introduction::
-    .string "My name is Eusine. I'm on the trail\n"
-    .string "of some roaming Legendary Pokemon.\l"
+    .string "My name is Eusine. For my entire\n"
+    .string "life, I've been tracking some\l"
+    .string "roaming Legendary Pokemon.\l"
     .string "And you are?\l"
     .string "{PLAYER}? Glad to meet you. I heard\l"
     .string "rumors that some roaming Pokemon\l"
-    .string "were spotted around Kanto. Why\l"
-    .string "don't you help me out?$"
+    .string "were spotted around Kanto.\l"
+    .string "I'm much too old to go adventuring\l"
+    .string "like I used to with Ethan all those\l"
+    .string "years ago... Could you take my place\l"
+    .string "and search for the roaming Pokemon?$"
 
 FuchsiaCity_House3_Entei_Intro::
     .string "I'm hearing rumors of a Pokemon\n"

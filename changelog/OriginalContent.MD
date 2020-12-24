@@ -22,3 +22,14 @@
 - Weather Trio
 - Legendary Titans
 - Emerald Brendan/May appear
+## Roaming Pokemon
+After becoming Champion, talk to Eusine in Fuchsia City. 
+Eusine will tell you about rumors of various roaming
+pokemon. He will give you Master Balls for Entei and Raikou
+(to avoid the Roar glitch). Bring the roamer to
+Eusine to start the next roamer. Here's the order:
+- Entei
+- Latias
+- Raikou
+- Latios
+- Suicune
