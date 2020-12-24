@@ -243,21 +243,26 @@ static s32 CountRoamerNests(u16 species, struct Subsprite * subsprites)
     u16 dexAreaSubspriteIdx;
     s32 dexAreaEntryLUTidx;
 
+    u8 i;
+
+    /*
     roamerIdx = GetRoamerIndex(species);
     if (roamerIdx < 0)
         return 0;
-    if (sRoamerPairs[roamerIdx].starter != GetStarterSpecies())
-        return 0;
-    roamerLocation = 0; //GetRoamerLocationMapSectionId();
-    dexAreaEntryLUTidx = 0;
-    if (TryGetMapSecPokedexAreaEntry(roamerLocation, sDexAreas_Kanto, 55, &dexAreaEntryLUTidx, &dexAreaSubspriteIdx))
-    {
-        if (dexAreaSubspriteIdx != 0)
+    */
+    for(i = 0; i < MAX_NUM_ROAMERS; i++){
+        roamerLocation = GetRoamerLocationMapSectionId(i);
+        dexAreaEntryLUTidx = 0;
+        if (TryGetMapSecPokedexAreaEntry(roamerLocation, sDexAreas_Kanto, 55, &dexAreaEntryLUTidx, &dexAreaSubspriteIdx))
         {
-            SetAreaSubsprite(0, dexAreaSubspriteIdx, subsprites);
-            return 1;
+            if (dexAreaSubspriteIdx != 0)
+            {
+                SetAreaSubsprite(0, dexAreaSubspriteIdx, subsprites);
+                //return 1;
+            }
         }
     }
+
     return 0;
 }
 
