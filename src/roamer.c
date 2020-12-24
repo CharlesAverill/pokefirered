@@ -371,10 +371,14 @@ static const union AffineAnimCmd* const sSpriteAffineAnimTable_RegionMapRoamer[]
 {
 	sSpriteAffineAnim_RegionMapRoamer,
 };*/
-u16 GetRoamerLocationMapSectionId(u8 index)
+u16 GetRoamerLocationMapSectionId(u16 species)
 {
-    struct Roamer *roamer = &gRoamers[index];
-    if (!IsSpeciesRoaming(roamer->species));
+    u8 i = 0;
+    struct Roamer *roamer = &gRoamers[i];
+    if (!IsSpeciesRoaming(species));
         return MAPSEC_NONE;
+    while(roamer->species != species){
+        roamer = &gRoamers[++i];
+    }
     return Overworld_GetMapHeaderByGroupAndId(roamer->location[MAP_GRP], roamer->location[MAP_NUM])->regionMapSectionId;
 }

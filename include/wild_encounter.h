@@ -8,6 +8,9 @@
 #define ROCK_WILD_COUNT     5
 #define FISH_WILD_COUNT     10
 
+#define ENCOUNTER_TYPE_LAND 0
+#define ENCOUNTER_TYPE_WATER 1
+
 struct WildPokemon
 {
     u8 minLevel;
