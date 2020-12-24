@@ -7,6 +7,7 @@
 - "Use another repel" prompt
 - Don't show eggs during PokeCenter heal
 - Extra premier balls if you buy more than 10 Balls at a time
+- Cerulean Cave Guard leaves after becoming Champion
 ## Locations
 - Dragon Gate: in between Routes 10 and 25
 - Cinnabar Volcano: beneath Cinnabar Gym
@@ -20,3 +21,4 @@
 - AuroraTicket
 - Weather Trio
 - Legendary Titans
+- Emerald Brendan/May appear
