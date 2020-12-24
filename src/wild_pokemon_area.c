@@ -246,8 +246,6 @@ static s32 CountRoamerNests(u16 species, struct Subsprite * subsprites)
     roamerIdx = GetRoamerIndex(species);
     if (roamerIdx < 0)
         return 0;
-    if (sRoamerPairs[roamerIdx].starter != GetStarterSpecies())
-        return 0;
     roamerLocation = GetRoamerLocationMapSectionId();
     dexAreaEntryLUTidx = 0;
     if (TryGetMapSecPokedexAreaEntry(roamerLocation, sDexAreas_Kanto, 55, &dexAreaEntryLUTidx, &dexAreaSubspriteIdx))
