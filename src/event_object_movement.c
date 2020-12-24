@@ -484,7 +484,6 @@ const u8 gInitialMovementTypeFacingDirections[NUM_FIELD_MAP_OBJECT_TEMPLATES] = 
 #define OBJ_EVENT_PAL_TAG_32 0x1121
 #define OBJ_EVENT_PAL_TAG_33 0x1122
 #define OBJ_EVENT_PAL_TAG_34 0x1123
-#define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 #define OBJ_EVENT_PAL_TAG_LATIOS 0x1200
 #define OBJ_EVENT_PAL_TAG_LATIAS 0x1201
 #define OBJ_EVENT_PAL_TAG_GROUDON 0x1202
@@ -493,7 +492,8 @@ const u8 gInitialMovementTypeFacingDirections[NUM_FIELD_MAP_OBJECT_TEMPLATES] = 
 #define OBJ_EVENT_PAL_TAG_REGIROCK 0x1205
 #define OBJ_EVENT_PAL_TAG_REGICE 0x1206
 #define OBJ_EVENT_PAL_TAG_REGISTEEL 0x1207
-#define OBJ_EVENT_PAL_TAG_EUSINE 0x1208
+#define OBJ_EVENT_PAL_TAG_EUSINE 0x1207
+#define OBJ_EVENT_PAL_TAG_NONE 0x1209
 
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
