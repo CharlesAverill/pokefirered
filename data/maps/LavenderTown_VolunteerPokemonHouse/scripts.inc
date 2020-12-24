@@ -24,12 +24,12 @@ LavenderTown_VolunteerPokemonHouse_MentionJirachi::
     end
 
 LavenderTown_VolunteerPokemonHouse_AlreadyTalkedAboutJirachi::
-    goto_if_set FLAG_CAUGHT_JIRACHI, LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi
+    goto_if_set FLAG_CAUGHT_JIRACHI, LavenderTown_VolunteerPokemonHouse_CaughtJirachi
     msgbox LavenderTown_VolunteerPokemonHouse_Text_HaveYouVisitedTowerYet
     release
     end
 
-LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi::
+LavenderTown_VolunteerPokemonHouse_CaughtJirachi::
     msgbox LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi
     release
     end

@@ -398,6 +398,22 @@ OneIsland_PokemonCenter_1F_EventScript_Hiker:: @ 8171151
 	msgbox OneIsland_PokemonCenter_1F_Text_EnormousVolcanoOnIsland, MSGBOX_NPC
 	end
 
+OneIsland_PokemonCenter_1F_FlagSetter::
+    lock
+    faceplayer
+    msgbox OneIsland_PokemonCenter_1F_FlagSetter_Text
+    setflag FLAG_IS_CHAMPION
+    release
+    end
+
+OneIsland_PokemonCenter_1F_FlagSetter_Text::
+    .string "Hey there, I'm the flag setter!\n"
+    .string "In case you didn't start your\l"
+    .string "save file on this ROM, I'll\l"
+    .string "set the custom IS_CHAMPION flag\l"
+    .string "so you won't have any issues\l"
+    .string "with special events. Thank you!$"
+
 OneIsland_PokemonCenter_1F_EventScript_BattleGirl:: @ 817115A
 	lock
 	faceplayer

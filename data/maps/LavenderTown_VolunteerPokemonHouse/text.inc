@@ -84,7 +84,7 @@ LavenderTown_VolunteerPokemonHouse_Text_HaveYouVisitedTowerYet::
     .string "to check out the benevolvent\l"
     .string "presence yet?$"
 
-LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi
+LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi::
     .string "Ah, so it was the Wish Pokémon! It\n"
     .string "is known to only show itself to the\l"
     .string "purest of humans. It must have great\l"

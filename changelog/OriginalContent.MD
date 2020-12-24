@@ -16,6 +16,7 @@
 - Celadon Forest: above Celadon CIty
 - Mt. Moon Summit: Next  to Mt. Moon exit on Route 4
 ## Events
+Many custom events rely on a custom flag I've made. If you started your save file on a different ROM, talk to the deliveryman in the PokeCenter on One Island to set the flag for you.
 - Mew Truck glitch from RBY is now a built-in event
 - MysticTicket
 - AuroraTicket

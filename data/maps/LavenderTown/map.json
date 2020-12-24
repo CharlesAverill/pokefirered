@@ -79,8 +79,8 @@
       "x": 18,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_POKEMON_TOWER_1F",
-      "dest_warp_id": 1
+      "dest_map": "MAP_POKEMON_TOWER_7F",
+      "dest_warp_id": 0
     },
     {
       "x": 6,
