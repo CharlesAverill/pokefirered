@@ -216,11 +216,11 @@
 #define FLAG_CAUGHT_RAIKOU               0x0CE
 #define FLAG_CAUGHT_LATIOS               0x0CF
 #define FLAG_CAUGHT_LATIAS               0x0D0
-#define FLAG_MET_EUSINE               0x0D1
-#define FLAG_0x0D2               0x0D2
-#define FLAG_0x0D3               0x0D3
-#define FLAG_0x0D4               0x0D4
-#define FLAG_0x0D5               0x0D5
+#define FLAG_MET_EUNICE               0x0D1
+#define FLAG_CAUGHT_JIRACHI               0x0D2
+#define FLAG_TALKED_ABOUT_JIRACHI               0x0D3
+#define FLAG_HIDE_JIRACHI               0x0D4
+#define FLAG_JIRACHI_FLEW_AWAY               0x0D5
 #define FLAG_0x0D6               0x0D6
 #define FLAG_0x0D7               0x0D7
 #define FLAG_0x0D8               0x0D8
