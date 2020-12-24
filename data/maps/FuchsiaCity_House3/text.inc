@@ -41,7 +41,7 @@ FuchsiaCity_House3_Eusine_Text_Busy::
     .string "He seems to be lost in thought...$"
 
 FuchsiaCity_House3_Eusine_Introduction::
-    .string "My name is Eusine. For my entire\n"
+    .string "My name is Eunice. For my entire\n"
     .string "life, I've been tracking some\l"
     .string "roaming Legendary Pokemon.\l"
     .string "And you are?\l"
@@ -107,3 +107,9 @@ FuchsiaCity_House3_GiveBallText::
 
 FuchsiaCity_House3_CanYouShowItToMe::
     .string "Can you show it to me please?$"
+
+FuchisaCity_House3_Eusine_Text::
+    .string "Yo! My name's Eusine, I\n"
+    .string "wanna help my grandma find\l"
+    .string "her Legendary Pokemon, my\l"
+    .string "favorite is Suicune!$"

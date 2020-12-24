@@ -59,11 +59,11 @@ FuchsiaCity_House3_EventScript_CancelForgetMove:: @ 816D941
 	release
 	end
 
-FuchsiaCity_House3_Eusine::
-    goto_if_unset FLAG_IS_CHAMPION, FuchsiaCity_House3_Eusine_Busy
+FuchsiaCity_House3_Eunice::
+    goto_if_unset FLAG_IS_CHAMPION, FuchsiaCity_House3_Eunice_Busy
     lock
     faceplayer
-    goto_if_unset FLAG_MET_EUSINE, FuchsiaCity_House3_MeetEusine
+    goto_if_unset FLAG_MET_EUNICE, FuchsiaCity_House3_MeetEunice
     goto_if_unset FLAG_CAUGHT_ENTEI, FuchsiaCity_House3_CheckEntei
     goto_if_unset FLAG_CAUGHT_LATIAS, FuchsiaCity_House3_CheckLatias
     goto_if_unset FLAG_CAUGHT_RAIKOU, FuchsiaCity_House3_CheckRaikou
@@ -165,19 +165,26 @@ FuchsiaCity_House3_HasSuicune::
     release
     end
 
-FuchsiaCity_House3_MeetEusine::
-    msgbox FuchsiaCity_House3_Eusine_Introduction
+FuchsiaCity_House3_MeetEunice::
+    msgbox FuchsiaCity_House3_Eunice_Introduction
     msgbox FuchsiaCity_House3_Entei_Intro
     msgbox FuchsiaCity_House3_GiveBallText
     giveitem ITEM_MASTER_BALL
-    setflag FLAG_MET_EUSINE
+    setflag FLAG_MET_EUNICE
     special InitRoamer
     release
     end
 
-FuchsiaCity_House3_Eusine_Busy::
-    msgbox FuchsiaCity_House3_Eusine_Text_Thinking
+FuchsiaCity_House3_Eunice_Busy::
+    msgbox FuchsiaCity_House3_Eunice_Text_Thinking
     waitmessage
-    msgbox FuchsiaCity_House3_Eusine_Text_Busy
+    msgbox FuchsiaCity_House3_Eunice_Text_Busy
     waitmessage
+    end
+
+FuchsiaCity_House3_Eusine::
+    lock
+    faceplayer
+    msgbox FuchisaCity_House3_Eusine_Text
+    release
     end

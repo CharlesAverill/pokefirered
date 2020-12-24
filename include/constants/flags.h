@@ -216,7 +216,7 @@
 #define FLAG_CAUGHT_RAIKOU               0x0CE
 #define FLAG_CAUGHT_LATIOS               0x0CF
 #define FLAG_CAUGHT_LATIAS               0x0D0
-#define FLAG_MET_EUSINE               0x0D1
+#define FLAG_MET_EUNICE               0x0D1
 #define FLAG_0x0D2               0x0D2
 #define FLAG_0x0D3               0x0D3
 #define FLAG_0x0D4               0x0D4
