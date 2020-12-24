@@ -452,4 +452,5 @@ gSpecials:: @ 815FD60
 	def_special UpdateLoreleiDollCollection
 	def_special LoopWingFlapSound
 	def_special CreateObedientEnemyMon
+	def_special CheckSpecies
 gSpecialsEnd::

@@ -163,7 +163,9 @@
 #define OBJ_EVENT_GFX_REGICE 158
 #define OBJ_EVENT_GFX_REGISTEEL 159
 
-#define NUM_OBJ_EVENT_GFX     160
+#define OBJ_EVENT_GFX_EUSINE 160
+
+#define NUM_OBJ_EVENT_GFX     161
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.

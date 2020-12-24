@@ -967,6 +967,18 @@ const struct SpriteFrameImage gObjectEventPicTable_Agatha[] = {
     overworld_frame(gObjectEventPic_Agatha, 2, 4, 2),
 };
 
+const struct SpriteFrameImage gObjectEventPicTable_Eusine[] = {
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Eusine, 2, 4, 2),
+};
+
 const struct SpriteFrameImage gObjectEventPicTable_Brock[] = {
     overworld_frame(gObjectEventPic_Brock, 2, 4, 0),
     overworld_frame(gObjectEventPic_Brock, 2, 4, 1),

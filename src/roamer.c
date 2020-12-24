@@ -59,21 +59,20 @@ void ClearRoamerData(void)
     }
 }
 
-#define GetRoamerSpecies() ({\
-    u16 a;\
-    switch (GetStarterSpecies())\
-    {\
-    default:\
-        a = SPECIES_RAIKOU;\
-        break;\
-    case SPECIES_BULBASAUR:\
-        a = SPECIES_ENTEI;\
-        break;\
-    case SPECIES_CHARMANDER:\
-        a = SPECIES_SUICUNE;\
-        break;\
-    }\
-    a;\
+u16 GetRoamerSpecies() ({
+    u16 a;
+    if (FlagGet(FLAG_CAUGHT_ENTEI) == FALSE){
+        a = SPECIES_ENTEI;
+    } else if (FlagGet(FLAG_CAUGHT_LATIAS) == FALSE){
+        a = SPECIES_LATIAS;
+    } else if (FlagGet(FLAG_CAUGHT_RAIKOU) == FALSE){
+        a = SPECIES_RAIKOU;
+    } else if (FlagGet(FLAG_CAUGHT_LATIOS) == FALSE){
+        a = SPECIES_LATIOS;
+    } else if (FlagGet(FLAG_CAUGHT_SUICUNE) == FALSE){
+        a = SPECIES_SUICUNE;
+    }
+    return a;
 })
 
 void CreateInitialRoamerMon(void)

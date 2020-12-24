@@ -33,3 +33,73 @@ FuchsiaCity_House3_Text_NoEggShouldKnowMoves:: @ 819951F
     .string "What?\n"
     .string "No EGG should know any moves.$"
 
+FuchsiaCity_House3_Eusine_Text_Thinking::
+    .string "Route 15? No, I thought I checked\n"
+    .string "there already..."
+
+FuchsiaCity_House3_Eusine_Text_Busy::
+    .string "He seems to be lost in thought...$"
+
+FuchsiaCity_House3_Eusine_Introduction::
+    .string "My name is Eusine. I'm on the trail\n"
+    .string "of some roaming Legendary Pokemon.\l"
+    .string "And you are?\l"
+    .string "{PLAYER}? Glad to meet you. I heard\l"
+    .string "rumors that some roaming Pokemon\l"
+    .string "were spotted around Kanto. Why\l"
+    .string "don't you help me out?$"
+
+FuchsiaCity_House3_Entei_Intro::
+    .string "I'm hearing rumors of a Pokemon\n"
+    .string "named ENTEI being seen around\l"
+    .string "Kanto right now.$"
+
+FuchsiaCity_House3_WoahThatsEntei::
+    .string "Woah! That's ENTEI! Thank you\n"
+    .string "for showing me!$"
+
+FuchsiaCity_House3_Raikou_Intro::
+    .string "I'm hearing rumors of a Pokemon\n"
+    .string "named RAIKOU being seen around\l"
+    .string "Kanto right now.$"
+
+FuchsiaCity_House3_WoahThatsRaikou::
+    .string "Woah! That's RAIKOU! Thank you\n"
+    .string "for showing me!$"
+
+FuchsiaCity_House3_Suicune_Intro::
+    .string "I'm hearing rumors of a Pokemon\n"
+    .string "named SUICUNE being seen around\l"
+    .string "Kanto right now.$"
+
+FuchsiaCity_House3_WoahThatsSuicune::
+    .string "Woah! That's SUICUNE! Thank you\n"
+    .string "for showing me!$"
+
+FuchsiaCity_House3_Latios_Intro::
+    .string "I'm hearing rumors of a Pokemon\n"
+    .string "named LATIOS being seen around\l"
+    .string "Kanto right now.$"
+
+FuchsiaCity_House3_WoahThatsLatios::
+    .string "Woah! That's LATIOS! Thank you\n"
+    .string "for showing me!$"
+
+FuchsiaCity_House3_Latias_Intro::
+    .string "I'm hearing rumors of a Pokemon\n"
+    .string "named LATIAS being seen around\l"
+    .string "Kanto right now.$"
+
+FuchsiaCity_House3_WoahThatsLatias::
+    .string "Woah! That's LATIAS! Thank you\n"
+    .string "for showing me!$"
+
+FuchsiaCity_House3_AllDone::
+    .string "I think that's all the roaming\n"
+    .string "Pokemon! Thank you for helping me!$"
+
+FuchsiaCity_House3_GiveBallText::
+    .string "I think this might be of help.$"
+
+FuchsiaCity_House3_CanYouShowItToMe::
+    .string "Can you show it to me please?$"
