@@ -33,23 +33,23 @@ FuchsiaCity_House3_Text_NoEggShouldKnowMoves:: @ 819951F
     .string "What?\n"
     .string "No EGG should know any moves.$"
 
-FuchsiaCity_House3_Eusine_Text_Thinking::
+FuchsiaCity_House3_Eunice_Text_Thinking::
     .string "Route 15? No, I thought I checked\n"
     .string "there already..."
 
-FuchsiaCity_House3_Eusine_Text_Busy::
+FuchsiaCity_House3_Eunice_Text_Busy::
     .string "He seems to be lost in thought...$"
 
-FuchsiaCity_House3_Eusine_Introduction::
+FuchsiaCity_House3_Eunice_Introduction::
     .string "My name is Eunice. For my entire\n"
     .string "life, I've been tracking some\l"
     .string "roaming Legendary Pokemon.\l"
     .string "And you are?\l"
     .string "{PLAYER}? Glad to meet you. I heard\l"
     .string "rumors that some roaming Pokemon\l"
-    .string "were spotted around Kanto.\l"
-    .string "I'm much too old to go adventuring\l"
-    .string "like I used to with Ethan all those\l"
+    .string "were spotted around Kanto. I'm\l"
+    .string "much too old to go adventuring like\l"
+    .string "I used to with my husband all those\l"
     .string "years ago... Could you take my place\l"
     .string "and search for the roaming Pokemon?$"
 
