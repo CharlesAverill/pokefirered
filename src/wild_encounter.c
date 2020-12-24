@@ -44,20 +44,20 @@ static void AddToWildEncounterRateBuff(u8 encouterRate);
 #include "data/wild_encounters.h"
 
 static const u8 sUnownLetterSlots[][12] = {
-  //  A   A   A   A   A   A   A   A   A   A   A   ?
-    { 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 27},
-  //  C   C   C   D   D   D   H   H   H   U   U   O
-    { 2,  2,  2,  3,  3,  3,  7,  7,  7, 20, 20, 14},
-  //  N   N   N   N   S   S   S   S   I   I   E   E
-    {13, 13, 13, 13, 18, 18, 18, 18,  8,  8,  4,  4},
-  //  P   P   L   L   J   J   R   R   R   Q   Q   Q
-    {15, 15, 11, 11,  9,  9, 17, 17, 17, 16, 16, 16},
-  //  Y   Y   T   T   G   G   G   F   F   F   K   K
-    {24, 24, 19, 19,  6,  6,  6,  5,  5,  5, 10, 10},
-  //  V   V   V   W   W   W   X   X   M   M   B   B
-    {21, 21, 21, 22, 22, 22, 23, 23, 12, 12,  1,  1},
-  //  Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   !
-    {25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26},
+        //  A   A   A   A   A   A   A   A   A   A   A   ?
+        { 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 27},
+        //  C   C   C   D   D   D   H   H   H   U   U   O
+        { 2,  2,  2,  3,  3,  3,  7,  7,  7, 20, 20, 14},
+        //  N   N   N   N   S   S   S   S   I   I   E   E
+        {13, 13, 13, 13, 18, 18, 18, 18,  8,  8,  4,  4},
+        //  P   P   L   L   J   J   R   R   R   Q   Q   Q
+        {15, 15, 11, 11,  9,  9, 17, 17, 17, 16, 16, 16},
+        //  Y   Y   T   T   G   G   G   F   F   F   K   K
+        {24, 24, 19, 19,  6,  6,  6,  5,  5,  5, 10, 10},
+        //  V   V   V   W   W   W   X   X   M   M   B   B
+        {21, 21, 21, 22, 22, 22, 23, 23, 12, 12,  1,  1},
+        //  Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   !
+        {25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26},
 };
 
 void DisableWildEncounters(bool8 state)
@@ -126,32 +126,32 @@ static u8 ChooseWildMonIndex_Fishing(u8 rod)
 
     switch (rod)
     {
-    case OLD_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_SLOT_0)
-            wildMonIndex = 0;
-        else
-            wildMonIndex = 1;
-        break;
-    case GOOD_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2)
-            wildMonIndex = 2;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3)
-            wildMonIndex = 3;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_4)
-            wildMonIndex = 4;
-        break;
-    case SUPER_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5)
-            wildMonIndex = 5;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6)
-            wildMonIndex = 6;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7)
-            wildMonIndex = 7;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8)
-            wildMonIndex = 8;
-        if (rand == ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8)
-            wildMonIndex = 9;
-        break;
+        case OLD_ROD:
+            if (rand < ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_SLOT_0)
+                wildMonIndex = 0;
+            else
+                wildMonIndex = 1;
+            break;
+        case GOOD_ROD:
+            if (rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2)
+                wildMonIndex = 2;
+            if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3)
+                wildMonIndex = 3;
+            if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_4)
+                wildMonIndex = 4;
+            break;
+        case SUPER_ROD:
+            if (rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5)
+                wildMonIndex = 5;
+            if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6)
+                wildMonIndex = 6;
+            if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7)
+                wildMonIndex = 7;
+            if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8)
+                wildMonIndex = 8;
+            if (rand == ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8)
+                wildMonIndex = 9;
+            break;
     }
     return wildMonIndex;
 }
@@ -216,12 +216,12 @@ static bool8 UnlockedTanobyOrAreNotInTanoby(void)
     if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER))
         return TRUE;
     if (!(gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER)
-    ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER)
-    ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER)
-    ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER)
-    ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER)
-    ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER)
-    ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_VIAPOIS_CHAMBER)
+          ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER)
+          ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER)
+          ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER)
+          ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER)
+          ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER)
+          ||  gSaveBlock1Ptr->location.mapNum == MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_VIAPOIS_CHAMBER)
     ))
         return TRUE;
     return FALSE;
@@ -276,15 +276,15 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
     u8 level;
     switch (area)
     {
-    case WILD_AREA_LAND:
-        slot = ChooseWildMonIndex_Land();
-        break;
-    case WILD_AREA_WATER:
-        slot = ChooseWildMonIndex_WaterRock();
-        break;
-    case WILD_AREA_ROCKS:
-        slot = ChooseWildMonIndex_WaterRock();
-        break;
+        case WILD_AREA_LAND:
+            slot = ChooseWildMonIndex_Land();
+            break;
+        case WILD_AREA_WATER:
+            slot = ChooseWildMonIndex_WaterRock();
+            break;
+        case WILD_AREA_ROCKS:
+            slot = ChooseWildMonIndex_WaterRock();
+            break;
     }
     level = ChooseWildMonLevel(&info->wildPokemon[slot]);
     if (flags == WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(level))
@@ -322,12 +322,12 @@ static bool8 DoWildEncounterRateTest(u32 encounterRate, bool8 ignoreAbility)
     {
         switch (sWildEncounterData.abilityEffect)
         {
-        case 1:
-            encounterRate /= 2;
-            break;
-        case 2:
-            encounterRate *= 2;
-            break;
+            case 1:
+                encounterRate /= 2;
+                break;
+            case 2:
+                encounterRate *= 2;
+                break;
         }
     }
     if (encounterRate > 1600)
@@ -381,7 +381,7 @@ bool8 StandardWildEncounter(u32 currMetatileBehavior, u16 previousMetatileBehavi
 
             else if (TryStartRoamerEncounter() == TRUE)
             {
-                roamer = &gRoamers[gLastSelectedRoamer];
+                roamer = &gSaveBlock1Ptr->roamer;
                 if (!IsWildLevelAllowedByRepel(roamer->level))
                 {
                     return FALSE;
@@ -420,7 +420,7 @@ bool8 StandardWildEncounter(u32 currMetatileBehavior, u16 previousMetatileBehavi
 
             if (TryStartRoamerEncounter() == TRUE)
             {
-                roamer = &gRoamers[gLastSelectedRoamer];
+                roamer = &gSaveBlock1Ptr->roamer;
                 if (!IsWildLevelAllowedByRepel(roamer->level))
                 {
                     return FALSE;
@@ -629,12 +629,12 @@ static void ApplyFluteEncounterRateMod(u32 *encounterRate)
 {
     switch (GetFluteEncounterRateModType())
     {
-    case 1:
-        *encounterRate += *encounterRate / 2;
-        break;
-    case 2:
-        *encounterRate = *encounterRate / 2;
-        break;
+        case 1:
+            *encounterRate += *encounterRate / 2;
+            break;
+        case 2:
+            *encounterRate = *encounterRate / 2;
+            break;
     }
 }
 
@@ -723,14 +723,14 @@ static bool8 HandleWildEncounterCooldown(u32 currMetatileBehavior)
     encRate = 5 * 256;
     switch (GetFluteEncounterRateModType())
     {
-    case 1:
-        minSteps -= minSteps / 2;
-        encRate += encRate / 2;
-        break;
-    case 2:
-        minSteps *= 2;
-        encRate /= 2;
-        break;
+        case 1:
+            minSteps -= minSteps / 2;
+            encRate += encRate / 2;
+            break;
+        case 2:
+            minSteps *= 2;
+            encRate /= 2;
+            break;
     }
     sWildEncounterData.leadMonHeldItem = GetMonData(&gPlayerParty[0], MON_DATA_HELD_ITEM);
     if (IsLeadMonHoldingCleanseTag() == TRUE)
@@ -740,14 +740,14 @@ static bool8 HandleWildEncounterCooldown(u32 currMetatileBehavior)
     }
     switch (GetAbilityEncounterRateModType())
     {
-    case 1:
-        minSteps *= 2;
-        encRate /= 2;
-        break;
-    case 2:
-        minSteps /= 2;
-        encRate *= 2;
-        break;
+        case 1:
+            minSteps *= 2;
+            encRate /= 2;
+            break;
+        case 2:
+            minSteps /= 2;
+            encRate *= 2;
+            break;
     }
     minSteps /= 256;
     encRate /= 256;

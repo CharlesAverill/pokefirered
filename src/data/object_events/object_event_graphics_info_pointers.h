@@ -158,6 +158,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rayquaza;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regirock;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regice;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Registeel;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Eusine;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -321,4 +322,5 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_REGIROCK] = &gObjectEventGraphicsInfo_Regirock,
     [OBJ_EVENT_GFX_REGICE] = &gObjectEventGraphicsInfo_Regice,
     [OBJ_EVENT_GFX_REGISTEEL] = &gObjectEventGraphicsInfo_Registeel,
+    [OBJ_EVENT_GFX_EUSINE] = &gObjectEventGraphicsInfo_Eusine,
 };

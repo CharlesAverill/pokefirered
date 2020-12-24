@@ -5,6 +5,8 @@
 #include "constants/species.h"
 #include "constants/maps.h"
 #include "constants/region_map_sections.h"
+#include "constants/flags.h"
+#include "event_data.h"
 
 EWRAM_DATA u8 sLocationHistory[3][2] = {};
 EWRAM_DATA u8 sRoamerLocation[2] = {};
@@ -59,7 +61,7 @@ void ClearRoamerData(void)
     }
 }
 
-u16 GetRoamerSpecies() ({
+u16 GetRoamerSpecies() {
     u16 a;
     if (FlagGet(FLAG_CAUGHT_ENTEI) == FALSE){
         a = SPECIES_ENTEI;
@@ -73,7 +75,7 @@ u16 GetRoamerSpecies() ({
         a = SPECIES_SUICUNE;
     }
     return a;
-})
+}
 
 void CreateInitialRoamerMon(void)
 {
