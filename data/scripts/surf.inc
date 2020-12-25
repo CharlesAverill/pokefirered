@@ -1,12 +1,5 @@
 EventScript_UseSurf:: @ 81A6AC8
-	/*
 	goto_if_questlog EventScript_UseSurfEnd
-	checkpartymove MOVE_SURF
-	compare VAR_RESULT, PARTY_SIZE
-	goto_if_eq EventScript_UseSurfEnd
-	*/
-	goto_if_unset FLAG_GOT_HM03, EventScript_UseSurfEnd
-	/*getpartymonname 0, VAR_RESULT*/
 	getspeciesname 0, SPECIES_LAPRAS
 	setfieldeffectarg 0, VAR_RESULT
 	lockall
@@ -14,9 +7,12 @@ EventScript_UseSurf:: @ 81A6AC8
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_UseSurfRelease
 	msgbox Text_UsedSurf
+	setvar VAR_0x8000, SPECIES_LAPRAS
 	dofieldeffect FLDEFF_USE_SURF
+
 EventScript_UseSurfRelease:@ 81A6B0B
 	releaseall
+
 EventScript_UseSurfEnd: @ 81A6B0C
 	end
 

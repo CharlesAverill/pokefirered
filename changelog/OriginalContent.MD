@@ -2,12 +2,14 @@
 ## Features
 - Physical/Special split
 - Infinite TM Use
+- Summon HM users (No need to teach HMs besides Fly & Flash, but these aren't required for progression)
 - Inside Running
 - Trainer Class-based PokeBalls
 - "Use another repel" prompt
 - Don't show eggs during PokeCenter heal
 - Extra premier balls if you buy more than 10 Balls at a time
 - Cerulean Cave Guard leaves after becoming Champion
+
 ## Locations
 - Dragon Gate: in between Routes 10 and 25
 - Cinnabar Volcano: beneath Cinnabar Gym
