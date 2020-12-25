@@ -401,8 +401,14 @@ OneIsland_PokemonCenter_1F_EventScript_Hiker:: @ 8171151
 OneIsland_PokemonCenter_1F_FlagSetter::
     lock
     faceplayer
+    goto_if_set FLAG_IS_CHAMPION, OneIsland_PokemonCenter_1F_FlagSetter_AllGood
     msgbox OneIsland_PokemonCenter_1F_FlagSetter_Text
     setflag FLAG_IS_CHAMPION
+    release
+    end
+
+OneIsland_PokemonCenter_1F_FlagSetter_AllGood::
+    msgbox OneIsland_PokemonCenter_1F_FlagSetter_Text_AllGood
     release
     end
 
@@ -413,6 +419,11 @@ OneIsland_PokemonCenter_1F_FlagSetter_Text::
     .string "set the custom ISCHAMPION flag\l"
     .string "so you won't have any issues\l"
     .string "with special events. Thank you!$"
+
+OneIsland_PokemonCenter_1F_FlagSetter_Text_AllGood::
+    .string "Hey there, I'm the flag setter!\n"
+    .string "Looks like all of your flags are\l"
+    .string "up-to-date!$"
 
 OneIsland_PokemonCenter_1F_EventScript_BattleGirl:: @ 817115A
 	lock

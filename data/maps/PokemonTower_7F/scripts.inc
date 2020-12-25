@@ -9,6 +9,51 @@ PokemonTower_7F_OnTransition::
 	call_if_unset FLAG_CAUGHT_JIRACHI, PokemonTower_7F_TryShowJirachi
 	end
 
+PokemonTower_7F_Initiate_Jirachi_Battle::
+    goto_if_questlog EventScript_ReleaseEnd
+    special QuestLog_CutRecording
+    lock
+    faceplayer
+    waitse
+    playmoncry SPECIES_JIRACHI, 2
+    message PokemonTower_7F_Text_Jirachi
+    waitmessage
+    waitmoncry
+    delay 20
+    playbgm MUS_ENCOUNTER_GYM_LEADER, 0
+    waitbuttonpress
+    setwildbattle SPECIES_JIRACHI, 80, ITEM_NONE
+    setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+    special StartLegendaryBattle
+    waitstate
+    clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+    specialvar VAR_RESULT, GetBattleOutcome
+    compare VAR_RESULT, B_OUTCOME_WON
+    goto_if_eq PokemonTower_7F_DefeatedJirachi
+    compare VAR_RESULT, B_OUTCOME_RAN
+    goto_if_eq PokemonTower_7F_RanFromJirachi
+    compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+    goto_if_eq PokemonTower_7F_RanFromJirachi
+    setflag FLAG_FOUGHT_JIRACHI
+    release
+    end
+
+PokemonTower_7F_DefeatedJirachi:: @ 8162558
+	setflag FLAG_FOUGHT_JIRACHI
+    clearflag FLAG_DONT_LEAVE_LEGEND_YET
+	goto EventScript_RemoveStaticMon
+	end
+
+PokemonTower_7F_RanFromJirachi:: @ 8162561
+	setvar VAR_0x8004, SPECIES_JIRACHI
+    clearflag FLAG_DONT_LEAVE_LEGEND_YET
+	goto EventScript_MonDisappeared
+	end
+
+PokemonTower_7F_Text_Jirachi:
+    .string "zzzzz....\n"
+    .string "Xir Xii!$"
+
 PokemonTower_7F_HideJirachi::
 	setvar VAR_TEMP_1, 1
 	setflag FLAG_HIDE_JIRACHI
