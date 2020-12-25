@@ -17,6 +17,7 @@ EventScript_CutTree:: @ 81BDF13
 	goto_if_eq EventScript_DontCutTree
 	msgbox Text_MonUsedMove
 	closemessage
+	setvar VAR_0x8000, SPECIES_SCYTHER
 	dofieldeffect FLDEFF_USE_CUT_ON_TREE
 	waitstate
 	goto EventScript_CutTreeDown
@@ -56,7 +57,8 @@ Text_CutTreeDown:: @ 81BDF94
 	.string "Would you like to CUT it?$"
 
 Text_MonUsedMove:: @ 81BDFD7
-	.string "{STR_VAR_1} used {STR_VAR_2}!$"
+	.string "{PLAYER} summoned {STR_VAR_1}\n"
+	.string "to use {STR_VAR_2}!$"
 
 Text_TreeCanBeCutDown:: @ 81BDFE3
 	.string "This tree looks like it can be CUT\n"
@@ -66,14 +68,7 @@ EventScript_RockSmash:: @ 81BE00C
 	goto_if_questlog EventScript_ReleaseEnd
 	lockall
 	goto_if_unset FLAG_BADGE06_GET, EventScript_CantSmashRock
-	goto_if_unset FLAG_GOT_HM06, EventScript_CantCutTree
-	/*
-	checkpartymove MOVE_ROCK_SMASH
-	compare VAR_RESULT, PARTY_SIZE
-	goto_if_eq EventScript_CantSmashRock
-	*/
-	setfieldeffectarg 0, VAR_RESULT
-	/*getpartymonname 0, VAR_RESULT*/
+	goto_if_unset FLAG_GOT_HM06, EventScript_CantSmashRock
 	getspeciesname 0, SPECIES_GOLEM
 	getmovename 1, MOVE_ROCK_SMASH
 	msgbox Text_UseRockSmash, MSGBOX_YESNO
@@ -81,6 +76,7 @@ EventScript_RockSmash:: @ 81BE00C
 	goto_if_eq EventScript_DontSmashRock
 	msgbox Text_MonUsedMove
 	closemessage
+	setvar VAR_0x8000, SPECIES_GOLEM
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
 	goto EventScript_UseRockSmash
@@ -88,6 +84,7 @@ EventScript_RockSmash:: @ 81BE00C
 
 EventScript_FldEffRockSmash:: @ 81BE064
 	lockall
+	setvar VAR_0x8000, SPECIES_GOLEM
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
 	goto EventScript_UseRockSmash
@@ -134,19 +131,16 @@ EventScript_StrengthBoulder:: @ 81BE11D
 	lockall
 	goto_if_unset FLAG_BADGE04_GET, EventScript_CantMoveBoulder
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_AlreadyUsedStrength
-	goto_if_unset FLAG_GOT_HM06, EventScript_CantCutTree
-	/*
-	checkpartymove MOVE_STRENGTH
-	compare VAR_RESULT, PARTY_SIZE
-	goto_if_eq EventScript_CantMoveBoulder
-	*/
+	goto_if_unset FLAG_GOT_HM06, EventScript_CantMoveBoulder
 	setfieldeffectarg 0, VAR_RESULT
 	msgbox Text_UseStrength, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_DontUseStrength
 	closemessage
+	setvar VAR_0x8000, SPECIES_ARCANINE
 	dofieldeffect FLDEFF_USE_STRENGTH
 	waitstate
+	getspeciesname 0, SPECIES_ARCANINE
 	goto EventScript_UseStrength
 	end
 
@@ -209,6 +203,7 @@ EventScript_Waterfall:: @ 81BE2B7
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_EndWaterfall
 	msgbox Text_MonUsedWaterfall
+	setvar VAR_0x8000, SPECIES_GYARADOS
 	dofieldeffect FLDEFF_USE_WATERFALL
 	goto EventScript_EndWaterfall
 

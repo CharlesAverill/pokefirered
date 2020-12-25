@@ -1581,7 +1581,8 @@ static bool8 waterfall_1_do_anim_probably(struct Task * task, struct ObjectEvent
     if (!ObjectEventIsMovementOverridden(playerObj))
     {
         ObjectEventClearHeldMovementIfFinished(playerObj);
-        gFieldEffectArguments[0] = task->data[1];
+        //gFieldEffectArguments[0] = task->data[1];
+        gFieldEffectArguments[0] = SPECIES_GYARADOS;
         FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
         task->data[0]++;
     }
@@ -2492,8 +2493,20 @@ u32 FldEff_FieldMoveShowMon(void)
 u32 FldEff_FieldMoveShowMonInit(void)
 {
     u32 r6 = gFieldEffectArguments[0] & 0x80000000;
-    u8 partyIdx = gFieldEffectArguments[0];
-    gFieldEffectArguments[0] = GetMonData(&gPlayerParty[partyIdx], MON_DATA_SPECIES);
+    u8 partyIdx = 0;
+    if(VarGet(VAR_0x8000) != 0){
+        gFieldEffectArguments[0] = VarGet(VAR_0x8000);
+        VarSet(VAR_0x8000, 0);
+    }
+    else{
+        u8 partyIdx = gFieldEffectArguments[0];
+        gFieldEffectArguments[0] = GetMonData(&gPlayerParty[partyIdx], MON_DATA_SPECIES);
+    }
+
+    if(gFieldEffectArguments[0] < SPECIES_BULBASAUR || gFieldEffectArguments[0] > SPECIES_CHIMECHO){
+        gFieldEffectArguments[0] = SPECIES_DITTO;
+    }
+
     gFieldEffectArguments[1] = GetMonData(&gPlayerParty[partyIdx], MON_DATA_OT_ID);
     gFieldEffectArguments[2] = GetMonData(&gPlayerParty[partyIdx], MON_DATA_PERSONALITY);
     gFieldEffectArguments[0] |= r6;
@@ -2929,7 +2942,8 @@ static void UseSurfEffect_3(struct Task * task)
     objectEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
     if (ObjectEventCheckHeldMovementStatus(objectEvent))
     {
-        gFieldEffectArguments[0] = task->data[15] | 0x80000000;
+        //gFieldEffectArguments[0] = task->data[15] | 0x80000000;
+        gFieldEffectArguments[0] = SPECIES_LAPRAS;
         FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
         task->data[0]++;
     }
@@ -3143,6 +3157,7 @@ static void UseFlyEffect_2(struct Task * task)
     {
         task->data[0]++;
         gFieldEffectArguments[0] = task->data[1];
+        //gFieldEffectArguments[0] = SPECIES_PIDGEOT;
         FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
     }
 }
