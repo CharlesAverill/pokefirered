@@ -25,13 +25,11 @@ CinnabarIsland_Cinnabar_Volcano_B2F_TryRemoveGroudon:
 	return
 
 CinnabarIsland_Cinnabar_Volcano_B2F_Approach_Groudon::
-    goto_if_set FLAG_DONT_LEAVE_LEGEND_YET, CinnabarIsland_Cinnabar_Volcano_B2F_Move_Player
+    /*goto_if_set FLAG_DONT_LEAVE_LEGEND_YET, CinnabarIsland_Cinnabar_Volcano_B2F_Move_Player*/
     goto_if_set FLAG_SYS_FLASH_ACTIVE, CinnabarIsland_Cinnabar_Volcano_B2F_end
     goto_if_set FLAG_FOUGHT_GROUDON, CinnabarIsland_Cinnabar_Volcano_B2F_end
     lockall
-    animateflash 0
-	setflashradius 0
-	setflag FLAG_SYS_FLASH_ACTIVE
+    call CinnabarIsland_Cinnabar_Volcano_SetFlash
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_Meet_Groudon
 	waitmovement 0
 	applymovement 1, Movement_Groudon
@@ -39,6 +37,13 @@ CinnabarIsland_Cinnabar_Volcano_B2F_Approach_Groudon::
     setflag FLAG_DONT_LEAVE_LEGEND_YET
 	releaseall
 	end
+
+CinnabarIsland_Cinnabar_Volcano_SetFlash::
+    goto_if_set FLAG_SYS_FLASH_ACTIVE, CinnabarIsland_Cinnabar_Volcano_B2F_end
+    animateflash 0
+	setflashradius 0
+	setflag FLAG_SYS_FLASH_ACTIVE
+	return
 
 CinnabarIsland_Cinnabar_Volcano_B2F_Move_Player:
     lockall

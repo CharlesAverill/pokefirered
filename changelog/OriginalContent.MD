@@ -27,11 +27,12 @@ Many custom events rely on a custom flag I've made. If you started your save fil
 ## Roaming Pokemon
 After becoming Champion, talk to Eunice in Fuchsia City.
 Eunice will tell you about rumors of various roaming
-pokemon. She will give you Master Balls for Entei and Raikou
-(to avoid the Roar glitch). Bring the roamer to
+pokemon. You must bring the roamer to
 Eunice to start the next roamer. Here's the order:
 - Entei
 - Latias
 - Raikou
 - Latios
 - Suicune
+
+P.S. - Roamers reinitialize if you kill them
