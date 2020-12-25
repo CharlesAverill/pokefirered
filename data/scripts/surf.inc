@@ -1,9 +1,13 @@
 EventScript_UseSurf:: @ 81A6AC8
 	goto_if_questlog EventScript_UseSurfEnd
+	/*
 	checkpartymove MOVE_SURF
 	compare VAR_RESULT, PARTY_SIZE
 	goto_if_eq EventScript_UseSurfEnd
-	getpartymonname 0, VAR_RESULT
+	*/
+	goto_if_unset FLAG_GOT_HM03, EventScript_UseSurfEnd
+	/*getpartymonname 0, VAR_RESULT*/
+	getspeciesname 0, SPECIES_LAPRAS
 	setfieldeffectarg 0, VAR_RESULT
 	lockall
 	msgbox Text_WantToSurf, MSGBOX_YESNO
