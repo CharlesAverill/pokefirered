@@ -410,7 +410,7 @@ OneIsland_PokemonCenter_1F_FlagSetter_Text::
     .string "Hey there, I'm the flag setter!\n"
     .string "In case you didn't start your\l"
     .string "save file on this ROM, I'll\l"
-    .string "set the custom IS_CHAMPION flag\l"
+    .string "set the custom ISCHAMPION flag\l"
     .string "so you won't have any issues\l"
     .string "with special events. Thank you!$"
 
