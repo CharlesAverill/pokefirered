@@ -217,7 +217,7 @@
 #define FLAG_CAUGHT_LATIOS               0x0CF
 #define FLAG_CAUGHT_LATIAS               0x0D0
 #define FLAG_MET_EUNICE               0x0D1
-#define FLAG_CAUGHT_JIRACHI               0x0D2
+#define FLAG_FOUGHT_JIRACHI               0x0D2
 #define FLAG_TALKED_ABOUT_JIRACHI               0x0D3
 #define FLAG_HIDE_JIRACHI               0x0D4
 #define FLAG_JIRACHI_FLEW_AWAY               0x0D5

@@ -5,8 +5,8 @@ PokemonTower_7F_MapScripts::
 
 PokemonTower_7F_OnTransition::
     call_if_unset FLAG_TALKED_ABOUT_JIRACHI, PokemonTower_7F_HideJirachi
-	call_if_set FLAG_CAUGHT_JIRACHI, PokemonTower_7F_HideJirachi
-	call_if_unset FLAG_CAUGHT_JIRACHI, PokemonTower_7F_TryShowJirachi
+	call_if_set FLAG_FOUGHT_JIRACHI, PokemonTower_7F_HideJirachi
+	call_if_unset FLAG_FOUGHT_JIRACHI, PokemonTower_7F_TryShowJirachi
 	end
 
 PokemonTower_7F_Initiate_Jirachi_Battle::

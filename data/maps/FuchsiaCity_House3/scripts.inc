@@ -86,6 +86,8 @@ FuchsiaCity_House3_CheckEntei::
 FuchsiaCity_House3_HasEntei::
     msgbox FuchsiaCity_House3_WoahThatsEntei
     msgbox FuchsiaCity_House3_Latias_Intro
+    msgbox FuchsiaCity_House3_GiveBallText
+    giveitem ITEM_MASTER_BALL
     setflag FLAG_CAUGHT_ENTEI
     special InitRoamer
     release
@@ -143,6 +145,8 @@ FuchsiaCity_House3_CheckLatios::
 FuchsiaCity_House3_HasLatios::
     msgbox FuchsiaCity_House3_WoahThatsLatios
     msgbox FuchsiaCity_House3_Suicune_Intro
+    msgbox FuchsiaCity_House3_GiveBallText
+    giveitem ITEM_MASTER_BALL
     setflag FLAG_CAUGHT_LATIOS
     special InitRoamer
     release
