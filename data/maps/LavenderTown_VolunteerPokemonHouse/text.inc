@@ -86,6 +86,7 @@ LavenderTown_VolunteerPokemonHouse_Text_HaveYouVisitedTowerYet::
 
 LavenderTown_VolunteerPokemonHouse_Text_CaughtJirachi::
     .string "Ah, so it was the Wish Pokémon! It\n"
-    .string "is known to only show itself to the\l"
-    .string "purest of humans. It must have great\l"
-    .string "trust in you to reveal itself."
+    .string "is known to only show itself to\l"
+    .string "thepurest of humans. It must have\l"
+    .string "had great trust in you to\l"
+    .string "reveal itself.$"

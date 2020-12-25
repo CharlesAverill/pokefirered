@@ -22,6 +22,7 @@ Many custom events rely on a custom flag I've made. If you started your save fil
 - AuroraTicket
 - Weather Trio
 - Legendary Titans
+- Jirachi
 - Emerald Brendan/May appear
 ## Roaming Pokemon
 After becoming Champion, talk to Eunice in Fuchsia City.
