@@ -549,3 +549,11 @@ gMetatiles_CaveEmerald::
 	.align 1
 gMetatileAttributes_CaveEmerald::
 	.incbin "data/tilesets/secondary/cave_emerald/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Fortree:: @ 83A3B8A
+	.incbin "data/tilesets/secondary/fortree/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Fortree:: @ 83A4D0A
+	.incbin "data/tilesets/secondary/fortree/metatile_attributes.bin"

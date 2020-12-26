@@ -1492,3 +1492,26 @@ gTilesetPalettes_CaveEmerald::
 	.incbin "data/tilesets/secondary/cave_emerald/palettes/13.gbapal"
 	.incbin "data/tilesets/secondary/cave_emerald/palettes/14.gbapal"
 	.incbin "data/tilesets/secondary/cave_emerald/palettes/15.gbapal"
+
+	.align 2
+gTilesetTiles_Fortree:: @ 83449A0
+	.incbin "data/tilesets/secondary/fortree/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Fortree:: @ 8346020
+	.incbin "data/tilesets/secondary/fortree/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/12.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/13.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/14.gbapal"
+	.incbin "data/tilesets/secondary/fortree/palettes/15.gbapal"

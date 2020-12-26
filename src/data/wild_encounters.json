@@ -25390,12 +25390,12 @@
             "mons": [
               {
                 "min_level": 25,
-                "max_level": 35,
+                "max_level": 45,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 25,
-                "max_level": 35,
+                "max_level": 45,
                 "species": "SPECIES_HOUNDOUR"
               },
               {

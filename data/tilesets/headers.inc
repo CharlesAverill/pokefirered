@@ -755,3 +755,14 @@ gTileset_CaveEmerald::
 	.4byte gMetatiles_CaveEmerald
 	.4byte 0x0
 	.4byte gMetatileAttributes_CaveEmerald
+
+	.align 2
+gTileset_Fortree:: @ 83DF7C4
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary tileset
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_Fortree
+	.4byte gTilesetPalettes_Fortree
+	.4byte gMetatiles_Fortree
+	.4byte gMetatileAttributes_Fortree
+	.4byte InitTilesetAnim_Fortree

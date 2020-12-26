@@ -326,3 +326,10 @@ void InitTilesetAnim_CeladonGym(void)
     sSecondaryTilesetAnimCounterMax = 256;
     sSecondaryTilesetAnimCallback = sub_8070368;
 }
+
+void InitTilesetAnim_Fortree(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = NULL;
+}
