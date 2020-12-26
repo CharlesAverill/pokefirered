@@ -4433,7 +4433,7 @@
       "id": "LAYOUT_ROUTE49",
       "name": "Route49_Layout",
       "width": 80,
-      "height": 30,
+      "height": 50,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -4656,6 +4656,18 @@
       "secondary_tileset": "gTileset_GenericBuilding1",
       "border_filepath": "data/layouts/VermilionCity_BrendanHouse/border.bin",
       "blockdata_filepath": "data/layouts/VermilionCity_BrendanHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HEMLOCK_TOWN",
+      "name": "HemlockTown_Layout",
+      "width": 25,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ViridianCity",
+      "border_filepath": "data/layouts/HemlockTown/border.bin",
+      "blockdata_filepath": "data/layouts/HemlockTown/map.bin"
     }
   ]
 }

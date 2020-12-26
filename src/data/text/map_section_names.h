@@ -118,3 +118,4 @@ const u8 gMapSecName_IcebergChamber[] = _("ICEBERG CHAMBER");
 const u8 gMapSecName_IronChamber[] = _("IRON CHAMBER");
 const u8 gMapSecName_CeladonForest[] = _("CELADON FOREST");
 const u8 gMapSecName_MtMoonSummit[] = _("MT. MOON SUMMIT");
+const u8 gMapSecName_HemlockTown[] = _("HEMLOCK TOWN");

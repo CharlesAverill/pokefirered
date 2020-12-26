@@ -68,22 +68,19 @@ SSAnne_Exterior_Movement_WalkDown:: @ 81608C1
 	step_end
 
 SSAnne_Exterior_MewTruck::
+    goto_if_questlog EventScript_ReleaseEnd
+
     goto_if_set FLAG_FOUGHT_MEW, SSAnne_Exterior_MewTruck_DefeatedMew_Or_DidNotUseStrength
     goto_if_set FLAG_HIDE_MEW, SSAnne_Exterior_MewTruck_DefeatedMew_Or_DidNotUseStrength
     goto_if_questlog EventScript_ReleaseEnd
     lockall
     goto_if_unset FLAG_BADGE04_GET, SSAnne_Exterior_MewTruck_DefeatedMew_Or_DidNotUseStrength
-    checkpartymove MOVE_STRENGTH
-    compare VAR_RESULT, PARTY_SIZE
-    goto_if_eq SSAnne_Exterior_MewTruck_DefeatedMew_Or_DidNotUseStrength
-    setfieldeffectarg 0, VAR_RESULT
+    goto_if_unset FLAG_GOT_HM06 SSAnne_Exterior_MewTruck_DefeatedMew_Or_DidNotUseStrength
     msgbox SSAnne_Exterior_MewTruck_StrengthText, MSGBOX_YESNO
     compare VAR_RESULT, NO
     goto_if_eq SSAnne_Exterior_MewTruck_DefeatedMew_Or_DidNotUseStrength
     closemessage
 
-    goto_if_questlog EventScript_ReleaseEnd
-    special QuestLog_CutRecording
     waitse
     playmoncry SPECIES_MEW, 2
     message SSAnne_Exterior_MewTruck_MewText
