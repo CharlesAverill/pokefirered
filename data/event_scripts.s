@@ -1435,3 +1435,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/VermilionCity_BrendanHouse/scripts.inc"
 	.include "data/maps/VermilionCity_BrendanHouse/text.inc"
+
+	.include "data/maps/HemlockTown/scripts.inc"
+	.include "data/maps/HemlockTown/text.inc"

@@ -18,6 +18,11 @@
       "direction": "up",
       "offset": -8,
       "map": "MAP_ROUTE19"
+    },
+    {
+      "direction": "right",
+      "offset": -5,
+      "map": "MAP_HEMLOCK_TOWN"
     }
   ],
   "object_events": [
