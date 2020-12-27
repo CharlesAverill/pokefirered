@@ -2,7 +2,7 @@
   "id": "MAP_HEMLOCK_TOWN",
   "name": "HemlockTown",
   "layout": "LAYOUT_HEMLOCK_TOWN",
-  "music": "MUS_BERRY_PICK",
+  "music": "MUS_SEVII_123",
   "region_map_section": "MAPSEC_HEMLOCK_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -1493,6 +1493,7 @@ gTilesetPalettes_CaveEmerald::
 	.incbin "data/tilesets/secondary/cave_emerald/palettes/14.gbapal"
 	.incbin "data/tilesets/secondary/cave_emerald/palettes/15.gbapal"
 
+/*
 	.align 2
 gTilesetTiles_Fortree:: @ 83449A0
 	.incbin "data/tilesets/secondary/fortree/tiles.4bpp.lz"
@@ -1515,3 +1516,4 @@ gTilesetPalettes_Fortree:: @ 8346020
 	.incbin "data/tilesets/secondary/fortree/palettes/13.gbapal"
 	.incbin "data/tilesets/secondary/fortree/palettes/14.gbapal"
 	.incbin "data/tilesets/secondary/fortree/palettes/15.gbapal"
+*/

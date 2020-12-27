@@ -756,6 +756,7 @@ gTileset_CaveEmerald::
 	.4byte 0x0
 	.4byte gMetatileAttributes_CaveEmerald
 
+/*
 	.align 2
 gTileset_Fortree:: @ 83DF7C4
 	.byte TRUE @ is compressed
@@ -766,3 +767,4 @@ gTileset_Fortree:: @ 83DF7C4
 	.4byte gMetatiles_Fortree
 	.4byte gMetatileAttributes_Fortree
 	.4byte InitTilesetAnim_Fortree
+*/

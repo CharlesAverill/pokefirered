@@ -6,9 +6,13 @@ EventScript_UseSurf:: @ 81A6AC8
 	msgbox Text_WantToSurf, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_UseSurfRelease
-	msgbox Text_UsedSurf
+	msgbox Text_SummonedSurf
 	setvar VAR_0x8000, SPECIES_LAPRAS
 	dofieldeffect FLDEFF_USE_SURF
+
+Text_SummonedSurf::
+    .string "{PLAYER} summoned LAPRAS\n"
+    .string "to use SURF!$"
 
 EventScript_UseSurfRelease:@ 81A6B0B
 	releaseall
