@@ -126,7 +126,7 @@ SSAnne_Exterior_MewTruck_RanFromMew:: @ 8162561
 
 SSAnne_Exterior_MewTruck_StrengthText:
     .string "The truck seems to be rustling.\n"
-    .string "Use Strength?$"
+    .string "Summon Arcanine to use Strength?$"
 
 SSAnne_Exterior_MewTruck_MewText:
     .string "Mew!$"
