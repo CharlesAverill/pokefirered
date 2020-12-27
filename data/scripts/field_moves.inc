@@ -18,6 +18,7 @@ EventScript_CutTree:: @ 81BDF13
 	msgbox Text_MonUsedMove
 	closemessage
 	setvar VAR_0x8000, SPECIES_SCYTHER
+	setflag FLAG_CUSTOM_POKE_HM
 	dofieldeffect FLDEFF_USE_CUT_ON_TREE
 	waitstate
 	goto EventScript_CutTreeDown
@@ -77,6 +78,7 @@ EventScript_RockSmash:: @ 81BE00C
 	msgbox Text_MonUsedMove
 	closemessage
 	setvar VAR_0x8000, SPECIES_GOLEM
+	setflag FLAG_CUSTOM_POKE_HM
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
 	goto EventScript_UseRockSmash
@@ -138,6 +140,7 @@ EventScript_StrengthBoulder:: @ 81BE11D
 	goto_if_eq EventScript_DontUseStrength
 	closemessage
 	setvar VAR_0x8000, SPECIES_ARCANINE
+	setflag FLAG_CUSTOM_POKE_HM
 	dofieldeffect FLDEFF_USE_STRENGTH
 	waitstate
 	getspeciesname 0, SPECIES_ARCANINE
@@ -204,6 +207,7 @@ EventScript_Waterfall:: @ 81BE2B7
 	goto_if_eq EventScript_EndWaterfall
 	msgbox Text_MonUsedWaterfall
 	setvar VAR_0x8000, SPECIES_GYARADOS
+	setflag FLAG_CUSTOM_POKE_HM
 	dofieldeffect FLDEFF_USE_WATERFALL
 	goto EventScript_EndWaterfall
 

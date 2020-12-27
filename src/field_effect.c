@@ -2492,20 +2492,24 @@ u32 FldEff_FieldMoveShowMon(void)
 
 u32 FldEff_FieldMoveShowMonInit(void)
 {
-    u32 r6 = gFieldEffectArguments[0] & 0x80000000;
+    u32 r6 = 0;
     u8 partyIdx = 0;
-    if(VarGet(VAR_0x8000) != 0){
+
+    if(FlagGet(FLAG_CUSTOM_POKE_HM)){
         gFieldEffectArguments[0] = VarGet(VAR_0x8000);
         VarSet(VAR_0x8000, 0);
+        FlagClear(FLAG_CUSTOM_POKE_HM);
     }
     else{
-        u8 partyIdx = gFieldEffectArguments[0];
+        u8 partyIdx = GetCursorSelectionMonId(); // gFieldEffectArguments[0];
         gFieldEffectArguments[0] = GetMonData(&gPlayerParty[partyIdx], MON_DATA_SPECIES);
     }
 
     if(gFieldEffectArguments[0] < SPECIES_BULBASAUR || gFieldEffectArguments[0] > SPECIES_CHIMECHO){
         gFieldEffectArguments[0] = SPECIES_DITTO;
     }
+
+    r6 = gFieldEffectArguments[0] & 0x80000000;
 
     gFieldEffectArguments[1] = GetMonData(&gPlayerParty[partyIdx], MON_DATA_OT_ID);
     gFieldEffectArguments[2] = GetMonData(&gPlayerParty[partyIdx], MON_DATA_PERSONALITY);
