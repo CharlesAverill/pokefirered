@@ -6,7 +6,7 @@ EventScript_UseSurf:: @ 81A6AC8
 	msgbox Text_WantToSurf, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_UseSurfRelease
-	msgbox Text_SummonedSurf
+	/*msgbox Text_SummonedSurf*/
 	setvar VAR_0x8000, SPECIES_LAPRAS
 	dofieldeffect FLDEFF_USE_SURF
 
