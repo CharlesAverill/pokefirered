@@ -5,3 +5,7 @@ HemlockTown_MapScripts::
 HemlockTown_OnTransition::
     setworldmapflag FLAG_WORLD_MAP_HEMLOCK_TOWN
     end
+
+HemlockTown_TownSign::
+    msgbox HemlockTown HemlockTown_Text_TownSign, MSGBOX_SIGN
+    end

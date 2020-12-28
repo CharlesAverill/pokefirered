@@ -6,7 +6,7 @@ Route49_DeepWaterCave_Sign::
     end
 
 Route49_DeepWaterCave_Sign_Text:
-    .string "Deepwater Cave$"
+    .string "DEEPWATER CAVE$"
 
 Route49_Seel::
     lock

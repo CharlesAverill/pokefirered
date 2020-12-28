@@ -543,6 +543,7 @@
 #define MAP_CELADON_FOREST_ENTRANCE (1 | (45 << 8))
 
 // Map Group 46
+#define MAP_HEMLOCK_TOWN_HOUSE1 (0 | (46 << 8))
 
 // Map Group 47
 

@@ -22,7 +22,7 @@ CharlesLaboratory_Solomon_Done_Text2:
     .string "soul should we find one.$"
 
 CharlesLaboratory_Solomon_Done_Text3:
-    .string "You know, I'm\n"
+    .string "CHARLES: You know, I'm\n"
     .string "actually in a similar\l"
     .string "position, although I'm so bogged\l"
     .string "down with my research that\l"
@@ -39,30 +39,35 @@ CharlesLaboratory_Solomon_Done_Text3:
     .string "out. $"
 
 CharlesLaboratory_Solomon_Done_Text4:
-    .string "Here, take this AuroraTicket,\n"
-    .string "it has the location of the\l"
-    .string "Gamma ray bursts written on it.\l"
-    .string "If you take it to a port you\l"
-    .string "can find a ferry to take you there.$"
+    .string "CHARLES: Here, take this\n"
+    .string "AuroraTicket, it has the\l"
+    .string "location of the Gamma ray\l"
+    .string "bursts written on it. If\l"
+    .string "you take it to a port you\l"
+    .string "can find a ferry to\l"
+    .string "take you there.$"
 
 CharlesLaboratory_HaventUsedTicket_Text:
-    .string "Have you visited the island yet?$"
+    .string "CHARLES: Have you visited\n"
+    .string "the island yet?$"
 
 sText_AuroraTicketNoPlace:
 	.string "Can you come back when you have\n"
 	.string "more space in your bag?$"
 
 CharlesLaboratory_Give_Egg_Text:
-    .string "Woah, so it was a Pokemon this\n"
-    .string "whole time? I've never seen one\l"
-    .string "like that.\l"
+    .string "CHARLES: Woah, so it was a\n"
+    .string "Pokemon this whole time?\l"
+    .string "I've never seen one like that.\l"
     .string "Hey, for all the trouble you\l"
-    .string "went through, I'd like to give you\l"
-    .string "something. Sol and I found this EGG\l"
-    .string "on our travels many years ago. It\l"
-    .string "never hatched, but I can tell there's\l"
-    .string "something alive in there. Maybe you\l"
-    .string "can help it hatch?$"
+    .string "went through, I'd like to give\l"
+    .string "you something. Sol and I found\l"
+    .string "this EGG on our travels many\l"
+    .string "years ago. It never hatched,\l"
+    .string "but I can tell there's\l"
+    .string "something alive in there.\l"
+    .string "Maybe you can help it hatch?$"
 
 CharlesLaboratory_Charles_Done_Text:
-    .string "Hey {PLAYER}! How's our egg doing?$"
+    .string "CHARLES: Hey {PLAYER}!\n"
+    .string "How's our egg doing?$"

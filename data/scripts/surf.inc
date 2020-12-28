@@ -16,10 +16,6 @@ EventScript_UseSurf:: @ 81A6AC8
 	dofieldeffect FLDEFF_USE_SURF
 	end
 
-Text_SummonedSurf::
-    .string "{PLAYER} summoned LAPRAS\n"
-    .string "to use SURF!$"
-
 EventScript_UseSurfRelease:@ 81A6B0B
 	releaseall
 

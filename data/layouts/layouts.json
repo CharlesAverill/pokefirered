@@ -4660,7 +4660,7 @@
     {
       "id": "LAYOUT_HEMLOCK_TOWN",
       "name": "HemlockTown_Layout",
-      "width": 25,
+      "width": 36,
       "height": 40,
       "border_width": 2,
       "border_height": 2,
@@ -4668,6 +4668,18 @@
       "secondary_tileset": "gTileset_ViridianCity",
       "border_filepath": "data/layouts/HemlockTown/border.bin",
       "blockdata_filepath": "data/layouts/HemlockTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_HEMLOCK_TOWN_HOUSE1",
+      "name": "HemlockTown_House1_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding1",
+      "border_filepath": "data/layouts/HemlockTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/HemlockTown_House1/map.bin"
     }
   ]
 }

@@ -11,33 +11,35 @@ FourIsland_House1_MatthewIntro::
     .string "you'll enjoy fighting my team!$"
 
 FourIsland_House1_MatthewDefeat::
-    .string "Woah, you're really strong!\n"
-    .string "No wonder you got this far!$"
+    .string "Woah, you're really\n"
+    .string "strong! No wonder you\l"
+    .string "got this far!$"
 
 FourIsland_House1_MatthewPostBattle::
-    .string "I added in a bunch of custom\n"
-    .string "legendary events. How many have\l"
-    .string "you seen yet? Also, check out\l"
-    .string "my GitHub! - CharlesAverill$"
+    .string "MATTHEW: I added in a bunch of\n"
+    .string "custom legendary events. How\l"
+    .string "many have you seen yet?\l"
+    .string "Also, check out my\l"
+    .string "GitHub! - CharlesAverill$"
 
 FourIsland_House1_AveryIntro::
-    .string "Howdy...$"
+    .string "AVERY: Howdy...$"
 
 FourIsland_House1_AveryDefeat::
     .string "Dang nabbit!$"
 
 FourIsland_House1_AveryPostBattle::
-    .string "B)$"
+    .string "AVERY: B)$"
 
 FourIsland_House1_MaxIntro::
-    .string "Huzzah!$"
+    .string "MAX: Huzzah!$"
 
 FourIsland_House1_MaxDefeat::
     .string "Tough scene... you hate\n"
     .string "to see it!$"
 
 FourIsland_House1_MaxPostBattle::
-    .string "Classic... never gets old!$"
+    .string "MAX: Classic... never gets old!$"
 
 FourIsland_House1_Text_YoureAwfullyHeavy:: @ 81A3802
     .string "There! Boing!\n"

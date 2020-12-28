@@ -14,6 +14,7 @@
 - Cinnabar Volcano: beneath Cinnabar Gym
 - Route 49: below Route 19
 - Deepwater Cave: Route 49
+- Hemlock Town: East of Route 49
 - Celadon Forest: above Celadon CIty
 - Mt. Moon Summit: Next  to Mt. Moon exit on Route 4
 ## Events

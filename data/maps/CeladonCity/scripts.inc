@@ -11,7 +11,7 @@ CeladonCity_EventScript_ForestSign::
     end
 
 CeladonCity_ForestSign_Text::
-    .string "Celadon Forest$"
+    .string "CELADON FOREST$"
 
 CeladonCity_EventScript_LittleGirl:: @ 8166C99
 	msgbox CeladonCity_Text_GotMyKoffingInCinnabar, MSGBOX_NPC

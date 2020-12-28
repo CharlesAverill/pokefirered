@@ -1,23 +1,23 @@
 VermilionCity_Text_Brendan_PreChampion::
-    .string "Woah, you seem to have some Main\n"
-    .string "Character energy. I'm Brendan,\l"
-    .string "come talk to us when you do\l"
+    .string "Woah, you seem to have\n"
+    .string "some Main Character energy. I'm\l"
+    .string "Brendan, come talk to us when you do\l"
     .string "something big!$"
 
 VermilionCity_Text_Brendan_PostChampion::
-    .string "Hey, it's {PLAYER}! Can I see your\n"
-    .string "Trainer Card?\l"
+    .string "BRENDAN: Hey, it's {PLAYER}! Can I\n"
+    .string "see your Trainer Card?\l"
     .string "...\l"
     .string "Woah, the Kanto Champion??\l"
     .string "What an opportunity, I have to\l"
     .string "battle you!$"
 
 VermilionCity_Text_Brendan_Defeat::
-    .string "Wow... you're the strongest\n"
-    .string "trainer I've ever met!$"
+    .string "BRENDAN: Wow... you're the\n"
+    .string "strongest trainer I've ever met!$"
 
 VermilionCity_Text_Brendan_GiveRayquaza::
-    .string "Hey {PLAYER}, I have\n"
+    .string "BRENDAN: Hey {PLAYER}, I have\n"
     .string "something to give you. This\l"
     .string "Pokémon joined me because\l"
     .string "it respected my strength and\l"
@@ -29,14 +29,14 @@ VermilionCity_Text_ReceivedRayquaza::
     .string "from Brendan!$"
 
 VermilionCity_Text_ExplainRayquaza::
-    .string "Rayquaza is one of the Legendary\n"
-    .string "Weather Trio Pokémon. It\l"
+    .string "BRENDAN: Rayquaza is one of the\n"
+    .string "Legendary Weather Trio Pokémon. It\l"
     .string "helped May and I save Hoenn!\l"
     .string "I'm sure it will help you too.$"
 
 VermilionCity_Text_Brendan_PostBattle::
-    .string "How's Rayquaza doing? I'm\n"
-    .string "sure you've gone on a ton\l"
+    .string "BRENDAN: How's Rayquaza doing?\n"
+    .string "I'm sure you've gone on a ton\l"
     .string "of adventures together!$"
 
 VermilionCity_Text_May_PreChampion::
@@ -54,9 +54,9 @@ VermilionCity_Text_May_PostChampion::
     .string "interesting!$"
 
 VermilionCity_Text_May_Defeat::
-    .string "I was right, this WAS an\n"
+    .string "MAY: I was right, this WAS an\n"
     .string "interesting battle!$"
 
 VermilionCity_Text_May_PostBattle::
-    .string "Which one of us do you\n"
+    .string "MAY: Which one of us do you\n"
     .string "think is the Hoenn champion?$"
