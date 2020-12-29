@@ -1447,3 +1447,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/HemlockTown_House3/scripts.inc"
 	.include "data/maps/HemlockTown_House3/text.inc"
+
+	.include "data/maps/HemlockTown_PokemonCenter/scripts.inc"
+	.include "data/maps/HemlockTown_PokemonCenter/text.inc"
+
+	.include "data/maps/HemlockTown_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/HemlockTown_PokemonCenter_2F/text.inc"

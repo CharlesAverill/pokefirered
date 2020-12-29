@@ -4704,6 +4704,30 @@
       "secondary_tileset": "gTileset_GenericBuilding1",
       "border_filepath": "data/layouts/HemlockTown_House3/border.bin",
       "blockdata_filepath": "data/layouts/HemlockTown_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_HEMLOCK_TOWN_POKEMON_CENTER",
+      "name": "HemlockTown_PokemonCenter_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/HemlockTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/HemlockTown_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_HEMLOCK_TOWN_POKEMON_CENTER_2F",
+      "name": "HemlockTown_PokemonCenter_2F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/HemlockTown_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/HemlockTown_PokemonCenter_2F/map.bin"
     }
   ]
 }

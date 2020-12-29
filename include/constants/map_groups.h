@@ -543,9 +543,11 @@
 #define MAP_CELADON_FOREST_ENTRANCE (1 | (45 << 8))
 
 // Map Group 46
-#define MAP_HEMLOCK_TOWN_HOUSE1 (0 | (46 << 8))
-#define MAP_HEMLOCK_TOWN_HOUSE2 (1 | (46 << 8))
-#define MAP_HEMLOCK_TOWN_HOUSE3 (2 | (46 << 8))
+#define MAP_HEMLOCK_TOWN_HOUSE1            (0 | (46 << 8))
+#define MAP_HEMLOCK_TOWN_HOUSE2            (1 | (46 << 8))
+#define MAP_HEMLOCK_TOWN_HOUSE3            (2 | (46 << 8))
+#define MAP_HEMLOCK_TOWN_POKEMON_CENTER    (3 | (46 << 8))
+#define MAP_HEMLOCK_TOWN_POKEMON_CENTER_2F (4 | (46 << 8))
 
 // Map Group 47
 
