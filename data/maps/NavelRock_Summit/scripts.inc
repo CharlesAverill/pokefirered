@@ -85,6 +85,7 @@ NavelRock_Summit_EventScript_DefeatedHoOh:: @ 81650B4
 	end
 
 NavelRock_Summit_EventScript_RanFromHoOh:: @ 81650C2
+	setflag FLAG_HO_OH_FLEW_AWAY
 	setvar VAR_0x8004, SPECIES_HO_OH
 	goto EventScript_MonFlewAway
 	end

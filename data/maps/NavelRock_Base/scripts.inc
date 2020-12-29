@@ -80,6 +80,7 @@ NavelRock_Base_EventScript_DefeatedLugia:: @ 81651D9
 	end
 
 NavelRock_Base_EventScript_RanFromLugia:: @ 81651E7
+	setflag FLAG_LUGIA_FLEW_AWAY
 	setvar VAR_0x8004, SPECIES_LUGIA
 	goto EventScript_MonFlewAway
 	end
