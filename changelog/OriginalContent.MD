@@ -8,7 +8,9 @@
 - "Use another repel" prompt
 - Don't show eggs during PokeCenter heal
 - Extra premier balls if you buy more than 10 Balls at a time
-- Cerulean Cave Guard leaves after becoming Champion1
+- Cerulean Cave Guard leaves after becoming Champion
+- Eeveelutions learn ultimate moves from the Move Tutor on Cape Brink
+- Base stats / learnsets for multiple Pokemon have been upgraded
 ## Locations
 - Dragon Gate: in between Routes 10 and 25
 - Cinnabar Volcano: beneath Cinnabar Gym

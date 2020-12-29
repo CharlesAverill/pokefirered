@@ -1925,6 +1925,8 @@ static u16 GetTutorMove(u8 tutor)
         return MOVE_BLAST_BURN;
     case TUTOR_MOVE_HYDRO_CANNON:
         return MOVE_HYDRO_CANNON;
+    case TUTOR_MOVE_ZAP_CANNON:
+        return MOVE_ZAP_CANNON;
     default:
         return sTutorMoves[tutor];
     }
@@ -1940,12 +1942,17 @@ static bool8 CanLearnTutorMove(u16 species, u8 tutor)
         else
             return FALSE;
     case TUTOR_MOVE_BLAST_BURN:
-        if (species == SPECIES_CHARIZARD)
+        if (species == SPECIES_CHARIZARD || species == SPECIES_FLAREON)
             return TRUE;
         else
             return FALSE;
     case TUTOR_MOVE_HYDRO_CANNON:
-        if (species == SPECIES_BLASTOISE)
+        if (species == SPECIES_BLASTOISE || species == SPECIES_VAPOREON)
+            return TRUE;
+        else
+            return FALSE;
+    case TUTOR_MOVE_ZAP_CANNON:
+        if (species == SPECIES_JOLTEON)
             return TRUE;
         else
             return FALSE;

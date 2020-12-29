@@ -1,7 +1,7 @@
 Text_UltimateMoveThatMon:: @ 81A46C6
-    .string "I perfected the ultimate move of\n"
-    .string "its type…\p"
-    .string "But will no one take it for\n"
+    .string "I perfected ultimate moves of\n"
+    .string "various types…\p"
+    .string "But will no one take them for\n"
     .string "future use?\p"
     .string "…Hm? Hmmm!\p"
     .string "Y-you…\n"
@@ -15,7 +15,7 @@ Text_AllowMeToTeachMonUltimateMove:: @ 81A4751
     .string "Oh! This is the one!\n"
     .string "This is the POKéMON!\p"
     .string "This {STR_VAR_1} is worthy of\n"
-    .string "learning my ultimate move!\p"
+    .string "learning an ultimate move!\p"
     .string "Will you allow it?\p"
     .string "Will you allow your {STR_VAR_1} to\n"
     .string "learn my {STR_VAR_2}?$"
@@ -42,9 +42,9 @@ Text_MakeBestUseOfMove:: @ 81A48B3
 Text_PassedOnEverythingIKnow:: @ 81A48F3
     .string "Gasp, gasp, gasp…\p"
     .string "I have no regrets now.\n"
-    .string "I've passed on everything I know.\p"
-    .string "Now I can live out my life knowing\n"
-    .string "my work is done.$"
+    .string "I've passed on valuable knowledge.\p"
+    .string "Come back if you have more\l"
+    .string "special POKéMON.$"
 
 Text_FeelRejuvenated:: @ 81A4972
     .string "After I passed on my knowledge to\n"

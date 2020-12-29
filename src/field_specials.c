@@ -2208,7 +2208,10 @@ void StopPokemonLeagueLightingEffectTask(void)
 static const u8 sCapeBrinkCompatibleSpecies[] = {
     SPECIES_VENUSAUR,
     SPECIES_CHARIZARD,
-    SPECIES_BLASTOISE
+    SPECIES_BLASTOISE,
+    SPECIES_VAPOREON,
+    SPECIES_FLAREON,
+    SPECIES_JOLTEON
 };
 
 bool8 CapeBrinkGetMoveToTeachLeadPokemon(void)
@@ -2221,38 +2224,51 @@ bool8 CapeBrinkGetMoveToTeachLeadPokemon(void)
     u8 tutorMonId = 0;
     u8 numMovesKnown = 0;
     u8 leadMonSlot = GetLeadMonIndex();
+    u32 species = GetMonData(&gPlayerParty[leadMonSlot], MON_DATA_SPECIES2, NULL);
     u8 i;
     gSpecialVar_0x8007 = leadMonSlot;
     for (i = 0; i < NELEMS(sCapeBrinkCompatibleSpecies); i++)
     {
-        if (GetMonData(&gPlayerParty[leadMonSlot], MON_DATA_SPECIES2, NULL) == sCapeBrinkCompatibleSpecies[i])
+        if (species == sCapeBrinkCompatibleSpecies[i])
         {
             tutorMonId = i;
             break;
         }
     }
-    if (i == NELEMS(sCapeBrinkCompatibleSpecies) || GetMonData(&gPlayerParty[leadMonSlot], MON_DATA_FRIENDSHIP) != 255)
+
+    if (i == NELEMS(sCapeBrinkCompatibleSpecies) /* || GetMonData(&gPlayerParty[leadMonSlot], MON_DATA_FRIENDSHIP) != 255*/)
         return FALSE;
-    if (tutorMonId == 0)
+
+    if (species == SPECIES_VENUSAUR)
     {
         StringCopy(gStringVar2, gMoveNames[MOVE_FRENZY_PLANT]);
         gSpecialVar_0x8005 = MOVETUTOR_FRENZY_PLANT;
+        /*
         if (FlagGet(FLAG_TUTOR_FRENZY_PLANT) == TRUE)
             return FALSE;
+        */
     }
-    else if (tutorMonId == 1)
+    else if (species == SPECIES_CHARIZARD || species == SPECIES_FLAREON)
     {
         StringCopy(gStringVar2, gMoveNames[MOVE_BLAST_BURN]);
         gSpecialVar_0x8005 = MOVETUTOR_BLAST_BURN;
+        /*
         if (FlagGet(FLAG_TUTOR_BLAST_BURN) == TRUE)
             return FALSE;
+        */
     }
-    else
+    else if(species == SPECIES_BLASTOISE || species == SPECIES_VAPOREON)
     {
         StringCopy(gStringVar2, gMoveNames[MOVE_HYDRO_CANNON]);
         gSpecialVar_0x8005 = MOVETUTOR_HYDRO_CANNON;
+        /*
         if (FlagGet(FLAG_TUTOR_HYDRO_CANNON) == TRUE)
             return FALSE;
+        */
+    }
+    else if(species == SPECIES_JOLTEON){
+        StringCopy(gStringVar2, gMoveNames[MOVE_ZAP_CANNON]);
+        gSpecialVar_0x8005 = MOVETUTOR_ZAP_CANNON;
     }
     if (GetMonData(&gPlayerParty[leadMonSlot], MON_DATA_MOVE1) != MOVE_NONE)
         numMovesKnown++;
