@@ -83,17 +83,17 @@ const struct Trainer gTrainers[] = {
         .partySize = NELEMS(sTrainerMons_BeautyKenzie),
         .party = {.NoItemDefaultMoves = sTrainerMons_BeautyKenzie}
     },
-    [TRAINER_TUBER_2] = {
-        .partyFlags = 0,
-        .trainerClass = CLASS_TUBER_2,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_TUBER_M,
-        .trainerName = _(""),
+    [TRAINER_ALEX] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_RANGER_2,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerName = _("ALEX"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = NELEMS(sTrainerMons_Tuber2),
-        .party = {.NoItemDefaultMoves = sTrainerMons_Tuber2}
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_Alex),
+        .party = {.ItemCustomMoves = sTrainerMons_Alex}
     },
     [TRAINER_COOLTRAINER_1] = {
         .partyFlags = 0,

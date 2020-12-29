@@ -25,6 +25,21 @@ SevenIsland_SevaultCanyon_Text_EvanPostBattle:: @ 818C999
     .string "Before training POKéMON, TRAINERS\n"
     .string "themselves need to grow up.$"
 
+SevenIsland_SevaultCanyon_Text_AlexIntro::
+    .string "Hey there, I'm Alex! I'm\n"
+    .string "from Unova!$"
+
+SevenIsland_SevaultCanyon_Text_AlexDefeat::
+    .string "Looks like you beat me...$"
+
+SevenIsland_SevaultCanyon_Text_AlexPostBattle::
+    .string "I tried to bring my usual\n"
+    .string "team on this vacation,\l"
+    .string "but the border guards wouldn't\l"
+    .string "let me because of something\l"
+    .string "called a suspect test.\l"
+    .string "Not sure what that was all about.$"
+
 SevenIsland_SevaultCanyon_Text_JacksonIntro:: @ 818CA2F
     .string "I work to protect the environment.\n"
     .string "In turn, nature protects me!$"

@@ -16168,8 +16168,8 @@
                 "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
+                "min_level": 40,
+                "max_level": 46,
                 "species": "SPECIES_PHANPY"
               },
               {
@@ -16203,8 +16203,8 @@
                 "species": "SPECIES_SKARMORY"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
+                "min_level": 30,
+                "max_level": 40,
                 "species": "SPECIES_LARVITAR"
               },
               {
@@ -16213,8 +16213,8 @@
                 "species": "SPECIES_PERSIAN"
               },
               {
-                "min_level": 20,
-                "max_level": 20,
+                "min_level": 35,
+                "max_level": 50,
                 "species": "SPECIES_LARVITAR"
               },
               {

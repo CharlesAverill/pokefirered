@@ -233,11 +233,44 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_LassTessa[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Tuber2[] = {
+static const struct TrainerMonItemCustomMoves sTrainerMons_Alex[] = {
+    {
+        .iv = 150,
+        .lvl = 40,
+        .species = SPECIES_TYRANITAR,
+        .moves = {MOVE_DRAGON_DANCE, MOVE_HIDDEN_POWER, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE},
+    },
+    {
+        .iv = 150,
+        .lvl = 45,
+        .species = SPECIES_CLAYDOL,
+        .moves = {MOVE_RAPID_SPIN, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_EARTHQUAKE},
+    },
+    {
+        .iv = 150,
+        .lvl = 40,
+        .species = SPECIES_SALAMENCE,
+        .heldItem = ITEM_CHOICE_BAND,
+        .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_FIRE_BLAST, MOVE_HIDDEN_POWER},
+    },
+    {
+        .iv = 150,
+        .lvl = 40,
+        .species = SPECIES_METAGROSS,
+        .moves = {MOVE_METEOR_MASH, MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_HIDDEN_POWER},
+    },
+    {
+        .iv = 150,
+        .lvl = 45,
+        .species = SPECIES_CLOYSTER,
+        .moves = {MOVE_SPIKES, MOVE_SURF, MOVE_ICE_BEAM, MOVE_EXPLOSION},
+    },
     {
         .iv = 0,
         .lvl = 38,
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_BLISSEY,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_SOFT_BOILED, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL},
     },
 };
 

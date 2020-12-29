@@ -2918,6 +2918,11 @@ SevenIsland_SevaultCanyon_EventScript_Evan:: @ 81ACA8B
 	msgbox SevenIsland_SevaultCanyon_Text_EvanPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+SevenIsland_SevaultCanyon_EventScript_Alex::
+    trainerbattle_single TRAINER_ALEX, SevenIsland_SevaultCanyon_Text_AlexIntro, SevenIsland_SevaultCanyon_Text_AlexDefeat
+    msgbox SevenIsland_SevaultCanyon_Text_AlexPostBattle, MSGBOX_AUTOCLOSE
+    end
+
 SevenIsland_SevaultCanyon_EventScript_EvanRematch:: @ 81ACAB2
 	trainerbattle_rematch TRAINER_TAMER_EVAN, SevenIsland_SevaultCanyon_Text_EvanRematchIntro, SevenIsland_SevaultCanyon_Text_EvanDefeat
 	msgbox SevenIsland_SevaultCanyon_Text_EvanPostBattle, MSGBOX_AUTOCLOSE
