@@ -992,10 +992,10 @@ Text_TheDoorIsOpen:: @ 81A5CDF
 	.include "data/text/poke_mart.inc"
 
 Text_MonFlewAway:: @ 81A63C4
-	.string "The {STR_VAR_1} flew away!$"
+	.string "{STR_VAR_1} flew away!$"
 
 Text_MonDisappeared::
-    .string "The {STR_VAR_1} disappeared!$"
+    .string "{STR_VAR_1} disappeared!$"
 
 Text_TheresBedLetsRest:: @ 81A63D6
 	.string "ベッドが　ある‥‥\n"
@@ -1453,3 +1453,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/HemlockTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/HemlockTown_PokemonCenter_2F/text.inc"
+
+	.include "data/maps/HemlockForest/scripts.inc"
+	.include "data/maps/HemlockForest/text.inc"

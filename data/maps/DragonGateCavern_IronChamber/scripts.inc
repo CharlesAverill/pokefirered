@@ -1,16 +1,34 @@
 DragonGateCavern_IronChamber_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, DragonGateCavern_IronChamber_OnResume
+	map_script MAP_SCRIPT_ON_TRANSITION, DragonGateCavern_IronChamber_OnTransition
 	.byte 0
 
 DragonGateCavern_IronChamber_OnResume:
 	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, DragonGateCavern_IronChamber_TryRemoveRegisteel
 	end
 
-DragonGateCavern_IronChamber_TryRemoveRegisteel:
+DragonGateCavern_IronChamber_OnTransition::
+	call_if_set FLAG_FOUGHT_REGISTEEL, DragonGateCavern_IronChamber_HideRegisteel
+	call_if_unset FLAG_FOUGHT_REGISTEEL, DragonGateCavern_IronChamber_TryShowRegisteel
+	end
+
+DragonGateCavern_IronChamber_HideRegisteel::
+	setvar VAR_TEMP_1, 1
+	setflag FLAG_HIDE_REGISTEEL
+	return
+
+DragonGateCavern_IronChamber_TryShowRegisteel::
+	setvar VAR_TEMP_1, 1
+	goto_if_set FLAG_REGISTEEL_DISAPPEARED, EventScript_Return
+	setvar VAR_TEMP_1, 0
+	clearflag FLAG_HIDE_REGISTEEL
+	return
+
+DragonGateCavern_IronChamber_TryRemoveRegisteel::
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_ne EventScript_Return
-	removeobject VAR_LAST_TALKED
+	removeobject 1
 	return
 
 DragonGateCavern_IronChamber_Initiate_Registeel_Battle::
@@ -46,12 +64,14 @@ DragonGateCavern_IronChamber_Initiate_Registeel_Battle::
     release
     end
 
-DragonGateCavern_IronChamber_DefeatedRegisteel:
-	setflag FLAG_FOUGHT_REGISTEEL
-	goto EventScript_RemoveStaticMon
+DragonGateCavern_IronChamber_DefeatedRegisteel::
+	setflag FLAG_REGISTEEL_DISAPPEARED
+	setvar VAR_0x8004, SPECIES_REGISTEEL
+	goto EventScript_MonDisappeared
 	end
 
-DragonGateCavern_IronChamber_RanFromRegisteel:
+DragonGateCavern_IronChamber_RanFromRegisteel::
+	setflag FLAG_REGISTEEL_DISAPPEARED
 	setvar VAR_0x8004, SPECIES_REGISTEEL
 	goto EventScript_MonDisappeared
 	end

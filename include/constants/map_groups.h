@@ -548,6 +548,7 @@
 #define MAP_HEMLOCK_TOWN_HOUSE3            (2 | (46 << 8))
 #define MAP_HEMLOCK_TOWN_POKEMON_CENTER    (3 | (46 << 8))
 #define MAP_HEMLOCK_TOWN_POKEMON_CENTER_2F (4 | (46 << 8))
+#define MAP_HEMLOCK_FOREST                 (5 | (46 << 8))
 
 // Map Group 47
 

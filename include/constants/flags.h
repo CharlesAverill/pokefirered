@@ -223,24 +223,24 @@
 #define FLAG_JIRACHI_FLEW_AWAY               0x0D5
 #define FLAG_CUSTOM_POKE_HM               0x0D6
 #define FLAG_MET_AGATHA               0x0D7
-#define FLAG_0x0D8               0x0D8
-#define FLAG_0x0D9               0x0D9
-#define FLAG_0x0DA               0x0DA
-#define FLAG_0x0DB               0x0DB
-#define FLAG_0x0DC               0x0DC
-#define FLAG_0x0DD               0x0DD
-#define FLAG_0x0DE               0x0DE
-#define FLAG_0x0DF               0x0DF
-#define FLAG_0x0E0               0x0E0
-#define FLAG_0x0E1               0x0E1
-#define FLAG_0x0E2               0x0E2
-#define FLAG_0x0E3               0x0E3
-#define FLAG_0x0E4               0x0E4
-#define FLAG_0x0E5               0x0E5
-#define FLAG_0x0E6               0x0E6
-#define FLAG_0x0E7               0x0E7
-#define FLAG_0x0E8               0x0E8
-#define FLAG_0x0E9               0x0E9
+#define FLAG_HEMLOCK_FOREST_BIGMUSHROOM               0x0D8
+#define FLAG_HEMLOCK_FOREST_ULTRA_BALL               0x0D9
+#define FLAG_HEMLOCK_FOREST_NET_BALL               0x0DA
+#define FLAG_HEMLOCK_FOREST_RARE_CANDY               0x0DB
+#define FLAG_HEMLOCK_FOREST_LEAF_STONE               0x0DC
+#define FLAG_FOUGHT_CELEBI               0x0DD
+#define FLAG_CELEBI_FLEW_AWAY               0x0DE
+#define FLAG_GROUDON_DISAPPEARED               0x0DF
+#define FLAG_KYOGRE_DISAPPEARED               0x0E0
+#define FLAG_REGIROCK_DISAPPEARED               0x0E1
+#define FLAG_REGICE_DISAPPEARED               0x0E2
+#define FLAG_REGISTEEL_DISAPPEARED               0x0E3
+#define FLAG_HIDE_GROUDON               0x0E4
+#define FLAG_HIDE_KYOGRE               0x0E5
+#define FLAG_HIDE_REGIROCK               0x0E6
+#define FLAG_HIDE_REGICE               0x0E7
+#define FLAG_HIDE_REGISTEEL               0x0E8
+#define FLAG_HIDE_CELEBI               0x0E9
 #define FLAG_0x0EA               0x0EA
 #define FLAG_0x0EB               0x0EB
 #define FLAG_0x0EC               0x0EC
@@ -1434,6 +1434,7 @@
 #define FLAG_WORLD_MAP_CELADON_FOREST                               (SYS_FLAGS + 0xC6)
 #define FLAG_WORLD_MAP_DRAGON_GATE_CAVERN                           (SYS_FLAGS + 0xC7)
 #define FLAG_WORLD_MAP_MT_MOON_SUMMIT                               (SYS_FLAGS + 0xC8)
+#define FLAG_WORLD_MAP_HEMLOCK_FOREST                               (SYS_FLAGS + 0xC5)
 
 #define FLAG_0x8D5 (SYS_FLAGS + 0xD5)
 #define FLAG_0x8D6 (SYS_FLAGS + 0xD6)

@@ -4728,6 +4728,18 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/HemlockTown_PokemonCenter_2F/border.bin",
       "blockdata_filepath": "data/layouts/HemlockTown_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HEMLOCK_FOREST",
+      "name": "HemlockForest_Layout",
+      "width": 54,
+      "height": 69,
+      "border_width": 3,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ViridianForest",
+      "border_filepath": "data/layouts/HemlockForest/border.bin",
+      "blockdata_filepath": "data/layouts/HemlockForest/map.bin"
     }
   ]
 }

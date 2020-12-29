@@ -1,16 +1,34 @@
 FourIsland_IcefallCave_IcebergChamber_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, FourIsland_IcefallCave_IcebergChamber_OnResume
+	map_script MAP_SCRIPT_ON_TRANSITION, FourIsland_IcefallCave_IcebergChamber_OnTransition
 	.byte 0
 
 FourIsland_IcefallCave_IcebergChamber_OnResume:
 	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, FourIsland_IcefallCave_IcebergChamber_TryRemoveRegice
 	end
 
-FourIsland_IcefallCave_IcebergChamber_TryRemoveRegice:
+FourIsland_IcefallCave_IcebergChamber_OnTransition::
+	call_if_set FLAG_FOUGHT_REGICE, FourIsland_IcefallCave_IcebergChamber_HideRegice
+	call_if_unset FLAG_FOUGHT_REGICE, FourIsland_IcefallCave_IcebergChamber_TryShowRegice
+	end
+
+FourIsland_IcefallCave_IcebergChamber_HideRegice::
+	setvar VAR_TEMP_1, 1
+	setflag FLAG_HIDE_REGICE
+	return
+
+FourIsland_IcefallCave_IcebergChamber_TryShowRegice::
+	setvar VAR_TEMP_1, 1
+	goto_if_set FLAG_REGICE_DISAPPEARED, EventScript_Return
+	setvar VAR_TEMP_1, 0
+	clearflag FLAG_HIDE_REGICE
+	return
+
+FourIsland_IcefallCave_IcebergChamber_TryRemoveRegice::
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_ne EventScript_Return
-	removeobject VAR_LAST_TALKED
+	removeobject 1
 	return
 
 FourIsland_IcefallCave_IcebergChamber_Initiate_Regice_Battle::
@@ -46,12 +64,14 @@ FourIsland_IcefallCave_IcebergChamber_Initiate_Regice_Battle::
     release
     end
 
-FourIsland_IcefallCave_IcebergChamber_DefeatedRegice:
-	setflag FLAG_FOUGHT_REGICE
-	goto EventScript_RemoveStaticMon
+FourIsland_IcefallCave_IcebergChamber_DefeatedRegice::
+	setflag FLAG_REGICE_DISAPPEARED
+	setvar VAR_0x8004, SPECIES_REGICE
+	goto EventScript_MonDisappeared
 	end
 
-FourIsland_IcefallCave_IcebergChamber_RanFromRegice:
+FourIsland_IcefallCave_IcebergChamber_RanFromRegice::
+	setflag FLAG_REGICE_DISAPPEARED
 	setvar VAR_0x8004, SPECIES_REGICE
 	goto EventScript_MonDisappeared
 	end

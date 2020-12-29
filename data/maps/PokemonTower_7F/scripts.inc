@@ -38,16 +38,15 @@ PokemonTower_7F_Initiate_Jirachi_Battle::
     release
     end
 
-PokemonTower_7F_DefeatedJirachi:: @ 8162558
-	setflag FLAG_FOUGHT_JIRACHI
-    clearflag FLAG_DONT_LEAVE_LEGEND_YET
+PokemonTower_7F_DefeatedJirachi::
+	setflag FLAG_JIRACHI_FLEW_AWAY
 	goto EventScript_RemoveStaticMon
 	end
 
-PokemonTower_7F_RanFromJirachi:: @ 8162561
+PokemonTower_7F_RanFromJirachi::
+	setflag FLAG_JIRACHI_FLEW_AWAY
 	setvar VAR_0x8004, SPECIES_JIRACHI
-    clearflag FLAG_DONT_LEAVE_LEGEND_YET
-	goto EventScript_MonDisappeared
+	goto EventScript_MonFlewAway
 	end
 
 PokemonTower_7F_Text_Jirachi:
@@ -57,10 +56,9 @@ PokemonTower_7F_Text_Jirachi:
 PokemonTower_7F_HideJirachi::
 	setvar VAR_TEMP_1, 1
 	setflag FLAG_HIDE_JIRACHI
-	removeobject 5
 	return
 
-PokemonTower_7F_TryShowJirachi::
+PokemonTower_7F_TryShowJirachi:
 	setvar VAR_TEMP_1, 1
 	goto_if_set FLAG_JIRACHI_FLEW_AWAY, EventScript_Return
 	setvar VAR_TEMP_1, 0

@@ -51,6 +51,27 @@
       "elevation": 0,
       "dest_map": "MAP_HEMLOCK_TOWN_POKEMON_CENTER",
       "dest_warp_id": 0
+    },
+    {
+      "x": 8,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_HEMLOCK_FOREST",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 10,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_HEMLOCK_FOREST",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 9,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_HEMLOCK_FOREST",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

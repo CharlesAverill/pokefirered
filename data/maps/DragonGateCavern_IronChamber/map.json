@@ -27,7 +27,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "DragonGateCavern_IronChamber_Initiate_Registeel_Battle",
-      "flag": "FLAG_FOUGHT_REGISTEEL"
+      "flag": "FLAG_HIDE_REGISTEEL"
     }
   ],
   "warp_events": [

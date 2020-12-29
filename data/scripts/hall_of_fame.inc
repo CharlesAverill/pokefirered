@@ -16,6 +16,13 @@ EventScript_ResetLegendaries:: @ 81A6541
 	clearflag FLAG_LUGIA_FLEW_AWAY
 	clearflag FLAG_HO_OH_FLEW_AWAY
 	clearflag FLAG_DEOXYS_FLEW_AWAY
+	clearflag FLAG_CELEBI_FLEW_AWAY
+	clearflag FLAG_JIRACHI_FLEW_AWAY
+	clearflag FLAG_GROUDON_DISAPPEARED
+	clearflag FLAG_KYOGRE_DISAPPEARED
+	clearflag FLAG_REGIROCK_DISAPPEARED
+	clearflag FLAG_REGICE_DISAPPEARED
+	clearflag FLAG_REGISTEEL_DISAPPEARED
 	return
 
 EventScript_ResetEliteFourEnd:: @ 81A654B

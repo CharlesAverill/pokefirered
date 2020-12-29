@@ -3,25 +3,33 @@ DeepwaterCave_Cistern_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, DeepwaterCave_Cistern_OnTransition
 	.byte 0
 
-DeepwaterCave_Cistern_OnTransition:
-	call_if_unset FLAG_FOUGHT_KYOGRE, DeepwaterCave_Cistern_EventScript_KyogreNotBattled
+DeepwaterCave_Cistern_OnTransition::
+	call_if_set FLAG_FOUGHT_KYOGRE, DeepwaterCave_Cistern_EventScript_HideKyogre
+	call_if_unset FLAG_FOUGHT_KYOGRE, DeepwaterCave_Cistern_EventScript_TryShowKyogre
 	clearflag FLAG_TEMP_2
 	end
 
-DeepwaterCave_Cistern_EventScript_KyogreNotBattled:
-    clearflag FLAG_SYS_FLASH_ACTIVE
-    clearflag FLAG_DONT_LEAVE_LEGEND_YET
+DeepwaterCave_Cistern_EventScript_HideKyogre::
+	setvar VAR_TEMP_1, 1
+	setflag FLAG_HIDE_KYOGRE
+	return
+
+DeepwaterCave_Cistern_EventScript_TryShowKyogre::
+	setvar VAR_TEMP_1, 1
+	goto_if_set FLAG_KYOGRE_DISAPPEARED, EventScript_Return
+	setvar VAR_TEMP_1, 0
+	clearflag FLAG_HIDE_KYOGRE
+	return
 
 DeepwaterCave_Cistern_OnResume:
-	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, DeepwaterCave_Cistern_TryRemoveKyogre
+	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, DeepwaterCave_Cistern_EventScript_TryRemoveKyogre
 	end
 
-DeepwaterCave_Cistern_TryRemoveKyogre:
+DeepwaterCave_Cistern_EventScript_TryRemoveKyogre::
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_ne EventScript_Return
-	removeobject VAR_LAST_TALKED
-	setflag FLAG_FOUGHT_KYOGRE
+	removeobject 1
 	return
 
 DeepwaterCave_Cistern_Approach_Kyogre::
@@ -64,14 +72,14 @@ DeepwaterCave_Cistern_Initiate_Kyogre_Battle::
     end
 
 DeepwaterCave_Cistern_DefeatedKyogre::
-	setflag FLAG_FOUGHT_KYOGRE
-    clearflag FLAG_DONT_LEAVE_LEGEND_YET
-	goto EventScript_RemoveStaticMon
+	setflag FLAG_KYOGRE_DISAPPEARED
+	setvar VAR_0x8004, SPECIES_KYOGRE
+	goto EventScript_MonDisappeared
 	end
 
 DeepwaterCave_Cistern_RanFromKyogre::
+	setflag FLAG_KYOGRE_DISAPPEARED
 	setvar VAR_0x8004, SPECIES_KYOGRE
-    clearflag FLAG_DONT_LEAVE_LEGEND_YET
 	goto EventScript_MonDisappeared
 	end
 

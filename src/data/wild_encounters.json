@@ -26020,6 +26020,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_HEMLOCK_FOREST",
+          "base_label": "gHemlockForest_FR",
+          "land_mons": {
+            "encounter_rate": 15,
+            "mons": [
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_ODDISH"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_BELLSPROUT"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_TANGELA"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_GLOOM"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_EXEGGCUTE"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_PARASECT"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_NINCADA"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_BUTTERFREE"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_BEEDRILL"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_MASQUERAIN"
+              },
+              {
+                "min_level": 32,
+                "max_level": 36,
+                "species": "SPECIES_ARIADOS"
+              }
+            ]
+          }
         }
       ]
     }
