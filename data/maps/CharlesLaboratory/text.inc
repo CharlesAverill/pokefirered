@@ -55,19 +55,30 @@ sText_AuroraTicketNoPlace:
 	.string "Can you come back when you have\n"
 	.string "more space in your bag?$"
 
-CharlesLaboratory_Give_Egg_Text:
+CharlesLaboratory_Completed_Text:
     .string "CHARLES: Woah, so it was a\n"
     .string "Pokemon this whole time?\l"
-    .string "I've never seen one like that.\l"
-    .string "Hey, for all the trouble you\l"
-    .string "went through, I'd like to give\l"
-    .string "you something. Sol and I found\l"
-    .string "this EGG on our travels many\l"
-    .string "years ago. It never hatched,\l"
-    .string "but I can tell there's\l"
-    .string "something alive in there.\l"
-    .string "Maybe you can help it hatch?$"
+    .string "I've never seen one like that.$\l"
 
-CharlesLaboratory_Charles_Done_Text:
-    .string "CHARLES: Hey {PLAYER}!\n"
-    .string "How's our egg doing?$"
+CharlesLaboratory_Charles_Done_Text::
+    .string "I can't thank you enough for\n"
+    .string "helping me out with this! The\l"
+    .string "scientific implications alone\l"
+    .string "are tremendous!$"
+
+CharlesLaboratory_ComputerScreen_Text::
+    .string "The computer screen is filled\n"
+    .string "with equations and code beyond\l"
+    .string "comprehension.$"
+
+CharlesLaboratory_Machine_Text::
+    .string "A swirling blue fluid pulses\n"
+    .string "regularly. A note next to the\l"
+    .string "control panel reads:\l"
+    .string "WARNING: HIGHLY VOLATILE MATERIAL!$"
+
+CharlesLaboratory_ParticleAccelerator_Text::
+    .string "Flashes of light come from the tube\n"
+    .string "in the middle every once in a while.\l"
+    .string "The readout on the machine shows:\l"
+    .string "SINGULARITY GENERATION TRIALS$"

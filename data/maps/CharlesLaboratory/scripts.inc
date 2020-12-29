@@ -29,9 +29,9 @@ CharlesLaboratory_Charles_Done:
     end
 
 CharlesLaboratory_Fought_Deoxys:
-    msgbox CharlesLaboratory_Give_Egg_Text
+    msgbox CharlesLaboratory_Completed_Text
+    msgbox CharlesLaboratory_Charles_Done_Text
     setflag FLAG_CHARLES_DONE
-    givemonwithstats SPECIES_CELEBI, 1, ITEM_NONE, 1, 1, -1,-1,-1,-1,-1,-1, 0,0,0,0,0,0, 31,31,31,31,31,31
     release
     end
 
@@ -48,4 +48,16 @@ CharlesLaboratory_Solomon_Not_Done:
 CharlesLaboratory_HaventUsedTicket:
     msgbox CharlesLaboratory_HaventUsedTicket_Text
     release
+    end
+
+CharlesLaboratory_ComputerScreen::
+    msgbox CharlesLaboratory_ComputerScreen_Text, MSGBOX_SIGN
+    end
+
+CharlesLaboratory_Machine::
+    msgbox CharlesLaboratory_Machine_Text, MSGBOX_SIGN
+    end
+
+CharlesLaboratory_ParticleAccelerator::
+    msgbox CharlesLaboratory_ParticleAccelerator_Text, MSGBOX_SIGN
     end
