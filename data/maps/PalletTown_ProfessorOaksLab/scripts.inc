@@ -129,7 +129,7 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene:: @ 8169035
 	waitmessage
 	waitfanfare
 	call EventScript_RestorePrevTextColor
-	special EnableNationalPokedex
+	givenationaldex
 	msgbox PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex
 	closemessage
