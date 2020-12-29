@@ -218,7 +218,7 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_LassTessa[] = {
     },
     {
         .iv = 0,
-        .lvl = 26,
+        .lvl = 27,
         .species = SPECIES_COMBUSKEN,
     },
     {
