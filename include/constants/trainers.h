@@ -176,8 +176,8 @@
 #define TRAINER_SUPER_NERD_MATTHEW                        3
 #define TRAINER_BRENDAN                       4
 #define TRAINER_MAY                      5
-#define TRAINER_INTERVIEWER_1                      6
-#define TRAINER_TUBER_1                            7
+#define TRAINER_BEAUTY_KENZIE                      6
+#define TRAINER_LASS_TESSA                            7
 #define TRAINER_TUBER_2                            8
 #define TRAINER_COOLTRAINER_1                      9
 #define TRAINER_COOLTRAINER_2                     10

@@ -187,19 +187,49 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_Brendan[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Interviewer1[] = {
+static const struct TrainerMonNoItemDefaultMoves sTrainerMons_BeautyKenzie[] = {
     {
         .iv = 0,
-        .lvl = 5,
-        .species = SPECIES_EKANS,
+        .lvl = 28,
+        .species = SPECIES_NINETALES,
+    },
+    {
+        .iv = 0,
+        .lvl = 26,
+        .species = SPECIES_RAPIDASH,
+    },
+    {
+        .iv = 0,
+        .lvl = 29,
+        .species = SPECIES_VAPOREON,
+    },
+    {
+        .iv = 0,
+        .lvl = 28,
+        .species = SPECIES_QUAGSIRE,
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Tuber1[] = {
+static const struct TrainerMonNoItemDefaultMoves sTrainerMons_LassTessa[] = {
     {
         .iv = 0,
-        .lvl = 38,
-        .species = SPECIES_STARMIE,
+        .lvl = 28,
+        .species = SPECIES_VIBRAVA,
+    },
+    {
+        .iv = 0,
+        .lvl = 26,
+        .species = SPECIES_COMBUSKEN,
+    },
+    {
+        .iv = 0,
+        .lvl = 29,
+        .species = SPECIES_GYARADOS,
+    },
+    {
+        .iv = 0,
+        .lvl = 28,
+        .species = SPECIES_STEELIX,
     },
 };
 

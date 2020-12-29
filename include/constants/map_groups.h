@@ -544,6 +544,8 @@
 
 // Map Group 46
 #define MAP_HEMLOCK_TOWN_HOUSE1 (0 | (46 << 8))
+#define MAP_HEMLOCK_TOWN_HOUSE2 (1 | (46 << 8))
+#define MAP_HEMLOCK_TOWN_HOUSE3 (2 | (46 << 8))
 
 // Map Group 47
 

@@ -1441,3 +1441,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/HemlockTown_House1/scripts.inc"
 	.include "data/maps/HemlockTown_House1/text.inc"
+
+	.include "data/maps/HemlockTown_House2/scripts.inc"
+	.include "data/maps/HemlockTown_House2/text.inc"
+
+	.include "data/maps/HemlockTown_House3/scripts.inc"
+	.include "data/maps/HemlockTown_House3/text.inc"

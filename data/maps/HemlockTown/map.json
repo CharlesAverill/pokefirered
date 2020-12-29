@@ -30,6 +30,20 @@
       "elevation": 0,
       "dest_map": "MAP_HEMLOCK_TOWN_HOUSE1",
       "dest_warp_id": 0
+    },
+    {
+      "x": 13,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_HEMLOCK_TOWN_HOUSE2",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 20,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_HEMLOCK_TOWN_HOUSE3",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

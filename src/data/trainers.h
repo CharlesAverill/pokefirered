@@ -71,29 +71,17 @@ const struct Trainer gTrainers[] = {
         .partySize = NELEMS(sTrainerMons_May),
         .party = {.ItemCustomMoves = sTrainerMons_May}
     },
-    [TRAINER_INTERVIEWER_1] = {
+    [TRAINER_BEAUTY_KENZIE] = {
         .partyFlags = 0,
-        .trainerClass = CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .trainerName = _(""),
-        .items = {},
-        .doubleBattle = TRUE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = NELEMS(sTrainerMons_Interviewer1),
-        .party = {.NoItemDefaultMoves = sTrainerMons_Interviewer1}
-    },
-    [TRAINER_TUBER_1] = {
-        .partyFlags = 0,
-        .trainerClass = CLASS_TUBER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_RS_TUBER_F,
-        .trainerName = _(""),
+        .trainerClass = CLASS_BEAUTY_2,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerName = _("KENZIE"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = NELEMS(sTrainerMons_Tuber1),
-        .party = {.NoItemDefaultMoves = sTrainerMons_Tuber1}
+        .partySize = NELEMS(sTrainerMons_BeautyKenzie),
+        .party = {.NoItemDefaultMoves = sTrainerMons_BeautyKenzie}
     },
     [TRAINER_TUBER_2] = {
         .partyFlags = 0,

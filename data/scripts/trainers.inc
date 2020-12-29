@@ -1688,6 +1688,19 @@ Route18_EventScript_WiltonRematch:: @ 81AB37E
 	msgbox Route18_Text_WiltonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route18_EventScript_Kenzie::
+	trainerbattle_single TRAINER_BEAUTY_KENZIE, Route18_Text_KenzieIntro, Route18_Text_KenzieDefeat
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route18_EventScript_KenzieRematch
+	msgbox Route18_Text_KenziePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route18_EventScript_KenzieRematch::
+	trainerbattle_rematch TRAINER_BEAUTY_KENZIE, Route18_Text_KenzieRematchIntro, Route18_Text_KenzieDefeat
+	msgbox Route18_Text_KenziePostBattle, MSGBOX_AUTOCLOSE
+	end
+
 Route18_EventScript_Ramiro:: @ 81AB395
 	trainerbattle_single TRAINER_BIRD_KEEPER_RAMIRO, Route18_Text_RamiroIntro, Route18_Text_RamiroDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle

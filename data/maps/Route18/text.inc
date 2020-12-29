@@ -8,6 +8,18 @@ Route18_Text_WiltonDefeat:: @ 8187672
 Route18_Text_WiltonPostBattle:: @ 8187677
     .string "I wish I had a BIKE!$"
 
+Route18_Text_KenzieIntro::
+    .string "You'd better watch your kneecaps!$"
+
+Route18_Text_KenzieRematchIntro::
+    .string "I'm coming for your kidneys next!$"
+
+Route18_Text_KenzieDefeat::
+    .string "Nooooooo!!!!$"
+
+Route18_Text_KenziePostBattle::
+    .string "Your kneecaps are safe... for now...$"
+
 Route18_Text_RamiroIntro:: @ 818768C
     .string "Kurukkoo!\n"
     .string "How do you like my birdcall?$"
@@ -37,4 +49,3 @@ Route18_Text_RouteSign:: @ 8187757
 Route18_Text_CyclingRoadSign:: @ 818777C
     .string "CYCLING ROAD\n"
     .string "No pedestrians permitted!$"
-

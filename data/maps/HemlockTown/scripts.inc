@@ -7,5 +7,5 @@ HemlockTown_OnTransition::
     end
 
 HemlockTown_TownSign::
-    msgbox HemlockTown HemlockTown_Text_TownSign, MSGBOX_SIGN
+    msgbox HemlockTown_Text_TownSign, MSGBOX_SIGN
     end

@@ -1,3 +1,3 @@
 HemlockTown_Text_TownSign::
-    .string "HEMLOCK TOWN"
+    .string "HEMLOCK TOWN\n"
     .string "The Town of Symbiosis$"
