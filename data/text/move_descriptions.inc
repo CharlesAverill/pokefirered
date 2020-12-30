@@ -149,7 +149,7 @@ gMoveDescription_Disable:: @ 84834ED
 	.string "For a few turns,\nit prevents the foe\nfrom using the move\nit last used.$"
 
 gMoveDescription_Acid:: @ 8483534
-	.string "The foe is sprayed\nwith a harsh, hide-\nmelting acid that\nmay lower DEFENSE.$"
+	.string "The foe is sprayed\nwith a harsh, hide-\nmelting acid that\nmay lower SP. DEF.$"
 
 gMoveDescription_Ember:: @ 8483580
 	.string "The foe is attacked\nwith small flames.\nThe foe may suffer\na burn.$"
@@ -377,7 +377,7 @@ gMoveDescription_FireBlast:: @ 848493B
 	.string "The foe is hit with\nan intense flame.\nIt may leave the\ntarget with a burn.$"
 
 gMoveDescription_Waterfall:: @ 8484986
-	.string "A powerful charge\nattack. It can also\nbe used to climb\na waterfall.$"
+	.string "A powerful charge\nattack. The foe may \nflinch. It can also\nbe used to climb\na waterfall.$"
 
 gMoveDescription_Clamp:: @ 84849CA
 	.string "The foe is clamped\nand squeezed by\nthe user's shell for\ntwo to five turns.$"
@@ -683,7 +683,7 @@ gMoveDescription_Pursuit:: @ 84864E8
 	.string "An attack move that\nworks especially\nwell on a foe that\nis switching out.$"
 
 gMoveDescription_RapidSpin:: @ 8486532
-	.string "An attack that\nfrees the user from\nBIND, WRAP, LEECH\nSEED, and SPIKES.$"
+	.string "An attack that\nfrees the user from\nhazards and trap moves. Also boosts SPEED.$"
 
 gMoveDescription_SweetScent:: @ 8486579
 	.string "Allures the foe to\nreduce evasiveness.\nIt also attracts\nwild POKéMON.$"
@@ -722,7 +722,7 @@ gMoveDescription_SunnyDay:: @ 848687C
 	.string "The sun blazes for\nfive turns, powering\nup FIRE-type\nmoves.$"
 
 gMoveDescription_Crunch:: @ 84868B8
-	.string "The foe is crunched\nwith sharp fangs.\nIt may lower the\nfoe's SP. DEF.$"
+	.string "The foe is crunched\nwith sharp fangs.\nIt may lower the\nfoe's DEFENSE.$"
 
 gMoveDescription_MirrorCoat:: @ 84868FE
 	.string "A retaliation move\nthat pays back the\nfoe's special attack\ndouble.$"
