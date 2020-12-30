@@ -842,7 +842,6 @@ static const struct PokedexCategoryPage sDexCategory_GrasslandPkmn[] = {
     DEX_CATEGORY(GrasslandPkmn_Page24),
     DEX_CATEGORY(GrasslandPkmn_Page25),
     DEX_CATEGORY(GrasslandPkmn_Page26),
-    DEX_CATEGORY(GrasslandPkmn_Page27),
 };
 
 static const struct PokedexCategoryPage sDexCategory_ForestPkmn[] = {
@@ -983,6 +982,7 @@ static const struct PokedexCategoryPage sDexCategory_RarePkmn[] = {
     DEX_CATEGORY(RarePkmn_Page6),
     DEX_CATEGORY(RarePkmn_Page7),
     DEX_CATEGORY(RarePkmn_Page8),
+    DEX_CATEGORY(GrasslandPkmn_Page27),
 };
 
 struct {
