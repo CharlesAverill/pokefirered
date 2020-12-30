@@ -11,12 +11,14 @@
 - Cerulean Cave Guard leaves after becoming Champion
 - Eeveelutions learn ultimate moves from the Move Tutor on Cape Brink
 - Base stats / learnsets for multiple Pokemon have been upgraded
+- Moves have been updated to Generation VII standards
 ## Locations
 - Dragon Gate: in between Routes 10 and 25
 - Cinnabar Volcano: beneath Cinnabar Gym
 - Route 49: below Route 19
 - Deepwater Cave: Route 49
 - Hemlock Town: East of Route 49
+- Hemlock Forest: South of Hemlock Town
 - Celadon Forest: above Celadon CIty
 - Mt. Moon Summit: Next  to Mt. Moon exit on Route 4
 ## Events
@@ -26,7 +28,8 @@ Many custom events rely on a custom flag I've made. If you started your save fil
 - AuroraTicket
 - Weather Trio
 - Legendary Titans
-- Jirachi
+- Jirachi Event
+- Celebi Event
 - Emerald Brendan/May appear
 ## Roaming Pokemon
 After becoming Champion, talk to Eunice in Fuchsia City.
@@ -39,4 +42,4 @@ Eunice to start the next roamer. Here's the order:
 - Latios
 - Suicune
 
-P.S. - Roamers reinitialize if you kill them
+P.S. - Roamers reinitialize if you kill them and Entei and Raikou no longer know Roar
