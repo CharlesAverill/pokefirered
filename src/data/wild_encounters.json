@@ -2890,7 +2890,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_FEEBAS"
               },
               {
                 "min_level": 5,
@@ -3010,7 +3010,7 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_SLOWPOKE"
+                "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 25,
@@ -3198,7 +3198,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_FEEBAS"
               },
               {
                 "min_level": 5,
@@ -3266,9 +3266,9 @@
                 "species": "SPECIES_FARFETCHD"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_PARAS"
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_KANGASKHAN"
               },
               {
                 "min_level": 33,
@@ -3281,9 +3281,9 @@
                 "species": "SPECIES_NIDORAN_F"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_PARASECT"
+                "min_level": 28,
+                "max_level": 28,
+                "species": "SPECIES_HERACROSS"
               },
               {
                 "min_level": 22,
@@ -3318,7 +3318,7 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_SLOWPOKE"
+                "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 25,
@@ -3506,7 +3506,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_FEEBAS"
               },
               {
                 "min_level": 5,
@@ -3521,7 +3521,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_POLIWAG"
+                "species": "SPECIES_WOOPER"
               },
               {
                 "min_level": 15,
@@ -3561,7 +3561,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_WOOPER"
               },
               {
                 "min_level": 25,
@@ -3586,7 +3586,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_NIDORINA"
+                "species": "SPECIES_TAUROS"
               },
               {
                 "min_level": 32,
@@ -3596,7 +3596,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_PARAS"
+                "species": "SPECIES_CHANSEY"
               },
               {
                 "min_level": 26,
@@ -3606,7 +3606,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_TAUROS"
               },
               {
                 "min_level": 28,
@@ -3621,12 +3621,12 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_PSYDUCK"
+                "species": "SPECIES_WOOPER"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_SLOWPOKE"
+                "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 25,
@@ -3814,7 +3814,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_FEEBAS"
               },
               {
                 "min_level": 5,
@@ -3849,7 +3849,7 @@
               {
                 "min_level": 15,
                 "max_level": 35,
-                "species": "SPECIES_SLOWPOKE"
+                "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 25,
@@ -3934,7 +3934,7 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_SLOWPOKE"
+                "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 25,
@@ -25548,8 +25548,8 @@
                 "species": "SPECIES_VIBRAVA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 25,
+                "max_level": 30,
                 "species": "SPECIES_CASTFORM"
               },
               {

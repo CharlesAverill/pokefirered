@@ -242,7 +242,7 @@
 #define FLAG_HIDE_REGISTEEL               0x0E8
 #define FLAG_HIDE_CELEBI               0x0E9
 #define FLAG_HIDE_SSANNE_BLOCKER               0x0EA
-#define FLAG_0x0EB               0x0EB
+#define FLAG_GOT_HEMLOCK_BOOSTER_ITEMS               0x0EB
 #define FLAG_0x0EC               0x0EC
 #define FLAG_0x0ED               0x0ED
 #define FLAG_0x0EE               0x0EE

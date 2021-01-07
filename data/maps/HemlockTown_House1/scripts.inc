@@ -47,4 +47,7 @@ HemlockTown_Agatha_HasntMet::
 
 HemlockTown_Player_WalkUp::
     walk_up
+    walk_up
+    walk_up
+    walk_up
     step_end

@@ -4673,7 +4673,7 @@
       "id": "LAYOUT_HEMLOCK_TOWN_HOUSE1",
       "name": "HemlockTown_House1_Layout",
       "width": 11,
-      "height": 9,
+      "height": 12,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
