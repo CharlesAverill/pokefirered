@@ -244,6 +244,15 @@
     },
     {
       "type": "trigger",
+      "x": 22,
+      "y": 32,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "VermilionCity_EventScript_ExitedTicketCheck"
+    },
+    {
+      "type": "trigger",
       "x": 23,
       "y": 32,
       "elevation": 0,
@@ -253,12 +262,12 @@
     },
     {
       "type": "trigger",
-      "x": 24,
-      "y": 32,
+      "x": 22,
+      "y": 33,
       "elevation": 0,
-      "var": "VAR_TEMP_1",
+      "var": "VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER",
       "var_value": "0",
-      "script": "VermilionCity_EventScript_ExitedTicketCheck"
+      "script": "VermilionCity_EventScript_CheckTicketLeft"
     }
   ],
   "bg_events": [

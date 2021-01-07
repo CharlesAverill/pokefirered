@@ -117,6 +117,7 @@ Route25_SeaCottage_EventScript_BillGiveSSTicket:: @ 817064A
 	setflag FLAG_GOT_SS_TICKET_DUP
 	setflag FLAG_HIDE_NUGGET_BRIDGE_ROCKET
 	setflag FLAG_GOT_SS_TICKET
+	setflag FLAG_HIDE_SSANNE_BLOCKER
 	setflag FLAG_SYS_NOT_SOMEONES_PC
 	goto Route25_SeaCottage_EventScript_BillGoToSSAnne
 	end

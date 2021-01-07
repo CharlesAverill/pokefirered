@@ -12,6 +12,13 @@ SSAnne_Exterior_OnFrame:: @ 816084F
 	map_script_2 VAR_MAP_SCENE_VERMILION_CITY, 1, SSAnne_Exterior_ExitSSAnne
 	.2byte 0
 
+SSAnne_Exterior_BlockSSAnne_Entrance::
+    lock
+    faceplayer
+    msgbox SSAnne_Exterior_BlockSSAnne_Text
+    release
+    end
+
 SSAnne_Exterior_ExitSSAnne:: @ 8160859
 	lockall
 	getplayerxy VAR_0x8004, VAR_0x8005
@@ -28,6 +35,7 @@ SSAnne_Exterior_ExitSSAnne:: @ 8160859
 	waitmovement 0
 	setvar VAR_MAP_SCENE_VERMILION_CITY, 2
 	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 0
+	clearflag FLAG_HIDE_SSANNE_BLOCKER
 	warp MAP_VERMILION_CITY, 255, 23, 34
 	waitstate
 	releaseall
@@ -123,6 +131,9 @@ SSAnne_Exterior_MewTruck_RanFromMew:: @ 8162561
     goto EventScript_MonFlewAway
     end
 
+SSAnne_Exterior_BlockSSAnne_Text::
+    .string "Looks like the SS Anne is\n"
+    .string "gone for good!$"
 
 SSAnne_Exterior_MewTruck_StrengthText:
     .string "The truck seems to be rustling.\n"

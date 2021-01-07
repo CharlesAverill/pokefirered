@@ -184,7 +184,7 @@ Vermilion_EventScript_Unused:: @ 8166B88
 
 VermilionCity_EventScript_CheckTicketLeft:: @ 8166B8A
 	lockall
-	goto VermilionCity_EventScript_CheckTicket
+	goto_if_unset FLAG_HIDE_SS_ANNE, VermilionCity_EventScript_CheckTicket
 	end
 
 VermilionCity_EventScript_CheckTicketRight:: @ 8166B91
@@ -256,6 +256,7 @@ VermilionCity_EventScript_Machop:: @ 8166C38
 	end
 
 VermilionCity_EventScript_CitySign:: @ 8166C53
+	setflag FLAG_HIDE_SSANNE_BLOCKER
 	msgbox VermilionCity_Text_CitySign, MSGBOX_SIGN
 	end
 

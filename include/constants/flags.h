@@ -241,7 +241,7 @@
 #define FLAG_HIDE_REGICE               0x0E7
 #define FLAG_HIDE_REGISTEEL               0x0E8
 #define FLAG_HIDE_CELEBI               0x0E9
-#define FLAG_0x0EA               0x0EA
+#define FLAG_HIDE_SSANNE_BLOCKER               0x0EA
 #define FLAG_0x0EB               0x0EB
 #define FLAG_0x0EC               0x0EC
 #define FLAG_0x0ED               0x0ED
