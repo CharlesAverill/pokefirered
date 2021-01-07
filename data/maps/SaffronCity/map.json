@@ -16,22 +16,22 @@
   "connections": [
     {
       "direction": "up",
-      "offset": 0,
+      "offset": 10,
       "map": "MAP_ROUTE5"
     },
     {
       "direction": "down",
-      "offset": 12,
+      "offset": 22,
       "map": "MAP_ROUTE6"
     },
     {
       "direction": "left",
-      "offset": 10,
+      "offset": 17,
       "map": "MAP_ROUTE7"
     },
     {
       "direction": "right",
-      "offset": 10,
+      "offset": 17,
       "map": "MAP_ROUTE8"
     }
   ],
