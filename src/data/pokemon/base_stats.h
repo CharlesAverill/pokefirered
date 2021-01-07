@@ -474,10 +474,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_BEEDRILL] =
     {
         .baseHP = 65,
-        .baseAttack = 80,
+        .baseAttack = 85,
         .baseDefense = 40,
-        .baseSpeed = 75,
-        .baseSpAttack = 45,
+        .baseSpeed = 85,
+        .baseSpAttack = 25,
         .baseSpDefense = 80,
         .type1 = TYPE_BUG,
         .type2 = TYPE_POISON,
@@ -8125,7 +8125,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_POOCHYENA] =
     {
         .baseHP = 35,
-        .baseAttack = 55,
+        .baseAttack = 60,
         .baseDefense = 35,
         .baseSpeed = 35,
         .baseSpAttack = 30,
@@ -8156,9 +8156,9 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_MIGHTYENA] =
     {
         .baseHP = 70,
-        .baseAttack = 90,
-        .baseDefense = 70,
-        .baseSpeed = 70,
+        .baseAttack = 110,
+        .baseDefense = 65,
+        .baseSpeed = 65,
         .baseSpAttack = 60,
         .baseSpDefense = 60,
         .type1 = TYPE_DARK,
