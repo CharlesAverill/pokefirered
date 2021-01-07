@@ -1091,12 +1091,12 @@
               {
                 "min_level": 4,
                 "max_level": 7,
-                "species": "SPECIES_BUTTERFREE"
+                "species": "SPECIES_CHIKORITA"
               },
               {
                 "min_level": 4,
                 "max_level": 7,
-                "species": "SPECIES_BEEDRILL"
+                "species": "SPECIES_TREECKO"
               },
               {
                 "min_level": 5,
@@ -21688,7 +21688,7 @@
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_WEEDLE"
+                "species": "SPECIES_SHROOMISH"
               },
               {
                 "min_level": 7,
@@ -21728,12 +21728,12 @@
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_SHROOMISH"
+                "species": "SPECIES_MUDKIP"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_ABRA"
+                "species": "SPECIES_TOTODILE"
               },
               {
                 "min_level": 11,
@@ -23367,7 +23367,7 @@
             ]
           },
           "land_mons": {
-            "encounter_rate": 14,
+            "encounter_rate": 65,
             "mons": [
               {
                 "min_level": 10,
