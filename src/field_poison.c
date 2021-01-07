@@ -73,12 +73,16 @@ static void Task_TryFieldPoisonWhiteOut(u8 taskId)
         {
             if (MonFaintedFromPoison(tPartyId))
             {
-                /*
-                FaintFromFieldPoison(tPartyId);
-                ShowFieldMessage(gText_PkmnFainted3);
-                */
-                HungOnFromFieldPoison(tPartyId);
-                ShowFieldMessage(gText_PkmnHungOnPoison);
+                struct Pokemon *pokemon = gPlayerParty + tPartyId;
+
+                if(GetMonData(pokemon, MON_DATA_FRIENDSHIP) >= 200){
+                    HungOnFromFieldPoison(tPartyId);
+                    ShowFieldMessage(gText_PkmnHungOnPoison);
+                }
+                else{
+                    FaintFromFieldPoison(tPartyId);
+                    ShowFieldMessage(gText_PkmnFainted3);
+                }
                 data[0]++;
                 return;
             }
