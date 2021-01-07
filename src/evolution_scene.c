@@ -925,7 +925,7 @@ static void Task_EvolutionScene(u8 taskId)
                 else
                 {
                     u16 move = GetMonData(mon, var + MON_DATA_MOVE1);
-                    if (IsHMMove2(move))
+                    if (FALSE) //IsHMMove2(move))
                     {
                         BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_HMMOVESCANTBEFORGOTTEN - BATTLESTRINGS_ID_ADDER]);
                         BattlePutTextOnWindow(gDisplayedStringBattle, 0);
@@ -1278,7 +1278,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 else
                 {
                     u16 move = GetMonData(mon, var + MON_DATA_MOVE1);
-                    if (IsHMMove2(move))
+                    if (FALSE) //IsHMMove2(move))
                     {
                         BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_HMMOVESCANTBEFORGOTTEN - BATTLESTRINGS_ID_ADDER]);
                         DrawTextOnTradeWindow(0, gDisplayedStringBattle, 1);

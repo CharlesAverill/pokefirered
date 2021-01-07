@@ -175,7 +175,7 @@ EventScript_MegaKickTaught:: @ 81C4A14
 EventScript_DreamEaterTutor:: @ 81C4A1E
 	lock
 	faceplayer
-	goto_if_set FLAG_TUTOR_DREAM_EATER, EventScript_DreamEaterTaught
+	//goto_if_set FLAG_TUTOR_DREAM_EATER, EventScript_DreamEaterTaught
 	msgbox Text_DreamEaterTeach, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_DreamEaterDeclined
