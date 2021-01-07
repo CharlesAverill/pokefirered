@@ -132,7 +132,7 @@ SSAnne_Exterior_MewTruck_RanFromMew:: @ 8162561
     end
 
 SSAnne_Exterior_BlockSSAnne_Text::
-    .string "Looks like the SS Anne is\n"
+    .string "Looks like the S.S. Anne is\n"
     .string "gone for good!$"
 
 SSAnne_Exterior_MewTruck_StrengthText:
