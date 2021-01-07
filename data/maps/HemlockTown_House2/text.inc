@@ -7,7 +7,7 @@ HemlockTown_House2_Mom_Text::
     .string "days. It can get noisy sometimes\l"
     .string "but now she's so interested in\l"
     .string "the Wild West that I can't\l"
-    .string "manage to distract her from it!\l"
+    .string "manage to distract her from it!\p"
     .string "I love seeing her happy though.$"
 
 HemlockTown_House2_NES_Text::

@@ -121,7 +121,7 @@
     },
     {
       "x": 18,
-      "y": 8,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_CINNABAR_ISLAND_GYM",
       "dest_warp_id": 1
@@ -159,7 +159,7 @@
     {
       "type": "trigger",
       "x": 18,
-      "y": 9,
+      "y": 8,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",

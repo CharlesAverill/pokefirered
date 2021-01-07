@@ -20469,23 +20469,23 @@
                 "species": "SPECIES_LICKITUNG"
               },
               {
-                "min_level": 21,
-                "max_level": 21,
-                "species": "SPECIES_TANGELA"
-              },
-              {
                 "min_level": 25,
                 "max_level": 25,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_TANGELA"
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_EEVEE"
               },
               {
-                "min_level": 19,
-                "max_level": 19,
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_EEVEE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
                 "species": "SPECIES_EEVEE"
               },
               {
@@ -20504,8 +20504,8 @@
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 17,
-                "max_level": 17,
+                "min_level": 27,
+                "max_level": 27,
                 "species": "SPECIES_TANGELA"
               },
               {
@@ -26050,7 +26050,7 @@
               {
                 "min_level": 32,
                 "max_level": 36,
-                "species": "SPECIES_EXEGGCUTE"
+                "species": "SPECIES_WEEPINBELL"
               },
               {
                 "min_level": 32,
