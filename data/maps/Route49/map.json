@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route49_Seel",
-      "flag": "FLAG_IS_CHAMPION"
+      "flag": "FLAG_SYS_GAME_CLEAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SEEL",
@@ -52,7 +52,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route49_SeelTrainer",
-      "flag": "FLAG_IS_CHAMPION"
+      "flag": "FLAG_SYS_GAME_CLEAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
@@ -66,7 +66,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route49_SeelTrainer",
-      "flag": "FLAG_IS_CHAMPION"
+      "flag": "FLAG_SYS_GAME_CLEAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SEEL",
@@ -80,7 +80,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route49_Seel",
-      "flag": "FLAG_IS_CHAMPION"
+      "flag": "FLAG_SYS_GAME_CLEAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SEEL",
@@ -94,7 +94,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route49_Seel",
-      "flag": "FLAG_IS_CHAMPION"
+      "flag": "FLAG_SYS_GAME_CLEAR"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SEEL",
@@ -108,7 +108,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route49_Seel",
-      "flag": "FLAG_IS_CHAMPION"
+      "flag": "FLAG_SYS_GAME_CLEAR"
     }
   ],
   "warp_events": [

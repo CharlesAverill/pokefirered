@@ -48,7 +48,7 @@ CinnabarIsland_PokemonCenter_1F_EventScript_Bill:: @ 816E90A
 	removeobject 7
 	setvar VAR_MAP_SCENE_CINNABAR_ISLAND_2, 1
 	clearflag FLAG_HIDE_CINNABAR_BILL
-	warp MAP_CINNABAR_ISLAND, 255, 14, 11
+	warp MAP_CINNABAR_ISLAND, 255, 14, 21
 	waitstate
 	release
 	end

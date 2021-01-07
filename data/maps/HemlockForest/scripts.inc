@@ -24,7 +24,7 @@ HemlockForest_EventScript_TryRemoveCelebi::
 
 HemlockForest_EventScript_Celebi::
 	goto_if_questlog EventScript_ReleaseEnd
-	goto_if_unset FLAG_IS_CHAMPION, EventScript_ReleaseEnd
+	goto_if_unset FLAG_SYS_GAME_CLEAR, EventScript_ReleaseEnd
 	goto_if_unset FLAG_FOUGHT_CELEBI, EventScript_ReleaseEnd
 	goto_if_unset FLAG_CELEBI_FLEW_AWAY, EventScript_ReleaseEnd
 	special QuestLog_CutRecording

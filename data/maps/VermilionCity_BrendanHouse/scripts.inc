@@ -5,7 +5,7 @@ VermilionCity_BrendanHouse_May::
     textcolor 1
     lock
     faceplayer
-    goto_if_set FLAG_IS_CHAMPION, VermilionCity_BrendanHouse_FightMay
+    goto_if_set FLAG_SYS_GAME_CLEAR, VermilionCity_BrendanHouse_FightMay
     msgbox VermilionCity_Text_May_PreChampion
     textcolor 0
     release
@@ -21,7 +21,7 @@ VermilionCity_BrendanHouse_Brendan::
     textcolor 0
     lock
     faceplayer
-    goto_if_set FLAG_IS_CHAMPION, VermilionCity_BrendanHouse_FightBrendan
+    goto_if_set FLAG_SYS_GAME_CLEAR, VermilionCity_BrendanHouse_FightBrendan
     msgbox VermilionCity_Text_Brendan_PreChampion
     release
     end

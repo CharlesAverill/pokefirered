@@ -38,7 +38,7 @@ PokemonLeague_HallOfFame_EventScript_EnterRoom:: @ 8162D70
 	setrespawn SPAWN_PALLET_TOWN
 	fadescreenspeed FADE_TO_BLACK, 24
 	special EnterHallOfFame
-	setflag FLAG_IS_CHAMPION
+	setflag FLAG_SYS_GAME_CLEAR
 	waitstate
 	releaseall
 	end

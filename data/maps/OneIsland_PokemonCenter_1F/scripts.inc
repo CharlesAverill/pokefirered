@@ -401,9 +401,9 @@ OneIsland_PokemonCenter_1F_EventScript_Hiker:: @ 8171151
 OneIsland_PokemonCenter_1F_FlagSetter::
     lock
     faceplayer
-    goto_if_set FLAG_IS_CHAMPION, OneIsland_PokemonCenter_1F_FlagSetter_AllGood
+    goto_if_set FLAG_SYS_GAME_CLEAR, OneIsland_PokemonCenter_1F_FlagSetter_AllGood
     msgbox OneIsland_PokemonCenter_1F_FlagSetter_Text
-    setflag FLAG_IS_CHAMPION
+    setflag FLAG_SYS_GAME_CLEAR
     release
     end
 

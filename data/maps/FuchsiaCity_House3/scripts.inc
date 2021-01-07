@@ -60,7 +60,7 @@ FuchsiaCity_House3_EventScript_CancelForgetMove:: @ 816D941
 	end
 
 FuchsiaCity_House3_Eunice::
-    goto_if_unset FLAG_IS_CHAMPION, FuchsiaCity_House3_Eunice_Busy
+    goto_if_unset FLAG_SYS_GAME_CLEAR, FuchsiaCity_House3_Eunice_Busy
     lock
     faceplayer
     goto_if_unset FLAG_MET_EUNICE, FuchsiaCity_House3_MeetEunice

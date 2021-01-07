@@ -9,7 +9,7 @@ HemlockTown_Agatha::
     textcolor 1
     lock
     faceplayer
-    goto_if_unset FLAG_IS_CHAMPION, HemlockTown_Agatha_PlayerIsNotChampion
+    goto_if_unset FLAG_SYS_GAME_CLEAR, HemlockTown_Agatha_PlayerIsNotChampion
     msgbox HemlockTown_Agatha_PlayerIsChampion_Text
     release
     end
@@ -23,7 +23,7 @@ HemlockTown_Agatha_PlayerIsNotChampion::
     end
 
 HemlockTown_Agatha_HasntMet::
-    goto_if_set FLAG_IS_CHAMPION, HemlockTown_House1_End
+    goto_if_set FLAG_SYS_GAME_CLEAR, HemlockTown_House1_End
     goto_if_set FLAG_MET_AGATHA, HemlockTown_House1_End
     lockall
     textcolor 1

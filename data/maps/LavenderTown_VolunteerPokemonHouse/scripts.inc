@@ -4,7 +4,7 @@ LavenderTown_VolunteerPokemonHouse_MapScripts:: @ 816B149
 LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji:: @ 816B14A
 	lock
 	faceplayer
-    goto_if_set FLAG_IS_CHAMPION, LavenderTown_VolunteerPokemonHouse_MentionJirachi
+    goto_if_set FLAG_SYS_GAME_CLEAR, LavenderTown_VolunteerPokemonHouse_MentionJirachi
 	goto_if_set FLAG_GOT_POKE_FLUTE, LavenderTown_VolunteerPokemonHouse_EventScript_AlreadyHavePokeFlute
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis
 	checkitemspace ITEM_POKE_FLUTE, 1

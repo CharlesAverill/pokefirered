@@ -40,8 +40,8 @@ CinnabarIsland_Text_ComeWithMeToOneIsland:: @ 8180CAA
     .string "south called ONE ISLAND.\p"
     .string "A friend invited me, so I'm on my\n"
     .string "way out there.\p"
-    .string "How about it?\n"
-    .string "Do you feel like coming with me?$"
+    .string "If you'd like to join me, meet\n"
+    .string "me at the POKéMON CENTER!$"
 
 CinnabarIsland_Text_AllRightLetsGo:: @ 8180DDD
     .string "All right, then.\n"
