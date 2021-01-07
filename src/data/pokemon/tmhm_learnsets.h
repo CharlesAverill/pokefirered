@@ -251,6 +251,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM48_SKILL_SWAP)
+                                        | TMHM(HM02_FLY)
                                         | TMHM(HM05_FLASH)),
 
     [SPECIES_WEEDLE]      = TMHM_LEARNSET(0),
@@ -276,6 +277,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(HM01_CUT)
+                                        | TMHM(HM02_FLY)
                                         | TMHM(HM06_ROCK_SMASH)),
 
     [SPECIES_PIDGEY]      = TMHM_LEARNSET(TMHM(TM06_TOXIC)

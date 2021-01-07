@@ -180,10 +180,10 @@ FuchsiaCity_House3_MeetEunice::
     end
 
 FuchsiaCity_House3_Eunice_Busy::
+    lock
     msgbox FuchsiaCity_House3_Eunice_Text_Thinking
-    waitmessage
     msgbox FuchsiaCity_House3_Eunice_Text_Busy
-    waitmessage
+    release
     end
 
 FuchsiaCity_House3_Eusine::

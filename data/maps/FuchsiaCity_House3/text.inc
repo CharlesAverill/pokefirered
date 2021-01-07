@@ -34,11 +34,11 @@ FuchsiaCity_House3_Text_NoEggShouldKnowMoves:: @ 819951F
     .string "No EGG should know any moves.$"
 
 FuchsiaCity_House3_Eunice_Text_Thinking::
-    .string "Route 15? No, I thought I checked\n"
-    .string "there already..."
+    .string "Route 15? No, I thought\n"
+    .string "I checked there already…$"
 
 FuchsiaCity_House3_Eunice_Text_Busy::
-    .string "He seems to be lost in thought...$"
+    .string "She seems lost in thought…$"
 
 FuchsiaCity_House3_Eunice_Introduction::
     .string "My name is Eunice. For my entire\n"
@@ -111,5 +111,5 @@ FuchsiaCity_House3_CanYouShowItToMe::
 FuchisaCity_House3_Eusine_Text::
     .string "Yo! My name's Eusine, I\n"
     .string "wanna help my grandma find\l"
-    .string "her Legendary Pokémon, my\l"
+    .string "her Legendary Pokémon. My\l"
     .string "favorite is Suicune!$"

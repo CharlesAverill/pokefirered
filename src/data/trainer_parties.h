@@ -4928,17 +4928,17 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ScientistIvan[] = 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_BossGiovanni[] = {
     {
         .iv = 250,
-        .lvl = 25,
+        .lvl = 30,
         .species = SPECIES_ONIX,
     },
     {
         .iv = 250,
-        .lvl = 24,
+        .lvl = 30,
         .species = SPECIES_RHYHORN,
     },
     {
         .iv = 250,
-        .lvl = 29,
+        .lvl = 32,
         .species = SPECIES_KANGASKHAN,
     },
 };
@@ -5331,12 +5331,12 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt19[
     },
     {
         .iv = 50,
-        .lvl = 25,
+        .lvl = 27,
         .species = SPECIES_ZUBAT,
     },
     {
         .iv = 50,
-        .lvl = 25,
+        .lvl = 29,
         .species = SPECIES_GOLBAT,
     },
 };
@@ -5352,28 +5352,38 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt20[
         .lvl = 26,
         .species = SPECIES_DROWZEE,
     },
+    {
+            .iv = 50,
+            .lvl = 31,
+            .species = SPECIES_NUMEL,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt21[] = {
     {
         .iv = 50,
-        .lvl = 23,
+        .lvl = 25,
         .species = SPECIES_ZUBAT,
     },
     {
         .iv = 50,
-        .lvl = 23,
+        .lvl = 28,
         .species = SPECIES_RATTATA,
     },
     {
         .iv = 50,
-        .lvl = 23,
+        .lvl = 29,
         .species = SPECIES_RATICATE,
     },
     {
         .iv = 50,
-        .lvl = 23,
+        .lvl = 30,
         .species = SPECIES_ZUBAT,
+    },
+    {
+        .iv = 50,
+        .lvl = 32,
+        .species = SPECIES_CARVANHA,
     },
 };
 
@@ -7160,6 +7170,11 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerPatricia[
         .lvl = 22,
         .species = SPECIES_GASTLY,
     },
+    {
+            .iv = 50,
+            .lvl = 26,
+            .species = SPECIES_SHUPPET,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerCarly[] = {
@@ -7167,6 +7182,11 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerCarly[] =
         .iv = 50,
         .lvl = 24,
         .species = SPECIES_GASTLY,
+    },
+    {
+            .iv = 50,
+            .lvl = 28,
+            .species = SPECIES_DUSKULL,
     },
 };
 
@@ -7176,13 +7196,23 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerHope[] = 
         .lvl = 23,
         .species = SPECIES_GASTLY,
     },
+    {
+            .iv = 50,
+            .lvl = 28,
+            .species = SPECIES_BANETTE,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerPaula[] = {
     {
         .iv = 50,
-        .lvl = 24,
+        .lvl = 26,
         .species = SPECIES_GASTLY,
+    },
+    {
+            .iv = 50,
+            .lvl = 29,
+            .species = SPECIES_HAUNTER,
     },
 };
 
@@ -7197,13 +7227,23 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerLaurel[] 
         .lvl = 23,
         .species = SPECIES_GASTLY,
     },
+    {
+            .iv = 50,
+            .lvl = 27,
+            .species = SPECIES_DUSKULL,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerJody[] = {
     {
         .iv = 50,
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_GASTLY,
+    },
+    {
+            .iv = 50,
+            .lvl = 27,
+            .species = SPECIES_HAUNTER,
     },
 };
 
@@ -7234,8 +7274,13 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerKarina[] 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerJanae[] = {
     {
         .iv = 50,
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_GASTLY,
+    },
+    {
+            .iv = 50,
+            .lvl = 28,
+            .species = SPECIES_SHUPPET,
     },
 };
 
@@ -7247,13 +7292,18 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerAngelica[
     },
     {
         .iv = 50,
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_GASTLY,
     },
     {
         .iv = 50,
-        .lvl = 22,
-        .species = SPECIES_GASTLY,
+        .lvl = 26,
+        .species = SPECIES_HAUNTER,
+    },
+    {
+            .iv = 50,
+            .lvl = 30,
+            .species = SPECIES_SHEDINJA,
     },
 };
 
@@ -7263,13 +7313,23 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerEmilia[] 
         .lvl = 24,
         .species = SPECIES_GASTLY,
     },
+    {
+            .iv = 50,
+            .lvl = 30,
+            .species = SPECIES_SABLEYE,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_ChannelerJennifer[] = {
     {
         .iv = 50,
-        .lvl = 24,
-        .species = SPECIES_GASTLY,
+        .lvl = 28,
+        .species = SPECIES_HAUNTER,
+    },
+    {
+            .iv = 50,
+            .lvl = 30,
+            .species = SPECIES_BANETTE,
     },
 };
 
@@ -7303,6 +7363,11 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Channeler4[] = {
         .lvl = 24,
         .species = SPECIES_GASTLY,
     },
+    {
+            .iv = 50,
+            .lvl = 24,
+            .species = SPECIES_MISDREAVUS,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Channeler5[] = {
@@ -7321,12 +7386,12 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Channeler6[] = {
     },
     {
         .iv = 50,
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_GASTLY,
     },
     {
         .iv = 50,
-        .lvl = 22,
+        .lvl = 26,
         .species = SPECIES_GASTLY,
     },
 };
