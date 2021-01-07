@@ -178,7 +178,8 @@ Text_UseStrength:: @ 81BE19A
 	.string "Would you like to use STRENGTH?$"
 
 Text_MonUsedStrengthCanMoveBoulders:: @ 81BE1FA
-	.string "{STR_VAR_1} used STRENGTH!\p"
+	.string "{PLAYER} summoned Arcanine to\n"
+	.string "use STRENGTH!\p"
 	.string "{STR_VAR_1}'s STRENGTH made it\n"
 	.string "possible to move boulders around!$"
 

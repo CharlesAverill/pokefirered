@@ -40,7 +40,7 @@ CinnabarIsland_EventScript_MoveSeagallopDown:: @ 8166F4A
 	return
 
 CinnabarIsland_EventScript_ReadyObjectsReturnFromSeviiIslands:: @ 8166F52
-	setobjectxyperm LOCALID_BILL, 21, 8
+	setobjectxyperm LOCALID_BILL, 21, 17
 	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
 	return
 
@@ -54,18 +54,15 @@ CinnabarIsland_EventScript_UnlockGym:: @ 8166F68
 
 CinnabarIsland_OnFrame:: @ 8166F6E
 	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND_2, 1, CinnabarIsland_EventScript_ExitPokeCenterForOneIsland
-    /*
-	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND, 1, CinnabarIsland_EventScript_BillScene
+	//map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND, 1, CinnabarIsland_EventScript_BillScene
 	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND, 3, CinnabarIsland_EventScript_ReturnFromSeviiIslands
-	*/
 	.2byte 0
 
 CinnabarIsland_TryBill::
     goto_if_unset FLAG_BADGE07_GET, EventScript_ReleaseEnd
     compare VAR_MAP_SCENE_CINNABAR_ISLAND, 1
     call_if_eq CinnabarIsland_EventScript_BillScene
-    compare VAR_MAP_SCENE_CINNABAR_ISLAND, 3
-    call_if_eq CinnabarIsland_EventScript_ReturnFromSeviiIslands
+    release
     end
 
 CinnabarIsland_EventScript_ExitPokeCenterForOneIsland:: @ 8166F88
