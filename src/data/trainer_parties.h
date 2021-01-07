@@ -6638,68 +6638,68 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_GentlemanWalter[] 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalSsAnneSquirtle[] = {
     {
         .iv = 140,
-        .lvl = 19,
+        .lvl = 22,
         .species = SPECIES_PIDGEOTTO,
     },
     {
         .iv = 140,
-        .lvl = 16,
+        .lvl = 19,
         .species = SPECIES_RATICATE,
     },
     {
         .iv = 140,
-        .lvl = 18,
+        .lvl = 21,
         .species = SPECIES_KADABRA,
     },
     {
         .iv = 150,
-        .lvl = 20,
+        .lvl = 23,
         .species = SPECIES_WARTORTLE,
     },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalSsAnneBulbasaur[] = {
-    {
-        .iv = 140,
-        .lvl = 19,
-        .species = SPECIES_PIDGEOTTO,
-    },
-    {
-        .iv = 140,
-        .lvl = 16,
-        .species = SPECIES_RATICATE,
-    },
-    {
-        .iv = 140,
-        .lvl = 18,
-        .species = SPECIES_KADABRA,
-    },
+        {
+                .iv = 140,
+                .lvl = 22,
+                .species = SPECIES_PIDGEOTTO,
+        },
+        {
+                .iv = 140,
+                .lvl = 19,
+                .species = SPECIES_RATICATE,
+        },
+        {
+                .iv = 140,
+                .lvl = 21,
+                .species = SPECIES_KADABRA,
+        },
     {
         .iv = 150,
-        .lvl = 20,
+        .lvl = 23,
         .species = SPECIES_IVYSAUR,
     },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalSsAnneCharmander[] = {
-    {
-        .iv = 140,
-        .lvl = 19,
-        .species = SPECIES_PIDGEOTTO,
-    },
-    {
-        .iv = 140,
-        .lvl = 16,
-        .species = SPECIES_RATICATE,
-    },
-    {
-        .iv = 140,
-        .lvl = 18,
-        .species = SPECIES_KADABRA,
-    },
+        {
+                .iv = 140,
+                .lvl = 22,
+                .species = SPECIES_PIDGEOTTO,
+        },
+        {
+                .iv = 140,
+                .lvl = 19,
+                .species = SPECIES_RATICATE,
+        },
+        {
+                .iv = 140,
+                .lvl = 21,
+                .species = SPECIES_KADABRA,
+        },
     {
         .iv = 150,
-        .lvl = 20,
+        .lvl = 23,
         .species = SPECIES_CHARMELEON,
     },
 };
@@ -6707,27 +6707,27 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalSsAnneCharman
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalPokenonTowerSquirtle[] = {
     {
         .iv = 150,
-        .lvl = 25,
+        .lvl = 28,
         .species = SPECIES_PIDGEOTTO,
     },
     {
         .iv = 150,
-        .lvl = 23,
+        .lvl = 26,
         .species = SPECIES_GROWLITHE,
     },
     {
         .iv = 150,
-        .lvl = 22,
+        .lvl = 26,
         .species = SPECIES_EXEGGCUTE,
     },
     {
         .iv = 150,
-        .lvl = 20,
+        .lvl = 25,
         .species = SPECIES_KADABRA,
     },
     {
         .iv = 150,
-        .lvl = 25,
+        .lvl = 30,
         .species = SPECIES_WARTORTLE,
     },
 };
@@ -6735,27 +6735,27 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalPokenonTowerS
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalPokenonTowerBulbasaur[] = {
     {
         .iv = 150,
-        .lvl = 25,
+        .lvl = 28,
         .species = SPECIES_PIDGEOTTO,
     },
     {
         .iv = 150,
-        .lvl = 23,
+        .lvl = 26,
         .species = SPECIES_GYARADOS,
     },
     {
         .iv = 150,
-        .lvl = 22,
+        .lvl = 26,
         .species = SPECIES_GROWLITHE,
     },
     {
         .iv = 150,
-        .lvl = 20,
+        .lvl = 25,
         .species = SPECIES_KADABRA,
     },
     {
         .iv = 150,
-        .lvl = 25,
+        .lvl = 30,
         .species = SPECIES_IVYSAUR,
     },
 };
@@ -6763,27 +6763,27 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalPokenonTowerB
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RivalPokenonTowerCharmander[] = {
     {
         .iv = 150,
-        .lvl = 25,
+        .lvl = 28,
         .species = SPECIES_PIDGEOTTO,
     },
     {
         .iv = 150,
-        .lvl = 23,
+        .lvl = 26,
         .species = SPECIES_EXEGGCUTE,
     },
     {
         .iv = 150,
-        .lvl = 22,
+        .lvl = 26,
         .species = SPECIES_GYARADOS,
     },
     {
         .iv = 150,
-        .lvl = 20,
+        .lvl = 25,
         .species = SPECIES_KADABRA,
     },
     {
         .iv = 150,
-        .lvl = 25,
+        .lvl = 30,
         .species = SPECIES_CHARMELEON,
     },
 };
