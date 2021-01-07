@@ -3,13 +3,13 @@ CharlesLaboratory_MapScripts::
 
 CharlesLaboratory_TalkToCharles::
     lock
+    goto_if_unset FLAG_SOLOMON_DONE, CharlesLaboratory_Solomon_Not_Done
     faceplayer
     goto_if_set FLAG_CHARLES_DONE, CharlesLaboratory_Charles_Done
     goto_if_set FLAG_FOUGHT_DEOXYS, CharlesLaboratory_Fought_Deoxys
     checkitem ITEM_AURORA_TICKET, 1
     compare VAR_RESULT, TRUE
     goto_if_eq CharlesLaboratory_HaventUsedTicket
-    goto_if_unset FLAG_SOLOMON_DONE, CharlesLaboratory_Solomon_Not_Done
     msgbox CharlesLaboratory_Solomon_Done_Text1
     msgbox CharlesLaboratory_Solomon_Done_Text2
     msgbox CharlesLaboratory_Solomon_Done_Text3
