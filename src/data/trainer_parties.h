@@ -5098,45 +5098,55 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt7[]
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt8[] = {
     {
         .iv = 50,
-        .lvl = 21,
+        .lvl = 25,
         .species = SPECIES_DROWZEE,
     },
     {
         .iv = 50,
-        .lvl = 21,
+        .lvl = 25,
         .species = SPECIES_MACHOP,
+    },
+    {
+        .iv = 50,
+        .lvl = 25,
+        .species = SPECIES_POOCHYENA,
     },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt9[] = {
     {
         .iv = 50,
-        .lvl = 21,
+        .lvl = 25,
         .species = SPECIES_RATICATE,
     },
     {
         .iv = 50,
-        .lvl = 21,
+        .lvl = 26,
         .species = SPECIES_RATICATE,
+    },
+    {
+        .iv = 50,
+        .lvl = 26,
+        .species = SPECIES_NUMEL,
     },
 };
 
 static const struct TrainerMonNoItemCustomMoves sTrainerMons_TeamRocketGrunt10[] = {
     {
         .iv = 50,
-        .lvl = 20,
+        .lvl = 25,
         .species = SPECIES_GRIMER,
         .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE, MOVE_HARDEN},
     },
     {
         .iv = 50,
-        .lvl = 20,
+        .lvl = 25,
         .species = SPECIES_KOFFING,
         .moves = {MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS, MOVE_NONE},
     },
     {
         .iv = 50,
-        .lvl = 20,
+        .lvl = 26,
         .species = SPECIES_KOFFING,
         .moves = {MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS, MOVE_NONE},
     },
@@ -5145,36 +5155,41 @@ static const struct TrainerMonNoItemCustomMoves sTrainerMons_TeamRocketGrunt10[]
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt11[] = {
     {
         .iv = 50,
-        .lvl = 19,
+        .lvl = 24,
         .species = SPECIES_RATTATA,
     },
     {
         .iv = 50,
-        .lvl = 19,
+        .lvl = 24,
         .species = SPECIES_RATICATE,
     },
     {
         .iv = 50,
-        .lvl = 19,
+        .lvl = 25,
         .species = SPECIES_RATICATE,
     },
     {
         .iv = 50,
-        .lvl = 19,
+        .lvl = 23,
         .species = SPECIES_RATTATA,
+    },
+    {
+        .iv = 50,
+        .lvl = 23,
+        .species = SPECIES_BALTOY,
     },
 };
 
 static const struct TrainerMonNoItemCustomMoves sTrainerMons_TeamRocketGrunt12[] = {
     {
         .iv = 50,
-        .lvl = 22,
+        .lvl = 25,
         .species = SPECIES_GRIMER,
         .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE, MOVE_HARDEN},
     },
     {
         .iv = 50,
-        .lvl = 22,
+        .lvl = 26,
         .species = SPECIES_KOFFING,
         .moves = {MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS},
     },
@@ -5183,31 +5198,31 @@ static const struct TrainerMonNoItemCustomMoves sTrainerMons_TeamRocketGrunt12[]
 static const struct TrainerMonNoItemCustomMoves sTrainerMons_TeamRocketGrunt13[] = {
     {
         .iv = 50,
-        .lvl = 17,
+        .lvl = 22,
         .species = SPECIES_ZUBAT,
         .moves = {MOVE_BITE, MOVE_ASTONISH, MOVE_SUPERSONIC, MOVE_LEECH_LIFE},
     },
     {
         .iv = 50,
-        .lvl = 17,
+        .lvl = 23,
         .species = SPECIES_KOFFING,
         .moves = {MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS, MOVE_NONE},
     },
     {
         .iv = 50,
-        .lvl = 17,
+        .lvl = 21,
         .species = SPECIES_GRIMER,
         .moves = {MOVE_SLUDGE, MOVE_DISABLE, MOVE_HARDEN, MOVE_POUND},
     },
     {
         .iv = 50,
-        .lvl = 17,
+        .lvl = 20,
         .species = SPECIES_ZUBAT,
         .moves = {MOVE_BITE, MOVE_ASTONISH, MOVE_SUPERSONIC, MOVE_LEECH_LIFE},
     },
     {
         .iv = 50,
-        .lvl = 17,
+        .lvl = 22,
         .species = SPECIES_RATICATE,
         .moves = {MOVE_HYPER_FANG, MOVE_QUICK_ATTACK, MOVE_TAIL_WHIP, MOVE_TACKLE},
     },
@@ -5229,6 +5244,11 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt14[
         .lvl = 20,
         .species = SPECIES_DROWZEE,
     },
+    {
+        .iv = 50,
+        .lvl = 20,
+        .species = SPECIES_CARVANHA,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt15[] = {
@@ -5241,6 +5261,11 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt15[
         .iv = 50,
         .lvl = 21,
         .species = SPECIES_MACHOP,
+    },
+    {
+        .iv = 50,
+        .lvl = 24,
+        .species = SPECIES_DUSTOX,
     },
 };
 
@@ -5259,6 +5284,11 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_TeamRocketGrunt16[
         .iv = 50,
         .lvl = 23,
         .species = SPECIES_SANDSLASH,
+    },
+    {
+        .iv = 50,
+        .lvl = 23,
+        .species = SPECIES_GOLBAT,
     },
 };
 
