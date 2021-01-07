@@ -13,6 +13,7 @@ FuchsiaCity_PokemonCenter_1F_Text_PokemonLeagueWestOfViridian:: @ 8198D2E
 FuchsiaCity_PokemonCenter_1F_Text_VisitSafariZoneForPokedex:: @ 8198D9B
     .string "If you're working on a POKéDEX,\n"
     .string "visit the SAFARI ZONE.\p"
-    .string "All sorts of rare POKéMON breed\n"
-    .string "there.$"
+    .string "All sorts of rare POKéMON are\n"
+    .string "there. Even some from other\l"
+    .string "regions, like Johto and Hoenn!$"
 

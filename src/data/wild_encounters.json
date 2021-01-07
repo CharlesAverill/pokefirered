@@ -2880,7 +2880,7 @@
           "map": "MAP_SAFARI_ZONE_CENTER",
           "base_label": "sSafariZoneCenter_FireRed",
           "fishing_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 5,
@@ -2935,7 +2935,7 @@
             ]
           },
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 25,
@@ -3000,7 +3000,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 20,
@@ -3188,7 +3188,7 @@
           "map": "MAP_SAFARI_ZONE_EAST",
           "base_label": "sSafariZoneEast_FireRed",
           "fishing_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 5,
@@ -3243,7 +3243,7 @@
             ]
           },
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 24,
@@ -3308,7 +3308,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 20,
@@ -3496,7 +3496,7 @@
           "map": "MAP_SAFARI_ZONE_NORTH",
           "base_label": "sSafariZoneNorth_FireRed",
           "fishing_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 5,
@@ -3551,7 +3551,7 @@
             ]
           },
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 26,
@@ -3616,7 +3616,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 20,
@@ -3804,7 +3804,7 @@
           "map": "MAP_SAFARI_ZONE_WEST",
           "base_label": "sSafariZoneWest_FireRed",
           "fishing_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 5,
@@ -3859,7 +3859,7 @@
             ]
           },
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 26,
@@ -3924,7 +3924,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 20,
