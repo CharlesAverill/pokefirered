@@ -193,7 +193,7 @@ static const u16 sBeedrillLevelUpLearnset[] = {
         LEVEL_UP_MOVE(1, MOVE_RAGE),
         LEVEL_UP_MOVE(10, MOVE_FURY_ATTACK),
         LEVEL_UP_MOVE(15, MOVE_FOCUS_ENERGY),
-        LEVEL_UP_MOVE(20, MOVE_TWINEEDLE),
+        LEVEL_UP_MOVE(17, MOVE_TWINEEDLE),
         LEVEL_UP_MOVE(25, MOVE_RAGE),
         LEVEL_UP_MOVE(30, MOVE_PURSUIT),
         LEVEL_UP_MOVE(35, MOVE_PIN_MISSILE),
@@ -514,7 +514,7 @@ static const u16 sNinetalesLevelUpLearnset[] = {
 static const u16 sJigglypuffLevelUpLearnset[] = {
         LEVEL_UP_MOVE(1, MOVE_SING),
         LEVEL_UP_MOVE(4, MOVE_DEFENSE_CURL),
-        LEVEL_UP_MOVE(9, MOVE_POUND),
+        LEVEL_UP_MOVE(5, MOVE_POUND),
         LEVEL_UP_MOVE(14, MOVE_DISABLE),
         LEVEL_UP_MOVE(19, MOVE_ROLLOUT),
         LEVEL_UP_MOVE(24, MOVE_DOUBLE_SLAP),
@@ -528,9 +528,16 @@ static const u16 sJigglypuffLevelUpLearnset[] = {
 
 static const u16 sWigglytuffLevelUpLearnset[] = {
         LEVEL_UP_MOVE(1, MOVE_SING),
-        LEVEL_UP_MOVE(1, MOVE_DISABLE),
-        LEVEL_UP_MOVE(1, MOVE_DEFENSE_CURL),
-        LEVEL_UP_MOVE(1, MOVE_DOUBLE_SLAP),
+        LEVEL_UP_MOVE(4, MOVE_DEFENSE_CURL),
+        LEVEL_UP_MOVE(5, MOVE_POUND),
+        LEVEL_UP_MOVE(14, MOVE_DISABLE),
+        LEVEL_UP_MOVE(19, MOVE_ROLLOUT),
+        LEVEL_UP_MOVE(24, MOVE_DOUBLE_SLAP),
+        LEVEL_UP_MOVE(29, MOVE_REST),
+        LEVEL_UP_MOVE(34, MOVE_BODY_SLAM),
+        LEVEL_UP_MOVE(39, MOVE_MIMIC),
+        LEVEL_UP_MOVE(44, MOVE_HYPER_VOICE),
+        LEVEL_UP_MOVE(49, MOVE_DOUBLE_EDGE),
         LEVEL_UP_END
 };
 
@@ -2959,8 +2966,11 @@ static const u16 sDunsparceLevelUpLearnset[] = {
 
 static const u16 sGligarLevelUpLearnset[] = {
         LEVEL_UP_MOVE(1, MOVE_POISON_STING),
+        LEVEL_UP_MOVE(1, MOVE_GUST),
         LEVEL_UP_MOVE(6, MOVE_SAND_ATTACK),
+        LEVEL_UP_MOVE(9, MOVE_POUND),
         LEVEL_UP_MOVE(13, MOVE_HARDEN),
+        LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
         LEVEL_UP_MOVE(20, MOVE_QUICK_ATTACK),
         LEVEL_UP_MOVE(28, MOVE_FAINT_ATTACK),
         LEVEL_UP_MOVE(31, MOVE_EARTHQUAKE),

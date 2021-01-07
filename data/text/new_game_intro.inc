@@ -2,34 +2,34 @@ gOtherText_NewName:: @ 81C574F
     .string "NEW NAME$"
 
 gNameChoice_Green:: @ 81C5758
-    .string "GREEN$"
+    .string "Green$"
 
 gNameChoice_Red:: @ 81C575E
-    .string "RED$"
+    .string "Red$"
 
 gNameChoice_Leaf:: @ 81C5762
     .string "LEAF$"
 
 gNameChoice_Fire:: @ 81C5767
-    .string "FIRE$"
+    .string "Fire$"
 
 gNameChoice_Gary:: @ 81C576C
-    .string "GARY$"
+    .string "Gary$"
 
 gNameChoice_Kaz:: @ 81C5771
-    .string "KAZ$"
+    .string "Charles$"
 
 gNameChoice_Toru:: @ 81C5775
-    .string "TORU$"
+    .string "Alex$"
 
 gNameChoice_Ash:: @ 81C577A
-    .string "ASH$"
+    .string "Ash$"
 
 gNameChoice_Kene:: @ 81C577E
-    .string "KENE$"
+    .string "Alex$"
 
 gNameChoice_Geki:: @ 81C5783
-    .string "GEKI$"
+    .string "Charles$"
 
 gNameChoice_Jak:: @ 81C5788
     .string "JAK$"
