@@ -861,6 +861,7 @@ static const u16 sPoliwrathLevelUpLearnset[] = {
 
 static const u16 sAbraLevelUpLearnset[] = {
         LEVEL_UP_MOVE(1, MOVE_TELEPORT),
+        LEVEL_UP_MOVE(12, MOVE_POUND),
         LEVEL_UP_END
 };
 
@@ -3894,7 +3895,7 @@ static const u16 sMightyenaLevelUpLearnset[] = {
         LEVEL_UP_MOVE(5, MOVE_HOWL),
         LEVEL_UP_MOVE(9, MOVE_SAND_ATTACK),
         LEVEL_UP_MOVE(13, MOVE_BITE),
-        LEVEL_UP_MOVE(17, MOVE_CRUNCH),
+        LEVEL_UP_MOVE(19, MOVE_CRUNCH),
         LEVEL_UP_MOVE(22, MOVE_ROAR),
         LEVEL_UP_MOVE(27, MOVE_SWAGGER),
         LEVEL_UP_MOVE(30, MOVE_POISON_FANG),

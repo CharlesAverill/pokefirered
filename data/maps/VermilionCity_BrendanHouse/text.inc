@@ -1,8 +1,8 @@
 VermilionCity_Text_Brendan_PreChampion::
     .string "Woah, you seem to have\n"
     .string "some Main Character energy. I'm\l"
-    .string "Brendan, come talk to us when you do\l"
-    .string "something big!$"
+    .string "Brendan, come talk to us when\l"
+    .string "you do something big!$"
 
 VermilionCity_Text_Brendan_PostChampion::
     .string "BRENDAN: Hey, it's {PLAYER}! Can I\n"
