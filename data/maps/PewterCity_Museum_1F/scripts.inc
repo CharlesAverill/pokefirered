@@ -152,8 +152,7 @@ PewterCity_Museum_1F_EventScript_OldMan:: @ 816A4A5
 PewterCity_Museum_1F_EventScript_OldAmberScientist:: @ 816A4AE
 	lock
 	faceplayer
-	goto_if_set FLAG_REVIVED_AMBER, PewterCity_Museum_1F_EventScript_FossilMart
-	goto_if_set FLAG_GOT_OLD_AMBER, PewterCity_Museum_1F_EventScript_AlreadyGotOldAmber
+	goto_if_set FLAG_GOT_OLD_AMBER, PewterCity_Museum_1F_EventScript_FossilMart
 	msgbox PewterCity_Museum_1F_Text_WantYouToGetAmberExamined
 	checkitemspace ITEM_OLD_AMBER, 1
 	compare VAR_RESULT, FALSE
