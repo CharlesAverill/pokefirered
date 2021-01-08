@@ -31,6 +31,7 @@
 #define TUTOR_MOVE_BLAST_BURN      16
 #define TUTOR_MOVE_HYDRO_CANNON    17
 #define TUTOR_MOVE_ZAP_CANNON      18
+#define TUTOR_MOVE_PSYCHO_BOOST    19
 
 #define FIELD_MOVE_FLASH        0
 #define FIELD_MOVE_CUT          1

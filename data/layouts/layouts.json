@@ -856,7 +856,7 @@
     {
       "id": "LAYOUT_ROUTE1",
       "name": "Route1_Layout",
-      "width": 24,
+      "width": 28,
       "height": 40,
       "border_width": 2,
       "border_height": 2,
@@ -868,7 +868,7 @@
     {
       "id": "LAYOUT_ROUTE2",
       "name": "Route2_Layout",
-      "width": 24,
+      "width": 38,
       "height": 80,
       "border_width": 2,
       "border_height": 2,
@@ -1109,7 +1109,7 @@
       "id": "LAYOUT_ROUTE22",
       "name": "Route22_Layout",
       "width": 48,
-      "height": 24,
+      "height": 25,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -1120,7 +1120,7 @@
     {
       "id": "LAYOUT_ROUTE23",
       "name": "Route23_Layout",
-      "width": 24,
+      "width": 30,
       "height": 160,
       "border_width": 2,
       "border_height": 2,
@@ -4552,7 +4552,7 @@
     {
       "id": "LAYOUT_ROUTE50",
       "name": "Route50_Layout",
-      "width": 26,
+      "width": 36,
       "height": 30,
       "border_width": 2,
       "border_height": 2,

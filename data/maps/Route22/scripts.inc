@@ -10,14 +10,14 @@ Route22_EventScript_EarlyRivalTriggerTop:: @ 816828C
 Route22_EventScript_EarlyRivalTriggerMid:: @ 8168298
 	lockall
 	setvar VAR_TEMP_1, 1
-	setobjectxyperm 1, 25, 5
+	setobjectxyperm 1, 25, 8
 	goto Route22_EventScript_EarlyRival
 	end
 
 Route22_EventScript_EarlyRivalTriggerBottom:: @ 81682AB
 	lockall
 	setvar VAR_TEMP_1, 2
-	setobjectxyperm 1, 25, 5
+	setobjectxyperm 1, 25, 8
 	goto Route22_EventScript_EarlyRival
 	end
 
@@ -170,14 +170,14 @@ Route22_EventScript_LateRivalTriggerTop:: @ 81683ED
 Route22_EventScript_LateRivalTriggerMid:: @ 81683F9
 	lockall
 	setvar VAR_TEMP_1, 1
-	setobjectxyperm 1, 25, 5
+	setobjectxyperm 1, 25, 8
 	goto Route22_EventScript_LateRival
 	end
 
 Route22_EventScript_LateRivalTriggerBottom:: @ 816840C
 	lockall
 	setvar VAR_TEMP_1, 2
-	setobjectxyperm 1, 25, 5
+	setobjectxyperm 1, 25, 8
 	goto Route22_EventScript_LateRival
 	end
 

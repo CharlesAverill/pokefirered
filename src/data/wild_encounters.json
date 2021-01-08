@@ -7222,12 +7222,12 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_MAREEP"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_PIKACHU"
+                "species": "SPECIES_FLAAFFY"
               },
               {
                 "min_level": 24,
@@ -7247,7 +7247,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_PIKACHU"
+                "species": "SPECIES_ELECTRIKE"
               },
               {
                 "min_level": 32,
@@ -16574,9 +16574,9 @@
                 "species": "SPECIES_PIDGEY"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_RATTATA"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PIKACHU"
               },
               {
                 "min_level": 4,
@@ -21378,63 +21378,63 @@
             "encounter_rate": 21,
             "mons": [
               {
-                "min_level": 32,
-                "max_level": 32,
+                "min_level": 42,
+                "max_level": 42,
                 "species": "SPECIES_MANKEY"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "SPECIES_FEAROW"
               },
               {
-                "min_level": 34,
-                "max_level": 34,
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_MANKEY"
               },
               {
-                "min_level": 34,
-                "max_level": 34,
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_SANDSHREW"
               },
               {
-                "min_level": 32,
-                "max_level": 32,
+                "min_level": 42,
+                "max_level": 42,
                 "species": "SPECIES_EKANS"
               },
               {
-                "min_level": 34,
-                "max_level": 34,
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_SANDSLASH"
               },
               {
-                "min_level": 42,
-                "max_level": 42,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_PRIMEAPE"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_ARBOK"
-              },
-              {
-                "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_SPEAROW"
               },
               {
                 "min_level": 42,
                 "max_level": 42,
-                "species": "SPECIES_FEAROW"
-              },
-              {
-                "min_level": 32,
-                "max_level": 32,
                 "species": "SPECIES_SPEAROW"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 52,
+                "max_level": 52,
+                "species": "SPECIES_FEAROW"
+              },
+              {
+                "min_level": 42,
+                "max_level": 42,
+                "species": "SPECIES_SPEAROW"
+              },
+              {
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_FEAROW"
               }
             ]

@@ -1927,6 +1927,8 @@ static u16 GetTutorMove(u8 tutor)
         return MOVE_HYDRO_CANNON;
     case TUTOR_MOVE_ZAP_CANNON:
         return MOVE_ZAP_CANNON;
+    case TUTOR_MOVE_PSYCHO_BOOST:
+        return MOVE_PSYCHO_BOOST;
     default:
         return sTutorMoves[tutor];
     }
@@ -1953,6 +1955,11 @@ static bool8 CanLearnTutorMove(u16 species, u8 tutor)
             return FALSE;
     case TUTOR_MOVE_ZAP_CANNON:
         if (species == SPECIES_JOLTEON)
+            return TRUE;
+        else
+            return FALSE;
+    case TUTOR_MOVE_PSYCHO_BOOST:
+        if (species == SPECIES_ESPEON)
             return TRUE;
         else
             return FALSE;

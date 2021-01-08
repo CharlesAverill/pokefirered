@@ -2211,7 +2211,8 @@ static const u8 sCapeBrinkCompatibleSpecies[] = {
     SPECIES_BLASTOISE,
     SPECIES_VAPOREON,
     SPECIES_FLAREON,
-    SPECIES_JOLTEON
+    SPECIES_JOLTEON,
+    SPECIES_ESPEON
 };
 
 bool8 CapeBrinkGetMoveToTeachLeadPokemon(void)
@@ -2269,6 +2270,10 @@ bool8 CapeBrinkGetMoveToTeachLeadPokemon(void)
     else if(species == SPECIES_JOLTEON){
         StringCopy(gStringVar2, gMoveNames[MOVE_ZAP_CANNON]);
         gSpecialVar_0x8005 = MOVETUTOR_ZAP_CANNON;
+    }
+    else if(species == SPECIES_ESPEON){
+        StringCopy(gStringVar2, gMoveNames[MOVE_PSYCHO_BOOST]);
+        gSpecialVar_0x8005 = MOVETUTOR_PSYCHO_BOOST;
     }
     if (GetMonData(&gPlayerParty[leadMonSlot], MON_DATA_MOVE1) != MOVE_NONE)
         numMovesKnown++;
