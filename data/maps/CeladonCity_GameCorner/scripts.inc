@@ -47,11 +47,11 @@ CeladonCity_GameCorner_EventScript_Buy500Coins:: @ 816C706
 	checkcoins VAR_TEMP_1
 	compare VAR_TEMP_1, (MAX_COINS + 1) - 500
 	goto_if_ge CeladonCity_GameCorner_EventScript_ClerkNoRoomForCoins
-	checkmoney 10000, 0
+	checkmoney 5000, 0
 	compare VAR_RESULT, FALSE
 	goto_if_eq CeladonCity_GameCorner_EventScript_ClerkNotEnoughMoney
 	addcoins 500
-	removemoney 10000, 0
+	removemoney 5000, 0
 	goto CeladonCity_GameCorner_EventScript_BoughtCoins
 	end
 
@@ -129,9 +129,9 @@ CeladonCity_GameCorner_EventScript_Fisher:: @ 816C7E7
 	msgbox CeladonCity_GameCorner_Text_DoYouWantToPlay
 	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_EventScript_GamblerNoCoinCase
 	checkcoins VAR_TEMP_1
-	compare VAR_TEMP_1, (MAX_COINS + 1) - 10
+	compare VAR_TEMP_1, (MAX_COINS + 1) - 1000
 	goto_if_ge CeladonCity_GameCorner_EventScript_FisherNoRoomForCoins
-	addcoins 10
+	addcoins 1000
 	textcolor 3
 	msgbox CeladonCity_GameCorner_Text_Received10CoinsFromMan
 	playse SE_SHOP
@@ -190,9 +190,9 @@ CeladonCity_GameCorner_EventScript_Scientist:: @ 816C89E
 	msgbox CeladonCity_GameCorner_Text_WantSomeCoins
 	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_EventScript_GamblerNoCoinCase
 	checkcoins VAR_TEMP_1
-	compare VAR_TEMP_1, (MAX_COINS + 1) - 20
+	compare VAR_TEMP_1, (MAX_COINS + 1) - 1000
 	goto_if_ge CeladonCity_GameCorner_EventScript_ScientistNoRoomForCoins
-	addcoins 20
+	addcoins 1000
 	textcolor 3
 	msgbox CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy
 	playse SE_SHOP
@@ -218,9 +218,9 @@ CeladonCity_GameCorner_EventScript_Gentleman:: @ 816C8FE
 	msgbox CeladonCity_GameCorner_Text_HereAreSomeCoinsShoo
 	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_EventScript_GamblerNoCoinCase
 	checkcoins VAR_TEMP_1
-	compare VAR_TEMP_1, (MAX_COINS + 1) - 20
+	compare VAR_TEMP_1, (MAX_COINS + 1) - 1000
 	goto_if_ge CeladonCity_GameCorner_EventScript_GentlemanNoRoomForCoins
-	addcoins 20
+	addcoins 1000
 	textcolor 3
 	msgbox CeladonCity_GameCorner_Text_Received20CoinsFromMan
 	playse SE_SHOP

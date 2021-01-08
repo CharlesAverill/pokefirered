@@ -125,3 +125,6 @@ FiveIsland_TalkToCharles_Text:
     .string "Should ye visit him in the\l"
     .string "City o' Saffron, ye might\l"
     .string "hear somethin' worthwhile.$"
+
+FiveIsland_NotYet_Text::
+    .string "Not yet…$"

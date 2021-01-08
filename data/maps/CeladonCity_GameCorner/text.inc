@@ -40,7 +40,7 @@ CeladonCity_GameCorner_Text_DoYouWantToPlay:: @ 8196AF3
     .string "Kid, do you want to play?$"
 
 CeladonCity_GameCorner_Text_Received10CoinsFromMan:: @ 8196B0D
-    .string "{PLAYER} received 10 COINS\n"
+    .string "{PLAYER} received 1000 COINS\n"
     .string "from the man.$"
 
 CeladonCity_GameCorner_Text_DontNeedMyCoins:: @ 8196B30
@@ -80,7 +80,7 @@ CeladonCity_GameCorner_Text_WantSomeCoins:: @ 8196D2B
     .string "Want some COINS?$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy:: @ 8196D47
-    .string "{PLAYER} received 20 COINS\n"
+    .string "{PLAYER} received 1000 COINS\n"
     .string "from the nice guy.$"
 
 CeladonCity_GameCorner_Text_YouHaveLotsOfCoins:: @ 8196D6F
@@ -95,7 +95,7 @@ CeladonCity_GameCorner_Text_HereAreSomeCoinsShoo:: @ 8196DB7
     .string "Here are some COINS, so shoo!$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromMan:: @ 8196DF8
-    .string "{PLAYER} received 20 COINS\n"
+    .string "{PLAYER} received 1000 COINS\n"
     .string "from the man.$"
 
 CeladonCity_GameCorner_Text_YouveGotPlentyCoins:: @ 8196E1B

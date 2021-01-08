@@ -1,6 +1,20 @@
 @ Text for this file was split weirdly, and is instead in FourIsland_PokemonCenter_1F/text.inc
 @ Theres also an unused JP version of that text in this file instead
 
+FourIsland_House1_MatthewWeak_Text::
+    .string "Hey pal, you're getting strong!\n"
+    .string "Come visit me when you're even\l"
+    .string "stronger!$"
+
+FourIsland_House1_MaxWeak_Text::
+    .string "Looks like someone has an\n"
+    .string "inadequate amount of bubble\l"
+    .string "gum to handle this situation B).\p"
+    .string "Come back when you're stronger.$"
+
+FourIsland_House1_AveryWeak_Text::
+    .string "Hehehe weak{PLAYER} weak{PLAYER}…$"
+
 FourIsland_House1_MatthewIntro::
     .string "Hey there! I'm Matthew,\n"
     .string "the creator of this hack!\l"

@@ -52,6 +52,7 @@ FiveIsland_Meadow_EventScript_Rocket3:: @ 81689BB
 
 FiveIsland_Meadow_EventScript_SailorSolomon::
 	lock
+	goto_if_unset FLAG_SYS_GAME_CLEAR, FiveIsland_NotYet
 	goto_if_set FLAG_SOLOMON_DONE, FiveIsland_TalkToCharles
 	goto_if_set FLAG_FOUGHT_LUGIA, FiveIsland_Lugia_Fought
 	goto_if_set FLAG_FOUGHT_HO_OH, FiveIsland_HoOh_Fought
@@ -75,6 +76,11 @@ FiveIsland_Meadow_EventScript_SailorSolomon::
 	setflag FLAG_GOT_MYSTIC_TICKET
 	release
 	end
+
+FiveIsland_NotYet::
+    msgbox FiveIsland_NotYet_Text
+    release
+    end
 
 FiveIsland_TalkToCharles:
     msgbox FiveIsland_TalkToCharles_Text

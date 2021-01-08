@@ -353,20 +353,20 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_SmokeBall:: @ 816D010
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_MiracleSeed:: @ 816D020
-	setvar VAR_TEMP_1, ITEM_MIRACLE_SEED
-	setvar VAR_TEMP_2, 1000
+	setvar VAR_TEMP_1, ITEM_RARE_CANDY
+	setvar VAR_TEMP_2, 200
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Charcoal:: @ 816D030
-	setvar VAR_TEMP_1, ITEM_CHARCOAL
-	setvar VAR_TEMP_2, 1000
+	setvar VAR_TEMP_1, ITEM_MAX_REVIVE
+	setvar VAR_TEMP_2, 333
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_MysticWater:: @ 816D040
-	setvar VAR_TEMP_1, ITEM_MYSTIC_WATER
-	setvar VAR_TEMP_2, 1000
+	setvar VAR_TEMP_1, ITEM_FULL_RESTORE
+	setvar VAR_TEMP_2, 333
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
