@@ -337,11 +337,11 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeItem:: @ 816CFB2
 	waitmessage
 	multichoice 10, 0, MULTICHOICE_GAME_CORNER_BATTLE_ITEM_PRIZES, FALSE
 	switch VAR_RESULT
-	case 0, CeladonCity_GameCorner_PrizeRoom_EventScript_SmokeBall
-	case 1, CeladonCity_GameCorner_PrizeRoom_EventScript_MiracleSeed
-	case 2, CeladonCity_GameCorner_PrizeRoom_EventScript_Charcoal
-	case 3, CeladonCity_GameCorner_PrizeRoom_EventScript_MysticWater
-	case 4, CeladonCity_GameCorner_PrizeRoom_EventScript_YellowFlute
+	case 4, CeladonCity_GameCorner_PrizeRoom_EventScript_SmokeBall
+	case 0, CeladonCity_GameCorner_PrizeRoom_EventScript_MiracleSeed
+	case 1, CeladonCity_GameCorner_PrizeRoom_EventScript_Charcoal
+	case 2, CeladonCity_GameCorner_PrizeRoom_EventScript_MysticWater
+	case 3, CeladonCity_GameCorner_PrizeRoom_EventScript_YellowFlute
 	case 5, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
 	case 127, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
 	end

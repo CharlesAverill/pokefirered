@@ -4740,6 +4740,30 @@
       "secondary_tileset": "gTileset_ViridianForest",
       "border_filepath": "data/layouts/HemlockForest/border.bin",
       "blockdata_filepath": "data/layouts/HemlockForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_CITY_ROCKET_MART_1F",
+      "name": "SaffronCity_RocketMart_1F_Layout",
+      "width": 13,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding2",
+      "border_filepath": "data/layouts/SaffronCity_RocketMart_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_RocketMart_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_CITY_ROCKET_MART_2F",
+      "name": "SaffronCity_RocketMart_2F_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding1",
+      "border_filepath": "data/layouts/SaffronCity_RocketMart_2F/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity_RocketMart_2F/map.bin"
     }
   ]
 }

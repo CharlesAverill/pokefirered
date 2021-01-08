@@ -11,6 +11,7 @@
 #include "constants/items.h"
 #include "constants/species.h"
 #include "constants/pokemon.h"
+#include "pokemon_storage_system.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleTowerParty(void);
@@ -71,6 +72,12 @@ u8 ScriptGiveMon(u16 species, u8 level, u16 item, u32 unused1, u32 unused2, u8 u
 
     Free(mon);
     return sentToPc;
+}
+
+void ScriptTakeMonFromPlayer(u16 index){
+    ZeroMonData(&gPlayerParty[index]);
+    CompactPartySlots();
+    CalculatePlayerPartyCount();
 }
 
 u8 ScriptGiveMonWithStats(u16 species, u8 level, u16 item, bool8 isShiny, bool8 isEgg, u8 *stats, u8 *EVs, u8 *IVs)

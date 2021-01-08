@@ -1474,6 +1474,13 @@
     .endm
 
 
+	@ Remove pokemon from party at given slot index
+    .macro removepartymon slot:req
+    .byte 0xD6
+    .2byte \slot
+    .endm
+
+
 @ Supplementary
 
 	.macro goto_if_unset flag:req, dest:req

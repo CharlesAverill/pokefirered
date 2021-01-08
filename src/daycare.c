@@ -591,7 +591,9 @@ static u16 GetDaycareCostForMon(struct DayCare *daycare, u8 slotId)
 
 void GetDaycareCost(void)
 {
+    //u16 cost = 1;
     gSpecialVar_0x8005 = GetDaycareCostForMon(&gSaveBlock1Ptr->daycare, gSpecialVar_0x8004);
+    //gSpecialVar_0x8005 = cost;
 }
 
 static void Debug_AddDaycareSteps(u16 numSteps)

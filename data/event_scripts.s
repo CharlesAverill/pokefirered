@@ -1460,3 +1460,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/HemlockForest/scripts.inc"
 	.include "data/maps/HemlockForest/text.inc"
+
+	.include "data/maps/SaffronCity_RocketMart_1F/scripts.inc"
+	.include "data/maps/SaffronCity_RocketMart_1F/text.inc"
+
+	.include "data/maps/SaffronCity_RocketMart_2F/scripts.inc"
+	.include "data/maps/SaffronCity_RocketMart_2F/text.inc"

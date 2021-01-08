@@ -319,7 +319,7 @@ PalletTown_ProfessorOaksLab_Text_RivalJustLetMeHandleEverything:: @ 818EF59
 
 PalletTown_ProfessorOaksLab_Text_OakNeedYourHelpTooNeedToSeePokedexes:: @ 818F004
     .string "OAK: I know, I know.\n"
-    .string "Of course I need your help, too.\p"
+    .string "Of course I need your help, too.$"
     .string "Now, I need to see both your\n"
     .string "POKéDEXES.$"
 

@@ -112,7 +112,8 @@ FourIsland_PokemonDayCare_TryRetrieveMon:: @ 8171A90
 	end
 
 FourIsland_PokemonDayCare_CostPrompt:: @ 8171ACF
-	special GetDaycareCost
+	//special GetDaycareCost
+	setvar 0x8005, 1
 	msgbox DayCare_Text_ItWillCostX, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq FourIsland_PokemonDayCare_CheckEnoughMoney

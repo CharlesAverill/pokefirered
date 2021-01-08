@@ -1722,6 +1722,19 @@ void CreateMon(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 hasFix
     CalculateMonStats(mon);
 }
 
+u16 TakeMon(u16 i)
+{
+    if(i >= PARTY_SIZE){
+        return 0;
+    }
+
+    CopyMon(&gPlayerParty[i], NULL, sizeof(NULL));
+    gPlayerPartyCount = i - 1;
+    ZeroMonData(&gPlayerParty[i]);
+
+    return 1;
+}
+
 void CreateShinyMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)
 {
     u32 personality;

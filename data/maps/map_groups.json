@@ -438,7 +438,9 @@
     "SaffronCity_PokemonCenter_2F",
     "SaffronCity_MrPsychicsHouse",
     "SaffronCity_PokemonTrainerFanClub",
-    "CharlesLaboratory"
+    "CharlesLaboratory",
+    "SaffronCity_RocketMart_1F",
+    "SaffronCity_RocketMart_2F"
   ],
   "gMapGroup15": [
     "Route2_ViridianForest_SouthEntrance",

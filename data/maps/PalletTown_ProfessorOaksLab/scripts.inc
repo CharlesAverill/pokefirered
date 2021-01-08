@@ -91,6 +91,9 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene:: @ 8169035
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalJustLetMeHandleEverything
 	fadedefaultbgm
 	msgbox PalletTown_ProfessorOaksLab_Text_OakNeedYourHelpTooNeedToSeePokedexes
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FaceUp
+
+	/*
 	compare VAR_FACING, DIR_NORTH
 	call_if_eq PalletTown_ProfessorOaksLab_EventScript_PlayerFaceOakNorth
 	compare VAR_FACING, DIR_WEST
@@ -129,6 +132,8 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene:: @ 8169035
 	waitmessage
 	waitfanfare
 	call EventScript_RestorePrevTextColor
+	*/
+
 	msgbox PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex
 	closemessage

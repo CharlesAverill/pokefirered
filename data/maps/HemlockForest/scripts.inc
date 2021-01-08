@@ -91,6 +91,10 @@ Movement_FaceUp::
     face_up
     step_end
 
+Movement_FaceLeft::
+    face_left
+    step_end
+
 Movement_SetVisible::
     set_visible
     step_end

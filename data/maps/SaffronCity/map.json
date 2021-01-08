@@ -359,6 +359,13 @@
       "elevation": 0,
       "dest_map": "MAP_CHARLES_LABORATORY",
       "dest_warp_id": 0
+    },
+    {
+      "x": 19,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_SAFFRON_CITY_ROCKET_MART_1F",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

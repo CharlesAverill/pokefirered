@@ -7215,9 +7215,9 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_VOLTORB"
+                "min_level": 26,
+                "max_level": 27,
+                "species": "SPECIES_PIKACHU"
               },
               {
                 "min_level": 25,

@@ -1780,6 +1780,15 @@ bool8 ScrCmd_givemonwithstats(struct ScriptContext * ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_removepartymon(struct ScriptContext * ctx)
+{
+    u16 slot = VarGet(ScriptReadHalfword(ctx));
+
+    ScriptTakeMonFromPlayer(slot);
+
+    return FALSE;
+}
+
 bool8 ScrCmd_giveegg(struct ScriptContext * ctx)
 {
     u16 species = VarGet(ScriptReadHalfword(ctx));
