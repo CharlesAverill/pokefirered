@@ -269,7 +269,6 @@
 #define MAP_ROUTE49                              (66 | (3 << 8))
 #define MAP_DRAGON_GATE                          (67 | (3 << 8))
 #define MAP_HEMLOCK_TOWN                         (68 | (3 << 8))
-#define MAP_KANTO_VICTORY_ROAD                   (69 | (3 << 8))
 
 // Map Group 4
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_1F   (0 | (4 << 8))
