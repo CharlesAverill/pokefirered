@@ -1917,63 +1917,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 32,
-                "max_level": 32,
+                "min_level": 42,
+                "max_level": 42,
                 "species": "SPECIES_MEDITITE"
               },
               {
-                "min_level": 32,
-                "max_level": 32,
+                "min_level": 42,
+                "max_level": 42,
                 "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "SPECIES_STEELIX"
               },
               {
-                "min_level": 43,
-                "max_level": 43,
+                "min_level": 53,
+                "max_level": 53,
                 "species": "SPECIES_SABLEYE"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_ONIX"
               },
               {
-                "min_level": 32,
-                "max_level": 32,
+                "min_level": 42,
+                "max_level": 42,
                 "species": "SPECIES_ZUBAT"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_ARBOK"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_SANDSLASH"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_MAROWAK"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_MACHOKE"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_HARIYAMA"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_HITMONCHAN"
               }
             ]
@@ -2055,63 +2055,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 34,
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_ONIX"
               },
               {
-                "min_level": 34,
-                "max_level": 34,
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 42,
-                "max_level": 42,
+                "min_level": 52,
+                "max_level": 52,
                 "species": "SPECIES_PRIMEAPE"
               },
               {
-                "min_level": 45,
-                "max_level": 45,
+                "min_level": 55,
+                "max_level": 55,
                 "species": "SPECIES_SABLEYE"
               },
               {
-                "min_level": 48,
-                "max_level": 48,
+                "min_level": 58,
+                "max_level": 58,
                 "species": "SPECIES_MEDITITE"
               },
               {
-                "min_level": 34,
-                "max_level": 34,
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_HARIYAMA"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_SANDSLASH"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_GOLBAT"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_MAROWAK"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_SHELGON"
               },
               {
-                "min_level": 48,
-                "max_level": 48,
+                "min_level": 59,
+                "max_level": 59,
                 "species": "SPECIES_MACHOKE"
               },
               {
-                "min_level": 48,
-                "max_level": 48,
+                "min_level": 58,
+                "max_level": 58,
                 "species": "SPECIES_HITMONLEE"
               }
             ]
@@ -2193,63 +2193,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 32,
-                "max_level": 32,
+                "min_level": 42,
+                "max_level": 42,
                 "species": "SPECIES_MACHOP"
               },
               {
-                "min_level": 32,
-                "max_level": 32,
+                "min_level": 42,
+                "max_level": 42,
                 "species": "SPECIES_GEODUDE"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "SPECIES_ONIX"
               },
               {
-                "min_level": 43,
-                "max_level": 43,
+                "min_level": 53,
+                "max_level": 53,
                 "species": "SPECIES_ONIX"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_SABLEYE"
               },
               {
-                "min_level": 32,
-                "max_level": 32,
+                "min_level": 44,
+                "max_level": 44,
                 "species": "SPECIES_MEDITITE"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_ARBOK"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_SANDSLASH"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_MAROWAK"
               },
               {
-                "min_level": 44,
-                "max_level": 44,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_MACHOKE"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_HITMONTOP"
               },
               {
-                "min_level": 46,
-                "max_level": 46,
+                "min_level": 56,
+                "max_level": 56,
                 "species": "SPECIES_MAROWAK"
               }
             ]
