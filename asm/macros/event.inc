@@ -1480,6 +1480,18 @@
     .2byte \slot
     .endm
 
+    @ Calculate a party mon's Rocket value, store in VAR_SPECIAL_0 (broken) and buffers into STR_VAR_2
+    .macro getpartymonvalue slot:req
+    .byte 0xD7
+    .2byte \slot
+    .endm
+
+    @ Sells mon at slot index
+    .macro sellpartymon slot:req
+    .byte 0xD8
+    .2byte \slot
+    .endm
+
 
 @ Supplementary
 

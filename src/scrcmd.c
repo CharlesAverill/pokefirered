@@ -1789,6 +1789,26 @@ bool8 ScrCmd_removepartymon(struct ScriptContext * ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_getpartymonvalue(struct ScriptContext * ctx)
+{
+    u16 value;
+
+    u16 slot = VarGet(ScriptReadHalfword(ctx));
+
+    value = ScriptGetMonValue(slot);
+
+    VarSet(VAR_0x8000, value);
+
+    return FALSE;
+}
+
+bool8 ScrCmd_sellpartymon(struct ScriptContext * ctx)
+{
+    u16 slot = VarGet(ScriptReadHalfword(ctx));
+    ScriptGetMonValueAndSell(slot);
+    return FALSE;
+}
+
 bool8 ScrCmd_giveegg(struct ScriptContext * ctx)
 {
     u16 species = VarGet(ScriptReadHalfword(ctx));

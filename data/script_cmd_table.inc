@@ -216,6 +216,8 @@ gScriptCmdTable:: @ 815F9B4
 	.4byte ScrCmd_bufferitemnameplural
 	.4byte ScrCmd_givemonwithstats
 	.4byte ScrCmd_removepartymon
+	.4byte ScrCmd_getpartymonvalue
+	.4byte ScrCmd_sellpartymon
 
 gScriptCmdTableEnd:: @ 815FD08
 	.4byte ScrCmd_nop

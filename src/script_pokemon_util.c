@@ -12,6 +12,8 @@
 #include "constants/species.h"
 #include "constants/pokemon.h"
 #include "pokemon_storage_system.h"
+#include "field_specials.h"
+#include "money.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleTowerParty(void);
@@ -78,6 +80,331 @@ void ScriptTakeMonFromPlayer(u16 index){
     ZeroMonData(&gPlayerParty[index]);
     CompactPartySlots();
     CalculatePlayerPartyCount();
+}
+
+static const u16 sLegendaryValuable[] = {
+    SPECIES_ARTICUNO,
+    SPECIES_ZAPDOS,
+    SPECIES_MOLTRES,
+    SPECIES_MEWTWO,
+    SPECIES_MEW,
+    SPECIES_ENTEI,
+    SPECIES_RAIKOU,
+    SPECIES_SUICUNE,
+    SPECIES_HO_OH,
+    SPECIES_LUGIA,
+    SPECIES_CELEBI,
+    SPECIES_LATIOS,
+    SPECIES_LATIAS,
+    SPECIES_REGIROCK,
+    SPECIES_REGICE,
+    SPECIES_REGISTEEL,
+    SPECIES_KYOGRE,
+    SPECIES_GROUDON,
+    SPECIES_RAYQUAZA,
+    SPECIES_JIRACHI
+};
+
+static const u16 sThirdEvolutionValuable[] = {
+    SPECIES_VENUSAUR,
+    SPECIES_CHARIZARD,
+    SPECIES_BLASTOISE,
+    SPECIES_BUTTERFREE,
+    SPECIES_BEEDRILL,
+    SPECIES_PIDGEOT,
+    SPECIES_RAICHU,
+    SPECIES_NIDOQUEEN,
+    SPECIES_NIDOKING,
+    SPECIES_CLEFABLE,
+    SPECIES_WIGGLYTUFF,
+    SPECIES_CROBAT,
+    SPECIES_VILEPLUME,
+    SPECIES_BELLOSSOM,
+    SPECIES_POLIWRATH,
+    SPECIES_POLITOED,
+    SPECIES_ALAKAZAM,
+    SPECIES_VICTREEBEL,
+    SPECIES_MACHAMP,
+    SPECIES_GOLEM,
+    SPECIES_GENGAR,
+    SPECIES_BLISSEY,
+    SPECIES_KINGDRA,
+    SPECIES_MEGANIUM,
+    SPECIES_TYPHLOSION,
+    SPECIES_FERALIGATR,
+    SPECIES_AMPHAROS,
+    SPECIES_AZUMARILL,
+    SPECIES_JUMPLUFF,
+    SPECIES_SCEPTILE,
+    SPECIES_BLAZIKEN,
+    SPECIES_SWAMPERT,
+    SPECIES_BEAUTIFLY,
+    SPECIES_DUSTOX,
+    SPECIES_LUDICOLO,
+    SPECIES_SHIFTRY,
+    SPECIES_GARDEVOIR,
+    SPECIES_SLAKING,
+    SPECIES_EXPLOUD,
+    SPECIES_AGGRON,
+    SPECIES_FLYGON,
+    SPECIES_WALREIN
+};
+
+static const u16 sPseudoLegendaryValuable[] = {
+    SPECIES_DRAGONITE,
+    SPECIES_TYRANITAR,
+    SPECIES_SALAMENCE,
+    SPECIES_METAGROSS
+};
+
+static const u16 sRareValuable[] = {
+    SPECIES_BULBASAUR,
+    SPECIES_CHARMANDER,
+    SPECIES_SQUIRTLE,
+    SPECIES_CHIKORITA,
+    SPECIES_CYNDAQUIL,
+    SPECIES_TOTODILE,
+    SPECIES_MUDKIP,
+    SPECIES_TORCHIC,
+    SPECIES_TREECKO,
+    SPECIES_CHANSEY,
+    SPECIES_ELECTABUZZ,
+    SPECIES_MAGMAR,
+    SPECIES_PIKACHU,
+    SPECIES_DUGTRIO,
+    SPECIES_HYPNO,
+    SPECIES_EXEGGUTOR,
+    SPECIES_HITMONLEE,
+    SPECIES_HITMONCHAN,
+    SPECIES_HITMONTOP,
+    SPECIES_SCYTHER,
+    SPECIES_PINSIR,
+    SPECIES_HERACROSS,
+    SPECIES_MR_MIME,
+    SPECIES_JYNX,
+    SPECIES_TAUROS,
+    SPECIES_LAPRAS,
+    SPECIES_DITTO,
+    SPECIES_EEVEE,
+    SPECIES_PORYGON,
+    SPECIES_SNORLAX,
+    SPECIES_SUDOWOODO,
+    SPECIES_SHUCKLE,
+    SPECIES_BRELOOM,
+    SPECIES_SHEDINJA,
+    SPECIES_NINJASK,
+    SPECIES_PLUSLE,
+    SPECIES_MINUN,
+    SPECIES_WAILORD,
+    SPECIES_SPINDA,
+    SPECIES_ALTARIA,
+    SPECIES_MILOTIC,
+    SPECIES_CASTFORM,
+    SPECIES_KECLEON,
+    SPECIES_GLALIE
+};
+
+static const u16 sNotValuable[] = {
+    SPECIES_CATERPIE,
+    SPECIES_METAPOD,
+    SPECIES_WEEDLE,
+    SPECIES_KAKUNA,
+    SPECIES_PIDGEY,
+    SPECIES_RATTATA,
+    SPECIES_SPEAROW,
+    SPECIES_EKANS,
+    SPECIES_SANDSHREW,
+    SPECIES_NIDORAN_M,
+    SPECIES_NIDORAN_F,
+    SPECIES_VULPIX,
+    SPECIES_GROWLITHE,
+    SPECIES_ZUBAT,
+    SPECIES_GOLBAT,
+    SPECIES_ODDISH,
+    SPECIES_PARAS,
+    SPECIES_VENONAT,
+    SPECIES_DIGLETT,
+    SPECIES_PSYDUCK,
+    SPECIES_POLIWAG,
+    SPECIES_MACHOP,
+    SPECIES_BELLSPROUT,
+    SPECIES_GEODUDE,
+    SPECIES_TENTACOOL,
+    SPECIES_PONYTA,
+    SPECIES_SLOWPOKE,
+    SPECIES_GASTLY,
+    SPECIES_DROWZEE,
+    SPECIES_KRABBY,
+    SPECIES_EXEGGCUTE,
+    SPECIES_KOFFING,
+    SPECIES_TANGELA,
+    SPECIES_HORSEA,
+    SPECIES_GOLDEEN,
+    SPECIES_MAGIKARP,
+    SPECIES_SENTRET,
+    SPECIES_HOOTHOOT,
+    SPECIES_SPINARAK,
+    SPECIES_HOPPIP,
+    SPECIES_SUNKERN,
+    SPECIES_YANMA,
+    SPECIES_WOOPER,
+    SPECIES_PINECO,
+    SPECIES_DUNSPARCE,
+    SPECIES_TEDDIURSA,
+    SPECIES_SLUGMA,
+    SPECIES_SWINUB,
+    SPECIES_REMORAID,
+    SPECIES_HOUNDOUR,
+    SPECIES_SMEARGLE,
+    SPECIES_POOCHYENA,
+    SPECIES_ZIGZAGOON,
+    SPECIES_WURMPLE,
+    SPECIES_SILCOON,
+    SPECIES_CASCOON,
+    SPECIES_LOTAD,
+    SPECIES_SEEDOT,
+    SPECIES_TAILLOW,
+    SPECIES_WINGULL,
+    SPECIES_SURSKIT,
+    SPECIES_ROSELIA,
+    SPECIES_NUMEL,
+    SPECIES_FEEBAS,
+    SPECIES_CHIMECHO,
+    SPECIES_SPHEAL
+};
+
+int ScriptGetMonValue(u16 index){
+    u32 value = 0;
+    u8 ballValue = 0;
+    u16 evSum = 0;
+    u8 ivSum = 0;
+    u8 foundRarity = 1;
+    u32 species;
+    u8 i;
+
+    struct Pokemon *mon = &gPlayerParty[index];
+
+    species = GetMonData(mon, MON_DATA_SPECIES);
+
+    switch(GetMonData(mon, MON_DATA_POKEBALL)){
+        case ITEM_MASTER_BALL:
+            ballValue = 100;
+            break;
+        case ITEM_POKE_BALL:
+            ballValue = 20;
+            break;
+        case ITEM_GREAT_BALL:
+            ballValue = 40;
+            break;
+        case ITEM_ULTRA_BALL:
+            ballValue = 60;
+            break;
+        case ITEM_NET_BALL:
+            ballValue = 50;
+            break;
+        case ITEM_DIVE_BALL:
+            ballValue = 50;
+            break;
+        case ITEM_NEST_BALL:
+            ballValue = 50;
+            break;
+        case ITEM_REPEAT_BALL:
+            ballValue = 55;
+            break;
+        case ITEM_TIMER_BALL:
+            ballValue = 55;
+            break;
+        case ITEM_LUXURY_BALL:
+            ballValue = 70;
+            break;
+        case ITEM_PREMIER_BALL:
+            ballValue = 85;
+            break;
+        default:
+            ballValue = 20;
+            break;
+    }
+
+    for(i = 0; i < 6; i++){
+        evSum += GetMonData(mon, MON_DATA_HP_EV + i);
+        ivSum += GetMonData(mon, MON_DATA_HP_IV + i);
+    }
+
+    for (i = 0; i < (sizeof(sLegendaryValuable) / sizeof((sLegendaryValuable)[0])); i++)
+    {
+        if (species == sLegendaryValuable[i])
+        {
+            foundRarity = 5;
+            break;
+        }
+    }
+
+    for (i = 0; i < (sizeof(sThirdEvolutionValuable) / sizeof((sThirdEvolutionValuable)[0])); i++)
+    {
+        if (species == sThirdEvolutionValuable[i])
+        {
+            foundRarity = 3;
+            break;
+        }
+    }
+
+    for (i = 0; i < (sizeof(sPseudoLegendaryValuable) / sizeof((sPseudoLegendaryValuable)[0])); i++)
+    {
+        if (species == sPseudoLegendaryValuable[i])
+        {
+            foundRarity = 4;
+            break;
+        }
+    }
+
+    for (i = 0; i < (sizeof(sRareValuable) / sizeof((sRareValuable)[0])); i++)
+    {
+        if (species == sRareValuable[i])
+        {
+            foundRarity = 2;
+            break;
+        }
+    }
+
+    for (i = 0; i < (sizeof(sNotValuable) / sizeof((sNotValuable)[0])); i++)
+    {
+        if (species == sNotValuable[i])
+        {
+            foundRarity = -1;
+            break;
+        }
+    }
+
+    // Value formula = (.3)(level) + (.05)(rarity of pokeball) + (.35)(species rarity) + (.15)(sum of EVs / 510) + (.15)(sum of IVs / (6 * 31))
+    // Max selling value is $100,000, so divide value by 100 to get decimal and multiply by 100,000 (idc that it's not concise)
+
+    value += 30.0 * GetMonData(mon, MON_DATA_LEVEL) / 100.0;
+
+    value += 5.0 * ballValue / (100.0);
+
+    value += 35.0 * ((foundRarity * 20.0)) / 100.0;
+
+    value += 15.0 * (evSum / 510.0) / 10.0;
+    value += 15.0 * (ivSum / 186.0) / 100.0;
+
+    value *= 100000.0;
+    value /= 100.0;
+
+    if(value < 0 || value > 100000){
+        value = 1000;
+    }
+
+    value = (int)value;
+
+    ConvertIntToDecimalStringN(gStringVar2, value, STR_CONV_MODE_LEFT_ALIGN, CountDigits(value));
+
+    return value;
+}
+
+void ScriptGetMonValueAndSell(u16 index){
+    int value = ScriptGetMonValue(index);
+
+    AddMoney(&gSaveBlock1Ptr->money, value);
 }
 
 u8 ScriptGiveMonWithStats(u16 species, u8 level, u16 item, bool8 isShiny, bool8 isEgg, u8 *stats, u8 *EVs, u8 *IVs)
