@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCity_RocketMart_2F_Scene",
+      "script": "SaffronCity_RocketMart_2F_James",
       "flag": "FLAG_HIDE_RM_ROCKETS"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCity_RocketMart_2F_Scene",
+      "script": "SaffronCity_RocketMart_2F_Jesse",
       "flag": "FLAG_HIDE_RM_ROCKETS"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCity_RocketMart_2F_Scene",
+      "script": "SaffronCity_RocketMart_2F_Meowth",
       "flag": "FLAG_HIDE_RM_ROCKETS"
     },
     {
@@ -250,7 +250,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SaffronCity_RocketMart_2F_Scene"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SaffronCity_RocketMart_2F_Scene"
+    }
   ],
   "bg_events": [
 

@@ -1809,6 +1809,12 @@ bool8 ScrCmd_sellpartymon(struct ScriptContext * ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_bufferroamerdata(struct ScriptContext * ctx)
+{
+    ScriptBufferRoamerData();
+    return FALSE;
+}
+
 bool8 ScrCmd_giveegg(struct ScriptContext * ctx)
 {
     u16 species = VarGet(ScriptReadHalfword(ctx));

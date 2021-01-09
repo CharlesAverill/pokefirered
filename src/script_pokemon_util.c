@@ -14,6 +14,8 @@
 #include "pokemon_storage_system.h"
 #include "field_specials.h"
 #include "money.h"
+#include "roamer.h"
+#include "region_map.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleTowerParty(void);
@@ -74,6 +76,13 @@ u8 ScriptGiveMon(u16 species, u8 level, u16 item, u32 unused1, u32 unused2, u8 u
 
     Free(mon);
     return sentToPc;
+}
+
+void ScriptBufferRoamerData(void){
+    u16 species = GetRoamerSpecies();
+    u16 roamerLocation = GetRoamerLocationMapSectionId();
+    GetSpeciesName(gStringVar1, species);
+    GetMapNameGeneric(gStringVar2, roamerLocation);
 }
 
 void ScriptTakeMonFromPlayer(u16 index){

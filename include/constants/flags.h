@@ -244,7 +244,7 @@
 #define FLAG_HIDE_SSANNE_BLOCKER               0x0EA
 #define FLAG_GOT_HEMLOCK_BOOSTER_ITEMS               0x0EB
 #define FLAG_HIDE_RM_ROCKETS               0x0EC
-#define FLAG_0x0ED               0x0ED
+#define FLAG_EUNICE_AGENTS_MET               0x0ED
 #define FLAG_0x0EE               0x0EE
 #define FLAG_0x0EF               0x0EF
 #define FLAG_0x0F0               0x0F0

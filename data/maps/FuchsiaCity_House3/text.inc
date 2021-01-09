@@ -50,8 +50,9 @@ FuchsiaCity_House3_Eunice_Introduction::
     .string "were spotted around Kanto. I'm\l"
     .string "much too old to go adventuring like\l"
     .string "I used to with my husband all those\l"
-    .string "years ago... Could you take my place\l"
-    .string "and search for the roaming Pokémon?$"
+    .string "years ago... Could you take\l"
+    .string "my place and search for\l"
+    .string "the roaming Pokémon?$"
 
 FuchsiaCity_House3_Entei_Intro::
     .string "I'm hearing rumors of a Pokémon\n"
@@ -113,3 +114,17 @@ FuchisaCity_House3_Eusine_Text::
     .string "wanna help my grandma find\l"
     .string "her Legendary Pokémon. My\l"
     .string "favorite is Suicune!$"
+
+EuniceAgent_SayRoamerLocation::
+    .string "Reports are showing that\n"
+    .string "{STR_VAR_1} has been seen\l"
+    .string "around {STR_VAR_2}.$"
+
+EuniceAgent_MeetText::
+    .string "Hey there! We haven't met, but\n"
+    .string "I recognize you. I'm a friend\l"
+    .string "of Eunice, and I help her track\l"
+    .string "down the Roaming Pokémon.\p"
+    .string "There's a bunch of us around\n"
+    .string "Kanto, and we can give you\l"
+    .string "the scoop on where the Roamers are!$"

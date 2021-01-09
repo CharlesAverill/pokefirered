@@ -86,8 +86,10 @@ FuchsiaCity_House3_CheckEntei::
 FuchsiaCity_House3_HasEntei::
     msgbox FuchsiaCity_House3_WoahThatsEntei
     msgbox FuchsiaCity_House3_Latias_Intro
+    /*
     msgbox FuchsiaCity_House3_GiveBallText
     giveitem ITEM_MASTER_BALL
+    */
     setflag FLAG_CAUGHT_ENTEI
     special InitRoamer
     release
@@ -106,8 +108,10 @@ FuchsiaCity_House3_CheckLatias::
 FuchsiaCity_House3_HasLatias::
     msgbox FuchsiaCity_House3_WoahThatsLatias
     msgbox FuchsiaCity_House3_Raikou_Intro
+    /*
     msgbox FuchsiaCity_House3_GiveBallText
     giveitem ITEM_MASTER_BALL
+    */
     setflag FLAG_CAUGHT_LATIAS
     special InitRoamer
     release
@@ -126,8 +130,10 @@ FuchsiaCity_House3_CheckRaikou::
 FuchsiaCity_House3_HasRaikou::
     msgbox FuchsiaCity_House3_WoahThatsRaikou
     msgbox FuchsiaCity_House3_Latios_Intro
+    /*
     msgbox FuchsiaCity_House3_GiveBallText
     giveitem ITEM_MASTER_BALL
+    */
     special InitRoamer
     release
     end
@@ -145,8 +151,10 @@ FuchsiaCity_House3_CheckLatios::
 FuchsiaCity_House3_HasLatios::
     msgbox FuchsiaCity_House3_WoahThatsLatios
     msgbox FuchsiaCity_House3_Suicune_Intro
+    /*
     msgbox FuchsiaCity_House3_GiveBallText
     giveitem ITEM_MASTER_BALL
+    */
     setflag FLAG_CAUGHT_LATIOS
     special InitRoamer
     release
@@ -172,8 +180,10 @@ FuchsiaCity_House3_HasSuicune::
 FuchsiaCity_House3_MeetEunice::
     msgbox FuchsiaCity_House3_Eunice_Introduction
     msgbox FuchsiaCity_House3_Entei_Intro
+    /*
     msgbox FuchsiaCity_House3_GiveBallText
     giveitem ITEM_MASTER_BALL
+    */
     setflag FLAG_MET_EUNICE
     special InitRoamer
     release
@@ -190,5 +200,20 @@ FuchsiaCity_House3_Eusine::
     lock
     faceplayer
     msgbox FuchisaCity_House3_Eusine_Text
+    release
+    end
+
+EuniceAgent::
+    lock
+    faceplayer
+    goto_if_unset FLAG_EUNICE_AGENTS_MET, EuniceAgent_NotMet
+    bufferroamerdata
+    msgbox EuniceAgent_SayRoamerLocation
+    release
+    end
+
+EuniceAgent_NotMet::
+    msgbox EuniceAgent_MeetText
+    setflag FLAG_EUNICE_AGENTS_MET
     release
     end

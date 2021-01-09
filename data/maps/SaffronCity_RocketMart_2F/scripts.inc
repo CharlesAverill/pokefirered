@@ -3,7 +3,8 @@ SaffronCity_RocketMart_2F_MapScripts::
 	.byte 0
 
 SaffronCity_RocketMart_2F_Scene::
-    clearflag FLAG_SYS_GAME_CLEAR
+    goto_if_set FLAG_TEMP_1, EventScript_ReleaseEnd
+    setflag FLAG_TEMP_1
     applymovement 3, Movement_JumpInPlaceDown
     waitmovement 0
     textcolor 1
@@ -47,6 +48,24 @@ SaffronCity_RocketMart_2F_Scene::
 
     closemessage
 
+    end
+
+SaffronCity_RocketMart_2F_Jesse::
+    lock
+    msgbox SaffronCity_RocketMart_2F_Jesse_IndividualText
+    release
+    end
+
+SaffronCity_RocketMart_2F_James::
+    lock
+    msgbox SaffronCity_RocketMart_2F_James_IndividualText
+    release
+    end
+
+SaffronCity_RocketMart_2F_Meowth::
+    lock
+    msgbox SaffronCity_RocketMart_2F_Meowth_IndividualText
+    release
     end
 
 SaffronCity_RocketMart_2F_Wait::

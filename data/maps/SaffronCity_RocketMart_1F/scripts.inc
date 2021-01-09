@@ -53,3 +53,21 @@ SaffronCity_RocketMart_1F_Sell::
     msgbox SaffronCity_RocketMart_1F_Sold_Text
     release
     end
+
+SaffronCity_RocketMart_1F_SecondRocketGrunt::
+    lock
+    faceplayer
+    msgbox SaffronCity_RocketMart_1F_SecondRocketGrunt_Text
+    release
+    end
+
+SaffronCity_RocketMart_1F_Scientist::
+    lock
+    faceplayer
+    msgbox SaffronCity_RocketMart_1F_Scientist_Text
+    release
+    end
+
+SaffronCity_RocketMart_1F_Clipboard::
+    msgbox SaffronCity_RocketMart_1F_Clipboard_Text, MSGBOX_SIGN
+    end

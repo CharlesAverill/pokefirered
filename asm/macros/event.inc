@@ -1492,6 +1492,11 @@
     .2byte \slot
     .endm
 
+    @ Buffers name and location of current roamer into STR_VAR_1 and STR_VAR_2
+    .macro bufferroamerdata
+    .byte 0xD9
+    .endm
+
 
 @ Supplementary
 

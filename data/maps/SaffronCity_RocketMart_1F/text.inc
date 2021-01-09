@@ -25,3 +25,27 @@ SaffronCity_RocketMart_1F_NotEnoughMonsText::
     .string "Pokémon in your party. Come back\l"
     .string "with a few more and I'll\l"
     .string "consider buying them.$"
+
+SaffronCity_RocketMart_1F_SecondRocketGrunt_Text::
+    .string "After the Boss lost to you in\n"
+    .string "Viridian, TEAM ROCKET disbanded.\p"
+    .string "But nobody realized how much\n"
+    .string "equipment we had left from the\l"
+    .string "golden days. We sold it when nobody\l"
+    .string "was looking, and now we're rich!\p"
+    .string "We're gonna use the Pokémon\n"
+    .string "we buy from trainers to\l"
+    .string "take over Johto next!$"
+
+SaffronCity_RocketMart_1F_Scientist_Text::
+    .string "I was a double agent working\n"
+    .string "for TEAM ROCKET at Silph.\p"
+    .string "I was actually on the MASTER BALL\n"
+    .string "team. I'm trying to recreate it\l"
+    .string "so I can capture strong Pokémon\l"
+    .string "to help the conquest of Johto.$"
+
+SaffronCity_RocketMart_1F_Clipboard_Text::
+    .string "This research paper looks more\n"
+    .string "like alchemy than science…\p"
+    .string "Something about the move Imprison…$"

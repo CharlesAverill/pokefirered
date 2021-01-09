@@ -16,3 +16,13 @@ SaffronCity_RocketMart_2F_James_Text::
 
 SaffronCity_RocketMart_2F_Reply::
     .string "……………$"
+
+SaffronCity_RocketMart_2F_Jesse_IndividualText::
+    .string "Maybe if we evolve them fast enough…$"
+
+SaffronCity_RocketMart_2F_James_IndividualText::
+    .string "I'm really going to get it!\n"
+    .string "Better think of something quick…$"
+
+SaffronCity_RocketMart_2F_Meowth_IndividualText::
+    .string "What a dolt!$"
