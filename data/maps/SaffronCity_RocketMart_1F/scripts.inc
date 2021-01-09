@@ -1,5 +1,19 @@
 SaffronCity_RocketMart_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_RocketMart_OnTransition
 	.byte 0
+
+SaffronCity_RocketMart_OnTransition::
+    goto_if_set FLAG_SYS_GAME_CLEAR, SaffronCity_RocketMart_TryShowRockets
+    goto SaffronCity_RocketMart_HideRockets
+    end
+
+SaffronCity_RocketMart_TryShowRockets:
+	clearflag FLAG_HIDE_RM_ROCKETS
+	end
+
+SaffronCity_RocketMart_HideRockets::
+    setflag FLAG_HIDE_RM_ROCKETS
+    end
 
 SaffronCity_RocketMart_1F_SellMons::
     lock

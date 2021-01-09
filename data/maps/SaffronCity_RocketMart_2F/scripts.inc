@@ -1,19 +1,6 @@
 SaffronCity_RocketMart_2F_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_RocketMart_2F_OnTransition
+	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_RocketMart_OnTransition
 	.byte 0
-
-SaffronCity_RocketMart_2F_OnTransition::
-    goto_if_set FLAG_SYS_GAME_CLEAR, SaffronCity_RocketMart_2F_TryShowRockets
-    goto SaffronCity_RocketMart_2F_HideRockets
-    end
-
-SaffronCity_RocketMart_2F_HideRockets::
-    setflag FLAG_HIDE_RM_ROCKETS
-    end
-
-SaffronCity_RocketMart_2F_TryShowRockets:
-	clearflag FLAG_HIDE_RM_ROCKETS
-	end
 
 SaffronCity_RocketMart_2F_Scene::
     clearflag FLAG_SYS_GAME_CLEAR
