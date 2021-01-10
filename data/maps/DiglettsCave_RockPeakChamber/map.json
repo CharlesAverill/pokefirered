@@ -43,15 +43,6 @@
 
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 15,
-      "y": 28,
-      "elevation": 3,
-      "item": "ITEM_TM39_ROCK_TOMB",
-      "flag": "FLAG_TEMP_1",
-      "quantity": 1,
-      "underfoot": false
-    }
+
   ]
 }

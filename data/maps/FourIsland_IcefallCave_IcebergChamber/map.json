@@ -43,15 +43,6 @@
 
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 8,
-      "y": 35,
-      "elevation": 3,
-      "item": "ITEM_TM13_ICE_BEAM",
-      "flag": "FLAG_TEMP_1",
-      "quantity": 1,
-      "underfoot": false
-    }
+
   ]
 }

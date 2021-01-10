@@ -43,15 +43,6 @@
 
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 22,
-      "y": 35,
-      "elevation": 3,
-      "item": "ITEM_TM15_HYPER_BEAM",
-      "flag": "FLAG_TEMP_1",
-      "quantity": 1,
-      "underfoot": false
-    }
+
   ]
 }

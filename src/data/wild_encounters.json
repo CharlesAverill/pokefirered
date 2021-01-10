@@ -6249,7 +6249,7 @@
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_LAPRAS"
+                "species": "SPECIES_GOLDUCK"
               }
             ]
           }
@@ -9603,7 +9603,7 @@
               {
                 "min_level": 41,
                 "max_level": 41,
-                "species": "SPECIES_PSYDUCK"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 48,
@@ -10187,7 +10187,7 @@
               {
                 "min_level": 41,
                 "max_level": 41,
-                "species": "SPECIES_PSYDUCK"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 48,
@@ -25688,7 +25688,7 @@
               {
                 "min_level": 50,
                 "max_level": 60,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_ARON"
               },
               {
                 "min_level": 50,
