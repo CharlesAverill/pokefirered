@@ -20,7 +20,9 @@
 - Hemlock Town: East of Route 49
 - Hemlock Forest: South of Hemlock Town
 - Celadon Forest: above Celadon CIty
-- Mt. Moon Summit: Next  to Mt. Moon exit on Route 4
+- Mt. Moon Summit: next  to Mt. Moon exit on Route 4
+- Route 50: between routes 2 and 16
+- Chansey Grove: Route 50
 ## Events
 Many custom events rely on a custom flag I've made.
 - Mew Truck glitch from RBY is now a built-in event

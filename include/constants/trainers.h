@@ -179,7 +179,7 @@
 #define TRAINER_BEAUTY_KENZIE                      6
 #define TRAINER_LASS_TESSA                            7
 #define TRAINER_ALEX                            8
-#define TRAINER_COOLTRAINER_1                      9
+#define TRAINER_CHANSEYMAN                      9
 #define TRAINER_COOLTRAINER_2                     10
 #define TRAINER_HEX_MANIAC_1                      11
 #define TRAINER_LADY_1                            12

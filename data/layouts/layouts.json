@@ -868,7 +868,7 @@
     {
       "id": "LAYOUT_ROUTE2",
       "name": "Route2_Layout",
-      "width": 38,
+      "width": 24,
       "height": 80,
       "border_width": 2,
       "border_height": 2,
@@ -1037,7 +1037,7 @@
       "id": "LAYOUT_ROUTE16",
       "name": "Route16_Layout",
       "width": 52,
-      "height": 20,
+      "height": 22,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -4764,6 +4764,30 @@
       "secondary_tileset": "gTileset_GenericBuilding1",
       "border_filepath": "data/layouts/SaffronCity_RocketMart_2F/border.bin",
       "blockdata_filepath": "data/layouts/SaffronCity_RocketMart_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE16_CHANSEY_GROVE",
+      "name": "Route16_ChanseyGrove_Layout",
+      "width": 31,
+      "height": 28,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_CeladonCity",
+      "border_filepath": "data/layouts/Route16_ChanseyGrove/border.bin",
+      "blockdata_filepath": "data/layouts/Route16_ChanseyGrove/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE16_CHANSEY_GROVE_HOUSE",
+      "name": "Route16_ChanseyGrove_House_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding1",
+      "border_filepath": "data/layouts/Route16_ChanseyGrove_House/border.bin",
+      "blockdata_filepath": "data/layouts/Route16_ChanseyGrove_House/map.bin"
     }
   ]
 }

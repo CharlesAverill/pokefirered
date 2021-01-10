@@ -269,6 +269,7 @@
 #define MAP_ROUTE49                              (66 | (3 << 8))
 #define MAP_DRAGON_GATE                          (67 | (3 << 8))
 #define MAP_HEMLOCK_TOWN                         (68 | (3 << 8))
+#define MAP_ROUTE16_CHANSEY_GROVE                (69 | (3 << 8))
 
 // Map Group 4
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_1F   (0 | (4 << 8))
@@ -432,9 +433,10 @@
 #define MAP_ROUTE15_WEST_ENTRANCE_2F (1 | (24 << 8))
 
 // Map Group 25
-#define MAP_ROUTE16_HOUSE             (0 | (25 << 8))
-#define MAP_ROUTE16_NORTH_ENTRANCE_1F (1 | (25 << 8))
-#define MAP_ROUTE16_NORTH_ENTRANCE_2F (2 | (25 << 8))
+#define MAP_ROUTE16_HOUSE               (0 | (25 << 8))
+#define MAP_ROUTE16_NORTH_ENTRANCE_1F   (1 | (25 << 8))
+#define MAP_ROUTE16_NORTH_ENTRANCE_2F   (2 | (25 << 8))
+#define MAP_ROUTE16_CHANSEY_GROVE_HOUSE (3 | (25 << 8))
 
 // Map Group 26
 #define MAP_ROUTE18_EAST_ENTRANCE_1F (0 | (26 << 8))

@@ -95,17 +95,17 @@ const struct Trainer gTrainers[] = {
         .partySize = NELEMS(sTrainerMons_Alex),
         .party = {.ItemCustomMoves = sTrainerMons_Alex}
     },
-    [TRAINER_COOLTRAINER_1] = {
-        .partyFlags = 0,
-        .trainerClass = CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_RS_COOLTRAINER_M,
-        .trainerName = _(""),
+    [TRAINER_CHANSEYMAN] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = CLASS_GENTLEMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerName = _("CHANSEY MAN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = NELEMS(sTrainerMons_Cooltrainer1),
-        .party = {.NoItemDefaultMoves = sTrainerMons_Cooltrainer1}
+        .aiFlags = 0,
+        .partySize = NELEMS(sTrainerMons_ChanseyMan),
+        .party = {.NoItemCustomMoves = sTrainerMons_ChanseyMan}
     },
     [TRAINER_COOLTRAINER_2] = {
         .partyFlags = 0,

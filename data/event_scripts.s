@@ -1466,3 +1466,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/SaffronCity_RocketMart_2F/scripts.inc"
 	.include "data/maps/SaffronCity_RocketMart_2F/text.inc"
+
+	.include "data/maps/Route16_ChanseyGrove/scripts.inc"
+	.include "data/maps/Route16_ChanseyGrove/text.inc"
+
+	.include "data/maps/Route16_ChanseyGrove_House/scripts.inc"
+	.include "data/maps/Route16_ChanseyGrove_House/text.inc"

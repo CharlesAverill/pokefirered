@@ -280,11 +280,42 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_Alex[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Cooltrainer1[] = {
+static const struct TrainerMonNoItemCustomMoves sTrainerMons_ChanseyMan[] = {
     {
-        .iv = 150,
-        .lvl = 5,
-        .species = SPECIES_EKANS,
+        .iv = 0,
+        .lvl = 100,
+        .species = SPECIES_CHANSEY,
+        .moves = {MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .species = SPECIES_CHANSEY,
+        .moves = {MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .species = SPECIES_CHANSEY,
+        .moves = {MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .species = SPECIES_CHANSEY,
+        .moves = {MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .species = SPECIES_CHANSEY,
+        .moves = {MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .species = SPECIES_CHANSEY,
+        .moves = {MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
 };
 

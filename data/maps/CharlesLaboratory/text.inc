@@ -16,7 +16,7 @@ CharlesLaboratory_Solomon_Done_Text2:
     .string "myself, I'm Prof. Charles,\l"
     .string "at your service. You said you\l"
     .string "met Solomon? And he led you\l"
-    .string "to the Rainbow and Diving Pokemon???\l"
+    .string "to the Rainbow and Diving Pokémon??\l"
     .string "Wow, he must really trust you,\l"
     .string "we swore to only tell a worthy\l"
     .string "soul should we find one.$"
@@ -33,7 +33,7 @@ CharlesLaboratory_Solomon_Done_Text3:
     .string "there are some major Gamma\l"
     .string "ray bursts coming from a strange\l"
     .string "island. If you handled the\l"
-    .string "Rainbow and Diving Pokemon,\l"
+    .string "Rainbow and Diving Pokémon,\l"
     .string "I think you're well-suited\l"
     .string "to the task of checking this\l"
     .string "out. $"
@@ -57,7 +57,7 @@ sText_AuroraTicketNoPlace:
 
 CharlesLaboratory_Completed_Text:
     .string "CHARLES: Woah, so it was a\n"
-    .string "Pokemon this whole time?\l"
+    .string "Pokémon this whole time?\l"
     .string "I've never seen one like that.$\l"
 
 CharlesLaboratory_Charles_Done_Text::

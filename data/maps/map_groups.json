@@ -320,7 +320,8 @@
     "SevenIsland_TanobyRuins",
     "Route49",
     "DragonGate",
-    "HemlockTown"
+    "HemlockTown",
+    "Route16_ChanseyGrove"
   ],
   "gMapGroup4": [
     "PalletTown_PlayersHouse_1F",
@@ -486,7 +487,8 @@
   "gMapGroup25": [
     "Route16_House",
     "Route16_NorthEntrance_1F",
-    "Route16_NorthEntrance_2F"
+    "Route16_NorthEntrance_2F",
+    "Route16_ChanseyGrove_House"
   ],
   "gMapGroup26": [
     "Route18_EastEntrance_1F",

@@ -23,6 +23,11 @@
       "direction": "right",
       "offset": -20,
       "map": "MAP_CELADON_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_ROUTE16_CHANSEY_GROVE"
     }
   ],
   "object_events": [

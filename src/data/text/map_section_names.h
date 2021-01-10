@@ -120,3 +120,5 @@ const u8 gMapSecName_CeladonForest[] = _("CELADON FOREST");
 const u8 gMapSecName_MtMoonSummit[] = _("MT. MOON SUMMIT");
 const u8 gMapSecName_HemlockTown[] = _("HEMLOCK TOWN");
 const u8 gMapSecName_HemlockForest[] = _("HEMLOCK FOREST");
+const u8 gMapSecName_ChanseyGrove[] = _("CHANSEY GROVE");
+const u8 gMapSecName_Route50[] = _("ROUTE 50");

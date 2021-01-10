@@ -26089,6 +26089,160 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE16_CHANSEY_GROVE",
+          "base_label": "gRoute16_ChanseyGrove_FR",
+          "fishing_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_WOOPER"
+              }
+            ]
+          },
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHANSEY"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MAGIKARP"
+              }
+            ]
+          }
         }
       ]
     }
