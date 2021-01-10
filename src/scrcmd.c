@@ -34,6 +34,7 @@
 #include "fieldmap.h"
 #include "field_door.h"
 #include "constants/event_objects.h"
+#include "pokedex.h"
 
 extern u16 (*const gSpecials[])(void);
 extern u16 (*const gSpecialsEnd[])(void);
@@ -1812,6 +1813,14 @@ bool8 ScrCmd_sellpartymon(struct ScriptContext * ctx)
 bool8 ScrCmd_bufferroamerdata(struct ScriptContext * ctx)
 {
     ScriptBufferRoamerData();
+    return FALSE;
+}
+
+bool8 ScrCmd_hascaughtmon(struct ScriptContext * ctx)
+{
+    u16 species = VarGet(ScriptReadHalfword(ctx));
+    bool8 hasCaughtMon = GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT);
+    VarSet(VAR_RESULT, hasCaughtMon);
     return FALSE;
 }
 

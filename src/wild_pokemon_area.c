@@ -224,6 +224,15 @@ s32 BuildPokedexAreaSubspriteBuffer(u16 species, struct Subsprite * subsprites)
 
 static s32 GetRoamerIndex(u16 species)
 {
+    if(species == SPECIES_ENTEI ||
+            species == SPECIES_RAIKOU ||
+            species == SPECIES_SUICUNE ||
+            species == SPECIES_LATIAS ||
+            species == SPECIES_LATIOS){
+        return 1;
+    }
+    return -1;
+    /*
     s32 i;
     for (i = 0; i < NELEMS(sRoamerPairs); i++)
     {
@@ -232,6 +241,7 @@ static s32 GetRoamerIndex(u16 species)
     }
 
     return -1;
+     */
 }
 
 static s32 CountRoamerNests(u16 species, struct Subsprite * subsprites)

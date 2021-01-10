@@ -1497,6 +1497,12 @@
     .byte 0xD9
     .endm
 
+    @ Assigns VAR_RESULT to whether or not player has caught the specified mon
+    .macro hascaughtmon species:req
+    .byte 0xDA
+    .2byte \species
+    .endm
+
 
 @ Supplementary
 

@@ -74,10 +74,10 @@ FuchsiaCity_House3_Eunice::
     end
 
 FuchsiaCity_House3_CheckEntei::
-	setvar 0x8005, SPECIES_ENTEI
-	special CheckSpecies
+    hascaughtmon SPECIES_ENTEI
     compare VAR_RESULT, 1
     goto_if_eq FuchsiaCity_House3_HasEntei
+    setvar VAR_CURRENT_ROAMER, SPECIES_ENTEI
     msgbox FuchsiaCity_House3_Entei_Intro
     msgbox FuchsiaCity_House3_CanYouShowItToMe
     release
@@ -86,18 +86,14 @@ FuchsiaCity_House3_CheckEntei::
 FuchsiaCity_House3_HasEntei::
     msgbox FuchsiaCity_House3_WoahThatsEntei
     msgbox FuchsiaCity_House3_Latias_Intro
-    /*
-    msgbox FuchsiaCity_House3_GiveBallText
-    giveitem ITEM_MASTER_BALL
-    */
     setflag FLAG_CAUGHT_ENTEI
+    setvar VAR_CURRENT_ROAMER, SPECIES_LATIAS
     special InitRoamer
     release
     end
 
 FuchsiaCity_House3_CheckLatias::
-	setvar 0x8005, SPECIES_LATIAS
-	special CheckSpecies
+    hascaughtmon SPECIES_LATIAS
     compare VAR_RESULT, 1
     goto_if_eq FuchsiaCity_House3_HasLatias
     msgbox FuchsiaCity_House3_Latias_Intro
@@ -108,18 +104,14 @@ FuchsiaCity_House3_CheckLatias::
 FuchsiaCity_House3_HasLatias::
     msgbox FuchsiaCity_House3_WoahThatsLatias
     msgbox FuchsiaCity_House3_Raikou_Intro
-    /*
-    msgbox FuchsiaCity_House3_GiveBallText
-    giveitem ITEM_MASTER_BALL
-    */
     setflag FLAG_CAUGHT_LATIAS
+    setvar VAR_CURRENT_ROAMER, SPECIES_RAIKOU
     special InitRoamer
     release
     end
 
 FuchsiaCity_House3_CheckRaikou::
-	setvar 0x8005, SPECIES_RAIKOU
-	special CheckSpecies
+    hascaughtmon SPECIES_RAIKOU
     compare VAR_RESULT, 1
     goto_if_eq FuchsiaCity_House3_HasRaikou
     msgbox FuchsiaCity_House3_Raikou_Intro
@@ -130,17 +122,14 @@ FuchsiaCity_House3_CheckRaikou::
 FuchsiaCity_House3_HasRaikou::
     msgbox FuchsiaCity_House3_WoahThatsRaikou
     msgbox FuchsiaCity_House3_Latios_Intro
-    /*
-    msgbox FuchsiaCity_House3_GiveBallText
-    giveitem ITEM_MASTER_BALL
-    */
+    setflag FLAG_CAUGHT_RAIKOU
+    setvar VAR_CURRENT_ROAMER, SPECIES_LATIOS
     special InitRoamer
     release
     end
 
 FuchsiaCity_House3_CheckLatios::
-	setvar 0x8005, SPECIES_LATIOS
-	special CheckSpecies
+    hascaughtmon SPECIES_LATIOS
     compare VAR_RESULT, 1
     goto_if_eq FuchsiaCity_House3_HasLatios
     msgbox FuchsiaCity_House3_Latios_Intro
@@ -151,18 +140,14 @@ FuchsiaCity_House3_CheckLatios::
 FuchsiaCity_House3_HasLatios::
     msgbox FuchsiaCity_House3_WoahThatsLatios
     msgbox FuchsiaCity_House3_Suicune_Intro
-    /*
-    msgbox FuchsiaCity_House3_GiveBallText
-    giveitem ITEM_MASTER_BALL
-    */
     setflag FLAG_CAUGHT_LATIOS
+    setvar VAR_CURRENT_ROAMER, SPECIES_SUICUNE
     special InitRoamer
     release
     end
 
 FuchsiaCity_House3_CheckSuicune::
-	setvar 0x8005, SPECIES_SUICUNE
-	special CheckSpecies
+    hascaughtmon SPECIES_SUICUNE
     compare VAR_RESULT, 1
     goto_if_eq FuchsiaCity_House3_HasSuicune
     msgbox FuchsiaCity_House3_Suicune_Intro
@@ -180,10 +165,6 @@ FuchsiaCity_House3_HasSuicune::
 FuchsiaCity_House3_MeetEunice::
     msgbox FuchsiaCity_House3_Eunice_Introduction
     msgbox FuchsiaCity_House3_Entei_Intro
-    /*
-    msgbox FuchsiaCity_House3_GiveBallText
-    giveitem ITEM_MASTER_BALL
-    */
     setflag FLAG_MET_EUNICE
     special InitRoamer
     release
@@ -199,16 +180,26 @@ FuchsiaCity_House3_Eunice_Busy::
 FuchsiaCity_House3_Eusine::
     lock
     faceplayer
+    goto_if_set FLAG_CAUGHT_SUICUNE, FuchisaCity_House3_Eusine_Post
     msgbox FuchisaCity_House3_Eusine_Text
+    release
+    end
+
+FuchisaCity_House3_Eusine_Post::
+    msgbox FuchisaCity_House3_Eusine_PostText
     release
     end
 
 EuniceAgent::
     lock
     faceplayer
-    goto_if_unset FLAG_EUNICE_AGENTS_MET, EuniceAgent_NotMet
     bufferroamerdata
     msgbox EuniceAgent_SayRoamerLocation
+    release
+    end
+
+EuniceAgent_GoSeeEunice::
+    msgbox EuniceAgent_GoSeeEunice_Text
     release
     end
 

@@ -59,6 +59,7 @@ void ClearRoamerData(void)
         sLocationHistory[i][MAP_GRP] = 0;
         sLocationHistory[i][MAP_NUM] = 0;
     }
+    FlagSet(FLAG_HIDE_EUNICE_AGENTS);
 }
 
 u16 GetRoamerSpecies() {
@@ -103,6 +104,7 @@ void InitRoamer(void)
 {
     ClearRoamerData();
     CreateInitialRoamerMon();
+    FlagClear(FLAG_HIDE_EUNICE_AGENTS);
 }
 
 void UpdateLocationHistoryForRoamer(void)
@@ -140,6 +142,10 @@ void RoamerMoveToOtherLocationSet(void)
 void RoamerMove(void)
 {
     u8 locSet = 0;
+
+    if (Random() % 2 == 0){
+        return;
+    }
 
     if ((Random() % 16) == 0)
     {
@@ -223,6 +229,7 @@ void SetRoamerInactive(void)
 {
     struct Roamer *roamer = &saveRoamer;
     roamer->active = FALSE;
+    FlagSet(FLAG_HIDE_EUNICE_AGENTS);
 }
 
 void GetRoamerLocation(u8 *mapGroup, u8 *mapNum)

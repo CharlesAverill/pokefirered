@@ -346,7 +346,8 @@ static void Overworld_ResetStateOnContinue(void)
     VarSet(VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 0);
     ChooseAmbientCrySpecies();
     UpdateLocationHistoryForRoamer();
-    RoamerMoveToOtherLocationSet();
+    //RoamerMoveToOtherLocationSet();
+    RoamerMove();
 }
 
 // Routines related to game stats

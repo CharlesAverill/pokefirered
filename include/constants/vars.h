@@ -332,7 +332,8 @@
 #define VAR_TEXT_COLOR             0x8012
 #define VAR_PREV_TEXT_COLOR        0x8013
 #define VAR_REPEL_LAST_USED                 0x8014 // Unknown/unused
+#define VAR_CURRENT_ROAMER          0x8015
 
-#define SPECIAL_VARS_END           0x8014
+#define SPECIAL_VARS_END           0x8015
 
 #endif // GUARD_CONSTANTS_VARS_H

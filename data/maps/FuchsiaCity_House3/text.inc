@@ -56,47 +56,47 @@ FuchsiaCity_House3_Eunice_Introduction::
 
 FuchsiaCity_House3_Entei_Intro::
     .string "I'm hearing rumors of a Pokémon\n"
-    .string "named ENTEI being seen around\l"
+    .string "named Entei being seen around\l"
     .string "Kanto right now.$"
 
 FuchsiaCity_House3_WoahThatsEntei::
-    .string "Woah! That's ENTEI! Thank you\n"
+    .string "Woah! That's Entei! Thank you\n"
     .string "for showing me!$"
 
 FuchsiaCity_House3_Raikou_Intro::
     .string "I'm hearing rumors of a Pokémon\n"
-    .string "named RAIKOU being seen around\l"
+    .string "named Raikou being seen around\l"
     .string "Kanto right now.$"
 
 FuchsiaCity_House3_WoahThatsRaikou::
-    .string "Woah! That's RAIKOU! Thank you\n"
+    .string "Woah! That's Raikou! Thank you\n"
     .string "for showing me!$"
 
 FuchsiaCity_House3_Suicune_Intro::
     .string "I'm hearing rumors of a Pokémon\n"
-    .string "named SUICUNE being seen around\l"
+    .string "named Suicune being seen around\l"
     .string "Kanto right now.$"
 
 FuchsiaCity_House3_WoahThatsSuicune::
-    .string "Woah! That's SUICUNE! Thank you\n"
+    .string "Woah! That's Suicune! Thank you\n"
     .string "for showing me!$"
 
 FuchsiaCity_House3_Latios_Intro::
     .string "I'm hearing rumors of a Pokémon\n"
-    .string "named LATIOS being seen around\l"
+    .string "named Latios being seen around\l"
     .string "Kanto right now.$"
 
 FuchsiaCity_House3_WoahThatsLatios::
-    .string "Woah! That's LATIOS! Thank you\n"
+    .string "Woah! That's Latios! Thank you\n"
     .string "for showing me!$"
 
 FuchsiaCity_House3_Latias_Intro::
     .string "I'm hearing rumors of a Pokémon\n"
-    .string "named LATIAS being seen around\l"
+    .string "named Latias being seen around\l"
     .string "Kanto right now.$"
 
 FuchsiaCity_House3_WoahThatsLatias::
-    .string "Woah! That's LATIAS! Thank you\n"
+    .string "Woah! That's Latias! Thank you\n"
     .string "for showing me!$"
 
 FuchsiaCity_House3_AllDone::
@@ -115,6 +115,13 @@ FuchisaCity_House3_Eusine_Text::
     .string "her Legendary Pokémon. My\l"
     .string "favorite is Suicune!$"
 
+FuchisaCity_House3_Eusine_PostText::
+    .string "Thanks for helping grandma\n"
+    .string "find her Legendary Pokémon!\p"
+    .string "……………………\p"
+    .string "Maybe I can ride your\n"
+    .string "Suicune some time?$"
+
 EuniceAgent_SayRoamerLocation::
     .string "Reports are showing that\n"
     .string "{STR_VAR_1} has been seen\l"
@@ -128,3 +135,8 @@ EuniceAgent_MeetText::
     .string "There's a bunch of us around\n"
     .string "Kanto, and we can give you\l"
     .string "the scoop on where the Roamers are!$"
+
+EuniceAgent_GoSeeEunice_Text::
+    .string "Woah, you found the Roamer we\n"
+    .string "were looking for!\p"
+    .string "Go talk to Eunice!$"

@@ -219,6 +219,7 @@ gScriptCmdTable:: @ 815F9B4
 	.4byte ScrCmd_getpartymonvalue
 	.4byte ScrCmd_sellpartymon
 	.4byte ScrCmd_bufferroamerdata
+	.4byte ScrCmd_hascaughtmon
 
 gScriptCmdTableEnd:: @ 815FD08
 	.4byte ScrCmd_nop
