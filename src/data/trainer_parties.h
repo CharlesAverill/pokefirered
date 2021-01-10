@@ -9531,7 +9531,7 @@ static const struct TrainerMonNoItemCustomMoves sTrainerMons_CoolCoupleLexNya[] 
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RuinManiacBrandon[] = {
     {
         .iv = 50,
-        .lvl = 50,
+        .lvl = 60,
         .species = SPECIES_ONIX,
     },
 };
@@ -9539,20 +9539,20 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_RuinManiacBrandon[
 static const struct TrainerMonNoItemCustomMoves sTrainerMons_RuinManiacBenjamin[] = {
     {
         .iv = 50,
-        .lvl = 48,
+        .lvl = 58,
         .species = SPECIES_GEODUDE,
         .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_BLAST, MOVE_ROLLOUT, MOVE_SELF_DESTRUCT},
     },
     {
         .iv = 50,
-        .lvl = 48,
+        .lvl = 59,
         .species = SPECIES_GRAVELER,
         .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_BLAST, MOVE_ROCK_THROW, MOVE_SELF_DESTRUCT},
     },
     {
         .iv = 50,
-        .lvl = 48,
-        .species = SPECIES_GRAVELER,
+        .lvl = 60,
+        .species = SPECIES_GOLEM,
         .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_BLAST, MOVE_ROCK_THROW, MOVE_SELF_DESTRUCT},
     },
 };
@@ -9560,7 +9560,7 @@ static const struct TrainerMonNoItemCustomMoves sTrainerMons_RuinManiacBenjamin[
 static const struct TrainerMonNoItemCustomMoves sTrainerMons_PainterEdna[] = {
     {
         .iv = 140,
-        .lvl = 50,
+        .lvl = 60,
         .species = SPECIES_SMEARGLE,
         .moves = {MOVE_FAKE_OUT, MOVE_EXTREME_SPEED, MOVE_PROTECT, MOVE_QUICK_ATTACK},
     },
@@ -9569,12 +9569,12 @@ static const struct TrainerMonNoItemCustomMoves sTrainerMons_PainterEdna[] = {
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_GentlemanClifford[] = {
     {
         .iv = 50,
-        .lvl = 49,
+        .lvl = 59,
         .species = SPECIES_MAROWAK,
     },
     {
         .iv = 50,
-        .lvl = 49,
+        .lvl = 59,
         .species = SPECIES_GOLDUCK,
     },
 };

@@ -14136,28 +14136,28 @@
             "encounter_rate": 2,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 20,
+                "min_level": 40,
+                "max_level": 60,
                 "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 5,
-                "max_level": 15,
+                "min_level": 50,
+                "max_level": 55,
                 "species": "SPECIES_HOPPIP"
               },
               {
-                "min_level": 35,
-                "max_level": 40,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 35,
-                "max_level": 40,
+                "min_level": 55,
+                "max_level": 60,
                 "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 35,
-                "max_level": 40,
+                "min_level": 55,
+                "max_level": 60,
+                "species": "SPECIES_TENTACRUEL"
+              },
+              {
+                "min_level": 55,
+                "max_level": 60,
                 "species": "SPECIES_TENTACRUEL"
               }
             ]
@@ -14319,8 +14319,8 @@
                 "species": "SPECIES_SLOWPOKE"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 40,
+                "max_level": 50,
                 "species": "SPECIES_SENTRET"
               },
               {
@@ -14329,13 +14329,13 @@
                 "species": "SPECIES_PIDGEOTTO"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 45,
+                "max_level": 55,
                 "species": "SPECIES_HOPPIP"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
+                "min_level": 50,
+                "max_level": 60,
                 "species": "SPECIES_SENTRET"
               },
               {
@@ -14344,8 +14344,8 @@
                 "species": "SPECIES_MEOWTH"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
+                "min_level": 45,
+                "max_level": 55,
                 "species": "SPECIES_HOPPIP"
               },
               {
