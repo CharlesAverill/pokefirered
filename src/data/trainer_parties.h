@@ -319,11 +319,48 @@ static const struct TrainerMonNoItemCustomMoves sTrainerMons_ChanseyMan[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTrainerMons_Cooltrainer2[] = {
+static const struct TrainerMonItemCustomMoves sTrainerMons_OldRed[] = {
     {
-        .iv = 150,
-        .lvl = 5,
-        .species = SPECIES_EKANS,
+        .iv = 255,
+        .lvl = 88,
+        .species = SPECIES_PIKACHU,
+        .heldItem = ITEM_LIGHT_BALL,
+        .moves = {MOVE_VOLT_TACKLE, MOVE_IRON_TAIL, MOVE_QUICK_ATTACK, MOVE_THUNDERBOLT}
+    },
+    {
+        .iv = 255,
+        .lvl = 80,
+        .species = SPECIES_LAPRAS,
+        .heldItem = ITEM_NONE,
+        .moves = {MOVE_BODY_SLAM, MOVE_SURF, MOVE_BLIZZARD, MOVE_PSYCHIC}
+    },
+    {
+        .iv = 255,
+        .lvl = 82,
+        .species = SPECIES_SNORLAX,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_SHADOW_BALL, MOVE_CRUNCH, MOVE_BLIZZARD, MOVE_HYPER_BEAM}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_VENUSAUR,
+        .heldItem = ITEM_MIRACLE_SEED,
+        .moves = {MOVE_FRENZY_PLANT, MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_SLEEP_POWDER}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_CHARIZARD,
+        .heldItem = ITEM_CHARCOAL,
+        .moves = {MOVE_BLAST_BURN, MOVE_FLAMETHROWER, MOVE_FLY, MOVE_DRAGON_CLAW}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_BLASTOISE,
+        .heldItem = ITEM_MYSTIC_WATER,
+        .moves = {MOVE_HYDRO_CANNON, MOVE_BLIZZARD, MOVE_COUNTER, MOVE_SKULL_BASH}
     },
 };
 

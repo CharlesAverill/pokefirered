@@ -4841,7 +4841,7 @@
       "id": "LAYOUT_MT_SILVER_SUMMIT",
       "name": "MtSilver_Summit_Layout",
       "width": 19,
-      "height": 30,
+      "height": 31,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",

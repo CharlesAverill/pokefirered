@@ -347,7 +347,7 @@ static const u8 sText_SunlightGotBright[] = _("The sunlight got bright!");
 static const u8 sText_SunlightStrong[] = _("The sunlight is strong.");
 static const u8 sText_SunlightFaded[] = _("The sunlight faded.");
 static const u8 sText_StartedHail[] = _("It started to hail!");
-static const u8 sText_HailContinues[] = _("Hail continues to fall.");
+static const u8 sText_HailContinues[] = _("Hail is falling.");
 static const u8 sText_HailStopped[] = _("The hail stopped.");
 static const u8 sText_FailedToSpitUp[] = _("But it failed to SPIT UP\na thing!");
 static const u8 sText_FailedToSwallow[] = _("But it failed to SWALLOW\na thing!");
@@ -1121,7 +1121,7 @@ const u16 gWeatherContinuesStringIds[] = {
     STRINGID_ITISRAINING,
     STRINGID_ITISRAINING,
     STRINGID_ITISRAINING,
-    STRINGID_ITISRAINING,
+    STRINGID_HAILCONTINUES,
     STRINGID_ITISRAINING,
     STRINGID_ITISRAINING,
     STRINGID_ITISRAINING,

@@ -143,6 +143,6 @@ Route23_EventScript_MtSilverTrigger_HasCelebi::
     goto_if_set FLAG_TEMP_1, EventScript_ReleaseEnd
     playmoncry SPECIES_CELEBI, 2
     setflag FLAG_TEMP_1
-    waitse
+    waitmoncry
     release
     end

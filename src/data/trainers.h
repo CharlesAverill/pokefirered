@@ -107,17 +107,17 @@ const struct Trainer gTrainers[] = {
         .partySize = NELEMS(sTrainerMons_ChanseyMan),
         .party = {.NoItemCustomMoves = sTrainerMons_ChanseyMan}
     },
-    [TRAINER_COOLTRAINER_2] = {
-        .partyFlags = 0,
-        .trainerClass = CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_RS_COOLTRAINER_F,
-        .trainerName = _(""),
+    [TRAINER_OLD_RED] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_RED,
+        .trainerName = _("???"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .partySize = NELEMS(sTrainerMons_Cooltrainer2),
-        .party = {.NoItemDefaultMoves = sTrainerMons_Cooltrainer2}
+        .partySize = NELEMS(sTrainerMons_OldRed),
+        .party = {.ItemCustomMoves = sTrainerMons_OldRed}
     },
     [TRAINER_HEX_MANIAC_1] = {
         .partyFlags = 0,

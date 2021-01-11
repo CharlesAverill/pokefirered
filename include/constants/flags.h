@@ -254,9 +254,9 @@
 #define FLAG_HIDE_CHANSEY_GROVE_MAN               0x0F4
 #define FLAG_MENTIONED_EV_TRAINERS               0x0F5
 #define FLAG_FOUGHT_FUTURE_RED               0x0F6
-#define FLAG_0x0F7               0x0F7
-#define FLAG_0x0F8               0x0F8
-#define FLAG_0x0F9               0x0F9
+#define FLAG_DID_CELEBI_RED_CUTSCENE               0x0F7
+#define FLAG_HIDE_RED               0x0F8
+#define FLAG_HIDE_SILVER_CELEBI               0x0F9
 #define FLAG_0x0FA               0x0FA
 #define FLAG_0x0FB               0x0FB
 #define FLAG_0x0FC               0x0FC
@@ -1436,6 +1436,7 @@
 #define FLAG_WORLD_MAP_MT_MOON_SUMMIT                               (SYS_FLAGS + 0xC8)
 #define FLAG_WORLD_MAP_HEMLOCK_FOREST                               (SYS_FLAGS + 0xC5)
 #define FLAG_WORLD_MAP_CHANSEY_GROVE                                (SYS_FLAGS + 0xC6)
+#define FLAG_WORLD_MAP_MT_SILVER                                (SYS_FLAGS + 0xC7)
 
 #define FLAG_0x8D5 (SYS_FLAGS + 0xD5)
 #define FLAG_0x8D6 (SYS_FLAGS + 0xD6)
