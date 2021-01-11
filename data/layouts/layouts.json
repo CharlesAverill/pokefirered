@@ -1121,7 +1121,7 @@
       "id": "LAYOUT_ROUTE23",
       "name": "Route23_Layout",
       "width": 30,
-      "height": 160,
+      "height": 164,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -2440,7 +2440,7 @@
     {
       "id": "LAYOUT_ROUTE22_NORTH_ENTRANCE",
       "name": "Route22_NorthEntrance_Layout",
-      "width": 15,
+      "width": 16,
       "height": 12,
       "border_width": 2,
       "border_height": 2,
@@ -4788,6 +4788,30 @@
       "secondary_tileset": "gTileset_GenericBuilding1",
       "border_filepath": "data/layouts/Route16_ChanseyGrove_House/border.bin",
       "blockdata_filepath": "data/layouts/Route16_ChanseyGrove_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE51",
+      "name": "Route51_Layout",
+      "width": 40,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IndigoPlateau",
+      "border_filepath": "data/layouts/Route51/border.bin",
+      "blockdata_filepath": "data/layouts/Route51/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_1F",
+      "name": "MtSilver_1F_Layout",
+      "width": 43,
+      "height": 43,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MtSilver_1F/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_1F/map.bin"
     }
   ]
 }

@@ -122,3 +122,5 @@ const u8 gMapSecName_HemlockTown[] = _("HEMLOCK TOWN");
 const u8 gMapSecName_HemlockForest[] = _("HEMLOCK FOREST");
 const u8 gMapSecName_ChanseyGrove[] = _("CHANSEY GROVE");
 const u8 gMapSecName_Route50[] = _("ROUTE 50");
+const u8 gMapSecName_MtSilver[] = _("MT. SILVER");
+const u8 gMapSecName_Route51[] = _("ROUTE 51");

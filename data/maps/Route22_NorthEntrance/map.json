@@ -13,11 +13,12 @@
   "show_map_name": false,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-      "x": 8,
+      "in_connection": false,
+      "x": 9,
       "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -31,18 +32,11 @@
   ],
   "warp_events": [
     {
-      "x": 7,
+      "x": 8,
       "y": 1,
       "elevation": 3,
       "dest_map": "MAP_ROUTE23",
       "dest_warp_id": 2
-    },
-    {
-      "x": 6,
-      "y": 10,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE22",
-      "dest_warp_id": 0
     },
     {
       "x": 7,
@@ -57,12 +51,26 @@
       "elevation": 3,
       "dest_map": "MAP_ROUTE22",
       "dest_warp_id": 0
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE22",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE23",
+      "dest_warp_id": 4
     }
   ],
   "coord_events": [
     {
       "type": "trigger",
-      "x": 7,
+      "x": 8,
       "y": 2,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE23",
@@ -70,5 +78,7 @@
       "script": "Route22_NorthEntrance_EventScript_BoulderBadgeGuardTrigger"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+
+  ]
 }

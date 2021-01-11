@@ -23,6 +23,11 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_ROUTE22"
+    },
+    {
+      "direction": "left",
+      "offset": 126,
+      "map": "MAP_ROUTE51"
     }
   ],
   "object_events": [
@@ -153,6 +158,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE22_NORTH_ENTRANCE",
       "dest_warp_id": 0
+    },
+    {
+      "x": 3,
+      "y": 157,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE22_NORTH_ENTRANCE",
+      "dest_warp_id": 4
     }
   ],
   "coord_events": [

@@ -321,7 +321,8 @@
     "Route49",
     "DragonGate",
     "HemlockTown",
-    "Route16_ChanseyGrove"
+    "Route16_ChanseyGrove",
+    "Route51"
   ],
   "gMapGroup4": [
     "PalletTown_PlayersHouse_1F",
@@ -607,7 +608,7 @@
     "HemlockForest"
   ],
   "gMapGroup47": [
-
+    "MtSilver_1F"
   ],
   "gMapGroup48": [
 

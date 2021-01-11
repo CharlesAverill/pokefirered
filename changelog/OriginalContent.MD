@@ -24,7 +24,6 @@
 - Route 50: between routes 2 and 16
 - Chansey Grove: Route 50
 ## Events
-Many custom events rely on a custom flag I've made.
 - Mew Truck glitch from RBY is now a built-in event
 - MysticTicket
 - AuroraTicket
@@ -33,11 +32,13 @@ Many custom events rely on a custom flag I've made.
 - Jirachi Event
 - Celebi Event
 - Emerald Brendan/May appear
+- Sell Pokemon to Rocket Grunts in Saffron City after beating Giovanni
 ## Roaming Pokemon
 After becoming Champion, talk to Eunice in Fuchsia City.
 Eunice will tell you about rumors of various roaming
-pokemon. You must bring the roamer to
-Eunice to start the next roamer. Here's the order:
+pokemon. The next roamer will start once your Pokedex shows you've caught the current roamer.
+When a roamer is active, NPCs will show up around good roamer-farming routes. They'll tell you the current location of the roamer (that way you don't have to use the Dex)
+Here's the order:
 - Entei
 - Latias
 - Raikou

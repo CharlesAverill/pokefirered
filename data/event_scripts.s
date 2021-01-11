@@ -1472,3 +1472,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/Route16_ChanseyGrove_House/scripts.inc"
 	.include "data/maps/Route16_ChanseyGrove_House/text.inc"
+
+	.include "data/maps/Route51/scripts.inc"
+	.include "data/maps/Route51/text.inc"
+
+	.include "data/maps/MtSilver_1F/scripts.inc"
+	.include "data/maps/MtSilver_1F/text.inc"

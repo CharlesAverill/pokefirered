@@ -1954,7 +1954,7 @@
               {
                 "min_level": 54,
                 "max_level": 54,
-                "species": "SPECIES_SANDSLASH"
+                "species": "SPECIES_HARIYAMA"
               },
               {
                 "min_level": 54,
@@ -1969,7 +1969,7 @@
               {
                 "min_level": 56,
                 "max_level": 56,
-                "species": "SPECIES_HARIYAMA"
+                "species": "SPECIES_HITMONCHAN"
               },
               {
                 "min_level": 56,
@@ -2087,7 +2087,7 @@
               {
                 "min_level": 56,
                 "max_level": 56,
-                "species": "SPECIES_SANDSLASH"
+                "species": "SPECIES_MACHOKE"
               },
               {
                 "min_level": 56,
@@ -2107,7 +2107,7 @@
               {
                 "min_level": 59,
                 "max_level": 59,
-                "species": "SPECIES_MACHOKE"
+                "species": "SPECIES_HITMONLEE"
               },
               {
                 "min_level": 58,
@@ -2230,7 +2230,7 @@
               {
                 "min_level": 54,
                 "max_level": 54,
-                "species": "SPECIES_SANDSLASH"
+                "species": "SPECIES_MAROWAK"
               },
               {
                 "min_level": 54,
@@ -2250,7 +2250,7 @@
               {
                 "min_level": 56,
                 "max_level": 56,
-                "species": "SPECIES_MAROWAK"
+                "species": "SPECIES_HITMONTOP"
               }
             ]
           }

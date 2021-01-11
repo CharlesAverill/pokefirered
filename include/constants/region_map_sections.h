@@ -223,9 +223,11 @@
 #define MAPSEC_ROUTE_23_VR                  0xD3
 #define MAPSEC_CHANSEY_GROVE                0xD4
 #define MAPSEC_ROUTE_50                     0xD5
+#define MAPSEC_MT_SILVER                    0xD6
+#define MAPSEC_ROUTE_51                    0xD7
 
-#define MAPSEC_NONE                         0xD6
-#define MAPSEC_COUNT                        0xD7
+#define MAPSEC_NONE                         0xD8
+#define MAPSEC_COUNT                        0xD9
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
