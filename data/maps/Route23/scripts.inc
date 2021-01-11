@@ -126,3 +126,23 @@ Route23_EventScript_EarthBadgeGuardTrigger:: @ 8168601
 Route23_EventScript_VictoryRoadGateSign:: @ 8168616
 	msgbox Route23_Text_VictoryRoadGateSign, MSGBOX_SIGN
 	end
+
+Route23_EventScript_MtSilverTrigger::
+    goto_if_set FLAG_FOUGHT_FUTURE_RED, EventScript_ReleaseEnd
+	setvar VAR_0x8004, SPECIES_CELEBI
+	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route23_EventScript_MtSilverTrigger_HasCelebi
+    msgbox Route23_Text_TurnBack
+    closemessage
+    applymovement OBJ_EVENT_ID_PLAYER, Route16_NorthEntrance_1F_Movement_WalkRight
+    end
+
+Route23_EventScript_MtSilverTrigger_HasCelebi::
+    waitse
+    goto_if_set FLAG_TEMP_1, EventScript_ReleaseEnd
+    playmoncry SPECIES_CELEBI, 2
+    setflag FLAG_TEMP_1
+    waitse
+    release
+    end

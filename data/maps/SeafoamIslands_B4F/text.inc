@@ -12,7 +12,7 @@ Text_RockSlideDeclined:: @ 8179AC0
     .string "Oh, so you are scared after all.$"
 
 Text_RockSlideWhichMon:: @ 8179AE1
-    .string "Which POKéMON should I teach\n"
+    .string "Which Pokémon should I teach\n"
     .string "ROCK SLIDE?$"
 
 Text_RockSlideTaught:: @ 8179B0A

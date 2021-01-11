@@ -1,12 +1,12 @@
 CinnabarIsland_PokemonLab_ResearchRoom_Text_EeveeCanEvolveIntroThreeMons:: @ 819A015
     .string "EEVEE can evolve into one of three\n"
-    .string "kinds of POKéMON.$"
+    .string "kinds of Pokémon.$"
 
 CinnabarIsland_PokemonLab_ResearchRoom_Text_LegendaryBirdEmail:: @ 819A04A
     .string "There's an e-mail message.\p"
     .string "… … …\p"
     .string "There are three legendary bird\n"
-    .string "POKéMON.\p"
+    .string "Pokémon.\p"
     .string "They are ARTICUNO, ZAPDOS, and\n"
     .string "MOLTRES.\p"
     .string "Their whereabouts are unknown.\p"

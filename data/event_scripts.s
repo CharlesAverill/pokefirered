@@ -1481,3 +1481,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/MtSilver_2F/scripts.inc"
 	.include "data/maps/MtSilver_2F/text.inc"
+
+	.include "data/maps/MtSilver_3F/scripts.inc"
+	.include "data/maps/MtSilver_3F/text.inc"
+
+	.include "data/maps/MtSilver_Summit/scripts.inc"
+	.include "data/maps/MtSilver_Summit/text.inc"

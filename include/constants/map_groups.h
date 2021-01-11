@@ -556,8 +556,10 @@
 #define MAP_HEMLOCK_FOREST                 (5 | (46 << 8))
 
 // Map Group 47
-#define MAP_MT_SILVER_1F (0 | (47 << 8))
-#define MAP_MT_SILVER_2F (1 | (47 << 8))
+#define MAP_MT_SILVER_1F     (0 | (47 << 8))
+#define MAP_MT_SILVER_2F     (1 | (47 << 8))
+#define MAP_MT_SILVER_3F     (2 | (47 << 8))
+#define MAP_MT_SILVER_SUMMIT (3 | (47 << 8))
 
 // Map Group 48
 

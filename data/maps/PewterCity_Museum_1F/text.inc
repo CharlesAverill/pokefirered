@@ -24,9 +24,9 @@ PewterCity_Museum_1F_Text_DoYouKnowWhatAmberIs:: @ 8190550
 
 PewterCity_Museum_1F_Text_AmberContainsGeneticMatter:: @ 81905B1
     .string "AMBER contains the genetic matter\n"
-    .string "of ancient POKéMON.\p"
+    .string "of ancient Pokémon.\p"
     .string "There's a LAB somewhere trying to\n"
-    .string "resurrect POKéMON from AMBER.$"
+    .string "resurrect Pokémon from AMBER.$"
 
 PewterCity_Museum_1F_Text_AmberIsFossilizedSap:: @ 8190627
     .string "AMBER is actually sap, that gooey\n"
@@ -48,9 +48,9 @@ PewterCity_Museum_1F_Text_WantYouToGetAmberExamined:: @ 8190717
     .string "Ssh! Listen, I need to share a\n"
     .string "secret with someone.\p"
     .string "I think that this chunk of AMBER\n"
-    .string "contains POKéMON DNA!\p"
+    .string "contains Pokémon DNA!\p"
     .string "It would be a shattering scientific\n"
-    .string "breakthrough if POKéMON could be\l"
+    .string "breakthrough if Pokémon could be\l"
     .string "resurrected from it.\p"
     .string "But, my colleagues just ignore\n"
     .string "what I have to say.\p"
@@ -71,7 +71,7 @@ PewterCity_Museum_1F_Text_DontHaveSpaceForThis:: @ 81908AE
 
 PewterCity_Museum_1F_Text_WeHaveTwoFossilsOnExhibit:: @ 81908CD
     .string "We have two fossils of rare,\n"
-    .string "prehistoric POKéMON on exhibit.$"
+    .string "prehistoric Pokémon on exhibit.$"
 
 PewterCity_Museum_1F_Text_BeautifulPieceOfAmber:: @ 819090A
     .string "There is a beautiful piece of\n"
@@ -79,9 +79,9 @@ PewterCity_Museum_1F_Text_BeautifulPieceOfAmber:: @ 819090A
 
 PewterCity_Museum_1F_Text_AerodactylFossil:: @ 8190945
     .string "AERODACTYL Fossil\n"
-    .string "A primitive and rare POKéMON.$"
+    .string "A primitive and rare Pokémon.$"
 
 PewterCity_Museum_1F_Text_KabutopsFossil:: @ 8190975
     .string "KABUTOPS Fossil\n"
-    .string "A primitive and rare POKéMON.$"
+    .string "A primitive and rare Pokémon.$"
 

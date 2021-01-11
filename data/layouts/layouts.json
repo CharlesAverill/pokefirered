@@ -4824,6 +4824,30 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/MtSilver_2F/border.bin",
       "blockdata_filepath": "data/layouts/MtSilver_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_3F",
+      "name": "MtSilver_3F_Layout",
+      "width": 47,
+      "height": 22,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MtSilver_3F/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_SUMMIT",
+      "name": "MtSilver_Summit_Layout",
+      "width": 19,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MtSilver_Summit/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_Summit/map.bin"
     }
   ]
 }

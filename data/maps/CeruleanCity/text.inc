@@ -3,7 +3,7 @@ CeruleanCity_Text_RivalIntro:: @ 817EAD7
     .string "You're still struggling along back\n"
     .string "here?\p"
     .string "I'm doing great! I caught a bunch\n"
-    .string "of strong and smart POKéMON!\p"
+    .string "of strong and smart Pokémon!\p"
     .string "Here, let me see what you caught,\n"
     .string "{PLAYER}!$"
 
@@ -15,12 +15,12 @@ CeruleanCity_Text_RivalDefeat:: @ 817EB71
 CeruleanCity_Text_RivalPostBattle:: @ 817EB95
     .string "{RIVAL}: Hey, guess what?\p"
     .string "I went to BILL's and got him to\n"
-    .string "show me his rare POKéMON.\p"
+    .string "show me his rare Pokémon.\p"
     .string "That added a lot of pages to my\n"
     .string "POKéDEX!\p"
     .string "After all, BILL's world famous as a\n"
     .string "POKéMANIAC.\p"
-    .string "He invented the POKéMON Storage\n"
+    .string "He invented the Pokémon Storage\n"
     .string "System on PC, too.\p"
     .string "Since you're using his system,\n"
     .string "you should go thank him.\p"
@@ -98,7 +98,7 @@ CeruleanCity_Text_IfSlowbroWasntThereCouldCutTree:: @ 817F01D
 
 CeruleanCity_Text_PokemonEncyclopediaAmusing:: @ 817F0B2
     .string "You're making an encyclopedia on\n"
-    .string "POKéMON? That sounds amusing.$"
+    .string "Pokémon? That sounds amusing.$"
 
 CeruleanCity_Text_PeopleHereWereRobbed:: @ 817F0F1
     .string "The people here were robbed.\p"
@@ -126,8 +126,8 @@ CeruleanCity_Text_SlowbroWithdraw:: @ 817F1E9
 
 CeruleanCity_Text_HardToControlMonsObedience:: @ 817F1FC
     .string "No! That's wrong!\n"
-    .string "It's so hard to control POKéMON!\p"
-    .string "Your POKéMON's obedience depends\n"
+    .string "It's so hard to control Pokémon!\p"
+    .string "Your Pokémon's obedience depends\n"
     .string "on your abilities as a TRAINER.$"
 
 CeruleanCity_Text_SlowbroTookSnooze:: @ 817F270
@@ -149,7 +149,7 @@ CeruleanCity_Text_WantBrightRedBicycle:: @ 817F2CF
 
 CeruleanCity_Text_ThisIsCeruleanCave:: @ 817F319
     .string "This is CERULEAN CAVE.\p"
-    .string "Horribly strong POKéMON live inside\n"
+    .string "Horribly strong Pokémon live inside\n"
     .string "there.\p"
     .string "It takes a very special TRAINER to\n"
     .string "be allowed inside there.\p"
@@ -164,10 +164,10 @@ CeruleanCity_Text_CitySign:: @ 817F420
 
 CeruleanCity_Text_TrainerTipsHeldItems:: @ 817F453
     .string "TRAINER TIPS\p"
-    .string "A POKéMON can be made to hold\n"
+    .string "A Pokémon can be made to hold\n"
     .string "an item.\p"
     .string "Some items can even be used by\n"
-    .string "the holding POKéMON in battle.$"
+    .string "the holding Pokémon in battle.$"
 
 CeruleanCity_Text_BikeShopSign:: @ 817F4C5
     .string "Grass and caves handled easily!\n"

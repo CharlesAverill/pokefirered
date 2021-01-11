@@ -23,7 +23,7 @@ SaffronCity_Text_WatchWhereYoureWalking:: @ 81810D5
 
 SaffronCity_Text_WeCanExploitMonsAroundWorld:: @ 81810F5
     .string "With SILPH under control, we can\n"
-    .string "exploit POKéMON around the world!\p"
+    .string "exploit Pokémon around the world!\p"
     .string "We'll get stinking rich, yeahah!$"
 
 SaffronCity_Text_YouBeatTeamRocket:: @ 8181159
@@ -72,7 +72,7 @@ SaffronCity_Text_FightingDojo:: @ 8181354
 SaffronCity_Text_GymSign:: @ 8181362
     .string "SAFFRON CITY POKéMON GYM\n"
     .string "LEADER: SABRINA\l"
-    .string "The Master of PSYCHIC POKéMON!$"
+    .string "The Master of Psychic Pokémon!$"
 
 SaffronCity_Text_FullHealCuresStatus:: @ 81813AA
     .string "TRAINER TIPS\p"
@@ -87,7 +87,7 @@ SaffronCity_Text_GreatBallImprovedCatchRate:: @ 8181452
     .string "The new GREAT BALL offers improved\n"
     .string "catching rates.\p"
     .string "Try it on those hard-to-catch\n"
-    .string "POKéMON.$"
+    .string "Pokémon.$"
 
 SaffronCity_EventScript_CharlesLaboratory_Text::
     .string "Laboratory of Prof. Charles$"

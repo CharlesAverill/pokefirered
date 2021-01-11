@@ -12,7 +12,7 @@ PokemonTower_7F_Text_Grunt2Intro:: @ 817A3CD
     .string "This old guy marched right up to\n"
     .string "our HIDEOUT.\p"
     .string "Then, he starts ranting about how\n"
-    .string "TEAM ROCKET's abusing POKéMON.\p"
+    .string "TEAM ROCKET's abusing Pokémon.\p"
     .string "So, we're just talking it over as\n"
     .string "adults.$"
 

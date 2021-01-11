@@ -7,14 +7,14 @@ Text_SeismicTossTeach:: @ 81909A3
     .string "harder, not toss in the towel.\p"
     .string "The only thing you should toss…\p"
     .string "Well, how about SEISMIC TOSS?\n"
-    .string "Should I teach that to a POKéMON?$"
+    .string "Should I teach that to a Pokémon?$"
 
 Text_SeismicTossDeclined:: @ 8190AA9
     .string "Is that so?\n"
     .string "I'm sure you'll be back for it.$"
 
 Text_SeismicTossWhichMon:: @ 8190AD5
-    .string "Which POKéMON wants to learn\n"
+    .string "Which Pokémon wants to learn\n"
     .string "SEISMIC TOSS?$"
 
 Text_SeismicTossTaught:: @ 8190B00

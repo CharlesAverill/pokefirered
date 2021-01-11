@@ -12,6 +12,7 @@
 - Eeveelutions learn ultimate moves from the Move Tutor on Cape Brink
 - Base stats / learnsets for multiple Pokemon have been upgraded
 - Moves have been updated to Generation VII standards
+- Sell Pokemon to Rocket Grunts in Saffron City after beating Giovanni
 ## Locations
 - Dragon Gate: in between Routes 10 and 25
 - Cinnabar Volcano: beneath Cinnabar Gym
@@ -23,6 +24,7 @@
 - Mt. Moon Summit: next  to Mt. Moon exit on Route 4
 - Route 50: between routes 2 and 16
 - Chansey Grove: Route 50
+- Mt. Silver, Route 51: Through the West exit of Route 23's badge check building
 ## Events
 - Mew Truck glitch from RBY is now a built-in event
 - MysticTicket
@@ -32,7 +34,6 @@
 - Jirachi Event
 - Celebi Event
 - Emerald Brendan/May appear
-- Sell Pokemon to Rocket Grunts in Saffron City after beating Giovanni
 ## Roaming Pokemon
 After becoming Champion, talk to Eunice in Fuchsia City.
 Eunice will tell you about rumors of various roaming

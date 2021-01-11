@@ -45,3 +45,4 @@
     - Regice: Icefall Cave has been expanded. The last room has been extended to include an entrance to Iceberg Chamber.
     - Registeel: Dragon Gate Cavern 2F (between routes 10 and 25) contains an entrance to Iron Chamber
 - Jirachi: speak to Mr. Fuji after becoming Champion, Jirachi is on Pokemon Tower 7F
+- Mt. Silver: Approach Mt. Silver with the Celebi you caught in your party. A familiar face awaits you on the summit.

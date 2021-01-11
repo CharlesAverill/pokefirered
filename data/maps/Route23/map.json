@@ -545,6 +545,33 @@
       "var": "VAR_MAP_SCENE_ROUTE23",
       "var_value": "1",
       "script": "Route23_EventScript_CascadeBadgeGuardTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 157,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route23_EventScript_MtSilverTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 156,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route23_EventScript_MtSilverTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 158,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route23_EventScript_MtSilverTrigger"
     }
   ],
   "bg_events": [

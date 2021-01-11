@@ -12,7 +12,7 @@ CeladonCity_Condominiums_1F_Text_NothingBeatsThirstLikeTea:: @ 8196109
     .string "It really is the best.$"
 
 CeladonCity_Condominiums_1F_Text_MyDearMonsKeepMeCompany:: @ 8196148
-    .string "My dear POKéMON keep me company.\n"
+    .string "My dear Pokémon keep me company.\n"
     .string "MEOWTH even brings money home!$"
 
 CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea:: @ 8196188

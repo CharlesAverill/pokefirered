@@ -1,10 +1,10 @@
 CeladonCity_Condominiums_RoofRoom_Text_TheresNothingIDontKnow:: @ 81964D7
     .string "There is nothing that I don't know,\n"
     .string "like I wrote on the blackboard.\p"
-    .string "I know about the world of POKéMON\n"
+    .string "I know about the world of Pokémon\n"
     .string "in your GAME BOY ADVANCE!\p"
     .string "Get together with your friends and\n"
-    .string "enjoy trading POKéMON!$"
+    .string "enjoy trading Pokémon!$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ObtainedAnEevee:: @ 8196591
     .string "{PLAYER} obtained an EEVEE!$"
@@ -14,7 +14,7 @@ CeladonCity_Condominiums_RoofRoom_Text_BoxIsFull:: @ 81965A7
     .string "ボックスを　かえて　きなさい$"
 
 CeladonCity_Condominiums_RoofRoom_Text_WirelessAdapterLecture:: @ 81965C2
-    .string "POKéMON Lecture\p"
+    .string "Pokémon Lecture\p"
     .string "Playing with the Wireless Adapter$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ReadWhichHeading:: @ 81965F4

@@ -134,7 +134,7 @@ OneIsland_KindleRoad_Text_KiaPostBattle:: @ 8189BA3
 OneIsland_KindleRoad_Text_KiaNotEnoughMons:: @ 8189BDE
     .string "KIA: If you want to battle with\n"
     .string "us, you have to bring at least two\l"
-    .string "POKéMON with you.$"
+    .string "Pokémon with you.$"
 
 OneIsland_KindleRoad_Text_MikIntro:: @ 8189C33
     .string "MIK: Together with KIA, I'm afraid\n"
@@ -151,7 +151,7 @@ OneIsland_KindleRoad_Text_MikPostBattle:: @ 8189C7E
 OneIsland_KindleRoad_Text_MikNotEnoughMons:: @ 8189CAB
     .string "MIK: Hey, do you want to battle\n"
     .string "with us two?\p"
-    .string "Bring two or more POKéMON with\n"
+    .string "Bring two or more Pokémon with\n"
     .string "you, then.$"
 
 OneIsland_KindleRoad_Text_RouteSign:: @ 8189D02

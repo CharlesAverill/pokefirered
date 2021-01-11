@@ -6,14 +6,14 @@ Text_DreamEaterTeach:: @ 817E316
     .string "And…\n"
     .string "I learned how to eat dreams…\p"
     .string "Oogh, this is too spooky!\p"
-    .string "Let me teach it to a POKéMON so\n"
+    .string "Let me teach it to a Pokémon so\n"
     .string "I can forget about it!$"
 
 Text_DreamEaterDeclined:: @ 817E3E9
     .string "…Snore…$"
 
 Text_DreamEaterWhichMon:: @ 817E3F1
-    .string "Which POKéMON wants to learn\n"
+    .string "Which Pokémon wants to learn\n"
     .string "DREAM EATER?$"
 
 Text_DreamEaterTaught:: @ 817E41B
@@ -60,7 +60,7 @@ PewterCity_Text_ThatsRightItsHardWork:: @ 817E626
 
 PewterCity_Text_SprayingRepelToKeepWildMonsOut:: @ 817E644
     .string "I'm spraying REPEL to keep wild\n"
-    .string "POKéMON out of my garden!$"
+    .string "Pokémon out of my garden!$"
 
 PewterCity_Text_BrocksLookingForChallengersFollowMe:: @ 817E67E
     .string "You're a TRAINER, right?\p"
@@ -73,12 +73,12 @@ PewterCity_Text_GoTakeOnBrock:: @ 817E6C7
 
 PewterCity_Text_TrainerTipsEarningEXP:: @ 817E6F6
     .string "TRAINER TIPS\p"
-    .string "All POKéMON that appear in battle,\n"
+    .string "All Pokémon that appear in battle,\n"
     .string "however briefly, earn EXP Points.$"
 
 PewterCity_Text_CallPoliceIfInfoOnThieves:: @ 817E748
     .string "NOTICE!\p"
-    .string "Thieves have been stealing POKéMON\n"
+    .string "Thieves have been stealing Pokémon\n"
     .string "fossils from MT. MOON.\p"
     .string "Please call the PEWTER POLICE if\n"
     .string "you have any information.$"

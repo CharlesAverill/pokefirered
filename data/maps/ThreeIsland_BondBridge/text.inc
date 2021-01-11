@@ -8,7 +8,7 @@ ThreeIsland_BondBridge_Text_NikkiDefeat:: @ 8189E72
 
 ThreeIsland_BondBridge_Text_NikkiPostBattle:: @ 8189E9E
     .string "Perhaps that reek is your sweaty\n"
-    .string "POKéMON's body odor…$"
+    .string "Pokémon's body odor…$"
 
 ThreeIsland_BondBridge_Text_VioletIntro:: @ 8189ED4
     .string "Where are you off to in such\n"
@@ -16,7 +16,7 @@ ThreeIsland_BondBridge_Text_VioletIntro:: @ 8189ED4
 
 ThreeIsland_BondBridge_Text_VioletDefeat:: @ 8189EFA
     .string "You're raising some wonderful\n"
-    .string "POKéMON.$"
+    .string "Pokémon.$"
 
 ThreeIsland_BondBridge_Text_VioletPostBattle:: @ 8189F21
     .string "If you keep going this way, you'll\n"
@@ -36,7 +36,7 @@ ThreeIsland_BondBridge_Text_AmiraPostBattle:: @ 8189FA8
 
 ThreeIsland_BondBridge_Text_AlexisIntro:: @ 8189FDB
     .string "Yay, yay!\n"
-    .string "POKéMON!$"
+    .string "Pokémon!$"
 
 ThreeIsland_BondBridge_Text_AlexisDefeat:: @ 8189FEE
     .string "What happens now?$"
@@ -54,13 +54,13 @@ ThreeIsland_BondBridge_Text_TishaDefeat:: @ 818A053
     .string "Now will you please go away?$"
 
 ThreeIsland_BondBridge_Text_TishaPostBattle:: @ 818A082
-    .string "A POKéMON bit through my \n"
+    .string "A Pokémon bit through my \n"
     .string "swimsuit.\p"
     .string "I can't get out of the water!$"
 
 ThreeIsland_BondBridge_Text_JoyIntro:: @ 818A0C4
     .string "JOY: We'll teach you what our\n"
-    .string "favorite POKéMON is!$"
+    .string "favorite Pokémon is!$"
 
 ThreeIsland_BondBridge_Text_JoyDefeat:: @ 818A0F7
     .string "JOY: Ohh…\n"
@@ -73,11 +73,11 @@ ThreeIsland_BondBridge_Text_JoyPostBattle:: @ 818A106
 ThreeIsland_BondBridge_Text_JoyNotEnoughMons:: @ 818A138
     .string "JOY: I really want to battle with\n"
     .string "MEG.\p"
-    .string "One POKéMON isn't enough.$"
+    .string "One Pokémon isn't enough.$"
 
 ThreeIsland_BondBridge_Text_MegIntro:: @ 818A179
     .string "MEG: We'll show you our favorite\n"
-    .string "POKéMON.$"
+    .string "Pokémon.$"
 
 ThreeIsland_BondBridge_Text_MegDefeat:: @ 818A1A3
     .string "MEG: Ohh…\n"
@@ -89,7 +89,7 @@ ThreeIsland_BondBridge_Text_MegPostBattle:: @ 818A1B2
 ThreeIsland_BondBridge_Text_MegNotEnoughMons:: @ 818A1CD
     .string "MEG: I want to battle together\n"
     .string "with JOY.\p"
-    .string "One POKéMON isn't enough.$"
+    .string "One Pokémon isn't enough.$"
 
 ThreeIsland_BondBridge_Text_BerryForestAhead:: @ 818A210
     .string "BERRY FOREST AHEAD$"

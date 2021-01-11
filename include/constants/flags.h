@@ -253,7 +253,7 @@
 #define FLAG_SHOWED_LATIAS               0x0F3
 #define FLAG_HIDE_CHANSEY_GROVE_MAN               0x0F4
 #define FLAG_MENTIONED_EV_TRAINERS               0x0F5
-#define FLAG_0x0F6               0x0F6
+#define FLAG_FOUGHT_FUTURE_RED               0x0F6
 #define FLAG_0x0F7               0x0F7
 #define FLAG_0x0F8               0x0F8
 #define FLAG_0x0F9               0x0F9

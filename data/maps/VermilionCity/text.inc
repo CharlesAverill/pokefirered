@@ -36,14 +36,14 @@ VermilionCity_Text_CitySign:: @ 817F8FB
 VermilionCity_Text_SnorlaxBlockingRoute12:: @ 817F928
     .string "NOTICE!\p"
     .string "ROUTE 12 may be blocked off by a\n"
-    .string "sleeping POKéMON.\p"
+    .string "sleeping Pokémon.\p"
     .string "Detour through ROCK TUNNEL to\n"
     .string "LAVENDER TOWN.\p"
     .string "VERMILION POLICE$"
 
 VermilionCity_Text_PokemonFanClubSign:: @ 817F9A1
     .string "POKéMON FAN CLUB\n"
-    .string "All POKéMON fans welcome!$"
+    .string "All Pokémon fans welcome!$"
 
 VermilionCity_Text_GymSign:: @ 817F9CC
     .string "VERMILION CITY POKéMON GYM\n"
