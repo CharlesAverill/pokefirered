@@ -97,8 +97,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 29,
-      "y": 7,
+      "x": 27,
+      "y": 8,
       "elevation": 3,
       "item": "ITEM_REVIVE",
       "flag": "FLAG_MTSILVER_MAX_REVIVE",
