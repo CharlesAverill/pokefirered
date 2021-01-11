@@ -4812,6 +4812,18 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/MtSilver_1F/border.bin",
       "blockdata_filepath": "data/layouts/MtSilver_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_2F",
+      "name": "MtSilver_2F_Layout",
+      "width": 41,
+      "height": 28,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MtSilver_2F/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_2F/map.bin"
     }
   ]
 }
