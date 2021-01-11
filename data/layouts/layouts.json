@@ -4848,6 +4848,54 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/MtSilver_Summit/border.bin",
       "blockdata_filepath": "data/layouts/MtSilver_Summit/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_LOWER_MOUNTAINSIDE",
+      "name": "MtSilver_Lower_Mountainside_Layout",
+      "width": 41,
+      "height": 26,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtSilver_Lower_Mountainside/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_Lower_Mountainside/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_UPPER_MOUNTAINSIDE",
+      "name": "MtSilver_Upper_Mountainside_Layout",
+      "width": 45,
+      "height": 60,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MtSilver_Upper_Mountainside/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_Upper_Mountainside/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_MOLTRES_CHAMBER",
+      "name": "MtSilver_MoltresChamber_Layout",
+      "width": 21,
+      "height": 21,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MtSilver_MoltresChamber/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_MoltresChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_LEFTOVERS_ROOM",
+      "name": "MtSilver_LeftoversRoom_Layout",
+      "width": 9,
+      "height": 6,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/MtSilver_LeftoversRoom/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilver_LeftoversRoom/map.bin"
     }
   ]
 }

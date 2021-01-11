@@ -611,7 +611,11 @@
     "MtSilver_1F",
     "MtSilver_2F",
     "MtSilver_3F",
-    "MtSilver_Summit"
+    "MtSilver_Summit",
+    "MtSilver_Lower_Mountainside",
+    "MtSilver_Upper_Mountainside",
+    "MtSilver_MoltresChamber",
+    "MtSilver_LeftoversRoom"
   ],
   "gMapGroup48": [
 

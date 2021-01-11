@@ -1487,3 +1487,15 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/MtSilver_Summit/scripts.inc"
 	.include "data/maps/MtSilver_Summit/text.inc"
+
+	.include "data/maps/MtSilver_Lower_Mountainside/scripts.inc"
+	.include "data/maps/MtSilver_Lower_Mountainside/text.inc"
+
+	.include "data/maps/MtSilver_Upper_Mountainside/scripts.inc"
+	.include "data/maps/MtSilver_Upper_Mountainside/text.inc"
+
+	.include "data/maps/MtSilver_MoltresChamber/scripts.inc"
+	.include "data/maps/MtSilver_MoltresChamber/text.inc"
+
+	.include "data/maps/MtSilver_LeftoversRoom/scripts.inc"
+	.include "data/maps/MtSilver_LeftoversRoom/text.inc"

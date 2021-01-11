@@ -669,3 +669,21 @@ SevenIsland_SevaultCanyon_House_EventScript_ItemLuckyPunch:: @ 81BEDFC
 SilphCo_4F_EventScript_ItemTM41:: @ 81BEE09
 	finditem ITEM_TM41
 	end
+
+MtSilver_LeftoversRoom_EventScript_ItemLeftovers::
+	finditem ITEM_LEFTOVERS
+	end
+
+MtSilver_MoltresChamber_EventScript_ItemUltraBall::
+	finditem ITEM_ULTRA_BALL
+	end
+
+MtSilver_1F_EventScript_ItemFullRestore::
+	finditem ITEM_FULL_RESTORE
+	finditem ITEM_MAX_REVIVE
+	finditem ITEM_MAX_ELIXIR
+	end
+
+MtSilver_2F_EventScript_ItemIron::
+	finditem ITEM_IRON
+	end

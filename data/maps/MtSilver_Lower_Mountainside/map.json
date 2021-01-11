@@ -1,0 +1,58 @@
+{
+  "id": "MAP_MT_SILVER_LOWER_MOUNTAINSIDE",
+  "name": "MtSilver_Lower_Mountainside",
+  "layout": "LAYOUT_MT_SILVER_LOWER_MOUNTAINSIDE",
+  "music": "MUS_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_MT_SILVER",
+  "requires_flash": false,
+  "weather": "WEATHER_SNOW",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_1F",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_1F",
+      "dest_warp_id": 4
+    },
+    {
+      "x": 27,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_1F",
+      "dest_warp_id": 1
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 15,
+      "y": 18,
+      "elevation": 3,
+      "item": "ITEM_ESCAPE_ROPE",
+      "flag": "FLAG_MTSILVER_ESCAPE_ROPE",
+      "quantity": 1,
+      "underfoot": false
+    }
+  ]
+}

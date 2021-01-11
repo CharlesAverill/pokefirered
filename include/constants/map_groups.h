@@ -556,10 +556,14 @@
 #define MAP_HEMLOCK_FOREST                 (5 | (46 << 8))
 
 // Map Group 47
-#define MAP_MT_SILVER_1F     (0 | (47 << 8))
-#define MAP_MT_SILVER_2F     (1 | (47 << 8))
-#define MAP_MT_SILVER_3F     (2 | (47 << 8))
-#define MAP_MT_SILVER_SUMMIT (3 | (47 << 8))
+#define MAP_MT_SILVER_1F                 (0 | (47 << 8))
+#define MAP_MT_SILVER_2F                 (1 | (47 << 8))
+#define MAP_MT_SILVER_3F                 (2 | (47 << 8))
+#define MAP_MT_SILVER_SUMMIT             (3 | (47 << 8))
+#define MAP_MT_SILVER_LOWER_MOUNTAINSIDE (4 | (47 << 8))
+#define MAP_MT_SILVER_UPPER_MOUNTAINSIDE (5 | (47 << 8))
+#define MAP_MT_SILVER_MOLTRES_CHAMBER    (6 | (47 << 8))
+#define MAP_MT_SILVER_LEFTOVERS_ROOM     (7 | (47 << 8))
 
 // Map Group 48
 

@@ -1,0 +1,77 @@
+{
+  "id": "MAP_MT_SILVER_UPPER_MOUNTAINSIDE",
+  "name": "MtSilver_Upper_Mountainside",
+  "layout": "LAYOUT_MT_SILVER_UPPER_MOUNTAINSIDE",
+  "music": "MUS_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_MT_SILVER",
+  "requires_flash": false,
+  "weather": "WEATHER_SNOW",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_3F",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 16,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_2F",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 25,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_2F",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 31,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_2F",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 31,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_2F",
+      "dest_warp_id": 4
+    },
+    {
+      "x": 31,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_2F",
+      "dest_warp_id": 5
+    },
+    {
+      "x": 19,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_2F",
+      "dest_warp_id": 6
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

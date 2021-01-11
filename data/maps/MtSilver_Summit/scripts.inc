@@ -75,7 +75,9 @@ MtSilver_Summit_Red::
 MtSilver_Summit_PostRedBattle::
 	setrespawn SPAWN_PALLET_TOWN
 	fadescreenspeed FADE_TO_BLACK, 24
+	special HealPlayerParty
 	warp MAP_PALLET_TOWN_PLAYERS_HOUSE_2F, 255, 6, 6
+	fadescreen FADE_FROM_BLACK
 	waitstate
     releaseall
     end
