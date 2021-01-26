@@ -1499,3 +1499,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/MtSilver_LeftoversRoom/scripts.inc"
 	.include "data/maps/MtSilver_LeftoversRoom/text.inc"
+
+	.include "data/maps/NewBarkTown/scripts.inc"
+	.include "data/maps/NewBarkTown/text.inc"

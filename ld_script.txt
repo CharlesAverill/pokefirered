@@ -2078,6 +2078,8 @@ gRfuSIO32Id = .;
         sound/songs/midi/mus_slow_pallet.o(.rodata);
         sound/songs/midi/mus_teachy_tv_menu.o(.rodata);
         sound/songs/midi/mus_cherrygrove.o(.rodata);
+        sound/songs/midi/mus_new_bark.o(.rodata);
+        sound/songs/midi/mus_goldenrod.o(.rodata);
     }
 
     lib_rodata :

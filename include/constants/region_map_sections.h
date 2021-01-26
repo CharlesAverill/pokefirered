@@ -224,10 +224,21 @@
 #define MAPSEC_CHANSEY_GROVE                0xD4
 #define MAPSEC_ROUTE_50                     0xD5
 #define MAPSEC_MT_SILVER                    0xD6
-#define MAPSEC_ROUTE_51                    0xD7
+#define MAPSEC_ROUTE_51                     0xD7
 
-#define MAPSEC_NONE                         0xD8
-#define MAPSEC_COUNT                        0xD9
+#define MAPSEC_NEW_BARK_TOWN                0xD8
+#define MAPSEC_CHERRYGROVE_CITY             0xD9
+#define MAPSEC_VIOLET_CITY                  0xDA
+#define MAPSEC_AZALEA_TOWN                  0xDB
+#define MAPSEC_GOLDENROD_CITY               0xDC
+#define MAPSEC_ECRUTEAK_CITY                0xDD
+#define MAPSEC_OLIVINE_CITY                 0xDE
+#define MAPSEC_CIANWOOD_CITY                0xDF
+#define MAPSEC_MAHOGANY_TOWN                0xE0
+#define MAPSEC_BLACKTHORN_CITY              0xE1
+
+#define MAPSEC_NONE                         0xE2
+#define MAPSEC_COUNT                        0xE3
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

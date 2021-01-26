@@ -32,5 +32,14 @@ gProgrammableWaveData_84A327C:: @ 84A327C
 gProgrammableWaveData_84A328C:: @ 84A328C
 	.incbin "sound/programmable_wave_samples/84A328C.pcm"
 
+gProgrammableWaveData_86B4830::
+    .incbin "sound/programmable_wave_samples/86B4830.pcm"
+
+gProgrammableWaveData_86B4860::
+    .incbin "sound/programmable_wave_samples/86B4860.pcm"
+
+gProgrammableWaveData_86B4840::
+    .incbin "sound/programmable_wave_samples/86B4840.pcm"
+
 gProgrammableWaveData_86B4870::
     .incbin "sound/programmable_wave_samples/86B4870.pcm"

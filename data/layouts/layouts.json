@@ -4896,6 +4896,18 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/MtSilver_LeftoversRoom/border.bin",
       "blockdata_filepath": "data/layouts/MtSilver_LeftoversRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BARK_TOWN",
+      "name": "NewBarkTown_Layout",
+      "width": 20,
+      "height": 18,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LavenderTown",
+      "border_filepath": "data/layouts/NewBarkTown/border.bin",
+      "blockdata_filepath": "data/layouts/NewBarkTown/map.bin"
     }
   ]
 }

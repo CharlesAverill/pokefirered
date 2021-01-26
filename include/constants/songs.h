@@ -353,5 +353,7 @@
 #define MUS_SLOW_PALLET           345 // MUS_RG_SLOWMASARA
 #define MUS_TEACHY_TV_MENU        346 // MUS_RG_TVNOIZE
 #define MUS_CHERRYGROVE           347
+#define MUS_NEW_BARK              348
+#define MUS_GOLDENROD             349
 
 #endif  // GUARD_CONSTANTS_SONGS_H

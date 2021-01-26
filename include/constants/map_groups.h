@@ -566,6 +566,7 @@
 #define MAP_MT_SILVER_LEFTOVERS_ROOM     (7 | (47 << 8))
 
 // Map Group 48
+#define MAP_NEW_BARK_TOWN (0 | (48 << 8))
 
 // Map Group 49
 

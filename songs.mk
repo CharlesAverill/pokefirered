@@ -830,3 +830,9 @@ $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_cherrygrove.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V070
+
+$(MID_SUBDIR)/mus_new_bark.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G051 -V100
+
+$(MID_SUBDIR)/mus_goldenrod.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G045 -V076
