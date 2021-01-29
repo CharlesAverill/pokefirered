@@ -1511,3 +1511,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/Route27/scripts.inc"
 	.include "data/maps/Route27/text.inc"
+
+	.include "data/maps/TohjoFalls/scripts.inc"
+	.include "data/maps/TohjoFalls/text.inc"

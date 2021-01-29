@@ -46,15 +46,15 @@
       "x": 26,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE27",
-      "dest_warp_id": 1
+      "dest_map": "MAP_TOHJO_FALLS",
+      "dest_warp_id": 0
     },
     {
       "x": 36,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE27",
-      "dest_warp_id": 0
+      "dest_map": "MAP_TOHJO_FALLS",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

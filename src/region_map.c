@@ -975,6 +975,7 @@ static const u8 *const sMapNames[] = {
     [MAPSEC_ROUTE_47            - MAPSECS_KANTO] = gMapSecName_Route47,
     [MAPSEC_ROUTE_48            - MAPSECS_KANTO] = gMapSecName_Route48,
     [MAPSEC_ROUTE_27            - MAPSECS_KANTO] = gMapSecName_Route27,
+    [MAPSEC_TOHJO_FALLS         - MAPSECS_KANTO] = gMapSecName_TohjoFalls,
 };
 
 static const u16 sMapSectionTopLeftCorners[MAPSEC_COUNT][2] = {

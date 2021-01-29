@@ -574,6 +574,7 @@
 #define MAP_NEW_BARK_TOWN_HOUSE1 (0 | (49 << 8))
 
 // Map Group 50
+#define MAP_TOHJO_FALLS (0 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 
