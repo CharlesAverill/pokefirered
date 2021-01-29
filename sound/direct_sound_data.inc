@@ -174,6 +174,12 @@ DirectSoundWaveData_sc88pro_trumpet_72::
 DirectSoundWaveData_sc88pro_trumpet_84::
 	.incbin "sound/direct_sound_samples/sc88pro_trumpet_84.bin"
 
+DirectSoundWaveData_unknown_trombone_39::
+	.incbin "sound/direct_sound_samples/unknown_trombone_39.bin"
+
+DirectSoundWaveData_unknown_trombone_51::
+	.incbin "sound/direct_sound_samples/unknown_trombone_51.bin"
+
 	.align 2
 DirectSoundWaveData_sc88pro_tuba_39:: @N.B.: These tuba samples are actually sampled at 36 and 48, then pitched up
 	.incbin "sound/direct_sound_samples/sc88pro_tuba_39.bin"
@@ -1907,3 +1913,51 @@ DirectSoundWaveData_sd90_classical_detuned_ep1_high::
 	.align 2
 DirectSoundWaveData_sd90_enhanced_delay_shaku::
 	.incbin "sound/direct_sound_samples/sd90_enhanced_delay_shaku.bin"
+
+    .align 2
+DirectSoundWaveData_unknown_wood_block_low::
+    .incbin "sound/direct_sound_samples/unknown_wood_block_low.bin"
+
+    .align 2
+DirectSoundWaveData_unknown_wood_block_high::
+    .incbin "sound/direct_sound_samples/unknown_wood_block_high.bin"
+
+    .align 2
+DirectSoundWaveData_sc88pro_standard_kick::
+    .incbin "sound/direct_sound_samples/sc88pro_standard_kick.bin"
+
+    .align 2
+DirectSoundWaveData_sc88pro_standard3_snare::
+    .incbin "sound/direct_sound_samples/sc88pro_standard3_snare.bin"
+
+    .align 2
+DirectSoundWaveData_sc88pro_standard_hand_clap::
+    .incbin "sound/direct_sound_samples/sc88pro_standard_hand_clap.bin"
+
+    .align 2
+DirectSoundWaveData_unknown_tom:
+    .incbin "sound/direct_sound_samples/unknown_tom.bin"
+
+    .align 2
+DirectSoundWaveData_unknown_open_hihat:
+    .incbin "sound/direct_sound_samples/unknown_open_hihat.bin"
+
+    .align 2
+DirectSoundWaveData_unknown_tambourine:
+    .incbin "sound/direct_sound_samples/unknown_tambourine.bin"
+
+    .align 2
+DirectSoundWaveData_unknown_bell:
+    .incbin "sound/direct_sound_samples/unknown_bell.bin"
+
+    .align 2
+DirectSoundWaveData_sc88pro_bongo::
+    .incbin "sound/direct_sound_samples/sc88pro_bongo.bin"
+
+    .align 2
+DirectSoundWaveData_sc88pro_bongo_low::
+    .incbin "sound/direct_sound_samples/sc88pro_bongo_low.bin"
+
+    .align 2
+DirectSoundWaveData_unused_electric_guitar::
+    .incbin "sound/direct_sound_samples/unused_electric_guitar.bin"

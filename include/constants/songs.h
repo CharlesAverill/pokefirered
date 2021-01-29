@@ -355,5 +355,9 @@
 #define MUS_CHERRYGROVE           347
 #define MUS_NEW_BARK              348
 #define MUS_GOLDENROD             349
+#define MUS_ROUTE29               350
+#define MUS_ROUTE30               351
+#define MUS_ROUTE34               352
+#define MUS_ROUTE38               353
 
 #endif  // GUARD_CONSTANTS_SONGS_H

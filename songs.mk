@@ -836,3 +836,15 @@ $(MID_SUBDIR)/mus_new_bark.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_goldenrod.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G045 -V076
+
+$(MID_SUBDIR)/mus_route29.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G011 -V080
+
+$(MID_SUBDIR)/mus_route30.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G021 -V088
+
+$(MID_SUBDIR)/mus_route34.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G010 -V080
+
+$(MID_SUBDIR)/mus_gsc_route38.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -V080

@@ -1502,3 +1502,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/NewBarkTown/scripts.inc"
 	.include "data/maps/NewBarkTown/text.inc"
+
+	.include "data/maps/Route29/scripts.inc"
+	.include "data/maps/Route29/text.inc"
+
+	.include "data/maps/NewBarkTown_House1/scripts.inc"
+	.include "data/maps/NewBarkTown_House1/text.inc"

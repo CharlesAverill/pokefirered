@@ -2080,6 +2080,10 @@ gRfuSIO32Id = .;
         sound/songs/midi/mus_cherrygrove.o(.rodata);
         sound/songs/midi/mus_new_bark.o(.rodata);
         sound/songs/midi/mus_goldenrod.o(.rodata);
+        sound/songs/midi/mus_route29.o(.rodata);
+        sound/songs/midi/mus_route30.o(.rodata);
+        sound/songs/midi/mus_route34.o(.rodata);
+        sound/songs/midi/mus_gsc_route38.o(.rodata);
     }
 
     lib_rodata :

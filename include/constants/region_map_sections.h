@@ -236,9 +236,30 @@
 #define MAPSEC_CIANWOOD_CITY                0xDF
 #define MAPSEC_MAHOGANY_TOWN                0xE0
 #define MAPSEC_BLACKTHORN_CITY              0xE1
+#define MAPSEC_ROUTE_28                     0xE2
+#define MAPSEC_ROUTE_29                     0xE3
+#define MAPSEC_ROUTE_30                     0xE4
+#define MAPSEC_ROUTE_31                     0xE5
+#define MAPSEC_ROUTE_32                     0xE6
+#define MAPSEC_ROUTE_33                     0xE7
+#define MAPSEC_ROUTE_34                     0xE8
+#define MAPSEC_ROUTE_35                     0xE9
+#define MAPSEC_ROUTE_36                     0xEA
+#define MAPSEC_ROUTE_37                     0xEB
+#define MAPSEC_ROUTE_38                     0xEC
+#define MAPSEC_ROUTE_39                     0xED
+#define MAPSEC_ROUTE_40                     0xEE
+#define MAPSEC_ROUTE_41                     0xEF
+#define MAPSEC_ROUTE_42                     0xF0
+#define MAPSEC_ROUTE_43                     0xF1
+#define MAPSEC_ROUTE_44                     0xF2
+#define MAPSEC_ROUTE_45                     0xF3
+#define MAPSEC_ROUTE_46                     0xF4
+#define MAPSEC_ROUTE_47                     0xF5
+#define MAPSEC_ROUTE_48                     0xF6
 
-#define MAPSEC_NONE                         0xE2
-#define MAPSEC_COUNT                        0xE3
+#define MAPSEC_NONE                         0xF7
+#define MAPSEC_COUNT                        0xF8
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
