@@ -1,7 +1,7 @@
 Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30:: @ 819E9E5
     .string "Hi! Remember me?\n"
     .string "I'm one of PROF. OAK's AIDES.\p"
-    .string "If your POKéDEX has complete data\n"
+    .string "If your Pokédex has complete data\n"
     .string "on {STR_VAR_1} species, I'm supposed to\l"
     .string "give you a reward.\p"
     .string "PROF. OAK entrusted me with the\n"

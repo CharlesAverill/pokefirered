@@ -37,7 +37,7 @@ PalletTown_Text_OakLetMeSeePokedex:: @ 817D8BF
     .string "OAK: Ah, {PLAYER}!\n"
     .string "You're back, are you?\p"
     .string "How much have you filled in your\n"
-    .string "POKéDEX?\p"
+    .string "Pokédex?\p"
     .string "May I see it?\p"
     .string "Let's see…$"
 

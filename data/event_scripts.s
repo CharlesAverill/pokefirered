@@ -952,12 +952,12 @@ Text_ItNeedsCardKey:: @ 81A5BAD
 
 Text_AccessedProfOaksPC:: @ 81A5BC6
 	.string "Accessed PROF. OAK's PC…\p"
-	.string "Accessed the POKéDEX Rating\n"
+	.string "Accessed the Pokédex Rating\n"
 	.string "System…$"
 
 Text_HavePokedexRated:: @ 81A5C03
 	.string "Would you like to have your\n"
-	.string "POKéDEX rated?$"
+	.string "Pokédex rated?$"
 
 Text_ClosedLinkToProfOaksPC:: @ 81A5C2E
 	.string "Closed link to PROF. OAK's PC.$"
@@ -1508,3 +1508,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/NewBarkTown_House1/scripts.inc"
 	.include "data/maps/NewBarkTown_House1/text.inc"
+
+	.include "data/maps/Route27/scripts.inc"
+	.include "data/maps/Route27/text.inc"

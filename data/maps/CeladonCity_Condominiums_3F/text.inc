@@ -15,13 +15,13 @@ CeladonCity_Condominiums_3F_Text_IWroteTheStory:: @ 81962FB
 CeladonCity_Condominiums_3F_Text_ImGameDesignerShowMeFinishedPokedex:: @ 8196356
     .string "Is that right?\p"
     .string "I'm the game designer!\p"
-    .string "Filling up your POKéDEX is tough,\n"
+    .string "Filling up your Pokédex is tough,\n"
     .string "but don't quit!\p"
     .string "When you finish, come tell me!$"
 
 CeladonCity_Condominiums_3F_Text_CompletedPokedexCongratulations:: @ 81963CD
     .string "Wow! Excellent!\n"
-    .string "You completed your POKéDEX!\l"
+    .string "You completed your Pokédex!\l"
     .string "Congratulations!\l"
     .string "…$"
 

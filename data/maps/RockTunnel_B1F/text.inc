@@ -24,7 +24,7 @@ RockTunnel_B1F_Text_DudleyPostBattle:: @ 8179712
     .string "thinking.$"
 
 RockTunnel_B1F_Text_CooperIntro:: @ 817973A
-    .string "You have a POKéDEX?\n"
+    .string "You have a Pokédex?\n"
     .string "I want one, too.$"
 
 RockTunnel_B1F_Text_CooperDefeat:: @ 817975F
@@ -32,7 +32,7 @@ RockTunnel_B1F_Text_CooperDefeat:: @ 817975F
     .string "I am so jealous!$"
 
 RockTunnel_B1F_Text_CooperPostBattle:: @ 8179777
-    .string "When you finish your POKéDEX,\n"
+    .string "When you finish your Pokédex,\n"
     .string "can I have it?$"
 
 RockTunnel_B1F_Text_SteveIntro:: @ 81797A4

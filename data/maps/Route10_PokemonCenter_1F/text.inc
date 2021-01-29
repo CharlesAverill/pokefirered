@@ -17,7 +17,7 @@ Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons:: @ 819E5FB
     .string "I've been looking for you!\p"
     .string "It's me, one of the ever-present\n"
     .string "AIDES to PROF. OAK.\p"
-    .string "If your POKéDEX has complete data\n"
+    .string "If your Pokédex has complete data\n"
     .string "on twenty species, I'm supposed to\l"
     .string "give you a reward from PROF. OAK.\p"
     .string "He entrusted me with this\n"
@@ -38,7 +38,7 @@ Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide:: @ 819E786
 
 Route10_PokemonCenter_1F_Text_ExplainEverstone:: @ 819E7AF
     .string "Making POKéMON evolve certainly\n"
-    .string "can add to the POKéDEX.\p"
+    .string "can add to the Pokédex.\p"
     .string "However, at times, you may not\n"
     .string "want a certain POKéMON to evolve.\p"
     .string "In that case, give the EVERSTONE\n"

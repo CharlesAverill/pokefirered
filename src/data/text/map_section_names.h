@@ -134,6 +134,7 @@ const u8 gMapSecName_OlivineCity[] = _("OLIVINE CITY");
 const u8 gMapSecName_CianwoodCity[] = _("CIANWOOD CITY");
 const u8 gMapSecName_MahoganyTown[] = _("MAHOGANY TOWN");
 const u8 gMapSecName_BlackthornCity[] = _("BLACKTHORN CITY");
+const u8 gMapSecName_Route27[] = _("ROUTE 27");
 const u8 gMapSecName_Route28[] = _("ROUTE 28");
 const u8 gMapSecName_Route29[] = _("ROUTE 29");
 const u8 gMapSecName_Route30[] = _("ROUTE 30");

@@ -17,7 +17,7 @@ CeruleanCity_Text_RivalPostBattle:: @ 817EB95
     .string "I went to BILL's and got him to\n"
     .string "show me his rare Pokémon.\p"
     .string "That added a lot of pages to my\n"
-    .string "POKéDEX!\p"
+    .string "Pokédex!\p"
     .string "After all, BILL's world famous as a\n"
     .string "POKéMANIAC.\p"
     .string "He invented the Pokémon Storage\n"

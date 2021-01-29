@@ -28,7 +28,8 @@ ViridianCity_Text_GrandpaHasntHadCoffeeYet:: @ 817DC4E
     .string "Oh, Grandpa!\n"
     .string "Don't be so mean!\p"
     .string "I'm so sorry.\n"
-    .string "He hasn't had his coffee yet.$"
+    .string "He's hungover from his birthday\l"
+    .string "celebration last night.$"
 
 ViridianCity_Text_GoShoppingInPewterOccasionally:: @ 817DC99
     .string "I go shopping in PEWTER CITY\n"
@@ -42,16 +43,16 @@ ViridianCity_Text_ThisIsPrivateProperty:: @ 817DD03
     .string "This is private property!$"
 
 ViridianCity_Text_ShowYouHowToCatchMons:: @ 817DD4E
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
+    .string "Well, now, that coffee cleared\n"
+    .string "my head right up!\p"
     .string "Hm?\n"
     .string "What is that red box you have?\p"
     .string "Ah, so you're working on your\n"
-    .string "POKéDEX.\p"
+    .string "Pokédex.\p"
     .string "Then let me give you a word of\n"
     .string "advice.\p"
     .string "Whenever you catch a POKéMON,\n"
-    .string "the POKéDEX automatically updates\l"
+    .string "the Pokédex automatically updates\l"
     .string "its data.\p"
     .string "…You don't know how to catch\n"
     .string "a POKéMON?\p"
@@ -70,20 +71,20 @@ ViridianCity_Text_WatchThatToLearnBasics:: @ 817DEEB
     .string "of being a POKéMON TRAINER.$"
 
 ViridianCity_Text_WeakenMonsFirstToCatch:: @ 817DF61
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
+    .string "Well, now, that coffee cleared\n"
+    .string "my head right up!\p"
     .string "But I made it too strong.\n"
-    .string "It gave me a headache…\p"
+    .string "It gave me another headache…\p"
     .string "Incidentally, are you filling your\n"
-    .string "POKéDEX?\p"
+    .string "Pokédex?\p"
     .string "At first, focus on weakening the\n"
     .string "POKéMON before trying to catch it.$"
 
 ViridianCity_Text_HowsTeachyTVHelping:: @ 817E046
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
+    .string "Well, now, that coffee cleared\n"
+    .string "my head right up!\p"
     .string "But I made it too strong.\n"
-    .string "It gave me a headache…\p"
+    .string "It gave me another headache…\p"
     .string "Incidentally, is my old TEACHY TV\n"
     .string "helping you?$"
 

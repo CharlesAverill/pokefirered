@@ -11,7 +11,7 @@ FuchsiaCity_PokemonCenter_1F_Text_PokemonLeagueWestOfViridian:: @ 8198D2E
     .string "The HQ governs all TRAINERS.$"
 
 FuchsiaCity_PokemonCenter_1F_Text_VisitSafariZoneForPokedex:: @ 8198D9B
-    .string "If you're working on a POKéDEX,\n"
+    .string "If you're working on a Pokédex,\n"
     .string "visit the SAFARI ZONE.\p"
     .string "All sorts of rare POKéMON are\n"
     .string "there. Even some from other\l"

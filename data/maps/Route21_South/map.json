@@ -23,6 +23,11 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_CINNABAR_ISLAND"
+    },
+    {
+      "direction": "left",
+      "offset": 17,
+      "map": "MAP_ROUTE27"
     }
   ],
   "object_events": [

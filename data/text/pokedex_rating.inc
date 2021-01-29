@@ -1,11 +1,11 @@
 PokedexRating_Text_HowIsPokedexComingAlong:: @ 81A6C51
 	.string "OAK: Good to see you!\n"
-	.string "How is your POKéDEX coming along?\p"
+	.string "How is your Pokédex coming along?\p"
 	.string "Here, let me take a look.$"
 
 PokedexRating_Text_SeenXOwnedY:: @ 81A6CA3
 	.string "The amount of progress you've made\n"
-	.string "on your POKéDEX is:\p"
+	.string "on your Pokédex is:\p"
 	.string "{STR_VAR_1} POKéMON seen and\n"
 	.string "{STR_VAR_2} POKéMON owned.\p"
 	.string "{SIZE}ÁPROF. OAK's rating:$"
@@ -22,7 +22,7 @@ PokedexRating_Text_LessThan20:: @ 81A6D6D
 	.string "HM. Make sure you go get it!$"
 
 PokedexRating_Text_LessThan30:: @ 81A6DDF
-	.string "Your POKéDEX could use a bit more\n"
+	.string "Your Pokédex could use a bit more\n"
 	.string "volume still!\p"
 	.string "Try to catch other species of\n"
 	.string "POKéMON!$"
@@ -34,7 +34,7 @@ PokedexRating_Text_LessThan40:: @ 81A6E36
 	.string "ITEMFINDER. Be sure to collect it!$"
 
 PokedexRating_Text_LessThan50:: @ 81A6EA4
-	.string "Your POKéDEX is coming along quite\n"
+	.string "Your Pokédex is coming along quite\n"
 	.string "well!\p"
 	.string "I've given one of my AIDES an\n"
 	.string "AMULET COIN. Be sure to get it!$"
@@ -47,7 +47,7 @@ PokedexRating_Text_LessThan60:: @ 81A6F0B
 
 PokedexRating_Text_LessThan70:: @ 81A6F71
 	.string "Hoho! This is turning into quite the\n"
-	.string "respectable POKéDEX!$"
+	.string "respectable Pokédex!$"
 
 PokedexRating_Text_LessThan80:: @ 81A6FAB
 	.string "Very good!\p"
@@ -83,22 +83,22 @@ PokedexRating_Text_LessThan150:: @ 81A7137
 	.string "You're the POKéMON PROFESSOR now!$"
 
 PokedexRating_Text_Complete:: @ 81A7175
-	.string "Your POKéDEX is entirely complete!\n"
+	.string "Your Pokédex is entirely complete!\n"
 	.string "Congratulations!!$"
 
 PokedexRating_Text_NationalDexSeenXOwnedY:: @ 81A71AA
-	.string "And your NATIONAL POKéDEX is:\p"
+	.string "And your NATIONAL Pokédex is:\p"
 	.string "{STR_VAR_1} POKéMON seen and\n"
 	.string "{STR_VAR_2} POKéMON owned.$"
 
 PokedexRating_Text_LookForwardToFilledNationalDex:: @ 81A71EE
 	.string "I'll be looking forward to seeing\n"
-	.string "you fill the NATIONAL POKéDEX!$"
+	.string "you fill the NATIONAL Pokédex!$"
 
 PokedexRating_Text_YouveCompletedDex:: @ 81A722F
 	.string "Finally…\p"
 	.string "You've finally completed the\n"
-	.string "POKéDEX!\p"
+	.string "Pokédex!\p"
 	.string "It's magnificent!\n"
 	.string "Truly, this is a fantastic feat!$"
 
@@ -115,7 +115,7 @@ PokedexRating_Text_ThankYouMadeDreamReality:: @ 81A72AD
 
 PokedexRating_Text_LoveSeeingYourPokedex:: @ 81A72F2
 	.string "OAK: Ah, welcome!\p"
-	.string "Tell me, how is your POKéDEX\n"
+	.string "Tell me, how is your Pokédex\n"
 	.string "coming along?\p"
 	.string "Wahaha!\p"
 	.string "Actually, I know how it is, but I\n"

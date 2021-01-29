@@ -20,7 +20,7 @@ PokemonTower_2F_Text_RivalVictory:: @ 8179DA2
     .string "もっと　ちゃんと　そだてて　やれよ$"
 
 PokemonTower_2F_Text_RivalPostBattle:: @ 8179DD4
-    .string "How's your POKéDEX coming?\n"
+    .string "How's your Pokédex coming?\n"
     .string "I just caught a CUBONE!\p"
     .string "I can't find the bigger MAROWAK.\n"
     .string "Where could they be?\p"

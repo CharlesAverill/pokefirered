@@ -162,7 +162,7 @@ PalletTown_ProfessorOaksLab_Text_OakHaveRequestForYouTwo:: @ 818E508
 
 PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk:: @ 818E536
     .string "On the desk there is my invention,\n"
-    .string "the POKéDEX!\p"
+    .string "the Pokédex!\p"
     .string "It automatically records data on\n"
     .string "Pokémon you've seen or caught.\p"
     .string "It's a high-tech encyclopedia!$"
@@ -172,7 +172,7 @@ PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou:: @ 818E5C5
     .string "Take these with you.$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak:: @ 818E5EA
-    .string "{PLAYER} received the POKéDEX\n"
+    .string "{PLAYER} received the Pokédex\n"
     .string "from PROF. OAK.$"
 
 PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese:: @ 818E612
@@ -213,11 +213,11 @@ PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait:: @ 818E871
 
 PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex:: @ 818E89C
     .string "Ah, {PLAYER}!\n"
-    .string "How is your POKéDEX shaping up?\p"
+    .string "How is your Pokédex shaping up?\p"
     .string "{RIVAL} has already caught some\n"
     .string "Pokémon and added to the data.\p"
     .string "So, {PLAYER}, let's have a look at\n"
-    .string "your POKéDEX.\p"
+    .string "your Pokédex.\p"
     .string "…What's the matter?\n"
     .string "You've added no new data at all.\p"
     .string "I'll give you these, so do try a\n"
@@ -226,7 +226,7 @@ PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex:: @ 818E89C
 PalletTown_ProfessorOaksLab_Text_OakComeSeeMeSometime:: @ 818E98E
     .string "OAK: Come see me sometime.\p"
     .string "After all, I want to know how your\n"
-    .string "POKéDEX is coming along.$"
+    .string "Pokédex is coming along.$"
 
 PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia:: @ 818E9E5
     .string "It's like an encyclopedia, but the\n"
@@ -321,10 +321,10 @@ PalletTown_ProfessorOaksLab_Text_OakNeedYourHelpTooNeedToSeePokedexes:: @ 818F00
     .string "OAK: I know, I know.\n"
     .string "Of course I need your help, too.$"
     .string "Now, I need to see both your\n"
-    .string "POKéDEXES.$"
+    .string "PokédexES.$"
 
 PalletTown_ProfessorOaksLab_Text_OakTookBothPokedexUnits:: @ 818F062
-    .string "PROF. OAK took both POKéDEX\n"
+    .string "PROF. OAK took both Pokédex\n"
     .string "units.$"
 
 PalletTown_ProfessorOaksLab_Text_OakNowTheseUnitsCanRecordMoreData:: @ 818F085
@@ -335,12 +335,12 @@ PalletTown_ProfessorOaksLab_Text_OakNowTheseUnitsCanRecordMoreData:: @ 818F085
     .string "a lot more Pokémon.$"
 
 PalletTown_ProfessorOaksLab_Text_PlayersPokedexWasUpgraded:: @ 818F0E8
-    .string "{PLAYER}'s POKéDEX was upgraded!$"
+    .string "{PLAYER}'s Pokédex was upgraded!$"
 
 PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex:: @ 818F103
     .string "Now, {PLAYER} and {RIVAL}!\p"
     .string "This time, you really must work\n"
-    .string "towards filling your POKéDEXES.\p"
+    .string "towards filling your PokédexES.\p"
     .string "I urge you to make them the best\n"
     .string "and the most complete of all time!\p"
     .string "Truly, this is a monumentally great\n"
@@ -349,7 +349,7 @@ PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex:: @ 818F103
 PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex:: @ 818F1DB
     .string "{RIVAL}: Gramps, calm down.\n"
     .string "Don't get so excited.\p"
-    .string "I'll get the POKéDEX completed,\n"
+    .string "I'll get the Pokédex completed,\n"
     .string "don't you worry about a thing.\p"
     .string "I think I'll try looking around\n"
     .string "ONE ISLAND first…\p"

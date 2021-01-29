@@ -128,7 +128,7 @@ SilphCo_7F_Text_RivalVictory:: @ 81767FC
 SilphCo_7F_Text_RivalPostBattle:: @ 8176827
     .string "Well, {PLAYER}!\n"
     .string "I'm moving on up and ahead!\p"
-    .string "By checking my POKéDEX, I'm\n"
+    .string "By checking my Pokédex, I'm\n"
     .string "starting to see what's strong and\l"
     .string "how they evolve!\p"
     .string "Am I a genius or what?\p"

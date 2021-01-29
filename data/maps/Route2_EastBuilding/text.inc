@@ -1,7 +1,7 @@
 Route2_EastBuilding_Text_GiveHM05IfSeen10Mons:: @ 819D64F
     .string "Hi! Remember me?\n"
     .string "I'm one of PROF. OAK's AIDES.\p"
-    .string "If your POKéDEX has complete data\n"
+    .string "If your Pokédex has complete data\n"
     .string "on ten species, I'm supposed to\l"
     .string "give you a reward.\p"
     .string "PROF. OAK entrusted me with\n"
