@@ -269,7 +269,7 @@
 #define FLAG_MTSILVER_PROTEIN               0x103
 #define FLAG_MTSILVER_IRON               0x104
 #define FLAG_MTSILVER_MAX_REVIVE2               0x105
-#define FLAG_0x106               0x106
+#define FLAG_MET_CREATOR               0x106
 #define FLAG_0x107               0x107
 #define FLAG_0x108               0x108
 #define FLAG_0x109               0x109
@@ -1443,6 +1443,16 @@
 #define FLAG_0x8D6 (SYS_FLAGS + 0xD6)
 
 #define FLAG_0x8E0 (SYS_FLAGS + 0xE0)
+
+#define FLAG_JOHTO_BADGE01_GET (SYS_FLAGS + 0xE1)
+#define FLAG_JOHTO_BADGE02_GET (SYS_FLAGS + 0xE2)
+#define FLAG_JOHTO_BADGE03_GET (SYS_FLAGS + 0xE3)
+#define FLAG_JOHTO_BADGE04_GET (SYS_FLAGS + 0xE4)
+#define FLAG_JOHTO_BADGE05_GET (SYS_FLAGS + 0xE5)
+#define FLAG_JOHTO_BADGE06_GET (SYS_FLAGS + 0xE6)
+#define FLAG_JOHTO_BADGE07_GET (SYS_FLAGS + 0xE7)
+#define FLAG_JOHTO_BADGE08_GET (SYS_FLAGS + 0xE8)
+#define NUM_JOHTO_BADGES       (1 + FLAG_JOHTO_BADGE08_GET - FLAG_JOHTO_BADGE01_GET)
 
 // SPECIAL FLAGS (unknown purpose)
 #define SPECIAL_FLAGS_START 0x4000

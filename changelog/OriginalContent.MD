@@ -1,4 +1,5 @@
 # Original Content & Features
+Just a heads-up: Aside from additional encounters, this hack's early game is very similar to base FireRed. 
 ## Features
 - Physical/Special split
 - Infinite TM Use
@@ -9,6 +10,7 @@
 - Don't show eggs during PokeCenter heal
 - Extra premier balls if you buy more than 10 Balls at a time
 - Cerulean Cave Guard leaves after becoming Champion
+- Berry merchant in Hemlock Town
 - Eeveelutions learn ultimate moves from the Move Tutor on Cape Brink
 - Base stats / learnsets for multiple Pokemon have been upgraded
 - Moves have been updated to Generation VII standards
@@ -25,6 +27,10 @@
 - Route 50: between routes 2 and 16
 - Chansey Grove: Route 50
 - Mt. Silver, Route 51: Through the West exit of Route 23's badge check building
+## Johto Progress
+- Route 27, Tohjo Falls connect Route 21 to Johto
+- New Bark Town (Overworld)
+- Route 29 (Overworld)
 ## Events
 - Mew Truck glitch from RBY is now a built-in event
 - MysticTicket

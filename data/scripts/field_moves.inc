@@ -3,13 +3,7 @@ EventScript_CutTree:: @ 81BDF13
 	lockall
 	goto_if_unset FLAG_BADGE02_GET, EventScript_CantCutTree
 	goto_if_unset FLAG_GOT_HM01, EventScript_CantCutTree
-	/*
-	checkpartymove MOVE_CUT
-	compare VAR_RESULT, PARTY_SIZE
-	goto_if_eq EventScript_CantCutTree
-	*/
 	setfieldeffectarg 0, VAR_RESULT
-	/*getpartymonname 0, VAR_RESULT*/
 	getspeciesname 0, SPECIES_SCYTHER
 	getmovename 1, MOVE_CUT
 	msgbox Text_CutTreeDown, MSGBOX_YESNO
@@ -194,13 +188,7 @@ Text_StrengthMadeMovingBouldersPossible:: @ 81BE284
 EventScript_Waterfall:: @ 81BE2B7
 	goto_if_questlog EventScript_ReleaseEnd
 	lockall
-	/*
-	checkpartymove MOVE_WATERFALL
-	compare VAR_RESULT, PARTY_SIZE
-	goto_if_eq EventScript_WaterCrashingDown
-	*/
 	goto_if_unset FLAG_HIDE_FOUR_ISLAND_ICEFALL_CAVE_1F_HM07, EventScript_WaterCrashingDown
-	/*getpartymonname 0, VAR_RESULT*/
 	getspeciesname 0, SPECIES_GYARADOS
 	setfieldeffectarg 0, VAR_RESULT
 	msgbox Text_UseWaterfall, MSGBOX_YESNO
