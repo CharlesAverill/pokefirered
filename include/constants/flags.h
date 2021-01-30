@@ -1436,7 +1436,8 @@
 #define FLAG_WORLD_MAP_MT_MOON_SUMMIT                               (SYS_FLAGS + 0xC8)
 #define FLAG_WORLD_MAP_HEMLOCK_FOREST                               (SYS_FLAGS + 0xC5)
 #define FLAG_WORLD_MAP_CHANSEY_GROVE                                (SYS_FLAGS + 0xC6)
-#define FLAG_WORLD_MAP_MT_SILVER                                (SYS_FLAGS + 0xC7)
+#define FLAG_WORLD_MAP_MT_SILVER                                    (SYS_FLAGS + 0xC7)
+#define FLAG_WORLD_MAP_TOHJO_FALLS                                  (SYS_FLAGS + 0xC8)
 
 #define FLAG_0x8D5 (SYS_FLAGS + 0xD5)
 #define FLAG_0x8D6 (SYS_FLAGS + 0xD6)
