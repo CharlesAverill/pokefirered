@@ -4968,6 +4968,18 @@
       "secondary_tileset": "gTileset_PewterCity",
       "border_filepath": "data/layouts/CherrygroveCity/border.bin",
       "blockdata_filepath": "data/layouts/CherrygroveCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE30",
+      "name": "Route30_Layout",
+      "width": 20,
+      "height": 54,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PalletTown",
+      "border_filepath": "data/layouts/Route30/border.bin",
+      "blockdata_filepath": "data/layouts/Route30/map.bin"
     }
   ]
 }

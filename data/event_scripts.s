@@ -1517,3 +1517,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/CherrygroveCity/scripts.inc"
 	.include "data/maps/CherrygroveCity/text.inc"
+
+	.include "data/maps/Route30/scripts.inc"
+	.include "data/maps/Route30/text.inc"
