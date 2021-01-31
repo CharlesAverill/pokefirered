@@ -18,6 +18,11 @@
       "direction": "right",
       "offset": 7,
       "map": "MAP_NEW_BARK_TOWN"
+    },
+    {
+      "direction": "left",
+      "offset": 5,
+      "map": "MAP_CHERRYGROVE_CITY"
     }
   ],
   "object_events": [

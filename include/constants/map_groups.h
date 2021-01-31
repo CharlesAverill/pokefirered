@@ -566,9 +566,10 @@
 #define MAP_MT_SILVER_LEFTOVERS_ROOM     (7 | (47 << 8))
 
 // Map Group 48
-#define MAP_NEW_BARK_TOWN (0 | (48 << 8))
-#define MAP_ROUTE29       (1 | (48 << 8))
-#define MAP_ROUTE27       (2 | (48 << 8))
+#define MAP_NEW_BARK_TOWN    (0 | (48 << 8))
+#define MAP_ROUTE29          (1 | (48 << 8))
+#define MAP_ROUTE27          (2 | (48 << 8))
+#define MAP_CHERRYGROVE_CITY (3 | (48 << 8))
 
 // Map Group 49
 #define MAP_NEW_BARK_TOWN_HOUSE1 (0 | (49 << 8))

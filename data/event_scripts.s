@@ -1514,3 +1514,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/TohjoFalls/scripts.inc"
 	.include "data/maps/TohjoFalls/text.inc"
+
+	.include "data/maps/CherrygroveCity/scripts.inc"
+	.include "data/maps/CherrygroveCity/text.inc"

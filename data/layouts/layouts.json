@@ -4937,7 +4937,7 @@
       "id": "LAYOUT_ROUTE27",
       "name": "Route27_Layout",
       "width": 80,
-      "height": 22,
+      "height": 27,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -4956,6 +4956,18 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/TohjoFalls/border.bin",
       "blockdata_filepath": "data/layouts/TohjoFalls/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHERRYGROVE_CITY",
+      "name": "CherrygroveCity_Layout",
+      "width": 57,
+      "height": 26,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PewterCity",
+      "border_filepath": "data/layouts/CherrygroveCity/border.bin",
+      "blockdata_filepath": "data/layouts/CherrygroveCity/map.bin"
     }
   ]
 }
