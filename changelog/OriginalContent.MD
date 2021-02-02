@@ -31,6 +31,9 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - Route 27, Tohjo Falls connect Route 21 to Johto
 - New Bark Town (Overworld)
 - Route 29 (Overworld)
+- Route 30 (Overworld)
+- Route 31 (Overworld)
+- Violet City (Overworld)
 ## Events
 - Mew Truck glitch from RBY is now a built-in event
 - MysticTicket

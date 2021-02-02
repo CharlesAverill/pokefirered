@@ -1523,3 +1523,9 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/Route31/scripts.inc"
 	.include "data/maps/Route31/text.inc"
+
+	.include "data/maps/VioletCity/scripts.inc"
+	.include "data/maps/VioletCity/text.inc"
+
+	.include "data/maps/Route31_Entrance/scripts.inc"
+	.include "data/maps/Route31_Entrance/text.inc"

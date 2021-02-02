@@ -572,6 +572,7 @@
 #define MAP_CHERRYGROVE_CITY (3 | (48 << 8))
 #define MAP_ROUTE30          (4 | (48 << 8))
 #define MAP_ROUTE31          (5 | (48 << 8))
+#define MAP_VIOLET_CITY      (6 | (48 << 8))
 
 // Map Group 49
 #define MAP_NEW_BARK_TOWN_HOUSE1 (0 | (49 << 8))
@@ -579,6 +580,53 @@
 // Map Group 50
 #define MAP_TOHJO_FALLS (0 | (50 << 8))
 
-#define MAP_GROUPS_COUNT 51
+// Map Group 51
+
+// Map Group 52
+
+// Map Group 53
+
+// Map Group 54
+
+// Map Group 55
+
+// Map Group 56
+
+// Map Group 57
+
+// Map Group 58
+
+// Map Group 59
+
+// Map Group 60
+
+// Map Group 61
+#define MAP_ROUTE31_ENTRANCE (0 | (61 << 8))
+
+// Map Group 62
+
+// Map Group 63
+
+// Map Group 64
+
+// Map Group 65
+
+// Map Group 66
+
+// Map Group 67
+
+// Map Group 68
+
+// Map Group 69
+
+// Map Group 70
+
+// Map Group 71
+
+// Map Group 72
+
+// Map Group 73
+
+#define MAP_GROUPS_COUNT 74
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

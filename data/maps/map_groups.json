@@ -51,7 +51,30 @@
     "gMapGroup47",
     "gMapGroup48",
     "gMapGroup49",
-    "gMapGroup50"
+    "gMapGroup50",
+    "gMapGroup51",
+    "gMapGroup52",
+    "gMapGroup53",
+    "gMapGroup54",
+    "gMapGroup55",
+    "gMapGroup56",
+    "gMapGroup57",
+    "gMapGroup58",
+    "gMapGroup59",
+    "gMapGroup60",
+    "gMapGroup61",
+    "gMapGroup62",
+    "gMapGroup63",
+    "gMapGroup64",
+    "gMapGroup65",
+    "gMapGroup66",
+    "gMapGroup67",
+    "gMapGroup68",
+    "gMapGroup69",
+    "gMapGroup70",
+    "gMapGroup71",
+    "gMapGroup72",
+    "gMapGroup73"
   ],
   "gMapGroup0": [
     "BattleColosseum_2P",
@@ -623,12 +646,82 @@
     "Route27",
     "CherrygroveCity",
     "Route30",
-    "Route31"
+    "Route31",
+    "VioletCity"
   ],
   "gMapGroup49": [
     "NewBarkTown_House1"
   ],
   "gMapGroup50": [
     "TohjoFalls"
+  ],
+  "gMapGroup51": [
+
+  ],
+  "gMapGroup52": [
+
+  ],
+  "gMapGroup53": [
+
+  ],
+  "gMapGroup54": [
+
+  ],
+  "gMapGroup55": [
+
+  ],
+  "gMapGroup56": [
+
+  ],
+  "gMapGroup57": [
+
+  ],
+  "gMapGroup58": [
+
+  ],
+  "gMapGroup59": [
+
+  ],
+  "gMapGroup60": [
+
+  ],
+  "gMapGroup61": [
+    "Route31_Entrance"
+  ],
+  "gMapGroup62": [
+
+  ],
+  "gMapGroup63": [
+
+  ],
+  "gMapGroup64": [
+
+  ],
+  "gMapGroup65": [
+
+  ],
+  "gMapGroup66": [
+
+  ],
+  "gMapGroup67": [
+
+  ],
+  "gMapGroup68": [
+
+  ],
+  "gMapGroup69": [
+
+  ],
+  "gMapGroup70": [
+
+  ],
+  "gMapGroup71": [
+
+  ],
+  "gMapGroup72": [
+
+  ],
+  "gMapGroup73": [
+
   ]
 }
