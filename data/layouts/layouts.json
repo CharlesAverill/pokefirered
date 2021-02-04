@@ -4977,7 +4977,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_PalletTown",
+      "secondary_tileset": "gTileset_PewterCity",
       "border_filepath": "data/layouts/Route30/border.bin",
       "blockdata_filepath": "data/layouts/Route30/map.bin"
     },
@@ -4997,7 +4997,7 @@
       "id": "LAYOUT_VIOLET_CITY",
       "name": "VioletCity_Layout",
       "width": 60,
-      "height": 36,
+      "height": 42,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -5016,6 +5016,18 @@
       "secondary_tileset": "gTileset_GenericBuilding2",
       "border_filepath": "data/layouts/Route31_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/Route31_Entrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE32",
+      "name": "Route32_Layout",
+      "width": 20,
+      "height": 120,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PewterCity",
+      "border_filepath": "data/layouts/Route32/border.bin",
+      "blockdata_filepath": "data/layouts/Route32/map.bin"
     }
   ]
 }

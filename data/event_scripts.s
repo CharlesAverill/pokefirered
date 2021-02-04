@@ -1529,3 +1529,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/Route31_Entrance/scripts.inc"
 	.include "data/maps/Route31_Entrance/text.inc"
+
+	.include "data/maps/Route32/scripts.inc"
+	.include "data/maps/Route32/text.inc"

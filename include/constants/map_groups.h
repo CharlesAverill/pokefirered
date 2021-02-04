@@ -573,6 +573,7 @@
 #define MAP_ROUTE30          (4 | (48 << 8))
 #define MAP_ROUTE31          (5 | (48 << 8))
 #define MAP_VIOLET_CITY      (6 | (48 << 8))
+#define MAP_ROUTE32          (7 | (48 << 8))
 
 // Map Group 49
 #define MAP_NEW_BARK_TOWN_HOUSE1 (0 | (49 << 8))
