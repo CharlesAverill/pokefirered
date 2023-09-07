@@ -605,6 +605,7 @@
 #define MAP_ROUTE31_ENTRANCE (0 | (61 << 8))
 
 // Map Group 62
+#define MAP_UNION_CAVE_1F (0 | (62 << 8))
 
 // Map Group 63
 

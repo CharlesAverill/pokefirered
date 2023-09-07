@@ -32,6 +32,7 @@ enum {
     REGIONMAP_SEVII123,
     REGIONMAP_SEVII45,
     REGIONMAP_SEVII67,
+    REGIONMAP_JOHTO,
     REGIONMAP_COUNT
 };
 
@@ -1592,6 +1593,9 @@ static void InitRegionMapType(void)
     j = REGIONMAP_KANTO;
     if(gMapHeader.regionMapSectionId >= MAPSECS_CUSTOM_MAPS && gMapHeader.regionMapSectionId < MAPSEC_NONE){
         region = REGIONMAP_KANTO; // TODO: Going to need to add new maps later
+    }
+    else if(gMapHeader.regionMapSectionId <= MAPSECS_KANTO){
+        region = REGIONMAP_JOHTO;
     }
     else if (gMapHeader.regionMapSectionId >= MAPSECS_SEVII_123)
     {

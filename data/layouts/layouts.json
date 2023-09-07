@@ -5028,6 +5028,18 @@
       "secondary_tileset": "gTileset_PewterCity",
       "border_filepath": "data/layouts/Route32/border.bin",
       "blockdata_filepath": "data/layouts/Route32/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNION_CAVE_1F",
+      "name": "UnionCave_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/UnionCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/UnionCave_1F/map.bin"
     }
   ]
 }

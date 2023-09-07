@@ -1532,3 +1532,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/Route32/scripts.inc"
 	.include "data/maps/Route32/text.inc"
+
+	.include "data/maps/UnionCave_1F/scripts.inc"
+	.include "data/maps/UnionCave_1F/text.inc"

@@ -226,6 +226,8 @@
 #define MAPSEC_MT_SILVER                    0xD6
 #define MAPSEC_ROUTE_51                     0xD7
 
+#define MAPSECS_JOHTO                       0xD8
+
 #define MAPSEC_NEW_BARK_TOWN                0xD8
 #define MAPSEC_CHERRYGROVE_CITY             0xD9
 #define MAPSEC_VIOLET_CITY                  0xDA
@@ -259,9 +261,10 @@
 #define MAPSEC_ROUTE_48                     0xF6
 #define MAPSEC_ROUTE_27                     0xF7
 #define MAPSEC_TOHJO_FALLS                  0xF8
+#define MAPSEC_UNION_CAVE                   0xF9
 
-#define MAPSEC_NONE                         0xF9
-#define MAPSEC_COUNT                        0xFA
+#define MAPSEC_NONE                         0xFA
+#define MAPSEC_COUNT                        0xFB
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
