@@ -11,5 +11,5 @@ MtMoonSummit_Entrance_Hiker::
 MtMoonSummit_Entrance_Hiker_Text::
     .string "It took me a long time, but\n"
     .string "I finally carved a path to\l"
-    .string "the summit with my Onix. I\l"
-    .string "hope you enjoy the summit!$"
+    .string "the summit with my Onix.\l"
+    .string "I hope you like the summit!$"
