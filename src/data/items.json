@@ -4579,7 +4579,7 @@
     {
       "english": "ROOT FOSSIL",
       "itemId": "ITEM_ROOT_FOSSIL",
-      "price": 10000,
+      "price": 9999,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A fossil of an ancient, seafloor-\\ndwelling POKéMON. It appears to be\\npart of a plant root.",
@@ -4595,7 +4595,7 @@
     {
       "english": "CLAW FOSSIL",
       "itemId": "ITEM_CLAW_FOSSIL",
-      "price": 10000,
+      "price": 9999,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A fossil of an ancient, seafloor-\\ndwelling POKéMON. It appears to be\\npart of a claw.",
@@ -5725,7 +5725,7 @@
     {
       "english": "OLD AMBER",
       "itemId": "ITEM_OLD_AMBER",
-      "price": 10000,
+      "price": 9999,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A piece of amber that contains\\nthe genes of an ancient POKéMON.\\nIt is clear with a reddish tint.",
@@ -5773,7 +5773,7 @@
     {
       "english": "HELIX FOSSIL",
       "itemId": "ITEM_HELIX_FOSSIL",
-      "price": 10000,
+      "price": 9999,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A fossil of an ancient, seafloor-\\ndwelling POKéMON. It appears to be\\npart of a seashell.",
@@ -5789,7 +5789,7 @@
     {
       "english": "DOME FOSSIL",
       "itemId": "ITEM_DOME_FOSSIL",
-      "price": 10000,
+      "price": 9999,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A fossil of an ancient, seafloor-\\ndwelling POKéMON. It appears to be\\npart of a shell.",
