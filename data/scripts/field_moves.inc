@@ -127,7 +127,7 @@ EventScript_StrengthBoulder:: @ 81BE11D
 	lockall
 	goto_if_unset FLAG_BADGE04_GET, EventScript_CantMoveBoulder
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_AlreadyUsedStrength
-	goto_if_unset FLAG_GOT_HM06, EventScript_CantMoveBoulder
+	goto_if_unset FLAG_GOT_HM04, EventScript_CantMoveBoulder
 	setfieldeffectarg 0, VAR_RESULT
 	msgbox Text_UseStrength, MSGBOX_YESNO
 	compare VAR_RESULT, NO
