@@ -30,7 +30,7 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - Route 50: between routes 2 and 16
 - Chansey Grove: Route 50
 - Mt. Silver, Route 51: Through the West exit of Route 23's badge check building
-## Johto Progress
+## Johto Progress (`johto` branch)
 - Route 27, Tohjo Falls connect Route 21 to Johto
 - New Bark Town (Overworld)
 - Route 29 (Overworld)
