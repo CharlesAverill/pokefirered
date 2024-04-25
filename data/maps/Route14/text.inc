@@ -6,8 +6,8 @@ Route14_Text_CarterDefeat:: @ 8185E81
     .string "Not good enough quite yet.$"
 
 Route14_Text_CarterPostBattle:: @ 8185E9C
-    .string "You have some HMs, right? POKéMON\n"
-    .string "can't forget those moves easily.$"
+    .string "You have some HMs, right?\n"
+    .string "They're so useful!$"
 
 Route14_Text_MitchIntro:: @ 8185EDF
     .string "My bird POKéMON should be ready\n"

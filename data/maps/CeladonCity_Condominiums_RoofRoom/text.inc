@@ -46,7 +46,6 @@ CeladonCity_Condominiums_RoofRoom_Text_PamphletOnTMs:: @ 81967E3
     .string "It's a pamphlet on TMs.\p"
     .string "… …\p"
     .string "There are fifty TMs in all.\p"
-    .string "There are also seven HMs that\n"
-    .string "can be used repeatedly.\p"
+    .string "There are also seven HMs.\n"
     .string "SILPH CO.$"
 

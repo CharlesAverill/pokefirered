@@ -804,8 +804,7 @@ Help_Text_HowToUseHM:: @ 81B6525
 	.string "   “BAG.”\n"
 	.string "{CIRCLE_3} “OPEN” the TM CASE.\n"
 	.string "{CIRCLE_4} Select and “USE” an HM.\n"
-	.string "{CIRCLE_5} Select a POKéMON that can learn it.\n"
-	.string "HMs are hard to remove, so be careful!$"
+	.string "{CIRCLE_5} Select a POKéMON that can learn it.$"
 
 Help_Text_HowToUseMoveOutsideOfBattle:: @ 81B65E7
 	.string "{CIRCLE_1} Open the MENU.\n"
@@ -1445,10 +1444,7 @@ Help_Text_DefineHM:: @ 81B9560
 	.string "An HM (Hidden Machine) is a device used\n"
 	.string "to teach a HIDDEN move to a POKéMON.\l"
 	.string "A HIDDEN move can be taught only to\l"
-	.string "those POKéMON capable of using it.\l"
-	.string "Unlike a TM, an HM can be used over\l"
-	.string "and over. A HIDDEN move can be tough\l"
-	.string "for a POKéMON to forget.$"
+	.string "those POKéMON capable of using it.$"
 
 Help_Text_DefineHMMove:: @ 81B9656
 	.string "HIDDEN moves are those that are\n"

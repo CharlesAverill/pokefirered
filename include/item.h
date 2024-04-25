@@ -1,5 +1,5 @@
-#ifndef GUARD_ITEM_H
-#define GUARD_ITEM_H
+#ifndef ITEM
+#define ITEM
 
 #include "global.h"
 
@@ -83,4 +83,4 @@ bool8 CheckHasAtLeastOneBerry(void);
 
 void ItemId_GetHoldEffectParam_Script();
 
-#endif // GUARD_ITEM_H
+#endif /* ITEM */

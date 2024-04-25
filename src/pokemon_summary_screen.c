@@ -3742,12 +3742,12 @@ static void sub_8139328(struct Pokemon * mon)
 
 static u8 sub_8139388(void)
 {
-    u16 move;
+    // u16 move;
 
-    move = sub_8138BEC(&sMonSummaryScreen->currentMon, sUnknown_203B16D);
+    // move = sub_8138BEC(&sMonSummaryScreen->currentMon, sUnknown_203B16D);
 
-    if (IsMoveHm(move) == TRUE && sMonSummaryScreen->mode != PSS_MODE_FORGET_MOVE)
-        return FALSE;
+    // if (IsMoveHm(move) == TRUE && sMonSummaryScreen->mode != PSS_MODE_FORGET_MOVE)
+    //     return FALSE;
 
     return TRUE;
 }
