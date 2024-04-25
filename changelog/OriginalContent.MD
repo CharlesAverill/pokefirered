@@ -29,6 +29,11 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - Mt. Moon Summit: next  to Mt. Moon exit on Route 4
 - Route 50: between routes 2 and 16
 - Chansey Grove: Route 50
+    <details>
+    <summary>How to access</summary>
+    <ul><li>Hall of Fame</li>
+    <li>Catch a Chansey</li>
+    </details>
 - Mt. Silver, Route 51: Through the West exit of Route 23's badge check building
 ## Johto Progress (`johto` branch)
 - Route 27, Tohjo Falls connect Route 21 to Johto

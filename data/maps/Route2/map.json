@@ -220,7 +220,7 @@
       "y": 45,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_EAST_BUILDING",
-      "dest_warp_id": 5
+      "dest_warp_id": 4
     }
   ],
   "coord_events": [

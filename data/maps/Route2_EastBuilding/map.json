@@ -86,6 +86,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
       "dest_warp_id": 10
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2",
+      "dest_warp_id": 10
     }
   ],
   "coord_events": [
