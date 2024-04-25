@@ -217,8 +217,9 @@ OneIsland_PokemonCenter_1F_EventScript_Celio:: @ 8170EC5
 	goto_if_set FLAG_GOT_RUBY, OneIsland_PokemonCenter_1F_EventScript_GiveCelioRuby
 	compare VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 4
 	goto_if_eq OneIsland_PokemonCenter_1F_EventScript_CelioWaitingForRuby
-	specialvar VAR_RESULT, IsNationalPokedexEnabled
-	compare VAR_RESULT, TRUE
+	@ specialvar VAR_RESULT, IsNationalPokedexEnabled
+	@ compare VAR_RESULT, TRUE
+	goto_if_set FLAG_IS_CHAMPION OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby
 	goto_if_eq OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby
 	compare VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 3
 	goto_if_eq OneIsland_PokemonCenter_1F_EventScript_CelioPlayerMissingNationalDex

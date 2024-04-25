@@ -1,5 +1,5 @@
-#ifndef GUARD_CONSTANTS_FLAGS_H
-#define GUARD_CONSTANTS_FLAGS_H
+#ifndef FLAGS
+#define FLAGS
 
 #include "constants/trainers.h"
 
@@ -1463,4 +1463,4 @@
 #define FLAG_SPECIAL_FLAG_0x4003    0x4003
 #define FLAG_SPECIAL_FLAG_0x4004    0x4004
 
-#endif // GUARD_CONSTANTS_FLAGS_H
+#endif /* FLAGS */
