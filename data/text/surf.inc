@@ -1,5 +1,5 @@
 Text_WantToSurf:: @ 81A556E
-	.string "The water is dyed a deep blue…\n"
+	.string "The water takes on a deep blue…\n"
 	.string "Would you like to SURF?$"
 
 Text_UsedSurf:: @ 81A55A5
