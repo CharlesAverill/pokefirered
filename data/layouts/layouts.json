@@ -4420,7 +4420,7 @@
     {
       "id": "LAYOUT_DIGLETTS_CAVE_ROCK_PEAK_CHAMBER",
       "name": "DiglettsCave_RockPeakChamber_Layout",
-      "width": 31,
+      "width": 39,
       "height": 56,
       "border_width": 2,
       "border_height": 2,
@@ -4540,7 +4540,7 @@
     {
       "id": "LAYOUT_FOUR_ISLAND_ICEFALL_CAVE_ICEBERG_CHAMBER",
       "name": "FourIsland_IcefallCave_IcebergChamber_Layout",
-      "width": 31,
+      "width": 39,
       "height": 55,
       "border_width": 2,
       "border_height": 2,
@@ -4588,7 +4588,7 @@
     {
       "id": "LAYOUT_DRAGON_GATE_CAVERN_IRON_CHAMBER",
       "name": "DragonGateCavern_IronChamber_Layout",
-      "width": 31,
+      "width": 39,
       "height": 56,
       "border_width": 2,
       "border_height": 2,

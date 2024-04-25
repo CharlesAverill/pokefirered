@@ -16,7 +16,7 @@ FourIsland_House1_AveryWeak_Text::
     .string "Hehehe weak{PLAYER} weak{PLAYER}…$"
 
 FourIsland_House1_MatthewIntro::
-    .string "Hey there! I'm Matthew,\n"
+    .string "Hey there! I'm Charles,\n"
     .string "the creator of this hack!\l"
     .string "These are my friends Max and\l"
     .string "Avery. We were stuck in\l"

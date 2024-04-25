@@ -18,7 +18,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_REGICE",
       "in_connection": false,
-      "x": 15,
+      "x": 19,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -32,7 +32,7 @@
   ],
   "warp_events": [
     {
-      "x": 15,
+      "x": 19,
       "y": 52,
       "elevation": 0,
       "dest_map": "MAP_FOUR_ISLAND_ICEFALL_CAVE_BACK",
