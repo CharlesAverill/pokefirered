@@ -69,3 +69,9 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Mt. Moon Summit
   - Cleffa, Clefairy, Clefable, Mr. Mime (Grass)
   - Magikarp, Feebas, Barboach (Fishing)
+- Celadon Forest
+  - Slakoth, Skitty, Roselia, Volbeat, Gulpin, Cacnea, Beedrill, Butterfree, Tropius, Kecleon, Zangoose, Seviper (Grass)
+  - Magikarp, Feebas, Surskit, Barboach, Luvdisc, Dratini (Fishing)
+  - Surskit, Barboach, Luvdisc, Dratini (Surfing)
+- Hemlock Forest
+  - Oddish, Bellsprout, Tangela, Gloom, Weepinbell, Nuzleaf, Parasect, Nincada, Butterfree, Beedrill, Masquerain, Ariados (Grass)

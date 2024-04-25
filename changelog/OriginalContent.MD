@@ -3,7 +3,9 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 ## Features
 - Physical/Special split
 - Infinite TM Use
-- Summon HM users (No need to teach HMs besides Fly & Flash, but these aren't required for progression)
+- Summon HM users (No need to teach HMs)
+    - Fly and Flash require a party member that can learn the move, however they don't need to be taught it. They will automatically be able to use the move when selected in the party menu
+- HMs can be forgotten
 - Inside Running
 - Trainer Class-based PokeBalls
 - "Use another repel" prompt
@@ -15,6 +17,7 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - Base stats / learnsets for multiple Pokemon have been upgraded
 - Moves have been updated to Generation VII standards
 - Sell Pokemon to Rocket Grunts in Saffron City after beating Giovanni
+- Trades are more difficult but guaranteed shiny
 ## Locations
 - Dragon Gate: in between Routes 10 and 25
 - Cinnabar Volcano: beneath Cinnabar Gym
@@ -22,7 +25,7 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - Deepwater Cave: Route 49
 - Hemlock Town: East of Route 49
 - Hemlock Forest: South of Hemlock Town
-- Celadon Forest: above Celadon CIty
+- Celadon Forest: above Celadon City
 - Mt. Moon Summit: next  to Mt. Moon exit on Route 4
 - Route 50: between routes 2 and 16
 - Chansey Grove: Route 50
