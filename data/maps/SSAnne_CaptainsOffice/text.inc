@@ -19,7 +19,7 @@ SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut:: @ 81736A6
     .string "I know! You can have this!\n"
     .string "This HIDDEN MACHINE!\p"
     .string "HIDDEN MACHINES allow you to\n"
-    .string "summon POKéMON from your\n"
+    .string "summon Pokémon from your\n"
     .string "environment to help you out!\p"
     .string "If you have badges, you can\n"
     .string "summon a CUT user anytime!$"
@@ -29,7 +29,7 @@ SSAnne_CaptainsOffice_Text_ObtainedHM01FromCaptain:: @ 81737AF
     .string "from the CAPTAIN!$"
 
 SSAnne_CaptainsOffice_Text_ExplainCut:: @ 81737D2
-    .string "Using CUT, you can summon POKéMON\n"
+    .string "Using CUT, you can summon Pokémon\n"
     .string "to chop down small trees.\p"
     .string "Why not try it with the trees\n"
     .string "around VERMILION CITY?$"

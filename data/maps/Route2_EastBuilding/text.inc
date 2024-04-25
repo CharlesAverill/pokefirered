@@ -24,9 +24,11 @@ Route2_EastBuilding_Text_ExplainHM05:: @ 819D7C1
     .string "HM05 contains the hidden move\n"
     .string "FLASH.\p"
     .string "FLASH lights up even the darkest\n"
-    .string "of caves and dungeons.$"
+    .string "of caves and dungeons.\p"
+    .string "Any Pokémon that can learn FLASH\n"
+    .string "can use it without being taught!$"
 
 Route2_EastBuilding_Text_CanGetThroughRockTunnel:: @ 819D81E
-    .string "Once a Pokémon learns FLASH, you\n"
+    .string "Once a Pokémon uses FLASH, you\n"
     .string "can get through ROCK TUNNEL.$"
 
