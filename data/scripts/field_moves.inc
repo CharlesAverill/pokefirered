@@ -190,11 +190,12 @@ EventScript_Waterfall:: @ 81BE2B7
 	lockall
 	goto_if_unset FLAG_HIDE_FOUR_ISLAND_ICEFALL_CAVE_1F_HM07, EventScript_WaterCrashingDown
 	getspeciesname 0, SPECIES_GYARADOS
+	getmovename 1, MOVE_WATERFALL
 	setfieldeffectarg 0, VAR_RESULT
 	msgbox Text_UseWaterfall, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_EndWaterfall
-	msgbox Text_MonUsedWaterfall
+	msgbox Text_MonUsedMove
 	setvar VAR_0x8000, SPECIES_GYARADOS
 	setflag FLAG_CUSTOM_POKE_HM
 	dofieldeffect FLDEFF_USE_WATERFALL
