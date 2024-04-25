@@ -91,7 +91,7 @@ DeepwaterCave_7F_ClearFlags::
     clearflag FLAG_TEMP_4
     clearflag FLAG_TEMP_5
     clearflag FLAG_TEMP_6
-    releaseall
+    warp MAP_DEEPWATER_CAVE_1F, 255, 7, 7
     end
 
 DeepwaterCave_7F_BoulderMove::

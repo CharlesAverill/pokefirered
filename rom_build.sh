@@ -1,3 +1,1 @@
-make -j$(nproc)
-zip build/pokefirered.zip pokefirered.gba changelog/*
-mgba-qt pokefirered.gba
+make -j$(nproc) && zip build/pokefirered.zip pokefirered.gba changelog/* && mgba-qt pokefirered.gba

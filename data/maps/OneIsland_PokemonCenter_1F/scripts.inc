@@ -221,7 +221,7 @@ OneIsland_PokemonCenter_1F_EventScript_Celio:: @ 8170EC5
 	@ specialvar VAR_RESULT, IsNationalPokedexEnabled
 	@ compare VAR_RESULT, TRUE
 	@ goto_if_eq OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby
-	goto_if_set FLAG_SYS_GAME_CLEAR OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby
+	goto_if_set FLAG_SYS_GAME_CLEAR, OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby
 	compare VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 3
 	goto_if_eq OneIsland_PokemonCenter_1F_EventScript_CelioPlayerMissingNationalDex
 	msgbox OneIsland_PokemonCenter_1F_Text_SorryForBeingPoorHost
