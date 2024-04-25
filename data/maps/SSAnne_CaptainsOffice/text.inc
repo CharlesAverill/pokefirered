@@ -18,16 +18,19 @@ SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut:: @ 81736A6
     .string "technique if I weren't so ill…\p"
     .string "I know! You can have this!\n"
     .string "This HIDDEN MACHINE!\p"
-    .string "Teach CUT to your POKéMON, and\n"
-    .string "you can see it CUT anytime!$"
+    .string "HIDDEN MACHINES allow you to\n"
+    .string "summon POKéMON from your\n"
+    .string "environment to help you out!\p"
+    .string "If you have badges, you can\n"
+    .string "summon a CUT user anytime!$"
 
 SSAnne_CaptainsOffice_Text_ObtainedHM01FromCaptain:: @ 81737AF
     .string "{PLAYER} obtained HM01\n"
     .string "from the CAPTAIN!$"
 
 SSAnne_CaptainsOffice_Text_ExplainCut:: @ 81737D2
-    .string "Using CUT, you can chop down\n"
-    .string "small trees.\p"
+    .string "Using CUT, you can summon POKéMON\n"
+    .string "to chop down small trees.\p"
     .string "Why not try it with the trees\n"
     .string "around VERMILION CITY?$"
 
