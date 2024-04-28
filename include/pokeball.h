@@ -1,5 +1,5 @@
-#ifndef GUARD_POKEBALL_H
-#define GUARD_POKEBALL_H
+#ifndef POKEBALL
+#define POKEBALL
 
 #include "global.h"
 
@@ -17,6 +17,7 @@ enum
     BALL_TIMER,
     BALL_LUXURY,
     BALL_PREMIER,
+    BALL_CHERISH,
     POKEBALL_COUNT
 };
 
@@ -36,4 +37,4 @@ void FreeBallGfx(u8 ballId);
 void sub_804BD94(u8 battler);
 void DestroySpriteAndFreeResources2(struct Sprite *sprite);
 
-#endif // GUARD_POKEBALL_H
+#endif /* POKEBALL */

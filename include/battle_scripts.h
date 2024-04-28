@@ -1,5 +1,5 @@
-#ifndef GUARD_BATTLE_SCRIPTS_H
-#define GUARD_BATTLE_SCRIPTS_H
+#ifndef BATTLE_SCRIPTS
+#define BATTLE_SCRIPTS
 
 #include "global.h"
 
@@ -236,4 +236,4 @@ extern const u8 *const gBattlescriptsForRunningByItem[];
 extern const u8 *const gBattlescriptsForUsingItem[];
 extern const u8 *const gBattlescriptsForSafariActions[];
 
-#endif // GUARD_BATTLE_SCRIPTS_H
+#endif /* BATTLE_SCRIPTS */

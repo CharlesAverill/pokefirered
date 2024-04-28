@@ -1,5 +1,5 @@
-#ifndef GUARD_ITEM_MENU_ICONS
-#define GUARD_ITEM_MENU_ICONS
+#ifndef ITEM_MENU_ICONS
+#define ITEM_MENU_ICONS
 
 #include "global.h"
 
@@ -25,4 +25,4 @@ void sub_8098580(void);
 const void * GetItemIconGfxPtr(u16 itemId, u8 ptrId);
 void CreateBagOrSatchelSprite(u8 animNum);
 
-#endif // GUARD_ITEM_MENU_ICONS
+#endif /* ITEM_MENU_ICONS */

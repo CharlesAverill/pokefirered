@@ -209,6 +209,22 @@
       "secondaryId": 11
     },
     {
+      "english": "CHERISH BALL",
+      "itemId": "ITEM_CHERISH_BALL",
+      "price": 1000,
+      "holdEffect": "HOLD_EFFECT_NONE",
+      "holdEffectParam": 0,
+      "description_english": "A quite rare BALL that has been\\ncrafted in order to commemorate\\na special occasion of some sort.",
+      "importance": 0,
+      "exitsBagOnUse": 0,
+      "pocket": "POCKET_POKE_BALLS",
+      "type": 12,
+      "fieldUseFunc": "NULL",
+      "battleUsage": 2,
+      "battleUseFunc": "BattleUseFunc_PokeBallEtc",
+      "secondaryId": 12
+    },
+    {
       "english": "POTION",
       "itemId": "ITEM_POTION",
       "price": 300,

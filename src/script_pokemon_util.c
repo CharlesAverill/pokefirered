@@ -297,7 +297,7 @@ int ScriptGetMonValue(u16 index){
 
     switch(GetMonData(mon, MON_DATA_POKEBALL)){
         case ITEM_MASTER_BALL:
-            ballValue = 100;
+            ballValue = 200;
             break;
         case ITEM_POKE_BALL:
             ballValue = 20;
@@ -329,6 +329,8 @@ int ScriptGetMonValue(u16 index){
         case ITEM_PREMIER_BALL:
             ballValue = 85;
             break;
+        case ITEM_CHERISH_BALL:
+            ballValue = 95;
         default:
             ballValue = 20;
             break;

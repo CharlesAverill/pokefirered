@@ -675,7 +675,7 @@ MtSilver_LeftoversRoom_EventScript_ItemLeftovers::
 	end
 
 MtSilver_MoltresChamber_EventScript_ItemUltraBall::
-	finditem ITEM_ULTRA_BALL
+	finditem ITEM_MASTER_BALL
 	end
 
 MtSilver_1F_EventScript_ItemFullRestore::
