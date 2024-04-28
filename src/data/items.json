@@ -1009,22 +1009,6 @@
       "secondaryId": 0
     },
     {
-      "english": "????????",
-      "itemId": "ITEM_NONE",
-      "price": 0,
-      "holdEffect": "HOLD_EFFECT_NONE",
-      "holdEffectParam": 0,
-      "description_english": "?????",
-      "importance": 0,
-      "exitsBagOnUse": 0,
-      "pocket": "POCKET_ITEMS",
-      "type": 4,
-      "fieldUseFunc": "FieldUseFunc_OakStopsYou",
-      "battleUsage": 0,
-      "battleUseFunc": "NULL",
-      "secondaryId": 0
-    },
-    {
       "english": "HP UP",
       "itemId": "ITEM_HP_UP",
       "price": 9800,
