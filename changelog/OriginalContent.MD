@@ -18,6 +18,8 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - Moves have been updated to Generation VII standards
 - Sell Pokemon to Rocket Grunts in Saffron City after beating Giovanni
 - Trades are more difficult but guaranteed shiny
+- More PokeBalls
+    - Cherish
 ## Locations
 - Dragon Gate: in between Routes 10 and 25
 - Cinnabar Volcano: beneath Cinnabar Gym
