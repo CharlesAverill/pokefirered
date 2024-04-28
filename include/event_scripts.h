@@ -1165,6 +1165,7 @@ extern const u8 EventScript_TestSignpostMsg[];
 
 // new_game
 extern const u8 EventScript_ResetAllMapFlags[];
+extern const u8 EventScript_End[];
 
 // player_pc
 extern const u8 EventScript_PalletTown_PlayersHouse_2F_ShutDownPC[];

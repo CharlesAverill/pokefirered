@@ -57,3 +57,60 @@ PalletTown_PlayersHouse_1F_EventScript_TVScreenMale:: @ 8168C91
 PalletTown_PlayersHouse_1F_EventScript_TVScreenFemale:: @ 8168C9A
 	msgbox PalletTown_PlayersHouse_1F_Text_MovieOnTVGirlOnBrickRoad
 	return
+
+PalletTown_PlayersHouse_1F_EventScript_MomShoes::
+	setvar VAR_TEMP_0, 1
+	goto_if_unset FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY, EventScript_Return
+	clearflag FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY
+	textcolor 1
+	lock
+	applymovement 1, Movement_FaceDown
+	waitmovement 0
+	playse SE_PIN
+	msgbox MomSaysWait
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_GiveShoes_Mom
+	waitmovement 0
+	msgbox MomOffersShoes
+	closemessage
+	textcolor 3
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message PlayerGotShoes
+	waitmessage
+	waitfanfare
+	msgbox PewterCity_Text_SwitchedShoesWithRunningShoes
+	closemessage
+	textcolor 1
+	msgbox MomSaysGoodLuck
+	closemessage
+	applymovement 1, Movement_FaceLeft
+	waitmovement 0
+	setflag FLAG_SYS_B_DASH
+	release
+	end
+
+MomSaysWait::
+	.string "MOM: {PLAYER}!\n"
+	.string "Wait up!$"
+
+MomOffersShoes::
+	.string "MOM: Before you go, I got you\n"
+	.string "these nice RUNNING SHOES!\p"
+	.string "Why don't you try them on?$"
+
+PlayerGotShoes:: 
+    .string "{PLAYER} received the\n"
+    .string "RUNNING SHOES from MOM.$"
+
+MomSaysGoodLuck::
+	.string "Be safe {PLAYER}!$"
+
+Movement_GiveShoes_Mom::
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	step_end

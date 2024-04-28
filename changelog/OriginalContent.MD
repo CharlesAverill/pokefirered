@@ -7,6 +7,7 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - Summon HM users (No need to teach HMs)
     - Fly and Flash require a party member that can learn the move, however they don't need to be taught it. They will automatically be able to use the move when selected in the party menu
 - HMs can be forgotten
+- Early Running Shoes
 - Inside Running
 - Trainer Class-based PokeBalls
 - "Use another repel" prompt

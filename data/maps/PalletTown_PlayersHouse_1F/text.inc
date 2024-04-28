@@ -22,16 +22,15 @@ PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare:: @ 818D3F8
     .string "Take care now!$"
 
 PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad:: @ 818D43E
-    .string "There's a movie on TV.\n"
-    .string "Four boys are walking on railroad\l"
-    .string "tracks.\p"
-    .string "…I better go, too.$"
+    .string "There's a show on TV.\n"
+    .string "Four men are standing in an alley.\p"
+    .string "…Yup.$"
 
 PalletTown_PlayersHouse_1F_Text_MovieOnTVGirlOnBrickRoad:: @ 818D492
-    .string "There's a movie on TV.\n"
-    .string "A girl with her hair in pigtails is\l"
-    .string "walking up a brick road.\p"
-    .string "…I better go, too.$"
+    .string "There's a show on TV.\n"
+    .string "Four elderly women are sharing\n"
+    .string "a home together in Miami.\p"
+    .string "…I wish I could stay to watch.$"
 
 PalletTown_PlayersHouse_1F_Text_OopsWrongSide:: @ 818D4F9
     .string "Oops, wrong side…$"

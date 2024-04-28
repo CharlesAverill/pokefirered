@@ -1,5 +1,5 @@
-#ifndef GUARD_TEXT_H
-#define GUARD_TEXT_H
+#ifndef TEXT
+#define TEXT
 
 #include "global.h"
 
@@ -308,4 +308,4 @@ u8 CreateTextCursorSpriteForOakSpeech(u8 sheetId, u16 x, u16 y, u8 priority, u8 
 void sub_8006398(u8 spriteId);
 s32 GetGlyphWidthFont6(u16 font_type, bool32 isJapanese);
 
-#endif // GUARD_TEXT_H
+#endif /* TEXT */
