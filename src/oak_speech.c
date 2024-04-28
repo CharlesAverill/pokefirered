@@ -32,6 +32,7 @@ struct OakSpeechResources
     u8 filler_0020[0x1800];
     u8 bg2TilemapBuffer[0x400];
     u8 bg1TilemapBuffer[0x800];
+    u16 oak_species;
 }; //size=0x2420
 
 EWRAM_DATA struct OakSpeechResources * sOakSpeechResources = NULL;
@@ -113,6 +114,7 @@ static const u16 sOakSpeechGfx_RedPal[] = INCBIN_U16("graphics/oak_speech/red_pa
 static const u32 sOakSpeechGfx_RedPic[] = INCBIN_U32("graphics/oak_speech/red_pic.8bpp.lz");
 static const u16 sOakSpeechGfx_OakPal[] = INCBIN_U16("graphics/oak_speech/oak_pal.gbapal");
 static const u32 sOakSpeechGfx_OakPic[] = INCBIN_U32("graphics/oak_speech/oak_pic.8bpp.lz");
+// static const u32 sOakSpeechGfx_OakPic[] = INCBIN_U32("graphics/fame_checker/bill.8bpp.lz");
 static const u16 sOakSpeechGfx_RivalPal[] = INCBIN_U16("graphics/oak_speech/rival_pal.gbapal");
 static const u32 sOakSpeechGfx_RivalPic[] = INCBIN_U32("graphics/oak_speech/rival_pic.8bpp.lz");
 static const u16 sOakSpeech_GrassPlatformPalette[] = INCBIN_U16("graphics/oak_speech/grass_platform_palette.gbapal");
@@ -507,6 +509,7 @@ static void Task_OaksSpeech1(u8 taskId)
         break;
     case 1:
         sOakSpeechResources = AllocZeroed(sizeof(*sOakSpeechResources));
+        sOakSpeechResources->oak_species = Random() % NUM_SPECIES;
         OakSpeechNidoranFSetup(1, 1);
         break;
     case 2:
@@ -964,7 +967,7 @@ static void Task_OakSpeech13(u8 taskId)
         if (gTasks[taskId].data[3] == 32)
         {
             OaksSpeechPrintMessage(gOakText_WorldInhabited2, sOakSpeechResources->textSpeed);
-            PlayCry1(SPECIES_TANGELA, 0);
+            PlayCry1(sOakSpeechResources->oak_species, 0);
         }
     }
 }
@@ -1619,9 +1622,9 @@ static void CreateNidoranFSprite(u8 taskId)
 {
     u8 spriteId;
 
-    DecompressPicFromTable(&gMonFrontPicTable[SPECIES_TANGELA], OakSpeechNidoranFGetBuffer(0), SPECIES_TANGELA);
-    LoadCompressedSpritePaletteUsingHeap(&gMonPaletteTable[SPECIES_TANGELA]);
-    SetMultiuseSpriteTemplateToPokemon(SPECIES_TANGELA, 0);
+    DecompressPicFromTable(&gMonFrontPicTable[sOakSpeechResources->oak_species], OakSpeechNidoranFGetBuffer(0), sOakSpeechResources->oak_species);
+    LoadCompressedSpritePaletteUsingHeap(&gMonPaletteTable[sOakSpeechResources->oak_species]);
+    SetMultiuseSpriteTemplateToPokemon(sOakSpeechResources->oak_species, 0);
     spriteId = CreateSprite(&gMultiuseSpriteTemplate, 0x60, 0x60, 1);
     gSprites[spriteId].callback = SpriteCallbackDummy;
     gSprites[spriteId].oam.priority = 1;

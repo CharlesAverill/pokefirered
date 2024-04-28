@@ -125,34 +125,34 @@ gNameChoice_Suzi:: @ 81C5828
     .string "SUZI$"
 
 gNewGame_HelpDocs1:: @ 81C582D
-    .string "The various buttons will be explained in\n"
-    .string "the order of their importance.$"
+    .string "I'm Charles, thanks for playing my hack!\n"
+    .string "This is my ideal classic POKéMON game.$"
 
 gNewGame_HelpDocs2:: @ 81C5875
-    .string "Moves the main character.\n"
-    .string "Also used to choose various data\n"
-    .string "headings.$"
+    .string "I've optimized it for a single-\n"
+    .string "player experience, and upped\n"
+    .string "the difficulty a little.$"
 
 gNewGame_HelpDocs3:: @ 81C58BA
-    .string "Used to confirm a choice, check\n"
-    .string "things, chat, and scroll text.$"
+    .string "There's lots of extra stuff, and\n"
+    .string "often I come back to add more.$"
 
 gNewGame_HelpDocs4:: @ 81C58F9
-    .string "Used to exit, cancel a choice,\n"
-    .string "and cancel a mode.$"
+    .string "Stick around long enough, and\n"
+    .string "you might see Johto finished!$"
 
 gNewGame_HelpDocs5:: @ 81C592B
-    .string "Press this button to open the\n"
-    .string "MENU.$"
+    .string "Although it's rough around the\n"
+    .string "edges, it's been so fun to make.$"
 
 gNewGame_HelpDocs6:: @ 81C594F
-    .string "Used to shift items and to use\n"
-    .string "a registered item.$"
+    .string "I'm always open to feedback, so\n"
+    .string "let me know what you think!$"
 
 gNewGame_HelpDocs7:: @ 81C5981
-    .string "If you need help playing the\n"
-    .string "game, or on how to do things,\n"
-    .string "press the L or R Button.$"
+    .string "I hope you enjoy this hobby\n"
+    .string "project as much as I have!\n"
+    .string "           - Charles Averill$"
 
 gOakText_AskPlayerGender:: @ 81C59D5
     .string "Now tell me. Are you a boy?\n"
