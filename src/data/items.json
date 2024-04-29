@@ -27,7 +27,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 0,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 0
@@ -43,7 +43,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 1,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 1
@@ -59,7 +59,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 2,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 2
@@ -75,7 +75,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 3,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 3
@@ -91,7 +91,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 4,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 4
@@ -107,7 +107,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 5,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 5
@@ -123,7 +123,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 6,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 6
@@ -139,7 +139,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 7,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 7
@@ -155,7 +155,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 8,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 8
@@ -171,7 +171,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 9,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 9
@@ -187,7 +187,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 10,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 10
@@ -203,7 +203,7 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 11,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 11
@@ -219,10 +219,26 @@
       "exitsBagOnUse": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 12,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 12
+    },
+    {
+      "english": "QUICK BALL",
+      "itemId": "ITEM_QUICK_BALL",
+      "price": 1000,
+      "holdEffect": "HOLD_EFFECT_NONE",
+      "holdEffectParam": 0,
+      "description_english": "A somewhat different BALL that\\nprovides a better catch rate if it\\nis used at the start of an encounter.",
+      "importance": 0,
+      "exitsBagOnUse": 0,
+      "pocket": "POCKET_POKE_BALLS",
+      "type": 13,
+      "fieldUseFunc": "ItemUseOutOfBattle_PokeBall",
+      "battleUsage": 2,
+      "battleUseFunc": "BattleUseFunc_PokeBallEtc",
+      "secondaryId": 13
     },
     {
       "english": "POTION",
@@ -839,22 +855,6 @@
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A small green shard.\\nIt appears to be from some sort of\\na tool made long ago.",
-      "importance": 0,
-      "exitsBagOnUse": 0,
-      "pocket": "POCKET_ITEMS",
-      "type": 4,
-      "fieldUseFunc": "FieldUseFunc_OakStopsYou",
-      "battleUsage": 0,
-      "battleUseFunc": "NULL",
-      "secondaryId": 0
-    },
-    {
-      "english": "????????",
-      "itemId": "ITEM_NONE",
-      "price": 0,
-      "holdEffect": "HOLD_EFFECT_NONE",
-      "holdEffectParam": 0,
-      "description_english": "?????",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_ITEMS",

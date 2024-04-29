@@ -866,3 +866,12 @@ PewterCity_Movement_AideExit3:: @ 8166465
 PewterCity_Movement_WalkInPlaceLeft:: @ 816646F
 	walk_in_place_left
 	step_end
+
+PewterCity_EventScript_KurtHouse::
+	msgbox Text_KurtHouse, MSGBOX_SIGN
+	end
+
+Text_KurtHouse::
+	.string "KURT's House\l"
+	.string "Apricorn and Nothing Else\l"
+	.string "The Stubborn POKé BALL Creator$"

@@ -76,7 +76,7 @@
     {
       "id": "LAYOUT_HOUSE2",
       "name": "House2_Layout",
-      "width": 11,
+      "width": 33,
       "height": 9,
       "border_width": 2,
       "border_height": 2,
@@ -748,7 +748,7 @@
     {
       "id": "LAYOUT_PEWTER_CITY",
       "name": "PewterCity_Layout",
-      "width": 48,
+      "width": 56,
       "height": 40,
       "border_width": 2,
       "border_height": 2,
