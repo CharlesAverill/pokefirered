@@ -23,6 +23,7 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - Trades are more difficult but guaranteed shiny
 - More PokeBalls
     - Cherish
+    - Quick
 ## Locations
 - Dragon Gate: in between Routes 10 and 25
 - Cinnabar Volcano: beneath Cinnabar Gym

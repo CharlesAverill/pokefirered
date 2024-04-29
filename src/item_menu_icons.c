@@ -181,6 +181,7 @@ static const void *const sItemIconGfxPtrs[][2] = {
     {gFile_graphics_items_icons_luxury_ball_sheet, gFile_graphics_items_icon_palettes_luxury_ball_palette},
     {gFile_graphics_items_icons_premier_ball_sheet, gFile_graphics_items_icon_palettes_luxury_ball_palette},
     {gFile_graphics_items_icons_cherish_ball_sheet, gFile_graphics_items_icon_palettes_cherish_ball_palette},
+    {gFile_graphics_items_icons_quick_ball_sheet, gFile_graphics_items_icon_palettes_quick_ball_palette},
     {gFile_graphics_items_icons_potion_sheet, gFile_graphics_items_icon_palettes_potion_palette},
     {gFile_graphics_items_icons_antidote_sheet, gFile_graphics_items_icon_palettes_antidote_palette},
     {gFile_graphics_items_icons_status_heal_sheet, gFile_graphics_items_icon_palettes_burn_heal_palette},

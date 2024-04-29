@@ -9058,6 +9058,11 @@ static void atkEF_handleballthrow(void)
                     if (ballMultiplier > 40)
                         ballMultiplier = 40;
                     break;
+                case ITEM_QUICK_BALL:
+                    ballMultiplier = 40 - gBattleResults.battleTurnCounter;
+                    if (ballMultiplier < 10)
+                        ballMultiplier = 10;
+                    break;
                 case ITEM_LUXURY_BALL:
                 case ITEM_PREMIER_BALL:
                 case ITEM_CHERISH_BALL:

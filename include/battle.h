@@ -1,5 +1,5 @@
-#ifndef GUARD_BATTLE_H
-#define GUARD_BATTLE_H
+#ifndef BATTLE
+#define BATTLE
 
 #include <limits.h>
 #include "global.h"
@@ -714,4 +714,4 @@ extern struct UnknownPokemonStruct4 gMultiPartnerParty[3];
 extern u16 *gUnknown_2022BC0;
 extern u16 gRandomTurnNumber;
 
-#endif // GUARD_BATTLE_H
+#endif /* BATTLE */

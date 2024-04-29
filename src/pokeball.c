@@ -34,6 +34,7 @@
 #define GFX_TAG_LUXURY_BALL  55010
 #define GFX_TAG_PREMIER_BALL 55011
 #define GFX_TAG_CHERISH_BALL 55012
+#define GFX_TAG_QUICK_BALL   55013
 
 // Function Declarations
 static void Task_DoPokeballSendOutAnim(u8 taskId);
@@ -82,6 +83,7 @@ const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT] =
     {gInterfaceGfx_LuxuryBall,  384, GFX_TAG_LUXURY_BALL},
     {gInterfaceGfx_PremierBall, 384, GFX_TAG_PREMIER_BALL},
     {gInterfaceGfx_CherishBall, 384, GFX_TAG_CHERISH_BALL},
+    {gInterfaceGfx_QuickBall,   384, GFX_TAG_QUICK_BALL},
 };
 
 const struct CompressedSpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
@@ -99,6 +101,7 @@ const struct CompressedSpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
     {gInterfacePal_LuxuryBall,  GFX_TAG_LUXURY_BALL},
     {gInterfacePal_PremierBall, GFX_TAG_PREMIER_BALL},
     {gInterfacePal_CherishBall, GFX_TAG_CHERISH_BALL},
+    {gInterfacePal_QuickBall, GFX_TAG_QUICK_BALL},
 };
 
 static const struct OamData sBallOamData =
@@ -325,6 +328,15 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
     {
         .tileTag = GFX_TAG_CHERISH_BALL,
         .paletteTag = GFX_TAG_CHERISH_BALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sBallAffineAnimSequences,
+        .callback = SpriteCB_TestBallThrow,
+    },
+    {
+        .tileTag = GFX_TAG_QUICK_BALL,
+        .paletteTag = GFX_TAG_QUICK_BALL,
         .oam = &sBallOamData,
         .anims = sBallAnimSequences,
         .images = NULL,
@@ -1260,6 +1272,7 @@ void LoadBallGfx(u8 ballId)
     case BALL_LUXURY:
     case BALL_PREMIER:
     case BALL_CHERISH:
+    case BALL_QUICK:
         break;
     default:
         var = GetSpriteTileStartByTag(gBallSpriteSheets[ballId].tag);

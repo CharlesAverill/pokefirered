@@ -29,6 +29,8 @@ extern const u32 gInterfaceGfx_PremierBall[];
 extern const u32 gInterfacePal_PremierBall[];
 extern const u32 gInterfaceGfx_CherishBall[];
 extern const u32 gInterfacePal_CherishBall[];
+extern const u32 gInterfaceGfx_QuickBall[];
+extern const u32 gInterfacePal_QuickBall[];
 extern const u32 gOpenPokeballGfx[];
 
 // pokemon gfx
@@ -2951,6 +2953,8 @@ extern const u8 gFile_graphics_items_icons_premier_ball_sheet[];
 extern const u8 gFile_graphics_items_icon_palettes_luxury_ball_palette[];
 extern const u8 gFile_graphics_items_icons_cherish_ball_sheet[];
 extern const u8 gFile_graphics_items_icon_palettes_cherish_ball_palette[];
+extern const u8 gFile_graphics_items_icons_quick_ball_sheet[];
+extern const u8 gFile_graphics_items_icon_palettes_quick_ball_palette[];
 extern const u8 gFile_graphics_items_icons_potion_sheet[];
 extern const u8 gFile_graphics_items_icon_palettes_potion_palette[];
 extern const u8 gFile_graphics_items_icons_antidote_sheet[];

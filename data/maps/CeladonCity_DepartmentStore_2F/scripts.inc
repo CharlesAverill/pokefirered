@@ -26,7 +26,6 @@ CeladonCity_DepartmentStore_2F_EventScript_ClerkItems:: @ 816BB10
 
 	.align 2
 CeladonCity_DepartmentStore_2F_Items:: @ 816BB38
-	.2byte ITEM_CHERISH_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_REVIVE

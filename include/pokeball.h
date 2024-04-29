@@ -18,6 +18,7 @@ enum
     BALL_LUXURY,
     BALL_PREMIER,
     BALL_CHERISH,
+    BALL_QUICK,
     POKEBALL_COUNT
 };
 

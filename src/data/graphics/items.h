@@ -44,6 +44,9 @@ const u32 gFile_graphics_items_icon_palettes_potion_palette[] = INCBIN_U32("grap
 const u32 gFile_graphics_items_icons_cherish_ball_sheet[] = INCBIN_U32("graphics/items/icons/cherish_ball.4bpp.lz");
 const u32 gFile_graphics_items_icon_palettes_cherish_ball_palette[] = INCBIN_U32("graphics/items/icons/cherish_ball.gbapal.lz");
 
+const u32 gFile_graphics_items_icons_quick_ball_sheet[] = INCBIN_U32("graphics/items/icons/quick_ball.4bpp.lz");
+const u32 gFile_graphics_items_icon_palettes_quick_ball_palette[] = INCBIN_U32("graphics/items/icons/quick_ball.gbapal.lz");
+
 const u32 gFile_graphics_items_icons_antidote_sheet[] = INCBIN_U32("graphics/items/icons/antidote.4bpp.lz");
 const u32 gFile_graphics_items_icon_palettes_antidote_palette[] = INCBIN_U32("graphics/items/icon_palettes/antidote.gbapal.lz");
 const u32 gFile_graphics_items_icon_palettes_burn_heal_palette[] = INCBIN_U32("graphics/items/icon_palettes/burn_heal.gbapal.lz");

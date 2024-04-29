@@ -873,5 +873,5 @@ PewterCity_EventScript_KurtHouse::
 
 Text_KurtHouse::
 	.string "KURT's House\l"
-	.string "Apricorn and Nothing Else\l"
+	.string "Apricorn and Nothing Else\n"
 	.string "The Stubborn POKé BALL Creator$"

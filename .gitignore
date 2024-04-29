@@ -61,3 +61,5 @@ porymap.project.cfg
 .vscode/*.*
 agbcc/
 porymap.user.cfg
+*.ss1
+*.ss2
