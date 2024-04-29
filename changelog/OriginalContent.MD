@@ -9,7 +9,8 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 - HMs can be forgotten
 - Early Running Shoes
 - Inside Running
-- Trainer Class-based PokeBalls
+- Trainer Class-based Poke Balls
+- A Pokemon's ball can be swapped via the bag, with a slight chance to recover the original ball
 - "Use another repel" prompt
 - Don't show eggs during PokeCenter heal
 - Extra premier balls if you buy more than 10 Balls at a time

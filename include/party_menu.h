@@ -1,5 +1,5 @@
-#ifndef GUARD_PARTY_MENU_H
-#define GUARD_PARTY_MENU_H
+#ifndef PARTY_MENU
+#define PARTY_MENU
 
 #include "main.h"
 #include "task.h"
@@ -83,5 +83,6 @@ u8 GetPartyIdFromBattlePartyId(u8 battlePartyId);
 void ShowPartyMenuToShowcaseMultiBattleParty(void);
 void ChooseMonForDaycare(void);
 void ChoosePartyMonByMenuType(u8 menuType);
+void ItemUseCB_PokeBall(u8 taskId, TaskFunc task);
 
-#endif // GUARD_PARTY_MENU_H
+#endif /* PARTY_MENU */

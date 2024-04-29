@@ -69,6 +69,7 @@
 #include "constants/quest_log.h"
 #include "constants/songs.h"
 #include "constants/species.h"
+#include "random.h"
 
 #define PARTY_PAL_SELECTED     (1 << 0)
 #define PARTY_PAL_FAINTED      (1 << 1)
@@ -6386,5 +6387,65 @@ static void Task_PartyMenuWaitForFade(u8 taskId)
         DestroyTask(taskId);
         ScriptContext2_Disable();
         EnableBothScriptContexts();
+    }
+}
+
+void ItemUseCB_PokeBall(u8 taskId, TaskFunc task)
+{
+    // Credit: LOuroboros
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 currBall = GetMonData(mon, MON_DATA_POKEBALL);
+    u16 newBall = gSpecialVar_ItemId;
+    static const u8 sText_MonBallSwitchedOut[] = _("{STR_VAR_1}'s {STR_VAR_3} was swapped\nfor a {STR_VAR_2}.\pThe {STR_VAR_3} Broke!{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_MonBallBroke[] = _("{STR_VAR_1}'s {STR_VAR_3} was swapped\nfor a {STR_VAR_2}.\pThe {STR_VAR_3} Broke!{PAUSE_UNTIL_PRESS}");
+
+    // Scaling chance to get the original ball back
+    u16 rand = Random() % 1000;
+    u8 getBallBack = FALSE;
+    switch(currBall) {
+    case ITEM_MASTER_BALL:
+        getBallBack = rand <= 1;
+        break;
+    case ITEM_CHERISH_BALL:
+    case ITEM_SAFARI_BALL:
+        getBallBack = rand <= 50;
+        break;
+    case ITEM_ULTRA_BALL:
+        getBallBack = rand <= 150;
+        break;
+    case ITEM_POKE_BALL:
+        getBallBack = rand <= 500;
+        break;
+    default: /* all of the mid-range balls: great, timer, repeat, etc */
+        getBallBack = rand <= 300;
+        break;
+    }
+
+    if (currBall == newBall)
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+    }
+    else
+    {
+        GetMonNickname(mon, gStringVar1);
+        CopyItemName(newBall, gStringVar2);
+        CopyItemName(currBall, gStringVar3);
+        PlaySE(SE_SELECT);
+        gPartyMenuUseExitCallback = TRUE;
+        SetMonData(mon, MON_DATA_POKEBALL, &newBall);
+        if (getBallBack) {
+            AddBagItem(currBall, 1);
+            StringExpandPlaceholders(gStringVar4, sText_MonBallSwitchedOut);
+            DisplayPartyMenuMessage(gStringVar4, TRUE);
+        } else {
+            StringExpandPlaceholders(gStringVar4, sText_MonBallBroke);
+            DisplayPartyMenuMessage(gStringVar4, TRUE);
+        }
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+        RemoveBagItem(newBall, 1);
     }
 }

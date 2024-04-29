@@ -17,6 +17,7 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Root @ Victory Road 3F
 - Remaining Helix/Dome @ Seafoam Islands
 ## Miscellaneous
+- Route 1: Hoothoot
 - Route 2: Ledyba, Wurmple
 - Route 3: Togepi
 - Route 4: Poochyena, Taillow
@@ -36,7 +37,7 @@ Aside from the listed locations, the Old Amber scientist will open a Fossil shop
 - Route 20: Qwilfish, Krabby, Corsola, Remoraid, Wailmer (Surfing), Octillery (Super Rod)
 - Route 21 (S): Chinchou (Surfing)
 - Route 21 (N): Lickitung, Eevee
-- Route 22: Whismur
+- Route 22: Zigzagoon, Whismur
 - Route 24: Shroomish
 - Route 25: Feebas (fishing), Shroomish
 - Viridian City: Lotad (fishing/surfing)

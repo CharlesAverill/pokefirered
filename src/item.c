@@ -4,6 +4,7 @@
 #include "event_data.h"
 #include "item.h"
 #include "item_use.h"
+#include "item_menu.h"
 #include "load_save.h"
 #include "quest_log.h"
 #include "strings.h"

@@ -16551,12 +16551,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_PIDGEY"
+                "species": "SPECIES_HOOTHOOT"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_RATTATA"
+                "max_level": 5,
+                "species": "SPECIES_HOOTHOOT"
               },
               {
                 "min_level": 2,
@@ -21016,13 +21016,13 @@
             "mons": [
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_RATTATA"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_MANKEY"
+                "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 4,

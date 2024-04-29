@@ -216,21 +216,21 @@ static const struct MenuAction sItemMenuContextActions[] = {
 };
 
 static const u8 sContextMenuItems_Field[][4] = {
-    {
+    {  /* Items Pocket*/
         ITEMMENUACTION_USE,
         ITEMMENUACTION_GIVE,
         ITEMMENUACTION_TOSS,
         ITEMMENUACTION_CANCEL
-    }, {
+    }, /* Key Items Pocket */ {
         ITEMMENUACTION_USE,
         ITEMMENUACTION_REGISTER,
         ITEMMENUACTION_CANCEL,
         ITEMMENUACTION_DUMMY
-    }, {
+    }, /* Ball Pocket */ {
+        ITEMMENUACTION_USE,
         ITEMMENUACTION_GIVE,
         ITEMMENUACTION_TOSS,
-        ITEMMENUACTION_CANCEL,
-        ITEMMENUACTION_DUMMY
+        ITEMMENUACTION_CANCEL
     }
 };
 
@@ -2399,4 +2399,11 @@ static void Task_Bag_TeachyTvTMs(u8 taskId)
         }
         data[8]++;
     }
+}
+
+void ItemUseOutOfBattle_PokeBall(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_PokeBall;
+    sBagMenuDisplay->exitCB = CB2_ShowPartyMenuForItemUse;
+    gTasks[taskId].func = ItemMenu_StartFadeToExitCallback;
 }
