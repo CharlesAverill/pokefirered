@@ -1,7 +1,11 @@
 # Charles's FireRed
 Join our [Discord](https://discord.gg/c2vsdGjPMP)!
 
-<video src="https://raw.githubusercontent.com/CharlesAverill/pokefirered/main/media/cfrtrailer.mp4" controls></video>
+
+
+https://github.com/CharlesAverill/pokefirered/assets/46544495/064f7a73-f6eb-4f8a-8898-84815e6178a6
+
+
 
 ## Who is this hack for?
 This hack is for you if you like:
