@@ -144,5 +144,7 @@ Route23_EventScript_MtSilverTrigger_HasCelebi::
     playmoncry SPECIES_CELEBI, 2
     setflag FLAG_TEMP_1
     waitmoncry
+	msgbox Route23_Text_GoForth
+	closemessage
     release
     end

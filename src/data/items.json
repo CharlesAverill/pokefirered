@@ -3238,7 +3238,7 @@
       "price": 100,
       "holdEffect": "HOLD_EFFECT_LIGHT_BALL",
       "holdEffectParam": 0,
-      "description_english": "An orb to be held by a PIKACHU\\nthat raises the SP. ATK stat.\\nTouching it may cause a shock.",
+      "description_english": "An orb to be held by a PIKACHU that\\nraises the ATK and SP. ATK stats.\\nTouching it may cause a shock.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_ITEMS",
