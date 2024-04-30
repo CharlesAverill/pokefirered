@@ -7,8 +7,8 @@ on:
       - "main"
 
 jobs:
-  pre-release:
-    name: "Release"
+  checkout:
+    name: "Checkout"
     runs-on: "ubuntu-latest"
 
     steps:
@@ -17,6 +17,11 @@ jobs:
           sparse-checkout: |
             changelog
             build
+  release:
+    name: "Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
