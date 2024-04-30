@@ -1,14 +1,26 @@
-name: Release
+# This is a basic workflow to help you get started with the GitHub Auto-Release on Commit Action.
 
-on: push
+name: AutoRelease
 
+on:
+  push:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
+  # This workflow contains a single job called "build"
+  release:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Release
-        uses: softprops/action-gh-release@v2
+      - uses: actions/checkout@v2
+      - uses: CupOfTea696/gh-action-auto-release@v1.0.0
         with:
-          files: build/release.zip
+          title: "Latest"
+          tag: "latest"
+          draft: false
+          regex: ".*$/i"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
