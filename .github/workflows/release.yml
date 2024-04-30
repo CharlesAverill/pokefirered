@@ -21,6 +21,5 @@ jobs:
           title: "Latest"
           tag: "latest"
           draft: false
-          regex: ".*$/i"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
