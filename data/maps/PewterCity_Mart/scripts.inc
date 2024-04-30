@@ -22,7 +22,6 @@ PewterCity_Mart_EventScript_Clerk:: @ 816A6E0
 
 	.align 2
 PewterCity_Mart_Items:: @ 816A708
-	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_POTION
 	.2byte ITEM_ANTIDOTE

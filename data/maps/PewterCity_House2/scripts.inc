@@ -8,3 +8,8 @@ PewterCity_House2_EventScript_OldMan:: @ 816A7DD
 PewterCity_House2_EventScript_LittleBoy:: @ 816A7E6
 	msgbox PewterCity_House2_Text_MonsEasierCatchIfStatused, MSGBOX_NPC
 	end
+
+PewterCity_House2_EventScript_Kurt::
+	msgbox PewterCity_House2_Text_KurtBusy, MSGBOX_NPC
+	applymovement 3, Movement_FaceUp
+	end

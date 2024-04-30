@@ -494,6 +494,7 @@ const u8 gInitialMovementTypeFacingDirections[NUM_FIELD_MAP_OBJECT_TEMPLATES] = 
 #define OBJ_EVENT_PAL_TAG_REGISTEEL 0x112B
 #define OBJ_EVENT_PAL_TAG_EUSINE 0x112C
 #define OBJ_EVENT_PAL_TAG_JIRACHI 0x112C
+#define OBJ_EVENT_PAL_TAG_KURT 0x112D
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 
@@ -534,6 +535,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Registeel, OBJ_EVENT_PAL_TAG_REGISTEEL},
     {gObjectEventPalette_Jirachi, OBJ_EVENT_PAL_TAG_JIRACHI},
     {gObjectEventPalette_Eusine, OBJ_EVENT_PAL_TAG_EUSINE},
+    {gObjectEventPalette_Kurt, OBJ_EVENT_PAL_TAG_KURT},
     {},
 };
 

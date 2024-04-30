@@ -1,5 +1,5 @@
-#ifndef GUARD_GLOBAL_FIELDMAP_H
-#define GUARD_GLOBAL_FIELDMAP_H
+#ifndef GLOBAL_FIELDMAP
+#define GLOBAL_FIELDMAP
 
 #define OBJECT_EVENTS_COUNT 16
 
@@ -387,4 +387,4 @@ extern struct MapHeader gMapHeader;
 extern struct PlayerAvatar gPlayerAvatar;
 extern struct Camera gCamera;
 
-#endif // GUARD_GLOBAL_FIELDMAP_H
+#endif /* GLOBAL_FIELDMAP */

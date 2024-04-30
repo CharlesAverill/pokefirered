@@ -12,3 +12,5 @@ PewterCity_House2_Text_MonsEasierCatchIfStatused:: @ 8191840
     .string "But catching POKéMON is never\n"
     .string "a sure thing!$"
 
+PewterCity_House2_Text_KurtBusy::
+    .string "I'm busy! Come back later.$"

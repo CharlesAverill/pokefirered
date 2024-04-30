@@ -1808,3 +1808,15 @@ const struct SpriteFrameImage gObjectEventPicTable_Regice[] = {
 const struct SpriteFrameImage gObjectEventPicTable_Registeel[] = {
         overworld_frame(gObjectEventPic_Registeel, 4, 4, 0),
 };
+
+const struct SpriteFrameImage gObjectEventPicTable_Kurt[] = {
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 0),
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 1),
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 2),
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 0),
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 0),
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 1),
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 1),
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 2),
+        overworld_frame(gObjectEventPic_Kurt, 2, 4, 2),
+};
