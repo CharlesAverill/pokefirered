@@ -73,12 +73,14 @@ DeepwaterCave_Cistern_Initiate_Kyogre_Battle::
 
 DeepwaterCave_Cistern_DefeatedKyogre::
 	setflag FLAG_KYOGRE_DISAPPEARED
+    clearflag FLAG_DWC_ROCK
 	setvar VAR_0x8004, SPECIES_KYOGRE
 	goto EventScript_MonDisappeared
 	end
 
 DeepwaterCave_Cistern_RanFromKyogre::
 	setflag FLAG_KYOGRE_DISAPPEARED
+    clearflag FLAG_DWC_ROCK
 	setvar VAR_0x8004, SPECIES_KYOGRE
 	goto EventScript_MonDisappeared
 	end

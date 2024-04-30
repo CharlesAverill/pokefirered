@@ -23,6 +23,7 @@ EventScript_ResetLegendaries:: @ 81A6541
 	clearflag FLAG_REGIROCK_DISAPPEARED
 	clearflag FLAG_REGICE_DISAPPEARED
 	clearflag FLAG_REGISTEEL_DISAPPEARED
+	clearflag FLAG_FOUGHT_MEW
 	return
 
 EventScript_ResetEliteFourEnd:: @ 81A654B

@@ -3,7 +3,7 @@
   "name": "Route16_ChanseyGrove",
   "layout": "LAYOUT_ROUTE16_CHANSEY_GROVE",
   "music": "MUS_ROUTE1",
-  "region_map_section": "MAPSEC_ROUTE_50",
+  "region_map_section": "MAPSEC_CHANSEY_GROVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",

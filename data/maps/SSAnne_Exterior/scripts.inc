@@ -111,7 +111,7 @@ SSAnne_Exterior_MewTruck::
     goto_if_eq SSAnne_Exterior_MewTruck_RanFromMew
     compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
     goto_if_eq SSAnne_Exterior_MewTruck_RanFromMew
-    setflag FLAG_FOUGHT_MEWTWO
+    setflag FLAG_FOUGHT_MEW
     release
     end
 
@@ -120,7 +120,6 @@ SSAnne_Exterior_MewTruck_DefeatedMew_Or_DidNotUseStrength:
     end
 
 SSAnne_Exterior_MewTruck_DefeatedMew:: @ 8162558
-    setflag FLAG_FOUGHT_MEW
     setflag FLAG_HIDE_MEW
     removeobject 2
     end

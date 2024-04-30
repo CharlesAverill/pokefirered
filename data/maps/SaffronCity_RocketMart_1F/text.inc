@@ -1,6 +1,7 @@
 SaffronCity_RocketMart_1F_SellMons_Text::
     .string "I like that Pokémon you have there,\n"
-    .string "{STR_VAR_1}. I'll give you ¥{STR_VAR_2}\l"
+    .string "{STR_VAR_1}.\p" 
+    .string "I'll give you ¥{STR_VAR_2}\n"
     .string "for it.$"
 
 SaffronCity_RocketMart_1F_PlayerSoldMonForMoney::

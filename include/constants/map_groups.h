@@ -1,14 +1,18 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
-// Map Group 0
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
+// gMapGroup0
 #define MAP_BATTLE_COLOSSEUM_2P (0 | (0 << 8))
 #define MAP_TRADE_CENTER        (1 | (0 << 8))
 #define MAP_RECORD_CENTER       (2 | (0 << 8))
 #define MAP_BATTLE_COLOSSEUM_4P (3 | (0 << 8))
 #define MAP_UNION_ROOM          (4 | (0 << 8))
 
-// Map Group 1
+// gMapGroup1
 #define MAP_VIRIDIAN_FOREST                          (0 | (1 << 8))
 #define MAP_MT_MOON_1F                               (1 | (1 << 8))
 #define MAP_MT_MOON_B1F                              (2 | (1 << 8))
@@ -137,7 +141,7 @@
 #define MAP_MT_MOON_SUMMIT_ENTRANCE                  (125 | (1 << 8))
 #define MAP_MT_MOON_SUMMIT                           (126 | (1 << 8))
 
-// Map Group 2
+// gMapGroup2
 #define MAP_NAVEL_ROCK_EXTERIOR                       (0 | (2 << 8))
 #define MAP_TRAINER_TOWER_1F                          (1 | (2 << 8))
 #define MAP_TRAINER_TOWER_2F                          (2 | (2 << 8))
@@ -199,7 +203,7 @@
 #define MAP_BIRTH_ISLAND_HARBOR                       (58 | (2 << 8))
 #define MAP_NAVEL_ROCK_HARBOR                         (59 | (2 << 8))
 
-// Map Group 3
+// gMapGroup3
 #define MAP_PALLET_TOWN                          (0 | (3 << 8))
 #define MAP_VIRIDIAN_CITY                        (1 | (3 << 8))
 #define MAP_PEWTER_CITY                          (2 | (3 << 8))
@@ -272,13 +276,13 @@
 #define MAP_ROUTE16_CHANSEY_GROVE                (69 | (3 << 8))
 #define MAP_ROUTE51                              (70 | (3 << 8))
 
-// Map Group 4
+// gMapGroup4
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_1F   (0 | (4 << 8))
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_2F   (1 | (4 << 8))
 #define MAP_PALLET_TOWN_GARYS_HOUSE        (2 | (4 << 8))
 #define MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB (3 | (4 << 8))
 
-// Map Group 5
+// gMapGroup5
 #define MAP_VIRIDIAN_CITY_HOUSE1            (0 | (5 << 8))
 #define MAP_VIRIDIAN_CITY_GYM               (1 | (5 << 8))
 #define MAP_VIRIDIAN_CITY_HOUSE2            (2 | (5 << 8))
@@ -286,7 +290,7 @@
 #define MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F (4 | (5 << 8))
 #define MAP_VIRIDIAN_CITY_POKEMON_CENTER_2F (5 | (5 << 8))
 
-// Map Group 6
+// gMapGroup6
 #define MAP_PEWTER_CITY_MUSEUM_1F         (0 | (6 << 8))
 #define MAP_PEWTER_CITY_MUSEUM_2F         (1 | (6 << 8))
 #define MAP_PEWTER_CITY_GYM               (2 | (6 << 8))
@@ -296,7 +300,7 @@
 #define MAP_PEWTER_CITY_POKEMON_CENTER_2F (6 | (6 << 8))
 #define MAP_PEWTER_CITY_HOUSE2            (7 | (6 << 8))
 
-// Map Group 7
+// gMapGroup7
 #define MAP_CERULEAN_CITY_HOUSE1            (0 | (7 << 8))
 #define MAP_CERULEAN_CITY_HOUSE2            (1 | (7 << 8))
 #define MAP_CERULEAN_CITY_HOUSE3            (2 | (7 << 8))
@@ -308,7 +312,7 @@
 #define MAP_CERULEAN_CITY_HOUSE4            (8 | (7 << 8))
 #define MAP_CERULEAN_CITY_HOUSE5            (9 | (7 << 8))
 
-// Map Group 8
+// gMapGroup8
 #define MAP_LAVENDER_TOWN_POKEMON_CENTER_1F       (0 | (8 << 8))
 #define MAP_LAVENDER_TOWN_POKEMON_CENTER_2F       (1 | (8 << 8))
 #define MAP_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE (2 | (8 << 8))
@@ -316,7 +320,7 @@
 #define MAP_LAVENDER_TOWN_HOUSE2                  (4 | (8 << 8))
 #define MAP_LAVENDER_TOWN_MART                    (5 | (8 << 8))
 
-// Map Group 9
+// gMapGroup9
 #define MAP_VERMILION_CITY_HOUSE1            (0 | (9 << 8))
 #define MAP_VERMILION_CITY_POKEMON_CENTER_1F (1 | (9 << 8))
 #define MAP_VERMILION_CITY_POKEMON_CENTER_2F (2 | (9 << 8))
@@ -327,7 +331,7 @@
 #define MAP_VERMILION_CITY_HOUSE3            (7 | (9 << 8))
 #define MAP_VERMILION_CITY_BRENDAN_HOUSE     (8 | (9 << 8))
 
-// Map Group 10
+// gMapGroup10
 #define MAP_CELADON_CITY_DEPARTMENT_STORE_1F       (0 | (10 << 8))
 #define MAP_CELADON_CITY_DEPARTMENT_STORE_2F       (1 | (10 << 8))
 #define MAP_CELADON_CITY_DEPARTMENT_STORE_3F       (2 | (10 << 8))
@@ -349,7 +353,7 @@
 #define MAP_CELADON_CITY_HOUSE1                    (18 | (10 << 8))
 #define MAP_CELADON_CITY_HOTEL                     (19 | (10 << 8))
 
-// Map Group 11
+// gMapGroup11
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE (0 | (11 << 8))
 #define MAP_FUCHSIA_CITY_MART                 (1 | (11 << 8))
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_OFFICE   (2 | (11 << 8))
@@ -361,7 +365,7 @@
 #define MAP_FUCHSIA_CITY_HOUSE2               (8 | (11 << 8))
 #define MAP_FUCHSIA_CITY_HOUSE3               (9 | (11 << 8))
 
-// Map Group 12
+// gMapGroup12
 #define MAP_CINNABAR_ISLAND_GYM                         (0 | (12 << 8))
 #define MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE        (1 | (12 << 8))
 #define MAP_CINNABAR_ISLAND_POKEMON_LAB_LOUNGE          (2 | (12 << 8))
@@ -373,11 +377,11 @@
 #define MAP_CINNABAR_ISLAND_CINNABAR_VOLCANO_B1F        (8 | (12 << 8))
 #define MAP_CINNABAR_ISLAND_CINNABAR_VOLCANO_B2F        (9 | (12 << 8))
 
-// Map Group 13
+// gMapGroup13
 #define MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F (0 | (13 << 8))
 #define MAP_INDIGO_PLATEAU_POKEMON_CENTER_2F (1 | (13 << 8))
 
-// Map Group 14
+// gMapGroup14
 #define MAP_SAFFRON_CITY_COPYCATS_HOUSE_1F        (0 | (14 << 8))
 #define MAP_SAFFRON_CITY_COPYCATS_HOUSE_2F        (1 | (14 << 8))
 #define MAP_SAFFRON_CITY_DOJO                     (2 | (14 << 8))
@@ -392,70 +396,70 @@
 #define MAP_SAFFRON_CITY_ROCKET_MART_1F           (11 | (14 << 8))
 #define MAP_SAFFRON_CITY_ROCKET_MART_2F           (12 | (14 << 8))
 
-// Map Group 15
+// gMapGroup15
 #define MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE (0 | (15 << 8))
 #define MAP_ROUTE2_HOUSE                          (1 | (15 << 8))
 #define MAP_ROUTE2_EAST_BUILDING                  (2 | (15 << 8))
 #define MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE (3 | (15 << 8))
 
-// Map Group 16
+// gMapGroup16
 #define MAP_ROUTE4_POKEMON_CENTER_1F (0 | (16 << 8))
 #define MAP_ROUTE4_POKEMON_CENTER_2F (1 | (16 << 8))
 
-// Map Group 17
+// gMapGroup17
 #define MAP_ROUTE5_POKEMON_DAY_CARE (0 | (17 << 8))
 #define MAP_ROUTE5_SOUTH_ENTRANCE   (1 | (17 << 8))
 
-// Map Group 18
+// gMapGroup18
 #define MAP_ROUTE6_NORTH_ENTRANCE (0 | (18 << 8))
 #define MAP_UNKNOWN_MAP_18_01     (1 | (18 << 8))
 
-// Map Group 19
+// gMapGroup19
 #define MAP_ROUTE7_EAST_ENTRANCE (0 | (19 << 8))
 
-// Map Group 20
+// gMapGroup20
 #define MAP_ROUTE8_WEST_ENTRANCE (0 | (20 << 8))
 
-// Map Group 21
+// gMapGroup21
 #define MAP_ROUTE10_POKEMON_CENTER_1F (0 | (21 << 8))
 #define MAP_ROUTE10_POKEMON_CENTER_2F (1 | (21 << 8))
 
-// Map Group 22
+// gMapGroup22
 #define MAP_ROUTE11_EAST_ENTRANCE_1F (0 | (22 << 8))
 #define MAP_ROUTE11_EAST_ENTRANCE_2F (1 | (22 << 8))
 
-// Map Group 23
+// gMapGroup23
 #define MAP_ROUTE12_NORTH_ENTRANCE_1F (0 | (23 << 8))
 #define MAP_ROUTE12_NORTH_ENTRANCE_2F (1 | (23 << 8))
 #define MAP_ROUTE12_FISHING_HOUSE     (2 | (23 << 8))
 
-// Map Group 24
+// gMapGroup24
 #define MAP_ROUTE15_WEST_ENTRANCE_1F (0 | (24 << 8))
 #define MAP_ROUTE15_WEST_ENTRANCE_2F (1 | (24 << 8))
 
-// Map Group 25
+// gMapGroup25
 #define MAP_ROUTE16_HOUSE               (0 | (25 << 8))
 #define MAP_ROUTE16_NORTH_ENTRANCE_1F   (1 | (25 << 8))
 #define MAP_ROUTE16_NORTH_ENTRANCE_2F   (2 | (25 << 8))
 #define MAP_ROUTE16_CHANSEY_GROVE_HOUSE (3 | (25 << 8))
 
-// Map Group 26
+// gMapGroup26
 #define MAP_ROUTE18_EAST_ENTRANCE_1F (0 | (26 << 8))
 #define MAP_ROUTE18_EAST_ENTRANCE_2F (1 | (26 << 8))
 
-// Map Group 27
+// gMapGroup27
 #define MAP_UNUSED_HOUSE_27_00 (0 | (27 << 8))
 
-// Map Group 28
+// gMapGroup28
 #define MAP_ROUTE22_NORTH_ENTRANCE (0 | (28 << 8))
 
-// Map Group 29
+// gMapGroup29
 #define MAP_UNUSED_HOUSE_29_00 (0 | (29 << 8))
 
-// Map Group 30
+// gMapGroup30
 #define MAP_ROUTE25_SEA_COTTAGE (0 | (30 << 8))
 
-// Map Group 31
+// gMapGroup31
 #define MAP_SEVEN_ISLAND_HOUSE_ROOM1       (0 | (31 << 8))
 #define MAP_SEVEN_ISLAND_HOUSE_ROOM2       (1 | (31 << 8))
 #define MAP_SEVEN_ISLAND_MART              (2 | (31 << 8))
@@ -464,21 +468,21 @@
 #define MAP_UNUSED_HOUSE_31_05             (5 | (31 << 8))
 #define MAP_SEVEN_ISLAND_HARBOR            (6 | (31 << 8))
 
-// Map Group 32
+// gMapGroup32
 #define MAP_ONE_ISLAND_POKEMON_CENTER_1F (0 | (32 << 8))
 #define MAP_ONE_ISLAND_POKEMON_CENTER_2F (1 | (32 << 8))
 #define MAP_ONE_ISLAND_HOUSE1            (2 | (32 << 8))
 #define MAP_ONE_ISLAND_HOUSE2            (3 | (32 << 8))
 #define MAP_ONE_ISLAND_HARBOR            (4 | (32 << 8))
 
-// Map Group 33
+// gMapGroup33
 #define MAP_TWO_ISLAND_JOYFUL_GAME_CORNER (0 | (33 << 8))
 #define MAP_TWO_ISLAND_HOUSE              (1 | (33 << 8))
 #define MAP_TWO_ISLAND_POKEMON_CENTER_1F  (2 | (33 << 8))
 #define MAP_TWO_ISLAND_POKEMON_CENTER_2F  (3 | (33 << 8))
 #define MAP_TWO_ISLAND_HARBOR             (4 | (33 << 8))
 
-// Map Group 34
+// gMapGroup34
 #define MAP_THREE_ISLAND_HOUSE1            (0 | (34 << 8))
 #define MAP_THREE_ISLAND_POKEMON_CENTER_1F (1 | (34 << 8))
 #define MAP_THREE_ISLAND_POKEMON_CENTER_2F (2 | (34 << 8))
@@ -488,7 +492,7 @@
 #define MAP_THREE_ISLAND_HOUSE4            (6 | (34 << 8))
 #define MAP_THREE_ISLAND_HOUSE5            (7 | (34 << 8))
 
-// Map Group 35
+// gMapGroup35
 #define MAP_FOUR_ISLAND_POKEMON_DAY_CARE  (0 | (35 << 8))
 #define MAP_FOUR_ISLAND_POKEMON_CENTER_1F (1 | (35 << 8))
 #define MAP_FOUR_ISLAND_POKEMON_CENTER_2F (2 | (35 << 8))
@@ -498,37 +502,37 @@
 #define MAP_FOUR_ISLAND_HOUSE2            (6 | (35 << 8))
 #define MAP_FOUR_ISLAND_MART              (7 | (35 << 8))
 
-// Map Group 36
+// gMapGroup36
 #define MAP_FIVE_ISLAND_POKEMON_CENTER_1F (0 | (36 << 8))
 #define MAP_FIVE_ISLAND_POKEMON_CENTER_2F (1 | (36 << 8))
 #define MAP_FIVE_ISLAND_HARBOR            (2 | (36 << 8))
 #define MAP_FIVE_ISLAND_HOUSE1            (3 | (36 << 8))
 #define MAP_FIVE_ISLAND_HOUSE2            (4 | (36 << 8))
 
-// Map Group 37
+// gMapGroup37
 #define MAP_SIX_ISLAND_POKEMON_CENTER_1F (0 | (37 << 8))
 #define MAP_SIX_ISLAND_POKEMON_CENTER_2F (1 | (37 << 8))
 #define MAP_SIX_ISLAND_HARBOR            (2 | (37 << 8))
 #define MAP_SIX_ISLAND_HOUSE             (3 | (37 << 8))
 #define MAP_SIX_ISLAND_MART              (4 | (37 << 8))
 
-// Map Group 38
+// gMapGroup38
 #define MAP_THREE_ISLAND_HARBOR (0 | (38 << 8))
 
-// Map Group 39
+// gMapGroup39
 #define MAP_FIVE_ISLAND_RESORT_GORGEOUS_HOUSE (0 | (39 << 8))
 
-// Map Group 40
+// gMapGroup40
 #define MAP_TWO_ISLAND_CAPE_BRINK_HOUSE (0 | (40 << 8))
 
-// Map Group 41
+// gMapGroup41
 #define MAP_SIX_ISLAND_WATER_PATH_HOUSE1 (0 | (41 << 8))
 #define MAP_SIX_ISLAND_WATER_PATH_HOUSE2 (1 | (41 << 8))
 
-// Map Group 42
+// gMapGroup42
 #define MAP_SEVEN_ISLAND_SEVAULT_CANYON_HOUSE (0 | (42 << 8))
 
-// Map Group 43
+// gMapGroup43
 #define MAP_DEEPWATER_CAVE_1F      (0 | (43 << 8))
 #define MAP_DEEPWATER_CAVE_2F      (1 | (43 << 8))
 #define MAP_DEEPWATER_CAVE_3F      (2 | (43 << 8))
@@ -538,16 +542,16 @@
 #define MAP_DEEPWATER_CAVE_7F      (6 | (43 << 8))
 #define MAP_DEEPWATER_CAVE_CISTERN (7 | (43 << 8))
 
-// Map Group 44
+// gMapGroup44
 #define MAP_DRAGON_GATE_CAVERN_1F           (0 | (44 << 8))
 #define MAP_DRAGON_GATE_CAVERN_2F           (1 | (44 << 8))
 #define MAP_DRAGON_GATE_CAVERN_IRON_CHAMBER (2 | (44 << 8))
 
-// Map Group 45
+// gMapGroup45
 #define MAP_CELADON_FOREST          (0 | (45 << 8))
 #define MAP_CELADON_FOREST_ENTRANCE (1 | (45 << 8))
 
-// Map Group 46
+// gMapGroup46
 #define MAP_HEMLOCK_TOWN_HOUSE1            (0 | (46 << 8))
 #define MAP_HEMLOCK_TOWN_HOUSE2            (1 | (46 << 8))
 #define MAP_HEMLOCK_TOWN_HOUSE3            (2 | (46 << 8))
@@ -555,7 +559,7 @@
 #define MAP_HEMLOCK_TOWN_POKEMON_CENTER_2F (4 | (46 << 8))
 #define MAP_HEMLOCK_FOREST                 (5 | (46 << 8))
 
-// Map Group 47
+// gMapGroup47
 #define MAP_MT_SILVER_1F                 (0 | (47 << 8))
 #define MAP_MT_SILVER_2F                 (1 | (47 << 8))
 #define MAP_MT_SILVER_3F                 (2 | (47 << 8))
@@ -565,7 +569,7 @@
 #define MAP_MT_SILVER_MOLTRES_CHAMBER    (6 | (47 << 8))
 #define MAP_MT_SILVER_LEFTOVERS_ROOM     (7 | (47 << 8))
 
-// Map Group 48
+// gMapGroup48
 #define MAP_NEW_BARK_TOWN    (0 | (48 << 8))
 #define MAP_ROUTE29          (1 | (48 << 8))
 #define MAP_ROUTE27          (2 | (48 << 8))
@@ -575,58 +579,58 @@
 #define MAP_VIOLET_CITY      (6 | (48 << 8))
 #define MAP_ROUTE32          (7 | (48 << 8))
 
-// Map Group 49
+// gMapGroup49
 #define MAP_NEW_BARK_TOWN_HOUSE1 (0 | (49 << 8))
 
-// Map Group 50
+// gMapGroup50
 #define MAP_TOHJO_FALLS (0 | (50 << 8))
 
-// Map Group 51
+// gMapGroup51
 
-// Map Group 52
+// gMapGroup52
 
-// Map Group 53
+// gMapGroup53
 
-// Map Group 54
+// gMapGroup54
 
-// Map Group 55
+// gMapGroup55
 
-// Map Group 56
+// gMapGroup56
 
-// Map Group 57
+// gMapGroup57
 
-// Map Group 58
+// gMapGroup58
 
-// Map Group 59
+// gMapGroup59
 
-// Map Group 60
+// gMapGroup60
 
-// Map Group 61
+// gMapGroup61
 #define MAP_ROUTE31_ENTRANCE (0 | (61 << 8))
 
-// Map Group 62
+// gMapGroup62
 
-// Map Group 63
+// gMapGroup63
 
-// Map Group 64
+// gMapGroup64
 
-// Map Group 65
+// gMapGroup65
 
-// Map Group 66
+// gMapGroup66
 
-// Map Group 67
+// gMapGroup67
 
-// Map Group 68
+// gMapGroup68
 
-// Map Group 69
+// gMapGroup69
 
-// Map Group 70
+// gMapGroup70
 
-// Map Group 71
+// gMapGroup71
 
-// Map Group 72
+// gMapGroup72
 
-// Map Group 73
+// gMapGroup73
 
 #define MAP_GROUPS_COUNT 74
 
