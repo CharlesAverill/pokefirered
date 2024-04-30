@@ -22,5 +22,6 @@ jobs:
           tag: "latest"
           draft: false
           regex: "/^(.*)$/i"
+          changelog-entry: ""
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
