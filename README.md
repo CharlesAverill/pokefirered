@@ -1,5 +1,7 @@
 # Charles's FireRed
-Just playing around with this FR/LG decomp. Adding in some pokemon, practicing ASM and C. Lots of fun stuff. Join our [Discord](https://discord.gg/c2vsdGjPMP)!
+Join our [Discord](https://discord.gg/c2vsdGjPMP)!
+
+<video src="https://raw.githubusercontent.com/CharlesAverill/pokefirered/main/media/cfrtrailer.mp4" controls></video>
 
 ## Who is this hack for?
 This hack is for you if you like:
