@@ -2935,7 +2935,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_CHANSEY"
               },
               {
                 "min_level": 23,
@@ -3859,7 +3859,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_KANGASKHAN"
               },
               {
                 "min_level": 28,
@@ -21871,7 +21871,7 @@
               {
                 "min_level": 11,
                 "max_level": 11,
-                "species": "SPECIES_SQUIRTLE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 12,
@@ -21881,7 +21881,7 @@
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_SHROOMISH"
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 9,
@@ -21891,12 +21891,12 @@
               {
                 "min_level": 11,
                 "max_level": 11,
-                "species": "SPECIES_MUDKIP"
+                "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_TOTODILE"
+                "species": "SPECIES_MARILL"
               }
             ]
           },
