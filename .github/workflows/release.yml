@@ -7,21 +7,13 @@ on:
       - "main"
 
 jobs:
-  checkout:
-    name: "Checkout"
-    runs-on: "ubuntu-latest"
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            changelog
-            build
   release:
     name: "Release"
     runs-on: "ubuntu-latest"
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
