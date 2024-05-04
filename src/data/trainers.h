@@ -119,6 +119,78 @@ const struct Trainer gTrainers[] = {
         .partySize = NELEMS(sTrainerMons_OldRed),
         .party = {.ItemCustomMoves = sTrainerMons_OldRed}
     },
+    [TRAINER_ETHAN_CHARMANDER] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_FutureGoldCharmander),
+        .party = {.ItemCustomMoves = sTrainerMons_FutureGoldCharmander}
+    },
+    [TRAINER_ETHAN_SQUIRTLE] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_FutureGoldSquirtle),
+        .party = {.ItemCustomMoves = sTrainerMons_FutureGoldSquirtle}
+    },
+    [TRAINER_ETHAN_BULBASAUR] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_ETHAN,
+        .trainerName = _("ETHAN"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_FutureGoldBulbasaur),
+        .party = {.ItemCustomMoves = sTrainerMons_FutureGoldBulbasaur}
+    },
+    [TRAINER_LYRA_CHARMANDER] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_FutureGoldCharmander),
+        .party = {.ItemCustomMoves = sTrainerMons_FutureGoldCharmander}
+    },
+    [TRAINER_LYRA_SQUIRTLE] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_FutureGoldSquirtle),
+        .party = {.ItemCustomMoves = sTrainerMons_FutureGoldSquirtle}
+    },
+    [TRAINER_LYRA_BULBASAUR] = {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_LYRA,
+        .trainerName = _("LYRA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = NELEMS(sTrainerMons_FutureGoldBulbasaur),
+        .party = {.ItemCustomMoves = sTrainerMons_FutureGoldBulbasaur}
+    },
     [TRAINER_HEX_MANIAC_1] = {
         .partyFlags = 0,
         .trainerClass = CLASS_HEX_MANIAC,

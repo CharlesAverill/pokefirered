@@ -1091,7 +1091,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_BEEDRILL"
+                "species": "SPECIES_ILLUMISE"
               },
               {
                 "min_level": 5,
@@ -1101,7 +1101,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_BEEDRILL"
+                "species": "SPECIES_VOLBEAT"
               },
               {
                 "min_level": 7,
@@ -25657,7 +25657,7 @@
               {
                 "min_level": 18,
                 "max_level": 25,
-                "species": "SPECIES_VOLBEAT"
+                "species": "SPECIES_ILLUMISE"
               },
               {
                 "min_level": 18,

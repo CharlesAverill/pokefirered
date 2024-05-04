@@ -164,6 +164,8 @@
 #define TRAINER_PIC_RUIN_MANIAC           145
 #define TRAINER_PIC_LADY                  146
 #define TRAINER_PIC_PAINTER               147
+#define TRAINER_PIC_ETHAN                 147
+#define TRAINER_PIC_LYRA                  147
 
 // Leftover from R/S
 #define TRAINER_SECRET_BASE                 1024
@@ -913,7 +915,13 @@
 #define TRAINER_CHAMPION_REMATCH_BULBASAUR       740
 #define TRAINER_CHAMPION_REMATCH_CHARMANDER      741
 #define TRAINER_CUE_BALL_PAXTON                  742
-#define NUM_TRAINERS                             743
+#define TRAINER_ETHAN_CHARMANDER                 743
+#define TRAINER_ETHAN_SQUIRTLE                 744
+#define TRAINER_ETHAN_BULBASAUR                 745
+#define TRAINER_LYRA_CHARMANDER                 746
+#define TRAINER_LYRA_SQUIRTLE                 747
+#define TRAINER_LYRA_BULBASAUR                 748
+#define NUM_TRAINERS                             749
 
 // All trainer parties specify the IV, level, and species for each Pokémon in the
 // party. Some trainer parties also specify held items and custom moves for each

@@ -364,6 +364,144 @@ static const struct TrainerMonItemCustomMoves sTrainerMons_OldRed[] = {
     },
 };
 
+static const struct TrainerMonItemCustomMoves sTrainerMons_FutureGoldCharmander[] = {
+    /* Typhlosion, Tyranitar, Kingdra, Blissey, Umbreon, Noctowl */
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_TYPHLOSION,
+        .heldItem = ITEM_CHARCOAL,
+        .moves = {MOVE_FIRE_BLAST, MOVE_FOCUS_PUNCH, MOVE_THUNDER_PUNCH, MOVE_SUBSTITUTE}
+    },
+    {
+        .iv = 255,
+        .lvl = 88,
+        .species = SPECIES_TYRANITAR,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .moves = {MOVE_DRAGON_DANCE, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_ICE_BEAM}
+    },
+    {
+        .iv = 255,
+        .lvl = 82,
+        .species = SPECIES_KINGDRA,
+        .heldItem = ITEM_MYSTIC_WATER,
+        .moves = {MOVE_RAIN_DANCE, MOVE_ICE_BEAM, MOVE_HIDDEN_POWER, MOVE_SURF}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_BLISSEY,
+        .heldItem = ITEM_NONE,
+        .moves = {MOVE_SOFT_BOILED, MOVE_COUNTER, MOVE_SEISMIC_TOSS, MOVE_TOXIC}
+    },
+    {
+        .iv = 255,
+        .lvl = 80,
+        .species = SPECIES_UMBREON,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_CURSE, MOVE_BATON_PASS, MOVE_TAUNT, MOVE_MOONLIGHT}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_SKARMORY,
+        .heldItem = ITEM_SHARP_BEAK,
+        .moves = {MOVE_SPIKES, MOVE_ROAR, MOVE_DRILL_PECK, MOVE_TAUNT}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sTrainerMons_FutureGoldSquirtle[] = {
+    /* Feraligatr, Tyranitar, Ampharos, Blissey, Espeon, Skarmory */
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_FERALIGATR,
+        .heldItem = ITEM_MYSTIC_WATER,
+        .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_HYDRO_PUMP}
+    },
+    {
+        .iv = 255,
+        .lvl = 88,
+        .species = SPECIES_TYRANITAR,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .moves = {MOVE_DRAGON_DANCE, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_ICE_BEAM}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_AMPHAROS,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_THUNDERBOLT, MOVE_TOXIC, MOVE_EARTHQUAKE, MOVE_ICE_BEAM}
+    },
+    {
+        .iv = 255,
+        .lvl = 80,
+        .species = SPECIES_BLISSEY,
+        .heldItem = ITEM_NONE,
+        .moves = {MOVE_SOFT_BOILED, MOVE_COUNTER, MOVE_SEISMIC_TOSS, MOVE_TOXIC}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_SKARMORY,
+        .heldItem = ITEM_SHARP_BEAK,
+        .moves = {MOVE_SPIKES, MOVE_ROAR, MOVE_DRILL_PECK, MOVE_TAUNT}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_ESPEON,
+        .heldItem = ITEM_TWISTED_SPOON,
+        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_SUBSTITUTE, MOVE_BATON_PASS}
+    },
+};
+
+static const struct TrainerMonItemCustomMoves sTrainerMons_FutureGoldBulbasaur[] = {
+    /* Meganium, Tyranitar, Ursaring, Blissey, Umbreon, Espeon */
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_MEGANIUM,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_LEECH_SEED, MOVE_SYNTHESIS, MOVE_REFLECT, MOVE_LIGHT_SCREEN}
+    },
+    {
+        .iv = 255,
+        .lvl = 88,
+        .species = SPECIES_TYRANITAR,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .moves = {MOVE_DRAGON_DANCE, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_ICE_BEAM}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_URSARING,
+        .heldItem = ITEM_CHOICE_BAND,
+        .moves = {MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_FOCUS_PUNCH, MOVE_HYPER_BEAM}
+    },
+    {
+        .iv = 255,
+        .lvl = 80,
+        .species = SPECIES_BLISSEY,
+        .heldItem = ITEM_NONE,
+        .moves = {MOVE_SOFT_BOILED, MOVE_COUNTER, MOVE_SEISMIC_TOSS, MOVE_TOXIC}
+    },
+    {
+        .iv = 255,
+        .lvl = 84,
+        .species = SPECIES_ESPEON,
+        .heldItem = ITEM_TWISTED_SPOON,
+        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_SUBSTITUTE, MOVE_BATON_PASS}
+    },
+    {
+        .iv = 255,
+        .lvl = 80,
+        .species = SPECIES_UMBREON,
+        .heldItem = ITEM_NONE,
+        .moves = {MOVE_CURSE, MOVE_BATON_PASS, MOVE_TAUNT, MOVE_TOXIC}
+    }
+};
+
 static const struct TrainerMonNoItemDefaultMoves sTrainerMons_HexManiac1[] = {
     {
         .iv = 50,

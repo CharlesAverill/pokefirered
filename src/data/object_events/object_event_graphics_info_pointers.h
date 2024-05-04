@@ -161,6 +161,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Registeel;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jirachi;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Eusine;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kurt;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ethan;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -327,4 +328,5 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_JIRACHI] = &gObjectEventGraphicsInfo_Jirachi,
     [OBJ_EVENT_GFX_EUSINE] = &gObjectEventGraphicsInfo_Eusine,
     [OBJ_EVENT_GFX_KURT] = &gObjectEventGraphicsInfo_Kurt,
+    [OBJ_EVENT_GFX_ETHAN] = &gObjectEventGraphicsInfo_Ethan,
 };

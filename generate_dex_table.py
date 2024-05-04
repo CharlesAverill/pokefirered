@@ -95,7 +95,15 @@ event_pokemon = {
     "Latias": "Roams after catching Entei",
     "Latios": "Roams after catching Raikou",
     "Jirachi": "Pokemon Tower after becoming Champion and speaking to Mr. Fuji",
-    "Deoxys": "Birth Island after becoming Champion, completing Captain Solomon's quest, and speaking with Prof. Charles in Saffron City"
+    "Deoxys": "Birth Island after becoming Champion, completing Captain Solomon's quest, and speaking with Prof. Charles in Saffron City",
+    "Vaporeon": "Evolve from Eevee using Water Stone",
+    "Flareon": "Evolve from Eevee using Fire Stone",
+    "Bellossom": "Evolve from Gloom using Sun Stone",
+    "Politoed": "Evolve from Poliwhirl at level 37",
+    "Espeon": "Evolve from Eevee using Sun Stone",
+    "Umbreon": "Evolve from Eevee using Moon Stone",
+    "Cascoon": "Evolve from Wurmple at level 7",
+    "Gorebyss": "Evolve from Clamperl using Water Stone",
 }
 
 try:
@@ -157,7 +165,7 @@ try:
                 
                 for species, level_data in species_data.items():
                     sprite_path = get_sprite_path(species)
-                    html_file.write(f"<tr><td><img src='{sprite_path}' alt='{species}'></td><td>{species}</td><td>{level_data['min_level']}</td><td>{level_data['max_level']}</td></tr>\n")
+                    html_file.write(f"<tr><td><img src='{sprite_path}' alt='{species}' loading='lazy'></td><td>{species}</td><td>{level_data['min_level']}</td><td>{level_data['max_level']}</td></tr>\n")
                 
                 html_file.write("</table>\n")
                 html_file.write("<hr>\n")
@@ -166,7 +174,8 @@ try:
         
         print("encounters.html generated successfully.")
 
-        species_order = get_species_order(species_file_path)
+        species_order = filter(lambda x: not x.startswith("SPECIES_OLD_UNOWN") and not x == "SPECIES_EGG", get_species_order(species_file_path))
+        species_order = filter(lambda x: x == "SPECIES_UNOWN" if x.startswith("SPECIES_UNOWN") else True, species_order)
         
         # Get evolution data
         evolution_data = get_evolution_data(evolution_file_path)
@@ -175,11 +184,14 @@ try:
         with open("changelog/locations.html", "w", encoding="utf-8") as html_file:
             html_file.write("<!DOCTYPE html>\n<html>\n<head>\n<title>Species Locations</title>\n</head>\n<body>\n")
             
-            for species in species_order:
+            for i, species in enumerate(species_order):
                 species = format_species(species)
                 sprite_path = get_sprite_path(species)
                 # if species in evolution_data or species in species_locations:
-                html_file.write(f"<h2><img src='{sprite_path}' alt='{species}'>{species}</h2>\n")
+                src = f'https://img.pokemondb.net/sprites/ruby-sapphire/normal/{species.lower().replace("_", "-")}.png'
+                html_file.write(f"<h2><img src='{src}' alt='{species}' loading='lazy'>{species}</h2>\n")
+                # html_file.write(f"<h2><img src='https://archives.bulbagarden.net/media/upload/8/8c/Spr_3r_{str(i + 1).zfill(3)}.png' \
+                #                     alt='{species}' loading='lazy'>{species}</h2>\n")
                 html_file.write("<ul>\n")
                 if species in event_pokemon:
                     for location in event_pokemon[species].split(";"):
