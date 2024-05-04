@@ -165,7 +165,8 @@ try:
                 
                 for species, level_data in species_data.items():
                     sprite_path = get_sprite_path(species)
-                    html_file.write(f"<tr><td><img src='{sprite_path}' alt='{species}' loading='lazy'></td><td>{species}</td><td>{level_data['min_level']}</td><td>{level_data['max_level']}</td></tr>\n")
+                    src = f'https://img.pokemondb.net/sprites/ruby-sapphire/normal/{species.lower().replace("_", "-")}.png'
+                    html_file.write(f"<tr><td><img src='{src}' alt='{species}' loading='lazy'></td><td>{species}</td><td>{level_data['min_level']}</td><td>{level_data['max_level']}</td></tr>\n")
                 
                 html_file.write("</table>\n")
                 html_file.write("<hr>\n")
