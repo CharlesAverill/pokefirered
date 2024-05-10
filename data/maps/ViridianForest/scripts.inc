@@ -62,3 +62,14 @@ ViridianForest_EventScript_Charlie:: @ 81605CD
 	trainerbattle_single TRAINER_BUG_CATCHER_CHARLIE, ViridianForest_Text_CharlieIntro, ViridianForest_Text_CharlieDefeat
 	msgbox ViridianForest_Text_CharliePostBattle, MSGBOX_AUTOCLOSE
 	end
+
+ViridianForest_EventScript_EonFlute::
+	lock
+	checkitemspace ITEM_EON_FLUTE, 1
+	compare VAR_RESULT, FALSE
+	vgoto_if_eq AuroraTicket_NoBagSpace
+	giveitem ITEM_EON_FLUTE
+	waitmessage
+	waitbuttonpress
+	release
+	end

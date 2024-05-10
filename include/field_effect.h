@@ -22,6 +22,7 @@ void StartLavaridgeGymB1FWarp(u8 a0);
 void StartLavaridgeGym1FWarp(u8 a0);
 void sub_8083598(u8 a0);
 void FreeResourcesAndDestroySprite(struct Sprite * sprite, u8 spriteId);
+void Fldeff_FlyLand(void);
 u8 CreateMonSprite_PicBox(u16 species, s16 x, s16 y, bool8 unused);
 void ReturnToFieldFromFlyMapSelect(void);
 void MultiplyInvertedPaletteRGBComponents(u16 i, u8 r, u8 g, u8 b);

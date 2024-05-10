@@ -1,5 +1,5 @@
-#ifndef GUARD_TEXT_WINDOW_H
-#define GUARD_TEXT_WINDOW_H
+#ifndef TEXT_WINDOW
+#define TEXT_WINDOW
 
 #include "global.h"
 
@@ -24,4 +24,4 @@ void sub_814FE6C(u8 windowId, u16 destOffset, u8 palIdx);
 void sub_814FEEC(u8 windowId, u16 destOffset, u8 palIdx);
 void sub_814FF6C(u8 windowId, u16 destOffset);
 
-#endif // GUARD_TEXT_WINDOW_H
+#endif /* TEXT_WINDOW */

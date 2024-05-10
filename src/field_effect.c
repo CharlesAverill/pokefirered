@@ -682,6 +682,13 @@ static void PokeballGlowEffect_6(struct Sprite * sprite);
 static void PokeballGlowEffect_7(struct Sprite * sprite);
 static u8 PokecenterHealEffectHelper(s32 x, s32 y);
 static void HallOfFameRecordEffectHelper(s32 x, s32 y);
+static void mapldr_080842E8_2(void);
+
+void Fldeff_FlyLand(void)
+{
+	SetMainCallback2(CB2_ReturnToField);
+	gFieldCallback = mapldr_080842E8_2;
+}
 
 static void (*const sPokecenterHealTaskCBTable[])(struct Task * ) = {
     PokecenterHealEffect_0,
@@ -1060,6 +1067,17 @@ static void FieldCallback_FlyArrive(void)
     ScriptContext2_Enable();
     FreezeObjectEvents();
     gFieldCallback = NULL;
+}
+
+static void mapldr_080842E8_2(void)
+{
+	u8 taskId;
+	FadeInFromBlack();
+	taskId = CreateTask(Task_FlyOut, 0);
+	gTasks[taskId].data[0] = 1; //do landing anim only
+	ScriptContext2_Enable();
+	FreezeObjectEvents();
+	gFieldCallback = NULL;
 }
 
 static void Task_FlyIn(u8 taskId)

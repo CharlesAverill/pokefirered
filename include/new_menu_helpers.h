@@ -1,5 +1,5 @@
-#ifndef GUARD_NEW_MENU_HELPERS_H
-#define GUARD_NEW_MENU_HELPERS_H
+#ifndef NEW_MENU_HELPERS
+#define NEW_MENU_HELPERS
 
 #include "global.h"
 #include "text.h"
@@ -50,4 +50,4 @@ void DestroyHelpMessageWindow_(void);
 void LoadSignPostWindowFrameGfx(void);
 void SetDefaultFontsPointer(void);
 
-#endif // GUARD_NEW_MENU_HELPERS_H
+#endif /* NEW_MENU_HELPERS */

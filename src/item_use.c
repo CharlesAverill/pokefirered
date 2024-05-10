@@ -38,6 +38,7 @@
 #include "constants/moves.h"
 #include "constants/songs.h"
 #include "constants/field_weather.h"
+#include "soar.h"
 
 static EWRAM_DATA void (*sItemUseOnFieldCB)(u8 taskId) = NULL;
 
@@ -933,4 +934,19 @@ void ItemUse_SetQuestLogEvent(u8 eventId, struct Pokemon * pokemon, u16 itemId, 
         questLog->species = 0xFFFF;
     SetQuestLogEvent(eventId, (void *)questLog);
     Free(questLog);
+}
+
+void FieldUseFunc_EonFlute(u8 taskId)
+{
+	s16* data = gTasks[taskId].data;
+
+	if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
+	{
+		sItemUseOnFieldCB = ItemUseOnFieldCB_EonFlute;
+		sub_80A103C(taskId);
+	}
+	else {
+        PrintNotTheTimeToUseThat(taskId, data[3]);
+		// DisplayDadsAdviceCannotUseItemMessage(taskId, data[3]);
+	}
 }

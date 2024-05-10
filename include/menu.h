@@ -1,5 +1,5 @@
-#ifndef GUARD_MENU_H
-#define GUARD_MENU_H
+#ifndef MENU
+#define MENU
 
 #include "global.h"
 #include "text.h"
@@ -64,4 +64,4 @@ void ClearDialogWindowAndFrameToTransparent(u8 windowId, bool8 copyToVram);
 void DrawDialogFrameWithCustomTileAndPalette(u8 windowId, bool8 copyToVram, u16 tileNum, u8 paletteNum);
 struct WindowTemplate SetWindowTemplateFields(u8 bg, u8 left, u8 top, u8 width, u8 height, u8 paletteNum, u16 baseBlock);
 
-#endif // GUARD_MENU_H
+#endif /* MENU */

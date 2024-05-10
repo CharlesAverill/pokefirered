@@ -36,20 +36,6 @@ enum {
 };
 
 enum {
-    MAPSECTYPE_NONE,
-    MAPSECTYPE_ROUTE,
-    MAPSECTYPE_VISITED,
-    MAPSECTYPE_NOT_VISITED,
-    MAPSECTYPE_UNKNOWN, // Checked but never used
-};
-
-enum {
-    LAYER_MAP,
-    LAYER_DUNGEON,
-    LAYER_COUNT
-};
-
-enum {
     WIN_MAP_NAME,
     WIN_DUNGEON_NAME,
     WIN_MAP_PREVIEW,
@@ -299,7 +285,7 @@ static void DrawDungeonNameBox(void);
 static void DisplayCurrentDungeonName(void);
 static void BufferRegionMapBg(u8, u16 *);
 static bool8 GetRegionMapPermission(u8);
-static u8 GetSelectedRegionMap(void);
+// static u8 GetSelectedRegionMap(void);
 static void InitSwitchMapMenu(u8, u8, TaskFunc);
 static void Task_SwitchMapMenu(u8);
 static void FreeSwitchMapMenu(u8);
@@ -343,10 +329,11 @@ static u16 GetMapCursorY(void);
 static u16 GetMapsecUnderCursor(void);
 static u16 GetDungeonMapsecUnderCursor(void);
 static u8 GetMapsecType(u8);
-static u8 GetDungeonMapsecType(u8);
+// static u8 GetDungeonMapsecType(u8);
 static u8 GetSelectedMapsecType(u8);
+static void GetPlayerPositionOnRegionMap(void);
 static void GetPlayerPositionOnRegionMap_HandleOverrides(void);
-static u8 GetSelectedMapSection(u8, u8, s16, s16);
+// static u8 GetSelectedMapSection(u8, u8, s16, s16);
 static void CreatePlayerIcon(u16, u16);
 static void CreatePlayerIconSprite(void);
 static void SetPlayerIconInvisibility(bool8);
@@ -1384,7 +1371,7 @@ static const u8 sRegionMapSections_Sevii67[LAYER_COUNT][MAP_HEIGHT][MAP_WIDTH] =
     }
 };
 
-static const u8 sMapFlyDestinations[][3] = {
+const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_PALLET_TOWN         - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           SPAWN_PALLET_TOWN},
     [MAPSEC_VIRIDIAN_CITY       - MAPSECS_KANTO] = {MAP(VIRIDIAN_CITY),                         SPAWN_VIRIDIAN_CITY},
     [MAPSEC_PEWTER_CITY         - MAPSECS_KANTO] = {MAP(PEWTER_CITY),                           SPAWN_PEWTER_CITY},
@@ -2091,7 +2078,7 @@ static bool8 GetRegionMapPermission(u8 attr)
     return sRegionMap->permissions[attr];
 }
 
-static u8 GetSelectedRegionMap(void)
+u8 GetSelectedRegionMap(void)
 {
     return sRegionMap->selectedRegion;
 }
@@ -3569,7 +3556,7 @@ static u8 GetMapsecType(u8 mapsec)
     }
 }
 
-static u8 GetDungeonMapsecType(u8 mapsec)
+u8 GetDungeonMapsecType(u8 mapsec)
 {
     switch (mapsec)
     {
@@ -3678,7 +3665,7 @@ static u16 GetPlayerCurrentMapSectionId(void)
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)->regionMapSectionId;
 }
 
-static void GetPlayerPositionOnRegionMap(void)
+void GetPlayerPositionOnRegionMapFromCurrFieldPos(u16 *mapSectionId, u16 *cursorPosX, u16 *cursorPosY, bool8* playerInCave)
 {
     u16 width;
     u32 divisor;
@@ -3705,6 +3692,7 @@ static void GetPlayerPositionOnRegionMap(void)
         break;
     case MAP_TYPE_UNDERGROUND:
     case MAP_TYPE_UNKNOWN:
+        *playerInCave = TRUE;
         mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->escapeWarp.mapGroup, gSaveBlock1Ptr->escapeWarp.mapNum);
         sMapCursor->selectedMapsec = mapHeader->regionMapSectionId;
         width = mapHeader->mapLayout->width;
@@ -3725,9 +3713,11 @@ static void GetPlayerPositionOnRegionMap(void)
         {
             warp = &gSaveBlock1Ptr->escapeWarp;
             mapHeader = Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum);
+            *playerInCave = TRUE;
         }
         else
         {
+            *playerInCave = FALSE;
             warp = &gSaveBlock1Ptr->dynamicWarp;
             mapHeader = Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum);
             sMapCursor->selectedMapsec = mapHeader->regionMapSectionId;
@@ -3755,6 +3745,14 @@ static void GetPlayerPositionOnRegionMap(void)
     sMapCursor->x = x + sMapSectionTopLeftCorners[sMapCursor->selectedMapsec][0];
     sMapCursor->y = y + sMapSectionTopLeftCorners[sMapCursor->selectedMapsec][1];
 }
+
+static void GetPlayerPositionOnRegionMap(void)
+{
+    bool8 inCave;
+    u16 mapsecid = GetPlayerCurrentMapSectionId();
+    GetPlayerPositionOnRegionMapFromCurrFieldPos(&mapsecid, &sMapCursor->x, &sMapCursor->y, &inCave);
+}
+
 
 static void GetPlayerPositionOnRegionMap_HandleOverrides(void)
 {
@@ -3936,7 +3934,7 @@ static void GetPlayerPositionOnRegionMap_HandleOverrides(void)
     sMapCursor->selectedMapsec = GetSelectedMapSection(GetSelectedRegionMap(), LAYER_MAP, sMapCursor->y, sMapCursor->x);
 }
 
-static u8 GetSelectedMapSection(u8 whichMap, u8 layer, s16 y, s16 x)
+u8 GetSelectedMapSection(u8 whichMap, u8 layer, s16 y, s16 x)
 {
     switch (whichMap)
     {

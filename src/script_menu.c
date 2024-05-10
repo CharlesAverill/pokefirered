@@ -33,7 +33,7 @@ static void Hask_MultichoiceGridMenu_HandleInput(u8 taskId);
 static void CreatePCMenuWindow(void);
 static bool8 PicboxWait(void);
 static void DestroyScriptMenuWindow(u8 windowId);
-static u8 CreateWindowFromRect(u8 left, u8 top, u8 width, u8 height);
+// static u8 CreateWindowFromRect(u8 left, u8 top, u8 width, u8 height);
 
 
 static const struct MenuAction sScriptMultiChoiceMenu_YesNo[] = {
@@ -1163,7 +1163,7 @@ bool8 CloseMuseumFossilPic(void)
     return TRUE;
 }
 
-static u8 CreateWindowFromRect(u8 left, u8 top, u8 width, u8 height)
+u8 CreateWindowFromRect(u8 left, u8 top, u8 width, u8 height)
 {
     struct WindowTemplate template = SetWindowTemplateFields(0, left + 1, top + 1, width, height, 15, 0x038);
     u8 windowId = AddWindow(&template);

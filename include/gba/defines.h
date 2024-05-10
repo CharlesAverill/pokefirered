@@ -1,5 +1,5 @@
-#ifndef GUARD_GBA_DEFINES
-#define GUARD_GBA_DEFINES
+#ifndef DEFINES
+#define DEFINES
 
 #include <stddef.h>
 
@@ -95,4 +95,4 @@
 #define NAKED __attribute__((naked))
 #define UNUSED __attribute__((unused))
 
-#endif // GUARD_GBA_DEFINES
+#endif /* DEFINES */

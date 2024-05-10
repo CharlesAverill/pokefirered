@@ -429,6 +429,9 @@ src/trainer_tower.o(ewram_data);
 . = ALIGN(4);
 . = ALIGN(4);
 src/berry_powder.o(ewram_data);
+. = ALIGN(4);
+. = ALIGN(4);
+src/soar.o(.ewram_data);
 
         *libc.a:impure.o(.data);
         *libc.a:locale.o(.data);
@@ -544,6 +547,9 @@ src/agb_flash.o(.bss);
 . = ALIGN(8);
 . = ALIGN(4);
 *libc.a:syscalls.o(.bss);
+. = ALIGN(4);
+. = ALIGN(4);
+src/soar.o(.bss);
 
         /* .bss.code starts at 0x30028E0 */
         src/m4a.o(.bss.code);
@@ -1417,6 +1423,7 @@ gRfuSIO32Id = .;
         src/berry_powder.o(.text);
         src/minigame_countdown.o(.text);
         src/berry_fix_program.o(.text);
+        src/soar.o(.text);
     } =0
 
     script_data :
@@ -1723,6 +1730,7 @@ gRfuSIO32Id = .;
         /* These should not be moved to C files */
         src/mystery_event_msg.o(.rodata);
         data/mystery_event_msg.o(.rodata);
+        src/soar.o(.rodata);
         src/m4a_tables.o(.rodata);
         data/sound_data.o(.rodata);
     } =0
