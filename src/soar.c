@@ -14,6 +14,7 @@
 #include "palette.h"
 #include "region_map.h"
 #include "constants/region_map_sections.h"
+#include "help_system.h"
 // #include "constants/rgb.h"
 #include "scanline_effect.h"
 #include "script.h"
@@ -69,9 +70,9 @@ static const struct WindowTemplate sPopupWindowTemplate =
 };
 
 // For now, just use the region map graphics
-static const u16 sRegionMapBkgnd_Pal[] = INCBIN_U16("graphics/soar/region_map.gbapal");
-static const u32 sRegionMapBkgnd_ImageLZ[] = INCBIN_U32("graphics/soar/region_map.8bpp.lz");
-static const u32 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U32("graphics/soar/region_map_map.bin.lz");
+static const u16 sRegionMapBkgnd_Pal[] = INCBIN_U16("graphics/soar/hoenn.gbapal");
+static const u32 sRegionMapBkgnd_ImageLZ[] = INCBIN_U32("graphics/soar/hoenn.8bpp.lz");
+static const u32 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U32("graphics/soar/hoenn_map.bin.lz");
 
 //
 // Eon sprite data
@@ -180,8 +181,13 @@ static u8 sShadowSpriteId;
 
 static const u8 sEonFluteUseMessage[] = _("{PLAYER} used the EON FLUTE.{PAUSE_UNTIL_PRESS}");
 
+static u16 currentMusic;
+
 void CB2_InitSoar(void)
 {
+	currentMusic = GetCurrentMapMusic();
+	gHelpSystemEnabled = FALSE;
+
 	switch (gMain.state)
 	{
 	case 0:
@@ -214,6 +220,8 @@ void CB2_InitSoar(void)
 			sPlayerPosZ = Q_8_7(8, 0);
 			sPlayerYaw = 0;
 			sPlayerPitch = 0;
+
+			FadeOutAndFadeInNewMapMusic(MUS_SURF, 2, 2);
 
 			// some of these may not be necessary, but I'm just being safe
 			ScanlineEffect_Stop();
@@ -301,12 +309,12 @@ static void CB2_LoadSoarGraphics(void)
 		gMain.state++;
 		break;
 	case 1:
-		LoadUserWindowBorderGfx(0, 1, 14);
-		LoadPalette(GetUserFrameGraphicsInfo(gSaveBlock2Ptr->optionsWindowFrameType)->palette, 0xE0, 0x20);
-		windid = InitWindows(&sPopupWindowTemplate);
-		// LoadMessageBoxGfx(0, 10, 15);
-		windid2 = CreateWindowFromRect(1, 14, 27, 4);
-        SetStdWindowBorderStyle(windid2, FALSE);
+		// LoadUserWindowBorderGfx(0, 1, 14);
+		// LoadPalette(GetUserFrameGraphicsInfo(gSaveBlock2Ptr->optionsWindowFrameType)->palette, 0xE0, 0x20);
+		// windid = InitWindows(&sPopupWindowTemplate);
+		// // LoadMessageBoxGfx(0, 10, 15);
+		// LoadSignPostWindowFrameGfx();
+		// windid2 = CreateWindowFromRect(1, 14, 27, 4);
 
 		gMain.state++;
 		break;
@@ -504,6 +512,8 @@ static void ExitSoar(void)
 	PlaySE(SE_PC_OFF);
 	BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, 0);
 	SetMainCallback2(CB2_FadeOut);
+	FadeOutAndFadeInNewMapMusic(currentMusic, 2, 2);
+	gHelpSystemEnabled = TRUE;
 }
 
 // movement limits

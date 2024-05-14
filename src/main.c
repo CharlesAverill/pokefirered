@@ -209,7 +209,9 @@ static void InitMainCallbacks(void)
 
 static void CallCallbacks(void)
 {
-    if (!RunSaveFailedScreen() && !RunHelpSystemCallback())
+    if (!RunSaveFailedScreen() 
+        // && !RunHelpSystemCallback()
+        )
     {
         if (gMain.callback1)
             gMain.callback1();

@@ -65,9 +65,8 @@ ViridianForest_EventScript_Charlie:: @ 81605CD
 
 ViridianForest_EventScript_EonFlute::
 	lock
-	checkitemspace ITEM_EON_FLUTE, 1
-	compare VAR_RESULT, FALSE
-	vgoto_if_eq AuroraTicket_NoBagSpace
+	goto_if_set FLAG_GOT_EON_FLUTE EventScript_ReleaseEnd
+	setflag FLAG_GOT_EON_FLUTE
 	giveitem ITEM_EON_FLUTE
 	waitmessage
 	waitbuttonpress

@@ -272,7 +272,7 @@
 #define FLAG_MET_CREATOR               0x106
 #define FLAG_POSTGAME_COMPLETE               0x107
 #define FLAG_MEW_DISAPPEARED               0x108
-#define FLAG_0x109               0x109
+#define FLAG_GOT_EON_FLUTE               0x109
 #define FLAG_0x10A               0x10A
 #define FLAG_0x10B               0x10B
 #define FLAG_0x10C               0x10C
