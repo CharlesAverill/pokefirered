@@ -28,14 +28,6 @@
 #define SWITCH_BUTTON_Y 11
 
 enum {
-    REGIONMAP_KANTO,
-    REGIONMAP_SEVII123,
-    REGIONMAP_SEVII45,
-    REGIONMAP_SEVII67,
-    REGIONMAP_COUNT
-};
-
-enum {
     WIN_MAP_NAME,
     WIN_DUNGEON_NAME,
     WIN_MAP_PREVIEW,
@@ -3660,7 +3652,7 @@ static u8 GetSelectedMapsecType(u8 layer)
     }
 }
 
-static u16 GetPlayerCurrentMapSectionId(void)
+u16 GetPlayerCurrentMapSectionId(void)
 {
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)->regionMapSectionId;
 }
@@ -3742,8 +3734,8 @@ void GetPlayerPositionOnRegionMapFromCurrFieldPos(u16 *mapSectionId, u16 *cursor
     y /= divisor;
     if (y >= sMapSectionDimensions[sMapCursor->selectedMapsec][1])
         y = sMapSectionDimensions[sMapCursor->selectedMapsec][1] - 1;
-    sMapCursor->x = x + sMapSectionTopLeftCorners[sMapCursor->selectedMapsec][0];
-    sMapCursor->y = y + sMapSectionTopLeftCorners[sMapCursor->selectedMapsec][1];
+    *cursorPosX = sMapCursor->x = x + sMapSectionTopLeftCorners[sMapCursor->selectedMapsec][0];
+    *cursorPosY = sMapCursor->y = y + sMapSectionTopLeftCorners[sMapCursor->selectedMapsec][1];
 }
 
 static void GetPlayerPositionOnRegionMap(void)
@@ -3752,7 +3744,6 @@ static void GetPlayerPositionOnRegionMap(void)
     u16 mapsecid = GetPlayerCurrentMapSectionId();
     GetPlayerPositionOnRegionMapFromCurrFieldPos(&mapsecid, &sMapCursor->x, &sMapCursor->y, &inCave);
 }
-
 
 static void GetPlayerPositionOnRegionMap_HandleOverrides(void)
 {

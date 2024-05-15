@@ -70,9 +70,9 @@ static const struct WindowTemplate sPopupWindowTemplate =
 };
 
 // For now, just use the region map graphics
-static const u16 sRegionMapBkgnd_Pal[] = INCBIN_U16("graphics/soar/hoenn.gbapal");
-static const u32 sRegionMapBkgnd_ImageLZ[] = INCBIN_U32("graphics/soar/hoenn.8bpp.lz");
-static const u32 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U32("graphics/soar/hoenn_map.bin.lz");
+static const u16 sRegionMapBkgnd_Pal[] = INCBIN_U16("graphics/soar/kanto_map_modified_tiles.gbapal");
+static const u32 sRegionMapBkgnd_ImageLZ[] = INCBIN_U32("graphics/soar/kanto_map_modified_tiles.8bpp.lz");
+static const u32 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U32("graphics/soar/kanto_map_modified_tiles.bin.lz");
 
 //
 // Eon sprite data
@@ -212,8 +212,8 @@ void CB2_InitSoar(void)
 			u16 cursorX, cursorY;
 			bool8 inCave;
 			ClearDialogWindowAndFrame(0, 1);
+			sPrevMapSection = GetPlayerCurrentMapSectionId();
 			GetPlayerPositionOnRegionMapFromCurrFieldPos(&sPrevMapSection, &cursorX, &cursorY, &inCave);
-			sPrevMapSection = 0xD5;
 
 			sPlayerPosX = Q_8_7(cursorX * 8, 0);
 			sPlayerPosY = Q_8_7(cursorY * 8, 0);
@@ -300,7 +300,7 @@ static void CB2_LoadSoarGraphics(void)
 		}
 
 		// load palette
-		LoadPalette(sRegionMapBkgnd_Pal, 0x70, 64);
+		LoadPalette(sRegionMapBkgnd_Pal, 0, 64);
 
 		// Create sprites
 		LoadEonGraphics();
@@ -309,12 +309,12 @@ static void CB2_LoadSoarGraphics(void)
 		gMain.state++;
 		break;
 	case 1:
-		// LoadUserWindowBorderGfx(0, 1, 14);
-		// LoadPalette(GetUserFrameGraphicsInfo(gSaveBlock2Ptr->optionsWindowFrameType)->palette, 0xE0, 0x20);
-		// windid = InitWindows(&sPopupWindowTemplate);
-		// // LoadMessageBoxGfx(0, 10, 15);
-		// LoadSignPostWindowFrameGfx();
-		// windid2 = CreateWindowFromRect(1, 14, 27, 4);
+		LoadUserWindowBorderGfx(0, 1, 0xD0);
+		LoadPalette(GetUserFrameGraphicsInfo(gSaveBlock2Ptr->optionsWindowFrameType)->palette, 0x20, 0x20);
+		windid = InitWindows(&sPopupWindowTemplate);
+		TextWindow_LoadResourcesStdFrame0(0, 0x013, 0xD0);
+		TextWindow_SetStdFrame0_WithPal(0, 0x00A, 0xC0);
+		windid2 = CreateWindowFromRect(1, 14, 27, 4);
 
 		gMain.state++;
 		break;
@@ -484,7 +484,7 @@ static void StartBarrelRoll(void)
 
 static void UpdateMapSectionPopup(void)
 {
-	unsigned int mapSection = GetSelectedMapSection(GetSelectedRegionMap(), LAYER_MAP, IPART(sPlayerPosX) / 8, IPART(sPlayerPosY) / 8);
+	unsigned int mapSection = GetSelectedMapSection(REGIONMAP_KANTO, LAYER_MAP, IPART(sPlayerPosX) / 8, IPART(sPlayerPosY) / 8 - 3);
 
 	if (mapSection != sPrevMapSection)
 	{
@@ -496,7 +496,7 @@ static void UpdateMapSectionPopup(void)
 		{
 			GetMapName(gStringVar4, mapSection, 50);
 			DrawStdFrameWithCustomTileAndPalette(windid, 0, 1, 14);
-			AddTextPrinterParameterized(windid, 1, gStringVar4, 4, 0, TEXT_SPEED_FF, NULL);
+			AddTextPrinterParameterized(windid, 1, gStringVar4, 0, 0, TEXT_SPEED_FF, NULL);
 
 			CopyWindowToVram(windid, 3);
 			REG_DISPCNT |= DISPCNT_BG0_ON;
@@ -520,18 +520,28 @@ static void ExitSoar(void)
 #define MIN_Z Q_8_7(4, 0)
 #define MAX_Z Q_8_7(50, 0)
 #define MIN_X Q_8_7(0, 0)
-#define MAX_X Q_8_7(30*8, 0)
+#define MAX_X Q_8_7(24*8, 0)
 #define MIN_Y Q_8_7(0, 0)
-#define MAX_Y Q_8_7(20*8, 0)
+#define MAX_Y Q_8_7(18*8, 0)
+
+static const u8 mapsectype_none[] = "None";
+static const u8 mapsectype_route[] = "Route";
+static const u8 mapsectype_visited[] = "Visited";
 
 static void CB2_HandleInput(void)
 {
 	int sinYaw;
 	int cosYaw;
 
+	const f32 speed = 0.75;
+
     int mapsectype = GetDungeonMapsecType(sPrevMapSection);
 
-	if ((gMain.newKeys & A_BUTTON) && sPrevMapSection != MAPSEC_NONE && mapsectype != MAPSECTYPE_NONE && mapsectype != MAPSECTYPE_ROUTE)
+	if ((gMain.newKeys & A_BUTTON) && 
+		sPrevMapSection != MAPSEC_NONE && 
+		(mapsectype == MAPSECTYPE_VISITED || mapsectype == MAPSECTYPE_NOT_VISITED))
+		// mapsectype != MAPSECTYPE_NONE && 
+		// mapsectype != MAPSECTYPE_ROUTE)
 	{
 		PlaySE(SE_SELECT);
 
@@ -582,13 +592,13 @@ static void CB2_HandleInput(void)
 	sinYaw = gSineTable[sPlayerYaw];
 	cosYaw = gSineTable[sPlayerYaw + 64];
 
-	sPlayerPosX += sinYaw / 8;
-	sPlayerPosY -= cosYaw / 8;
+	sPlayerPosX += speed * sinYaw / 8;
+	sPlayerPosY -= speed * cosYaw / 8;
 
 	if (gMain.heldKeys & L_BUTTON)
 	{
-		sPlayerPosX += sinYaw / 8;
-		sPlayerPosY -= cosYaw / 8;
+		sPlayerPosX += speed * sinYaw / 8;
+		sPlayerPosY -= speed * cosYaw / 8;
 	}
 
 	if (sPlayerPosX < MIN_X)
