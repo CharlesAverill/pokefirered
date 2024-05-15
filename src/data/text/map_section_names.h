@@ -157,3 +157,4 @@ const u8 gMapSecName_Route46[] = _("ROUTE 46");
 const u8 gMapSecName_Route47[] = _("ROUTE 47");
 const u8 gMapSecName_Route48[] = _("ROUTE 48");
 const u8 gMapSecName_TohjoFalls[] = _("TOHJO FALLS");
+const u8 gMapSecName_Sky[] = _("THE SKY");

@@ -1,5 +1,5 @@
-#ifndef GUARD_CONSTANTS_MAPS_H
-#define GUARD_CONSTANTS_MAPS_H
+#ifndef MAPS
+#define MAPS
 
 #include "constants/map_groups.h"
 #include "constants/map_types.h"
@@ -12,4 +12,4 @@
 
 #define MAP(map) MAP_GROUP(map), MAP_NUM(map)
 
-#endif  // GUARD_CONSTANTS_MAPS_H
+#endif /* MAPS */

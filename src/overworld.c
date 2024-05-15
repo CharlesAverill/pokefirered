@@ -1263,8 +1263,21 @@ static u8 GetSavedWarpRegionMapSectionId(void)
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->dynamicWarp.mapGroup, gSaveBlock1Ptr->dynamicWarp.mapNum)->regionMapSectionId;
 }
 
+static bool8 inSky;
+
+void Overworld_EnterSky() {
+    inSky = TRUE;
+}
+
+void Overworld_ExitSky() {
+    inSky = FALSE;
+}
+
 u8 GetCurrentRegionMapSectionId(void)
 {
+    if (inSky) {
+        return MAPSEC_SKY;
+    }
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)->regionMapSectionId;
 }
 

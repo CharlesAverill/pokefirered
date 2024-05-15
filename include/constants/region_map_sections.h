@@ -259,9 +259,10 @@
 #define MAPSEC_ROUTE_48                     0xF6
 #define MAPSEC_ROUTE_27                     0xF7
 #define MAPSEC_TOHJO_FALLS                  0xF8
+#define MAPSEC_SKY                          0xF9
 
-#define MAPSEC_NONE                         0xF9
-#define MAPSEC_COUNT                        0xFA
+#define MAPSEC_NONE                         0xFA
+#define MAPSEC_COUNT                        0xFB
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

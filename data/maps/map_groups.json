@@ -81,7 +81,8 @@
     "TradeCenter",
     "RecordCenter",
     "BattleColosseum_4P",
-    "UnionRoom"
+    "UnionRoom",
+    "DummySkyMap"
   ],
   "gMapGroup1": [
     "ViridianForest",

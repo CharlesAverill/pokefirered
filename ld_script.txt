@@ -550,6 +550,9 @@ src/agb_flash.o(.bss);
 . = ALIGN(4);
 . = ALIGN(4);
 src/soar.o(.bss);
+. = ALIGN(4);
+. = ALIGN(4);
+src/wild_encounter.o(.bss);
 
         /* .bss.code starts at 0x30028E0 */
         src/m4a.o(.bss.code);

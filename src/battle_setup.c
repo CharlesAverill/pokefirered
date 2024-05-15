@@ -35,6 +35,7 @@
 #include "constants/pokemon.h"
 #include "constants/trainers.h"
 #include "constants/trainer_classes.h"
+#include "battle_setup.h"
 
 enum
 {
@@ -57,7 +58,7 @@ static void DoSafariBattle(void);
 static void DoGhostBattle(void);
 static void DoStandardWildBattle(void);
 static void CB2_EndWildBattle(void);
-static u8 GetWildBattleTransition(void);
+// static u8 GetWildBattleTransition(void);
 static u8 GetTrainerBattleTransition(void);
 static void CB2_EndScriptedWildBattle(void);
 static void CB2_EndMarowakBattle(void);
@@ -203,7 +204,7 @@ static void Task_BattleStart(u8 taskId)
     }
 }
 
-static void CreateBattleStartTask(u8 transition, u16 song) // song == 0 means default music for current map
+void CreateBattleStartTask(u8 transition, u16 song) // song == 0 means default music for current map
 {
     u8 taskId = CreateTask(Task_BattleStart, 1);
 
@@ -595,7 +596,7 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
     return sum;
 }
 
-static u8 GetWildBattleTransition(void)
+u8 GetWildBattleTransition(void)
 {
     u8 transitionType = GetBattleTransitionTypeByMap();
     u8 enemyLevel = GetMonData(&gEnemyParty[0], MON_DATA_LEVEL);

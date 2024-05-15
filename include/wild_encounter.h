@@ -1,5 +1,5 @@
-#ifndef GUARD_WILD_ENCOUNTER_H
-#define GUARD_WILD_ENCOUNTER_H
+#ifndef WILD_ENCOUNTER
+#define WILD_ENCOUNTER
 
 #include "global.h"
 
@@ -50,5 +50,7 @@ bool8 SweetScentWildEncounter(void);
 void SeedWildEncounterRng(u16 randVal);
 void ResetEncounterRateModifiers(void);
 bool8 TryStandardWildEncounter(u32 currMetatileBehavior);
+void enterSkyEncounterZone(void);
+void exitSkyEncounterZone(void);
 
-#endif // GUARD_WILD_ENCOUNTER_H
+#endif /* WILD_ENCOUNTER */

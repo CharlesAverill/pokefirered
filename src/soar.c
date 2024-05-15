@@ -29,6 +29,9 @@
 #include "window.h"
 #include "new_menu_helpers.h"
 #include "text_window_graphics.h"
+#include "wild_encounter.h"
+#include "battle_main.h"
+#include "overworld.h"
 
 #define NOCASH_BREAKPOINT asm("mov r11, r11")
 
@@ -185,10 +188,16 @@ static const u8 sEonFluteUseMessage[] = _("{PLAYER} used the EON FLUTE.{PAUSE_UN
 
 static u16 currentMusic;
 
+static bool8 inBattle;
+static u16 encounterCheck;
+
 void CB2_InitSoar(void)
 {
 	currentMusic = GetCurrentMapMusic();
 	gHelpSystemEnabled = FALSE;
+	enterSkyEncounterZone();
+	Overworld_EnterSky();
+	encounterCheck = 0;
 
 	switch (gMain.state)
 	{
@@ -530,13 +539,21 @@ static void UpdateMapSectionPopup(void)
 
 static const u8 sText_LandHere[] = _("Would you like to land here?");
 
-static void ExitSoar(void)
+static void ExitSoar(bool8 quick)
 {
-	PlaySE(SE_PC_OFF);
-	BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, 0);
+	if (quick) {
+		FadeOutMapMusic(10);
+		BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, 0);
+		gHelpSystemEnabled = TRUE;
+	} else {
+		PlaySE(SE_PC_OFF);
+		BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, 0);
+		FadeOutAndFadeInNewMapMusic(currentMusic, 2, 2);
+		gHelpSystemEnabled = TRUE;
+	}
+	exitSkyEncounterZone();
+	Overworld_ExitSky();
 	SetMainCallback2(CB2_FadeOut);
-	FadeOutAndFadeInNewMapMusic(currentMusic, 2, 2);
-	gHelpSystemEnabled = TRUE;
 }
 
 // movement limits
@@ -556,6 +573,7 @@ static void CB2_HandleInput(void)
 {
 	int sinYaw;
 	int cosYaw;
+	bool8 moved;
 
 	u16 cursorX, cursorY; bool8 inCave;
 
@@ -565,7 +583,7 @@ static void CB2_HandleInput(void)
 
 	if ((gMain.newKeys & A_BUTTON) && 
 		sPrevMapSection != MAPSEC_NONE && 
-		(mapsectype == MAPSECTYPE_VISITED || mapsectype == MAPSECTYPE_NOT_VISITED))
+		mapsectype == MAPSECTYPE_VISITED)
 	{
 		PlaySE(SE_SELECT);
 		sSelectedMapSection = sPrevMapSection;
@@ -584,7 +602,7 @@ static void CB2_HandleInput(void)
 
 	if (gMain.newKeys & START_BUTTON)
 	{
-		ExitSoar();
+		ExitSoar(FALSE);
 		return;
 	}
 
@@ -593,27 +611,39 @@ static void CB2_HandleInput(void)
 
 	gSprites[sEonSpriteId].spDestAngle = 0;
 
+	moved = FALSE;
 	if (gMain.heldKeys & DPAD_LEFT)
 	{
 		sPlayerYaw--;
 		gSprites[sEonSpriteId].spDestAngle = TILT_MIN;
+		moved = TRUE;
 	}
 	if (gMain.heldKeys & DPAD_RIGHT)
 	{
 		sPlayerYaw++;
 		gSprites[sEonSpriteId].spDestAngle = TILT_MAX;
+		moved = TRUE;
 	}
 	if (gMain.heldKeys & DPAD_UP)
 	{
 		sPlayerPosZ += 0x10;
 		if (sPlayerPosZ > MAX_Z)
 			sPlayerPosZ = MAX_Z;
+		moved = TRUE;
 	}
 	if (gMain.heldKeys & DPAD_DOWN)
 	{
 		sPlayerPosZ -= 0x10;
 		if (sPlayerPosZ < MIN_Z)
 			sPlayerPosZ = MIN_Z;
+		moved = TRUE;
+	}
+
+	encounterCheck++;
+
+	if (moved && encounterCheck % 20 == 0 && StandardWildEncounter(0, 0)) {
+		inBattle = TRUE;
+		ExitSoar(TRUE);
 	}
 
 	UpdateEonSpriteRotation(&gSprites[sEonSpriteId]);
@@ -724,6 +754,11 @@ static void CB2_FadeOut(void)
 		REG_DISPSTAT &= ~(DISPSTAT_HBLANK_INTR);
 
 		SetHBlankCallback(NULL);
-		SetMainCallback2(CB2_ReturnToFieldWithOpenMenu);
+		if (inBattle) {
+			PlayMapChosenOrBattleBGM(0);
+			SetMainCallback2(CB2_InitBattle);
+		}
+		else 
+			SetMainCallback2(CB2_ReturnToFieldWithOpenMenu);
 	}
 }

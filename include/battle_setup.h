@@ -33,5 +33,7 @@ void ShowTrainerCantBattleSpeech(void);
 void PlayTrainerEncounterMusic(void);
 const u8 *GetTrainerALoseText(void);
 const u8 *GetTrainerWonSpeech(void);
+void CreateBattleStartTask(u8 transition, u16 song);
+u8 GetWildBattleTransition(void);
 
 #endif // GUARD_BATTLE_SETUP_H

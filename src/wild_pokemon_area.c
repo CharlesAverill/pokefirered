@@ -83,7 +83,8 @@ static const u16 sDexAreas_Kanto[][2] = {
         { MAPSEC_SEAFOAM_ISLANDS,     45 },
         { MAPSEC_POKEMON_TOWER,       43 },
         { MAPSEC_CERULEAN_CAVE,       40 },
-        { MAPSEC_POWER_PLANT,         42 }
+        { MAPSEC_POWER_PLANT,         42 },
+        { MAPSEC_SKY,                 48 },
 };
 
 static const u16 sDexAreas_Sevii1[][2] = {

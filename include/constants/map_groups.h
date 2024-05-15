@@ -7,6 +7,7 @@
 #define MAP_RECORD_CENTER       (2 | (0 << 8))
 #define MAP_BATTLE_COLOSSEUM_4P (3 | (0 << 8))
 #define MAP_UNION_ROOM          (4 | (0 << 8))
+#define MAP_DUMMY_SKY_MAP       (5 | (0 << 8))
 
 // Map Group 1
 #define MAP_VIRIDIAN_FOREST                          (0 | (1 << 8))

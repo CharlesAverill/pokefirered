@@ -41,6 +41,8 @@ static bool8 IsLeadMonHoldingCleanseTag(void);
 static u16 WildEncounterRandom(void);
 static void AddToWildEncounterRateBuff(u8 encouterRate);
 
+static bool8 inSky;
+
 #include "data/wild_encounters.h"
 
 static const u8 sUnownLetterSlots[][12] = {
@@ -187,7 +189,11 @@ static u16 GetCurrentMapWildMonHeaderId(void)
         if (wildHeader->mapGroup == 0xFF)
             break;
 
-        if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
+        if (inSky) {
+            if (gWildMonHeaders[i].mapGroup == MAP_GROUP(DUMMY_SKY_MAP) && 
+                gWildMonHeaders[i].mapNum == MAP_NUM(DUMMY_SKY_MAP))
+                return i;
+        } else if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
         {
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SIX_ISLAND_ALTERING_CAVE) &&
@@ -367,7 +373,7 @@ bool8 StandardWildEncounter(u32 currMetatileBehavior, u16 previousMetatileBehavi
     headerId = GetCurrentMapWildMonHeaderId();
     if (headerId != 0xFFFF)
     {
-        if (GetMetatileAttributeFromRawMetatileBehavior(currMetatileBehavior, METATILE_ATTRIBUTE_ENCOUNTER_TYPE) == TILE_ENCOUNTER_LAND)
+        if (inSky || GetMetatileAttributeFromRawMetatileBehavior(currMetatileBehavior, METATILE_ATTRIBUTE_ENCOUNTER_TYPE) == TILE_ENCOUNTER_LAND)
         {
             if (gWildMonHeaders[headerId].landMonsInfo == NULL)
                 return FALSE;
@@ -786,4 +792,12 @@ static void AddToWildEncounterRateBuff(u8 encounterRate)
         sWildEncounterData.encounterRateBuff += encounterRate;
     else
         sWildEncounterData.encounterRateBuff = 0;
+}
+
+void enterSkyEncounterZone(void) {
+    inSky = TRUE;
+}
+
+void exitSkyEncounterZone(void) {
+    inSky = FALSE;
 }

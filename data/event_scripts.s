@@ -1535,3 +1535,6 @@ Text_TestMsg:: @ 81ACD45
 
 	.include "data/maps/Route32/scripts.inc"
 	.include "data/maps/Route32/text.inc"
+
+	.include "data/maps/DummySkyMap/scripts.inc"
+	.include "data/maps/DummySkyMap/text.inc"
