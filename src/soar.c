@@ -57,6 +57,7 @@ static u8 windid;
 static u8 windid2;
 
 extern const u8 sMapFlyDestinations[][3];
+extern const u16 sMapSectionTopLeftCorners[MAPSEC_COUNT][2];
 
 static const struct WindowTemplate sPopupWindowTemplate =
 {
@@ -171,6 +172,7 @@ static s32 sPlayerPosZ;
 static u8 sPlayerYaw;
 static u8 sPlayerPitch;
 static u16 sPrevMapSection;
+static u16 sSelectedMapSection;
 
 static u8 sEonSpriteId;
 static u8 sShadowSpriteId;
@@ -213,10 +215,22 @@ void CB2_InitSoar(void)
 			bool8 inCave;
 			ClearDialogWindowAndFrame(0, 1);
 			sPrevMapSection = GetPlayerCurrentMapSectionId();
-			GetPlayerPositionOnRegionMapFromCurrFieldPos(&sPrevMapSection, &cursorX, &cursorY, &inCave);
 
-			sPlayerPosX = Q_8_7(cursorX * 8, 0);
-			sPlayerPosY = Q_8_7(cursorY * 8, 0);
+			switch (GetDungeonMapsecType(sPrevMapSection)) {
+			case MAPSECTYPE_ROUTE:
+				// If we're looking at a town, just get the raw position
+				cursorX = sMapSectionTopLeftCorners[sPrevMapSection - MAPSECS_KANTO][0];
+				cursorY = sMapSectionTopLeftCorners[sPrevMapSection - MAPSECS_KANTO][1];
+				break;
+			default:
+				MapPositionOverrides(&cursorX, &cursorY);
+			}
+
+			AGBPrintf("%d %d\n", cursorX, cursorY);
+			AGBPrintFlush();
+
+			sPlayerPosX = Q_8_7((cursorX + 2) * 8 - 4, 0);
+			sPlayerPosY = Q_8_7((cursorY + 3) * 8 - 4, 0);
 			sPlayerPosZ = Q_8_7(8, 0);
 			sPlayerYaw = 0;
 			sPlayerPitch = 0;
@@ -314,7 +328,7 @@ static void CB2_LoadSoarGraphics(void)
 		windid = InitWindows(&sPopupWindowTemplate);
 		TextWindow_LoadResourcesStdFrame0(0, 0x013, 0xD0);
 		TextWindow_SetStdFrame0_WithPal(0, 0x00A, 0xC0);
-		windid2 = CreateWindowFromRect(1, 14, 27, 4);
+		windid2 = CreateWindowFromRect(0, 14, 28, 4);
 
 		gMain.state++;
 		break;
@@ -482,9 +496,18 @@ static void StartBarrelRoll(void)
 	}
 }
 
+#include <stdarg.h>
+#include <stdio.h>
+#include "config.h"
+#include "gba/gba.h"
+
 static void UpdateMapSectionPopup(void)
 {
-	unsigned int mapSection = GetSelectedMapSection(REGIONMAP_KANTO, LAYER_MAP, IPART(sPlayerPosX) / 8, IPART(sPlayerPosY) / 8 - 3);
+	u16 mapSection = GetSelectedMapSection(REGIONMAP_KANTO, LAYER_MAP, 
+		IPART(sPlayerPosY) / 8 - 2,
+		IPART(sPlayerPosX) / 8 - 1);			
+	u8 str[50];
+	u16 cursorX, cursorY; bool8 inCave;
 
 	if (mapSection != sPrevMapSection)
 	{
@@ -494,7 +517,7 @@ static void UpdateMapSectionPopup(void)
 		}
 		else
 		{
-			GetMapName(gStringVar4, mapSection, 50);
+			GetMapName(gStringVar4, mapSection, 0);
 			DrawStdFrameWithCustomTileAndPalette(windid, 0, 1, 14);
 			AddTextPrinterParameterized(windid, 1, gStringVar4, 0, 0, TEXT_SPEED_FF, NULL);
 
@@ -517,8 +540,9 @@ static void ExitSoar(void)
 }
 
 // movement limits
-#define MIN_Z Q_8_7(4, 0)
-#define MAX_Z Q_8_7(50, 0)
+#define max_z_int 40
+#define MIN_Z Q_8_7(1, 0)
+#define MAX_Z Q_8_7(max_z_int, 0)
 #define MIN_X Q_8_7(0, 0)
 #define MAX_X Q_8_7(24*8, 0)
 #define MIN_Y Q_8_7(0, 0)
@@ -533,21 +557,26 @@ static void CB2_HandleInput(void)
 	int sinYaw;
 	int cosYaw;
 
-	const f32 speed = 0.75;
+	u16 cursorX, cursorY; bool8 inCave;
 
-    int mapsectype = GetDungeonMapsecType(sPrevMapSection);
+	const f32 speed = 0.75; //((f32)sPlayerPosZ / (f32)max_z_int) / 64.0;
+
+    int mapsectype = GetMapsecType(sPrevMapSection);
 
 	if ((gMain.newKeys & A_BUTTON) && 
 		sPrevMapSection != MAPSEC_NONE && 
 		(mapsectype == MAPSECTYPE_VISITED || mapsectype == MAPSECTYPE_NOT_VISITED))
-		// mapsectype != MAPSECTYPE_NONE && 
-		// mapsectype != MAPSECTYPE_ROUTE)
 	{
 		PlaySE(SE_SELECT);
+		sSelectedMapSection = sPrevMapSection;
 
-		DrawDialogFrameWithCustomTileAndPalette(windid2, 0, 10, 15);
+		DrawStdFrameWithCustomTileAndPalette(windid2, 0, 1, 14);
 		AddTextPrinterParameterized(windid2, 1, sText_LandHere, 0, 0, TEXT_SPEED_FF, NULL);
 		CopyWindowToVram(windid2, 3);
+
+		// DrawDialogFrameWithCustomTileAndPalette(windid2, 0, 10, 15);
+		// AddTextPrinterParameterized(windid2, 1, sText_LandHere, 0, 0, TEXT_SPEED_FF, NULL);
+		// CopyWindowToVram(windid2, 3);
 
 		SetMainCallback2(PromptLandCB2);
 		return;
@@ -658,7 +687,7 @@ static void ProcessYesNoCB2(void)
 
 static void WarpCB2(void)
 {
-	switch (sPrevMapSection) {
+	switch (sSelectedMapSection) {
 	// case MAPSEC_SOUTHERN_ISLAND:
 	// 	SetWarpDestinationToHealLocation(HEAL_LOCATION_SOUTHERN_ISLAND_EXTERIOR);
 	// 	break;
@@ -675,7 +704,7 @@ static void WarpCB2(void)
 	// 	SetWarpDestinationToHealLocation(HEAL_LOCATION_MT_CHIMNEY);
 	// 	break;
 	default:
-		SetWarpDestinationToHealLocation(sMapFlyDestinations[sPrevMapSection][2]);
+		SetWarpDestinationToHealLocation(sMapFlyDestinations[sSelectedMapSection - MAPSECS_KANTO][2]);
 
 	}
 

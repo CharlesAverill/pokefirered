@@ -1,5 +1,5 @@
-#ifndef GUARD_GBA_ISAGBPRINT_H
-#define GUARD_GBA_ISAGBPRINT_H
+#ifndef ISAGBPRINT
+#define ISAGBPRINT
 
 #ifdef NDEBUG
 #define AGBPrintInit()
@@ -52,4 +52,4 @@ void AGBAssert(const char *pFile, int nLine, const char *pExpression, int nStopP
 #endif
 #endif
 
-#endif // GUARD_GBA_ISAGBPRINT_H
+#endif /* ISAGBPRINT */

@@ -43,5 +43,7 @@ u16 GetPlayerCurrentMapSectionId(void);
 u8 GetSelectedMapSection(u8, u8, s16, s16);
 u8 GetSelectedRegionMap(void);
 u8 GetDungeonMapsecType(u8);
+u8 GetMapsecType(u8);
+void MapPositionOverrides(u16* cursorx, u16* cursory);
 
 #endif /* REGION_MAP */
