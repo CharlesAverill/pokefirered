@@ -4278,7 +4278,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Summons a POKéMON to soar across the sky.",
+      "description_english": "Summons a POKéMON to soar across\\nthe sky.",
       "importance": 1,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_KEY_ITEMS",

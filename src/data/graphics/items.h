@@ -536,6 +536,9 @@ const u32 gFile_graphics_items_icon_palettes_ss_ticket_palette[] = INCBIN_U32("g
 const u32 gFile_graphics_items_icons_contest_pass_sheet[] = INCBIN_U32("graphics/items/icons/contest_pass.4bpp.lz");
 const u32 gFile_graphics_items_icon_palettes_contest_pass_palette[] = INCBIN_U32("graphics/items/icon_palettes/contest_pass.gbapal.lz");
 
+const u32 gFile_graphics_items_icons_eon_flute_sheet[] = INCBIN_U32("graphics/items/icons/eon_flute.4bpp.lz");
+const u32 gFile_graphics_items_icon_palettes_eon_flute_palette[] = INCBIN_U32("graphics/items/icon_palettes/eon_flute.gbapal.lz");
+
 const u32 gFile_graphics_items_icons_wailmer_pail_sheet[] = INCBIN_U32("graphics/items/icons/wailmer_pail.4bpp.lz");
 const u32 gFile_graphics_items_icon_palettes_wailmer_pail_palette[] = INCBIN_U32("graphics/items/icon_palettes/wailmer_pail.gbapal.lz");
 
