@@ -139,7 +139,7 @@ static void c2_80567AC(void);
 static void CB2_ReturnToFieldLocal(void);
 static void CB2_ReturnToFieldLink(void);
 static void FieldClearVBlankHBlankCallbacks(void);
-static void SetFieldVBlankCallback(void);
+// static void SetFieldVBlankCallback(void);
 static void VBlankCB_Field(void);
 
 static bool32 map_loading_iteration_3(u8 *state);
@@ -1263,13 +1263,27 @@ static u8 GetSavedWarpRegionMapSectionId(void)
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->dynamicWarp.mapGroup, gSaveBlock1Ptr->dynamicWarp.mapNum)->regionMapSectionId;
 }
 
+#include "soar.h"
+
 static bool8 inSky;
+
+static EWRAM_DATA s32 skyX, skyY, skyZ;
+static EWRAM_DATA u8 skyPitch, skyYaw;
+
+void Overworld_RememberTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw) {
+    skyX = x;
+    skyY = y;
+    skyZ = z;
+    skyPitch = pitch;
+    skyYaw = yaw;
+}
 
 void Overworld_EnterSky() {
     inSky = TRUE;
 }
 
 void Overworld_ExitSky() {
+    Soar_LoadTranslation(skyX, skyY, skyZ, skyPitch, skyYaw);
     inSky = FALSE;
 }
 
@@ -1470,6 +1484,8 @@ void CB1_Overworld(void)
     }
 }
 
+#include "battle_setup.h"
+
 static void OverworldBasic(void)
 {
     ScriptContext2_RunScript();
@@ -1482,6 +1498,9 @@ static void OverworldBasic(void)
     UpdatePaletteFade();
     UpdateTilesetAnimations();
     DoScheduledBgTilemapCopiesToVram();
+    if (inSky) {
+        CB2_InitSoarState2();
+    }
 }
 
 // This CB2 is used when starting
@@ -1746,7 +1765,7 @@ static void FieldClearVBlankHBlankCallbacks(void)
     SetHBlankCallback(NULL);
 }
 
-static void SetFieldVBlankCallback(void)
+void SetFieldVBlankCallback(void)
 {
     SetVBlankCallback(VBlankCB_Field);
 }

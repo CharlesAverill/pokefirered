@@ -1,7 +1,7 @@
-#ifndef GUARD_SOAR_H
-#define GUARD_SOAR_H
+#ifndef SOAR
+#define SOAR
 
-void CB2_InitSoar(void);
 void ItemUseOnFieldCB_EonFlute(u8 taskId);
+void Soar_LoadTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw);
 
-#endif  // GUARD_SOAR_H
+#endif /* SOAR */

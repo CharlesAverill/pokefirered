@@ -105,6 +105,8 @@ void SetWarpDestinationToMapWarp(s8 mapGroup, s8 mapNum, s8 warpNum);
 void c2_load_new_map(void);
 void SetWarpDestinationToDynamicWarp(u8 unused);
 void mapldr_default(void);
+void SetFieldVBlankCallback(void);
+void Overworld_RememberTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw);
 
 u32 GetGameStat(u8 statId);
 void SetGameStat(u8 statId, u32 value);

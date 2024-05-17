@@ -36,4 +36,9 @@ const u8 *GetTrainerWonSpeech(void);
 void CreateBattleStartTask(u8 transition, u16 song);
 u8 GetWildBattleTransition(void);
 
+void CB2_InitSoar(void);
+void CB2_InitSoarState2(void);
+void BattleSetup_EnterSky(void);
+void BattleSetup_ExitSky(void);
+
 #endif // GUARD_BATTLE_SETUP_H

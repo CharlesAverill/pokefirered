@@ -32,6 +32,7 @@
 #include "wild_encounter.h"
 #include "battle_main.h"
 #include "overworld.h"
+#include "battle_setup.h"
 
 #define NOCASH_BREAKPOINT asm("mov r11, r11")
 
@@ -74,9 +75,9 @@ static const struct WindowTemplate sPopupWindowTemplate =
 };
 
 // For now, just use the region map graphics
-static const u16 sRegionMapBkgnd_Pal[] = INCBIN_U16("graphics/soar/kanto_map_modified_tiles.gbapal");
-static const u32 sRegionMapBkgnd_ImageLZ[] = INCBIN_U32("graphics/soar/kanto_map_modified_tiles.8bpp.lz");
-static const u32 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U32("graphics/soar/kanto_map_modified_tiles.bin.lz");
+static const u16 sRegionMapBkgnd_Pal[] = INCBIN_U16("graphics/soar/kanto_map_modified_big_tiles.gbapal");
+static const u32 sRegionMapBkgnd_ImageLZ[] = INCBIN_U32("graphics/soar/kanto_map_modified_big_tiles.8bpp.lz");
+static const u32 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U32("graphics/soar/kanto_map_modified_big_tiles.bin.lz");
 
 //
 // Eon sprite data
@@ -85,16 +86,16 @@ static const u32 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U32("graphics/soar/kanto_m
 #define GFX_TAG_EON 9999
 
 //#if SAPPHIRE
-static const u32 sEonBrendanSpriteTiles[] = INCBIN_U32("graphics/soar/latias_brendan.4bpp.lz");
-static const u32 sEonBrendanSpritePaletteData[] = INCBIN_U32("graphics/soar/latias_brendan.gbapal.lz");
-// static const u32 sEonMaySpriteTiles[] = INCBIN_U32("graphics/soar/latias_may.4bpp.lz");
-// static const u32 sEonMaySpritePaletteData[] = INCBIN_U32("graphics/soar/latias_may.gbapal.lz");
+static const u32 sEonRedSpriteTiles[] = INCBIN_U32("graphics/soar/charizard_red.4bpp.lz");
+static const u32 sEonRedSpritePaletteData[] = INCBIN_U32("graphics/soar/charizard_red.gbapal.lz");
+static const u32 sEonGreenSpriteTiles[] = INCBIN_U32("graphics/soar/charizard_green.4bpp.lz");
+static const u32 sEonGreenSpritePaletteData[] = INCBIN_U32("graphics/soar/charizard_green.gbapal.lz");
 //#else
 /*
-static const u8 sEonBrendanSpriteTiles[] = INCBIN_U8("graphics/soar/latios_brendan.4bpp.lz");
-static const u8 sEonBrendanSpritePaletteData[] = INCBIN_U8("graphics/soar/latios_brendan.gbapal.lz");
-static const u8 sEonMaySpriteTiles[] = INCBIN_U8("graphics/soar/latios_may.4bpp.lz");
-static const u8 sEonMaySpritePaletteData[] = INCBIN_U8("graphics/soar/latios_may.gbapal.lz");
+static const u8 sEonRedSpriteTiles[] = INCBIN_U8("graphics/soar/charizard_red.4bpp.lz");
+static const u8 sEonRedSpritePaletteData[] = INCBIN_U8("graphics/soar/charizard_red.gbapal.lz");
+static const u8 sEonGreenSpriteTiles[] = INCBIN_U8("graphics/soar/charizard_green.4bpp.lz");
+static const u8 sEonGreenSpritePaletteData[] = INCBIN_U8("graphics/soar/charizard_green.gbapal.lz");
 */
 //#endif
 
@@ -190,6 +191,13 @@ static u16 currentMusic;
 
 static bool8 inBattle;
 static u16 encounterCheck;
+static bool8 returnFromBattle;
+
+void CB2_InitSoarState2(void) {
+	gMain.state = 2;
+	returnFromBattle = TRUE;
+	CB2_InitSoar();
+}
 
 void CB2_InitSoar(void)
 {
@@ -197,11 +205,13 @@ void CB2_InitSoar(void)
 	gHelpSystemEnabled = FALSE;
 	enterSkyEncounterZone();
 	Overworld_EnterSky();
+	BattleSetup_EnterSky();
 	encounterCheck = 0;
 
 	switch (gMain.state)
 	{
 	case 0:
+		returnFromBattle = FALSE;
 		StringExpandPlaceholders(gStringVar4, sEonFluteUseMessage);
 
 		DrawDialogueFrame(0, 0);
@@ -223,26 +233,30 @@ void CB2_InitSoar(void)
 			u16 cursorX, cursorY;
 			bool8 inCave;
 			ClearDialogWindowAndFrame(0, 1);
-			sPrevMapSection = GetPlayerCurrentMapSectionId();
 
-			switch (GetDungeonMapsecType(sPrevMapSection)) {
-			case MAPSECTYPE_ROUTE:
-				// If we're looking at a town, just get the raw position
-				cursorX = sMapSectionTopLeftCorners[sPrevMapSection - MAPSECS_KANTO][0];
-				cursorY = sMapSectionTopLeftCorners[sPrevMapSection - MAPSECS_KANTO][1];
-				break;
-			default:
-				MapPositionOverrides(&cursorX, &cursorY);
+			// Only update position if we aren't already in the sky
+			if (!returnFromBattle) {
+				sPrevMapSection = GetPlayerCurrentMapSectionId();
+
+				switch (GetDungeonMapsecType(sPrevMapSection)) {
+				case MAPSECTYPE_ROUTE:
+					// If we're looking at a town, just get the raw position
+					cursorX = sMapSectionTopLeftCorners[sPrevMapSection - MAPSECS_KANTO][0];
+					cursorY = sMapSectionTopLeftCorners[sPrevMapSection - MAPSECS_KANTO][1];
+					break;
+				default:
+					MapPositionOverrides(&cursorX, &cursorY);
+				}
+
+				AGBPrintf("%d %d\n", cursorX, cursorY);
+				AGBPrintFlush();
+
+				sPlayerPosX = Q_8_7((cursorX + 2 + 27) * 8 - 4, 0);
+				sPlayerPosY = Q_8_7((cursorY + 3 + 30) * 8 - 4, 0);
+				sPlayerPosZ = Q_8_7(8, 0);
+				sPlayerYaw = 0;
+				sPlayerPitch = 0;
 			}
-
-			AGBPrintf("%d %d\n", cursorX, cursorY);
-			AGBPrintFlush();
-
-			sPlayerPosX = Q_8_7((cursorX + 2) * 8 - 4, 0);
-			sPlayerPosY = Q_8_7((cursorY + 3) * 8 - 4, 0);
-			sPlayerPosZ = Q_8_7(8, 0);
-			sPlayerYaw = 0;
-			sPlayerPitch = 0;
 
 			FadeOutAndFadeInNewMapMusic(MUS_SURF, 2, 2);
 
@@ -270,18 +284,18 @@ static void LoadEonGraphics(void)
 {
 	struct CompressedSpriteSheet sEonSpriteSheet =
 	{
-		sEonBrendanSpriteTiles, 1024, GFX_TAG_EON
+		sEonRedSpriteTiles, 1024, GFX_TAG_EON
 	};
 	struct CompressedSpritePalette sEonSpritePalette =
 	{
-		sEonBrendanSpritePaletteData, GFX_TAG_EON
+		sEonRedSpritePaletteData, GFX_TAG_EON
 	};
 
-	// if (gSaveBlock2Ptr->playerGender != MALE)
-	// {
-	// 	sEonSpriteSheet.data = sEonMaySpriteTiles;
-	// 	sEonSpritePalette.data = sEonMaySpritePaletteData;
-	// }
+	if (gSaveBlock2Ptr->playerGender != MALE)
+	{
+		sEonSpriteSheet.data = sEonGreenSpriteTiles;
+		sEonSpritePalette.data = sEonGreenSpritePaletteData;
+	}
 
 	LoadCompressedSpriteSheet(&sEonSpriteSheet);
 	LoadCompressedSpritePalette(&sEonSpritePalette);
@@ -512,11 +526,16 @@ static void StartBarrelRoll(void)
 
 static void UpdateMapSectionPopup(void)
 {
-	u16 mapSection = GetSelectedMapSection(REGIONMAP_KANTO, LAYER_MAP, 
-		IPART(sPlayerPosY) / 8 - 2,
-		IPART(sPlayerPosX) / 8 - 1);			
+	s32 playerCursorY = IPART(sPlayerPosY) / 8 - 30 - 2;
+	s32 playerCursorX = IPART(sPlayerPosX) / 8 - 27 - 1;
+	u16 mapSection; 
 	u8 str[50];
 	u16 cursorX, cursorY; bool8 inCave;
+
+
+	if (playerCursorY < 0 || playerCursorY >= MAP_HEIGHT || playerCursorX < 0 || playerCursorY >= MAP_WIDTH)
+		return;
+	mapSection = GetSelectedMapSection(REGIONMAP_KANTO, LAYER_MAP, playerCursorY, playerCursorX);		
 
 	if (mapSection != sPrevMapSection)
 	{
@@ -537,22 +556,35 @@ static void UpdateMapSectionPopup(void)
 	}
 }
 
+void Soar_LoadTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw) {
+	sPlayerPosX = x;
+	sPlayerPosY = y;
+	sPlayerPosZ = z;
+	sPlayerPitch = pitch;
+	sPlayerYaw = yaw;
+}
+
 static const u8 sText_LandHere[] = _("Would you like to land here?");
 
-static void ExitSoar(bool8 quick)
+static void ExitSoar(bool8 encounter)
 {
-	if (quick) {
+	if (encounter) {
 		FadeOutMapMusic(10);
 		BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, 0);
 		gHelpSystemEnabled = TRUE;
+		Overworld_RememberTranslation(sPlayerPosX, sPlayerPosY, sPlayerPosZ, sPlayerPitch, sPlayerYaw);
 	} else {
 		PlaySE(SE_PC_OFF);
 		BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, 0);
 		FadeOutAndFadeInNewMapMusic(currentMusic, 2, 2);
 		gHelpSystemEnabled = TRUE;
+
+		// We only want to exit the sky zones when we aren't battling, due to some
+		// post-battle code
+		exitSkyEncounterZone();
+		Overworld_ExitSky();
+		BattleSetup_ExitSky();
 	}
-	exitSkyEncounterZone();
-	Overworld_ExitSky();
 	SetMainCallback2(CB2_FadeOut);
 }
 
@@ -560,10 +592,10 @@ static void ExitSoar(bool8 quick)
 #define max_z_int 40
 #define MIN_Z Q_8_7(1, 0)
 #define MAX_Z Q_8_7(max_z_int, 0)
-#define MIN_X Q_8_7(0, 0)
-#define MAX_X Q_8_7(24*8, 0)
-#define MIN_Y Q_8_7(0, 0)
-#define MAX_Y Q_8_7(18*8, 0)
+#define MIN_X Q_8_7(27*8, 0)
+#define MAX_X Q_8_7((27+40)*8, 0)
+#define MIN_Y Q_8_7(30*8, 0)
+#define MAX_Y Q_8_7((30+34)*8, 0)
 
 static const u8 mapsectype_none[] = "None";
 static const u8 mapsectype_route[] = "Route";
@@ -641,7 +673,7 @@ static void CB2_HandleInput(void)
 
 	encounterCheck++;
 
-	if (moved && encounterCheck % 20 == 0 && StandardWildEncounter(0, 0)) {
+	if (encounterCheck % 100 == 0 && StandardWildEncounter(0, 0)) {
 		inBattle = TRUE;
 		ExitSoar(TRUE);
 	}
@@ -737,6 +769,10 @@ static void WarpCB2(void)
 		SetWarpDestinationToHealLocation(sMapFlyDestinations[sSelectedMapSection - MAPSECS_KANTO][2]);
 
 	}
+
+	exitSkyEncounterZone();
+	Overworld_ExitSky();
+	BattleSetup_ExitSky();
 
 	if (!gPaletteFade.active)
 	{

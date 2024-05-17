@@ -407,6 +407,16 @@ static void sub_807FB08(void)
     CreateBattleStartTask(GetWildBattleTransition(), 0);
 }
 
+static EWRAM_DATA bool8 inSky = FALSE;
+
+void BattleSetup_EnterSky(void) {
+    inSky = TRUE;
+}
+
+void BattleSetup_ExitSky(void) {
+    inSky = FALSE;
+}
+
 static void CB2_EndWildBattle(void)
 {
     CpuFill16(0, (void *)BG_PLTT, BG_PLTT_SIZE);
