@@ -1673,7 +1673,7 @@ static void AddHatchedMonToParty(u8 id)
     caughtLvl = 0;
     SetMonData(mon, MON_DATA_MET_LEVEL, &caughtLvl);
 
-    mapNameID = GetCurrentRegionMapSectionId();
+    mapNameID = GetCurrentRegionMapSectionId(FALSE);
     SetMonData(mon, MON_DATA_MET_LOCATION, &mapNameID);
 
     MonRestorePP(mon);

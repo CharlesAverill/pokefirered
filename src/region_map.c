@@ -18,9 +18,6 @@
 #include "constants/heal_locations.h"
 #include "constants/maps.h"
 
-#define MAP_WIDTH 22
-#define MAP_HEIGHT 15
-
 #define CANCEL_BUTTON_X 21
 #define CANCEL_BUTTON_Y 13
 

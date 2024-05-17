@@ -1263,19 +1263,33 @@ static u8 GetSavedWarpRegionMapSectionId(void)
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->dynamicWarp.mapGroup, gSaveBlock1Ptr->dynamicWarp.mapNum)->regionMapSectionId;
 }
 
-static bool8 inSky;
+#include "soar.h"
+
+static EWRAM_DATA bool8 inSky = FALSE;
+
+static EWRAM_DATA s32 skyX, skyY, skyZ;
+static EWRAM_DATA u8 skyPitch, skyYaw;
+
+void Overworld_RememberTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw) {
+    skyX = x;
+    skyY = y;
+    skyZ = z;
+    skyPitch = pitch;
+    skyYaw = yaw;
+}
 
 void Overworld_EnterSky() {
     inSky = TRUE;
 }
 
 void Overworld_ExitSky() {
+    Soar_LoadTranslation(skyX, skyY, skyZ, skyPitch, skyYaw);
     inSky = FALSE;
 }
 
-u8 GetCurrentRegionMapSectionId(void)
+u8 GetCurrentRegionMapSectionId(bool8 checkSky)
 {
-    if (inSky) {
+    if (checkSky && inSky) {
         return MAPSEC_SKY;
     }
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)->regionMapSectionId;
@@ -1470,6 +1484,8 @@ void CB1_Overworld(void)
     }
 }
 
+#include "battle_setup.h"
+
 static void OverworldBasic(void)
 {
     ScriptContext2_RunScript();
@@ -1482,6 +1498,9 @@ static void OverworldBasic(void)
     UpdatePaletteFade();
     UpdateTilesetAnimations();
     DoScheduledBgTilemapCopiesToVram();
+    if (inSky) {
+        CB2_InitSoarState2();
+    }
 }
 
 // This CB2 is used when starting

@@ -73,7 +73,7 @@ void TrySetQuestLogBattleEvent(void)
                 playerEndingHP = gBattleMons[GetBattlerAtPosition(0)].hp;
                 playerMaxHP = gBattleMons[GetBattlerAtPosition(0)].maxHP;
             }
-            questLogTrainerBattleRecord->v7 = GetCurrentRegionMapSectionId();
+            questLogTrainerBattleRecord->v7 = GetCurrentRegionMapSectionId(TRUE);
             questLogTrainerBattleRecord->v6 = 0;
             if (playerEndingHP < playerMaxHP / 3 * 2)
                 questLogTrainerBattleRecord->v6 = 1;
@@ -93,7 +93,7 @@ void TrySetQuestLogBattleEvent(void)
                 questLogWildBattleRecord->defeatedSpecies = SPECIES_NONE;
                 questLogWildBattleRecord->caughtSpecies = GetMonData(gEnemyParty, MON_DATA_SPECIES);
             }
-            questLogWildBattleRecord->mapSec = GetCurrentRegionMapSectionId();
+            questLogWildBattleRecord->mapSec = GetCurrentRegionMapSectionId(TRUE);
             SetQuestLogEvent(QL_EVENT_DEFEATED_WILD_MON, (const u16 *)questLogWildBattleRecord);
         }
         Free(questLogTrainerBattleRecord);

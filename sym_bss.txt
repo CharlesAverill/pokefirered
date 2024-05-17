@@ -29,7 +29,6 @@
 	.include "src/digit_obj_util.o"
 	.include "src/m4a_1.o"
 	.include "src/soar.o"
-	.include "src/wild_encounter.o"
 	.include "data/sound_data.o"
 	.include "src/agb_flash.o"
 	.include "*libgcc.a:dp-bit.o"

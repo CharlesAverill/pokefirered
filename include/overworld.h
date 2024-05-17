@@ -105,6 +105,7 @@ void SetWarpDestinationToMapWarp(s8 mapGroup, s8 mapNum, s8 warpNum);
 void c2_load_new_map(void);
 void SetWarpDestinationToDynamicWarp(u8 unused);
 void mapldr_default(void);
+void Overworld_RememberTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw);
 
 u32 GetGameStat(u8 statId);
 void SetGameStat(u8 statId, u32 value);
@@ -116,7 +117,7 @@ void CB2_SetUpOverworldForQLPlaybackWithWarpExit(void);
 void CB2_EnterFieldFromQuestLog(void);
 void Overworld_PlaySpecialMapMusic(void);
 
-u8 GetCurrentRegionMapSectionId(void);
+u8 GetCurrentRegionMapSectionId(bool8 checkSky);
 
 void SetCurrentMapLayout(u16 mapLayoutId);
 void SetWarpDestinationToFixedHoleWarp(s16 x, s16 y);

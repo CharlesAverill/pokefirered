@@ -41,7 +41,7 @@ static bool8 IsLeadMonHoldingCleanseTag(void);
 static u16 WildEncounterRandom(void);
 static void AddToWildEncounterRateBuff(u8 encouterRate);
 
-static bool8 inSky;
+static EWRAM_DATA bool8 inSky = FALSE;
 
 #include "data/wild_encounters.h"
 
