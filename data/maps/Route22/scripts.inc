@@ -26,11 +26,11 @@ Route22_EventScript_EarlyRival:: @ 81682BE
 	playbgm MUS_ENCOUNTER_RIVAL, 0
 	addobject 1
 	compare VAR_TEMP_1, 0
-	call_if_eq Route22_EventScript_EarlyRivalApproach
+	call_if_eq Route22_Movement_RivalApproachTop
 	compare VAR_TEMP_1, 1
-	call_if_eq Route22_EventScript_EarlyRivalApproach
+	call_if_eq Route22_Movement_RivalApproachMid
 	compare VAR_TEMP_1, 2
-	call_if_eq Route22_EventScript_EarlyRivalApproachBottom
+	call_if_eq Route22_Movement_RivalApproachBottom
 	delay 6
 	msgbox Route22_Text_EarlyRivalIntro
 	compare VAR_STARTER_MON, 2
@@ -54,11 +54,6 @@ Route22_EventScript_EarlyRival:: @ 81682BE
 	setvar VAR_MAP_SCENE_ROUTE22, 2
 	releaseall
 	end
-
-Route22_EventScript_EarlyRivalApproach:: @ 8168350
-	applymovement 1, Route22_Movement_RivalApproach
-	waitmovement 0
-	return
 
 Route22_EventScript_EarlyRivalApproachBottom:: @ 816835B
 	applymovement 1, Route22_Movement_RivalApproachBottom
@@ -127,7 +122,19 @@ Route22_Movement_EarlyRivalExitBottom:: @ 81683C5
 	walk_down
 	step_end
 
-Route22_Movement_RivalApproach:: @ 81683D1
+Route22_Movement_RivalApproachTop:: @ 81683D1
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_in_place_fastest_up
+	step_end
+
+Route22_Movement_RivalApproachMid::
 	walk_right
 	walk_right
 	walk_right
@@ -186,9 +193,9 @@ Route22_EventScript_LateRival:: @ 816841F
 	playbgm MUS_ENCOUNTER_RIVAL, 0
 	addobject 1
 	compare VAR_TEMP_1, 0
-	call_if_eq Route22_EventScript_LateRivalApproach
+	call_if_eq Route22_EventScript_LateRivalApproachTop
 	compare VAR_TEMP_1, 1
-	call_if_eq Route22_EventScript_LateRivalApproach
+	call_if_eq Route22_EventScript_LateRivalApproachMid
 	compare VAR_TEMP_1, 2
 	call_if_eq Route22_EventScript_LateRivalApproachBottom
 	msgbox Route22_Text_LateRivalIntro
@@ -211,12 +218,18 @@ Route22_EventScript_LateRival:: @ 816841F
 	releaseall
 	end
 
-Route22_EventScript_LateRivalApproach:: @ 816849C
-	applymovement 1, Route22_Movement_RivalApproach
+Route22_EventScript_LateRivalApproachTop::
+	applymovement 1, Route22_Movement_RivalApproachTop
+	applymovement OBJ_EVENT_ID_PLAYER, Route22_Movement_PlayerFaceRival
 	waitmovement 0
 	return
 
-Route22_EventScript_LateRivalApproachBottom:: @ 81684A7
+Route22_EventScript_LateRivalApproachMid::
+	applymovement 1, Route22_Movement_RivalApproachMid
+	waitmovement 0
+	return
+
+Route22_EventScript_LateRivalApproachBottom::
 	applymovement 1, Route22_Movement_RivalApproachBottom
 	applymovement OBJ_EVENT_ID_PLAYER, Route22_Movement_PlayerFaceRival
 	waitmovement 0
