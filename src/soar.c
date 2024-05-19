@@ -258,7 +258,8 @@ void CB2_InitSoar(void)
 				sPlayerPitch = 0;
 			}
 
-			FadeOutAndFadeInNewMapMusic(MUS_SURF, 2, 2);
+			if (GetCurrentMapMusic() != MUS_SURF)
+				FadeOutAndFadeInNewMapMusic(MUS_SURF, 2, 2);
 
 			// some of these may not be necessary, but I'm just being safe
 			ScanlineEffect_Stop();
@@ -669,7 +670,7 @@ static void CB2_HandleInput(void)
 
 	encounterCheck++;
 
-	if (encounterCheck % 100 == 0 && StandardWildEncounter(0, 0)) {
+	if (encounterCheck % 80 == 0 && StandardWildEncounter(0, 0)) {
 		inBattle = TRUE;
 		ExitSoar(TRUE);
 	}

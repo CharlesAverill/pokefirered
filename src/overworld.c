@@ -52,6 +52,7 @@
 #include "constants/species.h"
 #include "constants/region_map_sections.h"
 #include "constants/songs.h"
+#include "soar.h"
 
 #define PLAYER_TRADING_STATE_IDLE 0x80
 #define PLAYER_TRADING_STATE_BUSY 0x81
@@ -244,6 +245,28 @@ static const u16 sWhiteOutMoneyLossBadgeFlagIDs[] = {
     FLAG_BADGE07_GET,
     FLAG_BADGE08_GET
 };
+
+static EWRAM_DATA bool8 inSky = FALSE;
+
+static EWRAM_DATA s32 skyX, skyY, skyZ;
+static EWRAM_DATA u8 skyPitch, skyYaw;
+
+void Overworld_RememberTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw) {
+    skyX = x;
+    skyY = y;
+    skyZ = z;
+    skyPitch = pitch;
+    skyYaw = yaw;
+}
+
+void Overworld_EnterSky() {
+    inSky = TRUE;
+}
+
+void Overworld_ExitSky() {
+    Soar_LoadTranslation(skyX, skyY, skyZ, skyPitch, skyYaw);
+    inSky = FALSE;
+}
 
 static void DoWhiteOut(void)
 {
@@ -1035,7 +1058,7 @@ void Overworld_PlaySpecialMapMusic(void)
 
     if (gSaveBlock1Ptr->savedMusic)
         music = gSaveBlock1Ptr->savedMusic;
-    else if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) && Overworld_MusicCanOverrideMapMusic(MUS_SURF))
+    else if (inSky || (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) && Overworld_MusicCanOverrideMapMusic(MUS_SURF)))
         music = MUS_SURF;
 
     if (music != GetCurrentMapMusic())
@@ -1261,30 +1284,6 @@ bool8 IsMapTypeIndoors(u8 mapType)
 static u8 GetSavedWarpRegionMapSectionId(void)
 {
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->dynamicWarp.mapGroup, gSaveBlock1Ptr->dynamicWarp.mapNum)->regionMapSectionId;
-}
-
-#include "soar.h"
-
-static EWRAM_DATA bool8 inSky = FALSE;
-
-static EWRAM_DATA s32 skyX, skyY, skyZ;
-static EWRAM_DATA u8 skyPitch, skyYaw;
-
-void Overworld_RememberTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw) {
-    skyX = x;
-    skyY = y;
-    skyZ = z;
-    skyPitch = pitch;
-    skyYaw = yaw;
-}
-
-void Overworld_EnterSky() {
-    inSky = TRUE;
-}
-
-void Overworld_ExitSky() {
-    Soar_LoadTranslation(skyX, skyY, skyZ, skyPitch, skyYaw);
-    inSky = FALSE;
 }
 
 u8 GetCurrentRegionMapSectionId(bool8 checkSky)
