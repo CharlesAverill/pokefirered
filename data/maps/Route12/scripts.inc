@@ -1,6 +1,11 @@
 Route12_MapScripts:: @ 8168000
 	map_script MAP_SCRIPT_ON_RESUME, Route12_OnResume
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route12
 	.byte 0
+
+Transition_Route12::
+    setflag FLAG_VISITED_ROUTE_12
+	end
 
 Route12_OnResume:: @ 8168006
 	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, Route12_EventScript_TryRemoveSnorlax

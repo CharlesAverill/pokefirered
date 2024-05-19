@@ -4,6 +4,7 @@ Route18_MapScripts:: @ 81681F6
 	.byte 0
 
 Route18_OnTransition:: @ 8168201
+	setflag FLAG_VISITED_ROUTE_18
 	compare VAR_MAP_SCENE_ROUTE16, 1
 	call_if_eq Route18_OnTransitionCyclingRoad
 	end

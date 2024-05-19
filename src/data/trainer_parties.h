@@ -8644,17 +8644,17 @@ static const struct TrainerMonNoItemDefaultMoves sTrainerMons_BugCatcherCharlie[
     {
         .iv = 50,
         .lvl = 7,
-        .species = SPECIES_METAPOD,
+        .species = SPECIES_WEEDLE,
     },
     {
         .iv = 50,
-        .lvl = 7,
-        .species = SPECIES_CATERPIE,
+        .lvl = 9,
+        .species = SPECIES_KAKUNA,
     },
     {
         .iv = 50,
-        .lvl = 7,
-        .species = SPECIES_METAPOD,
+        .lvl = 11,
+        .species = SPECIES_BEEDRILL,
     },
 };
 

@@ -1,5 +1,10 @@
 Route49_MapScripts::
-	.byte 0
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route49
+    .byte 0
+
+Transition_Route49::
+    setflag FLAG_VISITED_ROUTE_49
+	end
 
 Route49_DeepWaterCave_Sign::
     msgbox Route49_DeepWaterCave_Sign_Text, MSGBOX_SIGN

@@ -1,5 +1,10 @@
-Route4_MapScripts:: @ 8167F8A
-	.byte 0
+Route4_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route4
+    .byte 0
+
+Transition_Route4::
+    setflag FLAG_VISITED_ROUTE_4
+	end
 
 Route4_EventScript_Unused:: @ 8167F8B
 	end

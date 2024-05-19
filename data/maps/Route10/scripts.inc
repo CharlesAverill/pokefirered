@@ -1,5 +1,10 @@
-Route10_MapScripts:: @ 8167FD9
-	.byte 0
+Route10_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route10
+    .byte 0
+
+Transition_Route10::
+    setflag FLAG_VISITED_ROUTE_10
+	end
 
 Route10_EventScript_Unused:: @ 8167FDA
 	end

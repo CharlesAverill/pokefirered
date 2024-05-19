@@ -3,6 +3,7 @@ Route20_MapScripts:: @ 816823B
 	.byte 0
 
 Route20_OnTransition:: @ 8168241
+	setflag FLAG_VISITED_ROUTE_20
 	call_if_unset FLAG_STOPPED_SEAFOAM_B3F_CURRENT, Route20_EventScript_ResetSeafoamBouldersForB3F
 	call_if_unset FLAG_STOPPED_SEAFOAM_B4F_CURRENT, Route20_EventScript_ResetSeafoamBouldersForB4F
 	end

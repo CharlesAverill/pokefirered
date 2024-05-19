@@ -1,5 +1,10 @@
-Route22_MapScripts:: @ 816828B
-	.byte 0
+Route22_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route22
+    .byte 0
+
+Transition_Route22::
+    setflag FLAG_VISITED_ROUTE_22
+	end
 
 Route22_EventScript_EarlyRivalTriggerTop:: @ 816828C
 	lockall

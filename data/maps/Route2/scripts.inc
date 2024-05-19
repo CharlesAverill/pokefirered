@@ -1,5 +1,10 @@
-Route2_MapScripts:: @ 8167F64
-	.byte 0
+Route2_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route2
+    .byte 0
+
+Transition_Route2::
+    setflag FLAG_VISITED_ROUTE_2
+	end
 
 Route2_EventScript_RouteSign:: @ 8167F65
 	msgbox Route2_Text_RouteSign, MSGBOX_SIGN

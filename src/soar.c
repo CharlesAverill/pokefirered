@@ -597,10 +597,6 @@ static void ExitSoar(bool8 encounter)
 #define MIN_Y Q_8_7(30*8, 0)
 #define MAX_Y Q_8_7((30+34)*8, 0)
 
-static const u8 mapsectype_none[] = "None";
-static const u8 mapsectype_route[] = "Route";
-static const u8 mapsectype_visited[] = "Visited";
-
 static void CB2_HandleInput(void)
 {
 	int sinYaw;

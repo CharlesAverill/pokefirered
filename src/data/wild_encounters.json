@@ -1049,8 +1049,8 @@
             "encounter_rate": 14,
             "mons": [
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": 2,
+                "max_level": 8,
                 "species": "SPECIES_CATERPIE"
               },
               {
@@ -1079,8 +1079,8 @@
                 "species": "SPECIES_PINECO"
               },
               {
-                "min_level": 5,
-                "max_level": 7,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_BUTTERFREE"
               },
               {

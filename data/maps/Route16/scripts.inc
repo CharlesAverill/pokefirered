@@ -13,6 +13,7 @@ Route16_EventScript_RemoveSnorlax:: @ 81680FF
 	return
 
 Route16_OnTransition:: @ 8168103
+	setflag FLAG_VISITED_ROUTE_16
 	compare VAR_MAP_SCENE_ROUTE16, 1
 	call_if_eq Route16_OnTransitionCyclingRoad
 	end

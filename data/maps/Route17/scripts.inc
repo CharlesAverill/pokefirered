@@ -1,5 +1,10 @@
-Route17_MapScripts:: @ 81681BF
-	.byte 0
+Route17_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route17
+    .byte 0
+
+Transition_Route17::
+    setflag FLAG_VISITED_ROUTE_17
+	end
 
 Route17_EventScript_ItemsNotice:: @ 81681C0
 	msgbox Route17_Text_WatchOutForDiscardedItems, MSGBOX_SIGN

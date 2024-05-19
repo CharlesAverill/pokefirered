@@ -1,7 +1,12 @@
 .equ LOCALID_ROCKET, 1
 
-Route24_MapScripts:: @ 816861F
-	.byte 0
+Route24_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route24
+    .byte 0
+
+Transition_Route24::
+    setflag FLAG_VISITED_ROUTE_24
+	end
 
 Route24_EventScript_Rocket:: @ 8168620
 	lock

@@ -1,5 +1,10 @@
-Route1_MapScripts:: @ 8167EFD
-	.byte 0
+Route1_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Transition_Route1
+    .byte 0
+
+Transition_Route1::
+    setflag FLAG_VISITED_ROUTE_1
+	end
 
 Route1_EventScript_MartClerk:: @ 8167EFE
 	lock
