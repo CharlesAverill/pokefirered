@@ -1,7 +1,6 @@
 # Charles's FireRed
 Join our [Discord](https://discord.gg/c2vsdGjPMP)!
-
-
+Check out the [Pokecommunity thread](https://www.pokecommunity.com/threads/charless-firered-a-firered-enhancement-hack.528261/) for a full writeup.
 
 <!-- https://github.com/CharlesAverill/pokefirered/assets/46544495/064f7a73-f6eb-4f8a-8898-84815e6178a6 -->
 [![Trailer](https://img.youtube.com/vi/5mBCTFF_w-o/0.jpg)](https://www.youtube.com/watch?v=5mBCTFF_w-o)
