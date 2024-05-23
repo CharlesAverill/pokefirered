@@ -13,6 +13,7 @@
 #include "constants/maps.h"
 #include "constants/songs.h"
 #include "constants/trainer_classes.h"
+#include "soar.h"
 
 #define TAG_VS_LETTERS 10000
 
@@ -401,6 +402,11 @@ static const u32 sBattleTerrainPalette_Champion[] = INCBIN_U32("graphics/battle/
 static const u32 sBattleTerrainPalette_Plain[] = INCBIN_U32("graphics/battle/unk_824E81C.gbapal.lz");
 static const u32 sBattleTerrainTiles_Indoor2[] = INCBIN_U32("graphics/battle/unk_824E858.4bpp.lz");
 static const u32 sBattleTerrainTilemap_Indoor2[] = INCBIN_U32("graphics/battle/unk_824EB90.bin.lz");
+static const u32 sBattleTerrainTiles_Sky[] = INCBIN_U32("graphics/battle_terrain/sky/tiles.4bpp.lz");
+static const u32 sBattleTerrainTilemap_Sky[] = INCBIN_U32("graphics/battle_terrain/sky/map.bin.lz");
+static const u32 sBattleTerrainAnimTiles_Sky[] = INCBIN_U32("graphics/battle_terrain/sky/anim_tiles.4bpp.lz");
+static const u32 sBattleTerrainAnimTilemap_Sky[] = INCBIN_U32("graphics/battle_terrain/sky/anim_map.bin.lz");
+static const u32 sBattleTerrainPalette_Sky[] = INCBIN_U32("graphics/battle_terrain/sky/palette.gbapal.lz");
 
 static const struct BattleBackground sBattleTerrainTable[] = {
     [BATTLE_TERRAIN_GRASS] =
@@ -562,7 +568,15 @@ static const struct BattleBackground sBattleTerrainTable[] = {
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
         .palette = sBattleTerrainPalette_Champion
-    }
+    },
+    [BATTLE_TERRAIN_SKY] =
+    {
+        .tileset = sBattleTerrainTiles_Sky,
+        .tilemap = sBattleTerrainTilemap_Sky,
+        .entryTileset = sBattleTerrainAnimTiles_Sky,
+        .entryTilemap = sBattleTerrainAnimTilemap_Sky,
+        .palette = sBattleTerrainPalette_Sky
+    },
 };
 
 static const struct {
@@ -603,13 +617,13 @@ static u8 GetBattleTerrainByMapScene(u8 mapBattleScene)
         if (mapBattleScene == sMapBattleSceneMapping[i].mapScene)
             return sMapBattleSceneMapping[i].battleTerrain;
     }
-    return 9;
+    return BATTLE_TERRAIN_PLAIN;
 }
 
 static void LoadBattleTerrainGfx(u16 terrain)
 {
     if (terrain >= NELEMS(sBattleTerrainTable))
-        terrain = 9;
+        terrain = BATTLE_TERRAIN_PLAIN;
     // Copy to bg3
     LZDecompressVram(sBattleTerrainTable[terrain].tileset, (void *)BG_CHAR_ADDR(2));
     LZDecompressVram(sBattleTerrainTable[terrain].tilemap, (void *)BG_SCREEN_ADDR(26));
@@ -619,7 +633,7 @@ static void LoadBattleTerrainGfx(u16 terrain)
 static void LoadBattleTerrainEntryGfx(u16 terrain)
 {
     if (terrain >= NELEMS(sBattleTerrainTable))
-        terrain = 9;
+        terrain = BATTLE_TERRAIN_PLAIN;
     // Copy to bg1
     LZDecompressVram(sBattleTerrainTable[terrain].entryTileset, (void *)BG_CHAR_ADDR(1));
     LZDecompressVram(sBattleTerrainTable[terrain].entryTilemap, (void *)BG_SCREEN_ADDR(28));
@@ -627,8 +641,8 @@ static void LoadBattleTerrainEntryGfx(u16 terrain)
 
 UNUSED void GetBattleTerrainGfxPtrs(u8 terrain, const u32 **tilesPtr, const u32 **mapPtr, const u32 **palPtr)
 {
-    if (terrain > 9)
-        terrain = 9;
+    if (terrain > BATTLE_TERRAIN_PLAIN)
+        terrain = BATTLE_TERRAIN_PLAIN;
     *tilesPtr = sBattleTerrainTable[terrain].tileset;
     *mapPtr = sBattleTerrainTable[terrain].tilemap;
     *palPtr = sBattleTerrainTable[terrain].palette;
@@ -1009,7 +1023,9 @@ void DrawBattleEntryBackground(void)
 static u8 GetBattleTerrainOverride(void)
 {
     u8 battleScene;
-    if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER_TOWER | BATTLE_TYPE_LINK | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_TRAINER))
+    if (gInSky) 
+        return BATTLE_TERRAIN_SKY;
+    else if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER_TOWER | BATTLE_TYPE_LINK | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_TRAINER))
     {
         return BATTLE_TERRAIN_LINK;
     }

@@ -308,10 +308,11 @@
 #define BATTLE_TERRAIN_AGATHA      17
 #define BATTLE_TERRAIN_LANCE       18
 #define BATTLE_TERRAIN_CHAMPION    19
+#define BATTLE_TERRAIN_SKY         20
 
 // Return value for IsRunningFromBattleImpossible. 
 #define BATTLE_RUN_SUCCESS        0
 #define BATTLE_RUN_FORBIDDEN      1
 #define BATTLE_RUN_FAILURE        2
 
-#endif // GUARD_CONSTANTS_BATTLE_H
+#endif /* BATTLE */

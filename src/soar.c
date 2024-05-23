@@ -193,6 +193,8 @@ static bool8 inBattle;
 static u16 encounterCheck;
 static bool8 returnFromBattle;
 
+EWRAM_DATA bool8 gInSky = FALSE;
+
 void CB2_InitSoarState2(void) {
 	gMain.state = 2;
 	returnFromBattle = TRUE;
@@ -201,11 +203,10 @@ void CB2_InitSoarState2(void) {
 
 void CB2_InitSoar(void)
 {
+	gInSky = TRUE;
+
 	currentMusic = GetCurrentMapMusic();
 	gHelpSystemEnabled = FALSE;
-	enterSkyEncounterZone();
-	Overworld_EnterSky();
-	BattleSetup_EnterSky();
 	encounterCheck = 0;
 
 	switch (gMain.state)
@@ -575,6 +576,7 @@ static void ExitSoar(bool8 encounter)
 		gHelpSystemEnabled = TRUE;
 		Overworld_RememberTranslation(sPlayerPosX, sPlayerPosY, sPlayerPosZ, sPlayerPitch, sPlayerYaw);
 	} else {
+		gInSky = FALSE;
 		PlaySE(SE_PC_OFF);
 		BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, 0);
 		FadeOutAndFadeInNewMapMusic(currentMusic, 2, 2);
@@ -582,9 +584,7 @@ static void ExitSoar(bool8 encounter)
 
 		// We only want to exit the sky zones when we aren't battling, due to some
 		// post-battle code
-		exitSkyEncounterZone();
 		Overworld_ExitSky();
-		BattleSetup_ExitSky();
 	}
 	SetMainCallback2(CB2_FadeOut);
 }
@@ -767,9 +767,9 @@ static void WarpCB2(void)
 
 	}
 
-	exitSkyEncounterZone();
 	Overworld_ExitSky();
-	BattleSetup_ExitSky();
+
+	gInSky = FALSE;
 
 	if (!gPaletteFade.active)
 	{

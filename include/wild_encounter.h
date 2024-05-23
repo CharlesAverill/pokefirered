@@ -50,7 +50,5 @@ bool8 SweetScentWildEncounter(void);
 void SeedWildEncounterRng(u16 randVal);
 void ResetEncounterRateModifiers(void);
 bool8 TryStandardWildEncounter(u32 currMetatileBehavior);
-void enterSkyEncounterZone(void);
-void exitSkyEncounterZone(void);
 
 #endif /* WILD_ENCOUNTER */

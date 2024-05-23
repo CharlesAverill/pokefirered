@@ -17,6 +17,7 @@
 #include "constants/vars.h"
 #include "constants/abilities.h"
 #include "constants/items.h"
+#include "soar.h"
 
 struct WildEncounterData
 {
@@ -40,8 +41,6 @@ static void ApplyCleanseTagEncounterRateMod(u32 *rate);
 static bool8 IsLeadMonHoldingCleanseTag(void);
 static u16 WildEncounterRandom(void);
 static void AddToWildEncounterRateBuff(u8 encouterRate);
-
-static EWRAM_DATA bool8 inSky = FALSE;
 
 #include "data/wild_encounters.h"
 
@@ -189,7 +188,7 @@ static u16 GetCurrentMapWildMonHeaderId(void)
         if (wildHeader->mapGroup == 0xFF)
             break;
 
-        if (inSky) {
+        if (gInSky) {
             if (gWildMonHeaders[i].mapGroup == MAP_GROUP(DUMMY_SKY_MAP) && 
                 gWildMonHeaders[i].mapNum == MAP_NUM(DUMMY_SKY_MAP))
                 return i;
@@ -373,7 +372,7 @@ bool8 StandardWildEncounter(u32 currMetatileBehavior, u16 previousMetatileBehavi
     headerId = GetCurrentMapWildMonHeaderId();
     if (headerId != 0xFFFF)
     {
-        if (inSky || GetMetatileAttributeFromRawMetatileBehavior(currMetatileBehavior, METATILE_ATTRIBUTE_ENCOUNTER_TYPE) == TILE_ENCOUNTER_LAND)
+        if (gInSky || GetMetatileAttributeFromRawMetatileBehavior(currMetatileBehavior, METATILE_ATTRIBUTE_ENCOUNTER_TYPE) == TILE_ENCOUNTER_LAND)
         {
             if (gWildMonHeaders[headerId].landMonsInfo == NULL)
                 return FALSE;
@@ -792,12 +791,4 @@ static void AddToWildEncounterRateBuff(u8 encounterRate)
         sWildEncounterData.encounterRateBuff += encounterRate;
     else
         sWildEncounterData.encounterRateBuff = 0;
-}
-
-void enterSkyEncounterZone(void) {
-    inSky = TRUE;
-}
-
-void exitSkyEncounterZone(void) {
-    inSky = FALSE;
 }

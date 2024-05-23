@@ -8789,6 +8789,9 @@ static void atkE4_getsecretpowereffect(void)
     case BATTLE_TERRAIN_CAVE:
         gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_FLINCH;
         break;
+    case BATTLE_TERRAIN_SKY:
+        gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_SPD_PLUS_1;
+        break;
     default:
         gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_PARALYSIS;
         break;

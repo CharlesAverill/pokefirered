@@ -246,8 +246,6 @@ static const u16 sWhiteOutMoneyLossBadgeFlagIDs[] = {
     FLAG_BADGE08_GET
 };
 
-static EWRAM_DATA bool8 inSky = FALSE;
-
 static EWRAM_DATA s32 skyX, skyY, skyZ;
 static EWRAM_DATA u8 skyPitch, skyYaw;
 
@@ -259,13 +257,8 @@ void Overworld_RememberTranslation(s32 x, s32 y, s32 z, u8 pitch, u8 yaw) {
     skyYaw = yaw;
 }
 
-void Overworld_EnterSky() {
-    inSky = TRUE;
-}
-
 void Overworld_ExitSky() {
     Soar_LoadTranslation(skyX, skyY, skyZ, skyPitch, skyYaw);
-    inSky = FALSE;
 }
 
 static void DoWhiteOut(void)
@@ -1058,7 +1051,7 @@ void Overworld_PlaySpecialMapMusic(void)
 
     if (gSaveBlock1Ptr->savedMusic)
         music = gSaveBlock1Ptr->savedMusic;
-    else if (inSky || (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) && Overworld_MusicCanOverrideMapMusic(MUS_SURF)))
+    else if (gInSky || (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) && Overworld_MusicCanOverrideMapMusic(MUS_SURF)))
         music = MUS_SURF;
 
     if (music != GetCurrentMapMusic())
@@ -1288,7 +1281,7 @@ static u8 GetSavedWarpRegionMapSectionId(void)
 
 u8 GetCurrentRegionMapSectionId(bool8 checkSky)
 {
-    if (checkSky && inSky) {
+    if (checkSky && gInSky) {
         return MAPSEC_SKY;
     }
     return Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)->regionMapSectionId;
@@ -1497,7 +1490,7 @@ static void OverworldBasic(void)
     UpdatePaletteFade();
     UpdateTilesetAnimations();
     DoScheduledBgTilemapCopiesToVram();
-    if (inSky) {
+    if (gInSky) {
         CB2_InitSoarState2();
     }
 }

@@ -191,7 +191,6 @@ void StoreInitialPlayerAvatarState(void);
 void UpdateEscapeWarp(s16 x, s16 y);
 bool8 SetDiveWarpEmerge(u16 x, u16 y);
 bool8 SetDiveWarpDive(u16 x, u16 y);
-void Overworld_EnterSky();
 void Overworld_ExitSky();
 
 extern u16 *gBGTilemapBuffers1;
