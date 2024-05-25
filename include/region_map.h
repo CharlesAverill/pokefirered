@@ -36,6 +36,9 @@ enum {
 #define MAP_WIDTH 22
 #define MAP_HEIGHT 15
 
+#define MAPSEC_IS_ROUTE(m) ((m >= MAPSEC_ROUTE_1 && m <= MAPSEC_ROUTE_25) \
+    || m == MAPSEC_ROUTE_49 || m == MAPSEC_ROUTE_50 || m == MAPSEC_ROUTE_51)
+
 u8 *GetMapName(u8 *dest, u16 mapsec, u16 fill);
 u8 *GetMapNameGeneric(u8 *dest, u16 mapsec);
 u8 *GetMapNameGeneric_(u8 *dest, u16 mapsec);

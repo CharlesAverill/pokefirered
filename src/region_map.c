@@ -4202,7 +4202,7 @@ static void CreateDungeonIconSprite(u8 whichMap, u8 numIcons, u16 x, u16 y, u8 t
     mapsec = GetSelectedMapSection(whichMap, LAYER_MAP, y, x);
 
     // If mapsec has a town, push dungeon icon to bottom right corner
-    if ((GetMapsecType(mapsec) == MAPSECTYPE_VISITED || GetMapsecType(mapsec) == MAPSECTYPE_NOT_VISITED) && mapsec != MAPSEC_ROUTE_10_POKECENTER && mapsec != MAPSEC_ROUTE_23_VR)
+    if ((GetMapsecType(mapsec) == MAPSECTYPE_VISITED || GetMapsecType(mapsec) == MAPSECTYPE_NOT_VISITED) && mapsec != MAPSEC_ROUTE_10_POKECENTER && mapsec != MAPSEC_ROUTE_23_VR && !MAPSEC_IS_ROUTE(mapsec))
         offset = 2;
 
     spriteId = CreateSprite(&template, 8 * x + 36 + offset, 8 * y + 36 + offset, 3);
@@ -4215,6 +4215,8 @@ static void CreateFlyIcons(void)
 {
     u16 i, y, x;
     u8 numIcons = 0;
+    u8 selected;
+
     if (GetRegionMapPermission(MAPPERM_HAS_FLY_DESTINATIONS))
     {
         for (i = 0; i < REGIONMAP_COUNT; i++)
@@ -4223,7 +4225,8 @@ static void CreateFlyIcons(void)
             {
                 for (x = 0; x < MAP_WIDTH; x++)
                 {
-                    if (GetMapsecType(GetSelectedMapSection(i, LAYER_MAP, y, x)) == MAPSECTYPE_VISITED)
+                    selected = GetSelectedMapSection(i, LAYER_MAP, y, x);
+                    if (!MAPSEC_IS_ROUTE(selected) && GetMapsecType(selected) == MAPSECTYPE_VISITED)
                     {
                         CreateFlyIconSprite(i, numIcons, x, y, numIcons + 10, 10);
                         numIcons++;
