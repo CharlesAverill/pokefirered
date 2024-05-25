@@ -21,9 +21,14 @@ u16 GetPokedexHeightWeight(u16 dexNum, u8 data)
     }
 }
 
-s8 GetSetPokedexFlag(u16 nationalDexNo, u8 caseID)
+s8 GetSetPokedexFlag(u16 species, u8 caseID)
 {
-    return sub_8104AB0(nationalDexNo, caseID, 0);
+    return DexScreen_GetSetPokedexFlag(species, caseID, TRUE);
+}
+
+s8 GetSetPokedexFlagNational(u16 species, u8 caseID)
+{
+    return DexScreen_GetSetPokedexFlag(species, caseID, FALSE);
 }
 
 u16 GetNationalPokedexCount(u8 caseID)
@@ -36,11 +41,11 @@ u16 GetNationalPokedexCount(u8 caseID)
         switch (caseID)
         {
         case FLAG_GET_SEEN:
-            if (GetSetPokedexFlag(i + 1, FLAG_GET_SEEN))
+            if (GetSetPokedexFlagNational(i + 1, FLAG_GET_SEEN))
                 count++;
             break;
         case FLAG_GET_CAUGHT:
-            if (GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
+            if (GetSetPokedexFlagNational(i + 1, FLAG_GET_CAUGHT))
                 count++;
             break;
         }
@@ -58,11 +63,11 @@ u16 GetKantoPokedexCount(u8 caseID)
         switch (caseID)
         {
         case FLAG_GET_SEEN:
-            if (GetSetPokedexFlag(i + 1, FLAG_GET_SEEN))
+            if (GetSetPokedexFlagNational(i + 1, FLAG_GET_SEEN))
                 count++;
             break;
         case FLAG_GET_CAUGHT:
-            if (GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
+            if (GetSetPokedexFlagNational(i + 1, FLAG_GET_CAUGHT))
                 count++;
             break;
         }
@@ -76,7 +81,7 @@ bool16 HasAllHoennMons(void)
 
     for (i = 0; i < HOENN_DEX_COUNT - 2; i++)
     {
-        if (!GetSetPokedexFlag(HoennToNationalOrder(i + 1), FLAG_GET_CAUGHT))
+        if (!GetSetPokedexFlagNational(HoennToNationalOrder(i + 1), FLAG_GET_CAUGHT))
             return FALSE;
     }
     return TRUE;
@@ -88,7 +93,7 @@ bool16 HasAllKantoMons(void)
 
     for (i = 0; i < KANTO_DEX_COUNT - 1; i++)
     {
-        if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
+        if (!GetSetPokedexFlagNational(i + 1, FLAG_GET_CAUGHT))
             return FALSE;
     }
     return TRUE;
@@ -100,17 +105,17 @@ bool16 HasAllMons(void)
 
     for (i = 0; i < NATIONAL_DEX_MEWTWO; i++)
     {
-        if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
+        if (!GetSetPokedexFlagNational(i + 1, FLAG_GET_CAUGHT))
             return FALSE;
     }
     for (i = NATIONAL_DEX_MEW; i < NATIONAL_DEX_TYRANITAR; i++)
     {
-        if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
+        if (!GetSetPokedexFlagNational(i + 1, FLAG_GET_CAUGHT))
             return FALSE;
     }
     for (i = NATIONAL_DEX_CELEBI; i < NATIONAL_DEX_RAYQUAZA; i++)
     {
-        if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
+        if (!GetSetPokedexFlagNational(i + 1, FLAG_GET_CAUGHT))
             return FALSE;
     }
     return TRUE;

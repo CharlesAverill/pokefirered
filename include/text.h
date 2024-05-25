@@ -156,6 +156,17 @@ enum
     FONTATTR_COLOR_SHADOW
 };
 
+enum {
+    FONT_SMALL,
+    FONT_NORMAL_COPY_1,
+    FONT_NORMAL,
+    FONT_NORMAL_COPY_2,
+    FONT_MALE,
+    FONT_FEMALE,
+    FONT_BRAILLE,
+    FONT_BOLD,
+};
+
 struct TextPrinterSubStruct
 {
     u8 glyphId:4;  // 0x14

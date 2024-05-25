@@ -445,10 +445,18 @@
 #define SPECIES_UNOWN_EMARK 438
 #define SPECIES_UNOWN_QMARK 439
 
-#define SPECIES_OLD_UNOWN_EMARK 412
-#define SPECIES_OLD_UNOWN_QMARK 413
+#define SPECIES_OLD_UNOWN_EMARK 440
+#define SPECIES_OLD_UNOWN_QMARK 441
+#define SPECIES_DEOXYS_ATTACK 442
+#define SPECIES_DEOXYS_DEFENSE 443
+#define SPECIES_DEOXYS_SPEED 444
 
 #define NUM_SPECIES SPECIES_EGG
+
+#define MON_IS_DEOXYS(species) (species == SPECIES_DEOXYS || \
+    species == SPECIES_DEOXYS_ATTACK ||                      \
+    species == SPECIES_DEOXYS_DEFENSE ||                     \
+    species == SPECIES_DEOXYS_SPEED)                         
 
 // National Dex Index Defines
 

@@ -17,7 +17,7 @@ sub_8105594: @ 8105594
 	lsrs r7, r0, 24
 	lsls r1, 24
 	lsrs r4, r1, 24
-	ldr r0, _081055C0 @ =gUnknown_203ACF0
+	ldr r0, _081055C0 @ =sPokedexScreenData
 	ldr r3, [r0]
 	adds r2, r3, 0
 	adds r2, 0x2C
@@ -30,7 +30,7 @@ sub_8105594: @ 8105594
 	ldrb r1, [r0, 0x3]
 	b _081055E2
 	.align 2, 0
-_081055C0: .4byte gUnknown_203ACF0
+_081055C0: .4byte sPokedexScreenData
 _081055C4: .4byte gUnknown_8452334
 _081055C8:
 	ldr r1, _08105634 @ =gUnknown_8452334
@@ -332,7 +332,7 @@ sub_8105800: @ 8105800
 	movs r4, 0
 	movs r1, 0x1
 	movs r2, 0
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	cmp r0, 0
 	beq _08105864
@@ -459,7 +459,7 @@ sub_81058C4: @ 81058C4
 	strb r3, [r1]
 	movs r1, 0x1
 	movs r2, 0
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	cmp r0, 0
 	beq _081059CE
@@ -636,7 +636,7 @@ sub_8105A3C: @ 8105A3C
 	strb r1, [r2]
 	movs r1, 0x1
 	movs r2, 0
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	cmp r0, 0
 	bne _08105A92
@@ -926,7 +926,7 @@ sub_8105CB0: @ 8105CB0
 	adds r0, r4, 0
 	movs r1, 0x1
 	movs r2, 0
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	cmp r0, 0
 	beq _08105D5C
@@ -1022,7 +1022,7 @@ sub_8105D64: @ 8105D64
 	adds r0, r4, 0
 	movs r1, 0x1
 	movs r2, 0x1
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	cmp r0, 0
 	beq _08105E02
@@ -1134,7 +1134,7 @@ sub_8105E1C: @ 8105E1C
 	bl FillBgTilemapBufferRect_Palette0
 	ldr r0, _08105FD0 @ =gUnknown_84521D4
 	bl AddWindow
-	ldr r4, _08105FD4 @ =gUnknown_203ACF0
+	ldr r4, _08105FD4 @ =sPokedexScreenData
 	ldr r1, [r4]
 	adds r1, 0x4A
 	movs r2, 0
@@ -1291,7 +1291,7 @@ sub_8105E1C: @ 8105E1C
 	b _08105FF2
 	.align 2, 0
 _08105FD0: .4byte gUnknown_84521D4
-_08105FD4: .4byte gUnknown_203ACF0
+_08105FD4: .4byte sPokedexScreenData
 _08105FD8: .4byte gUnknown_84521DC
 _08105FDC: .4byte gUnknown_84521E4
 _08105FE0: .4byte gSpeciesNames
@@ -1320,7 +1320,7 @@ _08106010: .4byte gText_Next
 	thumb_func_start sub_8106014
 sub_8106014: @ 8106014
 	push {r4,lr}
-	ldr r4, _08106038 @ =gUnknown_203ACF0
+	ldr r4, _08106038 @ =sPokedexScreenData
 	ldr r0, [r4]
 	adds r0, 0x4A
 	bl sub_81047B0
@@ -1335,7 +1335,7 @@ sub_8106014: @ 8106014
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08106038: .4byte gUnknown_203ACF0
+_08106038: .4byte sPokedexScreenData
 	thumb_func_end sub_8106014
 
 	thumb_func_start sub_810603C
@@ -1346,7 +1346,7 @@ sub_810603C: @ 810603C
 	mov r5, r8
 	push {r5-r7}
 	sub sp, 0x24
-	ldr r6, _08106424 @ =gUnknown_203ACF0
+	ldr r6, _08106424 @ =sPokedexScreenData
 	ldr r0, [r6]
 	adds r0, 0x5A
 	ldrh r0, [r0]
@@ -1358,7 +1358,7 @@ sub_810603C: @ 810603C
 	ldr r0, [sp, 0x1C]
 	movs r1, 0x1
 	movs r2, 0x1
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	lsrs r0, 24
 	mov r10, r0
@@ -1542,7 +1542,7 @@ _081061F0:
 	ble _081061E2
 	ldr r0, _08106450 @ =gUnknown_8452214
 	bl AddWindow
-	ldr r5, _08106424 @ =gUnknown_203ACF0
+	ldr r5, _08106424 @ =sPokedexScreenData
 	ldr r1, [r5]
 	adds r1, 0x4A
 	strb r0, [r1]
@@ -1631,7 +1631,7 @@ _081062B4:
 	ble _08106246
 	ldr r0, _0810645C @ =gUnknown_84521F4
 	bl AddWindow
-	ldr r7, _08106424 @ =gUnknown_203ACF0
+	ldr r7, _08106424 @ =sPokedexScreenData
 	ldr r1, [r7]
 	adds r1, 0x52
 	movs r6, 0
@@ -1786,7 +1786,7 @@ _081062B4:
 	bl sub_8104A34
 	b _08106478
 	.align 2, 0
-_08106424: .4byte gUnknown_203ACF0
+_08106424: .4byte sPokedexScreenData
 _08106428: .4byte 0x00000404
 _0810642C: .4byte 0x00000804
 _08106430: .4byte 0x00000c04
@@ -1872,7 +1872,7 @@ _08106478:
 	movs r3, 0x1
 	bl BlitMoveInfoIcon
 _08106504:
-	ldr r7, _081066B8 @ =gUnknown_203ACF0
+	ldr r7, _081066B8 @ =sPokedexScreenData
 	ldr r0, [r7]
 	adds r0, 0x56
 	ldrb r0, [r0]
@@ -2080,7 +2080,7 @@ _08106534:
 	.align 2, 0
 _081066B0: .4byte gSpeciesNames
 _081066B4: .4byte gBaseStats
-_081066B8: .4byte gUnknown_203ACF0
+_081066B8: .4byte sPokedexScreenData
 _081066BC: .4byte gUnknown_8452368
 _081066C0: .4byte 0x0000ffff
 _081066C4: .4byte gSprites
@@ -2103,7 +2103,7 @@ _081066E2:
 	ldr r0, [sp, 0x1C]
 	movs r2, 0x3
 	bl sub_8134230
-	ldr r5, _081067AC @ =gUnknown_203ACF0
+	ldr r5, _081067AC @ =sPokedexScreenData
 	ldr r1, [r5]
 	strb r0, [r1, 0x4]
 	ldr r0, [r5]
@@ -2188,7 +2188,7 @@ _0810675A:
 	bx r1
 	.align 2, 0
 _081067A8: .4byte 0x000007d1
-_081067AC: .4byte gUnknown_203ACF0
+_081067AC: .4byte sPokedexScreenData
 _081067B0: .4byte gUnknown_8443D00
 _081067B4: .4byte gText_AreaUnknown
 _081067B8: .4byte gText_Cry
@@ -2198,7 +2198,7 @@ _081067BC: .4byte gText_CancelPreviousData
 	thumb_func_start sub_81067C0
 sub_81067C0: @ 81067C0
 	push {r4,r5,lr}
-	ldr r4, _0810680C @ =gUnknown_203ACF0
+	ldr r4, _0810680C @ =sPokedexScreenData
 	ldr r0, [r4]
 	ldrb r0, [r0, 0x4]
 	bl sub_81343F4
@@ -2212,7 +2212,7 @@ _081067CE:
 	adds r5, 0x1
 	cmp r5, 0xC
 	ble _081067CE
-	ldr r4, _0810680C @ =gUnknown_203ACF0
+	ldr r4, _0810680C @ =sPokedexScreenData
 	ldr r0, [r4]
 	adds r1, r0, 0
 	adds r1, 0x59
@@ -2234,7 +2234,7 @@ _08106802:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0810680C: .4byte gUnknown_203ACF0
+_0810680C: .4byte sPokedexScreenData
 	thumb_func_end sub_81067C0
 
 	thumb_func_start sub_8106810
@@ -2296,7 +2296,7 @@ _08106858:
 	adds r0, r4, 0
 	movs r1, 0
 	movs r2, 0x1
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	cmp r0, 0
 	beq _0810688C
@@ -2371,7 +2371,7 @@ sub_81068DC: @ 81068DC
 	adds r0, r1
 	ldrb r0, [r0, 0x4]
 	mov r9, r0
-	ldr r2, _08106994 @ =gUnknown_203ACF0
+	ldr r2, _08106994 @ =sPokedexScreenData
 	ldr r0, [r2]
 	adds r0, 0x2C
 	movs r1, 0
@@ -2413,11 +2413,11 @@ _08106930:
 	adds r0, r4, 0
 	movs r1, 0
 	movs r2, 0x1
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	cmp r0, 0
 	beq _0810697C
-	ldr r0, _08106994 @ =gUnknown_203ACF0
+	ldr r0, _08106994 @ =sPokedexScreenData
 	ldr r1, [r0]
 	adds r2, r1, 0
 	adds r2, 0x2C
@@ -2448,7 +2448,7 @@ _08106982:
 	bx r0
 	.align 2, 0
 _08106990: .4byte gDexCategories
-_08106994: .4byte gUnknown_203ACF0
+_08106994: .4byte sPokedexScreenData
 _08106998: .4byte 0x0000ffff
 	thumb_func_end sub_81068DC
 
@@ -2492,7 +2492,7 @@ _081069D8:
 _081069DE:
 	cmp r3, 0xFF
 	bne _08106A00
-	ldr r2, _081069FC @ =gUnknown_203ACF0
+	ldr r2, _081069FC @ =sPokedexScreenData
 	ldr r0, [r2]
 	adds r0, 0x29
 	movs r1, 0
@@ -2504,9 +2504,9 @@ _081069DE:
 	b _08106A12
 	.align 2, 0
 _081069F8: .4byte gDexCategories
-_081069FC: .4byte gUnknown_203ACF0
+_081069FC: .4byte sPokedexScreenData
 _08106A00:
-	ldr r1, _08106A1C @ =gUnknown_203ACF0
+	ldr r1, _08106A1C @ =sPokedexScreenData
 	ldr r0, [r1]
 	adds r0, 0x29
 	strb r2, [r0]
@@ -2521,7 +2521,7 @@ _08106A12:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08106A1C: .4byte gUnknown_203ACF0
+_08106A1C: .4byte sPokedexScreenData
 	thumb_func_end sub_810699C
 
 	thumb_func_start sub_8106A20
@@ -2561,7 +2561,7 @@ _08106A4E:
 	bge _08106ACA
 	ldr r0, [sp, 0x10]
 	mov r10, r0
-	ldr r3, _08106A9C @ =gUnknown_203ACF0
+	ldr r3, _08106A9C @ =sPokedexScreenData
 _08106A64:
 	mov r1, r10
 	ldr r0, [r1]
@@ -2590,7 +2590,7 @@ _08106A64:
 	b _08106AE8
 	.align 2, 0
 _08106A98: .4byte gDexCategories
-_08106A9C: .4byte gUnknown_203ACF0
+_08106A9C: .4byte sPokedexScreenData
 _08106AA0:
 	adds r0, r4, 0
 	str r3, [sp, 0x14]
@@ -2601,7 +2601,7 @@ _08106AA0:
 	adds r0, r4, 0
 	movs r1, 0
 	movs r2, 0x1
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	lsls r0, 24
 	ldr r3, [sp, 0x14]
 	cmp r0, 0
@@ -2650,7 +2650,7 @@ sub_8106AF8: @ 8106AF8
 	cmp r6, r5
 	bge _08106B24
 _08106B06:
-	ldr r0, _08106B30 @ =gUnknown_203ACF0
+	ldr r0, _08106B30 @ =sPokedexScreenData
 	ldr r0, [r0]
 	adds r0, 0x28
 	ldrb r0, [r0]
@@ -2673,7 +2673,7 @@ _08106B24:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08106B30: .4byte gUnknown_203ACF0
+_08106B30: .4byte sPokedexScreenData
 	thumb_func_end sub_8106AF8
 
 	thumb_func_start sub_8106B34
@@ -2685,7 +2685,7 @@ sub_8106B34: @ 8106B34
 	ands r0, r1
 	cmp r0, 0
 	beq _08106B54
-	ldr r0, _08106B5C @ =gUnknown_203ACF0
+	ldr r0, _08106B5C @ =sPokedexScreenData
 	ldr r0, [r0]
 	adds r0, 0x5A
 	ldrh r0, [r0]
@@ -2698,7 +2698,7 @@ _08106B54:
 	bx r0
 	.align 2, 0
 _08106B58: .4byte gMain
-_08106B5C: .4byte gUnknown_203ACF0
+_08106B5C: .4byte sPokedexScreenData
 	thumb_func_end sub_8106B34
 
 	thumb_func_start sub_8106B60
@@ -2709,11 +2709,11 @@ sub_8106B60: @ 8106B60
 	adds r0, r5, 0
 	movs r1, 0x2
 	movs r2, 0x1
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	adds r0, r5, 0
 	movs r1, 0x3
 	movs r2, 0x1
-	bl sub_8104AB0
+	bl DexScreen_GetSetPokedexFlag
 	bl IsNationalPokedexEnabled
 	cmp r0, 0
 	bne _08106BA4
@@ -2732,9 +2732,9 @@ sub_8106B60: @ 8106B60
 	.align 2, 0
 _08106BA0: .4byte sub_8106BD8
 _08106BA4:
-	bl sub_810250C
+	bl DexScreen_LoadResources
 	ldr r2, _08106BCC @ =gTasks
-	ldr r4, _08106BD0 @ =gUnknown_203ACF0
+	ldr r4, _08106BD0 @ =sPokedexScreenData
 	ldr r0, [r4]
 	ldrb r1, [r0]
 	lsls r0, r1, 2
@@ -2753,7 +2753,7 @@ _08106BC6:
 	bx r1
 	.align 2, 0
 _08106BCC: .4byte gTasks
-_08106BD0: .4byte gUnknown_203ACF0
+_08106BD0: .4byte sPokedexScreenData
 _08106BD4: .4byte sub_8106BE8
 	thumb_func_end sub_8106B60
 
@@ -2773,7 +2773,7 @@ sub_8106BE8: @ 8106BE8
 	sub sp, 0x8
 	lsls r0, 24
 	lsrs r5, r0, 24
-	ldr r1, _08106C08 @ =gUnknown_203ACF0
+	ldr r1, _08106C08 @ =sPokedexScreenData
 	ldr r0, [r1]
 	ldrb r0, [r0, 0x1]
 	adds r4, r1, 0
@@ -2787,7 +2787,7 @@ _08106BFE:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_08106C08: .4byte gUnknown_203ACF0
+_08106C08: .4byte sPokedexScreenData
 _08106C0C: .4byte _08106C10
 	.align 2, 0
 _08106C10:
@@ -2830,12 +2830,12 @@ _08106C62:
 	adds r0, r1
 	movs r1, 0
 	strb r1, [r0]
-	ldr r0, _08106C80 @ =gUnknown_203ACF0
+	ldr r0, _08106C80 @ =sPokedexScreenData
 	ldr r1, [r0]
 	b _08106E66
 	.align 2, 0
 _08106C7C: .4byte gMain
-_08106C80: .4byte gUnknown_203ACF0
+_08106C80: .4byte sPokedexScreenData
 _08106C84:
 	bl sub_8102798
 	lsls r0, 24
@@ -2863,12 +2863,12 @@ _08106C98:
 	bl CopyBgTilemapBufferToVram
 	movs r0, 0xFF
 	bl sub_8105058
-	ldr r0, _08106CD0 @ =gUnknown_203ACF0
+	ldr r0, _08106CD0 @ =sPokedexScreenData
 	ldr r1, [r0]
 	movs r0, 0x4
 	b _08106E68
 	.align 2, 0
-_08106CD0: .4byte gUnknown_203ACF0
+_08106CD0: .4byte sPokedexScreenData
 _08106CD4:
 	ldr r2, _08106D10 @ =gPaletteFade
 	ldrb r1, [r2, 0x8]
@@ -2891,14 +2891,14 @@ _08106CD4:
 	bl ShowBg
 	movs r0, 0
 	bl ShowBg
-	ldr r0, _08106D18 @ =gUnknown_203ACF0
+	ldr r0, _08106D18 @ =sPokedexScreenData
 	ldr r1, [r0]
 	movs r0, 0x5
 	b _08106E68
 	.align 2, 0
 _08106D10: .4byte gPaletteFade
 _08106D14: .4byte 0x0000ffff
-_08106D18: .4byte gUnknown_203ACF0
+_08106D18: .4byte sPokedexScreenData
 _08106D1C:
 	ldr r1, _08106D40 @ =gTasks
 	lsls r0, r5, 2
@@ -2910,7 +2910,7 @@ _08106D1C:
 	ldr r0, _08106D44 @ =gUnknown_84524C4
 	movs r1, 0
 	bl ListMenuAddCursorObjectInternal
-	ldr r2, _08106D48 @ =gUnknown_203ACF0
+	ldr r2, _08106D48 @ =sPokedexScreenData
 	ldr r1, [r2]
 	adds r1, 0x61
 	strb r0, [r1]
@@ -2920,7 +2920,7 @@ _08106D1C:
 	.align 2, 0
 _08106D40: .4byte gTasks
 _08106D44: .4byte gUnknown_84524C4
-_08106D48: .4byte gUnknown_203ACF0
+_08106D48: .4byte sPokedexScreenData
 _08106D4C:
 	ldr r0, [r4]
 	adds r0, 0x2D
@@ -2978,12 +2978,12 @@ _08106D9E:
 _08106DBA:
 	movs r0, 0x1
 	bl sub_8105E1C
-	ldr r0, _08106DC8 @ =gUnknown_203ACF0
+	ldr r0, _08106DC8 @ =sPokedexScreenData
 	ldr r1, [r0]
 	movs r0, 0x9
 	b _08106E68
 	.align 2, 0
-_08106DC8: .4byte gUnknown_203ACF0
+_08106DC8: .4byte sPokedexScreenData
 _08106DCC:
 	ldr r0, [r4]
 	movs r1, 0

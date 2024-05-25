@@ -1039,8 +1039,8 @@ static void ReceivedMonSetPokedexFlags(u8 partyIdx)
     {
         u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
         u32 personality = GetMonData(mon, MON_DATA_PERSONALITY, NULL);
-        species = SpeciesToNationalPokedexNum(species);
         GetSetPokedexFlag(species, FLAG_SET_SEEN);
+        // species = SpeciesToNationalPokedexNum(species);
         HandleSetPokedexFlag(species, FLAG_SET_CAUGHT, personality);
     }
 }

@@ -1661,9 +1661,9 @@ static void AddHatchedMonToParty(u8 id)
     GetSpeciesName(name, pokeNum);
     SetMonData(mon, MON_DATA_NICKNAME, name);
 
-    pokeNum = SpeciesToNationalPokedexNum(pokeNum);
     GetSetPokedexFlag(pokeNum, FLAG_SET_SEEN);
     GetSetPokedexFlag(pokeNum, FLAG_SET_CAUGHT);
+    pokeNum = SpeciesToNationalPokedexNum(pokeNum);
 
     DayCare_GetMonNickname(mon, gStringVar1);
 

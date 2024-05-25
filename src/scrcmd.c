@@ -1819,7 +1819,7 @@ bool8 ScrCmd_bufferroamerdata(struct ScriptContext * ctx)
 bool8 ScrCmd_hascaughtmon(struct ScriptContext * ctx)
 {
     u16 species = VarGet(ScriptReadHalfword(ctx));
-    bool8 hasCaughtMon = GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT);
+    bool8 hasCaughtMon = GetSetPokedexFlag((species), FLAG_GET_CAUGHT);
     VarSet(VAR_RESULT, hasCaughtMon);
     return FALSE;
 }

@@ -40,6 +40,10 @@
 #define OBJ_PLTT      (PLTT + 0x200)
 #define OBJ_PLTT_SIZE 0x200
 
+#define PLTT_SIZEOF(n) ((n) * sizeof(u16))
+#define PLTT_SIZE_4BPP PLTT_SIZEOF(16)
+#define PLTT_SIZE_8BPP PLTT_SIZEOF(256)
+
 #define VRAM      0x6000000
 #define VRAM_SIZE 0x18000
 

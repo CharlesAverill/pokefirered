@@ -40,7 +40,7 @@ u16 GetNationalPokedexCount(u8);
 u16 GetKantoPokedexCount(u8);
 bool16 HasAllMons(void);
 u8 CreateDexDisplayMonDataTask(u16 dexNum, u32 trainerId, u32 personality);
-s8 GetSetPokedexFlag(u16 nationalNum, u8 caseId);
+s8 GetSetPokedexFlag(u16 species, u8 caseId);
 u16 GetNationalPokedexCount(u8);
 u16 sub_80C0844(u8);
 u16 GetKantoPokedexCount(u8);
@@ -49,5 +49,9 @@ bool16 HasAllKantoMons(void);
 bool16 HasAllMons(void);
 
 u32 sub_8106B60(u16 species);
+
+void sub_8106BD8(u8 taskId);
+bool8 sub_8106A20(u16 species);
+void sub_8106BE8(u8 taskId);
 
 #endif // GUARD_POKEDEX_H

@@ -3888,7 +3888,7 @@ void GetSpeciesName(u8 *name, u16 species)
     // Hmm? FRLG has < while Ruby/Emerald has <=
     for (i = 0; i < POKEMON_NAME_LENGTH; i++)
     {
-        if (species > NUM_SPECIES)
+        if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
             name[i] = gSpeciesNames[0][i];
         else
             name[i] = gSpeciesNames[species][i];
@@ -5142,6 +5142,9 @@ u16 SpeciesToNationalPokedexNum(u16 species)
     if (!species)
         return 0;
 
+    if (MON_IS_DEOXYS(species))
+        species = SPECIES_DEOXYS;
+
     return sSpeciesToNationalPokedexNum[species - 1];
 }
 
@@ -5149,6 +5152,9 @@ static u16 SpeciesToHoennPokedexNum(u16 species)
 {
     if (!species)
         return 0;
+
+    if (MON_IS_DEOXYS(species))
+        species = SPECIES_DEOXYS;
 
     return sSpeciesToHoennPokedexNum[species - 1];
 }
@@ -5168,6 +5174,9 @@ u16 SpeciesToCryId(u16 species)
 
     if (species <= SPECIES_OLD_UNOWN_Z - 1)
         return SPECIES_UNOWN - 1;
+
+    if (MON_IS_DEOXYS(species))
+        species = SPECIES_DEOXYS;
 
     return sHoennSpeciesIdToCryId[species - ((SPECIES_OLD_UNOWN_Z + 1) - 1)];
 }
@@ -5792,7 +5801,7 @@ const u32 *GetMonSpritePalFromSpeciesAndPersonality(u16 species, u32 otId, u32 p
 {
     u32 shinyValue;
 
-    if (species > SPECIES_EGG)
+    if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
         return gMonPaletteTable[0].data;
 
     shinyValue = HIHALF(otId) ^ LOHALF(otId) ^ HIHALF(personality) ^ LOHALF(personality);
@@ -6119,16 +6128,16 @@ void CreateObedientEnemyMon(void)
     }
 }
 
-void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
+void HandleSetPokedexFlag(u16 species, u8 caseId, u32 personality)
 {
     u8 getFlagCaseId = (caseId == FLAG_SET_SEEN) ? FLAG_GET_SEEN : FLAG_GET_CAUGHT;
     
-    if (!GetSetPokedexFlag(nationalNum, getFlagCaseId))
+    if (!GetSetPokedexFlag(species, getFlagCaseId))
     {
-        GetSetPokedexFlag(nationalNum, caseId);
-        if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_UNOWN)
+        GetSetPokedexFlag(species, caseId);
+        if (species == SPECIES_UNOWN)
             gSaveBlock2Ptr->pokedex.unownPersonality = personality;
-        if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_SPINDA)
+        if (species == SPECIES_SPINDA)
             gSaveBlock2Ptr->pokedex.spindaPersonality = personality;
     }
 }

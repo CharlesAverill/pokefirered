@@ -2081,7 +2081,7 @@ void SpriteCB_FaintOpponentMon(struct Sprite *sprite)
     {
         yOffset = gCastformFrontSpriteCoords[gBattleMonForms[battler]].y_offset;
     }
-    else if (species > NUM_SPECIES)
+    else if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
     {
         yOffset = gMonFrontPicCoords[SPECIES_NONE].y_offset;
     }
@@ -2662,7 +2662,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
                                        | BATTLE_TYPE_GHOST
                                        | BATTLE_TYPE_OLD_MAN_TUTORIAL
                                        | BATTLE_TYPE_LEGENDARY)))
-                    HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
+                    HandleSetPokedexFlag((gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
             }
             else
             {
@@ -2671,7 +2671,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
                     if (gBattleTypeFlags & (BATTLE_TYPE_GHOST | BATTLE_TYPE_GHOST_UNVEILED))
                     {
                         if (!IS_BATTLE_TYPE_GHOST_WITHOUT_SCOPE(gBattleTypeFlags))
-                            HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
+                            HandleSetPokedexFlag((gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
                     }
                     else if (!(gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER
                                                 | BATTLE_TYPE_POKEDUDE
@@ -2680,7 +2680,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
                                                 | BATTLE_TYPE_OLD_MAN_TUTORIAL
                                                 | BATTLE_TYPE_LEGENDARY)))
                     {
-                        HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
+                        HandleSetPokedexFlag((gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
                     }
                     BtlController_EmitLoadMonSprite(0);
                     MarkBattlerForControllerExec(gActiveBattler);
@@ -2833,7 +2833,7 @@ static void BattleIntroRecordMonsToDex(void)
                                    | BATTLE_TYPE_GHOST
                                    | BATTLE_TYPE_OLD_MAN_TUTORIAL
                                    | BATTLE_TYPE_LEGENDARY)))
-                HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
+                HandleSetPokedexFlag((gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
         gBattleMainFunc = BattleIntroPrintPlayerSendsOut;
     }
 }

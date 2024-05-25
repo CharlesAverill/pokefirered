@@ -695,10 +695,10 @@ static u16 SampleResortGorgeousMon(void)
     for (i = 0; i < 100; i++)
     {
         species = (Random() % (NUM_SPECIES - 1)) + 1;
-        if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), 0) == TRUE)
+        if (GetSetPokedexFlag((species), 0) == TRUE)
             return species;
     }
-    while (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), 0) != TRUE)
+    while (GetSetPokedexFlag((species), 0) != TRUE)
     {
         if (species == SPECIES_BULBASAUR)
             species = NUM_SPECIES - 1;
@@ -1537,7 +1537,7 @@ u16 GetStarterSpecies(void)
 
 void SetSeenMon(void)
 {
-    GetSetPokedexFlag(SpeciesToNationalPokedexNum(gSpecialVar_0x8004), 2);
+    GetSetPokedexFlag((gSpecialVar_0x8004), 2);
 }
 
 void ResetContextNpcTextColor(void)

@@ -4409,7 +4409,7 @@ static void atk4E_switchinanim(void)
             | BATTLE_TYPE_POKEDUDE
             | BATTLE_TYPE_EREADER_TRAINER
             | BATTLE_TYPE_GHOST)))
-            HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
+            HandleSetPokedexFlag((gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
         gAbsentBattlerFlags &= ~(gBitTable[gActiveBattler]);
         BtlController_EmitSwitchInAnim(0, gBattlerPartyIndexes[gActiveBattler], gBattlescriptCurrInstr[2]);
         MarkBattlerForControllerExec(gActiveBattler);
@@ -9051,7 +9051,7 @@ static void atkEF_handleballthrow(void)
                     }
                     break;
                 case ITEM_REPEAT_BALL:
-                    if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gBattlerTarget].species), FLAG_GET_CAUGHT))
+                    if (GetSetPokedexFlag((gBattleMons[gBattlerTarget].species), FLAG_GET_CAUGHT))
                         ballMultiplier = 30;
                     else
                         ballMultiplier = 10;
@@ -9165,13 +9165,13 @@ static void atkF1_trysetcaughtmondexflags(void)
     u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
     u32 personality = GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY, NULL);
 
-    if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
+    if (GetSetPokedexFlag((species), FLAG_GET_CAUGHT))
     {
         gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
     }
     else
     {
-        HandleSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_CAUGHT, personality);
+        HandleSetPokedexFlag((species), FLAG_SET_CAUGHT, personality);
         gBattlescriptCurrInstr += 5;
     }
 }
@@ -9179,6 +9179,8 @@ static void atkF1_trysetcaughtmondexflags(void)
 static void atkF2_displaydexinfo(void)
 {
     u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
+    if (MON_IS_DEOXYS(species))
+        species = SPECIES_DEOXYS;
 
     switch (gBattleCommunication[0])
     {

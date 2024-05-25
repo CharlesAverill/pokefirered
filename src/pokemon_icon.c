@@ -437,7 +437,10 @@ const u8 *const gMonIconTable[] = {
     [SPECIES_LATIAS]      = gMonIcon_Latias,
     [SPECIES_LATIOS]      = gMonIcon_Latios,
     [SPECIES_JIRACHI]     = gMonIcon_Jirachi,
-    [SPECIES_DEOXYS]      = gMonIcon_Deoxys,
+    [SPECIES_DEOXYS]      = gMonIcon_DeoxysNormal,
+    [SPECIES_DEOXYS_ATTACK]      = gMonIcon_DeoxysAttack,
+    [SPECIES_DEOXYS_DEFENSE]      = gMonIcon_DeoxysDefense,
+    [SPECIES_DEOXYS_SPEED]      = gMonIcon_DeoxysSpeed,
     [SPECIES_CHIMECHO]    = gMonIcon_Chimecho,
     [SPECIES_EGG]         = gMonIcon_Egg,
     [SPECIES_UNOWN_B]     = gMonIcon_UnownB,
@@ -881,6 +884,9 @@ const u8 gMonIconPaletteIndices[] = {
     [SPECIES_LATIOS]      = 2,
     [SPECIES_JIRACHI]     = 0,
     [SPECIES_DEOXYS]      = 0,
+    [SPECIES_DEOXYS_ATTACK]      = 0,
+    [SPECIES_DEOXYS_DEFENSE]      = 0,
+    [SPECIES_DEOXYS_SPEED]      = 0,
     [SPECIES_CHIMECHO]    = 0,
     [SPECIES_EGG]         = 1,
     [SPECIES_UNOWN_B]     = 0,
@@ -1023,7 +1029,7 @@ u8 CreateMonIcon(u16 species, SpriteCallback callback, s16 x, s16 y, u8 subprior
             .paletteTag = POKE_ICON_BASE_PAL_TAG + gMonIconPaletteIndices[species],
         };
 
-    if (species > NUM_SPECIES)
+    if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
         iconTemplate.paletteTag = POKE_ICON_BASE_PAL_TAG;
 
     spriteId = CreateMonIconSprite(&iconTemplate, x, y, subpriority);
@@ -1069,7 +1075,7 @@ u16 GetIconSpecies(u16 species, u32 personality)
     }
     else
     {
-        if (species > NUM_SPECIES)
+        if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
             result = SPECIES_NONE;
         else
             result = species;
@@ -1109,8 +1115,8 @@ u16 MailSpeciesToIconSpecies(u16 species)
 const u8 *GetMonIconTiles(u16 species, bool32 extra)
 {
     const u8 *iconSprite = gMonIconTable[species];
-    if (species == SPECIES_DEOXYS && extra == TRUE)
-        iconSprite += 0x400;
+    // if (species == SPECIES_DEOXYS && extra == TRUE)
+    //     iconSprite += 0x400;
     return iconSprite;
 }
 
@@ -1134,7 +1140,7 @@ void LoadMonIconPalettes(void)
 void SafeLoadMonIconPalette(u16 species)
 {
     u8 palIndex;
-    if (species > NUM_SPECIES)
+    if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
         species = SPECIES_NONE;
     palIndex = gMonIconPaletteIndices[species];
     if (IndexOfSpritePaletteTag(gMonIconPaletteTable[palIndex].tag) == 0xFF)
@@ -1159,7 +1165,7 @@ void FreeMonIconPalettes(void)
 void SafeFreeMonIconPalette(u16 species)
 {
     u8 palIndex;
-    if (species > NUM_SPECIES)
+    if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
         species = SPECIES_NONE;
     palIndex = gMonIconPaletteIndices[species];
     FreeSpritePaletteByTag(gMonIconPaletteTable[palIndex].tag);
@@ -1192,14 +1198,14 @@ void LoadMonIconPalettesAt(u16 offset)
 
 const u16 *GetValidMonIconPalettePtr(u16 species)
 {
-    if (species > NUM_SPECIES)
+    if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
         species = SPECIES_NONE;
     return gMonIconPaletteTable[gMonIconPaletteIndices[species]].data;
 }
 
 u8 GetValidMonIconPalIndex(u16 species)
 {
-    if (species > NUM_SPECIES)
+    if (species > NUM_SPECIES && !MON_IS_DEOXYS(species))
         species = SPECIES_NONE;
     return gMonIconPaletteIndices[species];
 }
