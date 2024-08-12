@@ -280,3 +280,5 @@
 	.include "src/berry_powder.o"
 	.align 2
 	.include "src/soar.o"
+	.align 2
+	.include "src/chess.o"

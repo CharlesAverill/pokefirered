@@ -2,6 +2,7 @@
 #include "pokedex.h"
 #include "pokedex_screen.h"
 #include "constants/species.h"
+#include "string_util.h"
 
 const u8 *sub_8088E20(u16 dexNum)
 {
@@ -19,6 +20,11 @@ u16 GetPokedexHeightWeight(u16 dexNum, u8 data)
     default:
         return 1;
     }
+}
+
+void GetSpeciesPokedexDescription(u8* description, u16 species)
+{
+    StringCopy(description, gPokedexEntries[SpeciesToNationalPokedexNum(species)].description);
 }
 
 s8 GetSetPokedexFlag(u16 species, u8 caseID)

@@ -47,6 +47,7 @@ u16 GetKantoPokedexCount(u8);
 bool16 HasAllHoennMons(void);
 bool16 HasAllKantoMons(void);
 bool16 HasAllMons(void);
+void GetSpeciesPokedexDescription(u8* description, u16 species);
 
 u32 sub_8106B60(u16 species);
 

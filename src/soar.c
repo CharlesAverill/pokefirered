@@ -249,8 +249,8 @@ void CB2_InitSoar(void)
 					MapPositionOverrides(&cursorX, &cursorY);
 				}
 
-				AGBPrintf("%d %d\n", cursorX, cursorY);
-				AGBPrintFlush();
+				// AGBPrintf("%d %d\n", cursorX, cursorY);
+				// AGBPrintFlush();
 
 				sPlayerPosX = Q_8_7((cursorX + 2 + 27) * 8 - 4, 0);
 				sPlayerPosY = Q_8_7((cursorY + 3 + 30) * 8 - 4, 0);

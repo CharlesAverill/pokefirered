@@ -70,9 +70,9 @@ static void sub_8136E50(const u8 * str);
 static void sub_81358DC(u8, u8);
 static void sub_813A838(u8 invisible);
 static void sub_813AB70(u8 invisible);
-static void sub_8139C44(u8 invisible);
+static void PokeSum_ShowOrHideMonPicSprite(u8 invisible);
 static void sub_813B084(u8 invisible);
-static void sub_8139D54(u8 invisible);
+static void ShowOrHideBallIconObj(u8 invisible);
 static void sub_813A3B8(u8 invisible);
 static void sub_813ACF8(u8 invisible);
 static void sub_813AEB0(u8 invisible);
@@ -102,9 +102,9 @@ static void sub_8139F64(u16, u16);
 static void sub_813A254(u16, u16);
 static void sub_813A45C(u16, u16);
 static void sub_813A874(u16, u16);
-static void sub_8139CB0(void);
-static void sub_8139DBC(void);
-static void sub_813995C(void);
+static void CreateBallIconObj(void);
+static void PokeSum_CreateMonIconSprite(void);
+static void PokeSum_CreateMonPicSprite(void);
 static void sub_81393D4(u8 taskId);
 static void sub_8137EE8(void);
 static void sub_8136FB0(void);
@@ -131,13 +131,13 @@ static void sub_81391EC(void);
 static void sub_8139328(struct Pokemon * mon);
 static void sub_8139AAC(u16 spriteId);
 static void sub_813A124(struct Sprite * sprite);
-static void sub_813A35C(void);
-static void sub_813A620(void);
-static void sub_813A994(void);
-static void sub_813ACB4(void);
-static void sub_813AF50(void);
+static void UpdateMonStatusIconObj(void);
+static void UpdateHpBarObjs(void);
+static void UpdateExpBarObjs(void);
+static void ShowPokerusIconObjIfHasOrHadPokerus(void);
+static void ShowShinyStarObjIfMonShiny(void);
 static void sub_813B068(void);
-static void sub_813B0E4(void);
+static void PokeSum_UpdateMonMarkingsAnim(void);
 static s8 sub_813B20C(s8);
 static s8 sub_813B38C(s8);
 
@@ -1613,9 +1613,9 @@ static void sub_8135638(void)
     case PSS_PAGE_MOVES:
         if (sMonSummaryScreen->unk3224 == 1)
         {
-            sub_8139C44(1);
+            PokeSum_ShowOrHideMonPicSprite(1);
             sub_813B084(1);
-            sub_8139D54(1);
+            ShowOrHideBallIconObj(1);
             sub_813A3B8(1);
             sub_813ACF8(1);
             sub_813AEB0(1);
@@ -1665,10 +1665,10 @@ static void sub_81356EC(void)
 
         break;
     case PSS_PAGE_MOVES_INFO:
-        sub_8139C44(0);
+        PokeSum_ShowOrHideMonPicSprite(0);
         sub_813B084(0);
         sub_813A3B8(0);
-        sub_8139D54(0);
+        ShowOrHideBallIconObj(0);
         sub_813ACF8(0);
         sub_813AEB0(0);
         break;
@@ -1962,9 +1962,9 @@ static void sub_8135C34(void)
         }
         else
         {
-            sub_8139C44(0);
+            PokeSum_ShowOrHideMonPicSprite(0);
             sub_813B084(0);
-            sub_8139D54(0);
+            ShowOrHideBallIconObj(0);
             sub_813A838(0);
             sub_813AB70(0);
         }
@@ -2309,13 +2309,13 @@ static u8 sub_8136AEC(void)
         sub_813A874(TAG_PSS_UNK_82, TAG_PSS_UNK_82);
         break;
     case 7:
-        sub_8139CB0();
+        CreateBallIconObj();
         break;
     case 8:
-        sub_8139DBC();
+        PokeSum_CreateMonIconSprite();
         break;
     default:
-        sub_813995C();
+        PokeSum_CreateMonPicSprite();
         return TRUE;
     }
 
@@ -3981,7 +3981,7 @@ static void nullsub_96(struct Sprite * sprite)
 {
 }
 
-static void sub_813995C(void)
+static void PokeSum_CreateMonPicSprite(void)
 {
     u16 spriteId;
     u16 species;
@@ -4018,7 +4018,7 @@ static void sub_813995C(void)
 
     sMonSummaryScreen->unk3010 = spriteId;
 
-    sub_8139C44(1);
+    PokeSum_ShowOrHideMonPicSprite(1);
     sub_8139AAC(spriteId);
 }
 
@@ -4071,7 +4071,7 @@ static void sub_8139AAC(u16 spriteId)
     gSprites[spriteId].callback = sub_8139768;
 }
 
-static void sub_8139C44(u8 invisible)
+static void PokeSum_ShowOrHideMonPicSprite(u8 invisible)
 {
     gSprites[sMonSummaryScreen->unk3010].invisible = invisible;
 }
@@ -4082,7 +4082,7 @@ static void sub_8139C80(void)
     FREE_AND_SET_NULL(sUnknown_203B170);
 }
 
-static void sub_8139CB0(void)
+static void CreateBallIconObj(void)
 {
     u16 ballItemId;
     u8 ballId;
@@ -4099,10 +4099,10 @@ static void sub_8139CB0(void)
     gSprites[sMonSummaryScreen->unk300C].callback = SpriteCallbackDummy;
     gSprites[sMonSummaryScreen->unk300C].oam.priority = 0;
 
-    sub_8139D54(1);
+    ShowOrHideBallIconObj(1);
 }
 
-static void sub_8139D54(u8 invisible)
+static void ShowOrHideBallIconObj(u8 invisible)
 {
     gSprites[sMonSummaryScreen->unk300C].invisible = invisible;
 }
@@ -4112,7 +4112,7 @@ static void sub_8139D90(void)
     DestroySpriteAndFreeResources2(&gSprites[sMonSummaryScreen->unk300C]);
 }
 
-static void sub_8139DBC(void)
+static void PokeSum_CreateMonIconSprite(void)
 {
     u16 species;
     u32 personality;
@@ -4315,7 +4315,7 @@ static void sub_813A254(u16 tileTag, u16 palTag)
     }
 
     sub_813A3B8(1);
-    sub_813A35C();
+    UpdateMonStatusIconObj();
     FREE_AND_SET_NULL_IF_SET(gfxBufferPtr);
 }
 
@@ -4327,7 +4327,7 @@ static void sub_813A334(void)
     FREE_AND_SET_NULL_IF_SET(sUnknown_203B158);
 }
 
-static void sub_813A35C(void)
+static void UpdateMonStatusIconObj(void)
 {
     sMonSummaryScreen->unk326C = sub_8138C5C(GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_STATUS));
 
@@ -4426,13 +4426,13 @@ static void sub_813A45C(u16 tileTag, u16 palTag)
         StartSpriteAnim(sUnknown_203B15C->sprites[i], 8);
     }
 
-    sub_813A620();
+    UpdateHpBarObjs();
     sub_813A838(1);
 
     FREE_AND_SET_NULL_IF_SET(gfxBufferPtr);
 }
 
-static void sub_813A620(void)
+static void UpdateHpBarObjs(void)
 {
     u8 numWholeHpBarTiles = 0;
     u8 i;
@@ -4568,13 +4568,13 @@ static void sub_813A874(u16 tileTag, u16 palTag)
         sUnknown_203B160->unk44 = palTag;
     }
 
-    sub_813A994();
+    UpdateExpBarObjs();
     sub_813AB70(1);
 
     FREE_AND_SET_NULL_IF_SET(gfxBufferPtr);
 }
 
-static void sub_813A994(void)
+static void UpdateExpBarObjs(void)
 {
     u8 numWholeExpBarTiles = 0;
     u8 i;
@@ -4696,7 +4696,7 @@ static void sub_813ABAC(u16 tileTag, u16 palTag)
     }
 
     sub_813ACF8(1);
-    sub_813ACB4();
+    ShowPokerusIconObjIfHasOrHadPokerus();
 
     FREE_AND_SET_NULL_IF_SET(gfxBufferPtr);
 }
@@ -4709,7 +4709,7 @@ static void sub_813AC8C(void)
     FREE_AND_SET_NULL_IF_SET(sUnknown_203B164);
 }
 
-static void sub_813ACB4(void)
+static void ShowPokerusIconObjIfHasOrHadPokerus(void)
 {
     if (!CheckPartyPokerus(&sMonSummaryScreen->currentMon, 0)
         && CheckPartyHasHadPokerus(&sMonSummaryScreen->currentMon, 0))
@@ -4780,7 +4780,7 @@ static void sub_813ADA8(u16 tileTag, u16 palTag)
     }
 
     sub_813AEB0(1);
-    sub_813AF50();
+    ShowShinyStarObjIfMonShiny();
 
     FREE_AND_SET_NULL_IF_SET(gfxBufferPtr);
 }
@@ -4813,7 +4813,7 @@ static void sub_813AEB0(u8 invisible)
     }
 }
 
-static void sub_813AF50(void)
+static void ShowShinyStarObjIfMonShiny(void)
 {
     if (IsMonShiny(&sMonSummaryScreen->currentMon) == TRUE && !sMonSummaryScreen->isEgg)
         sub_813AEB0(0);
@@ -4836,19 +4836,19 @@ static void sub_813AF90(void)
     ResetSpriteData();
 }
 
-static void sub_813AFC4(void)
+static void PokeSum_CreateSprites(void)
 {
-    sub_8139CB0();
-    sub_8139D54(0);
-    sub_8139DBC();
-    sub_813995C();
-    sub_8139C44(0);
-    sub_813A620();
-    sub_813A994();
-    sub_813B0E4();
-    sub_813A35C();
-    sub_813ACB4();
-    sub_813AF50();
+    CreateBallIconObj();
+    ShowOrHideBallIconObj(FALSE);
+    PokeSum_CreateMonIconSprite();
+    PokeSum_CreateMonPicSprite();
+    PokeSum_ShowOrHideMonPicSprite(FALSE);
+    UpdateHpBarObjs();
+    UpdateExpBarObjs();
+    PokeSum_UpdateMonMarkingsAnim();
+    UpdateMonStatusIconObj();
+    ShowPokerusIconObjIfHasOrHadPokerus();
+    ShowShinyStarObjIfMonShiny();
 }
 
 static void sub_813AFFC(void)
@@ -4883,7 +4883,7 @@ static void sub_813B084(u8 invisible)
         sMonSummaryScreen->markingSprite->invisible = invisible;
 }
 
-static void sub_813B0E4(void)
+static void PokeSum_UpdateMonMarkingsAnim(void)
 {
     u32 markings = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_MARKINGS);
 
@@ -5124,7 +5124,7 @@ static void sub_813B3F0(u8 id)
     case 11:
         if (!Overworld_LinkRecvQueueLengthMoreThan2() && !sub_800B270())
         {
-            sub_813AFC4();
+            PokeSum_CreateSprites();
             sub_813B784();
             sMonSummaryScreen->unk328C++;
         }

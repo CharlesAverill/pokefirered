@@ -1005,6 +1005,7 @@ gRfuSIO32Id = .;
         src/minigame_countdown.o(.text);
         src/berry_fix_program.o(.text);
         src/soar.o(.text);
+        src/chess.o(.text);
     } =0
 
     script_data :
@@ -1313,6 +1314,7 @@ gRfuSIO32Id = .;
         src/mystery_event_msg.o(.rodata);
         data/mystery_event_msg.o(.rodata);
         src/soar.o(.rodata);
+        src/chess.o(.rodata);
         src/m4a_tables.o(.rodata);
         data/sound_data.o(.rodata);
     } =0
