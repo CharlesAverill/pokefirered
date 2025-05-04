@@ -381,7 +381,7 @@ static void sub_812580C(u8 taskId);
 static void sub_8125898(u8 taskId, UNUSED TaskFunc func);
 static void sub_8125F4C(u8 taskId, UNUSED TaskFunc func);
 static void sub_8125F5C(u8 taskId);
-static void sub_8126BD4(void);
+static void CB2_UseEvolutionStone(void);
 static bool8 MonCanEvolve(void);
 
 static EWRAM_DATA struct PartyMenuInternal *sPartyMenuInternal = NULL;
@@ -4323,7 +4323,7 @@ static void sub_8124DE0(void)
     if (CheckIfItemIsTMHMOrEvolutionStone(gSpecialVar_ItemId) == 2) // Evolution stone
     {
         if (MonCanEvolve() == TRUE)
-            StartUseItemAnim_Normal(gPartyMenu.slotId, gSpecialVar_ItemId, sub_8126BD4);
+            StartUseItemAnim_Normal(gPartyMenu.slotId, gSpecialVar_ItemId, CB2_UseEvolutionStone);
         else
             StartUseItemAnim_CantEvolve(gPartyMenu.slotId, gSpecialVar_ItemId, gPartyMenu.exitCallback);
     }
@@ -5360,7 +5360,7 @@ void ItemUseCB_EvolutionStone(u8 taskId, TaskFunc func)
     }
 }
 
-static void sub_8126BD4(void)
+static void CB2_UseEvolutionStone(void)
 {
     gCB2_AfterEvolution = gPartyMenu.exitCallback;
     ExecuteTableBasedItemEffect_(gPartyMenu.slotId, gSpecialVar_ItemId, 0);

@@ -111,7 +111,7 @@ try:
         data = json.load(file)["wild_encounter_groups"][0]["encounters"]
         
         # Dictionary to store encounter data grouped by map and species
-        encounter_data = defaultdict(lambda: defaultdict(lambda: {"min_level": float('inf'), "max_level": float('-inf')}))
+        encounter_data = defaultdict(lambda: defaultdict(lambda: {"method": None, "min_level": float('inf'), "max_level": float('-inf')}))
         species_locations = defaultdict(set)
         
         # Aggregate encounter data
@@ -119,40 +119,48 @@ try:
             map_name = format_map_name(encounter["map"])
             
             if "land_mons" in encounter:
+                method = "Land"
                 for land_mon in encounter["land_mons"]["mons"]:
                     species = format_species(land_mon['species'])
                     min_level = land_mon['min_level']
                     max_level = land_mon['max_level']
                     encounter_data[map_name][species]["min_level"] = min(min_level, encounter_data[map_name][species]["min_level"])
                     encounter_data[map_name][species]["max_level"] = max(max_level, encounter_data[map_name][species]["max_level"])
-                    species_locations[species].add(map_name)
+                    encounter_data[map_name][species]["method"] = method
+                    species_locations[species].add((map_name, method))
             
             if "water_mons" in encounter:
+                method = "Surfing"
                 for water_mon in encounter["water_mons"]["mons"]:
                     species = format_species(water_mon['species'])
                     min_level = water_mon['min_level']
                     max_level = water_mon['max_level']
                     encounter_data[map_name][species]["min_level"] = min(min_level, encounter_data[map_name][species]["min_level"])
                     encounter_data[map_name][species]["max_level"] = max(max_level, encounter_data[map_name][species]["max_level"])
-                    species_locations[species].add(map_name)
+                    encounter_data[map_name][species]["method"] = method
+                    species_locations[species].add((map_name, method))
             
             if "rock_smash_mons" in encounter:
+                method = "Rock Smash"
                 for rock_smash_mon in encounter["rock_smash_mons"]["mons"]:
                     species = format_species(rock_smash_mon['species'])
                     min_level = rock_smash_mon['min_level']
                     max_level = rock_smash_mon['max_level']
                     encounter_data[map_name][species]["min_level"] = min(min_level, encounter_data[map_name][species]["min_level"])
                     encounter_data[map_name][species]["max_level"] = max(max_level, encounter_data[map_name][species]["max_level"])
-                    species_locations[species].add(map_name)
+                    encounter_data[map_name][species]["method"] = method
+                    species_locations[species].add((map_name, method))
             
             if "fishing_mons" in encounter:
+                method = "Fishing"
                 for fishing_mon in encounter["fishing_mons"]["mons"]:
                     species = format_species(fishing_mon['species'])
                     min_level = fishing_mon['min_level']
                     max_level = fishing_mon['max_level']
                     encounter_data[map_name][species]["min_level"] = min(min_level, encounter_data[map_name][species]["min_level"])
                     encounter_data[map_name][species]["max_level"] = max(max_level, encounter_data[map_name][species]["max_level"])
-                    species_locations[species].add(map_name)
+                    encounter_data[map_name][species]["method"] = method
+                    species_locations[species].add((map_name, method))
         
         # Writing encounter data to encounters.html
         with open("changelog/encounters.html", "w", encoding="utf-8") as html_file:
@@ -161,12 +169,12 @@ try:
             for map_name, species_data in encounter_data.items():
                 html_file.write(f"<h2>{map_name}</h2>\n")
                 html_file.write("<table border='1'>\n")
-                html_file.write("<tr><th>Sprite</th><th>Species</th><th>Min Level</th><th>Max Level</th></tr>\n")
+                html_file.write("<tr><th>Sprite</th><th>Species</th><th>Min Level</th><th>Max Level</th><th>Method</th></tr>\n")
                 
                 for species, level_data in species_data.items():
                     sprite_path = get_sprite_path(species)
                     src = f'https://img.pokemondb.net/sprites/ruby-sapphire/normal/{species.lower().replace("_", "-")}.png'
-                    html_file.write(f"<tr><td><img src='{src}' alt='{species}' loading='lazy'></td><td>{species}</td><td>{level_data['min_level']}</td><td>{level_data['max_level']}</td></tr>\n")
+                    html_file.write(f"<tr><td><img src='{src}' alt='{species}' loading='lazy'></td><td>{species}</td><td>{level_data['min_level']}</td><td>{level_data['max_level']}</td><td>{level_data['method']}</td></tr>\n")
                 
                 html_file.write("</table>\n")
                 html_file.write("<hr>\n")
@@ -204,9 +212,9 @@ try:
                 if species in species_locations:
                     locations = sorted(species_locations[species])
                     html_file.write("<table border='1'>\n")
-                    html_file.write("<tr><th>Location</th><th>Min Level</th><th>Max Level</th></tr>\n")
+                    html_file.write("<tr><th>Location</th><th>Min Level</th><th>Max Level</th><th>Method</th></tr>\n")
                     for location in locations:
-                        html_file.write(f"<tr><td>{location}</td><td>{encounter_data[location][species]['min_level']}</td><td>{encounter_data[location][species]['max_level']}</td></tr>\n")
+                        html_file.write(f"<tr><td>{location}</td><td>{encounter_data[location][species]['min_level']}</td><td>{encounter_data[location][species]['max_level']}</td><td>{encounter_data[location][species]['method']}</td></tr>\n")
                     html_file.write("</table>")
                 html_file.write("<hr>\n")
 
