@@ -83,21 +83,33 @@ FuchsiaCity_House3_WoahThatsSuicune::
 
 FuchsiaCity_House3_Latios_Intro::
     .string "I'm hearing rumors of a Pokémon\n"
-    .string "named Latios being seen around\l"
+    .string "named {STR_VAR_1} being seen around\l"
     .string "Kanto right now.$"
 
 FuchsiaCity_House3_WoahThatsLatios::
-    .string "Woah! That's Latios! Thank you\n"
+    .string "Woah! That's {STR_VAR_1}! Thank you\n"
     .string "for showing me!$"
 
 FuchsiaCity_House3_Latias_Intro::
     .string "I'm hearing rumors of a Pokémon\n"
-    .string "named Latias being seen around\l"
+    .string "named {STR_VAR_1} being seen around\l"
     .string "Kanto right now.$"
 
 FuchsiaCity_House3_WoahThatsLatias::
-    .string "Woah! That's Latias! Thank you\n"
+    .string "Woah! That's {STR_VAR_1}! Thank you\n"
     .string "for showing me!$"
+
+FuchsiaCity_House3_GiveEonFlute::
+    .string "Now that I've seen it...\p"
+    .string "This Pokémon seems to respond to\n"
+    .string "this old artifact I picked up a\l"
+    .string "long time ago...\p"
+    .string "It was a small island town in\n"
+    .string "Johto. It should be with {STR_VAR_1}.$" 
+
+sText_EonFluteNoPlace::
+    .string "You don't have space for it.\p"
+    .string "Come back later.$"
 
 FuchsiaCity_House3_AllDone::
     .string "I think that's all the roaming\n"

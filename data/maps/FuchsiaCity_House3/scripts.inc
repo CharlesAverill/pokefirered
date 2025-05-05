@@ -65,9 +65,9 @@ FuchsiaCity_House3_Eunice::
     faceplayer
     goto_if_unset FLAG_MET_EUNICE, FuchsiaCity_House3_MeetEunice
     goto_if_unset FLAG_CAUGHT_ENTEI, FuchsiaCity_House3_CheckEntei
-    goto_if_unset FLAG_CAUGHT_LATIAS, FuchsiaCity_House3_CheckLatias
+    goto_if_unset FLAG_CAUGHT_LATI1, FuchsiaCity_House3_CheckLatias
     goto_if_unset FLAG_CAUGHT_RAIKOU, FuchsiaCity_House3_CheckRaikou
-    goto_if_unset FLAG_CAUGHT_LATIOS, FuchsiaCity_House3_CheckLatios
+    goto_if_unset FLAG_CAUGHT_LATI2, FuchsiaCity_House3_CheckLatios
     goto_if_unset FLAG_CAUGHT_SUICUNE, FuchsiaCity_House3_CheckSuicune
     msgbox FuchsiaCity_House3_AllDone
     release
@@ -85,6 +85,11 @@ FuchsiaCity_House3_CheckEntei::
 
 FuchsiaCity_House3_HasEntei::
     msgbox FuchsiaCity_House3_WoahThatsEntei
+	checkplayergender
+	compare VAR_RESULT, MALE
+    call_if_eq FuchisaCity_House3_SetLatias
+	compare VAR_RESULT, FEMALE
+    call_if_eq FuchisaCity_House3_SetLatios
     msgbox FuchsiaCity_House3_Latias_Intro
     setflag FLAG_CAUGHT_ENTEI
     setvar VAR_CURRENT_ROAMER, SPECIES_LATIAS
@@ -96,19 +101,60 @@ FuchsiaCity_House3_CheckLatias::
     hascaughtmon SPECIES_LATIAS
     compare VAR_RESULT, 1
     goto_if_eq FuchsiaCity_House3_HasLatias
+	checkplayergender
+	compare VAR_RESULT, MALE
+    call_if_eq FuchisaCity_House3_SetLatias
+	compare VAR_RESULT, FEMALE
+    call_if_eq FuchisaCity_House3_SetLatios
     msgbox FuchsiaCity_House3_Latias_Intro
     msgbox FuchsiaCity_House3_CanYouShowItToMe
     release
     end
 
 FuchsiaCity_House3_HasLatias::
+	checkplayergender
+	compare VAR_RESULT, MALE
+    call_if_eq FuchisaCity_House3_SetLatias
+	compare VAR_RESULT, FEMALE
+    call_if_eq FuchisaCity_House3_SetLatios
     msgbox FuchsiaCity_House3_WoahThatsLatias
+    call FuchsiaCity_House3_GiveEonFluteEvent
     msgbox FuchsiaCity_House3_Raikou_Intro
-    setflag FLAG_CAUGHT_LATIAS
+    setflag FLAG_CAUGHT_LATI1
     setvar VAR_CURRENT_ROAMER, SPECIES_RAIKOU
     special InitRoamer
     release
     end
+
+FuchsiaCity_House3_GiveEonFluteEvent::
+	checkplayergender
+	compare VAR_RESULT, MALE
+    call_if_eq FuchisaCity_House3_SetLatias
+	compare VAR_RESULT, FEMALE
+    call_if_eq FuchisaCity_House3_SetLatios
+    msgbox FuchsiaCity_House3_GiveEonFlute
+	waitmessage
+	waitbuttonpress
+	checkitemspace ITEM_EON_FLUTE, 1
+	compare VAR_RESULT, FALSE
+	vgoto_if_eq EonFlute_NoBagSpace
+	giveitem ITEM_EON_FLUTE
+    return
+
+FuchisaCity_House3_SetLatias::
+	getspeciesname 0, SPECIES_LATIAS
+    return
+
+FuchisaCity_House3_SetLatios::
+	getspeciesname 0, SPECIES_LATIOS
+    return
+
+EonFlute_NoBagSpace:
+	vmessage sText_EonFluteNoPlace
+	waitmessage
+	waitbuttonpress
+	release
+	end
 
 FuchsiaCity_House3_CheckRaikou::
     hascaughtmon SPECIES_RAIKOU
@@ -132,15 +178,25 @@ FuchsiaCity_House3_CheckLatios::
     hascaughtmon SPECIES_LATIOS
     compare VAR_RESULT, 1
     goto_if_eq FuchsiaCity_House3_HasLatios
+	checkplayergender
+	compare VAR_RESULT, MALE
+    call_if_eq FuchisaCity_House3_SetLatios
+	compare VAR_RESULT, FEMALE
+    call_if_eq FuchisaCity_House3_SetLatias
     msgbox FuchsiaCity_House3_Latios_Intro
     msgbox FuchsiaCity_House3_CanYouShowItToMe
     release
     end
 
 FuchsiaCity_House3_HasLatios::
+	checkplayergender
+	compare VAR_RESULT, MALE
+    call_if_eq FuchisaCity_House3_SetLatios
+	compare VAR_RESULT, FEMALE
+    call_if_eq FuchisaCity_House3_SetLatias
     msgbox FuchsiaCity_House3_WoahThatsLatios
     msgbox FuchsiaCity_House3_Suicune_Intro
-    setflag FLAG_CAUGHT_LATIOS
+    setflag FLAG_CAUGHT_LATI2
     setvar VAR_CURRENT_ROAMER, SPECIES_SUICUNE
     special InitRoamer
     release

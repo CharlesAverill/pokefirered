@@ -66,12 +66,12 @@ u16 GetRoamerSpecies() {
     u16 a;
     if (FlagGet(FLAG_CAUGHT_ENTEI) == FALSE){
         a = SPECIES_ENTEI;
-    } else if (FlagGet(FLAG_CAUGHT_LATIAS) == FALSE){
-        a = SPECIES_LATIAS;
+    } else if (FlagGet(FLAG_CAUGHT_LATI1) == FALSE){
+        a = gSaveBlock2Ptr->playerGender ? SPECIES_LATIAS : SPECIES_LATIOS;
     } else if (FlagGet(FLAG_CAUGHT_RAIKOU) == FALSE){
         a = SPECIES_RAIKOU;
-    } else if (FlagGet(FLAG_CAUGHT_LATIOS) == FALSE){
-        a = SPECIES_LATIOS;
+    } else if (FlagGet(FLAG_CAUGHT_LATI2) == FALSE){
+        a = gSaveBlock2Ptr->playerGender ? SPECIES_LATIOS : SPECIES_LATIAS;
     } else if (FlagGet(FLAG_CAUGHT_SUICUNE) == FALSE){
         a = SPECIES_SUICUNE;
     }

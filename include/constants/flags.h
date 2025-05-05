@@ -214,8 +214,8 @@
 #define FLAG_CAUGHT_SUICUNE               0x0CC
 #define FLAG_CAUGHT_ENTEI               0x0CD
 #define FLAG_CAUGHT_RAIKOU               0x0CE
-#define FLAG_CAUGHT_LATIOS               0x0CF
-#define FLAG_CAUGHT_LATIAS               0x0D0
+#define FLAG_CAUGHT_LATI2               0x0CF
+#define FLAG_CAUGHT_LATI1               0x0D0
 #define FLAG_MET_EUNICE               0x0D1
 #define FLAG_FOUGHT_JIRACHI               0x0D2
 #define FLAG_TALKED_ABOUT_JIRACHI               0x0D3

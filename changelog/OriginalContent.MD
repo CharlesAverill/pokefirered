@@ -1,6 +1,7 @@
 # Original Content & Features
 Just a heads-up: Aside from additional encounters, this hack's early game is very similar to base FireRed. 
 ## Features
+- [Eon flute implementation!](../media/soaring.png)
 - All gen 3 mons obtainable via [encounters](EncounterChanges.MD) or [evolutions](Evolutions.MD)
 - Physical/Special split
 - Infinite TM Use

@@ -48,3 +48,6 @@
 - Jirachi: speak to Mr. Fuji after becoming Champion, Jirachi is on Pokemon Tower 7F
 - Celebi: Visit Hemlock Forest after becoming Champion
 - Mt. Silver: Approach Mt. Silver with the Celebi you caught in your party. A familiar face awaits you on the summit.
+- Roamers (Entei, Latias, Raikou, Latios, Suicune) are released upon talking to Eunice in Fuchsia city after the game is cleared. Show one to get the next.
+    - Eon twin of opposite gender appears first
+- Eon flute obtained after showing the first Eon twin
