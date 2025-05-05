@@ -4,6 +4,7 @@ CinnabarIsland_Cinnabar_Volcano_B2F_MapScripts::
 	.byte 0
 
 CinnabarIsland_Cinnabar_Volcano_B2F_OnTransition::
+    clearflag FLAG_SYS_FLASH_ACTIVE
 	call_if_set FLAG_FOUGHT_GROUDON, CinnabarIsland_Cinnabar_Volcano_B2F_HideGroudon
 	call_if_unset FLAG_FOUGHT_GROUDON, CinnabarIsland_Cinnabar_Volcano_B2F_TryShowGroudon
 	end
@@ -21,6 +22,7 @@ CinnabarIsland_Cinnabar_Volcano_B2F_TryShowGroudon::
 	return
 
 CinnabarIsland_Cinnabar_Volcano_B2F_OnResume:
+    clearflag FLAG_SYS_FLASH_ACTIVE
 	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, CinnabarIsland_Cinnabar_Volcano_B2F_TryRemoveGroudon
 	end
 
@@ -33,8 +35,9 @@ CinnabarIsland_Cinnabar_Volcano_B2F_TryRemoveGroudon::
 
 CinnabarIsland_Cinnabar_Volcano_B2F_Approach_Groudon::
     /*goto_if_set FLAG_DONT_LEAVE_LEGEND_YET, CinnabarIsland_Cinnabar_Volcano_B2F_Move_Player*/
-    goto_if_set FLAG_SYS_FLASH_ACTIVE, CinnabarIsland_Cinnabar_Volcano_B2F_end
     goto_if_set FLAG_FOUGHT_GROUDON, CinnabarIsland_Cinnabar_Volcano_B2F_end
+    goto_if_set FLAG_GROUDON_DISAPPEARED, CinnabarIsland_Cinnabar_Volcano_B2F_end
+    goto_if_set FLAG_SYS_FLASH_ACTIVE, CinnabarIsland_Cinnabar_Volcano_B2F_end
     lockall
     call CinnabarIsland_Cinnabar_Volcano_SetFlash
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_Meet_Groudon
@@ -43,13 +46,12 @@ CinnabarIsland_Cinnabar_Volcano_B2F_Approach_Groudon::
     waitmovement 0
     setflag FLAG_DONT_LEAVE_LEGEND_YET
 	releaseall
-	end
+    end
 
 CinnabarIsland_Cinnabar_Volcano_SetFlash::
     goto_if_set FLAG_SYS_FLASH_ACTIVE, CinnabarIsland_Cinnabar_Volcano_B2F_end
     animateflash 0
 	setflashradius 0
-	setflag FLAG_SYS_FLASH_ACTIVE
 	return
 
 CinnabarIsland_Cinnabar_Volcano_B2F_Move_Player:
@@ -95,8 +97,11 @@ CinnabarIsland_Cinnabar_Volcano_B2F_DefeatedGroudon::
 	end
 
 CinnabarIsland_Cinnabar_Volcano_B2F_RanFromGroudon::
+	setflag FLAG_GROUDON_DISAPPEARED
 	setvar VAR_0x8004, SPECIES_GROUDON
-	goto EventScript_MonDisappeared
+	call EventScript_MonDisappeared
+	call EventScript_MonDisappeared
+    call CinnabarIsland_Cinnabar_Volcano_B2F_HideGroudon
 	end
 
 CinnabarIsland_Cinnabar_Volcano_B2F_Text_Groudon:

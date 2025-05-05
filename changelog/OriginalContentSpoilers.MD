@@ -35,7 +35,7 @@
 -
 -
 - 
-- Mew Truck event: walk into the SSAnne dock from the leftmost tiles
+- Mew Truck event: walk into the SSAnne dock from the leftmost tiles, use strength on truck while facing left
 - MysticTicket is available in-game: speak to Captain Solomon on Five Island after becoming Champion.
 - AuroraTicket is available in-game: after completing Captain Solomon's quest, talk to Prof. Charles in Saffron City
 - Groudon is available in-game: After becoming the Champion, the guard on Cinnabar Island will leave, opening the path to Cinnabar Volcano

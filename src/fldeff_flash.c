@@ -10,6 +10,7 @@
 #include "script.h"
 #include "constants/songs.h"
 #include "constants/map_types.h"
+#include "constants/layouts.h"
 
 struct FlashStruct
 {
@@ -162,6 +163,9 @@ static const u32 sCaveTransitionTiles[] = INCBIN_U32("graphics/field_effects/fla
 
 bool8 SetUpFieldMove_Flash(void)
 {
+    if (gMapHeader.mapLayoutId == LAYOUT_CINNABAR_ISLAND_CINNABAR_VOLCANO_B1F || gMapHeader.mapLayoutId == LAYOUT_CINNABAR_ISLAND_CINNABAR_VOLCANO_B2F)
+        return FALSE;
+    
     if (gMapHeader.cave != TRUE)
         return FALSE;
 
