@@ -2993,7 +2993,7 @@
       "secondaryId": 0
     },
     {
-      "english": "King'S Rock",
+      "english": "King's Rock",
       "itemId": "ITEM_KINGS_ROCK",
       "price": 100,
       "holdEffect": "HOLD_EFFECT_FLINCH",
@@ -5643,7 +5643,7 @@
       "secondaryId": 0
     },
     {
-      "english": "Oak'S Parcel",
+      "english": "Oak's Parcel",
       "itemId": "ITEM_OAKS_PARCEL",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
