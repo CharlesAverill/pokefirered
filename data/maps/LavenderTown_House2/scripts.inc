@@ -30,14 +30,14 @@ LavenderTown_House2_EventScript_CheckCanRateMon:: @ 816B2B4
 	specialvar VAR_RESULT, GetPartyMonSpecies
 	compare VAR_RESULT, SPECIES_EGG
 	goto_if_eq LavenderTown_House2_EventScript_CantNicknameEgg
+	@special BufferMonNickname
+	@special IsMonOTIDNotPlayers
+	@compare VAR_RESULT, TRUE
+	@goto_if_eq LavenderTown_House2_EventScript_CantNicknameTradeMon
+	@specialvar VAR_RESULT, IsMonOTNameNotPlayers
 	special BufferMonNickname
-	special IsMonOTIDNotPlayers
-	compare VAR_RESULT, TRUE
-	goto_if_eq LavenderTown_House2_EventScript_CantNicknameTradeMon
-	specialvar VAR_RESULT, IsMonOTNameNotPlayers
-	special BufferMonNickname
-	compare VAR_RESULT, TRUE
-	goto_if_eq LavenderTown_House2_EventScript_CantNicknameTradeMon
+	@compare VAR_RESULT, TRUE
+	@goto_if_eq LavenderTown_House2_EventScript_CantNicknameTradeMon
 	msgbox LavenderTown_House2_Text_GiveItANicerName, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq LavenderTown_House2_EventScript_ChooseNewNickname

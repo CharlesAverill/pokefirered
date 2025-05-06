@@ -155,8 +155,8 @@ gNewGame_HelpDocs7:: @ 81C5981
     .string "           - Charles Averill$"
 
 gOakText_AskPlayerGender:: @ 81C59D5
-    .string "Now tell me. Are you a boy?\n"
-    .string "Or are you a girl?$"
+    .string "Which appearance would\n"
+    .string "you like to assume?$"
 
 gNewGameAdventureIntro1::
     .string "In the world which you are about to\n"

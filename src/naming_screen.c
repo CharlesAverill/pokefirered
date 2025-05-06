@@ -24,6 +24,7 @@
 #include "constants/flags.h"
 #include "constants/songs.h"
 #include "constants/event_objects.h"
+#include "random.h"
 
 #define subsprite_table(ptr) {.subsprites = ptr, .subspriteCount = (sizeof ptr) / (sizeof(struct Subsprite))}
 
@@ -107,6 +108,7 @@ struct NamingScreenData
     /*0x1E34*/ u16 monSpecies;
     /*0x1E36*/ u16 monGender;
     /*0x1E38*/ u32 monPersonality;
+    u8* placeholderName;
     /*0x1E3C*/ MainCallback returnCallback;
 };
 
@@ -375,8 +377,28 @@ static const u8 gUnknown_83E2333[][8] = {
 
 static const struct NamingScreenTemplate *const sNamingScreenTemplates[];
 
+#include "data/text/nicknames_f.h"
+#include "data/text/nicknames_m.h"
+
 void DoNamingScreen(u8 templateNum, u8 *destBuffer, u16 monSpecies, u16 monGender, u32 monPersonality, MainCallback returnCallback)
 {
+    // Pick random name for mon
+    if (templateNum == NAMING_SCREEN_NAME_RATER) {
+        do {
+            if (monGender == MON_MALE) {
+                StringCopy(destBuffer, sNicknamesMale[Random() % NUM_NICKNAMES_M]);
+            } else if (monGender == MON_FEMALE) {
+                StringCopy(destBuffer, sNicknamesFemale[Random() % NUM_NICKNAMES_F]);
+            } else {
+                if (Random() % 2) {
+                    StringCopy(destBuffer, sNicknamesFemale[Random() % NUM_NICKNAMES_F]);
+                } else {
+                    StringCopy(destBuffer, sNicknamesMale[Random() % NUM_NICKNAMES_M]);
+                }
+            }
+        } while (StringLength(destBuffer) > POKEMON_NAME_LENGTH);
+    }
+
     sNamingScreenData = Alloc(sizeof(struct NamingScreenData));
     if (!sNamingScreenData)
     {
@@ -1994,7 +2016,7 @@ static const struct NamingScreenTemplate sPcBoxNamingScreenTemplate = {
 };
 
 static const struct NamingScreenTemplate sMonNamingScreenTemplate = {
-    .copyExistingString = FALSE,
+    .copyExistingString = TRUE,
     .maxChars = POKEMON_NAME_LENGTH,
     .iconFunction = 3,
     .addGenderIcon = 1,
