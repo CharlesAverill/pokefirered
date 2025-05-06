@@ -643,6 +643,7 @@ const u8 gPCText_Shift[] = _("SHIFT");
 const u8 gPCText_Move[] = _("MOVE");
 const u8 gPCText_Place[] = _("PLACE");
 const u8 gPCText_Summary[] = _("SUMMARY");
+const u8 gText_Nickname[] = _("Nickname");
 const u8 gPCText_Release[] = _("RELEASE");
 const u8 gPCText_Mark[] = _("MARK");
 const u8 gPCText_Name[] = _("NAME");
