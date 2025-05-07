@@ -519,7 +519,7 @@ static void InitTMCaseListMenuItems(void)
 static void GetTMNumberAndMoveString(u8 * dest, u16 itemId)
 {
     StringCopy(gStringVar4, gText_FontSize0);
-    if (itemId >= ITEM_HM01)
+    if (itemId >= ITEM_HM01 && itemId <= ITEM_HM08)
     {
         StringAppend(gStringVar4, sText_ClearTo18);
         StringAppend(gStringVar4, gOtherText_UnkF9_08_Clear_01);
@@ -529,7 +529,7 @@ static void GetTMNumberAndMoveString(u8 * dest, u16 itemId)
     else
     {
         StringAppend(gStringVar4, gOtherText_UnkF9_08_Clear_01);
-        ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_TM01 + 1, STR_CONV_MODE_LEADING_ZEROS, 2);
+        ConvertIntToDecimalStringN(gStringVar1, (itemId - ITEM_TM01 + 1) - (itemId >= ITEM_HM01 ? 8 : 0), STR_CONV_MODE_LEADING_ZEROS, 2);
         StringAppend(gStringVar4, gStringVar1);
     }
     StringAppend(gStringVar4, sText_SingleSpace);
@@ -592,7 +592,7 @@ static void TMCase_ItemPrintFunc(u8 windowId, s32 itemId, u8 y)
         u8 *TM = "TM";
         //if (!itemid_is_unique(BagGetItemIdByPocketPosition(POCKET_TM_CASE, itemId)))
         u16 bagItemId = BagGetItemIdByPocketPosition(POCKET_TM_CASE, itemId);
-        if(bagItemId >= ITEM_TM01 && bagItemId <= ITEM_TM50)
+        if(bagItemId >= ITEM_TM01 && (bagItemId <= ITEM_TM50 || bagItemId >= ITEM_TM51))
         {
             ConvertIntToDecimalStringN(gStringVar1, BagGetQuantityByPocketPosition(POCKET_TM_CASE, itemId), STR_CONV_MODE_RIGHT_ALIGN, 3);
             StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
@@ -828,7 +828,7 @@ static void Task_SelectTMAction_FromFieldBag(u8 taskId)
     StringAppend(strbuf, gText_Var1IsSelected + 2); // +2 skips over the stringvar
     AddTextPrinterParameterized_ColorByIndex(2, 2, strbuf, 0, 2, 1, 0, 0, 1);
     Free(strbuf);
-    if (itemid_is_unique(gSpecialVar_ItemId))
+    if (gSpecialVar_ItemId >= ITEM_HM01 && gSpecialVar_ItemId <= ITEM_HM08)
     {
         PlaceHMTileInWindow(2, 0, 2);
         CopyWindowToVram(2, COPYWIN_GFX);

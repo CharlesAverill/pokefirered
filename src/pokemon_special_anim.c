@@ -616,7 +616,7 @@ static u16 GetAnimTypeByItemId(u16 itemId)
             return gUnknown_8459634[i].animType;
     }
 
-    if (itemId >= ITEM_TM01 && itemId <= ITEM_HM08)
+    if (itemId >= ITEM_TM01 && itemId <= LAST_TMHM)
     {
         return 4;
     }

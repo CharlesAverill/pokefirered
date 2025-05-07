@@ -506,7 +506,7 @@ void SortPocketAndPlaceHMsFirst(struct BagPocket * pocket)
     {
         if (pocket->itemSlots[i].itemId == ITEM_NONE && GetBagItemQuantity(&pocket->itemSlots[i].quantity) == 0)
             return;
-        if (pocket->itemSlots[i].itemId >= ITEM_HM01 && GetBagItemQuantity(&pocket->itemSlots[i].quantity) != 0)
+        if ((pocket->itemSlots[i].itemId >= ITEM_HM01 && pocket->itemSlots[i].itemId <= ITEM_HM08) && GetBagItemQuantity(&pocket->itemSlots[i].quantity) != 0)
         {
             for (j = i + 1; j < pocket->capacity; j++)
             {
@@ -530,13 +530,17 @@ void SortPocketAndPlaceHMsFirst(struct BagPocket * pocket)
 
 void SortAndCompactBagPocket(struct BagPocket * pocket)
 {
-    u16 i, j;
+    u16 i, j, k, l;
 
     for (i = 0; i < pocket->capacity; i++)
     {
         for (j = i + 1; j < pocket->capacity; j++)
         {
-            if (GetBagItemQuantity(&pocket->itemSlots[i].quantity) == 0 || (GetBagItemQuantity(&pocket->itemSlots[j].quantity) != 0 && pocket->itemSlots[i].itemId > pocket->itemSlots[j].itemId))
+            k = pocket->itemSlots[i].itemId;
+            k -= k > ITEM_HM08 && k <= LAST_TMHM ? (9 + (k - ITEM_TM51)) : 0;
+            l = pocket->itemSlots[j].itemId;
+            l -= l > ITEM_HM08 && l <= LAST_TMHM ? (9 + (l - ITEM_TM51)) : 0;
+            if (GetBagItemQuantity(&pocket->itemSlots[i].quantity) == 0 || (GetBagItemQuantity(&pocket->itemSlots[j].quantity) != 0 && k > l))
                 SwapItemSlots(&pocket->itemSlots[i], &pocket->itemSlots[j]);
         }
     }

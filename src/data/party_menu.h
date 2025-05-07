@@ -1069,15 +1069,17 @@ static const u16 sTMHMMoves_Duplicate[] =
     MOVE_ROCK_SMASH,
     MOVE_WATERFALL,
     MOVE_DIVE,
+    MOVE_DRAGON_DANCE,
+    MOVE_EXPLOSION,
 };
 
 enum
 {
     MENU_SUMMARY,
-    MENU_NICKNAME,
     MENU_SWITCH,
     MENU_CANCEL1,
     MENU_ITEM,
+    MENU_NICKNAME,
     MENU_GIVE,
     MENU_TAKE_ITEM,
     MENU_MAIL,
@@ -1298,4 +1300,6 @@ static const u16 sTMHMMoves[] =
     MOVE_ROCK_SMASH,
     MOVE_WATERFALL,
     MOVE_DIVE,
+    MOVE_DRAGON_DANCE,
+    MOVE_EXPLOSION,
 };
