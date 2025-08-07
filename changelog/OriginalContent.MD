@@ -75,6 +75,7 @@ Just a heads-up: Aside from additional encounters, this hack's early game is ver
 * Jirachi Event
 * Celebi Event
 * Emerald Brendan/May appearances
+* Ethan appearance
 
 ## Roaming Pokémon
 

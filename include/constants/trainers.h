@@ -164,8 +164,8 @@
 #define TRAINER_PIC_RUIN_MANIAC           145
 #define TRAINER_PIC_LADY                  146
 #define TRAINER_PIC_PAINTER               147
-#define TRAINER_PIC_ETHAN                 147
-#define TRAINER_PIC_LYRA                  147
+#define TRAINER_PIC_ETHAN                 148
+#define TRAINER_PIC_LYRA                  149
 
 // Leftover from R/S
 #define TRAINER_SECRET_BASE                 1024

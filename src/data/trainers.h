@@ -126,7 +126,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_ETHAN,
         .trainerName = _("ETHAN"),
         .items = {},
-        .doubleBattle = FALSE,
+        .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = NELEMS(sTrainerMons_FutureGoldCharmander),
         .party = {.ItemCustomMoves = sTrainerMons_FutureGoldCharmander}
@@ -138,7 +138,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_ETHAN,
         .trainerName = _("ETHAN"),
         .items = {},
-        .doubleBattle = FALSE,
+        .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = NELEMS(sTrainerMons_FutureGoldSquirtle),
         .party = {.ItemCustomMoves = sTrainerMons_FutureGoldSquirtle}
@@ -150,7 +150,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_ETHAN,
         .trainerName = _("ETHAN"),
         .items = {},
-        .doubleBattle = FALSE,
+        .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = NELEMS(sTrainerMons_FutureGoldBulbasaur),
         .party = {.ItemCustomMoves = sTrainerMons_FutureGoldBulbasaur}

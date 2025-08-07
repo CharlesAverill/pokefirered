@@ -738,6 +738,11 @@ static const union AnimCmd *const sAnims_82390D8[] =
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_Ethan[] =
+{
+    sAnim_GeneralFrame0,
+};
+
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 {
     sAnims_8238E8C,
@@ -888,4 +893,5 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     sAnims_82390D0,
     sAnims_82390D4,
     sAnims_82390D8,
+    [TRAINER_PIC_ETHAN] = sAnims_Ethan,
 };
