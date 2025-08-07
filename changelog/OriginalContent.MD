@@ -1,10 +1,6 @@
 # Original Content & Features
 Just a heads-up: Aside from additional encounters, this hack's early game is very similar to base FireRed. 
 
-## Original Content & Features
-
-Just a heads-up: Aside from additional encounters, this hack's early game is very similar to base FireRed.
-
 ## Features
 
 * [Eon flute implementation!](../media/soaring.png)
